@@ -1,8 +1,8 @@
 {
   "id": "transitivityDuel",
-  "title": "Transitivity Duel",
-  "subtitle": "Short scenarios, full sentences",
-  "description": "N4–N3 practice: choose the most natural Japanese sentence for each situation. Train 自動詞 vs 他動詞, が／を, and intention with common verb pairs.",
+  "title": "Transitives",
+  "subtitle": "Choose the most natural sentence",
+  "description": "N4–N3 practice: choose the most natural Japanese sentence for each situation. Train subject-verb agreement and intention with common verb pairs.",
   "difficulty": "N4-N3",
   "diagnosticTags": [
     "intention",

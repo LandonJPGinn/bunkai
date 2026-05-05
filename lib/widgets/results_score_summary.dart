@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../app/bunkai_tokens.dart';
 
 class ResultsScoreSummary extends StatelessWidget {
   const ResultsScoreSummary({
@@ -7,6 +10,7 @@ class ResultsScoreSummary extends StatelessWidget {
     required this.percent,
     required this.correctCount,
     required this.totalCount,
+    this.accent,
   });
 
   final String quizTitle;
@@ -14,38 +18,77 @@ class ResultsScoreSummary extends StatelessWidget {
   final int correctCount;
   final int totalCount;
 
+  /// Topic accent stripe (quiz identity).
+  final Color? accent;
+
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
+    final t = context.bunkaiTokens;
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
+    final stripe = accent ?? t.accent;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          quizTitle,
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: scheme.onSurface,
-              ),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(t.radiusMd),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: t.surface2,
+          borderRadius: BorderRadius.circular(t.radiusMd),
+          border: Border.all(color: t.borderSoft),
+          boxShadow: t.shadowSoft,
         ),
-        const SizedBox(height: 20),
-        Text(
-          '$percent%',
-          semanticsLabel: '$percent percent correct',
-          style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                fontWeight: FontWeight.w600,
-                color: scheme.onSurface,
-                height: 1.1,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(width: 4, color: stripe),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 22),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      quizTitle,
+                      style: Theme.of(
+                        context,
+                      ).textTheme.titleLarge?.copyWith(color: t.textStrong),
+                    ),
+                    const SizedBox(height: 18),
+                    TweenAnimationBuilder<double>(
+                      tween: Tween<double>(begin: 0, end: percent.toDouble()),
+                      duration: reduceMotion
+                          ? Duration.zero
+                          : const Duration(milliseconds: 720),
+                      curve: Curves.easeOutCubic,
+                      builder: (context, v, _) {
+                        final display = v.round().clamp(0, 100);
+                        return Text(
+                          '$display%',
+                          semanticsLabel: '$percent percent correct',
+                          style: GoogleFonts.inter(
+                            fontSize: 52,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: -2,
+                            height: 1.05,
+                            color: t.textStrong,
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      '$correctCount correct out of $totalCount',
+                      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        color: t.textMuted,
+                        height: 1.4,
+                      ),
+                    ),
+                  ],
+                ),
               ),
+            ),
+          ],
         ),
-        const SizedBox(height: 8),
-        Text(
-          '$correctCount correct out of $totalCount',
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: scheme.onSurfaceVariant,
-                height: 1.4,
-              ),
-        ),
-      ],
+      ),
     );
   }
 }

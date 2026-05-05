@@ -10,6 +10,7 @@ class ProgressHeader extends StatelessWidget {
     required this.moduleLabel,
     required this.scoreCorrect,
     required this.scoreAnswered,
+    this.accent,
   });
 
   final int current;
@@ -17,6 +18,9 @@ class ProgressHeader extends StatelessWidget {
   final String moduleLabel;
   final int scoreCorrect;
   final int scoreAnswered;
+
+  /// Progress bar color; falls back to [ColorScheme.primary].
+  final Color? accent;
 
   @override
   Widget build(BuildContext context) {
@@ -27,22 +31,25 @@ class ProgressHeader extends StatelessWidget {
         ? '—'
         : '$scoreCorrect / $scoreAnswered';
 
-    final wide = MediaQuery.sizeOf(context).width >=
+    final wide =
+        MediaQuery.sizeOf(context).width >=
         LayoutBreakpoints.progressHeaderCompact;
 
+    final barColor = accent ?? scheme.primary;
+
     final labelStyle = Theme.of(context).textTheme.labelSmall?.copyWith(
-          color: scheme.onSurfaceVariant.withValues(alpha: 0.95),
-          letterSpacing: 0.08,
-          fontWeight: FontWeight.w500,
-        );
+      color: scheme.onSurfaceVariant.withValues(alpha: 0.95),
+      letterSpacing: 0.08,
+      fontWeight: FontWeight.w500,
+    );
     final qStyle = Theme.of(context).textTheme.labelLarge?.copyWith(
-          color: scheme.onSurface,
-          letterSpacing: 0.06,
-        );
+      color: scheme.onSurface,
+      letterSpacing: 0.06,
+    );
     final scoreStyle = Theme.of(context).textTheme.labelLarge?.copyWith(
-          color: scheme.onSurfaceVariant,
-          letterSpacing: 0.06,
-        );
+      color: scheme.onSurfaceVariant,
+      letterSpacing: 0.06,
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -59,15 +66,9 @@ class ProgressHeader extends StatelessWidget {
                   style: labelStyle,
                 ),
               ),
-              Text(
-                'Q ${current + 1} / $total',
-                style: qStyle,
-              ),
+              Text('Q ${current + 1} / $total', style: qStyle),
               const SizedBox(width: 14),
-              Text(
-                'Score $scoreLabel',
-                style: scoreStyle,
-              ),
+              Text('Score $scoreLabel', style: scoreStyle),
             ],
           )
         else
@@ -84,14 +85,8 @@ class ProgressHeader extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'Q ${current + 1} / $total',
-                    style: qStyle,
-                  ),
-                  Text(
-                    'Score $scoreLabel',
-                    style: scoreStyle,
-                  ),
+                  Text('Q ${current + 1} / $total', style: qStyle),
+                  Text('Score $scoreLabel', style: scoreStyle),
                 ],
               ),
             ],
@@ -101,9 +96,9 @@ class ProgressHeader extends StatelessWidget {
           borderRadius: BorderRadius.circular(999),
           child: LinearProgressIndicator(
             value: value,
-            minHeight: 4,
+            minHeight: 5,
             backgroundColor: scheme.surfaceContainerHighest,
-            color: scheme.primary.withValues(alpha: 0.65),
+            color: barColor.withValues(alpha: 0.82),
           ),
         ),
       ],

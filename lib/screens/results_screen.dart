@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_router.dart';
-import '../data/quiz_registry.dart';
+import '../data/topic_card_style.dart';
+import '../services/quiz_bank_loader.dart';
 import '../app/breakpoints.dart';
 import '../services/score_service.dart';
-import '../widgets/app_shell.dart';
+import '../widgets/app_shell.dart' show AppShell, AppShellHeaderMode;
 import '../widgets/primary_button.dart';
 import '../widgets/results_needs_review_section.dart';
 import '../widgets/results_score_summary.dart';
@@ -24,9 +25,7 @@ class ResultsScreen extends StatelessWidget {
     final misses = result.diagnosticMisses;
     final tagsInRun = result.diagnosticTagsInRun;
 
-    final strongestTags = tagsInRun
-        .where((t) => (misses[t] ?? 0) == 0)
-        .toList()
+    final strongestTags = tagsInRun.where((t) => (misses[t] ?? 0) == 0).toList()
       ..sort();
 
     final sortedMisses = misses.entries.toList()
@@ -36,11 +35,13 @@ class ResultsScreen extends StatelessWidget {
         return a.key.compareTo(b.key);
       });
 
-    final narrow =
-        LayoutBreakpoints.isNarrowWidth(MediaQuery.sizeOf(context).width);
+    final narrow = LayoutBreakpoints.isNarrowWidth(
+      MediaQuery.sizeOf(context).width,
+    );
     final horizontalPadding = narrow ? 16.0 : 20.0;
 
     return AppShell(
+      headerMode: AppShellHeaderMode.compact,
       title: 'Results',
       body: Center(
         child: ConstrainedBox(
@@ -56,39 +57,64 @@ class ResultsScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        ResultsScoreSummary(
-                          quizTitle: args.quizTitle,
-                          percent: percent,
-                          correctCount: result.correctCount,
-                          totalCount: result.totalCount,
-                        ),
-                        const SizedBox(height: 24),
-                        if (strongestTags.isNotEmpty) ...[
-                          ResultsStrongestSection(tags: strongestTags),
-                          const SizedBox(height: 24),
-                        ],
-                        if (sortedMisses.isNotEmpty)
-                          ResultsNeedsReviewSection(
-                            sortedMisses: sortedMisses,
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      return SingleChildScrollView(
+                        clipBehavior: Clip.none,
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            minHeight: constraints.maxHeight,
                           ),
-                      ],
-                    ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              ResultsScoreSummary(
+                                quizTitle: args.quizTitle,
+                                percent: percent,
+                                correctCount: result.correctCount,
+                                totalCount: result.totalCount,
+                                accent: topicCardStyleFor(result.quizId).accent,
+                              ),
+                              const SizedBox(height: 24),
+                              if (strongestTags.isNotEmpty) ...[
+                                ResultsStrongestSection(tags: strongestTags),
+                                const SizedBox(height: 24),
+                              ],
+                              if (sortedMisses.isNotEmpty)
+                                ResultsNeedsReviewSection(
+                                  sortedMisses: sortedMisses,
+                                ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ),
                 const SizedBox(height: 16),
                 PrimaryButton(
                   label: 'Retry Quiz',
-                  onPressed: () {
-                    final full = quizById(result.quizId);
-                    if (full == null) return;
-                    Navigator.of(context).pushReplacementNamed(
-                      AppRoutes.quiz,
-                      arguments: QuizRouteArgs(quiz: full),
-                    );
+                  backgroundColor: topicCardStyleFor(result.quizId).accent,
+                  onPressed: () async {
+                    try {
+                      final full =
+                          await QuizBankLoader.instance.ensureQuizLoaded(
+                        result.quizId,
+                      );
+                      if (!context.mounted) return;
+                      Navigator.of(context).pushReplacementNamed(
+                        AppRoutes.quiz,
+                        arguments: QuizRouteArgs(quiz: full),
+                      );
+                    } catch (_) {
+                      if (!context.mounted) return;
+                      ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+                        const SnackBar(
+                          content: Text('Could not load quiz. Try again.'),
+                        ),
+                      );
+                    }
                   },
                 ),
                 const SizedBox(height: 12),
@@ -102,12 +128,10 @@ class ResultsScreen extends StatelessWidget {
                         vertical: 14,
                       ),
                     ),
-                    onPressed: () =>
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                      AppRoutes.home,
-                      (_) => false,
-                    ),
-                    child: const Text('Back to Home'),
+                    onPressed: () => Navigator.of(
+                      context,
+                    ).pushNamedAndRemoveUntil(AppRoutes.home, (_) => false),
+                    child: const Text('Choose another quiz'),
                   ),
                 ),
               ],

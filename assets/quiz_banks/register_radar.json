@@ -1,7 +1,7 @@
 {
   "id": "registerRadar",
-  "title": "Register Radar",
-  "subtitle": "Politeness and setting",
+  "title": "Politeness",
+  "subtitle": "Scenario based word choice",
   "description": "Train social appropriateness: pick the expression that best fits each scenario.",
   "difficulty": "N3-N2",
   "diagnosticTags": [

@@ -1,8 +1,8 @@
 {
   "id": "verbConjugation",
   "title": "Verb Conjugation",
-  "subtitle": "Forms and patterns",
-  "description": "変換ドリル：ます・て・た・ない、辞書への復元、可能・受身・使役、意志、ば・たら、命令・禁止、よく使う敬語表現（N4〜N3中心、N2先取り）。",
+  "subtitle": "Convert between different verb forms",
+  "description": "Convert between different verb forms and restore to dictionary form. Train causative, passive, and volitional forms.",
   "difficulty": "N4-N3",
   "diagnosticTags": [
     "causative_form",

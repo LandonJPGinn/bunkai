@@ -1,5 +1,5 @@
 // Validates every JSON file in `assets/quiz_banks/` against the same rules
-// `QuizBankLoader.load()` enforces at app startup.
+// `QuizBankLoader.ensureQuizLoaded` / `validateQuizBankContent` enforce.
 //
 // Run from repo root (or anywhere — the script resolves paths from
 // `Platform.script`):
@@ -27,7 +27,9 @@ void main() {
   final dir = resolveQuizBankDir();
   final List<File> files;
   try {
-    files = listQuizBankJsonFiles(dir);
+    files = listQuizBankJsonFiles(dir)
+        .where((f) => _jsonBasename(f) != 'quiz_catalog.json')
+        .toList();
   } on FileSystemException catch (e) {
     stderr.writeln('ERROR: ${e.message}: ${e.path}');
     exitCode = 1;
@@ -79,6 +81,16 @@ void main() {
   stdout.writeln('');
   if (totalErrors == 0) {
     stdout.writeln('${files.length} files validated, 0 errors');
+    try {
+      _writeQuizCatalog(dir);
+      stdout.writeln(
+        'Wrote ${_catalogBasename()} from bundled banks '
+        '(metadata-only for fast home load).',
+      );
+    } on Object catch (e) {
+      stderr.writeln('ERROR writing quiz catalog: $e');
+      exitCode = 1;
+    }
   } else {
     stderr.writeln(
       '${files.length} files validated, $totalErrors '
@@ -87,6 +99,32 @@ void main() {
     );
     exitCode = 1;
   }
+}
+
+String _catalogBasename() => 'quiz_catalog.json';
+
+/// Writes `quiz_catalog.json` next to bank JSON files — derived metadata only.
+void _writeQuizCatalog(Directory dir) {
+  final quizzes = <Map<String, dynamic>>[];
+  for (final entry in kBundledQuizBankAssetPaths.entries) {
+    final relativeAssetPath = entry.value;
+    final baseName = relativeAssetPath.split('/').last;
+    final file = File('${dir.path}/$baseName');
+    final raw = file.readAsStringSync();
+    final quiz =
+        Quiz.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+    quizzes.add({
+      'id': quiz.id.name,
+      'title': quiz.title,
+      'subtitle': quiz.subtitle,
+      'description': quiz.description,
+      'difficulty': quiz.difficulty,
+      'diagnosticTags': quiz.diagnosticTags,
+    });
+  }
+  final out = File('${dir.path}/${_catalogBasename()}');
+  const encoder = JsonEncoder.withIndent('  ');
+  out.writeAsStringSync(encoder.convert({'quizzes': quizzes}));
 }
 
 String _jsonBasename(File file) {

@@ -1,11 +1,11 @@
 // Bundled quiz packs and lookups.
 //
-// Question banks live in assets/quiz_banks/*.json, loaded by [QuizBankLoader]
-// before [runApp] (see lib/main.dart).
+// PERF: Home grid uses catalog summaries ([quizSummariesForHome]); full banks load
+// on demand via [QuizBankLoader.ensureQuizLoaded] when starting or retrying a quiz.
 
 import '../models/quiz.dart';
-import '../models/quiz_id.dart';
 import '../models/quiz_pack.dart';
+import '../models/quiz_summary.dart';
 import '../services/quiz_bank_loader.dart';
 
 QuizPack coreBunkaiPack() {
@@ -15,26 +15,14 @@ QuizPack coreBunkaiPack() {
     title: 'Core BunKai Pack',
     author: 'BunKai',
     description: 'The original six diagnostic quizzes shipped with BunKai.',
-    quizzes: [
-      loader.quizFor(QuizId.particleForensics),
-      loader.quizFor(QuizId.clauseUntangler),
-      loader.quizFor(QuizId.omissionDetective),
-      loader.quizFor(QuizId.registerRadar),
-      loader.quizFor(QuizId.transitivityDuel),
-      loader.quizFor(QuizId.verbConjugation),
-    ],
+    quizzes: loader.allQuizzes(),
   );
 }
 
 List<QuizPack> allQuizPacks() => [coreBunkaiPack()];
 
-List<Quiz> allQuizzes() => [
-      for (final pack in allQuizPacks()) ...pack.quizzes,
-    ];
-
-Quiz? quizById(QuizId id) {
-  for (final q in allQuizzes()) {
-    if (q.id == id) return q;
-  }
-  return null;
+/// Metadata rows for [HomeScreen] — awaits catalog asset only (small JSON).
+Future<List<QuizSummary>> quizSummariesForHome() async {
+  await QuizBankLoader.instance.ensureCatalogLoaded();
+  return QuizBankLoader.instance.catalogSummaries;
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../app/bunkai_feedback_theme.dart';
 import '../services/furigana_inline.dart';
+import 'correct_answer_celebration.dart';
 import 'japanese_text_lookup.dart';
 
 class AnswerChoiceCard extends StatelessWidget {
@@ -13,6 +14,7 @@ class AnswerChoiceCard extends StatelessWidget {
     this.locked = false,
     this.isCorrectChoice = false,
     this.showOutcome = false,
+    this.celebrate = false,
     this.subtitle,
     this.choiceIndex,
     this.choiceCount,
@@ -25,6 +27,9 @@ class AnswerChoiceCard extends StatelessWidget {
   final bool locked;
   final bool isCorrectChoice;
   final bool showOutcome;
+
+  /// Success celebration (selected correct submit only).
+  final bool celebrate;
 
   /// Shown under [label] after submit when non-null (e.g. register tags).
   final String? subtitle;
@@ -41,13 +46,14 @@ class AnswerChoiceCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final feedback = context.bunkaiFeedback;
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
 
     Color borderColor = scheme.outlineVariant.withValues(alpha: 0.45);
     Color fillColor = scheme.surfaceContainerHighest;
     double borderWidth = 1.2;
     Color? textColor;
 
-    if (showOutcome) {
+    if (showOutcome && !celebrate) {
       if (isCorrectChoice) {
         borderColor = feedback.correct.withValues(alpha: 0.75);
         fillColor = Color.alphaBlend(
@@ -68,9 +74,13 @@ class AnswerChoiceCard extends StatelessWidget {
         textColor = scheme.onSurfaceVariant.withValues(alpha: 0.65);
         borderWidth = 1;
       }
-    } else if (selected) {
+    } else if (selected && !celebrate) {
       borderColor = scheme.primary.withValues(alpha: 0.7);
       fillColor = scheme.primary.withValues(alpha: 0.12);
+    }
+
+    if (celebrate) {
+      textColor = scheme.onSurface;
     }
 
     final int? idx = choiceIndex;
@@ -92,6 +102,75 @@ class AnswerChoiceCard extends StatelessWidget {
         ? '${a11y(label)}. ${a11y(subtitle!)}'
         : a11y(label);
 
+    final leading = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        JapaneseTextLookup(
+          text: label,
+          showFurigana: showFurigana,
+          includeSemantics: false,
+          style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                height: 1.35,
+                color: textColor ?? scheme.onSurface,
+              ),
+        ),
+        if (showSubtitle) ...[
+          const SizedBox(height: 6),
+          JapaneseTextLookup(
+            text: subtitle!,
+            showFurigana: showFurigana,
+            includeSemantics: false,
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: textColor ?? scheme.onSurfaceVariant,
+                  height: 1.35,
+                ),
+          ),
+        ],
+      ],
+    );
+
+    final Widget body = celebrate
+        ? CorrectAnswerCelebrationFrame(
+            reduceMotion: reduceMotion,
+            feedback: feedback,
+            scheme: scheme,
+            onTap: locked ? null : onTap,
+            leading: leading,
+          )
+        : AnimatedContainer(
+            duration: _kAnimDuration,
+            curve: _kAnimCurve,
+            decoration: BoxDecoration(
+              color: fillColor,
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(color: borderColor, width: borderWidth),
+            ),
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: locked ? null : onTap,
+                borderRadius: BorderRadius.circular(16),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: AnimatedDefaultTextStyle(
+                      duration: _kAnimDuration,
+                      curve: _kAnimCurve,
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                            height: 1.35,
+                            color: textColor ?? scheme.onSurface,
+                          ),
+                      child: leading,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          );
+
     return Semantics(
       button: true,
       enabled: !locked,
@@ -99,68 +178,7 @@ class AnswerChoiceCard extends StatelessWidget {
       label: semanticsLabel,
       hint: hint,
       child: ExcludeSemantics(
-        child: AnimatedContainer(
-          duration: _kAnimDuration,
-          curve: _kAnimCurve,
-          decoration: BoxDecoration(
-            color: fillColor,
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: borderColor, width: borderWidth),
-          ),
-          child: Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: locked ? null : onTap,
-              borderRadius: BorderRadius.circular(16),
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: AnimatedDefaultTextStyle(
-                    duration: _kAnimDuration,
-                    curve: _kAnimCurve,
-                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                          height: 1.35,
-                          color: textColor ?? scheme.onSurface,
-                        ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        JapaneseTextLookup(
-                          text: label,
-                          showFurigana: showFurigana,
-                          includeSemantics: false,
-                          style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                height: 1.35,
-                                color: textColor ?? scheme.onSurface,
-                              ),
-                        ),
-                        if (showSubtitle) ...[
-                          const SizedBox(height: 6),
-                          JapaneseTextLookup(
-                            text: subtitle!,
-                            showFurigana: showFurigana,
-                            includeSemantics: false,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodySmall
-                                ?.copyWith(
-                                  color:
-                                      textColor ?? scheme.onSurfaceVariant,
-                                  height: 1.35,
-                                ),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ),
+        child: body,
       ),
     );
   }

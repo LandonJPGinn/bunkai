@@ -1,5 +1,9 @@
-import 'package:flutter/material.dart';
+import 'dart:math' as math;
 
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../app/bunkai_tokens.dart';
 import 'japanese_text_lookup.dart';
 
 /// Prompt, Japanese line, and optional dialogue/context line for one question.
@@ -10,6 +14,7 @@ class QuizPromptCard extends StatelessWidget {
     required this.japanese,
     this.contextLine,
     required this.showFurigana,
+    this.watermarkKanji,
   });
 
   final String prompt;
@@ -17,54 +22,87 @@ class QuizPromptCard extends StatelessWidget {
   final String? contextLine;
   final bool showFurigana;
 
+  /// Faint decorative glyph (topic); keep behind copy.
+  final String? watermarkKanji;
+
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
+    final t = context.bunkaiTokens;
+    final wm = watermarkKanji?.trim();
 
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: scheme.surfaceContainerHigh.withValues(alpha: 0.65),
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: scheme.outlineVariant.withValues(alpha: 0.45),
-        ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            JapaneseTextLookup(
-              text: prompt,
-              showFurigana: showFurigana,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(t.radiusMd),
+      child: Stack(
+        clipBehavior: Clip.hardEdge,
+        children: [
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                color: t.surface1,
+                borderRadius: BorderRadius.circular(t.radiusMd),
+                border: Border.all(color: t.borderSoft),
+              ),
+            ),
+          ),
+          if (wm != null && wm.isNotEmpty)
+            Positioned(
+              right: -16,
+              bottom: -28,
+              child: IgnorePointer(
+                child: Transform.rotate(
+                  angle: -8 * math.pi / 180,
+                  child: Text(
+                    wm,
+                    style: GoogleFonts.notoSansJp(
+                      fontSize: 132,
+                      fontWeight: FontWeight.w900,
+                      height: 1,
+                      color: Colors.white.withValues(alpha: 0.045),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                JapaneseTextLookup(
+                  text: prompt,
+                  showFurigana: showFurigana,
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     height: 1.45,
                     fontWeight: FontWeight.w500,
+                    color: t.textStrong,
                   ),
-            ),
-            if (japanese != prompt) ...[
-              const SizedBox(height: 10),
-              JapaneseTextLookup(
-                text: japanese,
-                showFurigana: showFurigana,
-                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                ),
+                if (japanese != prompt) ...[
+                  const SizedBox(height: 10),
+                  JapaneseTextLookup(
+                    text: japanese,
+                    showFurigana: showFurigana,
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       height: 1.45,
+                      color: t.textMain,
                     ),
-              ),
-            ],
-            if (contextLine != null) ...[
-              const SizedBox(height: 8),
-              JapaneseTextLookup(
-                text: contextLine!,
-                showFurigana: showFurigana,
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: scheme.onSurfaceVariant,
+                  ),
+                ],
+                if (contextLine != null) ...[
+                  const SizedBox(height: 8),
+                  JapaneseTextLookup(
+                    text: contextLine!,
+                    showFurigana: showFurigana,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: t.textMuted,
                       height: 1.4,
                     ),
-              ),
-            ],
-          ],
-        ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

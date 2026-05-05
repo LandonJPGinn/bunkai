@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../app/bunkai_feedback_theme.dart';
+
 import '../app/app_router.dart';
 import '../app/breakpoints.dart';
+import '../app/bunkai_tokens.dart';
+import '../data/topic_card_style.dart';
 import '../models/quiz.dart';
 import '../services/quiz_engine.dart';
 import '../widgets/app_shell.dart';
@@ -45,6 +49,17 @@ class _QuizScreenState extends State<QuizScreen> {
   void dispose() {
     _quizKeysFocus.dispose();
     super.dispose();
+  }
+
+  void _commitAnswer(QuizEngine engine) {
+    setState(() => engine.lockAnswer());
+  }
+
+  /// Stable tear-off for [QuizAnswerChoices] — avoids new closures each rebuild.
+  void _onChoiceSelected(String choiceId) {
+    final engine = _engine;
+    if (engine == null || engine.isLocked) return;
+    setState(() => engine.selectAnswer(choiceId));
   }
 
   void _goResults() {
@@ -110,7 +125,7 @@ class _QuizScreenState extends State<QuizScreen> {
       if (logical == LogicalKeyboardKey.enter ||
           logical == LogicalKeyboardKey.numpadEnter) {
         if (engine.selectedAnswerId != null) {
-          setState(engine.lockAnswer);
+          _commitAnswer(engine);
           _refocusKeys();
           return KeyEventResult.handled;
         }
@@ -138,6 +153,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
     if (quiz == null || engine == null) {
       return AppShell(
+        headerMode: AppShellHeaderMode.compact,
         title: 'Quiz',
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -168,7 +184,7 @@ class _QuizScreenState extends State<QuizScreen> {
       primaryAction = selected == null
           ? null
           : () {
-              setState(engine.lockAnswer);
+              _commitAnswer(engine);
               _refocusKeys();
             };
     } else if (engine.isLastQuestion) {
@@ -197,11 +213,15 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     }
 
-    final narrow =
-        LayoutBreakpoints.isNarrowWidth(MediaQuery.sizeOf(context).width);
+    final narrow = LayoutBreakpoints.isNarrowWidth(
+      MediaQuery.sizeOf(context).width,
+    );
     final horizontalPadding = narrow ? 16.0 : 20.0;
+    final topicStyle = topicCardStyleFor(quiz.id);
+    final tokens = context.bunkaiTokens;
 
     return AppShell(
+      headerMode: AppShellHeaderMode.compact,
       title: quiz.title,
       leading: IconButton(
         icon: const Icon(Icons.close),
@@ -221,7 +241,12 @@ class _QuizScreenState extends State<QuizScreen> {
         autofocus: true,
         onKeyEvent: _onQuizKeyEvent,
         child: Padding(
-          padding: EdgeInsets.fromLTRB(horizontalPadding, 8, horizontalPadding, 16),
+          padding: EdgeInsets.fromLTRB(
+            horizontalPadding,
+            8,
+            horizontalPadding,
+            16,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -231,87 +256,174 @@ class _QuizScreenState extends State<QuizScreen> {
                 moduleLabel: quiz.title,
                 scoreCorrect: engine.lockedCorrectCount,
                 scoreAnswered: engine.lockedAnsweredCount,
+                accent: topicStyle.accent,
               ),
-              const SizedBox(height: 18),
+              const SizedBox(height: 6),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    foregroundColor: tokens.textMuted,
+                    padding: EdgeInsets.zero,
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  onPressed: () => Navigator.of(context).pop(),
+                  child: const Text('Back to quizzes'),
+                ),
+              ),
+              const SizedBox(height: 12),
               Expanded(
                 child: LayoutBuilder(
                   builder: (context, constraints) {
-                    return SingleChildScrollView(
-                      child: Align(
-                        alignment: Alignment.topCenter,
-                        child: ConstrainedBox(
-                          constraints: BoxConstraints(
-                            maxWidth: 720,
-                            minHeight: constraints.maxHeight,
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(bottom: 8),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                QuizPromptCard(
-                                  prompt: q.prompt,
-                                  japanese: q.japanese,
-                                  contextLine: q.context,
-                                  showFurigana: _showFurigana,
-                                ),
-                                const SizedBox(height: 22),
-                                QuizAnswerChoices(
-                                  choices: q.choices,
-                                  correctAnswerId: q.correctAnswerId,
-                                  selectedAnswerId: selected,
-                                  locked: locked,
-                                  showOutcome: showOutcome,
-                                  showFurigana: _showFurigana,
-                                  onChoiceSelected: (id) => setState(
-                                    () => engine.selectAnswer(id),
-                                  ),
-                                ),
-                                AnimatedSwitcher(
-                                  duration: const Duration(milliseconds: 260),
-                                  switchInCurve: Curves.easeOutCubic,
-                                  switchOutCurve: Curves.easeInCubic,
-                                  transitionBuilder: (child, animation) {
-                                    return FadeTransition(
-                                      opacity: animation,
-                                      child: SlideTransition(
-                                        position: Tween<Offset>(
-                                          begin: const Offset(0, 0.035),
-                                          end: Offset.zero,
-                                        ).animate(
-                                          CurvedAnimation(
-                                            parent: animation,
-                                            curve: Curves.easeOutCubic,
-                                          ),
+                    return Align(
+                      alignment: Alignment.topCenter,
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxWidth: 720,
+                          maxHeight: constraints.maxHeight,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Expanded(
+                                flex: 42,
+                                child: LayoutBuilder(
+                                  builder: (context, promptConstraints) {
+                                    return SingleChildScrollView(
+                                      clipBehavior: Clip.none,
+                                      child: ConstrainedBox(
+                                        constraints: BoxConstraints(
+                                          minHeight:
+                                              promptConstraints.maxHeight,
                                         ),
-                                        child: child,
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.stretch,
+                                          children: [
+                                            QuizPromptCard(
+                                              prompt: q.prompt,
+                                              japanese: q.japanese,
+                                              contextLine: q.context,
+                                              showFurigana: _showFurigana,
+                                              watermarkKanji: topicStyle.kanji,
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     );
                                   },
-                                  child: locked
-                                      ? Padding(
-                                          key: ValueKey<int>(
-                                            engine.currentIndex,
-                                          ),
-                                          padding:
-                                              const EdgeInsets.only(top: 4),
-                                          child: QuizLockedFeedbackContent(
-                                            question: q,
-                                            wrongChoiceLabel:
-                                                wrongChoiceLabel,
-                                            wasCorrect: wasCorrect,
-                                            showFurigana: _showFurigana,
-                                          ),
-                                        )
-                                      : const SizedBox(
-                                          key: ValueKey<String>(
-                                            'no-explanation',
-                                          ),
-                                          height: 0,
-                                        ),
                                 ),
-                              ],
-                            ),
+                              ),
+                              const SizedBox(height: 22),
+                              Expanded(
+                                flex: 58,
+                                child: LayoutBuilder(
+                                  builder: (context, answerConstraints) {
+                                    return SingleChildScrollView(
+                                      clipBehavior: Clip.none,
+                                      child: ConstrainedBox(
+                                        constraints: BoxConstraints(
+                                          minHeight:
+                                              answerConstraints.maxHeight,
+                                        ),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.stretch,
+                                          children: [
+                                            QuizAnswerChoices(
+                                              choices: q.choices,
+                                              correctAnswerId:
+                                                  q.correctAnswerId,
+                                              selectedAnswerId: selected,
+                                              locked: locked,
+                                              showOutcome: showOutcome,
+                                              lastSubmittedCorrect:
+                                                  engine.lastSubmittedCorrect,
+                                              showFurigana: _showFurigana,
+                                              onChoiceSelected:
+                                                  _onChoiceSelected,
+                                            ),
+                                            if (locked) ...[
+                                              const SizedBox(height: 12),
+                                              _QuizFeedbackLiveBanner(
+                                                wasCorrect: wasCorrect,
+                                              ),
+                                            ],
+                                            AnimatedSwitcher(
+                                              duration: const Duration(
+                                                milliseconds: 260,
+                                              ),
+                                              switchInCurve:
+                                                  Curves.easeOutCubic,
+                                              switchOutCurve:
+                                                  Curves.easeInCubic,
+                                              transitionBuilder:
+                                                  (child, animation) {
+                                                    return FadeTransition(
+                                                      opacity: animation,
+                                                      child: SlideTransition(
+                                                        position:
+                                                            Tween<Offset>(
+                                                              begin:
+                                                                  const Offset(
+                                                                    0,
+                                                                    0.035,
+                                                                  ),
+                                                              end: Offset.zero,
+                                                            ).animate(
+                                                              CurvedAnimation(
+                                                                parent:
+                                                                    animation,
+                                                                curve: Curves
+                                                                    .easeOutCubic,
+                                                              ),
+                                                            ),
+                                                        child: child,
+                                                      ),
+                                                    );
+                                                  },
+                                              child: locked
+                                                  ? Padding(
+                                                      key: ValueKey<int>(
+                                                        engine.currentIndex,
+                                                      ),
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                            top: 4,
+                                                          ),
+                                                      child:
+                                                          QuizLockedFeedbackContent(
+                                                            question: q,
+                                                            wrongChoiceLabel:
+                                                                wrongChoiceLabel,
+                                                            wasCorrect:
+                                                                wasCorrect,
+                                                            showFurigana:
+                                                                _showFurigana,
+                                                          ),
+                                                    )
+                                                  : const SizedBox(
+                                                      key: ValueKey<String>(
+                                                        'no-explanation',
+                                                      ),
+                                                      height: 0,
+                                                    ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -327,6 +439,9 @@ class _QuizScreenState extends State<QuizScreen> {
                   child: PrimaryButton(
                     label: primaryLabel,
                     onPressed: primaryAction,
+                    backgroundColor: primaryAction != null
+                        ? topicStyle.accent
+                        : null,
                   ),
                 ),
               ),
@@ -335,5 +450,73 @@ class _QuizScreenState extends State<QuizScreen> {
         ),
       ),
     );
+  }
+}
+
+/// Compact result copy announced after submit ([Semantics.liveRegion]).
+class _QuizFeedbackLiveBanner extends StatelessWidget {
+  const _QuizFeedbackLiveBanner({required this.wasCorrect});
+
+  final bool? wasCorrect;
+
+  @override
+  Widget build(BuildContext context) {
+    final feedback = context.bunkaiFeedback;
+    final scheme = Theme.of(context).colorScheme;
+    final textTheme = Theme.of(context).textTheme;
+
+    final Widget body;
+    if (wasCorrect == true) {
+      body = Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.check_circle_outline, size: 20, color: feedback.correct),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              'Correct',
+              style: textTheme.titleSmall?.copyWith(
+                color: feedback.correct,
+                fontWeight: FontWeight.w800,
+                letterSpacing: 0.02,
+              ),
+            ),
+          ),
+        ],
+      );
+    } else {
+      body = Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.cancel_outlined, size: 20, color: feedback.incorrect),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Incorrect',
+                  style: textTheme.titleSmall?.copyWith(
+                    color: feedback.incorrect,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.02,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  'The correct answer is highlighted below.',
+                  style: textTheme.bodySmall?.copyWith(
+                    color: scheme.onSurfaceVariant,
+                    height: 1.35,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      );
+    }
+
+    return Semantics(container: true, liveRegion: true, child: body);
   }
 }

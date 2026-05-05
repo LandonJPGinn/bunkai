@@ -1,0 +1,103 @@
+{
+  "quizzes": [
+    {
+      "id": "particleForensics",
+      "title": "Particles",
+      "subtitle": "Choose the correct particle",
+      "description": "N4–N3 practice for choosing the correct particle for the sentence.",
+      "difficulty": "N4-N3",
+      "diagnosticTags": [
+        "dialogue_context",
+        "ni_de",
+        "noun_modification",
+        "particle_choice",
+        "potential_form",
+        "topic_contrast",
+        "wa_ga",
+        "wo_ga"
+      ]
+    },
+    {
+      "id": "clauseUntangler",
+      "title": "Sentence Structure",
+      "subtitle": "Choose the correct modifier",
+      "description": "Choose the correct modifier for the noun.",
+      "difficulty": "N3-N2",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification",
+        "relative_clause",
+        "sentence_parsing"
+      ]
+    },
+    {
+      "id": "omissionDetective",
+      "title": "What's Missing?",
+      "subtitle": "Dialogue context and implied subjects",
+      "description": "Short dialogue to infer omitted subjects, objects, or roles.",
+      "difficulty": "N4-N3",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication",
+        "omitted_object",
+        "omitted_recipient",
+        "omitted_subject"
+      ]
+    },
+    {
+      "id": "registerRadar",
+      "title": "Politeness",
+      "subtitle": "Scenario based word choice",
+      "description": "Train social appropriateness: pick the expression that best fits each scenario.",
+      "difficulty": "N3-N2",
+      "diagnosticTags": [
+        "casual_speech",
+        "directness",
+        "keigo",
+        "politeness",
+        "register"
+      ]
+    },
+    {
+      "id": "transitivityDuel",
+      "title": "Transitives",
+      "subtitle": "Choose the most natural sentence",
+      "description": "N4–N3 practice: choose the most natural Japanese sentence for each situation. Train subject-verb agreement and intention with common verb pairs.",
+      "difficulty": "N4-N3",
+      "diagnosticTags": [
+        "intention",
+        "jidoushi",
+        "tadoushi",
+        "transitivity",
+        "wo_ga"
+      ]
+    },
+    {
+      "id": "verbConjugation",
+      "title": "Verb Conjugation",
+      "subtitle": "Convert between different verb forms",
+      "description": "Convert between different verb forms and restore to dictionary form. Train causative, passive, and volitional forms.",
+      "difficulty": "N4-N3",
+      "diagnosticTags": [
+        "causative_form",
+        "conditional_ba_form",
+        "dictionary_form",
+        "godan",
+        "ichidan",
+        "imperative_form",
+        "irregular",
+        "keigo",
+        "masu_form",
+        "nai_form",
+        "passive_form",
+        "past_form",
+        "potential_form",
+        "prohibitive_form",
+        "tara_form",
+        "te_form",
+        "verb_conjugation",
+        "volitional_form"
+      ]
+    }
+  ]
+}

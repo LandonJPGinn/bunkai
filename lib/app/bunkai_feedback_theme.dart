@@ -19,13 +19,14 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   final Color warning;
   final Color warningContainer;
 
+  /// Spec: success hsl(146 68% 52%), danger hsl(350 78% 62%), warning hsl(40 92% 58%).
   static const BunkaiFeedbackColors dark = BunkaiFeedbackColors(
-    correct: Color(0xFF5E9B7E),
-    correctContainer: Color(0x1A5E9B7E),
-    incorrect: Color(0xFF7A2F36),
-    incorrectContainer: Color(0x1A7A2F36),
-    warning: Color(0xFFD4A84B),
-    warningContainer: Color(0x26D4A84B),
+    correct: Color(0xFF3DCC7A),
+    correctContainer: Color(0x283DCC7A),
+    incorrect: Color(0xFFE85D7A),
+    incorrectContainer: Color(0x28E85D7A),
+    warning: Color(0xFFF5C84A),
+    warningContainer: Color(0x30F5C84A),
   );
 
   @override
@@ -48,15 +49,30 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   }
 
   @override
-  BunkaiFeedbackColors lerp(ThemeExtension<BunkaiFeedbackColors>? other, double t) {
+  BunkaiFeedbackColors lerp(
+    ThemeExtension<BunkaiFeedbackColors>? other,
+    double t,
+  ) {
     if (other is! BunkaiFeedbackColors) return this;
     return BunkaiFeedbackColors(
       correct: Color.lerp(correct, other.correct, t)!,
-      correctContainer: Color.lerp(correctContainer, other.correctContainer, t)!,
+      correctContainer: Color.lerp(
+        correctContainer,
+        other.correctContainer,
+        t,
+      )!,
       incorrect: Color.lerp(incorrect, other.incorrect, t)!,
-      incorrectContainer: Color.lerp(incorrectContainer, other.incorrectContainer, t)!,
+      incorrectContainer: Color.lerp(
+        incorrectContainer,
+        other.incorrectContainer,
+        t,
+      )!,
       warning: Color.lerp(warning, other.warning, t)!,
-      warningContainer: Color.lerp(warningContainer, other.warningContainer, t)!,
+      warningContainer: Color.lerp(
+        warningContainer,
+        other.warningContainer,
+        t,
+      )!,
     );
   }
 }

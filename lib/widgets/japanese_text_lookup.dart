@@ -8,6 +8,10 @@ import 'dictionary_popover.dart';
 
 /// Renders Japanese with optional `kanji[よみ]` furigana and tap-to-lookup
 /// dictionary tokens (local longest-match). Quiz data needs no word markup.
+///
+/// PERF: Waits on [JapaneseDictionaryService.ensureLoaded] without blocking
+/// `runApp`; until loaded, plain segments render as uninterrupted text (no
+/// token taps) so UI stays responsive.
 class JapaneseTextLookup extends StatelessWidget {
   const JapaneseTextLookup({
     super.key,
@@ -35,97 +39,135 @@ class JapaneseTextLookup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dict = dictionary ?? JapaneseDictionaryService.instance;
-    final tokenizer = dict.tokenizer;
-    final theme = Theme.of(context);
-    final baseStyle = style ?? theme.textTheme.bodyLarge;
-    final readingStyle = baseStyle?.copyWith(
-      fontSize: (baseStyle.fontSize ?? 16) * 0.62,
-      height: 1.05,
-      color: baseStyle.color?.withValues(alpha: 0.88),
-    );
 
-    final parts = parseFuriganaInline(text);
-    final label = semanticsFuriganaLabel(parts, showFurigana: showFurigana);
-    final children = <InlineSpan>[];
+    return FutureBuilder<void>(
+      future: dict.ensureLoaded(),
+      builder: (context, snapshot) {
+        final dictReady =
+            snapshot.connectionState == ConnectionState.done && !snapshot.hasError;
 
-    for (final p in parts) {
-      switch (p) {
-        case PlainPart(text: final plain):
-          children.addAll(
-            _lookupSpansForPlain(
-              context,
-              plain,
-              baseStyle,
-              tokenizer,
-              dict,
-            ),
-          );
-        case RubyPart(:final base, :final reading):
-          if (showFurigana && reading.isNotEmpty) {
-            children.add(
-              WidgetSpan(
-                alignment: PlaceholderAlignment.bottom,
-                child: Padding(
-                  padding: const EdgeInsets.only(right: 1),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        reading,
-                        style: readingStyle,
-                        textAlign: TextAlign.center,
-                      ),
-                      Text.rich(
-                        TextSpan(
-                          children: _lookupSpansForPlain(
-                            context,
-                            base,
-                            baseStyle,
-                            tokenizer,
-                            dict,
-                          ),
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
-                  ),
+        final theme = Theme.of(context);
+        final baseStyle = style ?? theme.textTheme.bodyLarge;
+        final readingStyle = baseStyle?.copyWith(
+          fontSize: (baseStyle.fontSize ?? 16) * 0.62,
+          height: 1.05,
+          color: baseStyle.color?.withValues(alpha: 0.88),
+        );
+
+        final tokenizer = dictReady ? dict.tokenizer : null;
+
+        final parts = parseFuriganaInline(text);
+        final label =
+            semanticsFuriganaLabel(parts, showFurigana: showFurigana);
+        final children = <InlineSpan>[];
+
+        for (final p in parts) {
+          switch (p) {
+            case PlainPart(text: final plain):
+              children.addAll(
+                _lookupSpansForPlain(
+                  context,
+                  plain,
+                  baseStyle,
+                  readingStyle,
+                  showFurigana,
+                  tokenizer,
+                  dict,
+                  dictReady,
                 ),
-              ),
-            );
-          } else {
-            children.addAll(
-              _lookupSpansForPlain(
-                context,
-                base,
-                baseStyle,
-                tokenizer,
-                dict,
-              ),
-            );
+              );
+            case RubyPart(:final base, :final reading):
+              if (showFurigana && reading.isNotEmpty) {
+                children.add(
+                  WidgetSpan(
+                    alignment: PlaceholderAlignment.bottom,
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 1),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            reading,
+                            style: readingStyle,
+                            textAlign: TextAlign.center,
+                          ),
+                          Text.rich(
+                            TextSpan(
+                              children: _lookupSpansForPlain(
+                                context,
+                                base,
+                                baseStyle,
+                                readingStyle,
+                                showFurigana,
+                                tokenizer,
+                                dict,
+                                dictReady,
+                                applyLexiconFurigana: false,
+                              ),
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              } else {
+                children.addAll(
+                  _lookupSpansForPlain(
+                    context,
+                    base,
+                    baseStyle,
+                    readingStyle,
+                    showFurigana,
+                    tokenizer,
+                    dict,
+                    dictReady,
+                  ),
+                );
+              }
           }
-      }
-    }
+        }
 
-    final rich = Text.rich(
-      TextSpan(children: children),
-      textAlign: textAlign,
-      maxLines: maxLines,
-      overflow: maxLines != null ? TextOverflow.ellipsis : TextOverflow.clip,
+        final rich = Text.rich(
+          TextSpan(children: children),
+          textAlign: textAlign,
+          maxLines: maxLines,
+          overflow:
+              maxLines != null ? TextOverflow.ellipsis : TextOverflow.clip,
+        );
+
+        if (!includeSemantics) return rich;
+        return Semantics(label: label, child: rich);
+      },
     );
-
-    if (!includeSemantics) return rich;
-    return Semantics(label: label, child: rich);
   }
+}
+
+bool _surfaceHasKanji(String s) {
+  for (final r in s.runes) {
+    if (isCjkIdeographRune(r)) return true;
+  }
+  return false;
 }
 
 List<InlineSpan> _lookupSpansForPlain(
   BuildContext context,
   String s,
   TextStyle? baseStyle,
-  JapaneseTokenizer tokenizer,
+  TextStyle? readingStyle,
+  bool showFurigana,
+  JapaneseTokenizer? tokenizer,
   JapaneseDictionaryService dict,
-) {
+  bool dictReady, {
+  bool applyLexiconFurigana = true,
+}) {
+  if (!dictReady || tokenizer == null) {
+    if (s.isEmpty) return const [];
+    return [TextSpan(text: s, style: baseStyle)];
+  }
+
   final segs = tokenizer.tokenize(s);
   final out = <InlineSpan>[];
   for (final seg in segs) {
@@ -135,20 +177,57 @@ List<InlineSpan> _lookupSpansForPlain(
           out.add(TextSpan(text: text, style: baseStyle));
         }
       case DictSegment(:final surface):
-        out.add(
-          WidgetSpan(
-            alignment: PlaceholderAlignment.baseline,
-            baseline: TextBaseline.alphabetic,
-            child: _LookupToken(
-              label: surface,
-              style: baseStyle,
-              onOpen: () => DictionaryPopover.show(
-                context,
-                entries: dict.lookupSurface(surface),
+        final entries = dict.lookupSurface(surface);
+        final dictReading =
+            entries.isNotEmpty ? entries.first.reading.trim() : '';
+        final showDictRuby = applyLexiconFurigana &&
+            showFurigana &&
+            dictReading.isNotEmpty &&
+            _surfaceHasKanji(surface);
+        if (showDictRuby) {
+          out.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.bottom,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 1),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      dictReading,
+                      style: readingStyle,
+                      textAlign: TextAlign.center,
+                    ),
+                    _LookupToken(
+                      label: surface,
+                      style: baseStyle,
+                      onOpen: () => DictionaryPopover.show(
+                        context,
+                        entries: entries,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        );
+          );
+        } else {
+          out.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.baseline,
+              baseline: TextBaseline.alphabetic,
+              child: _LookupToken(
+                label: surface,
+                style: baseStyle,
+                onOpen: () => DictionaryPopover.show(
+                  context,
+                  entries: entries,
+                ),
+              ),
+            ),
+          );
+        }
       case UnknownKanjiSegment(:final text):
         out.add(
           WidgetSpan(

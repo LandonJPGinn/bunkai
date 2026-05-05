@@ -11,6 +11,7 @@ class QuizAnswerChoices extends StatelessWidget {
     required this.selectedAnswerId,
     required this.locked,
     required this.showOutcome,
+    this.lastSubmittedCorrect,
     required this.onChoiceSelected,
     required this.showFurigana,
   });
@@ -20,6 +21,10 @@ class QuizAnswerChoices extends StatelessWidget {
   final String? selectedAnswerId;
   final bool locked;
   final bool showOutcome;
+
+  /// When [showOutcome] is true, whether the latest submit was correct (drives celebration FX).
+  final bool? lastSubmittedCorrect;
+
   final ValueChanged<String> onChoiceSelected;
   final bool showFurigana;
 
@@ -38,6 +43,11 @@ class QuizAnswerChoices extends StatelessWidget {
               locked: locked,
               isCorrectChoice: choices[i].id == correctAnswerId,
               showOutcome: showOutcome,
+              celebrate: showOutcome &&
+                  locked &&
+                  selectedAnswerId == choices[i].id &&
+                  choices[i].id == correctAnswerId &&
+                  lastSubmittedCorrect == true,
               subtitle: locked ? choices[i].explanation : null,
               choiceIndex: i,
               choiceCount: n,

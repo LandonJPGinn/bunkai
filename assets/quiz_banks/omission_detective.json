@@ -1,8 +1,8 @@
 {
   "id": "omissionDetective",
-  "title": "Omission Detective",
-  "subtitle": "会話に隠れた主語・目的語・照応",
-  "description": "N4〜N3向け。短い対話から省略された成分や話者・聞き手の役割を推論する。",
+  "title": "What's Missing?",
+  "subtitle": "Dialogue context and implied subjects",
+  "description": "Short dialogue to infer omitted subjects, objects, or roles.",
   "difficulty": "N4-N3",
   "diagnosticTags": [
     "dialogue_context",

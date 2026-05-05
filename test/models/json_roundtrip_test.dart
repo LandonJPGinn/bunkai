@@ -6,7 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    await QuizBankLoader.instance.load();
+    await QuizBankLoader.instance.loadAllForTests();
   });
 
   tearDownAll(() {

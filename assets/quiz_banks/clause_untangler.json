@@ -1,8 +1,8 @@
 {
   "id": "clauseUntangler",
-  "title": "Clause Untangler",
-  "subtitle": "修飾のかかり（N4〜N3中心、後半N2読解へ）",
-  "description": "名詞を修飾する節や連体修飾がどの名詞にかかるかを選ぶ練習です。",
+  "title": "Sentence Structure",
+  "subtitle": "Choose the correct modifier",
+  "description": "Choose the correct modifier for the noun.",
   "difficulty": "N3-N2",
   "diagnosticTags": [
     "modifier_scope",

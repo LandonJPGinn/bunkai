@@ -21,7 +21,80 @@ void main() {
         ),
       ),
     );
+    await tester.pumpAndSettle();
     expect(find.text('本'), findsOneWidget);
+    expect(find.text('を'), findsOneWidget);
+  });
+
+  testWidgets('inline ruby does not duplicate lexicon reading above base',
+      (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: JapaneseTextLookup(
+            text: '本[ほん]を',
+            showFurigana: true,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('ほん'), findsOneWidget);
+    expect(find.text('本'), findsOneWidget);
+    expect(find.text('を'), findsOneWidget);
+  });
+
+  testWidgets('shows lexicon reading above kanji dictionary token when furigana on',
+      (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: JapaneseTextLookup(
+            text: '食べる',
+            showFurigana: true,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('たべる'), findsOneWidget);
+    expect(find.text('食べる'), findsOneWidget);
+  });
+
+  testWidgets('hides lexicon reading for dictionary token when furigana off',
+      (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: JapaneseTextLookup(
+            text: '食べる',
+            showFurigana: false,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('たべる'), findsNothing);
+    expect(find.text('食べる'), findsOneWidget);
+  });
+
+  testWidgets('does not stack reading above kana-only dictionary surface',
+      (tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: JapaneseTextLookup(
+            text: 'を',
+            showFurigana: true,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
     expect(find.text('を'), findsOneWidget);
   });
 
@@ -43,6 +116,7 @@ void main() {
         ),
       ),
     );
+    await tester.pumpAndSettle();
     await tester.tap(find.text('食べる'));
     await tester.pumpAndSettle();
     expect(find.textContaining('to eat'), findsOneWidget);

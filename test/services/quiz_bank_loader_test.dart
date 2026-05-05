@@ -16,8 +16,8 @@ void main() {
   });
 
   group('QuizBankLoader', () {
-    test('load parses and validates all six asset banks', () async {
-      await QuizBankLoader.instance.load();
+    test('loadAllForTests parses and validates all six asset banks', () async {
+      await QuizBankLoader.instance.loadAllForTests();
       final all = QuizBankLoader.instance.allQuizzes();
       expect(all, hasLength(6));
       expect(all.map((q) => q.id).toSet(), equals(QuizId.values.toSet()));
@@ -27,7 +27,7 @@ void main() {
     });
 
     test('quizFor returns cached quiz', () async {
-      await QuizBankLoader.instance.load();
+      await QuizBankLoader.instance.loadAllForTests();
       final a = QuizBankLoader.instance.quizFor(QuizId.particleForensics);
       final b = QuizBankLoader.instance.quizFor(QuizId.particleForensics);
       expect(identical(a, b), isTrue);

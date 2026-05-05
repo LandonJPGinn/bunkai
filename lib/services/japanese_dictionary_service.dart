@@ -7,23 +7,39 @@ import 'japanese_tokenizer.dart';
 
 /// Loads and caches `assets/dictionary/japanese_lexicon.json`.
 ///
-/// Call [load] from `main()` before UI uses lookups. Pattern matches
-/// [QuizBankLoader].
+/// PERF: Do not await in `main()` — call [ensureLoaded] from widgets or idle
+/// preload so first paint is not blocked by lexicon JSON parse.
 class JapaneseDictionaryService {
   JapaneseDictionaryService._();
 
-  static final JapaneseDictionaryService instance = JapaneseDictionaryService._();
+  static final JapaneseDictionaryService instance =
+      JapaneseDictionaryService._();
 
   static const String _assetPath = 'assets/dictionary/japanese_lexicon.json';
 
   Map<String, List<DictionaryEntry>>? _bySurface;
   JapaneseTokenizer? _tokenizer;
   bool _loaded = false;
+  Future<void>? _loadFuture;
 
   bool get isLoaded => _loaded;
 
-  /// Idempotent. Parses JSON array, groups homonyms by surface.
-  Future<void> load() async {
+  /// Idempotent; concurrent callers share one in-flight parse.
+  Future<void> ensureLoaded() async {
+    if (_loaded) return;
+    try {
+      _loadFuture ??= _performLoad();
+      await _loadFuture!;
+    } on Object {
+      _loadFuture = null;
+      rethrow;
+    }
+  }
+
+  /// Alias for [ensureLoaded].
+  Future<void> load() => ensureLoaded();
+
+  Future<void> _performLoad() async {
     if (_loaded) return;
 
     final raw = await rootBundle.loadString(_assetPath);
@@ -57,7 +73,7 @@ class JapaneseDictionaryService {
     final t = _tokenizer;
     if (t == null) {
       throw StateError(
-        'JapaneseDictionaryService.load() was not awaited before tokenizer.',
+        'JapaneseDictionaryService.ensureLoaded() was not awaited before tokenizer.',
       );
     }
     return t;
@@ -67,7 +83,7 @@ class JapaneseDictionaryService {
     final m = _bySurface;
     if (m == null) {
       throw StateError(
-        'JapaneseDictionaryService.load() was not awaited before use.',
+        'JapaneseDictionaryService.ensureLoaded() was not awaited before use.',
       );
     }
     return m;
