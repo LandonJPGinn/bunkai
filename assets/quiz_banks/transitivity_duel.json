@@ -1,0 +1,4233 @@
+{
+  "id": "transitivityDuel",
+  "title": "Transitivity Duel",
+  "subtitle": "Short scenarios, full sentences",
+  "description": "N4–N3 practice: choose the most natural Japanese sentence for each situation. Train 自動詞 vs 他動詞, が／を, and intention with common verb pairs.",
+  "difficulty": "N4-N3",
+  "diagnosticTags": [
+    "intention",
+    "jidoushi",
+    "tadoushi",
+    "transitivity",
+    "wo_ga"
+  ],
+  "questions": [
+    {
+      "id": "td_001",
+      "type": "multipleChoice",
+      "prompt": "Choose the most natural sentence. No one touched the window; a gust of wind did it.",
+      "japanese": "強い風が吹いて、窓の方から突然音がした。どうなったか説明する文として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風で窓が開いた。"
+        },
+        {
+          "id": "b",
+          "label": "風で窓を開けた。"
+        },
+        {
+          "id": "c",
+          "label": "窓が風を開いた。"
+        },
+        {
+          "id": "d",
+          "label": "窓を風が開けた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「開く」は自動詞で、変化が起きた窓に「が」が付く。「開ける」は他動詞で、開ける人や力に意図や操作が読めるので、この自然現象の説明には向かない。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "強い風が吹いて",
+        "窓の方から突然音がした",
+        "どうなったか説明する文として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_002",
+      "type": "multipleChoice",
+      "prompt": "Choose the most natural sentence. You intentionally open the shop shutter before business hours.",
+      "japanese": "店の準備で、あなたがシャッターを上げるところだ。自分の行為を言うのに自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "シャッターが開いてから客が来た。"
+        },
+        {
+          "id": "b",
+          "label": "シャッターを開けてから仕事を始めた。"
+        },
+        {
+          "id": "c",
+          "label": "シャッターが開けて仕事を始めた。"
+        },
+        {
+          "id": "d",
+          "label": "シャッターを開いて仕事を始めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が操作して開けるなら他動詞の「開ける」で、操作の対象に「を」。「開く」は自動詞で、シャッターが自分から動いたように聞こえる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "店の準備で",
+        "あなたがシャッターを上げるところだ",
+        "自分の行為を言うのに自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_003",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence that correctly uses が with the intransitive verb.",
+      "japanese": "箱の蓋の話をしている。自動詞の形として正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "蓋が開いた。"
+        },
+        {
+          "id": "b",
+          "label": "蓋を開いた。"
+        },
+        {
+          "id": "c",
+          "label": "蓋を開けた。"
+        },
+        {
+          "id": "d",
+          "label": "蓋が開けた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「開く」は自動詞なので、変化の主体「蓋」に「が」。「開ける」は他動詞で「蓋を開ける」になる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "箱の蓋の話をしている",
+        "自動詞の形として正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_004",
+      "type": "multipleChoice",
+      "prompt": "Which sentence best implies that someone (not the door) caused the opening?",
+      "japanese": "ドアの前に立っている係員について。誰かが意図的に開けたことがはっきりするのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ドアが勝手に開いた。"
+        },
+        {
+          "id": "b",
+          "label": "ドアが突然開いた。"
+        },
+        {
+          "id": "c",
+          "label": "係員がドアを開けた。"
+        },
+        {
+          "id": "d",
+          "label": "ドアがゆっくり開いた。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "操作の主体が「係員」で、対象は他動詞「開ける」に「を」。他は自動詞「開く」で、原因がドア自身や状況に見える。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ドアの前に立っている係員について",
+        "誰かが意図的に開けたことがはっきりするのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_005",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you opened the window to air out the room.",
+      "japanese": "部屋の空気を入れ替えたくて、あなたが窓を操作する場面。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "換気のために窓が開いた。"
+        },
+        {
+          "id": "b",
+          "label": "換気のために窓を開けた。"
+        },
+        {
+          "id": "c",
+          "label": "換気のために窓が開けた。"
+        },
+        {
+          "id": "d",
+          "label": "換気のために窓を開いてしまった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が意図して開けるなら他動詞「窓を開ける」。「窓が開いた」は自動詞で風などの自然変化にも使え、意図がはっきりしない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "部屋の空気を入れ替えたくて",
+        "あなたが窓を操作する場面",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_006",
+      "type": "multipleChoice",
+      "prompt": "Choose the most natural sentence. The door closed by itself (spring mechanism).",
+      "japanese": "オートドアのあとで、人は触っていない。自然に閉じたといえるのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ドアを閉まった。"
+        },
+        {
+          "id": "b",
+          "label": "ドアが閉まった。"
+        },
+        {
+          "id": "c",
+          "label": "ドアを閉めた。"
+        },
+        {
+          "id": "d",
+          "label": "ドアが閉めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「閉まる」は自動詞で、閉じる変化の主体に「が」。「閉める」は他動詞で人の操作を連想する。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "オートドアのあとで",
+        "人は触っていない",
+        "自然に閉じたといえるのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_007",
+      "type": "multipleChoice",
+      "prompt": "Choose the natural sentence. Before leaving, you shut the window.",
+      "japanese": "出かける前に、あなたが窓を手で閉じた。行為として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "窓が閉まってから出かけた。"
+        },
+        {
+          "id": "b",
+          "label": "窓を閉めてから出かけた。"
+        },
+        {
+          "id": "c",
+          "label": "窓が閉めてから出かけた。"
+        },
+        {
+          "id": "d",
+          "label": "窓を閉まってから出かけた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「閉める」は対象に「を」。「閉まる」は自動詞で、自分で閉じた感じが弱い。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "出かける前に",
+        "あなたが窓を手で閉じた",
+        "行為として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_008",
+      "type": "multipleChoice",
+      "prompt": "Which uses を correctly with the transitive verb?",
+      "japanese": "本棚について発言している。他動詞の枠として正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "扉が閉めて鍵をかけた。"
+        },
+        {
+          "id": "b",
+          "label": "扉を閉めて鍵をかけた。"
+        },
+        {
+          "id": "c",
+          "label": "扉が閉まって鍵をかけた。"
+        },
+        {
+          "id": "d",
+          "label": "扉を閉まって鍵をかけた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「閉める」は他動詞なので「扉を閉める」。「閉まる」は自動詞で「扉が閉まる」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "本棚について発言している",
+        "他動詞の枠として正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_009",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the change without naming a human agent in that clause?",
+      "japanese": "夜になって店のシャッターについて、その文だけで見て主体が「シャッター自身」の変化なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "店員がシャッターを閉めた。"
+        },
+        {
+          "id": "b",
+          "label": "シャッターが下りて閉まった。"
+        },
+        {
+          "id": "c",
+          "label": "店長が閉店のサインを出した。"
+        },
+        {
+          "id": "d",
+          "label": "客が店を出た。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「閉まる」は自動詞で、シャッターが閉じた状態変化に「が」。他は人が主語で別の行為。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "夜になって店のシャッターについて",
+        "その文だけで見て主体が",
+        "シャッター自身",
+        "の変化なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_010",
+      "type": "multipleChoice",
+      "prompt": "Choose the best fit: you gently closed the laptop after saving your work.",
+      "japanese": "仕事を保存してから、そっとノートパソコンを畳む場面。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "保存してから画面が閉まった。"
+        },
+        {
+          "id": "b",
+          "label": "保存してから画面を閉めた。"
+        },
+        {
+          "id": "c",
+          "label": "保存してから画面が閉めた。"
+        },
+        {
+          "id": "d",
+          "label": "保存してから画面を閉まった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "画面を操作して閉じるのは他動詞「閉める」。「閉まる」は自動詞で、ソフトの挙動だけを言うときには使いにくい。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "仕事を保存してから",
+        "そっとノートパソコンを畳む場面",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_011",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence where the money ends up inside the wallet (change of state, no agent named).",
+      "japanese": "さいふの口が開いていて、小銭が中に収まったあとを言う。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "小銭がさいふに入れた。"
+        },
+        {
+          "id": "b",
+          "label": "小銭がさいふに入った。"
+        },
+        {
+          "id": "c",
+          "label": "小銭をさいふが入った。"
+        },
+        {
+          "id": "d",
+          "label": "小銭をさいふに入った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「入る」は自動詞で、入ったものに「が」、行き先に「に」。「入れる」は他動詞で人が入れる場面に使う。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "さいふの口が開いていて",
+        "小銭が中に収まったあとを言う",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_012",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for putting a letter into the mailbox on purpose.",
+      "japanese": "ポストの前で、手紙を投函する。行為として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "手紙がポストに入った。"
+        },
+        {
+          "id": "b",
+          "label": "手紙をポストに入れた。"
+        },
+        {
+          "id": "c",
+          "label": "手紙がポストを入れた。"
+        },
+        {
+          "id": "d",
+          "label": "手紙をポストが入れた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が中へ入れる操作は他動詞「入れる」で、対象に「を」。「入る」は自動詞で手紙が勝手に入ったように聞こえる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ポストの前で",
+        "手紙を投函する",
+        "行為として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_013",
+      "type": "multipleChoice",
+      "prompt": "Which uses が with the intransitive verb correctly?",
+      "japanese": "会場の話。正しい枠はどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "客が会場に入れていく。"
+        },
+        {
+          "id": "b",
+          "label": "客が会場に入っていく。"
+        },
+        {
+          "id": "c",
+          "label": "客を会場に入っていく。"
+        },
+        {
+          "id": "d",
+          "label": "会場が客に入る。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「入る」は自動詞で、移動する人に「が」、到達点に「に」。「入れる」は他動詞で「客を中に入れる」が別枠。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "会場の話",
+        "正しい枠はどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_014",
+      "type": "multipleChoice",
+      "prompt": "Which sentence implies you (the speaker) caused the item to go inside?",
+      "japanese": "荷物をロッカーに収める場面。操作がはっきりするのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "荷物がロッカーに入った。"
+        },
+        {
+          "id": "b",
+          "label": "荷物をロッカーに入れた。"
+        },
+        {
+          "id": "c",
+          "label": "ロッカーが荷物に入った。"
+        },
+        {
+          "id": "d",
+          "label": "荷物がロッカーを入れた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「入れる」は人が入れる動作で「荷物を」。「入った」は自動詞で、自分で入れた感じが弱い。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "荷物をロッカーに収める場面",
+        "操作がはっきりするのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_015",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: water boiled over and got into the wrong hopper on the machine.",
+      "japanese": "うっかりで水が別の口に流れ込んでしまった。変化の描写として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "水が間違った穴に入った。"
+        },
+        {
+          "id": "b",
+          "label": "水を間違った穴に入れた。"
+        },
+        {
+          "id": "c",
+          "label": "水が間違った穴を入れた。"
+        },
+        {
+          "id": "d",
+          "label": "水を間違った穴に入った。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "意図しない流れなら、水は自動的に入るので自動詞「入る」に「が」。「入れた」は他動詞で意図的な操作を連想する。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "うっかりで水が別の口に流れ込んでしまった",
+        "変化の描写として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_016",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the train leaving the station (vehicle motion).",
+      "japanese": "ホームで電車が発車したあとを言う。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "電車が駅を出した。"
+        },
+        {
+          "id": "b",
+          "label": "電車が駅を出た。"
+        },
+        {
+          "id": "c",
+          "label": "電車を駅が出た。"
+        },
+        {
+          "id": "d",
+          "label": "電車を駅を出た。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「出る」は自動詞で、移動主体に「が」、通過点に「を」（駅を出る）。「出す」は他動詞で別の意味になる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ホームで電車が発車したあとを言う",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_017",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for taking the garbage out (you put it out for collection).",
+      "japanese": "夕方、あなたが袋を集積所へ出す。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ごみが路肩を出た。"
+        },
+        {
+          "id": "b",
+          "label": "ごみを外に出した。"
+        },
+        {
+          "id": "c",
+          "label": "ごみが外に出した。"
+        },
+        {
+          "id": "d",
+          "label": "ごみを外が出した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「出す」は他動詞で、動かす対象に「を」。「出る」は自動詞でごみが自走的に出る印象になる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "夕方",
+        "あなたが袋を集積所へ出す",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_018",
+      "type": "multipleChoice",
+      "prompt": "Which sentence correctly uses を with the transitive verb for handing out copies?",
+      "japanese": "会議で資料を配る場面。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "資料を参加者に出した。"
+        },
+        {
+          "id": "b",
+          "label": "資料が参加者に出た。"
+        },
+        {
+          "id": "c",
+          "label": "資料が参加者を出た。"
+        },
+        {
+          "id": "d",
+          "label": "資料を参加者が出た。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "配布する「出す」は他動詞で、配るものに「を」。「出る」は自動詞で資料が勝手に出るようには言いにくい。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "会議で資料を配る場面",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_019",
+      "type": "multipleChoice",
+      "prompt": "出口の描写で、「誰がドアを開けたか」を明示していないのはどれか。",
+      "japanese": "建物の出口の場面について述べた次の文のうち、操作する人を主語にしていないのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "係員がドアを開けて客を出した。"
+        },
+        {
+          "id": "b",
+          "label": "たくさんの人が外に出た。"
+        },
+        {
+          "id": "c",
+          "label": "警備員が整理させた。"
+        },
+        {
+          "id": "d",
+          "label": "主人が見送った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「出る」は自動詞で、出ていく人に「が」。他は人が操作をした文で主体が違う。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "建物の出口について",
+        "その",
+        "だけ見て人が主語にいないのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_020",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you took your wallet out of your bag at the register.",
+      "japanese": "レジで財布を取り出す。意図的な操作を言うのに自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "さいふがかばんから出た。"
+        },
+        {
+          "id": "b",
+          "label": "さいふをかばんから出した。"
+        },
+        {
+          "id": "c",
+          "label": "さいふがかばんを出した。"
+        },
+        {
+          "id": "d",
+          "label": "さいふをかばんが出した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "手で取り出すなら他動詞「出す」に「を」。「出た」は自動詞で、財布が一人で出たように聞こえる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "レジで財布を取り出す",
+        "意図的な操作を言うのに自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_021",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence where the lights went off without anyone flipping the switch (power outage).",
+      "japanese": "停電でまわりが暗くなった。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "電気を消えた。"
+        },
+        {
+          "id": "b",
+          "label": "電気が消えた。"
+        },
+        {
+          "id": "c",
+          "label": "電気を消した。"
+        },
+        {
+          "id": "d",
+          "label": "電気が消した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「消える」は自動詞で、消えたものに「が」。「消す」は他動詞で人の操作を連想する。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "停電でまわりが暗くなった",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_022",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for turning off the TV before bed on purpose.",
+      "japanese": "寝る前にリモコンでテレビの電源を切る。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "テレビが消えてから寝た。"
+        },
+        {
+          "id": "b",
+          "label": "テレビを消してから寝た。"
+        },
+        {
+          "id": "c",
+          "label": "テレビが消してから寝た。"
+        },
+        {
+          "id": "d",
+          "label": "テレビを消えてから寝た。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "操作して止めるなら他動詞「消す」で「テレビを」。「消える」は自動詞で誰が消したかははっきりしない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "寝る前にリモコンでテレビの電源を切る",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_023",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for erasing a whiteboard?",
+      "japanese": "ホワイトボードの文。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "字が板を消した。"
+        },
+        {
+          "id": "b",
+          "label": "字を板から消した。"
+        },
+        {
+          "id": "c",
+          "label": "字が板から消えた。"
+        },
+        {
+          "id": "d",
+          "label": "字を板が消した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "消し取る操作は他動詞「消す」で、消す対象に「を」。消えた描写なら自動詞「消える」に「が」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ホワイトボードの文",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_024",
+      "type": "multipleChoice",
+      "prompt": "Which sentence best suggests the stain disappeared on its own (e.g. over time)?",
+      "japanese": "しみが時間で薄くなった。無意志の変化を言うのに向くのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "しみを洗剤で消した。"
+        },
+        {
+          "id": "b",
+          "label": "しみがだんだん消えた。"
+        },
+        {
+          "id": "c",
+          "label": "洗剤がしみを消えた。"
+        },
+        {
+          "id": "d",
+          "label": "しみを自然に消えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "自然に薄くなるなら自動詞「消える」に「が」。「消した」は他動詞で行為者がいる前提になる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "しみが時間で薄くなった",
+        "無意志の変化を言うのに向くのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_025",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you deleted the wrong line in the document by mistake.",
+      "japanese": "うっかり行を消してしまった。自分の操作だったことを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "いらない行が消えた。"
+        },
+        {
+          "id": "b",
+          "label": "いらない行を消した。"
+        },
+        {
+          "id": "c",
+          "label": "いらない行が消した。"
+        },
+        {
+          "id": "d",
+          "label": "いらない行を消えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "データを操作して消すのは他動詞「消す」。「消える」は自動詞で、自分のミスだと分かりにくい。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "うっかり行を消してしまった",
+        "自分の操作だったことを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_026",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for keys slipping out of your hand and falling (no agency on purpose).",
+      "japanese": "手が滑って鍵が床へ落ちた。出来事の描写として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "かぎを床に落とした。"
+        },
+        {
+          "id": "b",
+          "label": "かぎが床に落ちた。"
+        },
+        {
+          "id": "c",
+          "label": "かぎを床に落ちた。"
+        },
+        {
+          "id": "d",
+          "label": "かぎが床を落とした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "落ちるは自動詞で、落ちたものに「が」。「落とす」は他動詞で故意や不注意で落とした操作を言う。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "手が滑って鍵が床へ落ちた",
+        "出来事の描写として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_027",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for accidentally dropping your phone (you caused it to fall).",
+      "japanese": "うっかりスマホを落としてしまった。行為を言うのに自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "スマホが落ちてしまった。"
+        },
+        {
+          "id": "b",
+          "label": "スマホを落としてしまった。"
+        },
+        {
+          "id": "c",
+          "label": "スマホが落としてしまった。"
+        },
+        {
+          "id": "d",
+          "label": "スマホを落ちてしまった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「落とす」は落とした対象に「を」。「落ちた」だけだと、自分が原因とは限らない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "うっかりスマホを落としてしまった",
+        "行為を言うのに自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_028",
+      "type": "multipleChoice",
+      "prompt": "Which uses が with the intransitive verb for leaves falling?",
+      "japanese": "秋の木の下の描写。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "葉っぱが風で落ちた。"
+        },
+        {
+          "id": "b",
+          "label": "葉っぱを風で落ちた。"
+        },
+        {
+          "id": "c",
+          "label": "葉っぱが風で落とした。"
+        },
+        {
+          "id": "d",
+          "label": "葉っぱを風で落とした。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "自然に落ちるなら自動詞「落ちる」に「が」。「落とす」は他動詞で誰かが落としたことになる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "秋の木の下の描写",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_029",
+      "type": "multipleChoice",
+      "prompt": "Which sentence implies you threw or dropped the ball to the ground on purpose during practice?",
+      "japanese": "練習でわざとボールを地面に落とす。意図が出るのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ボールが地面に落ちた。"
+        },
+        {
+          "id": "b",
+          "label": "コーチが笛を吹いた。"
+        },
+        {
+          "id": "c",
+          "label": "ボールを地面に落とした。"
+        },
+        {
+          "id": "d",
+          "label": "地面がボールに落ちた。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "操作して落とすのは他動詞「落とす」に「を」。「落ちた」は自動詞で故意かどうかは文脈次第。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "練習でわざとボールを地面に落とす",
+        "意図が出るのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_030",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: a ripe apple fell from the branch; nobody picked it.",
+      "japanese": "誰も揺すっていないのに、木からりんごが落ちた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "りんごを枝から落とした。"
+        },
+        {
+          "id": "b",
+          "label": "りんごが枝から落ちた。"
+        },
+        {
+          "id": "c",
+          "label": "りんごを枝から落ちた。"
+        },
+        {
+          "id": "d",
+          "label": "りんごが枝を落とした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "自然に落ちる果実は自動詞「落ちる」に「が」。「落とす」は他動詞で、だれかが落としたことになる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "誰も揺すっていないのに",
+        "木からりんごが落ちた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_031",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the movie starting at the announced time (event begins).",
+      "japanese": "映画館で上映開始の時間になった。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "映画を九時に始まった。"
+        },
+        {
+          "id": "b",
+          "label": "映画が九時に始まった。"
+        },
+        {
+          "id": "c",
+          "label": "映画が九時に始めた。"
+        },
+        {
+          "id": "d",
+          "label": "映画を九時に始めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「始まる」は自動詞で、始まる出来事に「が」。「始める」は他動詞で人が始めるときに「を」。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "映画館で上映開始の時間になった",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_032",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the host starting the party with a short speech.",
+      "japanese": "司会が挨拶してパーティーを始める。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "司会がパーティーが始めた。"
+        },
+        {
+          "id": "b",
+          "label": "司会がパーティーを始めた。"
+        },
+        {
+          "id": "c",
+          "label": "パーティーが司会を始めた。"
+        },
+        {
+          "id": "d",
+          "label": "司会がパーティーに始めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「始める」は対象に「を」。「始まる」は自動詞で、パーティーそのものが主語になる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "司会が挨拶してパーティーを始める",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_033",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for starting a PC?",
+      "japanese": "作業の開始について。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "パソコンを起動して仕事を始めた。"
+        },
+        {
+          "id": "b",
+          "label": "パソコンが起動して仕事が始めた。"
+        },
+        {
+          "id": "c",
+          "label": "パソコンを起動して仕事が始めた。"
+        },
+        {
+          "id": "d",
+          "label": "パソコンが起動して仕事を始まった。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「仕事を始める」で他動詞「始める」に「を」。「仕事が始まる」なら自動詞の別枠。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "作業の開始について",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_034",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the match beginning without naming who organized it in that clause?",
+      "japanese": "試合の開始だけを言う。人が主語に出ないのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "審判が笛を吹いた。"
+        },
+        {
+          "id": "b",
+          "label": "試合が三時に始まった。"
+        },
+        {
+          "id": "c",
+          "label": "監督が選手を呼んだ。"
+        },
+        {
+          "id": "d",
+          "label": "チームがグラウンドに入った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「始まる」は自動詞で、試合に「が」。人の動きではなく出来事の開始を表す。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "試合の開始だけを言う",
+        "人が主語に出ないのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_035",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you start studying after dinner every day.",
+      "japanese": "毎晩、夕食のあと勉強を始める習慣。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "夕食が終わると勉強が始まる。"
+        },
+        {
+          "id": "b",
+          "label": "夕食が終わると勉強を始める。"
+        },
+        {
+          "id": "c",
+          "label": "夕食を終わると勉強を始まる。"
+        },
+        {
+          "id": "d",
+          "label": "夕食が終わると勉強を始まる。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が始めるなら他動詞「勉強を始める」。「始まる」は自動詞で、誰が始めたかは文に出ない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "毎晩",
+        "夕食のあと勉強を始める習慣",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_036",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the bus stopping at a red light (vehicle stops by itself).",
+      "japanese": "信号でバスが停車した。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "バスを信号の前で止まった。"
+        },
+        {
+          "id": "b",
+          "label": "バスが信号の前で止まった。"
+        },
+        {
+          "id": "c",
+          "label": "バスが信号の前を止めた。"
+        },
+        {
+          "id": "d",
+          "label": "バスを信号の前で止めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「止まる」は自動詞で、止まるものに「が」。「止める」は他動詞で運転手が止める場面。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "信号でバスが停車した",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_037",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the driver stopping the car in front of the house.",
+      "japanese": "運転手が家の前で車を停める。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "車が家の前で止まった。"
+        },
+        {
+          "id": "b",
+          "label": "車を家の前で止めた。"
+        },
+        {
+          "id": "c",
+          "label": "車が家の前で止めた。"
+        },
+        {
+          "id": "d",
+          "label": "車を家の前で止まった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「止める」は止める対象に「を」。「止まる」は自動詞で、誰が止めたかは言わない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "運転手が家の前で車を停める",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_038",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for turning off a machine?",
+      "japanese": "工場の機械の操作。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "機械を止めて安全を確認した。"
+        },
+        {
+          "id": "b",
+          "label": "機械が止めて安全を確認した。"
+        },
+        {
+          "id": "c",
+          "label": "機械を止まって安全を確認した。"
+        },
+        {
+          "id": "d",
+          "label": "機械が止まって安全を確認した。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "人が止めるのは他動詞「止める」に「を」。「止まる」は自動詞で機械が止まる描写。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "工場の機械の操作",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_039",
+      "type": "multipleChoice",
+      "prompt": "Which sentence only describes the watch stopping (mechanical failure), not you fixing it?",
+      "japanese": "古い腕時計が動かなくなった。変化だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "時計を直しに出した。"
+        },
+        {
+          "id": "b",
+          "label": "時計が止まった。"
+        },
+        {
+          "id": "c",
+          "label": "店員が電池を取り替えた。"
+        },
+        {
+          "id": "d",
+          "label": "時計を止めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「止まる」は自動詞で、止まった時計に「が」。「止めた」は他動詞で人が止めたことになる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "古い腕時計が動かなくなった",
+        "変化だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_040",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you stopped a video during the meeting to ask a question.",
+      "japanese": "会議中に動画を一時停止する。操作を言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "動画が止まって質問した。"
+        },
+        {
+          "id": "b",
+          "label": "動画を止めて質問した。"
+        },
+        {
+          "id": "c",
+          "label": "動画が止めて質問した。"
+        },
+        {
+          "id": "d",
+          "label": "動画を止まって質問した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "再生を止める操作は他動詞「止める」に「を」。「止まる」は自動詞で意図がはっきりしない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "会議中に動画を一時停止する",
+        "操作を言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_041",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence where listeners gradually gathered (no organizer named in that clause).",
+      "japanese": "講演が始まる前に、客がホールに集まってきた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お客さんをホールに集めてきた。"
+        },
+        {
+          "id": "b",
+          "label": "お客さんがホールに集まってきた。"
+        },
+        {
+          "id": "c",
+          "label": "お客さんをホールに集まってきた。"
+        },
+        {
+          "id": "d",
+          "label": "お客さんがホールを集めてきた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「集まる」は自動詞で、集まる人に「が」。「集める」は他動詞で人が集める操作。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "講演が始まる前に",
+        "客がホールに集まってきた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_042",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for collecting used stamps for a class project (you cause them to come together).",
+      "japanese": "班の活動で、使い終わった切手を集める。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "切手がかばんに集まった。"
+        },
+        {
+          "id": "b",
+          "label": "切手をかばんに集めた。"
+        },
+        {
+          "id": "c",
+          "label": "切手をクラスで集めた。"
+        },
+        {
+          "id": "d",
+          "label": "切手がクラスで集めた。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "「集める」は他動詞で、集める対象に「を」。「集まる」は自動詞で切手が勝手に集まるようには言わない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "班の活動で",
+        "使い終わった切手を集める",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_043",
+      "type": "multipleChoice",
+      "prompt": "Which uses が with the intransitive verb for dust gathering?",
+      "japanese": "部屋の隅のほこりについて。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ほこりがたまって隅に集まった。"
+        },
+        {
+          "id": "b",
+          "label": "ほこりを隅に集まった。"
+        },
+        {
+          "id": "c",
+          "label": "ほこりが隅を集めた。"
+        },
+        {
+          "id": "d",
+          "label": "ほこりを隅に集めた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "自然に寄り集まるなら自動詞「集まる」に「が」。「集める」は他動詞で掃除機が吸い集めるなど操作の文。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "部屋の隅のほこりについて",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_044",
+      "type": "multipleChoice",
+      "prompt": "Which sentence implies a person actively gathered the documents?",
+      "japanese": "書類を一か所に揃えた。操作がはっきりするのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書類が机の上に集まった。"
+        },
+        {
+          "id": "b",
+          "label": "書類を机の上に集めた。"
+        },
+        {
+          "id": "c",
+          "label": "書類が机の上に集めた。"
+        },
+        {
+          "id": "d",
+          "label": "書類を机の上に集まった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が集めるなら他動詞「集める」に「を」。「集まった」は自動詞で誰が揃えたかは曖昧。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "書類を一か所に揃えた",
+        "操作がはっきりするのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_045",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: rain clouds are building over the mountains (weather change).",
+      "japanese": "山の上に雲がだんだんかたまってきた。描写として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雲を山の上に集めた。"
+        },
+        {
+          "id": "b",
+          "label": "雲が山の上に集まってきた。"
+        },
+        {
+          "id": "c",
+          "label": "雲を山の上に集まってきた。"
+        },
+        {
+          "id": "d",
+          "label": "雲が山の上を集めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "気象の変化で雲が集まるなら自動詞「集まる」に「が」。「集めた」は他動詞で人が集める印象。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "山の上に雲がだんだんかたまってきた",
+        "描写として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_046",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the meeting date being fixed after discussion (result state).",
+      "japanese": "話し合いのあと、日程が確定した。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議の日にちをやっと決まった。"
+        },
+        {
+          "id": "b",
+          "label": "会議の日にちがやっと決まった。"
+        },
+        {
+          "id": "c",
+          "label": "会議の日にちがやっと決めた。"
+        },
+        {
+          "id": "d",
+          "label": "会議の日にちをやっと決めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「決まる」は自動詞で、決まった内容に「が」。「決める」は他動詞で人が決めるときに「を」。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "話し合いのあと",
+        "日程が確定した",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_047",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the manager deciding the deadline on purpose.",
+      "japanese": "部長が締め切りを指示する。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "締め切りが来週に決まった。"
+        },
+        {
+          "id": "b",
+          "label": "締め切りを来週に決めた。"
+        },
+        {
+          "id": "c",
+          "label": "締め切りが来週を決めた。"
+        },
+        {
+          "id": "d",
+          "label": "締め切りを来週が決めた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が決めるのは他動詞「決める」で「締め切りを」。「決まる」は自動詞で日程が勝手に決まった印象。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "部長が締め切りを指示する",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_048",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for choosing lunch?",
+      "japanese": "昼食のこと。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今日のランチをカレーに決めた。"
+        },
+        {
+          "id": "b",
+          "label": "今日のランチがカレーに決めた。"
+        },
+        {
+          "id": "c",
+          "label": "今日のランチをカレーが決まった。"
+        },
+        {
+          "id": "d",
+          "label": "今日のランチがカレーに決まった。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "選んで決める操作は他動詞「決める」に「を」。結果だけなら「ランチがカレーに決まった」で自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "昼食のこと",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_049",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the outcome without naming who chose it in that clause?",
+      "japanese": "旅行の行き先について、結果だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "家族が京都に行きたいと言った。"
+        },
+        {
+          "id": "b",
+          "label": "行き先が京都に決まった。"
+        },
+        {
+          "id": "c",
+          "label": "私が旅程を作った。"
+        },
+        {
+          "id": "d",
+          "label": "ホテルを予約した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「決まる」は自動詞で、決まった事柄に「が」。誰が決めたかはこの文では出てこない。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "旅行の行き先について",
+        "結果だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_050",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you finally settled on a cheap apartment after many visits.",
+      "japanese": "何件も見て、安い部屋に自分の意思で決めた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "部屋が安いほうに決まった。"
+        },
+        {
+          "id": "b",
+          "label": "部屋を安いほうに決めた。"
+        },
+        {
+          "id": "c",
+          "label": "部屋が安いほうを決めた。"
+        },
+        {
+          "id": "d",
+          "label": "部屋を安いほうが決まった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "自分で選んで決めるなら他動詞「決める」に「部屋を」。「決まった」は自動詞で偶然決まった様子にも読める。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "何件も見て",
+        "安い部屋に自分の意思で決めた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_051",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for a glass cracking when hot water was poured in (no intent to break).",
+      "japanese": "急に熱湯を注いでコップがひび割れた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コップを急に壊した。"
+        },
+        {
+          "id": "b",
+          "label": "コップが急に壊れた。"
+        },
+        {
+          "id": "c",
+          "label": "コップを急に壊れた。"
+        },
+        {
+          "id": "d",
+          "label": "コップが急に壊した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「壊れる」は自動詞で、壊れたものに「が」。「壊す」は他動詞で故意・過失で壊す操作。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "急に熱湯を注いでコップがひび割れた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_052",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for a child accidentally breaking a toy (agent breaks it).",
+      "japanese": "子どもがうっかりおもちゃを壊した。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "おもちゃが壊れて泣いた。"
+        },
+        {
+          "id": "b",
+          "label": "おもちゃを壊して泣いた。"
+        },
+        {
+          "id": "c",
+          "label": "おもちゃが壊して泣いた。"
+        },
+        {
+          "id": "d",
+          "label": "おもちゃを壊れて泣いた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「壊す」は壊す対象に「を」。「壊れる」は自動詞で、だれのせいかははっきりしない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "子どもがうっかりおもちゃを壊した",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_053",
+      "type": "multipleChoice",
+      "prompt": "機械を処分する話：他動詞に「を」が適切に付いた文はどれか。",
+      "japanese": "古い機械の処分の話。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "もう使わないから機械を壊して捨てた。"
+        },
+        {
+          "id": "b",
+          "label": "もう使わないから機械が壊れて捨てた。"
+        },
+        {
+          "id": "c",
+          "label": "もう使わないから機械を壊れて捨てた。"
+        },
+        {
+          "id": "d",
+          "label": "もう使わないから機械が壊して捨てた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "意図的に壊すなら他動詞「壊す」に「を」。「壊れる」は自動詞で自然破損の描写。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "古い機械の処分の話",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_054",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes damage happening without naming who caused it in that clause?",
+      "japanese": "台風のあと、家の一部について変化だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "屋根が一部壊れた。"
+        },
+        {
+          "id": "b",
+          "label": "大工が屋根を直した。"
+        },
+        {
+          "id": "c",
+          "label": "家族が避難した。"
+        },
+        {
+          "id": "d",
+          "label": "雨が入ってきた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「壊れる」は自動詞で、壊れた部分に「が」。原因は文外でもよい。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "台風のあと",
+        "家の一部について変化だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_055",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you sat on the glasses and broke them on purpose in a skit (acted).",
+      "japanese": "コントでわざとメガネを壊す演技。行為を言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メガネが壊れたふりをした。"
+        },
+        {
+          "id": "b",
+          "label": "メガネを壊すふりをした。"
+        },
+        {
+          "id": "c",
+          "label": "メガネを壊れたふりをした。"
+        },
+        {
+          "id": "d",
+          "label": "メガネが壊すふりをした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "演技で「壊す」を見せるなら他動詞「壊す」。壊れた状態だけなら「壊れる」でもよいが、演技の動きは「壊す」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "コントでわざとメガネを壊す演技",
+        "行為を言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_056",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence where the sticker stuck by itself (glue held).",
+      "japanese": "シールがきちんとくっついた。変化の描写として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "シールをノートに付いた。"
+        },
+        {
+          "id": "b",
+          "label": "シールがノートに付いた。"
+        },
+        {
+          "id": "c",
+          "label": "シールをノートが付いた。"
+        },
+        {
+          "id": "d",
+          "label": "シールがノートを付けた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「付く」は自動詞で、付いたものに「が」。「付ける」は他動詞で人が貼る操作。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "シールがきちんとくっついた",
+        "変化の描写として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_057",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for putting a name tag on your jacket before the tour.",
+      "japanese": "見学の前に名札を上着につける。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名札が上着に付いた。"
+        },
+        {
+          "id": "b",
+          "label": "名札を上着につけた。"
+        },
+        {
+          "id": "c",
+          "label": "名札が上着を付けた。"
+        },
+        {
+          "id": "d",
+          "label": "名札を上着が付けた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「付ける」は取り付ける対象に「を」。「付く」は自動詞で自然に付いたように聞こえる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "見学の前に名札を上着につける",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_058",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for applying sunscreen?",
+      "japanese": "海に行く前の準備。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "顔に日焼け止めを塗ってから日焼け止めを腕にも付けた。"
+        },
+        {
+          "id": "b",
+          "label": "腕に日焼け止めが付けた。"
+        },
+        {
+          "id": "c",
+          "label": "腕に日焼け止めを付けた。"
+        },
+        {
+          "id": "d",
+          "label": "腕が日焼け止めを付けた。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "塗ってつける操作は他動詞「付ける」に、対象は「日焼け止めを」。付いた結果なら「日焼け止めが付く」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "海に行く前の準備",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_059",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes mold appearing without saying who left moisture there?",
+      "japanese": "壁にカビが生えたように見える。変化だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "大家さんが壁を直した。"
+        },
+        {
+          "id": "b",
+          "label": "壁にカビが付いた。"
+        },
+        {
+          "id": "c",
+          "label": "私が除湿器を買った。"
+        },
+        {
+          "id": "d",
+          "label": "雨が窓に付いた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「付く」は自動詞で、付いたものに「が」か「に」。カビが壁について付く表現。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "壁にカビが生えたように見える",
+        "変化だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_060",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you attach a label to each box in the warehouse.",
+      "japanese": "倉庫で箱ごとにラベルを貼る作業。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ラベルが箱に付いた。"
+        },
+        {
+          "id": "b",
+          "label": "ラベルを箱に付けた。"
+        },
+        {
+          "id": "c",
+          "label": "ラベルが箱を付けた。"
+        },
+        {
+          "id": "d",
+          "label": "ラベルを箱が付けた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が貼り付けるなら他動詞「付ける」に「ラベルを」。「付いた」は自動詞で誰が貼ったか不明。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "倉庫で箱ごとにラベルを貼る作業",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_061",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for laundry drying in the sun (no agent).",
+      "japanese": "天気のよい日に洗濯物が乾いた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "洗濯物をベランダで乾いた。"
+        },
+        {
+          "id": "b",
+          "label": "洗濯物がベランダで乾いた。"
+        },
+        {
+          "id": "c",
+          "label": "洗濯物をベランダで乾かした。"
+        },
+        {
+          "id": "d",
+          "label": "洗濯物がベランダで乾かした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「乾く」は自動詞で、乾いたものに「が」。「乾かす」は他動詞で人が乾かす操作。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "天気のよい日に洗濯物が乾いた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_062",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for using a dryer to dry your hair after a shower.",
+      "japanese": "シャワーあとドライヤーで髪を乾かす。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "髪が乾いてから眠った。"
+        },
+        {
+          "id": "b",
+          "label": "髪を乾かしてから眠った。"
+        },
+        {
+          "id": "c",
+          "label": "髪が乾かしてから眠った。"
+        },
+        {
+          "id": "d",
+          "label": "髪を乾いてから眠った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「乾かす」は乾かす対象に「を」。「乾く」は自動詞で時間が経てば乾く描写。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "シャワーあとドライヤーで髪を乾かす",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_063",
+      "type": "multipleChoice",
+      "prompt": "新聞で包む靴：他動詞の対象として「を」が付いた正しい文はどれか。",
+      "japanese": "濡れた靴の処置。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "靴を新聞で包んで乾かした。"
+        },
+        {
+          "id": "b",
+          "label": "靴が新聞で包んで乾かした。"
+        },
+        {
+          "id": "c",
+          "label": "靴を新聞で包んで乾いた。"
+        },
+        {
+          "id": "d",
+          "label": "靴が新聞で包んで乾いた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "人が乾かすなら他動詞「乾かす」に「靴を」。自然乾燥なら「靴が乾いた」で自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "濡れた靴の処置",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_064",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the paint coating drying without naming who painted?",
+      "japanese": "ペンキの塗りたてについて、乾いたことを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "職人が刷毛を洗った。"
+        },
+        {
+          "id": "b",
+          "label": "ペンキが乾いた。"
+        },
+        {
+          "id": "c",
+          "label": "大家が材料を買った。"
+        },
+        {
+          "id": "d",
+          "label": "窓を開けた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「乾く」は自動詞で、乾いた状態になったものに「が」。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ペンキの塗りたてについて",
+        "乾いたことを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_065",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you dried the dishes with a towel after washing.",
+      "japanese": "洗った食器を布巾で拭いて乾かした。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食器が布巾で乾いた。"
+        },
+        {
+          "id": "b",
+          "label": "食器を布巾で乾かした。"
+        },
+        {
+          "id": "c",
+          "label": "食器が布巾で乾かした。"
+        },
+        {
+          "id": "d",
+          "label": "食器を布巾で乾いた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "拭いて乾かす操作は他動詞「乾かす」に「食器を」。「乾いた」は自動詞で布巾のせいか時間か曖昧。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "洗った食器を布巾で拭いて乾かした",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_066",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for cars lining up at a traffic jam (vehicles line up).",
+      "japanese": "渋滞で車が長く続いている。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "車を道路に並んだ。"
+        },
+        {
+          "id": "b",
+          "label": "車が道路に並んだ。"
+        },
+        {
+          "id": "c",
+          "label": "車を道路が並んだ。"
+        },
+        {
+          "id": "d",
+          "label": "車が道路を並べた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「並ぶ」は自動詞で、並んだものに「が」。「並べる」は他動詞で人が並べる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "渋滞で車が長く続いている",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_067",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for lining up chairs for the meeting (you arrange them).",
+      "japanese": "会議のために椅子を整える。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "椅子が十脚並んだ。"
+        },
+        {
+          "id": "b",
+          "label": "椅子を十脚並べた。"
+        },
+        {
+          "id": "c",
+          "label": "椅子が十脚並べた。"
+        },
+        {
+          "id": "d",
+          "label": "椅子を十脚並んだ。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「並べる」は並べる対象に「を」。「並んだ」は自動詞で誰が並べたかは出ない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "会議のために椅子を整える",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_068",
+      "type": "multipleChoice",
+      "prompt": "Which uses が with the intransitive verb for people queuing?",
+      "japanese": "映画館の前の列。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "客が入口の前に並んでいた。"
+        },
+        {
+          "id": "b",
+          "label": "客を入口の前に並んでいた。"
+        },
+        {
+          "id": "c",
+          "label": "客が入口の前を並べていた。"
+        },
+        {
+          "id": "d",
+          "label": "客を入口の前に並べていた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "列に並ぶのは自動詞「並ぶ」に「が」。「並べる」は他動詞で物を並べる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "映画館の前の列",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_069",
+      "type": "multipleChoice",
+      "prompt": "Which sentence implies a shop worker arranged the bottles on the shelf?",
+      "japanese": "店員が陳列をしたあと。操作が分かるのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "びんが棚に並んでいた。"
+        },
+        {
+          "id": "b",
+          "label": "びんを棚に並べてあった。"
+        },
+        {
+          "id": "c",
+          "label": "びんが棚に並べてあった。"
+        },
+        {
+          "id": "d",
+          "label": "びんを棚に並んでいた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が並べた結果を言うなら他動詞「並べる」。ただし「並んでいた」は店員の手が見えにくい。陳列済みは「並べてある」が自然。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "店員が陳列をしたあと",
+        "操作が分かるのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_070",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: names are listed on the screen in alphabetical order (display state).",
+      "japanese": "画面に名前が順番に表示されている。状態として自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名前が画面にアルファベット順に並んでいる。"
+        },
+        {
+          "id": "b",
+          "label": "名前を画面にアルファベット順に並べている。"
+        },
+        {
+          "id": "c",
+          "label": "名前が画面にアルファベット順に並べている。"
+        },
+        {
+          "id": "d",
+          "label": "名前を画面にアルファベット順に並んでいる。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "並んで見える配置なら自動詞「並ぶ」。システムが並べ替えたとしても、見え方の描写では「並んでいる」が使われやすい。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "画面に名前が順番に表示されている",
+        "状態として自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_071",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the weather turning cold suddenly (natural change).",
+      "japanese": "急に気温が下がった。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "天気を急に変えた。"
+        },
+        {
+          "id": "b",
+          "label": "天気が急に変わった。"
+        },
+        {
+          "id": "c",
+          "label": "天気を急に変わった。"
+        },
+        {
+          "id": "d",
+          "label": "天気が急に変えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「変わる」は自動詞で、変わったものに「が」。「変える」は他動詞で人が変える。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "急に気温が下がった",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_072",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for changing trains at the next station on purpose.",
+      "japanese": "次の駅で乗り換える予定を実行する。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "次の駅で電車が変わった。"
+        },
+        {
+          "id": "b",
+          "label": "次の駅で電車を変えた。"
+        },
+        {
+          "id": "c",
+          "label": "次の駅で電車が変えた。"
+        },
+        {
+          "id": "d",
+          "label": "次の駅で電車を変わった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "乗り換えて別の電車に移る操作は「電車を変える」のように他動詞「変える」に「を」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "次の駅で乗り換える予定を実行する",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_073",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for changing a password?",
+      "japanese": "セキュリティのためパスワードを更新する。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "パスワードが新しいものに変えた。"
+        },
+        {
+          "id": "b",
+          "label": "パスワードを新しいものに変えた。"
+        },
+        {
+          "id": "c",
+          "label": "パスワードを新しいものに変わった。"
+        },
+        {
+          "id": "d",
+          "label": "パスワードが新しいものに変わった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "自分で変えるなら他動詞「変える」に「パスワードを」。規約で勝手に変わったなら「変わった」で自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "セキュリティのためパスワードを更新する",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_074",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes a rule changing without naming the committee in that clause?",
+      "japanese": "会社の規則の改正について、結果だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "社長が会見した。"
+        },
+        {
+          "id": "b",
+          "label": "規則が来月から変わる。"
+        },
+        {
+          "id": "c",
+          "label": "人事が説明会を開いた。"
+        },
+        {
+          "id": "d",
+          "label": "書類を配った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「変わる」は自動詞で、変わる対象に「が」。誰が決めたかはこの文では省略される。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "会社の規則の改正について",
+        "結果だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_075",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you switched the meeting from offline to online.",
+      "japanese": "都合で会合をオンラインに切り替えた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会合がオンラインに変わった。"
+        },
+        {
+          "id": "b",
+          "label": "会合をオンラインに変えた。"
+        },
+        {
+          "id": "c",
+          "label": "会合がオンラインを変えた。"
+        },
+        {
+          "id": "d",
+          "label": "会合をオンラインが変わった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "開催形式を変えるのは他動詞「変える」に「会合を」。「変わった」は自動詞で誰の判断かは曖昧。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "都合で会合をオンラインに切り替えた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_076",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for a package arriving at your door (delivery completed).",
+      "japanese": "荷物が家に到着した。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "荷物を家に届いた。"
+        },
+        {
+          "id": "b",
+          "label": "荷物が家に届いた。"
+        },
+        {
+          "id": "c",
+          "label": "荷物を家が届いた。"
+        },
+        {
+          "id": "d",
+          "label": "荷物が家を届けた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「届く」は自動詞で、届いたものに「が」。「届ける」は他動詞で届ける人の操作。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "荷物が家に到着した",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_077",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for taking a cake to a friend’s house as a gift.",
+      "japanese": "友だちの家へケーキを持って行って渡す。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ケーキが友だちの家に届いた。"
+        },
+        {
+          "id": "b",
+          "label": "ケーキを友だちの家に届けた。"
+        },
+        {
+          "id": "c",
+          "label": "ケーキが友だちの家に届けた。"
+        },
+        {
+          "id": "d",
+          "label": "ケーキを友だちの家が届いた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "人が届けるなら他動詞「届ける」に「ケーキを」。「届いた」は自動詞で配達が完了した側の描写。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "友だちの家へケーキを持って行って渡す",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_078",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for submitting homework?",
+      "japanese": "締め切りまでに課題を出す。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "課題が先生に届けた。"
+        },
+        {
+          "id": "b",
+          "label": "課題を先生に届けた。"
+        },
+        {
+          "id": "c",
+          "label": "課題を先生が届いた。"
+        },
+        {
+          "id": "d",
+          "label": "課題が先生に届いた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "提出する操作は他動詞「届ける」に「課題を」。先生のもとに届いた結果なら「課題が届いた」で自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "締め切りまでに課題を出す",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_079",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes mail arriving without naming the carrier in that clause?",
+      "japanese": "ポストを開けたら手紙が来ていた。変化だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "配達員が玄関に来た。"
+        },
+        {
+          "id": "b",
+          "label": "手紙が今朝届いていた。"
+        },
+        {
+          "id": "c",
+          "label": "私が封筒を開けた。"
+        },
+        {
+          "id": "d",
+          "label": "郵便局が休みだった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「届く」は自動詞で、届いたものに「が」。配達員はこの文に出てこない。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ポストを開けたら手紙が来ていた",
+        "変化だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_080",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you handed documents to the clerk at the counter.",
+      "japanese": "窓口で書類を係に渡した。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書類が係に届いた。"
+        },
+        {
+          "id": "b",
+          "label": "書類を係に届けた。"
+        },
+        {
+          "id": "c",
+          "label": "書類が係を届けた。"
+        },
+        {
+          "id": "d",
+          "label": "書類を係が届いた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "手渡しで届けるのは他動詞「届ける」に「書類を」。「届いた」は自動詞でいつ届いたか不明確。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "窓口で書類を係に渡した",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_081",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for you returning to your seat after a break (motion back).",
+      "japanese": "休憩のあと席に戻る。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "席を戻った。"
+        },
+        {
+          "id": "b",
+          "label": "席に戻った。"
+        },
+        {
+          "id": "c",
+          "label": "席を戻した。"
+        },
+        {
+          "id": "d",
+          "label": "席が戻った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「戻る」は自動詞で、移動する人に「が」（省略）と場所に「に」。「戻す」は他動詞で物や状態を元に戻す。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "休憩のあと席に戻る",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_082",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for turning the clock hand back one hour (you move it).",
+      "japanese": "時計の針を一時間戻す。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "針が一時間戻った。"
+        },
+        {
+          "id": "b",
+          "label": "針を一時間戻した。"
+        },
+        {
+          "id": "c",
+          "label": "針が一時間戻した。"
+        },
+        {
+          "id": "d",
+          "label": "針を一時間戻った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "針を操作して戻すのは他動詞「戻す」に「を」。「戻る」は自動詞で針が勝手に戻る印象。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "時計の針を一時間戻す",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_083",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for restoring a setting?",
+      "japanese": "アプリの設定を初期状態に戻す。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "設定を初期値に戻した。"
+        },
+        {
+          "id": "b",
+          "label": "設定が初期値に戻した。"
+        },
+        {
+          "id": "c",
+          "label": "設定を初期値が戻った。"
+        },
+        {
+          "id": "d",
+          "label": "設定が初期値に戻った。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "人が戻す操作は他動詞「戻す」に「設定を」。勝手に戻ったなら「設定が戻った」で自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "アプリの設定を初期状態に戻す",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_084",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the temperature going back down without naming who adjusted the AC?",
+      "japanese": "部屋が涼しくなった。変化だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "私がリモコンを持った。"
+        },
+        {
+          "id": "b",
+          "label": "気温が夜に戻った。"
+        },
+        {
+          "id": "c",
+          "label": "窓を開けた。"
+        },
+        {
+          "id": "d",
+          "label": "エンジニアが点検した。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「戻る」は自動詞で、戻った状態に「が」。ここでは気温の変化に使う。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "部屋が涼しくなった",
+        "変化だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_085",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you put the book back on the shelf after reading.",
+      "japanese": "読み終えて本を元の位置に戻す。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本が棚に戻った。"
+        },
+        {
+          "id": "b",
+          "label": "本を棚に戻した。"
+        },
+        {
+          "id": "c",
+          "label": "本が棚を戻した。"
+        },
+        {
+          "id": "d",
+          "label": "本を棚が戻った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "元の場所へ戻す操作は他動詞「戻す」に「本を」。「戻った」は自動詞で本が一人で動いたようになる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "読み終えて本を元の位置に戻す",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_086",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for sales increasing last quarter (numbers went up).",
+      "japanese": "売上の数字が上がった。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売上を去年より増えた。"
+        },
+        {
+          "id": "b",
+          "label": "売上が去年より増えた。"
+        },
+        {
+          "id": "c",
+          "label": "売上を去年より増やした。"
+        },
+        {
+          "id": "d",
+          "label": "売上が去年より増やした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「増える」は自動詞で、増えた量に「が」。「増やす」は他動詞で人が増やす。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "売上の数字が上がった",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_087",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the city increasing bus services on purpose.",
+      "japanese": "市が路線バスの本数をふやした。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "バスの本数が増えた。"
+        },
+        {
+          "id": "b",
+          "label": "バスの本数を増やした。"
+        },
+        {
+          "id": "c",
+          "label": "バスの本数が増やした。"
+        },
+        {
+          "id": "d",
+          "label": "バスの本数を増えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "主体が本数を調整するなら他動詞「増やす」に「本数を」。「増えた」は自動詞で自然増を連想。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "市が路線バスの本数をふやした",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_088",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for adding milk to coffee?",
+      "japanese": "コーヒーにミルクを入れる量の調整。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ミルクが少し増えた。"
+        },
+        {
+          "id": "b",
+          "label": "ミルクを少し増やした。"
+        },
+        {
+          "id": "c",
+          "label": "ミルクが少し増やした。"
+        },
+        {
+          "id": "d",
+          "label": "ミルクを少し増えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "量を増やす操作は他動詞「増やす」に「ミルクを」。勝手に増えたなら「増えた」で自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "コーヒーにミルクを入れる量の調整",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_089",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes weight going up without naming diet or exercise in that clause?",
+      "japanese": "健康診断の結果だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "医者が説明した。"
+        },
+        {
+          "id": "b",
+          "label": "体重が前より増えている。"
+        },
+        {
+          "id": "c",
+          "label": "病院に行った。"
+        },
+        {
+          "id": "d",
+          "label": "食事を変えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「増える」は自動詞で、増えた値に「が」。原因は別に書ける。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "健康診断の結果だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_090",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: the shop increased sale items for the weekend event.",
+      "japanese": "週末セールのために店が品数を増やした。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "品数が思い切り増えた。"
+        },
+        {
+          "id": "b",
+          "label": "品数を思い切り増やした。"
+        },
+        {
+          "id": "c",
+          "label": "品数が思い切り増やした。"
+        },
+        {
+          "id": "d",
+          "label": "品数を思い切り増えた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "店側が陳列量を増やす操作は他動詞「増やす」に「品数を」。「増えた」は自動詞で、だれの施策かははっきりしない。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "週末セールのために店が品数を増やした",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_091",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for water in the bottle decreasing after drinking (amount falls).",
+      "japanese": "飲んだあとペットボトルの水が減った。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "水を半分に減った。"
+        },
+        {
+          "id": "b",
+          "label": "水が半分に減った。"
+        },
+        {
+          "id": "c",
+          "label": "水を半分に減らした。"
+        },
+        {
+          "id": "d",
+          "label": "水が半分に減らした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「減る」は自動詞で、減ったものに「が」。「減らす」は他動詞で人が減らす。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "飲んだあとペットボトルの水が減った",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_092",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for the office reducing copy costs on purpose.",
+      "japanese": "会社がコピー代を切り詰めた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コピー代が先月より減った。"
+        },
+        {
+          "id": "b",
+          "label": "コピー代を先月より減らした。"
+        },
+        {
+          "id": "c",
+          "label": "コピー代が先月より減らした。"
+        },
+        {
+          "id": "d",
+          "label": "コピー代を先月より減った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "経費を意図的に減らすなら他動詞「減らす」に「コピー代を」。「減った」は自動詞。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "会社がコピー代を切り詰めた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_093",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for cutting sugar intake?",
+      "japanese": "健康のため砂糖を減らす。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "砂糖を食事から減らした。"
+        },
+        {
+          "id": "b",
+          "label": "砂糖が食事から減った。"
+        },
+        {
+          "id": "c",
+          "label": "砂糖を食事から減った。"
+        },
+        {
+          "id": "d",
+          "label": "砂糖が食事から減らした。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "摂取量を減らす操作は他動詞「減らす」に「砂糖を」。自然に減ったなら「砂糖が減った」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "健康のため砂糖を減らす",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_094",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the crowd thinning without naming security?",
+      "japanese": "イベント終了後、人が少なくなった。変化だけを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "警備員が誘導した。"
+        },
+        {
+          "id": "b",
+          "label": "人がだんだん減っていった。"
+        },
+        {
+          "id": "c",
+          "label": "ステージのライトが消えた。"
+        },
+        {
+          "id": "d",
+          "label": "ゴミ箱がいっぱいだった。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「減る」は自動詞で、減るものに「が」。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "イベント終了後",
+        "人が少なくなった",
+        "変化だけを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_095",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: you cut weekly sweets to improve health (reduce amount).",
+      "japanese": "健康のためお菓子の量を週ごとに減らした。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お菓子の量が週ごとに減らした。"
+        },
+        {
+          "id": "b",
+          "label": "お菓子の量を週ごとに減らした。"
+        },
+        {
+          "id": "c",
+          "label": "お菓子の量が週ごとに減った。"
+        },
+        {
+          "id": "d",
+          "label": "お菓子の量を週ごとに減った。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "摂取量を意図的に減らすのは他動詞「減らす」に「量を」。「減った」は自動詞で自然減も含む。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "健康のためお菓子の量を週ごとに減らした",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_096",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for waking up at six without mentioning who set the alarm.",
+      "japanese": "朝六時に目が覚めた。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "六時に目覚ましを起きた。"
+        },
+        {
+          "id": "b",
+          "label": "六時に起きた。"
+        },
+        {
+          "id": "c",
+          "label": "六時を起きた。"
+        },
+        {
+          "id": "d",
+          "label": "六時に起こした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "目が覚める動きは「起きる」で自動詞。主語は省略されやすいが、朝の起床は「起きた」。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "朝六時に目が覚めた",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_097",
+      "type": "multipleChoice",
+      "prompt": "Choose the sentence for a parent waking a child on a school day.",
+      "japanese": "母が子どもを起床させる。自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "子どもが六時に起きた。"
+        },
+        {
+          "id": "b",
+          "label": "子どもを六時に起こした。"
+        },
+        {
+          "id": "c",
+          "label": "子どもが六時に起こした。"
+        },
+        {
+          "id": "d",
+          "label": "子どもを六時に起きた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "他動詞「起こす」は起こす対象に「を」。「起きる」は自動詞で子どもが自分で起きたように聞こえる。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "intention"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "母が子どもを起床させる",
+        "自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_098",
+      "type": "multipleChoice",
+      "prompt": "Which uses を with the transitive verb for shaking someone awake?",
+      "japanese": "寝過ごしそうな友だちを揺すって起こす。正しいのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "友だちの肩を揺さぶって起こした。"
+        },
+        {
+          "id": "b",
+          "label": "友だちが肩を揺さぶって起こした。"
+        },
+        {
+          "id": "c",
+          "label": "友だちの肩を揺さぶって起きた。"
+        },
+        {
+          "id": "d",
+          "label": "友だちが肩を揺さぶって起きた。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "相手を眠りから覚ますのは他動詞「起こす」。ここでは「起こした」が述語で他動詞。自分が起きるなら自動詞「起きる」。",
+      "diagnosticTags": [
+        "transitivity",
+        "tadoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "寝過ごしそうな友だちを揺すって起こす",
+        "正しいのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_099",
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes an incident occurring without naming who caused it in that clause?",
+      "japanese": "ニュースの見出しだけで出来事が発生したことを言うのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "記者が現場にいた。"
+        },
+        {
+          "id": "b",
+          "label": "事故が今朝起きた。"
+        },
+        {
+          "id": "c",
+          "label": "警察が調べた。"
+        },
+        {
+          "id": "d",
+          "label": "道路が混んでいた。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「起きる」は自動詞で、起きた出来事に「が」。原因は別の文で述べる。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "ニュースの見出しだけで出来事が発生したことを言うのはどれ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "td_100",
+      "type": "multipleChoice",
+      "prompt": "Choose the best sentence: a serious incident occurred at the site (news-style, event only).",
+      "japanese": "現場で重大な事態が発生したと報じる。出来事の発生だけを言うのに自然なのはどれ？",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現場で重大な事態を起きた。"
+        },
+        {
+          "id": "b",
+          "label": "現場で重大な事態が起きた。"
+        },
+        {
+          "id": "c",
+          "label": "現場で重大な事態を起こした。"
+        },
+        {
+          "id": "d",
+          "label": "現場で重大な事態が起こした。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "出来事が生じるのは自動詞「起きる」で、事態に「が」。「起こす」は他動詞で、だれかが起こす／引き起こす操作を連想する。",
+      "diagnosticTags": [
+        "transitivity",
+        "jidoushi",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "自動詞・他動詞の対照",
+        "叙述の焦点と項の取り方"
+      ],
+      "vocabulary": [
+        "現場で重大な事態が発生したと報じる",
+        "出来事の発生だけを言うのに自然なのはどれ"
+      ],
+      "reviewStatus": "draft"
+    }
+  ]
+}

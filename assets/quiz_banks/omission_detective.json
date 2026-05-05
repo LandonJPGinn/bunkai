@@ -1,0 +1,4304 @@
+{
+  "id": "omissionDetective",
+  "title": "Omission Detective",
+  "subtitle": "会話に隠れた主語・目的語・照応",
+  "description": "N4〜N3向け。短い対話から省略された成分や話者・聞き手の役割を推論する。",
+  "difficulty": "N4-N3",
+  "diagnosticTags": [
+    "dialogue_context",
+    "implication",
+    "omitted_object",
+    "omitted_recipient",
+    "omitted_subject"
+  ],
+  "questions": [
+    {
+      "id": "od_001",
+      "type": "multipleChoice",
+      "prompt": "誰がメールを送りましたか。",
+      "japanese": "A: 「田中さんにメールした？」\nB: 「うん、もう送ったよ。」",
+      "context": "友人同士。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "田中さん"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Bが「送った」と答えており、主語は聞き手のB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "田中さんにメールした",
+        "うん",
+        "もう送ったよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_002",
+      "type": "multipleChoice",
+      "prompt": "誰が洗い物をしますか。",
+      "japanese": "A: 「洗い物、私がやるよ。」\nB: 「ありがとう、お願い。」",
+      "context": "家で。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "母"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "Aが志願して主語はA。Bは感謝しているだけ。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "洗い物",
+        "私がやるよ",
+        "ありがとう",
+        "お願い"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_003",
+      "type": "multipleChoice",
+      "prompt": "誰が会議室を予約しましたか。",
+      "japanese": "A: 「会議室、取っとく？」\nB: 「うん、もう取った。」",
+      "context": "職場。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "部長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "予約の行為をしたのは、返答するB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "会議室",
+        "取っとく",
+        "うん",
+        "もう取った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_004",
+      "type": "multipleChoice",
+      "prompt": "誰が傘を持ってきましたか。",
+      "japanese": "A: 「傘、要る？」\nB: 「持ってきたよ。」",
+      "context": "駅前。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "店員"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "持参したのはBの行動と分かる。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "傘",
+        "要る",
+        "持ってきたよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_005",
+      "type": "multipleChoice",
+      "prompt": "誰が宿題を出しますか。",
+      "japanese": "A: 「宿題、出さないと。」\nB: 「私が出すよ。」",
+      "context": "友達。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "先生"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「出すよ」はBの主語。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "宿題",
+        "出さないと",
+        "私が出すよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_006",
+      "type": "multipleChoice",
+      "prompt": "誰が窓を開けましたか。",
+      "japanese": "A: 「暑いね。」\nB: 「開けておくね。」",
+      "context": "教室。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "窓"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "開けるのは話しているB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "暑いね",
+        "開けておくね"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_007",
+      "type": "multipleChoice",
+      "prompt": "誰がコピーを取りますか。",
+      "japanese": "A: 「資料のコピー、頼んでいい？」\nB: 「ああ、こっちでやる。」",
+      "context": "オフィス。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "コピー機"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「こっちでやる」はBが実行する。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "資料のコピー",
+        "頼んでいい",
+        "ああ",
+        "こっちでやる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_008",
+      "type": "multipleChoice",
+      "prompt": "誰が荷物を運びましたか。",
+      "japanese": "A: 「重いねこの箱。」\nB: 「運んだから大丈夫。」",
+      "context": "引っ越しの手伝い。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "大家"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "運んだのはBが報告している主体。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "重いねこの箱",
+        "運んだから大丈夫"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_009",
+      "type": "multipleChoice",
+      "prompt": "誰が電話に出ましたか。",
+      "japanese": "A: 「社長、いる？」\nB: 「出たよ、用件聞く。」",
+      "context": "職場。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "社長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "電話に出たのはB。用件を聞くのもB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "社長",
+        "いる",
+        "出たよ",
+        "用件聞く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_010",
+      "type": "multipleChoice",
+      "prompt": "誰が地図を描きますか。",
+      "japanese": "A: 「地図、誰が描く？」\nB: 「私が描くよ。」",
+      "context": "サークル。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "会長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "明言どおりB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "地図",
+        "誰が描く",
+        "私が描くよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_011",
+      "type": "multipleChoice",
+      "prompt": "Bは何を飲みましたか。",
+      "japanese": "A: 「コーヒー、残ってる？」\nB: 「飲んじゃった。」",
+      "context": "喫茶店。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コーヒー"
+        },
+        {
+          "id": "b",
+          "label": "紅茶"
+        },
+        {
+          "id": "c",
+          "label": "水"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "直前の「コーヒー」が目的語として省略されている。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "コーヒー",
+        "残ってる",
+        "飲んじゃった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_012",
+      "type": "multipleChoice",
+      "prompt": "Bは何を買いましたか。",
+      "japanese": "A: 「新刊、もう手に入れた？」\nB: 「買った。」",
+      "context": "本屋の前。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "新刊"
+        },
+        {
+          "id": "b",
+          "label": "雑誌"
+        },
+        {
+          "id": "c",
+          "label": "文庫"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「新刊」が買う対象。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "新刊",
+        "もう手に入れた",
+        "買った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_013",
+      "type": "multipleChoice",
+      "prompt": "Bは何を直しましたか。",
+      "japanese": "A: 「自転車、直った？」\nB: 「直した。」",
+      "context": "家。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "自転車"
+        },
+        {
+          "id": "b",
+          "label": "ドア"
+        },
+        {
+          "id": "c",
+          "label": "時計"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "直したのは聞かれた自転車。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "自転車",
+        "直った",
+        "直した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_014",
+      "type": "multipleChoice",
+      "prompt": "Bは何を食べませんでしたか。",
+      "japanese": "A: 「ケーキ、食べる？」\nB: 「食べない。」",
+      "context": "誕生日。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ケーキ"
+        },
+        {
+          "id": "b",
+          "label": "アイス"
+        },
+        {
+          "id": "c",
+          "label": "果物"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "断りの対象は勧められたケーキ。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "ケーキ",
+        "食べる",
+        "食べない"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_015",
+      "type": "multipleChoice",
+      "prompt": "Bは何を片づけていますか。",
+      "japanese": "A: 「机の上、片づけた？」\nB: 「まだ、今やってる。」",
+      "context": "自室。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "机の上"
+        },
+        {
+          "id": "b",
+          "label": "床"
+        },
+        {
+          "id": "c",
+          "label": "本棚"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "片づけの対象はAの言う机の上。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "机の上",
+        "片づけた",
+        "まだ",
+        "今やってる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_016",
+      "type": "multipleChoice",
+      "prompt": "Bは何を送りますか。",
+      "japanese": "A: 「見積、送ってくれる？」\nB: 「午後送る。」",
+      "context": "取引先。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見積"
+        },
+        {
+          "id": "b",
+          "label": "請求"
+        },
+        {
+          "id": "c",
+          "label": "名刺"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "依頼の内容が見積。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "見積",
+        "送ってくれる",
+        "午後送る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_017",
+      "type": "multipleChoice",
+      "prompt": "Bは何を探していますか。",
+      "japanese": "A: 「鍵、見た？」\nB: 「今探してる。」",
+      "context": "玄関。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "鍵"
+        },
+        {
+          "id": "b",
+          "label": "財布"
+        },
+        {
+          "id": "c",
+          "label": "傘"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "直前の話題の鍵。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "鍵",
+        "見た",
+        "今探してる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_018",
+      "type": "multipleChoice",
+      "prompt": "Bは何を着替えますか。",
+      "japanese": "A: 「服、汚れてるよ。」\nB: 「着替える。」",
+      "context": "遊び帰り。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "服"
+        },
+        {
+          "id": "b",
+          "label": "靴"
+        },
+        {
+          "id": "c",
+          "label": "帽子"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "汚れと言われた服を着替える。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "服",
+        "汚れてるよ",
+        "着替える"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_019",
+      "type": "multipleChoice",
+      "prompt": "Bは何を提出しますか。",
+      "japanese": "A: 「申請書、出した？」\nB: 「今出す。」",
+      "context": "市役所。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "申請書"
+        },
+        {
+          "id": "b",
+          "label": "封筒"
+        },
+        {
+          "id": "c",
+          "label": "コピー"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "出すのは申請書。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "申請書",
+        "出した",
+        "今出す"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_020",
+      "type": "multipleChoice",
+      "prompt": "Bは何を始めますか。",
+      "japanese": "A: 「晩ご飯、作る？」\nB: 「作る。」",
+      "context": "帰宅後。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "晩ご飯"
+        },
+        {
+          "id": "b",
+          "label": "風呂"
+        },
+        {
+          "id": "c",
+          "label": "洗濯"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "作るのは晩ご飯。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "晩ご飯",
+        "作る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_021",
+      "type": "multipleChoice",
+      "prompt": "Bは何を持って帰りますか。",
+      "japanese": "A: 「余り、持って帰る？」\nB: 「持って帰る。」",
+      "context": "飲み会。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "余り"
+        },
+        {
+          "id": "b",
+          "label": "空き瓶"
+        },
+        {
+          "id": "c",
+          "label": "会費"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "持ち帰るのは食べ物の余り。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "余り",
+        "持って帰る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_022",
+      "type": "multipleChoice",
+      "prompt": "誰が誰に本をあげますか。",
+      "japanese": "A: 「この本、弟にあげるの？」\nB: 「ああ、あげるよ。」",
+      "context": "友達。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "Bが弟に"
+        },
+        {
+          "id": "b",
+          "label": "Aが弟に"
+        },
+        {
+          "id": "c",
+          "label": "弟がBに"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「あげる」はB本人が与える。相手はAの言う弟。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context",
+        "omitted_subject"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "この本",
+        "弟にあげるの",
+        "ああ",
+        "あげるよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_023",
+      "type": "multipleChoice",
+      "prompt": "誰が花をくれましたか。",
+      "japanese": "A: 「きれいな花！」\nB: 「母がくれたんだ。」",
+      "context": "バレンタインデーではない。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "くれた主体は母と明示されている。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "きれいな花",
+        "母がくれたんだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_024",
+      "type": "multipleChoice",
+      "prompt": "誰がチケットをもらいましたか。",
+      "japanese": "A: 「明日のチケット、どうした？」\nB: 「上司にもらった。」",
+      "context": "会社。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "上司"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "もらう側は答えるB。",
+      "diagnosticTags": [
+        "omitted_recipient",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "明日のチケット",
+        "どうした",
+        "上司にもらった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_025",
+      "type": "multipleChoice",
+      "prompt": "誰が手伝ってもらいますか。",
+      "japanese": "A: 「引っ越し、手伝わせるの？」\nB: 「友達に手伝ってもらう。」",
+      "context": "会話。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "友達"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "手伝いを受けるのはB。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "引っ越し",
+        "手伝わせるの",
+        "友達に手伝ってもらう"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_026",
+      "type": "multipleChoice",
+      "prompt": "誰に差し上げますか。",
+      "japanese": "A: 「お土産、部長に？」\nB: 「部長に差し上げます。」",
+      "context": "出張帰り。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "部長"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "社長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "目上に差し上げる相手は部長。",
+      "diagnosticTags": [
+        "omitted_recipient",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "お土産",
+        "部長に",
+        "部長に差し上げます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_027",
+      "type": "multipleChoice",
+      "prompt": "誰が子どもに絵本を買い与えますか。",
+      "japanese": "A: 「絵本、誰が買うの？」\nB: 「私が買ってあげる。」",
+      "context": "姉弟。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "子ども"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「買ってあげる」はBの行為。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "絵本",
+        "誰が買うの",
+        "私が買ってあげる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_028",
+      "type": "multipleChoice",
+      "prompt": "誰が隣人に味噌汁を分けてあげますか。",
+      "japanese": "A: 「味噌汁、多いね。」\nB: 「隣に分けてあげる。」",
+      "context": "台所。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "隣"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "分け与える主語はB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "味噌汁",
+        "多いね",
+        "隣に分けてあげる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_029",
+      "type": "multipleChoice",
+      "prompt": "誰が姉に鞄を借りますか。",
+      "japanese": "A: 「その鞄、姉の？」\nB: 「姉から借りた。」",
+      "context": "大学。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "姉"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "借りる主体はB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "その鞄",
+        "姉の",
+        "姉から借りた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_030",
+      "type": "multipleChoice",
+      "prompt": "誰に教えてもらいましたか。",
+      "japanese": "A: 「その文法、どこで習った？」\nB: 「先輩に教えてもらった。」",
+      "context": "図書館。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "先輩"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "教えを受けたのは答えるB。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "その文法",
+        "どこで習った",
+        "先輩に教えてもらった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_031",
+      "type": "multipleChoice",
+      "prompt": "誰が友だちに弁当を作ってあげますか。",
+      "japanese": "A: 「弁当、作るの大変でしょ。」\nB: 「友だちの分も作ってあげる。」",
+      "context": "週末。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "友だち"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "作ってあげるのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "弁当",
+        "作るの大変でしょ",
+        "友だちの分も作ってあげる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_032",
+      "type": "multipleChoice",
+      "prompt": "Bはどこへ行きますか。",
+      "japanese": "A: 「会議室、どこ？」\nB: 「三階に行く。」",
+      "context": "初出勤。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "三階"
+        },
+        {
+          "id": "b",
+          "label": "一階"
+        },
+        {
+          "id": "c",
+          "label": "地下"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "行く先は答えた三階。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "会議室",
+        "どこ",
+        "三階に行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_033",
+      "type": "multipleChoice",
+      "prompt": "誰がこちらへ来ますか。",
+      "japanese": "A: 「そっちから来て。」\nB: 「今行く。」",
+      "context": "オフィス。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "客"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "向かうのは「来て」と言われたB。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "そっちから来て",
+        "今行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_034",
+      "type": "multipleChoice",
+      "prompt": "誰が駅まで送りますか。",
+      "japanese": "A: 「駅まで送るよ。」\nB: 「ありがとう、お願い。」",
+      "context": "夜道。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "タクシー"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "送るのは提案したA。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "駅まで送るよ",
+        "ありがとう",
+        "お願い"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_035",
+      "type": "multipleChoice",
+      "prompt": "Bはいつ戻ってきますか。",
+      "japanese": "A: 「いつ戻る？」\nB: 「五時に戻る。」",
+      "context": "外出中。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "五時"
+        },
+        {
+          "id": "b",
+          "label": "明日"
+        },
+        {
+          "id": "c",
+          "label": "来週"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "戻る時刻が省略されず答えている。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "いつ戻る",
+        "五時に戻る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_036",
+      "type": "multipleChoice",
+      "prompt": "誰が先に帰りますか。",
+      "japanese": "A: 「先に帰るね。」\nB: 「うん、気をつけて。」",
+      "context": "残業。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "部長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "帰るのは宣言したA。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "先に帰るね",
+        "うん",
+        "気をつけて"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_037",
+      "type": "multipleChoice",
+      "prompt": "Bはどこから来ましたか。",
+      "japanese": "A: 「遅かったね。」\nB: 「大阪から来たばかり。」",
+      "context": "待ち合わせ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "大阪"
+        },
+        {
+          "id": "b",
+          "label": "東京"
+        },
+        {
+          "id": "c",
+          "label": "京都"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "起点は大阪。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "遅かったね",
+        "大阪から来たばかり"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_038",
+      "type": "multipleChoice",
+      "prompt": "誰が教室に入りますか。",
+      "japanese": "A: 「先生が呼んでる。」\nB: 「入る。」",
+      "context": "廊下。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "先生"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "入室するのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "先生が呼んでる",
+        "入る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_039",
+      "type": "multipleChoice",
+      "prompt": "荷物はどこへ運ばれますか。",
+      "japanese": "A: 「倉庫へ運んで。」\nB: 「倉庫に運ぶ。」",
+      "context": "工場。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "倉庫"
+        },
+        {
+          "id": "b",
+          "label": "事務所"
+        },
+        {
+          "id": "c",
+          "label": "受付"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "目的語の場所は倉庫。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "倉庫へ運んで",
+        "倉庫に運ぶ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_040",
+      "type": "multipleChoice",
+      "prompt": "誰がホームに向かいますか。",
+      "japanese": "A: 「発車ベルだ。」\nB: 「ホームに走る。」",
+      "context": "駅。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "車掌"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "走る主体はB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "発車ベルだ",
+        "ホームに走る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_041",
+      "type": "multipleChoice",
+      "prompt": "夕方、誰がうちへ帰りますか。",
+      "japanese": "A: 「今日は早く帰れる？」\nB: 「うちに帰る。」",
+      "context": "夫婦。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "子ども"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "帰るのは答えるB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "今日は早く帰れる",
+        "うちに帰る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_042",
+      "type": "multipleChoice",
+      "prompt": "「それ」は何を指しますか。",
+      "japanese": "A: 「このかばん、軽いね。」\nB: 「それ、新作なんだ。」",
+      "context": "ショップ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "このかばん"
+        },
+        {
+          "id": "b",
+          "label": "床"
+        },
+        {
+          "id": "c",
+          "label": "札"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "直前の話題のかばん。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "このかばん",
+        "軽いね",
+        "それ",
+        "新作なんだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_043",
+      "type": "multipleChoice",
+      "prompt": "「これ」は何を指しますか。",
+      "japanese": "A: 「これ、貸して。」\nB: 「いいよ。」",
+      "context": "机の上のノート。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ノート"
+        },
+        {
+          "id": "b",
+          "label": "ペン"
+        },
+        {
+          "id": "c",
+          "label": "消しゴム"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「これ」は共有视野のノート。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "これ",
+        "貸して",
+        "いいよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_044",
+      "type": "multipleChoice",
+      "prompt": "「あれ」は何を指しますか。",
+      "japanese": "A: 「あれ、見える？」\nB: 「あの塔だね。」",
+      "context": "展望台。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遠くの塔"
+        },
+        {
+          "id": "b",
+          "label": "近くの看板"
+        },
+        {
+          "id": "c",
+          "label": "空"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "遠称で共有された塔。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "あれ",
+        "見える",
+        "あの塔だね"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_045",
+      "type": "multipleChoice",
+      "prompt": "店員の「それ」は何ですか。",
+      "japanese": "A: 「これ、いくら？」\nB: 「それ、二千円です。」",
+      "context": "レジ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "客が指した品"
+        },
+        {
+          "id": "b",
+          "label": "レジ"
+        },
+        {
+          "id": "c",
+          "label": "袋"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "客が示した商品。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "これ",
+        "いくら",
+        "それ",
+        "二千円です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_046",
+      "type": "multipleChoice",
+      "prompt": "電話で「それ」の内容は何ですか。",
+      "japanese": "A: 「明日の件だけど。」\nB: 「それ、午後でいいよ。」",
+      "context": "同僚。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "明日の予定"
+        },
+        {
+          "id": "b",
+          "label": "午後の会議"
+        },
+        {
+          "id": "c",
+          "label": "資料"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「明日の件」が照応する。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "明日の件だけど",
+        "それ",
+        "午後でいいよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_047",
+      "type": "multipleChoice",
+      "prompt": "「そっち」はどちらを指しますか。",
+      "japanese": "A: 「そっち、寒くない？」\nB: 「こっちは平気。」",
+      "context": "電話。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "Aのいる場所"
+        },
+        {
+          "id": "b",
+          "label": "Bのいる場所"
+        },
+        {
+          "id": "c",
+          "label": "海"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "電話で「そっち」は相手側。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "そっち",
+        "寒くない",
+        "こっちは平気"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_048",
+      "type": "multipleChoice",
+      "prompt": "「あれ」は誰を指しますか。",
+      "japanese": "A: 「あれ、山田君じゃない？」\nB: 「本当だ。」",
+      "context": "街中。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遠くにいる人"
+        },
+        {
+          "id": "b",
+          "label": "犬"
+        },
+        {
+          "id": "c",
+          "label": "車"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "目で示した人物。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "あれ",
+        "山田君じゃない",
+        "本当だ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_049",
+      "type": "multipleChoice",
+      "prompt": "漫画の「それ」は何の話ですか。",
+      "japanese": "A: 「それ、続きどうなった？」\nB: 「次の巻で分かる。」",
+      "context": "友人。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "漫画の展開"
+        },
+        {
+          "id": "b",
+          "label": "映画"
+        },
+        {
+          "id": "c",
+          "label": "小説"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "直前の漫画の話。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "それ",
+        "続きどうなった",
+        "次の巻で分かる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_050",
+      "type": "multipleChoice",
+      "prompt": "汚れが目立つ「これ」は、主に何を指すか。",
+      "japanese": "A: 「汚れてるよ、これ。」\nB: 「拭く。」",
+      "context": "白衣。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "汚れたところ"
+        },
+        {
+          "id": "b",
+          "label": "全体"
+        },
+        {
+          "id": "c",
+          "label": "床"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "汚れている共有されたもの。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "汚れてるよ",
+        "これ",
+        "拭く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_051",
+      "type": "multipleChoice",
+      "prompt": "「それ」の可否は何についてですか。",
+      "japanese": "A: 「写真、撮ってもいい？」\nB: 「それはダメ。」",
+      "context": "美術館。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "写真を撮ること"
+        },
+        {
+          "id": "b",
+          "label": "入館"
+        },
+        {
+          "id": "c",
+          "label": "食事"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "撮影の許可の話。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "写真",
+        "撮ってもいい",
+        "それはダメ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_052",
+      "type": "multipleChoice",
+      "prompt": "Bの「これ」は何を指しますか。",
+      "japanese": "A: 「おすすめは？」\nB: 「これが一番人気です。」",
+      "context": "カフェ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メニューの一品"
+        },
+        {
+          "id": "b",
+          "label": "店"
+        },
+        {
+          "id": "c",
+          "label": "席"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "店員が示した商品。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "おすすめは",
+        "これが一番人気です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_053",
+      "type": "multipleChoice",
+      "prompt": "レポートはもう提出されましたか。",
+      "japanese": "A: 「レポート、出した？」\nB: 「もう出した。」",
+      "context": "ゼミ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "はい、提出済み"
+        },
+        {
+          "id": "b",
+          "label": "まだ"
+        },
+        {
+          "id": "c",
+          "label": "知らない"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「もう」は完了。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "レポート",
+        "出した",
+        "もう出した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_054",
+      "type": "multipleChoice",
+      "prompt": "宿題はまだですか。",
+      "japanese": "A: 「漢字、終わった？」\nB: 「まだ。」",
+      "context": "小学生。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未完了"
+        },
+        {
+          "id": "b",
+          "label": "完了"
+        },
+        {
+          "id": "c",
+          "label": "いらない"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "「まだ」は未完了。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "漢字",
+        "終わった",
+        "まだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_055",
+      "type": "multipleChoice",
+      "prompt": "昼食はもう済みましたか。",
+      "japanese": "A: 「昼、食べた？」\nB: 「もう食べた。」",
+      "context": "午後の会議前。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "済んだ"
+        },
+        {
+          "id": "b",
+          "label": "これから"
+        },
+        {
+          "id": "c",
+          "label": "不要"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "もう済んだ。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "昼",
+        "食べた",
+        "もう食べた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_056",
+      "type": "multipleChoice",
+      "prompt": "資料はまだ印刷されていませんか。",
+      "japanese": "A: 「資料、印刷した？」\nB: 「まだだよ。」",
+      "context": "職場。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未印刷"
+        },
+        {
+          "id": "b",
+          "label": "印刷済み"
+        },
+        {
+          "id": "c",
+          "label": "不要"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "まだ完了していない。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "資料",
+        "印刷した",
+        "まだだよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_057",
+      "type": "multipleChoice",
+      "prompt": "映画はもう見ましたか。",
+      "japanese": "A: 「新作、見た？」\nB: 「もう見た。」",
+      "context": "学校の廊下。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見た"
+        },
+        {
+          "id": "b",
+          "label": "これから"
+        },
+        {
+          "id": "c",
+          "label": "見ない"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "既視聴。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "新作",
+        "見た",
+        "もう見た"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_058",
+      "type": "multipleChoice",
+      "prompt": "契約はまだですか。",
+      "japanese": "A: 「契約、終わった？」\nB: 「まだ検討中。」",
+      "context": "商談。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未締結"
+        },
+        {
+          "id": "b",
+          "label": "済んだ"
+        },
+        {
+          "id": "c",
+          "label": "破談"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "まだの状態。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "契約",
+        "終わった",
+        "まだ検討中"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_059",
+      "type": "multipleChoice",
+      "prompt": "雨はもう止みましたか。",
+      "japanese": "A: 「雨、止んだ？」\nB: 「もう止んだ。」",
+      "context": "帰路。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "止んだ"
+        },
+        {
+          "id": "b",
+          "label": "降っている"
+        },
+        {
+          "id": "c",
+          "label": "雪"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "もう止んだ。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "雨",
+        "止んだ",
+        "もう止んだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_060",
+      "type": "multipleChoice",
+      "prompt": "返信はまだですか。",
+      "japanese": "A: 「メール、返した？」\nB: 「まだ書いてる。」",
+      "context": "スマホ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未送信"
+        },
+        {
+          "id": "b",
+          "label": "送信済み"
+        },
+        {
+          "id": "c",
+          "label": "いらない"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "作成中で未完。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "メール",
+        "返した",
+        "まだ書いてる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_061",
+      "type": "multipleChoice",
+      "prompt": "ゴミはもう捨てましたか。",
+      "japanese": "A: 「ゴミ、捨てた？」\nB: 「もう捨てた。」",
+      "context": "アパート。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "捨てた"
+        },
+        {
+          "id": "b",
+          "label": "これから"
+        },
+        {
+          "id": "c",
+          "label": "燃えない"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "処理済み。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "ゴミ",
+        "捨てた",
+        "もう捨てた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_062",
+      "type": "multipleChoice",
+      "prompt": "準備はまだ途中ですか。",
+      "japanese": "A: 「準備、できた？」\nB: 「まだ半分。」",
+      "context": "イベント前。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "途中"
+        },
+        {
+          "id": "b",
+          "label": "完了"
+        },
+        {
+          "id": "c",
+          "label": "不要"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "まだ完了していない。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "準備",
+        "できた",
+        "まだ半分"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_063",
+      "type": "multipleChoice",
+      "prompt": "薬はもう飲みましたか。",
+      "japanese": "A: 「薬、飲んだ？」\nB: 「もう飲んだ。」",
+      "context": "看病。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲んだ"
+        },
+        {
+          "id": "b",
+          "label": "これから"
+        },
+        {
+          "id": "c",
+          "label": "忘れた"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "服用済み。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "薬",
+        "飲んだ",
+        "もう飲んだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_064",
+      "type": "multipleChoice",
+      "prompt": "誰がクライアントに連絡しますか。",
+      "japanese": "A: 「クライアント、誰が連絡する？」\nB: 「私が連絡する。」",
+      "context": "プロジェクト。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "部長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "連絡するのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "クライアント",
+        "誰が連絡する",
+        "私が連絡する"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_065",
+      "type": "multipleChoice",
+      "prompt": "承認は誰が出しますか。",
+      "japanese": "A: 「この件、誰が承認する？」\nB: 「課長が承認する。」",
+      "context": "職場。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "課長"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "承認者は課長と明示。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "この件",
+        "誰が承認する",
+        "課長が承認する"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_066",
+      "type": "multipleChoice",
+      "prompt": "誰が来客を迎えに行きますか。",
+      "japanese": "A: 「来客、迎えに誰行く？」\nB: 「私が行く。」",
+      "context": "受付。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "社長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "行くのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "来客",
+        "迎えに誰行く",
+        "私が行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_067",
+      "type": "multipleChoice",
+      "prompt": "誰が議事録を取りますか。",
+      "japanese": "A: 「議事録、頼める？」\nB: 「私が取る。」",
+      "context": "会議。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "外部"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "記録役はB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "議事録",
+        "頼める",
+        "私が取る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_068",
+      "type": "multipleChoice",
+      "prompt": "誰が見積を送りますか。",
+      "japanese": "A: 「見積、今日中に。」\nB: 「私が送る。」",
+      "context": "営業。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "経理"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "送信するのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "見積",
+        "今日中に",
+        "私が送る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_069",
+      "type": "multipleChoice",
+      "prompt": "誰が欠勤を連絡しましたか。",
+      "japanese": "A: 「田中さん、今日？」\nB: 「本人が連絡してきた。」",
+      "context": "朝礼。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "田中本人"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "連絡したのは田中本人。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "田中さん",
+        "今日",
+        "本人が連絡してきた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_070",
+      "type": "multipleChoice",
+      "prompt": "誰がシフトを変えますか。",
+      "japanese": "A: 「金曜、代わってくれる？」\nB: 「私が変える。」",
+      "context": "小売。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "店長"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "代わるのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "金曜",
+        "代わってくれる",
+        "私が変える"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_071",
+      "type": "multipleChoice",
+      "prompt": "誰がパスワードを再発行しますか。",
+      "japanese": "A: 「ログインできない。」\nB: 「情シスが再発行する。」",
+      "context": "社内窓口。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "情シス"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "再発行する部署が情シス。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "ログインできない",
+        "情シスが再発行する"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_072",
+      "type": "multipleChoice",
+      "prompt": "誰が先方へ謝りに行きますか。",
+      "japanese": "A: 「トラブル、どうする？」\nB: 「部長が謝りに行く。」",
+      "context": "対応会議。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "部長"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "謝罪に向かうのは部長。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "トラブル",
+        "どうする",
+        "部長が謝りに行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_073",
+      "type": "multipleChoice",
+      "prompt": "誰が検収しますか。",
+      "japanese": "A: 「納品、誰が見る？」\nB: 「私が検収する。」",
+      "context": "購買。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "委員会"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "検収するのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "納品",
+        "誰が見る",
+        "私が検収する"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_074",
+      "type": "multipleChoice",
+      "prompt": "誰がサーバーを止めますか。",
+      "japanese": "A: 「メンテ、誰が？」\nB: 「担当が止める。」",
+      "context": "情シス。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "担当者"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "停止作業は担当が行う。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "メンテ",
+        "誰が",
+        "担当が止める"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_075",
+      "type": "multipleChoice",
+      "prompt": "誰が夕食を作りますか。",
+      "japanese": "A: 「今日のご飯、誰が？」\nB: 「私が作る。」",
+      "context": "家。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "父"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "作るのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "今日のご飯",
+        "誰が",
+        "私が作る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_076",
+      "type": "multipleChoice",
+      "prompt": "誰が犬の散歩に行きますか。",
+      "japanese": "A: 「散歩、行ける？」\nB: 「私が行く。」",
+      "context": "休日。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "犬"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "行くのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "散歩",
+        "行ける",
+        "私が行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_077",
+      "type": "multipleChoice",
+      "prompt": "誰が祖母に電話しますか。",
+      "japanese": "A: 「おばあちゃん、元気？」\nB: 「私からかける。」",
+      "context": "兄弟。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "祖母"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "かけるのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "おばあちゃん",
+        "元気",
+        "私からかける"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_078",
+      "type": "multipleChoice",
+      "prompt": "誰が洗濯物を取り込みますか。",
+      "japanese": "A: 「雨来そう。」\nB: 「私が取り込む。」",
+      "context": "庭。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "母"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "取り込むのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "雨来そう",
+        "私が取り込む"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_079",
+      "type": "multipleChoice",
+      "prompt": "誰が子どもを迎えに行きますか。",
+      "japanese": "A: 「今日、保育園。」\nB: 「私が迎えに行く。」",
+      "context": "夫婦。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "先生"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "迎えに行くのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "今日",
+        "保育園",
+        "私が迎えに行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_080",
+      "type": "multipleChoice",
+      "prompt": "誰が旅行の宿を取りますか。",
+      "japanese": "A: 「宿、どうする？」\nB: 「私が取る。」",
+      "context": "友達同士。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "旅館"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "予約するのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "宿",
+        "どうする",
+        "私が取る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_081",
+      "type": "multipleChoice",
+      "prompt": "誰がケーキを切りますか。",
+      "japanese": "A: 「誕生日、切る？」\nB: 「本人が切る。」",
+      "context": "パーティ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本人（誕生日の人）"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "切るのは誕生日の本人とよく決まっている。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "誕生日",
+        "切る",
+        "本人が切る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_082",
+      "type": "multipleChoice",
+      "prompt": "誰がリモコンを持っていますか。",
+      "japanese": "A: 「チャンネル変えて。」\nB: 「私が持ってる。」",
+      "context": "リビング。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "弟"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "持っているのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "チャンネル変えて",
+        "私が持ってる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_083",
+      "type": "multipleChoice",
+      "prompt": "誰がゴミ出しをしますか。",
+      "japanese": "A: 「明日、可燃。」\nB: 「私が出す。」",
+      "context": "アパート。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "管理人"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "出すのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "明日",
+        "可燃",
+        "私が出す"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_084",
+      "type": "multipleChoice",
+      "prompt": "誰が宿題を見ますか。",
+      "japanese": "A: 「算数、見て。」\nB: 「母が見る。」",
+      "context": "家族。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "見るのは母。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "算数",
+        "見て",
+        "母が見る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_085",
+      "type": "multipleChoice",
+      "prompt": "誰が写真を送りますか。",
+      "japanese": "A: 「集合写真、後で送って。」\nB: 「私が送る。」",
+      "context": "同窓会。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "全員"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "送るのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "集合写真",
+        "後で送って",
+        "私が送る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_086",
+      "type": "multipleChoice",
+      "prompt": "誰がお歳暮を選びますか。",
+      "japanese": "A: 「実家、何にする？」\nB: 「私が選ぶ。」",
+      "context": "年末。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "店員"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "選ぶのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "実家",
+        "何にする",
+        "私が選ぶ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_087",
+      "type": "multipleChoice",
+      "prompt": "誰が赤ちゃんを抱きますか。",
+      "japanese": "A: 「泣いてる。」\nB: 「私が抱く。」",
+      "context": "里帰り。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "祖母"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "抱くのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "泣いてる",
+        "私が抱く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_088",
+      "type": "multipleChoice",
+      "prompt": "誰がピザを注文しますか。",
+      "japanese": "A: 「小腹すいた。」\nB: 「私が注文する。」",
+      "context": "夜。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "店"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "注文するのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "小腹すいた",
+        "私が注文する"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_089",
+      "type": "multipleChoice",
+      "prompt": "誰が薬局に行きますか。",
+      "japanese": "A: 「風邪薬、ない。」\nB: 「私が行く。」",
+      "context": "恋人同士。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "医者"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "買いに行くのはB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "風邪薬",
+        "ない",
+        "私が行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_090",
+      "type": "multipleChoice",
+      "prompt": "誰がスピーチをしますか。",
+      "japanese": "A: 「披露宴、誰が話す？」\nB: 「新郎が話す。」",
+      "context": "結婚式。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "新郎"
+        },
+        {
+          "id": "b",
+          "label": "B"
+        },
+        {
+          "id": "c",
+          "label": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "話すのは新郎。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "披露宴",
+        "誰が話す",
+        "新郎が話す"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_091",
+      "type": "multipleChoice",
+      "prompt": "「早く」の対象の行為は何ですか。",
+      "japanese": "A: 「早く。」\nB: 「着替える。」",
+      "context": "子どもが遊び着のまま。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "着替えること"
+        },
+        {
+          "id": "b",
+          "label": "食べること"
+        },
+        {
+          "id": "c",
+          "label": "寝ること"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "文脈から着替えが指令の対象。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "早く",
+        "着替える"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_092",
+      "type": "multipleChoice",
+      "prompt": "「静かに」とはどこで静かにすべきですか。",
+      "japanese": "A: 「図書館だから静かに。」\nB: 「はい。」",
+      "context": "玄関。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "図書館の中"
+        },
+        {
+          "id": "b",
+          "label": "家の中"
+        },
+        {
+          "id": "c",
+          "label": "道路"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "場所のルールに合わせる。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "図書館だから静かに",
+        "はい"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_093",
+      "type": "multipleChoice",
+      "prompt": "誰に「明日まで」と期限がありますか。",
+      "japanese": "A: 「レポート、明日までね。」\nB: 「了解。」",
+      "context": "ゼミ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "教授"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "提出義務があるのは答えるB。",
+      "diagnosticTags": [
+        "omitted_recipient",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "レポート",
+        "明日までね",
+        "了解"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_094",
+      "type": "multipleChoice",
+      "prompt": "「一口」の対象は何ですか。",
+      "japanese": "A: 「一口ちょうだい。」\nB: 「はい、どうぞ。」",
+      "context": "ケーキを食べているBの前。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ケーキ"
+        },
+        {
+          "id": "b",
+          "label": "お茶"
+        },
+        {
+          "id": "c",
+          "label": "箸"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "分け勧めの対象はケーキ。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "一口ちょうだい",
+        "はい",
+        "どうぞ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_095",
+      "type": "multipleChoice",
+      "prompt": "「そっち」の仕事はどちらの担当ですか。",
+      "japanese": "A: 「そっち、終わった？」\nB: 「うちは終わった。」",
+      "context": "分担作業。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A側の担当"
+        },
+        {
+          "id": "b",
+          "label": "B側の担当"
+        },
+        {
+          "id": "c",
+          "label": "両方"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "Aの立場で「そっち」は相手＝B側の担当を指す。",
+      "diagnosticTags": [
+        "dialogue_context",
+        "implication"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "そっち",
+        "終わった",
+        "うちは終わった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_096",
+      "type": "multipleChoice",
+      "prompt": "「また」の繰り返しは何を指しますか。",
+      "japanese": "A: 「また遅刻？」\nB: 「すみません。」",
+      "context": "出勤。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遅刻する行為"
+        },
+        {
+          "id": "b",
+          "label": "早退"
+        },
+        {
+          "id": "c",
+          "label": "欠勤"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "繰り返されたのは遅刻。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "また遅刻",
+        "すみません"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_097",
+      "type": "multipleChoice",
+      "prompt": "誰が謝る必要がありますか。",
+      "japanese": "A: 「約束、忘れたでしょ。」\nB: 「ごめん、私が悪い。」",
+      "context": "友達。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B"
+        },
+        {
+          "id": "b",
+          "label": "A"
+        },
+        {
+          "id": "c",
+          "label": "二人とも"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "謝るのは約束を忘れたB。",
+      "diagnosticTags": [
+        "omitted_subject",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "約束",
+        "忘れたでしょ",
+        "ごめん",
+        "私が悪い"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_098",
+      "type": "multipleChoice",
+      "prompt": "「どうぞ」の内容は何を許可していますか。",
+      "japanese": "A: 「座っていい？」\nB: 「どうぞ。」",
+      "context": "面接の待合室。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "座ること"
+        },
+        {
+          "id": "b",
+          "label": "立つこと"
+        },
+        {
+          "id": "c",
+          "label": "帰ること"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "着席の許可。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "座っていい",
+        "どうぞ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_099",
+      "type": "multipleChoice",
+      "prompt": "「いいよ」は何を認めていますか。",
+      "japanese": "A: 「この席、空いてる？」\nB: 「いいよ。」",
+      "context": "カフェ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "座ってよい"
+        },
+        {
+          "id": "b",
+          "label": "注文してよい"
+        },
+        {
+          "id": "c",
+          "label": "写真を撮ってよい"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "席を使う許可。",
+      "diagnosticTags": [
+        "implication",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "この席",
+        "空いてる",
+        "いいよ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "od_100",
+      "type": "multipleChoice",
+      "prompt": "「後で」の対象の行為は何ですか。",
+      "japanese": "A: 「このメール、後で送って。」\nB: 「分かった。」",
+      "context": "社内。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メールを送ること"
+        },
+        {
+          "id": "b",
+          "label": "印刷すること"
+        },
+        {
+          "id": "c",
+          "label": "削除すること"
+        },
+        {
+          "id": "d",
+          "label": "分からない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "後回しにするのは送付作業。",
+      "diagnosticTags": [
+        "omitted_object",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "省略された成分の推定",
+        "会話文脈からの照応"
+      ],
+      "vocabulary": [
+        "このメール",
+        "後で送って",
+        "分かった"
+      ],
+      "reviewStatus": "draft"
+    }
+  ]
+}

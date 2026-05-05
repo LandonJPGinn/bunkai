@@ -1,0 +1,6448 @@
+{
+  "id": "verbConjugation",
+  "title": "Verb Conjugation",
+  "subtitle": "Forms and patterns",
+  "description": "変換ドリル：ます・て・た・ない、辞書への復元、可能・受身・使役、意志、ば・たら、命令・禁止、よく使う敬語表現（N4〜N3中心、N2先取り）。",
+  "difficulty": "N4-N3",
+  "diagnosticTags": [
+    "causative_form",
+    "conditional_ba_form",
+    "dictionary_form",
+    "godan",
+    "ichidan",
+    "imperative_form",
+    "irregular",
+    "keigo",
+    "masu_form",
+    "nai_form",
+    "passive_form",
+    "past_form",
+    "potential_form",
+    "prohibitive_form",
+    "tara_form",
+    "te_form",
+    "verb_conjugation",
+    "volitional_form"
+  ],
+  "questions": [
+    {
+      "id": "vc_001",
+      "type": "multipleChoice",
+      "prompt": "食べる → Convert to ます-form (polite non-past).",
+      "japanese": "食べる → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食べた"
+        },
+        {
+          "id": "b",
+          "label": "食べて"
+        },
+        {
+          "id": "c",
+          "label": "食べない"
+        },
+        {
+          "id": "d",
+          "label": "食べます"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「食べる」：丁寧語は連用形＋「ます」。 正解は「食べます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "食べる",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_002",
+      "type": "multipleChoice",
+      "prompt": "食べる → Convert to te-form.",
+      "japanese": "食べる → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食べない"
+        },
+        {
+          "id": "b",
+          "label": "食べた"
+        },
+        {
+          "id": "c",
+          "label": "食べて"
+        },
+        {
+          "id": "d",
+          "label": "食べます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「食べる」：て形の作り方に従う。 正解は「食べて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "食べる",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_003",
+      "type": "multipleChoice",
+      "prompt": "食べる → Convert to plain past (た-form).",
+      "japanese": "食べる → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食べます"
+        },
+        {
+          "id": "b",
+          "label": "食べない"
+        },
+        {
+          "id": "c",
+          "label": "食べて"
+        },
+        {
+          "id": "d",
+          "label": "食べた"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「食べる」：た形は連用形＋「た」系。 正解は「食べた」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "食べる",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_004",
+      "type": "multipleChoice",
+      "prompt": "食べる → Convert to negative plain (ない-form).",
+      "japanese": "食べる → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食べます"
+        },
+        {
+          "id": "b",
+          "label": "食べて"
+        },
+        {
+          "id": "c",
+          "label": "食べない"
+        },
+        {
+          "id": "d",
+          "label": "食べた"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「食べる」：未然形＋「ない」。 正解は「食べない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "食べる",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_005",
+      "type": "multipleChoice",
+      "prompt": "見る → Convert to ます-form (polite non-past).",
+      "japanese": "見る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見て"
+        },
+        {
+          "id": "b",
+          "label": "見た"
+        },
+        {
+          "id": "c",
+          "label": "見ない"
+        },
+        {
+          "id": "d",
+          "label": "見ます"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「見る」：丁寧語は連用形＋「ます」。 正解は「見ます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "見る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_006",
+      "type": "multipleChoice",
+      "prompt": "見る → Convert to te-form.",
+      "japanese": "見る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見ます"
+        },
+        {
+          "id": "b",
+          "label": "見ない"
+        },
+        {
+          "id": "c",
+          "label": "見た"
+        },
+        {
+          "id": "d",
+          "label": "見て"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「見る」：て形の作り方に従う。 正解は「見て」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "見る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_007",
+      "type": "multipleChoice",
+      "prompt": "見る → Convert to plain past (た-form).",
+      "japanese": "見る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見て"
+        },
+        {
+          "id": "b",
+          "label": "見ます"
+        },
+        {
+          "id": "c",
+          "label": "見た"
+        },
+        {
+          "id": "d",
+          "label": "見ない"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「見る」：た形は連用形＋「た」系。 正解は「見た」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "見る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_008",
+      "type": "multipleChoice",
+      "prompt": "見る → Convert to negative plain (ない-form).",
+      "japanese": "見る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見ます"
+        },
+        {
+          "id": "b",
+          "label": "見た"
+        },
+        {
+          "id": "c",
+          "label": "見ない"
+        },
+        {
+          "id": "d",
+          "label": "見て"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「見る」：未然形＋「ない」。 正解は「見ない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "見る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_009",
+      "type": "multipleChoice",
+      "prompt": "起きる → Convert to ます-form (polite non-past).",
+      "japanese": "起きる → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "起きます"
+        },
+        {
+          "id": "b",
+          "label": "起きた"
+        },
+        {
+          "id": "c",
+          "label": "起きて"
+        },
+        {
+          "id": "d",
+          "label": "起きない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "一段動詞「起きる」：丁寧語は連用形＋「ます」。 正解は「起きます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "起きる",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_010",
+      "type": "multipleChoice",
+      "prompt": "起きる → Convert to te-form.",
+      "japanese": "起きる → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "起きた"
+        },
+        {
+          "id": "b",
+          "label": "起きない"
+        },
+        {
+          "id": "c",
+          "label": "起きて"
+        },
+        {
+          "id": "d",
+          "label": "起きます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「起きる」：て形の作り方に従う。 正解は「起きて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "起きる",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_011",
+      "type": "multipleChoice",
+      "prompt": "起きる → Convert to plain past (た-form).",
+      "japanese": "起きる → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "起きて"
+        },
+        {
+          "id": "b",
+          "label": "起きます"
+        },
+        {
+          "id": "c",
+          "label": "起きない"
+        },
+        {
+          "id": "d",
+          "label": "起きた"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「起きる」：た形は連用形＋「た」系。 正解は「起きた」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "起きる",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_012",
+      "type": "multipleChoice",
+      "prompt": "起きる → Convert to negative plain (ない-form).",
+      "japanese": "起きる → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "起きた"
+        },
+        {
+          "id": "b",
+          "label": "起きて"
+        },
+        {
+          "id": "c",
+          "label": "起きます"
+        },
+        {
+          "id": "d",
+          "label": "起きない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「起きる」：未然形＋「ない」。 正解は「起きない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "起きる",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_013",
+      "type": "multipleChoice",
+      "prompt": "寝る → Convert to ます-form (polite non-past).",
+      "japanese": "寝る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寝ない"
+        },
+        {
+          "id": "b",
+          "label": "寝て"
+        },
+        {
+          "id": "c",
+          "label": "寝ます"
+        },
+        {
+          "id": "d",
+          "label": "寝た"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「寝る」：丁寧語は連用形＋「ます」。 正解は「寝ます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "寝る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_014",
+      "type": "multipleChoice",
+      "prompt": "寝る → Convert to te-form.",
+      "japanese": "寝る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寝た"
+        },
+        {
+          "id": "b",
+          "label": "寝ない"
+        },
+        {
+          "id": "c",
+          "label": "寝ます"
+        },
+        {
+          "id": "d",
+          "label": "寝て"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「寝る」：て形の作り方に従う。 正解は「寝て」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "寝る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_015",
+      "type": "multipleChoice",
+      "prompt": "寝る → Convert to plain past (た-form).",
+      "japanese": "寝る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寝た"
+        },
+        {
+          "id": "b",
+          "label": "寝ます"
+        },
+        {
+          "id": "c",
+          "label": "寝ない"
+        },
+        {
+          "id": "d",
+          "label": "寝て"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "一段動詞「寝る」：た形は連用形＋「た」系。 正解は「寝た」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "寝る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_016",
+      "type": "multipleChoice",
+      "prompt": "寝る → Convert to negative plain (ない-form).",
+      "japanese": "寝る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寝た"
+        },
+        {
+          "id": "b",
+          "label": "寝ない"
+        },
+        {
+          "id": "c",
+          "label": "寝て"
+        },
+        {
+          "id": "d",
+          "label": "寝ます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "一段動詞「寝る」：未然形＋「ない」。 正解は「寝ない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "寝る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_017",
+      "type": "multipleChoice",
+      "prompt": "借りる → Convert to ます-form (polite non-past).",
+      "japanese": "借りる → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "借りて"
+        },
+        {
+          "id": "b",
+          "label": "借りない"
+        },
+        {
+          "id": "c",
+          "label": "借りた"
+        },
+        {
+          "id": "d",
+          "label": "借ります"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「借りる」：丁寧語は連用形＋「ます」。 正解は「借ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "借りる",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_018",
+      "type": "multipleChoice",
+      "prompt": "借りる → Convert to te-form.",
+      "japanese": "借りる → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "借ります"
+        },
+        {
+          "id": "b",
+          "label": "借りない"
+        },
+        {
+          "id": "c",
+          "label": "借りて"
+        },
+        {
+          "id": "d",
+          "label": "借りた"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「借りる」：て形の作り方に従う。 正解は「借りて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "借りる",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_019",
+      "type": "multipleChoice",
+      "prompt": "借りる → Convert to plain past (た-form).",
+      "japanese": "借りる → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "借りない"
+        },
+        {
+          "id": "b",
+          "label": "借りて"
+        },
+        {
+          "id": "c",
+          "label": "借ります"
+        },
+        {
+          "id": "d",
+          "label": "借りた"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "一段動詞「借りる」：た形は連用形＋「た」系。 正解は「借りた」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "借りる",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_020",
+      "type": "multipleChoice",
+      "prompt": "借りる → Convert to negative plain (ない-form).",
+      "japanese": "借りる → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "借りない"
+        },
+        {
+          "id": "b",
+          "label": "借ります"
+        },
+        {
+          "id": "c",
+          "label": "借りて"
+        },
+        {
+          "id": "d",
+          "label": "借りた"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "一段動詞「借りる」：未然形＋「ない」。 正解は「借りない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "借りる",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_021",
+      "type": "multipleChoice",
+      "prompt": "着る → Convert to ます-form (polite non-past).",
+      "japanese": "着る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "着ます"
+        },
+        {
+          "id": "b",
+          "label": "着た"
+        },
+        {
+          "id": "c",
+          "label": "着ない"
+        },
+        {
+          "id": "d",
+          "label": "着て"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「着る」：丁寧語は連用形＋「ます」。 正解は「着ます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "着る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_022",
+      "type": "multipleChoice",
+      "prompt": "着る → Convert to te-form.",
+      "japanese": "着る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "着て"
+        },
+        {
+          "id": "b",
+          "label": "着ない"
+        },
+        {
+          "id": "c",
+          "label": "着た"
+        },
+        {
+          "id": "d",
+          "label": "着ます"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「着る」：て形の作り方に従う。 正解は「着て」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "着る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_023",
+      "type": "multipleChoice",
+      "prompt": "着る → Convert to plain past (た-form).",
+      "japanese": "着る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "着ます"
+        },
+        {
+          "id": "b",
+          "label": "着ない"
+        },
+        {
+          "id": "c",
+          "label": "着て"
+        },
+        {
+          "id": "d",
+          "label": "着た"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「着る」：た形は連用形＋「た」系。 正解は「着た」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "着る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_024",
+      "type": "multipleChoice",
+      "prompt": "着る → Convert to negative plain (ない-form).",
+      "japanese": "着る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "着て"
+        },
+        {
+          "id": "b",
+          "label": "着た"
+        },
+        {
+          "id": "c",
+          "label": "着ない"
+        },
+        {
+          "id": "d",
+          "label": "着ます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「着る」：未然形＋「ない」。 正解は「着ない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "着る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_025",
+      "type": "multipleChoice",
+      "prompt": "する → Convert to ます-form (polite non-past).",
+      "japanese": "する → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "した"
+        },
+        {
+          "id": "b",
+          "label": "します"
+        },
+        {
+          "id": "c",
+          "label": "して"
+        },
+        {
+          "id": "d",
+          "label": "しない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "不規則「する」：丁寧語は連用形＋「ます」。 正解は「します」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "する",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_026",
+      "type": "multipleChoice",
+      "prompt": "する → Convert to te-form.",
+      "japanese": "する → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "します"
+        },
+        {
+          "id": "b",
+          "label": "しない"
+        },
+        {
+          "id": "c",
+          "label": "して"
+        },
+        {
+          "id": "d",
+          "label": "した"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "不規則「する」：て形の作り方に従う。 正解は「して」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "する",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_027",
+      "type": "multipleChoice",
+      "prompt": "する → Convert to plain past (た-form).",
+      "japanese": "する → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "しない"
+        },
+        {
+          "id": "b",
+          "label": "して"
+        },
+        {
+          "id": "c",
+          "label": "します"
+        },
+        {
+          "id": "d",
+          "label": "した"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "不規則「する」：た形は連用形＋「た」系。 正解は「した」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "する",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_028",
+      "type": "multipleChoice",
+      "prompt": "する → Convert to negative plain (ない-form).",
+      "japanese": "する → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "します"
+        },
+        {
+          "id": "b",
+          "label": "した"
+        },
+        {
+          "id": "c",
+          "label": "しない"
+        },
+        {
+          "id": "d",
+          "label": "して"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "不規則「する」：未然形＋「ない」。 正解は「しない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "する",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_029",
+      "type": "multipleChoice",
+      "prompt": "来る → Convert to ます-form (polite non-past).",
+      "japanese": "来る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来ない"
+        },
+        {
+          "id": "b",
+          "label": "来て"
+        },
+        {
+          "id": "c",
+          "label": "来ます"
+        },
+        {
+          "id": "d",
+          "label": "来た"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "不規則「来る」：丁寧語は連用形＋「ます」。 正解は「来ます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "来る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_030",
+      "type": "multipleChoice",
+      "prompt": "来る → Convert to te-form.",
+      "japanese": "来る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来て"
+        },
+        {
+          "id": "b",
+          "label": "来ます"
+        },
+        {
+          "id": "c",
+          "label": "来た"
+        },
+        {
+          "id": "d",
+          "label": "来ない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "不規則「来る」：て形の作り方に従う。 正解は「来て」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "来る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_031",
+      "type": "multipleChoice",
+      "prompt": "来る → Convert to plain past (た-form).",
+      "japanese": "来る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来て"
+        },
+        {
+          "id": "b",
+          "label": "来た"
+        },
+        {
+          "id": "c",
+          "label": "来ない"
+        },
+        {
+          "id": "d",
+          "label": "来ます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "不規則「来る」：た形は連用形＋「た」系。 正解は「来た」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "来る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_032",
+      "type": "multipleChoice",
+      "prompt": "来る → Convert to negative plain (ない-form).",
+      "japanese": "来る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来ない"
+        },
+        {
+          "id": "b",
+          "label": "来た"
+        },
+        {
+          "id": "c",
+          "label": "来て"
+        },
+        {
+          "id": "d",
+          "label": "来ます"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "不規則「来る」：未然形＋「ない」。 正解は「来ない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "irregular"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "来る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_033",
+      "type": "multipleChoice",
+      "prompt": "行く → Convert to ます-form (polite non-past).",
+      "japanese": "行く → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "行きます"
+        },
+        {
+          "id": "b",
+          "label": "行って"
+        },
+        {
+          "id": "c",
+          "label": "行った"
+        },
+        {
+          "id": "d",
+          "label": "行かない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「行く」：丁寧語は連用形＋「ます」。 正解は「行きます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "行く",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_034",
+      "type": "multipleChoice",
+      "prompt": "行く → Convert to te-form.",
+      "japanese": "行く → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "行きます"
+        },
+        {
+          "id": "b",
+          "label": "行かない"
+        },
+        {
+          "id": "c",
+          "label": "行って"
+        },
+        {
+          "id": "d",
+          "label": "行った"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「行く」：て形の作り方に従う。 正解は「行って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "行く",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_035",
+      "type": "multipleChoice",
+      "prompt": "行く → Convert to plain past (た-form).",
+      "japanese": "行く → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "行きます"
+        },
+        {
+          "id": "b",
+          "label": "行って"
+        },
+        {
+          "id": "c",
+          "label": "行った"
+        },
+        {
+          "id": "d",
+          "label": "行かない"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「行く」：た形は連用形＋「た」系。 正解は「行った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "行く",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_036",
+      "type": "multipleChoice",
+      "prompt": "行く → Convert to negative plain (ない-form).",
+      "japanese": "行く → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "行きます"
+        },
+        {
+          "id": "b",
+          "label": "行って"
+        },
+        {
+          "id": "c",
+          "label": "行った"
+        },
+        {
+          "id": "d",
+          "label": "行かない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「行く」：未然形＋「ない」。 正解は「行かない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "行く",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_037",
+      "type": "multipleChoice",
+      "prompt": "書く → Convert to ます-form (polite non-past).",
+      "japanese": "書く → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書いて"
+        },
+        {
+          "id": "b",
+          "label": "書きます"
+        },
+        {
+          "id": "c",
+          "label": "書いた"
+        },
+        {
+          "id": "d",
+          "label": "書かない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「書く」：丁寧語は連用形＋「ます」。 正解は「書きます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "書く",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_038",
+      "type": "multipleChoice",
+      "prompt": "書く → Convert to te-form.",
+      "japanese": "書く → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書いて"
+        },
+        {
+          "id": "b",
+          "label": "書いた"
+        },
+        {
+          "id": "c",
+          "label": "書きます"
+        },
+        {
+          "id": "d",
+          "label": "書かない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「書く」：て形の作り方に従う。 正解は「書いて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "書く",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_039",
+      "type": "multipleChoice",
+      "prompt": "書く → Convert to plain past (た-form).",
+      "japanese": "書く → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書きます"
+        },
+        {
+          "id": "b",
+          "label": "書いた"
+        },
+        {
+          "id": "c",
+          "label": "書かない"
+        },
+        {
+          "id": "d",
+          "label": "書いて"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「書く」：た形は連用形＋「た」系。 正解は「書いた」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "書く",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_040",
+      "type": "multipleChoice",
+      "prompt": "書く → Convert to negative plain (ない-form).",
+      "japanese": "書く → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書いた"
+        },
+        {
+          "id": "b",
+          "label": "書きます"
+        },
+        {
+          "id": "c",
+          "label": "書いて"
+        },
+        {
+          "id": "d",
+          "label": "書かない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「書く」：未然形＋「ない」。 正解は「書かない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "書く",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_041",
+      "type": "multipleChoice",
+      "prompt": "聞く → Convert to ます-form (polite non-past).",
+      "japanese": "聞く → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "聞かない"
+        },
+        {
+          "id": "b",
+          "label": "聞いて"
+        },
+        {
+          "id": "c",
+          "label": "聞きます"
+        },
+        {
+          "id": "d",
+          "label": "聞いた"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「聞く」：丁寧語は連用形＋「ます」。 正解は「聞きます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "聞く",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_042",
+      "type": "multipleChoice",
+      "prompt": "聞く → Convert to te-form.",
+      "japanese": "聞く → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "聞いた"
+        },
+        {
+          "id": "b",
+          "label": "聞きます"
+        },
+        {
+          "id": "c",
+          "label": "聞いて"
+        },
+        {
+          "id": "d",
+          "label": "聞かない"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「聞く」：て形の作り方に従う。 正解は「聞いて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "聞く",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_043",
+      "type": "multipleChoice",
+      "prompt": "聞く → Convert to plain past (た-form).",
+      "japanese": "聞く → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "聞かない"
+        },
+        {
+          "id": "b",
+          "label": "聞きます"
+        },
+        {
+          "id": "c",
+          "label": "聞いて"
+        },
+        {
+          "id": "d",
+          "label": "聞いた"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「聞く」：た形は連用形＋「た」系。 正解は「聞いた」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "聞く",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_044",
+      "type": "multipleChoice",
+      "prompt": "聞く → Convert to negative plain (ない-form).",
+      "japanese": "聞く → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "聞いた"
+        },
+        {
+          "id": "b",
+          "label": "聞かない"
+        },
+        {
+          "id": "c",
+          "label": "聞いて"
+        },
+        {
+          "id": "d",
+          "label": "聞きます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「聞く」：未然形＋「ない」。 正解は「聞かない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "聞く",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_045",
+      "type": "multipleChoice",
+      "prompt": "話す → Convert to ます-form (polite non-past).",
+      "japanese": "話す → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話して"
+        },
+        {
+          "id": "b",
+          "label": "話します"
+        },
+        {
+          "id": "c",
+          "label": "話さない"
+        },
+        {
+          "id": "d",
+          "label": "話した"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「話す」：丁寧語は連用形＋「ます」。 正解は「話します」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "話す",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_046",
+      "type": "multipleChoice",
+      "prompt": "話す → Convert to te-form.",
+      "japanese": "話す → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話した"
+        },
+        {
+          "id": "b",
+          "label": "話して"
+        },
+        {
+          "id": "c",
+          "label": "話さない"
+        },
+        {
+          "id": "d",
+          "label": "話します"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「話す」：て形の作り方に従う。 正解は「話して」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "話す",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_047",
+      "type": "multipleChoice",
+      "prompt": "話す → Convert to plain past (た-form).",
+      "japanese": "話す → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話さない"
+        },
+        {
+          "id": "b",
+          "label": "話します"
+        },
+        {
+          "id": "c",
+          "label": "話して"
+        },
+        {
+          "id": "d",
+          "label": "話した"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「話す」：た形は連用形＋「た」系。 正解は「話した」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "話す",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_048",
+      "type": "multipleChoice",
+      "prompt": "話す → Convert to negative plain (ない-form).",
+      "japanese": "話す → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話します"
+        },
+        {
+          "id": "b",
+          "label": "話して"
+        },
+        {
+          "id": "c",
+          "label": "話さない"
+        },
+        {
+          "id": "d",
+          "label": "話した"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「話す」：未然形＋「ない」。 正解は「話さない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "話す",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_049",
+      "type": "multipleChoice",
+      "prompt": "読む → Convert to ます-form (polite non-past).",
+      "japanese": "読む → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読まない"
+        },
+        {
+          "id": "b",
+          "label": "読みます"
+        },
+        {
+          "id": "c",
+          "label": "読んで"
+        },
+        {
+          "id": "d",
+          "label": "読んだ"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「読む」：丁寧語は連用形＋「ます」。 正解は「読みます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "読む",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_050",
+      "type": "multipleChoice",
+      "prompt": "読む → Convert to te-form.",
+      "japanese": "読む → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読みます"
+        },
+        {
+          "id": "b",
+          "label": "読んだ"
+        },
+        {
+          "id": "c",
+          "label": "読まない"
+        },
+        {
+          "id": "d",
+          "label": "読んで"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「読む」：て形の作り方に従う。 正解は「読んで」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "読む",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_051",
+      "type": "multipleChoice",
+      "prompt": "読む → Convert to plain past (た-form).",
+      "japanese": "読む → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読まない"
+        },
+        {
+          "id": "b",
+          "label": "読みます"
+        },
+        {
+          "id": "c",
+          "label": "読んで"
+        },
+        {
+          "id": "d",
+          "label": "読んだ"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「読む」：た形は連用形＋「た」系。 正解は「読んだ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "読む",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_052",
+      "type": "multipleChoice",
+      "prompt": "読む → Convert to negative plain (ない-form).",
+      "japanese": "読む → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読みます"
+        },
+        {
+          "id": "b",
+          "label": "読んだ"
+        },
+        {
+          "id": "c",
+          "label": "読んで"
+        },
+        {
+          "id": "d",
+          "label": "読まない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「読む」：未然形＋「ない」。 正解は「読まない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "読む",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_053",
+      "type": "multipleChoice",
+      "prompt": "飲む → Convert to ます-form (polite non-past).",
+      "japanese": "飲む → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲みます"
+        },
+        {
+          "id": "b",
+          "label": "飲まない"
+        },
+        {
+          "id": "c",
+          "label": "飲んだ"
+        },
+        {
+          "id": "d",
+          "label": "飲んで"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「飲む」：丁寧語は連用形＋「ます」。 正解は「飲みます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "飲む",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_054",
+      "type": "multipleChoice",
+      "prompt": "飲む → Convert to te-form.",
+      "japanese": "飲む → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲んで"
+        },
+        {
+          "id": "b",
+          "label": "飲んだ"
+        },
+        {
+          "id": "c",
+          "label": "飲まない"
+        },
+        {
+          "id": "d",
+          "label": "飲みます"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「飲む」：て形の作り方に従う。 正解は「飲んで」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "飲む",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_055",
+      "type": "multipleChoice",
+      "prompt": "飲む → Convert to plain past (た-form).",
+      "japanese": "飲む → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲まない"
+        },
+        {
+          "id": "b",
+          "label": "飲んだ"
+        },
+        {
+          "id": "c",
+          "label": "飲んで"
+        },
+        {
+          "id": "d",
+          "label": "飲みます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「飲む」：た形は連用形＋「た」系。 正解は「飲んだ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "飲む",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_056",
+      "type": "multipleChoice",
+      "prompt": "飲む → Convert to negative plain (ない-form).",
+      "japanese": "飲む → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲まない"
+        },
+        {
+          "id": "b",
+          "label": "飲んだ"
+        },
+        {
+          "id": "c",
+          "label": "飲みます"
+        },
+        {
+          "id": "d",
+          "label": "飲んで"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「飲む」：未然形＋「ない」。 正解は「飲まない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "飲む",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_057",
+      "type": "multipleChoice",
+      "prompt": "待つ → Convert to ます-form (polite non-past).",
+      "japanese": "待つ → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "待ちます"
+        },
+        {
+          "id": "b",
+          "label": "待って"
+        },
+        {
+          "id": "c",
+          "label": "待った"
+        },
+        {
+          "id": "d",
+          "label": "待たない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「待つ」：丁寧語は連用形＋「ます」。 正解は「待ちます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "待つ",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_058",
+      "type": "multipleChoice",
+      "prompt": "待つ → Convert to te-form.",
+      "japanese": "待つ → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "待ちます"
+        },
+        {
+          "id": "b",
+          "label": "待った"
+        },
+        {
+          "id": "c",
+          "label": "待たない"
+        },
+        {
+          "id": "d",
+          "label": "待って"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「待つ」：て形の作り方に従う。 正解は「待って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "待つ",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_059",
+      "type": "multipleChoice",
+      "prompt": "待つ → Convert to plain past (た-form).",
+      "japanese": "待つ → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "待って"
+        },
+        {
+          "id": "b",
+          "label": "待たない"
+        },
+        {
+          "id": "c",
+          "label": "待ちます"
+        },
+        {
+          "id": "d",
+          "label": "待った"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「待つ」：た形は連用形＋「た」系。 正解は「待った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "待つ",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_060",
+      "type": "multipleChoice",
+      "prompt": "待つ → Convert to negative plain (ない-form).",
+      "japanese": "待つ → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "待った"
+        },
+        {
+          "id": "b",
+          "label": "待たない"
+        },
+        {
+          "id": "c",
+          "label": "待って"
+        },
+        {
+          "id": "d",
+          "label": "待ちます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「待つ」：未然形＋「ない」。 正解は「待たない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "待つ",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_061",
+      "type": "multipleChoice",
+      "prompt": "買う → Convert to ます-form (polite non-past).",
+      "japanese": "買う → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "買って"
+        },
+        {
+          "id": "b",
+          "label": "買った"
+        },
+        {
+          "id": "c",
+          "label": "買わない"
+        },
+        {
+          "id": "d",
+          "label": "買います"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「買う」：丁寧語は連用形＋「ます」。 正解は「買います」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "買う",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_062",
+      "type": "multipleChoice",
+      "prompt": "買う → Convert to te-form.",
+      "japanese": "買う → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "買わない"
+        },
+        {
+          "id": "b",
+          "label": "買った"
+        },
+        {
+          "id": "c",
+          "label": "買って"
+        },
+        {
+          "id": "d",
+          "label": "買います"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「買う」：て形の作り方に従う。 正解は「買って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "買う",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_063",
+      "type": "multipleChoice",
+      "prompt": "買う → Convert to plain past (た-form).",
+      "japanese": "買う → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "買います"
+        },
+        {
+          "id": "b",
+          "label": "買わない"
+        },
+        {
+          "id": "c",
+          "label": "買った"
+        },
+        {
+          "id": "d",
+          "label": "買って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「買う」：た形は連用形＋「た」系。 正解は「買った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "買う",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_064",
+      "type": "multipleChoice",
+      "prompt": "買う → Convert to negative plain (ない-form).",
+      "japanese": "買う → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "買わない"
+        },
+        {
+          "id": "b",
+          "label": "買います"
+        },
+        {
+          "id": "c",
+          "label": "買った"
+        },
+        {
+          "id": "d",
+          "label": "買って"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「買う」：未然形＋「ない」。 正解は「買わない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "買う",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_065",
+      "type": "multipleChoice",
+      "prompt": "帰る → Convert to ます-form (polite non-past).",
+      "japanese": "帰る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帰らない"
+        },
+        {
+          "id": "b",
+          "label": "帰ります"
+        },
+        {
+          "id": "c",
+          "label": "帰った"
+        },
+        {
+          "id": "d",
+          "label": "帰って"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「帰る」：丁寧語は連用形＋「ます」。 正解は「帰ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "帰る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_066",
+      "type": "multipleChoice",
+      "prompt": "帰る → Convert to te-form.",
+      "japanese": "帰る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帰った"
+        },
+        {
+          "id": "b",
+          "label": "帰ります"
+        },
+        {
+          "id": "c",
+          "label": "帰って"
+        },
+        {
+          "id": "d",
+          "label": "帰らない"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「帰る」：て形の作り方に従う。 正解は「帰って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "帰る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_067",
+      "type": "multipleChoice",
+      "prompt": "帰る → Convert to plain past (た-form).",
+      "japanese": "帰る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帰ります"
+        },
+        {
+          "id": "b",
+          "label": "帰って"
+        },
+        {
+          "id": "c",
+          "label": "帰った"
+        },
+        {
+          "id": "d",
+          "label": "帰らない"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「帰る」：た形は連用形＋「た」系。 正解は「帰った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "帰る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_068",
+      "type": "multipleChoice",
+      "prompt": "帰る → Convert to negative plain (ない-form).",
+      "japanese": "帰る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帰った"
+        },
+        {
+          "id": "b",
+          "label": "帰ります"
+        },
+        {
+          "id": "c",
+          "label": "帰って"
+        },
+        {
+          "id": "d",
+          "label": "帰らない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「帰る」：未然形＋「ない」。 正解は「帰らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "帰る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_069",
+      "type": "multipleChoice",
+      "prompt": "入る → Convert to ます-form (polite non-past).",
+      "japanese": "入る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "入ります"
+        },
+        {
+          "id": "b",
+          "label": "入らない"
+        },
+        {
+          "id": "c",
+          "label": "入って"
+        },
+        {
+          "id": "d",
+          "label": "入った"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「入る」：丁寧語は連用形＋「ます」。 正解は「入ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "入る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_070",
+      "type": "multipleChoice",
+      "prompt": "入る → Convert to te-form.",
+      "japanese": "入る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "入ります"
+        },
+        {
+          "id": "b",
+          "label": "入って"
+        },
+        {
+          "id": "c",
+          "label": "入った"
+        },
+        {
+          "id": "d",
+          "label": "入らない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「入る」：て形の作り方に従う。 正解は「入って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "入る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_071",
+      "type": "multipleChoice",
+      "prompt": "入る → Convert to plain past (た-form).",
+      "japanese": "入る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "入って"
+        },
+        {
+          "id": "b",
+          "label": "入ります"
+        },
+        {
+          "id": "c",
+          "label": "入らない"
+        },
+        {
+          "id": "d",
+          "label": "入った"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「入る」：た形は連用形＋「た」系。 正解は「入った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "入る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_072",
+      "type": "multipleChoice",
+      "prompt": "入る → Convert to negative plain (ない-form).",
+      "japanese": "入る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "入ります"
+        },
+        {
+          "id": "b",
+          "label": "入った"
+        },
+        {
+          "id": "c",
+          "label": "入らない"
+        },
+        {
+          "id": "d",
+          "label": "入って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「入る」：未然形＋「ない」。 正解は「入らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "入る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_073",
+      "type": "multipleChoice",
+      "prompt": "走る → Convert to ます-form (polite non-past).",
+      "japanese": "走る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "走った"
+        },
+        {
+          "id": "b",
+          "label": "走らない"
+        },
+        {
+          "id": "c",
+          "label": "走ります"
+        },
+        {
+          "id": "d",
+          "label": "走って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「走る」：丁寧語は連用形＋「ます」。 正解は「走ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "走る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_074",
+      "type": "multipleChoice",
+      "prompt": "走る → Convert to te-form.",
+      "japanese": "走る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "走った"
+        },
+        {
+          "id": "b",
+          "label": "走って"
+        },
+        {
+          "id": "c",
+          "label": "走らない"
+        },
+        {
+          "id": "d",
+          "label": "走ります"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「走る」：て形の作り方に従う。 正解は「走って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "走る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_075",
+      "type": "multipleChoice",
+      "prompt": "走る → Convert to plain past (た-form).",
+      "japanese": "走る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "走らない"
+        },
+        {
+          "id": "b",
+          "label": "走った"
+        },
+        {
+          "id": "c",
+          "label": "走ります"
+        },
+        {
+          "id": "d",
+          "label": "走って"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「走る」：た形は連用形＋「た」系。 正解は「走った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "走る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_076",
+      "type": "multipleChoice",
+      "prompt": "走る → Convert to negative plain (ない-form).",
+      "japanese": "走る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "走って"
+        },
+        {
+          "id": "b",
+          "label": "走った"
+        },
+        {
+          "id": "c",
+          "label": "走ります"
+        },
+        {
+          "id": "d",
+          "label": "走らない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「走る」：未然形＋「ない」。 正解は「走らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "走る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_077",
+      "type": "multipleChoice",
+      "prompt": "死ぬ → Convert to ます-form (polite non-past).",
+      "japanese": "死ぬ → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "死んで"
+        },
+        {
+          "id": "b",
+          "label": "死なない"
+        },
+        {
+          "id": "c",
+          "label": "死んだ"
+        },
+        {
+          "id": "d",
+          "label": "死にます"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「死ぬ」：丁寧語は連用形＋「ます」。 正解は「死にます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "死ぬ",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_078",
+      "type": "multipleChoice",
+      "prompt": "死ぬ → Convert to te-form.",
+      "japanese": "死ぬ → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "死にます"
+        },
+        {
+          "id": "b",
+          "label": "死んだ"
+        },
+        {
+          "id": "c",
+          "label": "死なない"
+        },
+        {
+          "id": "d",
+          "label": "死んで"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「死ぬ」：て形の作り方に従う。 正解は「死んで」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "死ぬ",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_079",
+      "type": "multipleChoice",
+      "prompt": "死ぬ → Convert to plain past (た-form).",
+      "japanese": "死ぬ → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "死んだ"
+        },
+        {
+          "id": "b",
+          "label": "死んで"
+        },
+        {
+          "id": "c",
+          "label": "死にます"
+        },
+        {
+          "id": "d",
+          "label": "死なない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「死ぬ」：た形は連用形＋「た」系。 正解は「死んだ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "死ぬ",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_080",
+      "type": "multipleChoice",
+      "prompt": "死ぬ → Convert to negative plain (ない-form).",
+      "japanese": "死ぬ → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "死んで"
+        },
+        {
+          "id": "b",
+          "label": "死なない"
+        },
+        {
+          "id": "c",
+          "label": "死んだ"
+        },
+        {
+          "id": "d",
+          "label": "死にます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「死ぬ」：未然形＋「ない」。 正解は「死なない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "死ぬ",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_081",
+      "type": "multipleChoice",
+      "prompt": "遊ぶ → Convert to ます-form (polite non-past).",
+      "japanese": "遊ぶ → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遊んだ"
+        },
+        {
+          "id": "b",
+          "label": "遊びます"
+        },
+        {
+          "id": "c",
+          "label": "遊ばない"
+        },
+        {
+          "id": "d",
+          "label": "遊んで"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「遊ぶ」：丁寧語は連用形＋「ます」。 正解は「遊びます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "遊ぶ",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_082",
+      "type": "multipleChoice",
+      "prompt": "遊ぶ → Convert to te-form.",
+      "japanese": "遊ぶ → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遊んで"
+        },
+        {
+          "id": "b",
+          "label": "遊んだ"
+        },
+        {
+          "id": "c",
+          "label": "遊びます"
+        },
+        {
+          "id": "d",
+          "label": "遊ばない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「遊ぶ」：て形の作り方に従う。 正解は「遊んで」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "遊ぶ",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_083",
+      "type": "multipleChoice",
+      "prompt": "遊ぶ → Convert to plain past (た-form).",
+      "japanese": "遊ぶ → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遊んだ"
+        },
+        {
+          "id": "b",
+          "label": "遊ばない"
+        },
+        {
+          "id": "c",
+          "label": "遊びます"
+        },
+        {
+          "id": "d",
+          "label": "遊んで"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「遊ぶ」：た形は連用形＋「た」系。 正解は「遊んだ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "遊ぶ",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_084",
+      "type": "multipleChoice",
+      "prompt": "遊ぶ → Convert to negative plain (ない-form).",
+      "japanese": "遊ぶ → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遊んで"
+        },
+        {
+          "id": "b",
+          "label": "遊んだ"
+        },
+        {
+          "id": "c",
+          "label": "遊ばない"
+        },
+        {
+          "id": "d",
+          "label": "遊びます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「遊ぶ」：未然形＋「ない」。 正解は「遊ばない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "遊ぶ",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_085",
+      "type": "multipleChoice",
+      "prompt": "泳ぐ → Convert to ます-form (polite non-past).",
+      "japanese": "泳ぐ → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "泳がない"
+        },
+        {
+          "id": "b",
+          "label": "泳いだ"
+        },
+        {
+          "id": "c",
+          "label": "泳ぎます"
+        },
+        {
+          "id": "d",
+          "label": "泳いで"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「泳ぐ」：丁寧語は連用形＋「ます」。 正解は「泳ぎます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "泳ぐ",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_086",
+      "type": "multipleChoice",
+      "prompt": "泳ぐ → Convert to te-form.",
+      "japanese": "泳ぐ → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "泳ぎます"
+        },
+        {
+          "id": "b",
+          "label": "泳がない"
+        },
+        {
+          "id": "c",
+          "label": "泳いで"
+        },
+        {
+          "id": "d",
+          "label": "泳いだ"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「泳ぐ」：て形の作り方に従う。 正解は「泳いで」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "泳ぐ",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_087",
+      "type": "multipleChoice",
+      "prompt": "泳ぐ → Convert to plain past (た-form).",
+      "japanese": "泳ぐ → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "泳ぎます"
+        },
+        {
+          "id": "b",
+          "label": "泳いだ"
+        },
+        {
+          "id": "c",
+          "label": "泳いで"
+        },
+        {
+          "id": "d",
+          "label": "泳がない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「泳ぐ」：た形は連用形＋「た」系。 正解は「泳いだ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "泳ぐ",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_088",
+      "type": "multipleChoice",
+      "prompt": "泳ぐ → Convert to negative plain (ない-form).",
+      "japanese": "泳ぐ → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "泳ぎます"
+        },
+        {
+          "id": "b",
+          "label": "泳いだ"
+        },
+        {
+          "id": "c",
+          "label": "泳いで"
+        },
+        {
+          "id": "d",
+          "label": "泳がない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「泳ぐ」：未然形＋「ない」。 正解は「泳がない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "泳ぐ",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_089",
+      "type": "multipleChoice",
+      "prompt": "持つ → Convert to ます-form (polite non-past).",
+      "japanese": "持つ → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "持たない"
+        },
+        {
+          "id": "b",
+          "label": "持った"
+        },
+        {
+          "id": "c",
+          "label": "持ちます"
+        },
+        {
+          "id": "d",
+          "label": "持って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「持つ」：丁寧語は連用形＋「ます」。 正解は「持ちます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "持つ",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_090",
+      "type": "multipleChoice",
+      "prompt": "持つ → Convert to te-form.",
+      "japanese": "持つ → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "持った"
+        },
+        {
+          "id": "b",
+          "label": "持って"
+        },
+        {
+          "id": "c",
+          "label": "持たない"
+        },
+        {
+          "id": "d",
+          "label": "持ちます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「持つ」：て形の作り方に従う。 正解は「持って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "持つ",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_091",
+      "type": "multipleChoice",
+      "prompt": "持つ → Convert to plain past (た-form).",
+      "japanese": "持つ → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "持たない"
+        },
+        {
+          "id": "b",
+          "label": "持った"
+        },
+        {
+          "id": "c",
+          "label": "持って"
+        },
+        {
+          "id": "d",
+          "label": "持ちます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「持つ」：た形は連用形＋「た」系。 正解は「持った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "持つ",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_092",
+      "type": "multipleChoice",
+      "prompt": "持つ → Convert to negative plain (ない-form).",
+      "japanese": "持つ → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "持った"
+        },
+        {
+          "id": "b",
+          "label": "持って"
+        },
+        {
+          "id": "c",
+          "label": "持ちます"
+        },
+        {
+          "id": "d",
+          "label": "持たない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「持つ」：未然形＋「ない」。 正解は「持たない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "持つ",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_093",
+      "type": "multipleChoice",
+      "prompt": "作る → Convert to ます-form (polite non-past).",
+      "japanese": "作る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "作らない"
+        },
+        {
+          "id": "b",
+          "label": "作って"
+        },
+        {
+          "id": "c",
+          "label": "作ります"
+        },
+        {
+          "id": "d",
+          "label": "作った"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「作る」：丁寧語は連用形＋「ます」。 正解は「作ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "作る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_094",
+      "type": "multipleChoice",
+      "prompt": "作る → Convert to te-form.",
+      "japanese": "作る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "作って"
+        },
+        {
+          "id": "b",
+          "label": "作った"
+        },
+        {
+          "id": "c",
+          "label": "作らない"
+        },
+        {
+          "id": "d",
+          "label": "作ります"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「作る」：て形の作り方に従う。 正解は「作って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "作る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_095",
+      "type": "multipleChoice",
+      "prompt": "作る → Convert to plain past (た-form).",
+      "japanese": "作る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "作った"
+        },
+        {
+          "id": "b",
+          "label": "作らない"
+        },
+        {
+          "id": "c",
+          "label": "作って"
+        },
+        {
+          "id": "d",
+          "label": "作ります"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「作る」：た形は連用形＋「た」系。 正解は「作った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "作る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_096",
+      "type": "multipleChoice",
+      "prompt": "作る → Convert to negative plain (ない-form).",
+      "japanese": "作る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "作って"
+        },
+        {
+          "id": "b",
+          "label": "作らない"
+        },
+        {
+          "id": "c",
+          "label": "作ります"
+        },
+        {
+          "id": "d",
+          "label": "作った"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「作る」：未然形＋「ない」。 正解は「作らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "作る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_097",
+      "type": "multipleChoice",
+      "prompt": "使う → Convert to ます-form (polite non-past).",
+      "japanese": "使う → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "使った"
+        },
+        {
+          "id": "b",
+          "label": "使わない"
+        },
+        {
+          "id": "c",
+          "label": "使って"
+        },
+        {
+          "id": "d",
+          "label": "使います"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「使う」：丁寧語は連用形＋「ます」。 正解は「使います」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "使う",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_098",
+      "type": "multipleChoice",
+      "prompt": "使う → Convert to te-form.",
+      "japanese": "使う → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "使います"
+        },
+        {
+          "id": "b",
+          "label": "使わない"
+        },
+        {
+          "id": "c",
+          "label": "使った"
+        },
+        {
+          "id": "d",
+          "label": "使って"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「使う」：て形の作り方に従う。 正解は「使って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "使う",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_099",
+      "type": "multipleChoice",
+      "prompt": "使う → Convert to plain past (た-form).",
+      "japanese": "使う → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "使わない"
+        },
+        {
+          "id": "b",
+          "label": "使います"
+        },
+        {
+          "id": "c",
+          "label": "使った"
+        },
+        {
+          "id": "d",
+          "label": "使って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「使う」：た形は連用形＋「た」系。 正解は「使った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "使う",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_100",
+      "type": "multipleChoice",
+      "prompt": "使う → Convert to negative plain (ない-form).",
+      "japanese": "使う → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "使って"
+        },
+        {
+          "id": "b",
+          "label": "使います"
+        },
+        {
+          "id": "c",
+          "label": "使った"
+        },
+        {
+          "id": "d",
+          "label": "使わない"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「使う」：未然形＋「ない」。 正解は「使わない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "使う",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_101",
+      "type": "multipleChoice",
+      "prompt": "会う → Convert to ます-form (polite non-past).",
+      "japanese": "会う → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会わない"
+        },
+        {
+          "id": "b",
+          "label": "会って"
+        },
+        {
+          "id": "c",
+          "label": "会います"
+        },
+        {
+          "id": "d",
+          "label": "会った"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「会う」：丁寧語は連用形＋「ます」。 正解は「会います」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "会う",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_102",
+      "type": "multipleChoice",
+      "prompt": "会う → Convert to te-form.",
+      "japanese": "会う → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会います"
+        },
+        {
+          "id": "b",
+          "label": "会って"
+        },
+        {
+          "id": "c",
+          "label": "会わない"
+        },
+        {
+          "id": "d",
+          "label": "会った"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「会う」：て形の作り方に従う。 正解は「会って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "会う",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_103",
+      "type": "multipleChoice",
+      "prompt": "会う → Convert to plain past (た-form).",
+      "japanese": "会う → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会います"
+        },
+        {
+          "id": "b",
+          "label": "会った"
+        },
+        {
+          "id": "c",
+          "label": "会わない"
+        },
+        {
+          "id": "d",
+          "label": "会って"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「会う」：た形は連用形＋「た」系。 正解は「会った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "会う",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_104",
+      "type": "multipleChoice",
+      "prompt": "会う → Convert to negative plain (ない-form).",
+      "japanese": "会う → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会って"
+        },
+        {
+          "id": "b",
+          "label": "会わない"
+        },
+        {
+          "id": "c",
+          "label": "会った"
+        },
+        {
+          "id": "d",
+          "label": "会います"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「会う」：未然形＋「ない」。 正解は「会わない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "会う",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_105",
+      "type": "multipleChoice",
+      "prompt": "売る → Convert to ます-form (polite non-past).",
+      "japanese": "売る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売って"
+        },
+        {
+          "id": "b",
+          "label": "売らない"
+        },
+        {
+          "id": "c",
+          "label": "売った"
+        },
+        {
+          "id": "d",
+          "label": "売ります"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「売る」：丁寧語は連用形＋「ます」。 正解は「売ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "売る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_106",
+      "type": "multipleChoice",
+      "prompt": "売る → Convert to te-form.",
+      "japanese": "売る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売らない"
+        },
+        {
+          "id": "b",
+          "label": "売って"
+        },
+        {
+          "id": "c",
+          "label": "売ります"
+        },
+        {
+          "id": "d",
+          "label": "売った"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「売る」：て形の作り方に従う。 正解は「売って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "売る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_107",
+      "type": "multipleChoice",
+      "prompt": "売る → Convert to plain past (た-form).",
+      "japanese": "売る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売らない"
+        },
+        {
+          "id": "b",
+          "label": "売ります"
+        },
+        {
+          "id": "c",
+          "label": "売った"
+        },
+        {
+          "id": "d",
+          "label": "売って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「売る」：た形は連用形＋「た」系。 正解は「売った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "売る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_108",
+      "type": "multipleChoice",
+      "prompt": "売る → Convert to negative plain (ない-form).",
+      "japanese": "売る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売って"
+        },
+        {
+          "id": "b",
+          "label": "売らない"
+        },
+        {
+          "id": "c",
+          "label": "売ります"
+        },
+        {
+          "id": "d",
+          "label": "売った"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「売る」：未然形＋「ない」。 正解は「売らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "売る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_109",
+      "type": "multipleChoice",
+      "prompt": "知る → Convert to ます-form (polite non-past).",
+      "japanese": "知る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "知らない"
+        },
+        {
+          "id": "b",
+          "label": "知って"
+        },
+        {
+          "id": "c",
+          "label": "知った"
+        },
+        {
+          "id": "d",
+          "label": "知ります"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「知る」：丁寧語は連用形＋「ます」。 正解は「知ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "知る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_110",
+      "type": "multipleChoice",
+      "prompt": "知る → Convert to te-form.",
+      "japanese": "知る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "知ります"
+        },
+        {
+          "id": "b",
+          "label": "知らない"
+        },
+        {
+          "id": "c",
+          "label": "知って"
+        },
+        {
+          "id": "d",
+          "label": "知った"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「知る」：て形の作り方に従う。 正解は「知って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "知る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_111",
+      "type": "multipleChoice",
+      "prompt": "知る → Convert to plain past (た-form).",
+      "japanese": "知る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "知らない"
+        },
+        {
+          "id": "b",
+          "label": "知ります"
+        },
+        {
+          "id": "c",
+          "label": "知った"
+        },
+        {
+          "id": "d",
+          "label": "知って"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「知る」：た形は連用形＋「た」系。 正解は「知った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "知る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_112",
+      "type": "multipleChoice",
+      "prompt": "知る → Convert to negative plain (ない-form).",
+      "japanese": "知る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "知らない"
+        },
+        {
+          "id": "b",
+          "label": "知った"
+        },
+        {
+          "id": "c",
+          "label": "知って"
+        },
+        {
+          "id": "d",
+          "label": "知ります"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「知る」：未然形＋「ない」。 正解は「知らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "知る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_113",
+      "type": "multipleChoice",
+      "prompt": "乗る → Convert to ます-form (polite non-past).",
+      "japanese": "乗る → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "乗って"
+        },
+        {
+          "id": "b",
+          "label": "乗ります"
+        },
+        {
+          "id": "c",
+          "label": "乗った"
+        },
+        {
+          "id": "d",
+          "label": "乗らない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「乗る」：丁寧語は連用形＋「ます」。 正解は「乗ります」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "乗る",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_114",
+      "type": "multipleChoice",
+      "prompt": "乗る → Convert to te-form.",
+      "japanese": "乗る → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "乗ります"
+        },
+        {
+          "id": "b",
+          "label": "乗った"
+        },
+        {
+          "id": "c",
+          "label": "乗らない"
+        },
+        {
+          "id": "d",
+          "label": "乗って"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「乗る」：て形の作り方に従う。 正解は「乗って」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "乗る",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_115",
+      "type": "multipleChoice",
+      "prompt": "乗る → Convert to plain past (た-form).",
+      "japanese": "乗る → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "乗って"
+        },
+        {
+          "id": "b",
+          "label": "乗らない"
+        },
+        {
+          "id": "c",
+          "label": "乗ります"
+        },
+        {
+          "id": "d",
+          "label": "乗った"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「乗る」：た形は連用形＋「た」系。 正解は「乗った」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "乗る",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_116",
+      "type": "multipleChoice",
+      "prompt": "乗る → Convert to negative plain (ない-form).",
+      "japanese": "乗る → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "乗ります"
+        },
+        {
+          "id": "b",
+          "label": "乗って"
+        },
+        {
+          "id": "c",
+          "label": "乗らない"
+        },
+        {
+          "id": "d",
+          "label": "乗った"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「乗る」：未然形＋「ない」。 正解は「乗らない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "乗る",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_117",
+      "type": "multipleChoice",
+      "prompt": "働く → Convert to ます-form (polite non-past).",
+      "japanese": "働く → ます形（丁寧・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "働かない"
+        },
+        {
+          "id": "b",
+          "label": "働きます"
+        },
+        {
+          "id": "c",
+          "label": "働いて"
+        },
+        {
+          "id": "d",
+          "label": "働いた"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「働く」：丁寧語は連用形＋「ます」。 正解は「働きます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "働く",
+        "ます形",
+        "丁寧・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_118",
+      "type": "multipleChoice",
+      "prompt": "働く → Convert to te-form.",
+      "japanese": "働く → て形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "働きます"
+        },
+        {
+          "id": "b",
+          "label": "働かない"
+        },
+        {
+          "id": "c",
+          "label": "働いて"
+        },
+        {
+          "id": "d",
+          "label": "働いた"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「働く」：て形の作り方に従う。 正解は「働いて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "働く",
+        "て形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_119",
+      "type": "multipleChoice",
+      "prompt": "働く → Convert to plain past (た-form).",
+      "japanese": "働く → た形（普通体・過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "働かない"
+        },
+        {
+          "id": "b",
+          "label": "働いて"
+        },
+        {
+          "id": "c",
+          "label": "働きます"
+        },
+        {
+          "id": "d",
+          "label": "働いた"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「働く」：た形は連用形＋「た」系。 正解は「働いた」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "past_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "た形の生成"
+      ],
+      "vocabulary": [
+        "働く",
+        "た形",
+        "普通体・過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_120",
+      "type": "multipleChoice",
+      "prompt": "働く → Convert to negative plain (ない-form).",
+      "japanese": "働く → ない形（普通体・非過去）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "働いた"
+        },
+        {
+          "id": "b",
+          "label": "働いて"
+        },
+        {
+          "id": "c",
+          "label": "働かない"
+        },
+        {
+          "id": "d",
+          "label": "働きます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「働く」：未然形＋「ない」。 正解は「働かない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "働く",
+        "ない形",
+        "普通体・非過去"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_121",
+      "type": "multipleChoice",
+      "prompt": "食べる → Convert to potential plain.",
+      "japanese": "食べる → 可能形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食べて"
+        },
+        {
+          "id": "b",
+          "label": "食べられる"
+        },
+        {
+          "id": "c",
+          "label": "食べた"
+        },
+        {
+          "id": "d",
+          "label": "食べます"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "一段動詞「食べる」：可能形の作り方に従う。 正解は「食べられる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "potential_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "可能形の生成"
+      ],
+      "vocabulary": [
+        "食べる",
+        "可能形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_122",
+      "type": "multipleChoice",
+      "prompt": "見る → Convert to potential plain.",
+      "japanese": "見る → 可能形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見られる"
+        },
+        {
+          "id": "b",
+          "label": "見た"
+        },
+        {
+          "id": "c",
+          "label": "見て"
+        },
+        {
+          "id": "d",
+          "label": "見ます"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "一段動詞「見る」：可能形の作り方に従う。 正解は「見られる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "potential_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "可能形の生成"
+      ],
+      "vocabulary": [
+        "見る",
+        "可能形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_123",
+      "type": "multipleChoice",
+      "prompt": "行く → Convert to potential plain.",
+      "japanese": "行く → 可能形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "行きます"
+        },
+        {
+          "id": "b",
+          "label": "行ける"
+        },
+        {
+          "id": "c",
+          "label": "行って"
+        },
+        {
+          "id": "d",
+          "label": "行った"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「行く」：可能形の作り方に従う。 正解は「行ける」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "potential_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "可能形の生成"
+      ],
+      "vocabulary": [
+        "行く",
+        "可能形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_124",
+      "type": "multipleChoice",
+      "prompt": "する → Convert to potential plain.",
+      "japanese": "する → 可能形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "します"
+        },
+        {
+          "id": "b",
+          "label": "した"
+        },
+        {
+          "id": "c",
+          "label": "できる"
+        },
+        {
+          "id": "d",
+          "label": "して"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "不規則「する」：可能形の作り方に従う。 正解は「できる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "potential_form",
+        "irregular"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "可能形の生成"
+      ],
+      "vocabulary": [
+        "する",
+        "可能形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_125",
+      "type": "multipleChoice",
+      "prompt": "書く → Convert to passive plain.",
+      "japanese": "書く → 受身形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書いて"
+        },
+        {
+          "id": "b",
+          "label": "書きます"
+        },
+        {
+          "id": "c",
+          "label": "書かれる"
+        },
+        {
+          "id": "d",
+          "label": "書いた"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「書く」：受身形の作り方に従う。 正解は「書かれる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "passive_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "受身形の生成"
+      ],
+      "vocabulary": [
+        "書く",
+        "受身形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_126",
+      "type": "multipleChoice",
+      "prompt": "話す → Convert to passive plain.",
+      "japanese": "話す → 受身形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話して"
+        },
+        {
+          "id": "b",
+          "label": "話した"
+        },
+        {
+          "id": "c",
+          "label": "話される"
+        },
+        {
+          "id": "d",
+          "label": "話します"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「話す」：受身形の作り方に従う。 正解は「話される」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "passive_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "受身形の生成"
+      ],
+      "vocabulary": [
+        "話す",
+        "受身形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_127",
+      "type": "multipleChoice",
+      "prompt": "売る → Convert to passive plain.",
+      "japanese": "売る → 受身形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売った"
+        },
+        {
+          "id": "b",
+          "label": "売られる"
+        },
+        {
+          "id": "c",
+          "label": "売ります"
+        },
+        {
+          "id": "d",
+          "label": "売って"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「売る」：受身形の作り方に従う。 正解は「売られる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "passive_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "受身形の生成"
+      ],
+      "vocabulary": [
+        "売る",
+        "受身形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_128",
+      "type": "multipleChoice",
+      "prompt": "読む → Convert to causative plain.",
+      "japanese": "読む → 使役形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読んだ"
+        },
+        {
+          "id": "b",
+          "label": "読んで"
+        },
+        {
+          "id": "c",
+          "label": "読ませる"
+        },
+        {
+          "id": "d",
+          "label": "読みます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「読む」：使役の語尾「せる／させる」を付ける。 正解は「読ませる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "causative_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "使役形の生成"
+      ],
+      "vocabulary": [
+        "読む",
+        "使役形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_129",
+      "type": "multipleChoice",
+      "prompt": "待つ → Convert to causative plain.",
+      "japanese": "待つ → 使役形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "待たせる"
+        },
+        {
+          "id": "b",
+          "label": "待って"
+        },
+        {
+          "id": "c",
+          "label": "待ちます"
+        },
+        {
+          "id": "d",
+          "label": "待った"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「待つ」：使役の語尾「せる／させる」を付ける。 正解は「待たせる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "causative_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "使役形の生成"
+      ],
+      "vocabulary": [
+        "待つ",
+        "使役形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_130",
+      "type": "multipleChoice",
+      "prompt": "働く → Convert to causative plain.",
+      "japanese": "働く → 使役形（普通体）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "働いた"
+        },
+        {
+          "id": "b",
+          "label": "働いて"
+        },
+        {
+          "id": "c",
+          "label": "働きます"
+        },
+        {
+          "id": "d",
+          "label": "働かせる"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「働く」：使役の語尾「せる／させる」を付ける。 正解は「働かせる」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "causative_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "使役形の生成"
+      ],
+      "vocabulary": [
+        "働く",
+        "使役形",
+        "普通体"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_131",
+      "type": "multipleChoice",
+      "prompt": "遊ぶ → Convert to volitional (よう).",
+      "japanese": "遊ぶ → 意志形（～よう）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遊ぼう"
+        },
+        {
+          "id": "b",
+          "label": "遊びます"
+        },
+        {
+          "id": "c",
+          "label": "遊んで"
+        },
+        {
+          "id": "d",
+          "label": "遊んだ"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「遊ぶ」：意志形は語尾のウ音便＋「う」系。 正解は「遊ぼう」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "volitional_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "意志形の生成"
+      ],
+      "vocabulary": [
+        "遊ぶ",
+        "意志形",
+        "よう"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_132",
+      "type": "multipleChoice",
+      "prompt": "会う → Convert to volitional (よう).",
+      "japanese": "会う → 意志形（～よう）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会って"
+        },
+        {
+          "id": "b",
+          "label": "会います"
+        },
+        {
+          "id": "c",
+          "label": "会った"
+        },
+        {
+          "id": "d",
+          "label": "会おう"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「会う」：意志形は語尾のウ音便＋「う」系。 正解は「会おう」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "volitional_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "意志形の生成"
+      ],
+      "vocabulary": [
+        "会う",
+        "意志形",
+        "よう"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_133",
+      "type": "multipleChoice",
+      "prompt": "来る → Convert to volitional (よう).",
+      "japanese": "来る → 意志形（～よう）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来よう"
+        },
+        {
+          "id": "b",
+          "label": "来た"
+        },
+        {
+          "id": "c",
+          "label": "来て"
+        },
+        {
+          "id": "d",
+          "label": "来ます"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "不規則「来る」：意志形は語尾のウ音便＋「う」系。 正解は「来よう」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "volitional_form",
+        "irregular"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "意志形の生成"
+      ],
+      "vocabulary": [
+        "来る",
+        "意志形",
+        "よう"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_134",
+      "type": "multipleChoice",
+      "prompt": "飲む → Convert to ば-conditional.",
+      "japanese": "飲む → ば条件（仮定）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲んで"
+        },
+        {
+          "id": "b",
+          "label": "飲みます"
+        },
+        {
+          "id": "c",
+          "label": "飲んだ"
+        },
+        {
+          "id": "d",
+          "label": "飲めば"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「飲む」：仮定形＋「ば」。 正解は「飲めば」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "conditional_ba_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ば条件の形"
+      ],
+      "vocabulary": [
+        "飲む",
+        "ば条件",
+        "仮定"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_135",
+      "type": "multipleChoice",
+      "prompt": "買う → Convert to ば-conditional.",
+      "japanese": "買う → ば条件（仮定）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "買えば"
+        },
+        {
+          "id": "b",
+          "label": "買います"
+        },
+        {
+          "id": "c",
+          "label": "買った"
+        },
+        {
+          "id": "d",
+          "label": "買って"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「買う」：仮定形＋「ば」。 正解は「買えば」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "conditional_ba_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ば条件の形"
+      ],
+      "vocabulary": [
+        "買う",
+        "ば条件",
+        "仮定"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_136",
+      "type": "multipleChoice",
+      "prompt": "寝る → Convert to ば-conditional.",
+      "japanese": "寝る → ば条件（仮定）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寝ます"
+        },
+        {
+          "id": "b",
+          "label": "寝れば"
+        },
+        {
+          "id": "c",
+          "label": "寝て"
+        },
+        {
+          "id": "d",
+          "label": "寝た"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "一段動詞「寝る」：仮定形＋「ば」。 正解は「寝れば」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "conditional_ba_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ば条件の形"
+      ],
+      "vocabulary": [
+        "寝る",
+        "ば条件",
+        "仮定"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_137",
+      "type": "multipleChoice",
+      "prompt": "帰る → Convert to たら-form.",
+      "japanese": "帰る → たら（仮定・発見）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帰ります"
+        },
+        {
+          "id": "b",
+          "label": "帰ったら"
+        },
+        {
+          "id": "c",
+          "label": "帰って"
+        },
+        {
+          "id": "d",
+          "label": "帰った"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「帰る」：過去形＋「ら」。 正解は「帰ったら」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "tara_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "たらの形"
+      ],
+      "vocabulary": [
+        "帰る",
+        "たら",
+        "仮定・発見"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_138",
+      "type": "multipleChoice",
+      "prompt": "死ぬ → Convert to たら-form.",
+      "japanese": "死ぬ → たら（仮定・発見）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "死んだ"
+        },
+        {
+          "id": "b",
+          "label": "死にます"
+        },
+        {
+          "id": "c",
+          "label": "死んだら"
+        },
+        {
+          "id": "d",
+          "label": "死んで"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "五段動詞「死ぬ」：過去形＋「ら」。 正解は「死んだら」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "tara_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "たらの形"
+      ],
+      "vocabulary": [
+        "死ぬ",
+        "たら",
+        "仮定・発見"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_139",
+      "type": "multipleChoice",
+      "prompt": "する → Convert to たら-form.",
+      "japanese": "する → たら（仮定・発見）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "します"
+        },
+        {
+          "id": "b",
+          "label": "した"
+        },
+        {
+          "id": "c",
+          "label": "して"
+        },
+        {
+          "id": "d",
+          "label": "したら"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "不規則「する」：過去形＋「ら」。 正解は「したら」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "tara_form",
+        "irregular"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "たらの形"
+      ],
+      "vocabulary": [
+        "する",
+        "たら",
+        "仮定・発見"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_140",
+      "type": "multipleChoice",
+      "prompt": "走る → Convert to imperative.",
+      "japanese": "走る → 命令形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "走った"
+        },
+        {
+          "id": "b",
+          "label": "走れ"
+        },
+        {
+          "id": "c",
+          "label": "走ります"
+        },
+        {
+          "id": "d",
+          "label": "走って"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「走る」：命令形の語尾を使う。 正解は「走れ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "imperative_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "命令形の形"
+      ],
+      "vocabulary": [
+        "走る",
+        "命令形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_141",
+      "type": "multipleChoice",
+      "prompt": "起きる → Convert to imperative.",
+      "japanese": "起きる → 命令形",
+      "choices": [
+        {
+          "id": "a",
+          "label": "起きろ"
+        },
+        {
+          "id": "b",
+          "label": "起きます"
+        },
+        {
+          "id": "c",
+          "label": "起きた"
+        },
+        {
+          "id": "d",
+          "label": "起きて"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "一段動詞「起きる」：命令形の語尾を使う。 正解は「起きろ」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "imperative_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "命令形の形"
+      ],
+      "vocabulary": [
+        "起きる",
+        "命令形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_142",
+      "type": "multipleChoice",
+      "prompt": "泳ぐ → prohibitive (attach な)",
+      "japanese": "泳ぐ → 禁止形（～な）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "泳いだ"
+        },
+        {
+          "id": "b",
+          "label": "泳ぎます"
+        },
+        {
+          "id": "c",
+          "label": "泳いで"
+        },
+        {
+          "id": "d",
+          "label": "泳ぐな"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "五段動詞「泳ぐ」：辞書形＋「な」で禁止。 正解は「泳ぐな」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "prohibitive_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "禁止形（～な）"
+      ],
+      "vocabulary": [
+        "泳ぐ",
+        "禁止形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_143",
+      "type": "multipleChoice",
+      "prompt": "借りる → prohibitive (attach な)",
+      "japanese": "借りる → 禁止形（～な）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "借りるな"
+        },
+        {
+          "id": "b",
+          "label": "借ります"
+        },
+        {
+          "id": "c",
+          "label": "借りた"
+        },
+        {
+          "id": "d",
+          "label": "借りて"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "一段動詞「借りる」：辞書形＋「な」で禁止。 正解は「借りるな」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "prohibitive_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "禁止形（～な）"
+      ],
+      "vocabulary": [
+        "借りる",
+        "禁止形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_144",
+      "type": "multipleChoice",
+      "prompt": "聞く → prohibitive (attach な)",
+      "japanese": "聞く → 禁止形（～な）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "聞くな"
+        },
+        {
+          "id": "b",
+          "label": "聞いた"
+        },
+        {
+          "id": "c",
+          "label": "聞きます"
+        },
+        {
+          "id": "d",
+          "label": "聞いて"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "五段動詞「聞く」：辞書形＋「な」で禁止。 正解は「聞くな」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "prohibitive_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "禁止形（～な）"
+      ],
+      "vocabulary": [
+        "聞く",
+        "禁止形"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_145",
+      "type": "multipleChoice",
+      "prompt": "見ます → dictionary form",
+      "japanese": "見ます → 辞書形（見る）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見て"
+        },
+        {
+          "id": "b",
+          "label": "見た"
+        },
+        {
+          "id": "c",
+          "label": "見る"
+        },
+        {
+          "id": "d",
+          "label": "見ます"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一段動詞「見る」：丁寧の連用形から辞書形に戻す。正解は「見る」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "dictionary_form",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "辞書形への復元"
+      ],
+      "vocabulary": [
+        "見ます",
+        "辞書形",
+        "見る"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_146",
+      "type": "multipleChoice",
+      "prompt": "書きます → dictionary form",
+      "japanese": "書きます → 辞書形（書く）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書きます"
+        },
+        {
+          "id": "b",
+          "label": "書く"
+        },
+        {
+          "id": "c",
+          "label": "書いて"
+        },
+        {
+          "id": "d",
+          "label": "書いた"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「書く」：丁寧の連用形から辞書形に戻す。正解は「書く」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "dictionary_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "辞書形への復元"
+      ],
+      "vocabulary": [
+        "書きます",
+        "辞書形",
+        "書く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_147",
+      "type": "multipleChoice",
+      "prompt": "行きます → dictionary form",
+      "japanese": "行きます → 辞書形（行く）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "行った"
+        },
+        {
+          "id": "b",
+          "label": "行く"
+        },
+        {
+          "id": "c",
+          "label": "行きます"
+        },
+        {
+          "id": "d",
+          "label": "行って"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "五段動詞「行く」：丁寧の連用形から辞書形に戻す。正解は「行く」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "dictionary_form",
+        "godan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "辞書形への復元"
+      ],
+      "vocabulary": [
+        "行きます",
+        "辞書形",
+        "行く"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_148",
+      "type": "multipleChoice",
+      "prompt": "いらっしゃる → Convert to polite ます-form.",
+      "japanese": "いらっしゃる → ます形（丁寧）（丁寧・謙譲）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "いらっしゃる"
+        },
+        {
+          "id": "b",
+          "label": "いらっしゃいます"
+        },
+        {
+          "id": "c",
+          "label": "いらっしゃって"
+        },
+        {
+          "id": "d",
+          "label": "いらっしゃらない"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "丁寧語（特殊）「いらっしゃる」：敬語の語形に従う。正解は「いらっしゃいます」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "masu_form",
+        "keigo",
+        "irregular"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "丁寧形（ます）の生成"
+      ],
+      "vocabulary": [
+        "いらっしゃる",
+        "ます形",
+        "丁寧",
+        "丁寧・謙譲"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_149",
+      "type": "multipleChoice",
+      "prompt": "いただく → Convert to te-form.",
+      "japanese": "いただく → て形（丁寧・謙譲）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "いただいて"
+        },
+        {
+          "id": "b",
+          "label": "いただきます"
+        },
+        {
+          "id": "c",
+          "label": "いただいた"
+        },
+        {
+          "id": "d",
+          "label": "いただけない"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "謙譲語（特殊）「いただく」：敬語の語形に従う。正解は「いただいて」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "te_form",
+        "keigo",
+        "irregular"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "て形の生成"
+      ],
+      "vocabulary": [
+        "いただく",
+        "て形",
+        "丁寧・謙譲"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "vc_150",
+      "type": "multipleChoice",
+      "prompt": "申し上げる → Convert to negative plain.",
+      "japanese": "申し上げる → ない形（丁寧・謙譲）",
+      "choices": [
+        {
+          "id": "a",
+          "label": "申し上げない"
+        },
+        {
+          "id": "b",
+          "label": "申し上げて"
+        },
+        {
+          "id": "c",
+          "label": "申し上げます"
+        },
+        {
+          "id": "d",
+          "label": "申し上げる"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "謙譲語（一段）「申し上げる」：敬語の語形に従う。正解は「申し上げない」。",
+      "diagnosticTags": [
+        "verb_conjugation",
+        "nai_form",
+        "keigo",
+        "ichidan"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "動詞の活用形の識別",
+        "ない形の生成"
+      ],
+      "vocabulary": [
+        "申し上げる",
+        "ない形",
+        "丁寧・謙譲"
+      ],
+      "reviewStatus": "draft"
+    }
+  ]
+}

@@ -1,0 +1,4314 @@
+{
+  "id": "registerRadar",
+  "title": "Register Radar",
+  "subtitle": "Politeness and setting",
+  "description": "Train social appropriateness: pick the expression that best fits each scenario.",
+  "difficulty": "N3-N2",
+  "diagnosticTags": [
+    "casual_speech",
+    "directness",
+    "keigo",
+    "politeness",
+    "register"
+  ],
+  "questions": [
+    {
+      "id": "rr_001",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先に宛てたビジネスメールの文末の一文として送る。 次の中で最も適切な表現はどれか。",
+      "context": "取引先に宛てたビジネスメールの文末の一文として送る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "よろしく",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "よろしくお願いいたします",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "よろピー",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "対外的なメールの締めは書き言葉の敬語が無難。「よろしく」だけでは軽すぎます。",
+      "diagnosticTags": [
+        "register",
+        "keigo",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先に宛てたビジネスメールの文末の一文として送る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_002",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "親しい友人に、週末の過ごし方をたずねる。 次の中で最も適切な表現はどれか。",
+      "context": "親しい友人に、週末の過ごし方をたずねる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "週末はご旅行なさいましたか",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "b",
+          "label": "週末、どこ行ったの？",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "週末、いかがでございましたか",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "対等な友人には普通体・くだけた言い方が自然です。敬語だけだと距離を感じます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "directness",
+        "register"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "親しい友人に",
+        "週末の過ごし方をたずねる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_003",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "店員に商品の値段を聞く。 次の中で最も適切な表現はどれか。",
+      "context": "店員に商品の値段を聞く。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "これ、いくら？",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "こちらはいくらでしょうか",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "これ、幾らだ",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "接客場面では「でしょうか」などで柔らかく聞くと無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "店員に商品の値段を聞く",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_004",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "授業中、教授が学生に短い文章を声に出して読んでもらう。 次の中で最も適切な表現はどれか。",
+      "context": "授業中、教授が学生に短い文章を声に出して読んでもらう。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読んでください",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "読んでくれ",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "読んでいただけませんでしょうか",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "教師→学生の指示は「〜てください」が標準です。謙譲まわりはここでは過剰です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "授業中",
+        "教授が学生に短い文章を声に出して読んでもらう",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_005",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "ニュース記事の本文で、事件が起きたことを述べる。 次の中で最も適切な表現はどれか。",
+      "context": "ニュース記事の本文で、事件が起きたことを述べる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "事件が起きちゃった",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "事件が発生した",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "事件、ヤバいって",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "報道の書き言葉では「発生した」のような平面な動詞が中心になります。",
+      "diagnosticTags": [
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "ニュース記事の本文で",
+        "事件が起きたことを述べる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_006",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "チームの定例会に数分遅れて入り、すでに集まっている同僚に一言あいさつする。 次の中で最も適切な表現はどれか。",
+      "context": "チームの定例会に数分遅れて入り、すでに集まっている同僚に一言あいさつする。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遅れてすみません",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "遅れたわ",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "お待たせいたしました",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "同僚への遅刻の一言は「遅れてすみません」が無難です。「お待たせ」は向きが違うことが多いです。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "チームの定例会に数分遅れて入り",
+        "すでに集まっている同僚に一言あいさつする",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_007",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "部下が口頭で、課長に依頼された作業が完了したことを報告する。 次の中で最も適切な表現はどれか。",
+      "context": "部下が口頭で、課長に依頼された作業が完了したことを報告する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "もう終わったよ",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "やっと終わった",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "終わらせていただきました",
+          "explanation": "best fit"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "上司への完了報告では謙譲の「〜させていただく」が無難です。感情的なくだけ表現は不適切です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "部下が口頭で",
+        "課長に依頼された作業が完了したことを報告する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_008",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "あまり面識のない近所の人に、夜のテレビの音量を下げてほしいと頼む。 次の中で最も適切な表現はどれか。",
+      "context": "あまり面識のない近所の人に、夜のテレビの音量を下げてほしいと頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "テレビ、うるせえから下げろ",
+          "explanation": "too rude"
+        },
+        {
+          "id": "b",
+          "label": "テレビ、少し小さくしていただけませんか",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "テレビ、小さくしてくれん？",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "面識が浅い相手には「〜していただけませんか」のように依頼を柔らかくします。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "あまり面識のない近所の人に",
+        "夜のテレビの音量を下げてほしいと頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_009",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "毎日一緒に仕事をしている同僚へ、社内チャットで資料送付を依頼する。 次の中で最も適切な表現はどれか。",
+      "context": "毎日一緒に仕事をしている同僚へ、社内チャットで資料送付を依頼する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "資料、後で送っていただけますでしょうか",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "b",
+          "label": "資料、あとで送ってくれる？",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "資料をお送り願い申し上げます",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "社内の近い同僚とは短いタメ口・普通体が一般的です。過剰な敬語は距離を感じさせます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "毎日一緒に仕事をしている同僚へ",
+        "社内チャットで資料送付を依頼する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_010",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "会社の代表電話に出て、社名を名乗る。 次の中で最も適切な表現はどれか。",
+      "context": "会社の代表電話に出て、社名を名乗る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "もしもし、どうも",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "お電話ありがとうございます、△△でございます",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "はい、誰ですか",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "会社への入電ではお礼＋社名＋「でございます」がよく使われます。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "会社の代表電話に出て",
+        "社名を名乗る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_011",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "駅のホームに貼る、飛び込み防止の注意書きの一文。 次の中で最も適切な表現はどれか。",
+      "context": "駅のホームに貼る、飛び込み防止の注意書きの一文。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "走んなよマジで",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "ホームでは走らないでください",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "走っちゃダメだよ",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "公共の注意書きは「〜ないでください」のような丁寧な否定が一般的です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "駅のホームに貼る",
+        "飛び込み防止の注意書きの一文",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_012",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "若手同僚同士で、会議のあと雑談しながら感想を言う。 次の中で最も適切な表現はどれか。",
+      "context": "若手同僚同士で、会議のあと雑談しながら感想を言う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本日の議題は以上でございました",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "b",
+          "label": "まあ、そんな感じっすね",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "拙者、もう帰るでござる",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "対等な同僚同士の感想ではくだけた普通体が自然です。取引先向けの硬い言い回しは浮きます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "若手同僚同士で",
+        "会議のあと雑談しながら感想を言う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_013",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "クリニックで医師に、腹痛があることを伝える。 次の中で最も適切な表現はどれか。",
+      "context": "クリニックで医師に、腹痛があることを伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ちょっと腹痛いっす",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "お腹が痛いです",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "腹痛か",
+          "explanation": "too blunt"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "診察では「です・ます」で丁寧に述べるのが無難です。友だち同士のくだけ方は場が違うと軽く聞こえます。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "クリニックで医師に",
+        "腹痛があることを伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_014",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "店内に貼る、撮影を控えてもらうための注意書き。 次の中で最も適切な表現はどれか。",
+      "context": "店内に貼る、撮影を控えてもらうための注意書き。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "撮るなよマジで",
+          "explanation": "too rude"
+        },
+        {
+          "id": "b",
+          "label": "撮影はご遠慮ください",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "写真ダメだってば",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "公共のお願いは「ご遠慮ください」のような丁寧な定型が一般的です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "店内に貼る",
+        "撮影を控えてもらうための注意書き",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_015",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "満員電車ですれ違いざまに、軽く肩をぶつけてしまったあとに一言添える。 次の中で最も適切な表現はどれか。",
+      "context": "満員電車ですれ違いざまに、軽く肩をぶつけてしまったあとに一言添える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "おおきに",
+          "explanation": "unnatural"
+        },
+        {
+          "id": "c",
+          "label": "やめてください",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "軽い接触への短い謝罪では「すみません」が無難です。方言や意図のずれた一言は場に合いません。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "満員電車ですれ違いざまに",
+        "軽く肩をぶつけてしまったあとに一言添える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_016",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "面識の薄い同僚に、共有ドライブのファイルを目を通してもらう。 次の中で最も適切な表現はどれか。",
+      "context": "面識の薄い同僚に、共有ドライブのファイルを目を通してもらう。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "これ見て。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "こちらをご確認いただけますでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "これ見ろ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "あまり親しくない同僚には依頼を柔らかく言い、丁寧すぎない程度の敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "面識の薄い同僚に",
+        "共有ドライブのファイルを目を通してもらう",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_017",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "飲み会に誘われたが行けない。友人に断る。 次の中で最も適切な表現はどれか。",
+      "context": "飲み会に誘われたが行けない。友人に断る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "その日は予定があって無理。ごめん。また誘って。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "参加は謹んでお辞びいたします。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "行かねえ。",
+          "explanation": "too blunt"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人には理由と謝罪を添えたくだけた丁寧さが自然です。ビジネスめいた文章や乱暴な一言は距離感が合いません。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "飲み会に誘われたが行けない",
+        "友人に断る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_018",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の担当者へ、昨日送った見積書に誤りがあったことをメールで伝える。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の担当者へ、昨日送った見積書に誤りがあったことをメールで伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日のメール、ミスってました。すんません。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "送付いたしました資料に誤りがございました。深くお詫び申し上げます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "弊社に落ち度あり。重ねてお詫び申し上げまする。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "対外メールでは事実と謝罪を明確にし、過不足ない敬語が一般的です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の担当者へ",
+        "昨日送った見積書に誤りがあったことをメールで伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_019",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "デパートの売り場で、別サイズを試着室に持ってきてもらうよう店員に頼む。 次の中で最も適切な表現はどれか。",
+      "context": "デパートの売り場で、別サイズを試着室に持ってきてもらうよう店員に頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "それ持ってこい。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "b",
+          "label": "こちらを試着室にお願いできますか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "ついでにお願い",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "接客には「お願いできますか」など柔らかい依頼形が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "デパートの売り場で",
+        "別サイズを試着室に持ってきてもらうよう店員に頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_020",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友人とカフェで相席し、席を少し詰めてもらう。 次の中で最も適切な表現はどれか。",
+      "context": "友人とカフェで相席し、席を少し詰めてもらう。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、ちょっと詰めてもらえますか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "恐れ入ります、少々お詰めいただけますでしょうか。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "どけ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人同士なら「すみません」＋普通の依頼で十分です。過剰な敬語はぎこちなく感じられます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友人とカフェで相席し",
+        "席を少し詰めてもらう",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_021",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "上司に、締切まであと半日しかないことを伝え注意を促す。 次の中で最も適切な表現はどれか。",
+      "context": "上司に、締切まであと半日しかないことを伝え注意を促す。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "締切、今日の17時ですよね。お忘れなく。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "b",
+          "label": "もしお時間よろしければ、本日17時が締切でございますので共有のみです。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "締切が迫っておりますので何卒ご高配のほどお願い申し上げます。",
+          "explanation": "too indirect"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "上司へのリマインドは角が立たず要点が伝わる丁寧語が無難です。威圧や過度な腰の低さは避けます。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "上司に",
+        "締切まであと半日しかないことを伝え注意を促す",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_022",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "後輩の資料に誤字があるのを、ミーティング直後に伝える。 次の中で最も適切な表現はどれか。",
+      "context": "後輩の資料に誤字があるのを、ミーティング直後に伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "3ページ目、会社名が一文字違うよ。直せる？",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "御社の表記が誤っておりました。至急修正を。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "ちゃんと見ろよ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "社内の上下でも具体的な指摘はタメ口・普通体で簡潔に伝えるのが一般的です。",
+      "diagnosticTags": [
+        "directness",
+        "register",
+        "casual_speech"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "後輩の資料に誤字があるのを",
+        "ミーティング直後に伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_023",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "知らない番号からかかってきた仕事の用件を聞く。 次の中で最も適切な表現はどれか。",
+      "context": "知らない番号からかかってきた仕事の用件を聞く。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "用件をお伺いしてもよろしいでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "何の用。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "どちらさまいらっしゃいますか、御用でございますか。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "業務電話では簡潔な敬語で用件を聞くのが無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "politeness",
+        "register"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "知らない番号からかかってきた仕事の用件を聞く",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_024",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "家族と夕食のあと、親にテレビの音量を下げてほしいと頼む。 次の中で最も適切な表現はどれか。",
+      "context": "家族と夕食のあと、親にテレビの音量を下げてほしいと頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ちょっと小さくしてくれる？",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "お父様、音量をお下げいただけますでしょうか。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "うるせえ、黙れ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "家族間ではくだけた依頼が自然です。敬語だとぎこちなさが出ます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "家族と夕食のあと",
+        "親にテレビの音量を下げてほしいと頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_025",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "入館ゲートで警備員に、身分証の提示を求められる。 次の中で最も適切な表現はどれか。",
+      "context": "入館ゲートで警備員に、身分証の提示を求められる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "はい、どうぞ。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "ご査収くださいませ。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "ほれ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "その場の応答は「はい、どうぞ」で十分です。取引先向けの硬い言い回しは浮きます。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "入館ゲートで警備員に",
+        "身分証の提示を求められる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_026",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "客としてレストランで、おかわりを店員に頼む。 次の中で最も適切な表現はどれか。",
+      "context": "客としてレストランで、おかわりを店員に頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ご飯、おかわりください。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "飯、もっと。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "おひつをお持ちいただきたく存じます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "飲食店では「おかわりください」のような丁寧な短い依頼が一般的です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "客としてレストランで",
+        "おかわりを店員に頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_027",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "大学のゼミで、自分の番が来たので発表を始める。 次の中で最も適切な表現はどれか。",
+      "context": "大学のゼミで、自分の番が来たので発表を始める。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "それでは発表に移らせていただきます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "じゃ、やるわ。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "発表を開始いたします。ご静聴賜りますようお願い申し上げます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "発表の場では謙譲の定型が無難です。友人口調や長すぎる挨拶は避けます。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "大学のゼミで",
+        "自分の番が来たので発表を始める",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_028",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同僚の代わりにミーティングの議事を共有メモに残す。結論の一文。 次の中で最も適切な表現はどれか。",
+      "context": "同僚の代わりにミーティングの議事を共有メモに残す。結論の一文。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "とりあえず次回までに各自ドラフトを送る。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "各位、至急草案を提出されたし。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "みんな適当にね。",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "社内メモは簡潔な書き言葉・普通体が読みやすく一般的です。",
+      "diagnosticTags": [
+        "register",
+        "directness",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同僚の代わりにミーティングの議事を共有メモに残す",
+        "結論の一文",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_029",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "居酒屋で初対面の人に乾杯の挨拶をする。 次の中で最も適切な表現はどれか。",
+      "context": "居酒屋で初対面の人に乾杯の挨拶をする。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本日はお集まりいただきありがとうございます。乾杯。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "b",
+          "label": "はじめまして。では、乾杯！",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "よっ、飲むぞ。",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "カジュアルな飲みの席では短いあいさつと乾杯が自然です。式典のような挨拶は浮きます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "居酒屋で初対面の人に乾杯の挨拶をする",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_030",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "社長が来客を応接室へ案内したあと、秘書がお茶を出すときの一言。 次の中で最も適切な表現はどれか。",
+      "context": "社長が来客を応接室へ案内したあと、秘書がお茶を出すときの一言。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お飲み物でございます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "b",
+          "label": "どうぞお飲みください。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "はい、どうぞ。",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "来客対応では「どうぞお〜ください」が定番です。「はい、どうぞ」は軽く聞こえることがあります。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "社長が来客を応接室へ案内したあと",
+        "秘書がお茶を出すときの一言",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_031",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友人から貸してもらった本を返し、礼を言う。 次の中で最も適切な表現はどれか。",
+      "context": "友人から貸してもらった本を返し、礼を言う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読ませてくれてありがとう。助かった。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "拝借し甚だ恐縮に存じます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "返すわ。",
+          "explanation": "too blunt"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人には感謝をストレートに言うのが自然です。硬すぎる謝辞は距離を感じさせます。",
+      "diagnosticTags": [
+        "casual_speech",
+        "politeness",
+        "register"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友人から貸してもらった本を返し",
+        "礼を言う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_032",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の部長に、追加の説明会をお願いするメールの締め。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の部長に、追加の説明会をお願いするメールの締め。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ではまた。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "ご検討のほど、何卒よろしくお願いいたします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "御高配賜りますよう切にお願い申し上げ候。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "ビジネスメールの締めは「よろしくお願いいたします」系が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の部長に",
+        "追加の説明会をお願いするメールの締め",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_033",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "電車で席を譲ってもらったあと、高齢の方へ一言。 次の中で最も適切な表現はどれか。",
+      "context": "電車で席を譲ってもらったあと、高齢の方へ一言。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、ありがとうございます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "感謝感激雨あられ。",
+          "explanation": "unnatural"
+        },
+        {
+          "id": "c",
+          "label": "どうも。",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "公共の場では短い丁寧語のお礼が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "電車で席を譲ってもらったあと",
+        "高齢の方へ一言",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_034",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "少ししか知らない同僚に、急な残業を手伝ってもらえないか頼む。 次の中で最も適切な表現はどれか。",
+      "context": "少ししか知らない同僚に、急な残業を手伝ってもらえないか頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "悪いけど30分だけ手伝ってくれない？明日おごる。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "至急残業をお願いしたく存じます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "残れ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "距離のある同僚には謝意と条件を添えた柔らかい依頼が現実的です。命令は不適切です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "politeness",
+        "register"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "少ししか知らない同僚に",
+        "急な残業を手伝ってもらえないか頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_035",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "ホテルのフロントで、朝食の時間を尋ねる。 次の中で最も適切な表現はどれか。",
+      "context": "ホテルのフロントで、朝食の時間を尋ねる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "朝食は何時からですか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "飯、いつから？",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "朝食のお時間を賜りたく存じます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "フロントでは「です・ます」で簡潔に聞けば足ります。過度な敬語は不自然になりがちです。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "ホテルのフロントで",
+        "朝食の時間を尋ねる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_036",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "客として銀行の窓口で、通帳記入を依頼する。 次の中で最も適切な表現はどれか。",
+      "context": "客として銀行の窓口で、通帳記入を依頼する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書いて。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "b",
+          "label": "こちらに記入をお願いできますか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "記帳を賜りたく",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "窓口では「お願いできますか」のような丁寧な依頼が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "客として銀行の窓口で",
+        "通帳記入を依頼する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_037",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "グループのチャットで友人たちを週末のキャンプに誘う。 次の中で最も適切な表現はどれか。",
+      "context": "グループのチャットで友人たちを週末のキャンプに誘う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今度の土日、キャンプ行かない？場所は後で送る。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "キャンプにご同行賜りたく候。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "お前ら来い。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人のグループチャットでは軽い誘いの文体が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "グループ",
+        "で友人たちを週末のキャンプに誘う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_038",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先から無理な納期を求められ、社内で上司に相談する。 次の中で最も適切な表現はどれか。",
+      "context": "取引先から無理な納期を求められ、社内で上司に相談する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "△△社からこの日程での納品を希望されています。どう対応しましょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "あいつらまた無茶言ってきた。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "恐れ入りますが御社のご意向はいかがなさいまして。",
+          "explanation": "too indirect"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "上司への報告は事実と相談をはっきり述べる丁寧語が無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先から無理な納期を求められ",
+        "社内で上司に相談する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_039",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "研究室の教授に、論文の締切延長をお願いするメールの宛名のあとに続く一文。 次の中で最も適切な表現はどれか。",
+      "context": "研究室の教授に、論文の締切延長をお願いするメールの宛名のあとに続く一文。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "締切についてご相談がありメールいたしました。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "先生、ちょっといいっすか。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "拝啓　時下ますますご清祥のこととお慶び申し上げます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "大学の教員へのメールは書き言葉の敬語で要点から入るのが一般的です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "研究室の教授に",
+        "論文の締切延長をお願いするメールの宛名のあとに続く一文",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_040",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "コンビニで袋がいらないことをレジの店員に伝える。 次の中で最も適切な表現はどれか。",
+      "context": "コンビニで袋がいらないことをレジの店員に伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "袋は結構です。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "袋いらん。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "袋は賜りません。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "レジでは「結構です」が定番で無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "コンビニで袋がいらないことをレジの店員に伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_041",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同僚の企画案に、建設的な意見を口頭で伝える。 次の中で最も適切な表現はどれか。",
+      "context": "同僚の企画案に、建設的な意見を口頭で伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "面白いけど、予算の根拠もう一歩欲しいかも。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "お考えの趣旨は理解いたしますが、財務面の裏付けをご提示賜れますでしょうか。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "ダメだこれ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "社内の同僚には具体と柔らかい表現でフィードバックするのが一般的です。",
+      "diagnosticTags": [
+        "directness",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同僚の企画案に",
+        "建設的な意見を口頭で伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_042",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の打ち合わせで、こちらの都合で10分遅刻しそうだと電話で告げる。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の打ち合わせで、こちらの都合で10分遅刻しそうだと電話で告げる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遅れます。すみません。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "大変申し訳ございません。10分ほど遅刻いたします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "恐泣蒙り候。少々遅参の由。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "取引先への遅刻連絡は謝罪と事実をはっきり述べる敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の打ち合わせで",
+        "こちらの都合で",
+        "分遅刻しそうだと電話で告げる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_043",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "部活の顧問の先生に、大会の出欠をメッセージで返す。 次の中で最も適切な表現はどれか。",
+      "context": "部活の顧問の先生に、大会の出欠をメッセージで返す。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "出ます。よろしくお願いします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "出るっす。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "出場の栄に浴す所存。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "教員には短い「です・ます」で述べるのが無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "部活の顧問の先生に",
+        "大会の出欠をメッセージで返す",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_044",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "居留守電に出られなかった友人へ、折り返しの電話で留守電にメッセージを残す。 次の中で最も適切な表現はどれか。",
+      "context": "居留守電に出られなかった友人へ、折り返しの電話で留守電にメッセージを残す。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ただいま外出中はお電話くださいませ。",
+          "explanation": "unnatural"
+        },
+        {
+          "id": "b",
+          "label": "折り返しご連絡いただければ幸いです。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "かけ直せ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "留守電では短く丁寧に依頼を残すのが一般的です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "居留守電に出られなかった友人へ",
+        "折り返しの電話で留守電にメッセージを残す",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_045",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "隣の席の客に、シートを少し倒してもいいか声をかける。 次の中で最も適切な表現はどれか。",
+      "context": "隣の席の客に、シートを少し倒してもいいか声をかける。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、少し倒してもいいですか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "倒すぞ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "愚息のシートを後方へ移動させていただきたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "知らない相手には「すみません」から入る依頼が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "隣の席の客に",
+        "シートを少し倒してもいいか声をかける",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_046",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "上司に、来週の出張を同行させてほしいと頼む。 次の中で最も適切な表現はどれか。",
+      "context": "上司に、来週の出張を同行させてほしいと頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ついて行っていいですか。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "可能であれば、来週の出張に同行させていただけないでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "同行を御承認くださいますよう伏してお願い申し上げます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "上司への依頼は条件を添えた丁寧な疑問形が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "上司に",
+        "来週の出張を同行させてほしいと頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_047",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友人を家に招き、リビングへ通す。 次の中で最も適切な表現はどれか。",
+      "context": "友人を家に招き、リビングへ通す。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "どうぞ、あがって。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "お入りくださいませませ。",
+          "explanation": "unnatural"
+        },
+        {
+          "id": "c",
+          "label": "入れ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人を家に招くときはくだけたが丁寧な「どうぞ」が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友人を家に招き",
+        "リビングへ通す",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_048",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "自治会の役員に、集金を頼まれたが断る。 次の中で最も適切な表現はどれか。",
+      "context": "自治会の役員に、集金を頼まれたが断る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "仕事の都合で役員は難しいです。すみません。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "御役は辞退させていただきます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "やらねえ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "近所の役員相手には理由と謝罪を添えた丁寧な拒否が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "自治会の役員に",
+        "集金を頼まれたが断る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_049",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "社内ヘルプデスクへ、パソコンが起動しないとチャットで報告する。 次の中で最も適切な表現はどれか。",
+      "context": "社内ヘルプデスクへ、パソコンが起動しないとチャットで報告する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "パソコンがつきません。確認お願いします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "死んだ。早く来い。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "端末の起動が叶わず、御助言乞う。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "社内サポートには事象と依頼を簡潔に書く丁寧語が無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "社内ヘルプデスクへ",
+        "が起動しないとチャットで報告する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_050",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "部長の来客前に、会議室の用意ができたことを口頭で伝える。 次の中で最も適切な表現はどれか。",
+      "context": "部長の来客前に、会議室の用意ができたことを口頭で伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議室、いけます。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "b",
+          "label": "応接の準備が整いました。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "c",
+          "label": "お部屋、設え完了でございまする。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "上司への報告は簡潔な敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "部長の来客前に",
+        "会議室の用意ができたことを口頭で伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_051",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の担当者に、明日の打ち合わせの資料を今夜までに送ってほしいとメールで依頼する。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の担当者に、明日の打ち合わせの資料を今夜までに送ってほしいとメールで依頼する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今夜までに資料をお送りいただけますでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "今夜までに資料くれ。急ぎ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "資料を賜りたく存じますがよろしいか。",
+          "explanation": "too indirect"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "期限と依頼をはっきり述べる丁寧語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の担当者に",
+        "明日の打ち合わせの資料を今夜までに送ってほしいとメールで依頼する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_052",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "近所のスーパーで袋詰めを手伝ってくれた店員にお礼を言う。 次の中で最も適切な表現はどれか。",
+      "context": "近所のスーパーで袋詰めを手伝ってくれた店員にお礼を言う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ありがとうございます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "サンキューな。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "厚く御礼申し上げます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "店員への短いお礼は定番の一句で足ります。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "近所のスーパーで袋詰めを手伝ってくれた店員にお礼を言う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_053",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同世代の同僚に、ランチに誘う。 次の中で最も適切な表現はどれか。",
+      "context": "同世代の同僚に、ランチに誘う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今日の昼、一緒に行かない？",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "昼食のご同行をお誘い申し上げます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "飯行け。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "近い同僚への誘いはカジュアルな疑問文が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同世代の同僚に",
+        "ランチに誘う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_054",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "マンションの管理室に、共用部の電球が切れたと伝える。 次の中で最も適切な表現はどれか。",
+      "context": "マンションの管理室に、共用部の電球が切れたと伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "共用廊下の照明が一つ切れているようです。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "電球死んでる。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "照明が炎を絶たれたり。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "管理会社へは事実を淡々と述べる丁寧語が無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "マンションの管理室に",
+        "共用部の電球が切れたと伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_055",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "課長に、企画書の指摘をメールで返す。 次の中で最も適切な表現はどれか。",
+      "context": "課長に、企画書の指摘をメールで返す。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ご指摘ありがとうございます。修正して再提出いたします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "了解。直す。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "御教示、涙なくんばあり難し。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "上司からの指摘にはお礼と今後の対応を述べる敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "課長に",
+        "企画書の指摘をメールで返す",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_056",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "飲み会の幹事から連絡があり、参加人数を今夜までに返信するよう言われている。人数を伝える返信。 次の中で最も適切な表現はどれか。",
+      "context": "飲み会の幹事から連絡があり、参加人数を今夜までに返信するよう言われている。人数を伝える返信。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "参加は2名です。よろしくお願いします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "2人っす。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "参加者二名にて参列の旨、謹んでご報告申し上げる。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人の飲みでもメールなら簡潔な「です・ます」が無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "飲み会の幹事から連絡があり",
+        "参加人数を今夜までに返信するよう言われている",
+        "人数を伝える返信",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_057",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "ゼミの発表で聞き取れなかったので、隣の学生に小さな声で頼む。 次の中で最も適切な表現はどれか。",
+      "context": "ゼミの発表で聞き取れなかったので、隣の学生に小さな声で頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "さっきの、もう一回言ってくれる？",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "再説を乞う。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "聞けよ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "同年代の学生には普通体の依頼が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "ゼミの発表で聞き取れなかったので",
+        "隣の学生に小さな声で頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_058",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "顧客からクレームの電話がかかってきたので、まず第一声で述べる。 次の中で最も適切な表現はどれか。",
+      "context": "顧客からクレームの電話がかかってきたので、まず第一声で述べる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お電話ありがとうございます。どのような件でしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "はい、クレームですか。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "恐惶謹言、頂戴つかまつる。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "クレーム対応では落ち着いたあいさつと用件の傾聴が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "顧客からクレームの電話がかかってきたので",
+        "まず第一声で述べる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_059",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "兄にスマホの機種変更を手伝ってもらい、礼を言う。 次の中で最も適切な表現はどれか。",
+      "context": "兄にスマホの機種変更を手伝ってもらい、礼を言う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "マジ助かった。ありがとう。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "御助力に痛感激に堪えません。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "当然だろ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "家族兄弟にはくだけた感謝が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "politeness",
+        "register"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "兄にスマホの機種変更を手伝ってもらい",
+        "礼を言う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_060",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "知らない学年会の保護者に、自分の名前と子どものクラスを名乗る。 次の中で最も適切な表現はどれか。",
+      "context": "知らない学年会の保護者に、自分の名前と子どものクラスを名乗る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "5年2組の田中の父です。よろしくお願いします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "俺、田中。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "小生、田中と申します。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "初対面の保護者にはクラスと丁寧な自己紹介が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "知らない学年会の保護者に",
+        "自分の名前と子どものクラスを名乗る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_061",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "上司が不在のとき、来客が「部長はいらっしゃいますか」と聞いてくる。 次の中で最も適切な表現はどれか。",
+      "context": "上司が不在のとき、来客が「部長はいらっしゃいますか」と聞いてくる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ただいま席を外しております。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "いねえよ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "御不在でございますなり。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "来客には丁寧に不在を伝えるのが無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "上司が不在のとき",
+        "来客が",
+        "部長はいらっしゃいますか",
+        "と聞いてくる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_062",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友人が料理を振る舞ってくれたあと、食後に一言。 次の中で最も適切な表現はどれか。",
+      "context": "友人が料理を振る舞ってくれたあと、食後に一言。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ごちそうさま。おいしかった。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "拙宴に預かり恐悦至極に存じます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "まあまあ。",
+          "explanation": "too blunt"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人宅では「ごちそうさま」と感想を添えるのが自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友人が料理を振る舞ってくれたあと",
+        "食後に一言",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_063",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "社内で廊下ですれ違っただけの別部署の人に、エレベーターの場所を聞く。 次の中で最も適切な表現はどれか。",
+      "context": "社内で廊下ですれ違っただけの別部署の人に、エレベーターの場所を聞く。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、エレベーターはどちらですか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "エレベーターどこ。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "昇降機の所在を賜りたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "面識の薄い相手には「すみません」から入る丁寧な質問が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "社内で廊下ですれ違っただけの別部署の人に",
+        "エレベーターの場所を聞く",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_064",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の若手担当に、先方の部長を同席したいと伝えるメールの一文。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の若手担当に、先方の部長を同席したいと伝えるメールの一文。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "可能であれば部長様にも同席いただけますと幸いです。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "部長呼べ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "部長殿御同席の儀、伏して懇願。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "取引先への依頼は柔らかい条件付きの敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の若手担当に",
+        "先方の部長を同席したいと伝えるメールの一文",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_065",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友達とゲームのボイスチャットで、味方に援護を頼む。 次の中で最も適切な表現はどれか。",
+      "context": "友達とゲームのボイスチャットで、味方に援護を頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "左から来てる、カバーして！",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "援護をお願いしたく存じます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "てめえ動け。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "ゲーム中の短い指示はタメ口・命令調が一般的です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "directness",
+        "register"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友達とゲームのボイスチャットで",
+        "味方に援護を頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_066",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "面接で、前職を辞めた理由を短く答える。 次の中で最も適切な表現はどれか。",
+      "context": "面接で、前職を辞めた理由を短く答える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "キャリアの方向性を考え、転職を決めました。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "上司がウザくて。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "前職にて所業を修め、茲に侍り候。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "面接では中立で書き言葉に近い丁寧語が無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "面接で",
+        "前職を辞めた理由を短く答える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_067",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先から預かった試作品を破損してしまったため、上司へ報告する。 次の中で最も適切な表現はどれか。",
+      "context": "取引先から預かった試作品を破損してしまったため、上司へ報告する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "搬送中に破損が判明しました。至急先方へ連絡が必要です。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "壊しちゃった。どうしよ。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "品、破壊の由、慙愧の極み。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "トラブル報告は事実と次の行動を簡潔に述べるのが無難です。",
+      "diagnosticTags": [
+        "directness",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先から預かった試作品を破損してしまったため",
+        "上司へ報告する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_068",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同僚の企画会議で、司会が次の議題に進むときの一言。 次の中で最も適切な表現はどれか。",
+      "context": "同僚の企画会議で、司会が次の議題に進むときの一言。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "では次の議題に移ります。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "次いくぞ。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "議題を繰り進めさせていただく次第にござります。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "社内の司会では標準的な丁寧語で進行するのが無難です。",
+      "diagnosticTags": [
+        "register",
+        "keigo",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同僚の企画会議で",
+        "司会が次の議題に進むときの一言",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_069",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "飲食店の店長に、週末のシフトを減らしてほしいと相談するパート従業員。 次の中で最も適切な表現はどれか。",
+      "context": "飲食店の店長に、週末のシフトを減らしてほしいと相談するパート従業員。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "家庭の都合で週末の回数を減らせていただきたいのですが。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "週末は出ねえ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "御店の勤怠、週末を御免蒙りたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "上長への相談は理由を添えた依頼の敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "飲食店の店長に",
+        "週末のシフトを減らしてほしいと相談するパート従業員",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_070",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "子どもの友だちの母親に、遊びに来る時間を遅らせてほしいと頼む。 次の中で最も適切な表現はどれか。",
+      "context": "子どもの友だちの母親に、遊びに来る時間を遅らせてほしいと頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "申し訳ないのですが、1時間遅れてもよろしいでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "1時間遅れ。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "到着の刻限を遅延せしめたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "他児童の保護者には謝意と依頼を柔らかく述べるのが無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "子どもの友だちの母親に",
+        "遊びに来る時間を遅らせてほしいと頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_071",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同僚に、予定していた会議の出席者名簿を午前中までに送ってほしいとリマインドする。 次の中で最も適切な表現はどれか。",
+      "context": "同僚に、予定していた会議の出席者名簿を午前中までに送ってほしいとリマインドする。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名簿、午前中に送ってもらえる？忘れそうなら教えて。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "名簿、至急提出を。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "名簿、今すぐ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "近い同僚には柔らかい依頼と助け舟が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同僚に",
+        "予定していた会議の出席者名簿を午前中までに送ってほしいとリマインドする",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_072",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "市役所の窓口で、申請書の記入方法が分からず職員に尋ねる。 次の中で最も適切な表現はどれか。",
+      "context": "市役所の窓口で、申請書の記入方法が分からず職員に尋ねる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、この欄はどう書けばよいでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "ここ、意味わかんない。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "本欄の御記入方法、御教示願い奉る。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "公の窓口では「すみません」から入る丁寧な質問が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "市役所の窓口で",
+        "申請書の記入方法が分からず職員に尋ねる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_073",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "社外の勉強会で名刺交換のあと、相手の肩書を確認する。 次の中で最も適切な表現はどれか。",
+      "context": "社外の勉強会で名刺交換のあと、相手の肩書を確認する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お役職はマーケティング部長でいらっしゃいますか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "あんた部長？",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "御身分はいかがなされまするや。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "初対面のビジネス相手には敬語で確認するのが無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "社外の勉強会で名刺交換のあと",
+        "相手の肩書を確認する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_074",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "居酒屋で料理がまだ来ないので、店員に声をかける。 次の中で最も適切な表現はどれか。",
+      "context": "居酒屋で料理がまだ来ないので、店員に声をかける。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、注文したものまだでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "まだかよ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "献立の到着が遅延しておりまする。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "店員への催促は「すみません」から入る柔らかい確認が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "居酒屋で料理がまだ来ないので",
+        "店員に声をかける",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_075",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友人に誕生日プレゼントをもらい、翌日メッセージで礼を言う。 次の中で最も適切な表現はどれか。",
+      "context": "友人に誕生日プレゼントをもらい、翌日メッセージで礼を言う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日はありがとう！大事に使うね。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "厚き御礼、言語道断。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "もらった。",
+          "explanation": "too blunt"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人へのお礼はカジュアルな感謝が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "politeness",
+        "register"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友人に誕生日プレゼントをもらい",
+        "翌日メッセージで礼を言う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_076",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の受付に、担当者とアポイントがある旨を伝える。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の受付に、担当者とアポイントがある旨を伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "△△社の佐藤と申します。3時に△△様とお約束しております。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "佐藤だ。呼んで。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "小生、面会の約、御座りまする。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "受付には社名・自分の名前・用件を丁寧に述べるのが無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の受付に",
+        "担当者とアポイントがある旨を伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_077",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "サークルの後輩の発表を聞いたあと、感想を一言。 次の中で最も適切な表現はどれか。",
+      "context": "サークルの後輩の発表を聞いたあと、感想を一言。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "めっちゃ分かりやすかったよ。お疲れ。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "御発表、誠に畏れ入りました。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "つまんね。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "サークル内では率直で軽い褒め言葉が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "サークルの後輩の発表を聞いたあと",
+        "感想を一言",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_078",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "社長の前で自分のミスを簡潔に謝る。 次の中で最も適切な表現はどれか。",
+      "context": "社長の前で自分のミスを簡潔に謝る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "確認が不足しておりました。申し訳ございません。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "すみませんでしたー。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "小生、罪該死に付き、土下座の意",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "経営層の前では簡潔な謝罪と原因の言及が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "社長の前で自分のミスを簡潔に謝る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_079",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "隣の部屋の人に、夜遅くの洗濯機の音が響く旨を初めて伝える。 次の中で最も適切な表現はどれか。",
+      "context": "隣の部屋の人に、夜遅くの洗濯機の音が響く旨を初めて伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "夜遅くの洗濯の音が少し響くようなので、できれば時間をずらしていただけますか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "うるせえんだよ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "洗濯機、御使用は明朝まで御猶予賜りたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "近隣トラブルは事実を柔らかく述べる依頼が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "隣の部屋の人に",
+        "夜遅くの洗濯機の音が響く旨を初めて伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_080",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "部活の顧問へ、大会を欠席する許可をメールで求める。 次の中で最も適切な表現はどれか。",
+      "context": "部活の顧問へ、大会を欠席する許可をメールで求める。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "家庭の事情により当日は参加が難しいです。ご承認いただけますと幸いです。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "行けません。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "欠席をお許し賜わりたく、謹みて伺いを立てる。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "教員への許可依頼は理由と丁寧な依頼が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "部活の顧問へ",
+        "大会を欠席する許可をメールで求める",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_081",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の企画書に感心し、打ち合わせの席で率直に伝える。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の企画書に感心し、打ち合わせの席で率直に伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "視点が新しくて勉強になりました。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "やるじゃん。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "感銘、胸を打たれることこの上なし。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "取引先への評価は過不足ない敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の企画書に感心し",
+        "打ち合わせの席で率直に伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_082",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "恋人に、今日は仕事で疲れているので外出は控えたいと伝える。 次の中で最も適切な表現はどれか。",
+      "context": "恋人に、今日は仕事で疲れているので外出は控えたいと伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今日は仕事で疲れたから、家でゆっくりしたい。また今度行こ。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "外出は謹んで辞退いたします。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "うるせえ、黙れ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "親しい相手には理由と代替案を添えたくだけた言い方が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "恋人に",
+        "今日は仕事で疲れているので外出は控えたいと伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_083",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "パート先の店長に、来月から勤務日を減らしたいと相談する。 次の中で最も適切な表現はどれか。",
+      "context": "パート先の店長に、来月から勤務日を減らしたいと相談する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来月から週3日に変更していただくことは可能でしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "週3でいい？",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "勤務密度を逓減せしめたく候。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "雇用側への相談は具体的な希望を丁寧に述べるのが無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "パート先の店長に",
+        "来月から勤務日を減らしたいと相談する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_084",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "メールの冒頭で、久しぶりに連絡する取引先の担当に宛てる。 次の中で最も適切な表現はどれか。",
+      "context": "メールの冒頭で、久しぶりに連絡する取引先の担当に宛てる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ご無沙汰しております。お変わりございませんでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "久しぶり。元気？",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "時下ますますご清栄のこととお慶び申し上げます。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "ビジネスメールの再会の挨拶は「ご無沙汰」が定番で無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "メールの冒頭で",
+        "久しぶりに連絡する取引先の担当に宛てる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_085",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同僚のプレゼンが終わったあと、司会として次の人を指名する。 次の中で最も適切な表現はどれか。",
+      "context": "同僚のプレゼンが終わったあと、司会として次の人を指名する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ありがとうございました。続いて佐藤さん、お願いします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "はい、次。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "御発表、無量の感謝。次席を御招き申し上げる。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "社内の司会はお礼と次の指名を簡潔に述べるのが無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同僚のプレゼンが終わったあと",
+        "司会として次の人を指名する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_086",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "子どもに、遊び終わったおもちゃを片づけるよう言う。 次の中で最も適切な表現はどれか。",
+      "context": "子どもに、遊び終わったおもちゃを片づけるよう言う。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "おもちゃ、箱に戻しておいて。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "玩具を元の位置に収納せよ。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "片づけろボケ。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "子どもへの指示はやわらかい普通体が一般的です。",
+      "diagnosticTags": [
+        "directness",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "子どもに",
+        "遊び終わったおもちゃを片づけるよう言う",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_087",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の社長と初対面で握手のあと、名刺を受け取る。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の社長と初対面で握手のあと、名刺を受け取る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ありがとうございます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "いただきますわ。",
+          "explanation": "unnatural"
+        },
+        {
+          "id": "c",
+          "label": "ちょうだい。",
+          "explanation": "too casual"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "名刺交換では「ありがとうございます」が定番です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の社長と初対面で握手のあと",
+        "名刺を受け取る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_088",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "後輩が書いたブログ記事を読み、チャットで感想を送る。 次の中で最も適切な表現はどれか。",
+      "context": "後輩が書いたブログ記事を読み、チャットで感想を送る。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "読んだよ。事例の話が刺さった。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "拝読し、感涙にむせんでおります。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "つまらん。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "近い後輩へのフィードバックは具体的なタメ口が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "directness",
+        "register"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "後輩が書いたブログ記事を読み",
+        "チャットで感想を送る",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_089",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "修繕業者に、見積もりの内容をもう一度説明してほしいと頼む。 次の中で最も適切な表現はどれか。",
+      "context": "修繕業者に、見積もりの内容をもう一度説明してほしいと頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "もう一度、内訳を分かりやすく説明していただけますか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "説明しろ。",
+          "explanation": "too rude"
+        },
+        {
+          "id": "c",
+          "label": "御説明を重ねて賜りたく、惶恐謹言。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "業者には依頼を柔らかく述べる敬語が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "keigo"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "修繕業者に",
+        "見積もりの内容をもう一度説明してほしいと頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_090",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "同僚に頼んだ作業がまだ終わっていないので、締切前にそっと催促する。 次の中で最も適切な表現はどれか。",
+      "context": "同僚に頼んだ作業がまだ終わっていないので、締切前にそっと催促する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "あの件、今日中だっけ？困ったら手伝うよ。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "まだですか。早くしてください。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "未完了の由、如何様に御処置なされますや。",
+          "explanation": "too indirect"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "近い同僚への催促は角が立たない言い方と援助の一言が無難です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "同僚に頼んだ作業がまだ終わっていないので",
+        "締切前にそっと催促する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_091",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "顧客から「この機能は使えない」と言われ、まず第一声で返す。 次の中で最も適切な表現はどれか。",
+      "context": "顧客から「この機能は使えない」と言われ、まず第一声で返す。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ご不便をおかけし申し訳ございません。状況を確認いたします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "そんなことないですけど。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "かしこまりました、畏まりました、左様でございます。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "クレームには謝罪と次の対応を述べるのが無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "顧客から",
+        "この機能は使えない",
+        "と言われ",
+        "まず第一声で返す",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_092",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "研究室のゼミで、自分と意見が違う先輩に反論する。 次の中で最も適切な表現はどれか。",
+      "context": "研究室のゼミで、自分と意見が違う先輩に反論する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、その点は資料の数値と食い違うように思います。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "先輩の説明、おかしくないですか。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "愚見ではございますが、小生、全然そう思わなくて。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "学術の場では根拠を添えた丁寧な反論が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "研究室のゼミで",
+        "自分と意見が違う先輩に反論する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_093",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "友人の結婚式の二次会で、短い乾杯の挨拶を頼まれる。 次の中で最も適切な表現はどれか。",
+      "context": "友人の結婚式の二次会で、短い乾杯の挨拶を頼まれる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お二人のこれからの門出を祝して、乾杯！",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "本日はおめでとうございます。結婚おめでとうございます。以上です。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "飲め。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "友人の二次会では短く祝意を述べて乾杯するのが自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "友人の結婚式の二次会で",
+        "短い乾杯の挨拶を頼まれる",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_094",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "配達員に荷物を受け取り、サインを求められたあとの一言。 次の中で最も適切な表現はどれか。",
+      "context": "配達員に荷物を受け取り、サインを求められたあとの一言。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ありがとうございます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "サンキュー。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "御苦労様でございました。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "配達員への短いお礼は定番の一句で足ります。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "配達員に荷物を受け取り",
+        "サインを求められたあとの一言",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_095",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "上司に、来週の出張の航空券を自分で手配してよいか許可を求める。 次の中で最も適切な表現はどれか。",
+      "context": "上司に、来週の出張の航空券を自分で手配してよいか許可を求める。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "航空券はこちらで手配して問題ないでしょうか。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "チケット自分で買うわ。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "航空券調達の御許可を賜りたく、謹言。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "上司への許可依頼は丁寧な確認の疑問文が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "上司に",
+        "来週の出張の航空券を自分で手配してよいか許可を求める",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_096",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "実家の母に、転職が決まったことを電話で報告する。 次の中で最も適切な表現はどれか。",
+      "context": "実家の母に、転職が決まったことを電話で報告する。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "来月から新しい会社で働くことになった。詳しくは後で話すね。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "転職が決定いたしました。謹んでご報告申し上げます。",
+          "explanation": "too stiff"
+        },
+        {
+          "id": "c",
+          "label": "知るか。",
+          "explanation": "too rude"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "家族にはくだけたが丁寧な報告が自然です。",
+      "diagnosticTags": [
+        "casual_speech",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "実家の母に",
+        "転職が決まったことを電話で報告する",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_097",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "顧客向けアプリの障害について、利用者向けのお知らせ文の冒頭。 次の中で最も適切な表現はどれか。",
+      "context": "顧客向けアプリの障害について、利用者向けのお知らせ文の冒頭。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現在、一部の機能に不具合が発生しております。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "アプリ、また壊れちゃいました。ごめんね。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "弊アプリ、凋落の憂き目に遭う由、謹告。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "利用者向けの障害告知は淡々とした敬体が無難です。",
+      "diagnosticTags": [
+        "register",
+        "politeness",
+        "directness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "顧客向けアプリの障害について",
+        "利用者向けのお知らせ文の冒頭",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_098",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "取引先の懇親会で飲みすぎないよう断り、ジュースを頼む。 次の中で最も適切な表現はどれか。",
+      "context": "取引先の懇親会で飲みすぎないよう断り、ジュースを頼む。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "すみません、今日はお酒は控えさせていただきます。ウーロン茶でお願いします。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "酒はいらん。茶。",
+          "explanation": "too blunt"
+        },
+        {
+          "id": "c",
+          "label": "醇醪は謹んで辞退し、茶を賜りたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "取引先の席では謝意と希望を述べる丁寧語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "取引先の懇親会で飲みすぎないよう断り",
+        "ジュースを頼む",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_099",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "初対面の同年代の人に、自分の趣味を聞かれたときの返答。 次の中で最も適切な表現はどれか。",
+      "context": "初対面の同年代の人に、自分の趣味を聞かれたときの返答。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "写真を撮るのが好きです。カメラもよく持ち歩きます。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "写真かな。まあ色々。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "小生、写真撮影に骨を折っておりまする。",
+          "explanation": "unnatural"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "初対面では具体的で標準的な丁寧語が無難です。",
+      "diagnosticTags": [
+        "politeness",
+        "register",
+        "directness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "初対面の同年代の人に",
+        "自分の趣味を聞かれたときの返答",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "rr_100",
+      "type": "multipleChoice",
+      "prompt": "場面に合う表現を選びなさい。",
+      "japanese": "テレワーク中、チャットで上司に体調不良のため午後休むことを伝える。 次の中で最も適切な表現はどれか。",
+      "context": "テレワーク中、チャットで上司に体調不良のため午後休むことを伝える。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "体調が優れないため、午後は休ませていただきます。急ぎの連絡はメールでください。",
+          "explanation": "best fit"
+        },
+        {
+          "id": "b",
+          "label": "午後寝る。",
+          "explanation": "too casual"
+        },
+        {
+          "id": "c",
+          "label": "貴体不良につき、午睡を賜りたく。",
+          "explanation": "too stiff"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "上司への欠勤連絡は理由と連絡手段を添えた敬語が無難です。",
+      "diagnosticTags": [
+        "keigo",
+        "register",
+        "politeness"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "場面に合う文体・敬さ",
+        "社会的距離と表現の選択"
+      ],
+      "vocabulary": [
+        "テレワーク中",
+        "チャットで上司に体調不良のため午後休むことを伝える",
+        "次の中で最も適切な表現はどれか"
+      ],
+      "reviewStatus": "draft"
+    }
+  ]
+}

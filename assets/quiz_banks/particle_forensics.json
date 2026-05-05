@@ -1,0 +1,4664 @@
+{
+  "id": "particleForensics",
+  "title": "Particle Forensics",
+  "subtitle": "Semantic case marking",
+  "description": "N4–N3 practice for は／が、に／で、を（経路）、と（同伴・引用）、へ／に、から・まで、より／ほど、も・だけ・しか、の、手段・原因ので、時・対象・存在のに。短文で粒子の役割を判別する。",
+  "difficulty": "N4-N3",
+  "diagnosticTags": [
+    "dialogue_context",
+    "ni_de",
+    "noun_modification",
+    "particle_choice",
+    "potential_form",
+    "topic_contrast",
+    "wa_ga",
+    "wo_ga"
+  ],
+  "questions": [
+    {
+      "id": "pf_001",
+      "type": "multipleChoice",
+      "prompt": "第1問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "本___読みます。",
+      "context": "Meaning: I will read a book.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の対象。「読む」が届く先を示す。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "「読む」の目的語に中性の「が」は付けない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点や着く先ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作の場所でも手段でもない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "目的語を示す「を」。「本を読む」が基本の組み合わせ。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "本",
+        "読みます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_002",
+      "type": "multipleChoice",
+      "prompt": "第2問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "駅___着きました。",
+      "context": "Meaning: We arrived at the station.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "移動の経路全体をまたぐ「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "へ",
+          "explanation": "方向は言えるが「着く」の到達点より「に」が定番。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点・着く先。「駅に着く」が定型。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作が行われる場所ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "到達点の「に」。「着く」「入る」など「到着」系とセットになりやすい。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "駅",
+        "着きました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_003",
+      "type": "multipleChoice",
+      "prompt": "第3問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "教室___勉強します。",
+      "context": "Meaning: I study in the classroom.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の対象ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点ではなく「中で勉強する」場所の別表現になりにくい。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作が行われる場所。「勉強するで」の場。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "動作の舞台は「で」。「教室で勉強する」は場所の典型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "教室",
+        "勉強します"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_004",
+      "type": "multipleChoice",
+      "prompt": "第4問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "雨___降っています。",
+      "context": "Meaning: It is raining.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の対象ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "自然現象の主語に付きやすい。「雨が降る」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "存在の場所「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段や原因の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "出来事・現象の主語は「が」。天気の無題描写で自然。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "雨",
+        "降っています"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_005",
+      "type": "multipleChoice",
+      "prompt": "第5問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "友だち___会います。",
+      "context": "Meaning: I will meet a friend.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "会う相手に「を」は付けない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "相手を主語にする「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "会う相手・面会の相手。「会う」の相手は「に」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "集合の場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "面会の相手は「に」。「友だちに会う」が基本。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "友だち",
+        "会います"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_006",
+      "type": "multipleChoice",
+      "prompt": "第6問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "今日___会議があります。",
+      "context": "Workplace: there is a meeting today (today as the frame).",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "存在文で無生物主語の「が」もあるが、この定型では話題の「は」が自然。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "時点の「に」ではなく、日程を取り上げる話題にしたい。"
+        },
+        {
+          "id": "d",
+          "label": "は",
+          "explanation": "話題を立てる「は」。「今日は…」で予定を述べる型。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "日程・話題を取り上げる「は」。「今日は会議がある」で自然。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "今日",
+        "会議があります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_007",
+      "type": "multipleChoice",
+      "prompt": "第7問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "部長___今、外出中です。",
+      "context": "Office: explaining the manager’s status.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "描写の主語に見えるが、この説明の骨は人物を話題にする「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "人物について説明する話題。「部長は外出中」が受付の言い方として自然。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段や場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "人物を話題にして状態を述べる「は」。受付の説明で取り上げやすい。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "部長",
+        "今",
+        "外出中です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_008",
+      "type": "multipleChoice",
+      "prompt": "第8問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "バス___会社へ行きます。",
+      "context": "Meaning: I go to work by bus.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路全体の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "乗り物を「行く」の目標にする「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "移動の手段。「バスで行く」が定型。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "手段・方法は「で」。交通手段を述べる典型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "バス",
+        "会社へ行きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_009",
+      "type": "multipleChoice",
+      "prompt": "第9問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "メール___返信しました。",
+      "context": "Workplace: I replied to the email.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "返信の定型は「メールに返信」が中心で「を」は不自然。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "応答の届け先・返答の相手。「メールに返信する」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "返答の向け先は「に」。連絡手段に対する返信の型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "メール",
+        "返信しました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_010",
+      "type": "multipleChoice",
+      "prompt": "第10問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "コーヒー___砂糖を入れます。",
+      "context": "Meaning: I put sugar in the coffee.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "入れる先ではなく動かすものは別に「砂糖を」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "入れる先・容れ物側の目標。「コーヒーに入れる」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "入れる先を示す「に」。入れるものは「砂糖を」と別枠。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "コーヒー",
+        "砂糖を入れます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_011",
+      "type": "multipleChoice",
+      "prompt": "第11問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "すみません、お手洗い___どこですか。",
+      "context": "Shop or office: asking where the restroom is.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "項目を取り上げて質問する「は」。「お手洗いはどこですか」が定型。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "存在の場「に」だけではこの疑問型になりにくい。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "疑問で項目を話題にする「は」。場所を聞く定型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "すみません",
+        "お手洗い",
+        "どこですか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_012",
+      "type": "multipleChoice",
+      "prompt": "第12問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "窓___開けてください。",
+      "context": "Asking someone to open the window.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の対象。「開ける」の目的語。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "開ける対象の「が」ではなく目的語型。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "他動詞の目的語は「を」。開閉の対象に典型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "窓",
+        "開けてください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_013",
+      "type": "multipleChoice",
+      "prompt": "第13問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "冬___とても寒いです。",
+      "context": "Comment on the season.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "属性叙述だけなら「が」もあるが、季節を取り上げて評価するなら「は」が自然。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "季節を話題にして性質を述べる「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "時点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "季節を話題にする「は」。対比や一般論で使いやすい。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "冬",
+        "とても寒いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_014",
+      "type": "multipleChoice",
+      "prompt": "第14問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "妹___本をあげました。",
+      "context": "Meaning: I gave my younger sister a book.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "あげる相手に「を」は付けない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "付与の到達点。「あげる」相手は「に」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "与える相手は「に」。授与動詞の相手の典型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "妹",
+        "本をあげました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_015",
+      "type": "multipleChoice",
+      "prompt": "第15問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "この料理___辛いです。",
+      "context": "Commenting on how spicy the dish is.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "評価の対象を目的語にする「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "述語の主語に見える「が」もあるが、品を取り上げて評価するなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "品を話題にして味の評価を述べる「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "評価・対比で品を取り上げる「は」。味のコメントに使いやすい。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "この料理",
+        "辛いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_016",
+      "type": "multipleChoice",
+      "prompt": "第16問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "私___学生です。",
+      "context": "Self-introduction at school.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "述語の連体修飾ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "中立叙述なら「が」もあるが、自己紹介で情報をまとめるなら「は」が定番。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "自己紹介で属性を述べる話題の「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "自己紹介で属性を述べる話題は「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "私",
+        "学生です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_017",
+      "type": "multipleChoice",
+      "prompt": "第17問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "窓の外___鳥がいます。",
+      "context": "Looking outside.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "存在の場所ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "存在の主体。「鳥がいる」の主語。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "場所を話題にする「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作の場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "存在の主体は「が」。「いる／ある」の典型的な主語。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "窓の外",
+        "鳥がいます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_018",
+      "type": "multipleChoice",
+      "prompt": "第18問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "教室___机が十あります。",
+      "context": "Describing the room.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "場所ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "存在する物の主語。「机がある」の主語。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "存在文で物を数える主語は「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "教室",
+        "机が十あります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_019",
+      "type": "multipleChoice",
+      "prompt": "第19問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "駅の前___バス停があります。",
+      "context": "Giving directions.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "施設を主語にする「が」もあるが、場所をまず決めるなら「に」が自然。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "存在の場所。「ある」の場所は「に」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "話題の「は」だけではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "存在の場所は「に」。「～に～がある」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "駅の前",
+        "バス停があります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_020",
+      "type": "multipleChoice",
+      "prompt": "第20問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "デパート___買い物をしました。",
+      "context": "Shopping on the weekend.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点だけでなく「店内で買う」場のイメージなら「で」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作が行われた場所。「買い物するで」の場。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "買い物という動作の舞台は「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "デパート",
+        "買い物をしました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_021",
+      "type": "multipleChoice",
+      "prompt": "第21問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "病気___休みました。",
+      "context": "Explaining absence.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "目標の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "理由・原因。「病気で休む」が自然。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "理由・原因を示す「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "病気",
+        "休みました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_022",
+      "type": "multipleChoice",
+      "prompt": "第22問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "九時___起きます。",
+      "context": "Daily routine.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "時刻の点。「九時に」が定型。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "時刻の点は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "九時",
+        "起きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_023",
+      "type": "multipleChoice",
+      "prompt": "第23問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "春___花がきれいです。",
+      "context": "Season and scenery.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "「花がきれい」の主語は「が」だが、季節を取り上げる枠は「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "季節を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "時点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "季節を話題にして景色を述べる「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "春",
+        "花がきれいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_024",
+      "type": "multipleChoice",
+      "prompt": "第24問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "宿題___終わりました。",
+      "context": "School: homework is done.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の対象ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "出来事の主語。「宿題が終わる」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」も言えるが、この無題描写では「が」が自然。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "変化・完了の主語に「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "宿題",
+        "終わりました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_025",
+      "type": "multipleChoice",
+      "prompt": "第25問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "母___料理が上手です。",
+      "context": "Talking about family.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "属性の主語は「が」だが、人物を取り上げてから述べるなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "人物を話題にして特性を述べる「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "人物を話題にして評価する「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "母",
+        "料理が上手です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_026",
+      "type": "multipleChoice",
+      "prompt": "第26問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "弟___サッカーが上手です。",
+      "context": "Talking about a sibling.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "能力の対象「サッカー」に「が」が付くが、文頭は弟を取り上げる「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "人物を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "比較・話題で人物を立てる「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "弟",
+        "サッカーが上手です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_027",
+      "type": "multipleChoice",
+      "prompt": "第27問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "この店___ラーメンがおいしいです。",
+      "context": "Restaurant recommendation.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "商品を主語にする「が」もあるが、店を先に取り上げるなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "店を話題にして評価する「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "店を話題にして評価する「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "この店",
+        "ラーメンがおいしいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_028",
+      "type": "multipleChoice",
+      "prompt": "第28問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "誰___日本語が話せますか。",
+      "context": "Classroom question.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "疑問の焦点ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "能力を持つ主語を問う「が」。「だれができるか」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "疑問で主語を問うときは「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "potential_form"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "誰",
+        "日本語が話せますか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_029",
+      "type": "multipleChoice",
+      "prompt": "第29問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "何___したいですか。",
+      "context": "Asking plans.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語を問う「何を」もあるが、「何がしたい」で望みの対象を問う。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "希望の対象を示す「が」。「～がしたい」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "希望の対象は「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "potential_form"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "何",
+        "したいですか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_030",
+      "type": "multipleChoice",
+      "prompt": "第30問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "水___飲みたいです。",
+      "context": "At home or office.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の「飲む」なら「水を」だが、希望表現は対象に「が」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "希望の対象。「水が飲みたい」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「～たい」の対象に「が」が付く型が自然。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "potential_form"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "水",
+        "飲みたいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_031",
+      "type": "multipleChoice",
+      "prompt": "第31問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "部屋___静かです。",
+      "context": "Hotel or study room.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "属性の主語。「部屋が静か」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "対比でなければ描写に「は」もあるが、状態描写は「が」が無難。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "状態・属性の主語に「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "部屋",
+        "静かです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_032",
+      "type": "multipleChoice",
+      "prompt": "第32問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "先生___来ました。",
+      "context": "Someone arrived.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "出来事の主語。「先生が来た」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "すでに話題なら「は」もあるが、ニュースの初出は「が」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "新情報の主語に「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "先生",
+        "来ました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_033",
+      "type": "multipleChoice",
+      "prompt": "第33問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "息子___医者になりました。",
+      "context": "Family news.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "変化の主体。「息子がなる」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "対比の「は」もあるが、結果報告は「が」で中立。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "結果の「に」は「医者になる」自体には付かない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "変化・結果の主体は「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "ni_de"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "息子",
+        "医者になりました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_034",
+      "type": "multipleChoice",
+      "prompt": "第34問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "木___上がります。",
+      "context": "Outdoor activity.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "移動が表面を横切る「を」。「木を登る」型。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」だけではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "移動が対象の表面をまたぐ「を」。登攀の典型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "木",
+        "上がります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_035",
+      "type": "multipleChoice",
+      "prompt": "第35問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "橋___渡ります。",
+      "context": "Travel / walking route.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路・表面をまたぐ「を」。「橋を渡る」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "橋の上を「到達点」だけに見ない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "通過・横断の経路は「を」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "橋",
+        "渡ります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_036",
+      "type": "multipleChoice",
+      "prompt": "第36問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "角___曲がります。",
+      "context": "Giving directions.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "曲がる地点をまたぐ「を」。「角を曲がる」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "角を目標にする「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "曲がる交差点をまたぐ「を」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "角",
+        "曲がります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_037",
+      "type": "multipleChoice",
+      "prompt": "第37問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "赤信号___止まります。",
+      "context": "Driving.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "信号を目印に動作が止まる「を」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "信号に「着く」わけではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "動作のきっかけ・目印をまたぐ「を」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "赤信号",
+        "止まります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_038",
+      "type": "multipleChoice",
+      "prompt": "第38問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "空港の前___通ります。",
+      "context": "Describing a route.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "前を通過する「を」。「前を通る」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "場所限定の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "手前を通過する経路は「を」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "空港の前",
+        "通ります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_039",
+      "type": "multipleChoice",
+      "prompt": "第39問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "公園___散歩します。",
+      "context": "Leisure.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "公園を散歩の経路としてまたぐなら「を」もあるが、場内を歩くなら「で」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作の場所。「公園で散歩」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "散歩の舞台となる区域は「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "公園",
+        "散歩します"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_040",
+      "type": "multipleChoice",
+      "prompt": "第40問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "家族___旅行に行きます。",
+      "context": "Holiday plan.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "と",
+          "explanation": "同行者。「家族と行く」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "同伴は「と」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「と」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "家族",
+        "旅行に行きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_041",
+      "type": "multipleChoice",
+      "prompt": "第41問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "友だち___映画を見に行きます。",
+      "context": "Weekend plan.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "と",
+          "explanation": "同伴の「と」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一緒に行く相手は「と」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「と」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "友だち",
+        "映画を見に行きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_042",
+      "type": "multipleChoice",
+      "prompt": "第42問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "先生___「静かに」と言いました。",
+      "context": "Classroom memory.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "引用の範囲ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "と",
+          "explanation": "引用内容を示す「と」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "言葉の引用に「と」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「と」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "先生",
+        "静かに",
+        "と言いました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_043",
+      "type": "multipleChoice",
+      "prompt": "第43問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "彼___「忙しい」と答えました。",
+      "context": "Conversation report.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "と",
+          "explanation": "発話内容の引用「と」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "答えの内容を引用する「と」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「と」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "彼",
+        "忙しい",
+        "と答えました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_044",
+      "type": "multipleChoice",
+      "prompt": "第44問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "私___日本へ行きたいです。",
+      "context": "Travel wish.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "へ",
+          "explanation": "移動の方向を柔らかく示す「へ」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」もあるが、願望の方向づけに「へ」がよく使われる。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "移動の方向を示す「へ」。願望の行き先にも自然。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「へ」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "私",
+        "日本へ行きたいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_045",
+      "type": "multipleChoice",
+      "prompt": "第45問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "会社___自転車で行きます。",
+      "context": "Commute.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "へ",
+          "explanation": "方向の「へ」もあるが、到達点として「会社に行く」が自然。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点・行き先。「会社に行く」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」は文末の「自転車で」。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "行き先の到達点は「に」。文末で手段を「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N4-N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "会社",
+        "自転車で行きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_046",
+      "type": "multipleChoice",
+      "prompt": "第46問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "北___向かいます。",
+      "context": "Navigation.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "へ",
+          "explanation": "向かう方向を示す「へ」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "点の「に」より方向の「へ」が合う。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "方角への移動の方向は「へ」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「へ」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "北",
+        "向かいます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_047",
+      "type": "multipleChoice",
+      "prompt": "第47問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "大阪___出張します。",
+      "context": "Business trip.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "へ",
+          "explanation": "「大阪へ」もあるが、着く先・滞在先を点で示すなら「に」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "行き先・滞在先の点。「大阪に出張」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "滞在先を点で示すなら「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "大阪",
+        "出張します"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_048",
+      "type": "multipleChoice",
+      "prompt": "第48問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "家___帰ります。",
+      "context": "End of day.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "へ",
+          "explanation": "「家へ」も自然だが到達点として「家に帰る」が極めて多い。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "帰る先の到達点。「家に帰る」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "帰着の到達点は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "家",
+        "帰ります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_049",
+      "type": "multipleChoice",
+      "prompt": "第49問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "学校___八時からです。",
+      "context": "Schedule.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "から",
+          "explanation": "開始時刻。「八時から」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "起点・開始は「から」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「から」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "学校",
+        "八時からです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_050",
+      "type": "multipleChoice",
+      "prompt": "第50問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "会議は午後五時___続きます。",
+      "context": "Office schedule.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "まで",
+          "explanation": "終了までの範囲「五時まで続く」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作の単純な場所の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "継続の終わりを示す「まで」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「まで」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "会議は午後五時",
+        "続きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_051",
+      "type": "multipleChoice",
+      "prompt": "第51問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "駅___ここから近いです。",
+      "context": "Giving directions.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "「駅が近い」もあるが、起点との距離なら「駅から」。"
+        },
+        {
+          "id": "c",
+          "label": "から",
+          "explanation": "距離・程度の起点「から」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "基準点からの距離に「から」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "駅",
+        "ここから近いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_052",
+      "type": "multipleChoice",
+      "prompt": "第52問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "空港___町までバスがあります。",
+      "context": "Travel info.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "から",
+          "explanation": "起点。「空港から町まで」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点だけの「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "区間の起点は「から」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「から」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "空港",
+        "町までバスがあります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_053",
+      "type": "multipleChoice",
+      "prompt": "第53問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "朝八時___夜十時まで働きます。",
+      "context": "Work hours.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "から",
+          "explanation": "時間の幅の始まり「から」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "時間範囲の開始は「から」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「から」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "朝八時",
+        "夜十時まで働きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_054",
+      "type": "multipleChoice",
+      "prompt": "第54問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "この本___高いです。",
+      "context": "Shopping.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "属性の主語「が」もあるが、品を取り上げるなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "品を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "より",
+          "explanation": "比較基準の「より」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "品を話題にして価格判断「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "この本",
+        "高いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_055",
+      "type": "multipleChoice",
+      "prompt": "第55問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "去年___今年より寒かったです。",
+      "context": "Weather chat.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "比較の基準を取り上げる「は」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "比較の一方を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "去年",
+        "今年より寒かったです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_056",
+      "type": "multipleChoice",
+      "prompt": "第56問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "弟___私より背が高いです。",
+      "context": "Family comparison.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "比較される側の主語に「が」もあるが、人物を立てるなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "比較の一方を提示する「は」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "比較の一方を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "弟",
+        "私より背が高いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_057",
+      "type": "multipleChoice",
+      "prompt": "第57問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "東京___大阪より大きいです。",
+      "context": "Geography.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "比較される側を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "比較の主題を「は」で立てる。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "東京",
+        "大阪より大きいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_058",
+      "type": "multipleChoice",
+      "prompt": "第58問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "昨日___今日ほど暑くありませんでした。",
+      "context": "Weather comparison.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "比較の一方を話題にする「は」。「昨日は今日ほど～ない」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "比較で基準日を話題にする「は」＋「ほど」の定型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast",
+        "wa_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "昨日",
+        "今日ほど暑くありませんでした"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_059",
+      "type": "multipleChoice",
+      "prompt": "第59問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "朝___晩も働きます。",
+      "context": "Shift work.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "時間帯を話題にし、あとで「も」を付けて追加「朝は晩も」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "前半を話題にする「は」と、追加の「も」のセットアップ。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast",
+        "wa_ga"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "朝",
+        "晩も働きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_060",
+      "type": "multipleChoice",
+      "prompt": "第60問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "水___飲みません。",
+      "context": "Allergy or dislike.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "否定の対象を範囲づけ「水を飲まない」もあるが、全面否定なら「も」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "全面否定「水も飲まない」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "列挙的な全面否定に「も」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "水",
+        "飲みません"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_061",
+      "type": "multipleChoice",
+      "prompt": "第61問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "今日___休みだけです。",
+      "context": "Schedule clarification.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "限定。「休みだけ」。"
+        },
+        {
+          "id": "d",
+          "label": "だけ",
+          "explanation": "話題の「は」もあるが、限定副詞的に「だけ」が核。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "限定の「だけ」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "今日",
+        "休みだけです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_062",
+      "type": "multipleChoice",
+      "prompt": "第62問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "百円___買えます。",
+      "context": "Shopping.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "値段で買える「百円で」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "価格・限度を示す「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "百円",
+        "買えます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_063",
+      "type": "multipleChoice",
+      "prompt": "第63問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "肉___食べられません。",
+      "context": "Dietary restriction.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "対象の「を」ではなく否定と「しか」のセットが前提。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "しか",
+          "explanation": "部分否定の「しか～ない」型のマーカー。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "「しか」は否定と組み合わせて部分否定。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「しか」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "肉",
+        "食べられません"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_064",
+      "type": "multipleChoice",
+      "prompt": "第64問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "大阪___駅は地下です。",
+      "context": "Directions at the station.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "の",
+          "explanation": "固有名を修飾する「の」。「大阪の駅」。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "地名が下位名詞を修飾する「の」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "大阪",
+        "駅は地下です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_065",
+      "type": "multipleChoice",
+      "prompt": "第65問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "東京___大学に通っています。",
+      "context": "Student life.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "の",
+          "explanation": "固有名の修飾「東京の大学」。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "地名で学校名を修飾する「の」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "東京",
+        "大学に通っています"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_066",
+      "type": "multipleChoice",
+      "prompt": "第66問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "友だち___田中さんが来ました。",
+      "context": "Someone visits.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "来た主語は「が」だが、同格の友だちを示すのは「の」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "の",
+          "explanation": "同格・説明の「友だちの田中さん」。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "同格・補足説明に「の」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "友だち",
+        "田中さんが来ました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_067",
+      "type": "multipleChoice",
+      "prompt": "第67問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "母___ケーキは甘いです。",
+      "context": "Food at home.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "「母はケーキは」に重なりづらい。"
+        },
+        {
+          "id": "d",
+          "label": "の",
+          "explanation": "所有・属性の「母のケーキ」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "人と物の属性をつなぐ「の」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「の」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "母",
+        "ケーキは甘いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_068",
+      "type": "multipleChoice",
+      "prompt": "第68問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "電車___会社に行きます。",
+      "context": "Commute.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路全体の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "乗り物を目標にしない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段「電車で」。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "交通手段は「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "電車",
+        "会社に行きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_069",
+      "type": "multipleChoice",
+      "prompt": "第69問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "箸___ご飯を食べます。",
+      "context": "Mealtime.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "食べる対象ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "道具手段「箸で」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "道具を使う手段は「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "箸",
+        "ご飯を食べます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_070",
+      "type": "multipleChoice",
+      "prompt": "第70問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "切手___手紙を出します。",
+      "context": "Post office.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "必要物を付ける「に」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "付着・添付の目標は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "切手",
+        "手紙を出します"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_071",
+      "type": "multipleChoice",
+      "prompt": "第71問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "黒板___字を書きます。",
+      "context": "School.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "書く内容の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "書き付ける表面「黒板に」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "書き込む面・表面は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "黒板",
+        "字を書きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_072",
+      "type": "multipleChoice",
+      "prompt": "第72問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "急い___バスに乗りました。",
+      "context": "Almost missed the bus.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "目標の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "様態・理由がちの「急いで」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "動きの様子をつなぐ「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "急い",
+        "バスに乗りました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_073",
+      "type": "multipleChoice",
+      "prompt": "第73問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "明日___試験があります。",
+      "context": "School calendar.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "試験がある主語は「が」だが、日取りを先に置くなら「に」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "日付の点「明日に」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "日程の点は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "明日",
+        "試験があります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_074",
+      "type": "multipleChoice",
+      "prompt": "第74問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "この問題___わかりません。",
+      "context": "Studying.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "「問題をわかる」ではなく焦点を「問題」に。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "理解の対象に見える「が」。「問題がわからない」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」もあるが、無題の困りごとは「が」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "理解・可能の対象を示す「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "potential_form"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "この問題",
+        "わかりません"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_075",
+      "type": "multipleChoice",
+      "prompt": "第75問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "お金___足りません。",
+      "context": "Shopping problem.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "不足するものの主語。「お金が足りない」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "不足・必要の主語は「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "お金",
+        "足りません"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_076",
+      "type": "multipleChoice",
+      "prompt": "第76問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "駅___近いです。",
+      "context": "Housing search.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "「駅が近い」もあるが、話題に駅を立てるなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "基準を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "存在場所の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "距離判断の基準を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "駅",
+        "近いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_077",
+      "type": "multipleChoice",
+      "prompt": "第77問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "私___コーヒーは飲みません。",
+      "context": "Preference.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題対比「コーヒーは」。主語の私は「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "対比のため主語と対象に「は」を分ける型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "私",
+        "コーヒーは飲みません"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_078",
+      "type": "multipleChoice",
+      "prompt": "第78問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "夏___冬より暑いです。",
+      "context": "Seasons.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "比較の一方を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "比較のテーマを「は」で提示。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "夏",
+        "冬より暑いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_079",
+      "type": "multipleChoice",
+      "prompt": "第79問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "ここ___写真を撮ってもいいですか。",
+      "context": "Travel / museum.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "動作の場所「ここで」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "許可を求める場所は「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "ここ",
+        "写真を撮ってもいいですか"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_080",
+      "type": "multipleChoice",
+      "prompt": "第80問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "あの建物___病院です。",
+      "context": "Pointing something out.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "同一視の主語「が」もあるが、指し示しの話題なら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "指し示した対象を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "指示詞の対象を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "あの建物",
+        "病院です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_081",
+      "type": "multipleChoice",
+      "prompt": "第81問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "休みの日___よく散歩します。",
+      "context": "Habit.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "時間の枠を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "時間帯を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "休みの日",
+        "よく散歩します"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_082",
+      "type": "multipleChoice",
+      "prompt": "第82問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "彼女___歌が上手です。",
+      "context": "Talent.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "歌の属性は「が」だが、人物を立てるなら「は」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "人物を話題にする「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "人物を話題にして技能を述べる「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "彼女",
+        "歌が上手です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_083",
+      "type": "multipleChoice",
+      "prompt": "第83問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "電車___遅れました。",
+      "context": "Trouble while traveling.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "他動詞の目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "出来事の主語。「電車が遅れる」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "到着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "事態・出来事の主語に「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "電車",
+        "遅れました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_084",
+      "type": "multipleChoice",
+      "prompt": "第84問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "海___すいえいを習います。",
+      "context": "After-school activity.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "移動の経路の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到達点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "活動の場所「海で」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "水辺の区域で行う活動の場所は「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "海",
+        "すいえいを習います"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_085",
+      "type": "multipleChoice",
+      "prompt": "第85問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "喫茶店___友だちを待ちます。",
+      "context": "After school.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "店を待つ対象に「を」は付けない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "店を目標にする「に」もあるが、店内で待つなら「で」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "待合の舞台「喫茶店で」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "待ち合わせの場所の中で行う待ちは「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "喫茶店",
+        "友だちを待ちます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_086",
+      "type": "multipleChoice",
+      "prompt": "第86問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "週末___出かけます。",
+      "context": "Plan.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "時間枠を話題に「週末は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "習慣的な時間帯を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "週末",
+        "出かけます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_087",
+      "type": "multipleChoice",
+      "prompt": "第87問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "新しい店___すしが安いです。",
+      "context": "Restaurant news.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "店を取り上げてから評価「店はすしが」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "店を話題にして中身を述べる「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "新しい店",
+        "すしが安いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_088",
+      "type": "multipleChoice",
+      "prompt": "第88問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "公園のベンチ___座ります。",
+      "context": "Resting while walking.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "座る表面をまたぐ「を」も「ベンチに座る」型が基本。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "着座の点「ベンチに座る」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "着座の目標点は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "公園のベンチ",
+        "座ります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_089",
+      "type": "multipleChoice",
+      "prompt": "第89問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "封筒___住所を書きます。",
+      "context": "Post / form.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "書く内容の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "書き付ける表面「封筒に」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "文字を載せる面は「に」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「に」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "封筒",
+        "住所を書きます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_090",
+      "type": "multipleChoice",
+      "prompt": "第90問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "信号___青です。",
+      "context": "Traffic light.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "信号の状態の主語「信号が青」。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "原因の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "表示・状態の主語は「が」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "信号",
+        "青です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_091",
+      "type": "multipleChoice",
+      "prompt": "第91問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "友だち___「またね」と手を振りました。",
+      "context": "Saying goodbye.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "と",
+          "explanation": "発話内容の引用「と」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "言った内容を引用する「と」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "dialogue_context"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「と」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "友だち",
+        "またね",
+        "と手を振りました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_092",
+      "type": "multipleChoice",
+      "prompt": "第92問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "家___出ます。",
+      "context": "Leaving home.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "建物を離れる移動の「家を出る」。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "到着点の「に」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "移動の出発をまたぐ「を」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wo_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「を」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "家",
+        "出ます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_093",
+      "type": "multipleChoice",
+      "prompt": "第93問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "こちら___田中です。",
+      "context": "Phone / reception.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "自己同一・話題の提示「こちらは」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "電話や受付で自分側を示す「こちらは」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "こちら",
+        "田中です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_094",
+      "type": "multipleChoice",
+      "prompt": "第94問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "空港___上海へ飛びます。",
+      "context": "International flight.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "経路の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "から",
+          "explanation": "区間の起点「空港から」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "出発地を示す「から」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「から」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "空港",
+        "上海へ飛びます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_095",
+      "type": "multipleChoice",
+      "prompt": "第95問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "夕方___かえってきます。",
+      "context": "Coming home.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "時間帯を話題に「夕方は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "一日の区分を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "夕方",
+        "かえってきます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_096",
+      "type": "multipleChoice",
+      "prompt": "第96問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "試験___終わってから、遊びます。",
+      "context": "Exam week.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "「試験が終わる」の主語。「試験が終わってから」。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "話題の「は」ではない。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "手段の「で」ではない。"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "出来事の主語に「が」。「～が終わってから」の型。",
+      "diagnosticTags": [
+        "particle_choice",
+        "topic_contrast",
+        "wa_ga"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「が」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "試験",
+        "終わってから",
+        "遊びます"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_097",
+      "type": "multipleChoice",
+      "prompt": "第97問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "映画館___映画を見ました。",
+      "context": "Weekend.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "館全体を経路の「を」ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語ではない。"
+        },
+        {
+          "id": "c",
+          "label": "に",
+          "explanation": "単なる到達点だけなら「に」もあるが、館内で鑑賞するなら「で」。"
+        },
+        {
+          "id": "d",
+          "label": "で",
+          "explanation": "鑑賞という動作の場「映画館で」。"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "施設内で行う見る・観るは「で」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "ni_de"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「で」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "映画館",
+        "映画を見ました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_098",
+      "type": "multipleChoice",
+      "prompt": "第98問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "お兄さん___留学しています。",
+      "context": "Family update.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "人物を話題にして状況を述べる「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "着点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "家族の近況を話題にする「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "お兄さん",
+        "留学しています"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_099",
+      "type": "multipleChoice",
+      "prompt": "第99問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "この町___昔はにぎやかでした。",
+      "context": "Local history.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "町を取り上げ、過去と対比「町は昔は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "点の「に」ではない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "対象を話題にし過去と対比する「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "この町",
+        "昔はにぎやかでした"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "pf_100",
+      "type": "multipleChoice",
+      "prompt": "第100問：次の文の空所（___）に入る最も自然な助詞を選びなさい。",
+      "japanese": "バス停___ここからです。",
+      "context": "Directions.",
+      "choices": [
+        {
+          "id": "a",
+          "label": "を",
+          "explanation": "目的語ではない。"
+        },
+        {
+          "id": "b",
+          "label": "が",
+          "explanation": "主語の「が」ではない。"
+        },
+        {
+          "id": "c",
+          "label": "は",
+          "explanation": "停留所を話題にして位置関係を述べる「は」。"
+        },
+        {
+          "id": "d",
+          "label": "に",
+          "explanation": "存在場所の「に」だけではこの説明に合わない。"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "目印を話題にして基準を説明する「は」。",
+      "diagnosticTags": [
+        "particle_choice",
+        "wa_ga",
+        "topic_contrast"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "助詞「は」の選択",
+        "意味と述語に合う格のマーク"
+      ],
+      "vocabulary": [
+        "バス停",
+        "ここからです"
+      ],
+      "reviewStatus": "draft"
+    }
+  ]
+}

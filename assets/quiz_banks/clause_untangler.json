@@ -1,0 +1,4038 @@
+{
+  "id": "clauseUntangler",
+  "title": "Clause Untangler",
+  "subtitle": "修飾のかかり（N4〜N3中心、後半N2読解へ）",
+  "description": "名詞を修飾する節や連体修飾がどの名詞にかかるかを選ぶ練習です。",
+  "difficulty": "N3-N2",
+  "diagnosticTags": [
+    "modifier_scope",
+    "noun_modification",
+    "relative_clause",
+    "sentence_parsing"
+  ],
+  "questions": [
+    {
+      "id": "cu_001",
+      "type": "multipleChoice",
+      "prompt": "「昨日買った」は何を説明していますか。",
+      "japanese": "昨日買ったかばんは軽いです。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "かばん"
+        },
+        {
+          "id": "b",
+          "label": "昨日"
+        },
+        {
+          "id": "c",
+          "label": "軽さ"
+        },
+        {
+          "id": "d",
+          "label": "店"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「かばん」。「昨日」は節内の成分で、「軽いです」の述語にはこの節はかからない。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "昨日買ったかばんは軽いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_002",
+      "type": "multipleChoice",
+      "prompt": "「田中さんが使っている」は何を説明していますか。",
+      "japanese": "田中さんが使っているパソコンは新しいです。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "田中さん"
+        },
+        {
+          "id": "b",
+          "label": "パソコン"
+        },
+        {
+          "id": "c",
+          "label": "新しさ"
+        },
+        {
+          "id": "d",
+          "label": "部屋"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「パソコン」。節の主語「田中さん」はヘッド名詞ではない。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "田中さんが使っているパソコンは新しいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_003",
+      "type": "multipleChoice",
+      "prompt": "「駅の近くにある」は何を説明していますか。",
+      "japanese": "駅の近くにあるカフェで会いましょう。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "駅"
+        },
+        {
+          "id": "b",
+          "label": "近く"
+        },
+        {
+          "id": "c",
+          "label": "カフェ"
+        },
+        {
+          "id": "d",
+          "label": "会い"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「カフェ」。「駅の近く」は節の内部の場所表現で、ヘッドではない。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "駅の近くにあるカフェで会いましょう"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_004",
+      "type": "multipleChoice",
+      "prompt": "「母が作った」は何を説明していますか。",
+      "japanese": "母が作ったお弁当を持ってきました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母"
+        },
+        {
+          "id": "b",
+          "label": "持ち物"
+        },
+        {
+          "id": "c",
+          "label": "朝"
+        },
+        {
+          "id": "d",
+          "label": "お弁当"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「お弁当」。「持ってきました」は述語で、この連体節のヘッドではない。",
+      "diagnosticTags": [
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "母が作ったお弁当を持ってきました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_005",
+      "type": "multipleChoice",
+      "prompt": "「来週出る」は何を説明していますか。",
+      "japanese": "来週出るレポートの締め切りは金曜日です。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "レポート"
+        },
+        {
+          "id": "b",
+          "label": "締め切り"
+        },
+        {
+          "id": "c",
+          "label": "金曜日"
+        },
+        {
+          "id": "d",
+          "label": "来週"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「レポート」。「の締め切り」は別の名詞句の一部で、この節が直接かかるのは「レポート」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "来週出るレポートの締め切りは金曜日です"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_006",
+      "type": "multipleChoice",
+      "prompt": "「角を曲がった」は何を説明していますか。",
+      "japanese": "角を曲がったところに郵便局があります。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "角"
+        },
+        {
+          "id": "b",
+          "label": "ところ"
+        },
+        {
+          "id": "c",
+          "label": "郵便局"
+        },
+        {
+          "id": "d",
+          "label": "道"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「ところ」。「郵便局」は存在の主題で、この連体節のヘッドではない。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "角を曲がったところに郵便局があります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_007",
+      "type": "multipleChoice",
+      "prompt": "「読んでいる」は何を説明していますか。",
+      "japanese": "読んでいる本の名前を忘れました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名前"
+        },
+        {
+          "id": "b",
+          "label": "忘れ"
+        },
+        {
+          "id": "c",
+          "label": "本"
+        },
+        {
+          "id": "d",
+          "label": "図書館"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「本」。「名前」は「本の名前」として後から続く成分。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "読んでいる本の名前を忘れました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_008",
+      "type": "multipleChoice",
+      "prompt": "「社長が書いた」は何を説明していますか。",
+      "japanese": "社長が書いたメールをもう一度読みました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "社長"
+        },
+        {
+          "id": "b",
+          "label": "返信"
+        },
+        {
+          "id": "c",
+          "label": "内容"
+        },
+        {
+          "id": "d",
+          "label": "メール"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「メール」。「社長」は節内の主語。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "社長が書いたメールをもう一度読みました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_009",
+      "type": "multipleChoice",
+      "prompt": "「少し大きい」は何を説明していますか。",
+      "japanese": "少し大きいサイズをください。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "サイズ"
+        },
+        {
+          "id": "b",
+          "label": "店員"
+        },
+        {
+          "id": "c",
+          "label": "服"
+        },
+        {
+          "id": "d",
+          "label": "少し"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「サイズ」。形容詞の連体形は直後の名詞にかかる。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "少し大きいサイズをください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_010",
+      "type": "multipleChoice",
+      "prompt": "「明日届く」は何を説明していますか。",
+      "japanese": "明日届く荷物を追跡しました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "明日"
+        },
+        {
+          "id": "b",
+          "label": "荷物"
+        },
+        {
+          "id": "c",
+          "label": "追跡"
+        },
+        {
+          "id": "d",
+          "label": "配達員"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「荷物」。「明日」は節内の時間。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "明日届く荷物を追跡しました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_011",
+      "type": "multipleChoice",
+      "prompt": "「話したかった」は何を説明していますか。",
+      "japanese": "話したかったことがあります。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話"
+        },
+        {
+          "id": "b",
+          "label": "気持ち"
+        },
+        {
+          "id": "c",
+          "label": "こと"
+        },
+        {
+          "id": "d",
+          "label": "相手"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「こと」。内容を「こと」にまとめている。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "話したかったことがあります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_012",
+      "type": "multipleChoice",
+      "prompt": "「社員が使う」は何を説明していますか。",
+      "japanese": "社員が使う会議室は狭いです。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "社員"
+        },
+        {
+          "id": "b",
+          "label": "会社"
+        },
+        {
+          "id": "c",
+          "label": "狭さ"
+        },
+        {
+          "id": "d",
+          "label": "会議室"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「会議室」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "社員が使う会議室は狭いです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_013",
+      "type": "multipleChoice",
+      "prompt": "「急いで書いた」は何を説明していますか。",
+      "japanese": "急いで書いたメモを見せてください。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メモ"
+        },
+        {
+          "id": "b",
+          "label": "急ぎ"
+        },
+        {
+          "id": "c",
+          "label": "手紙"
+        },
+        {
+          "id": "d",
+          "label": "内容"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「メモ」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "急いで書いたメモを見せてください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_014",
+      "type": "multipleChoice",
+      "prompt": "「明日までに出す」は何を説明していますか。",
+      "japanese": "明日までに出す課題がまだ残っている。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "明日"
+        },
+        {
+          "id": "b",
+          "label": "課題"
+        },
+        {
+          "id": "c",
+          "label": "学生"
+        },
+        {
+          "id": "d",
+          "label": "教室"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「課題」。期限は節の内部。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "明日までに出す課題がまだ残っている"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_015",
+      "type": "multipleChoice",
+      "prompt": "「隣の国から来た」は何を説明していますか。",
+      "japanese": "隣の国から来た学生が手を挙げた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "国"
+        },
+        {
+          "id": "b",
+          "label": "隣"
+        },
+        {
+          "id": "c",
+          "label": "学生"
+        },
+        {
+          "id": "d",
+          "label": "教室"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「学生」。「隣の国」は節内の名詞句。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "隣の国から来た学生が手を挙げた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_016",
+      "type": "multipleChoice",
+      "prompt": "「兄が選んだ」は何を説明していますか。",
+      "japanese": "兄が選んだプレゼントが気に入りました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "兄"
+        },
+        {
+          "id": "b",
+          "label": "気持ち"
+        },
+        {
+          "id": "c",
+          "label": "店"
+        },
+        {
+          "id": "d",
+          "label": "プレゼント"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「プレゼント」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "兄が選んだプレゼントが気に入りました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_017",
+      "type": "multipleChoice",
+      "prompt": "「窓から見える」は何を説明していますか。",
+      "japanese": "窓から見える海がきれいです。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "海"
+        },
+        {
+          "id": "b",
+          "label": "窓"
+        },
+        {
+          "id": "c",
+          "label": "景色"
+        },
+        {
+          "id": "d",
+          "label": "ホテル"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「海」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "窓から見える海がきれいです"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_018",
+      "type": "multipleChoice",
+      "prompt": "「去年買った」は何を説明していますか。",
+      "japanese": "去年買った自転車を売ります。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "去年"
+        },
+        {
+          "id": "b",
+          "label": "自転車"
+        },
+        {
+          "id": "c",
+          "label": "値段"
+        },
+        {
+          "id": "d",
+          "label": "町"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「自転車」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "去年買った自転車を売ります"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_019",
+      "type": "multipleChoice",
+      "prompt": "「赤い」は何を説明していますか。",
+      "japanese": "赤いりんごを三つください。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "色"
+        },
+        {
+          "id": "b",
+          "label": "店"
+        },
+        {
+          "id": "c",
+          "label": "りんご"
+        },
+        {
+          "id": "d",
+          "label": "数"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「りんご」。イ形容詞の連体形。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "赤いりんごを三つください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_020",
+      "type": "multipleChoice",
+      "prompt": "「静かな」は何を説明していますか。",
+      "japanese": "静かな部屋で休みました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "休み"
+        },
+        {
+          "id": "b",
+          "label": "音"
+        },
+        {
+          "id": "c",
+          "label": "ホテル"
+        },
+        {
+          "id": "d",
+          "label": "部屋"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「部屋」。ナ形容詞の連体形。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 1,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "静かな部屋で休みました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_021",
+      "type": "multipleChoice",
+      "prompt": "「今朝作った」は何を説明していますか。",
+      "japanese": "今朝作った味噌汁の香りが広がった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "味噌汁"
+        },
+        {
+          "id": "b",
+          "label": "今朝"
+        },
+        {
+          "id": "c",
+          "label": "香り"
+        },
+        {
+          "id": "d",
+          "label": "台所"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「味噌汁」。「の香り」は別名詞。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "今朝作った味噌汁の香りが広がった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_022",
+      "type": "multipleChoice",
+      "prompt": "「昨日駅で会った」は何を説明していますか。",
+      "japanese": "昨日駅で会った先生が、新しい本を貸してくれました。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日"
+        },
+        {
+          "id": "b",
+          "label": "先生"
+        },
+        {
+          "id": "c",
+          "label": "駅"
+        },
+        {
+          "id": "d",
+          "label": "本"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「先生」。「昨日」「駅」は節内の時と場所で、ヘッドではない。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "昨日駅で会った先生が",
+        "新しい本を貸してくれました"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_023",
+      "type": "multipleChoice",
+      "prompt": "「先週見た」は何を説明していますか。",
+      "japanese": "先週見た映画の名前を思い出せない。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "先週"
+        },
+        {
+          "id": "b",
+          "label": "名前"
+        },
+        {
+          "id": "c",
+          "label": "映画"
+        },
+        {
+          "id": "d",
+          "label": "友達"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「映画」。「名前」は「映画の名前」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "先週見た映画の名前を思い出せない"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_024",
+      "type": "multipleChoice",
+      "prompt": "「教室で拾った」は何を説明していますか。",
+      "japanese": "教室で拾った財布を先生に渡した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "教室"
+        },
+        {
+          "id": "b",
+          "label": "先生"
+        },
+        {
+          "id": "c",
+          "label": "渡し"
+        },
+        {
+          "id": "d",
+          "label": "財布"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「財布」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "教室で拾った財布を先生に渡した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_025",
+      "type": "multipleChoice",
+      "prompt": "「公園で遊んでいた」は何を説明していますか。",
+      "japanese": "公園で遊んでいた子どもたちが帰ってきた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "子どもたち"
+        },
+        {
+          "id": "b",
+          "label": "公園"
+        },
+        {
+          "id": "c",
+          "label": "遊び"
+        },
+        {
+          "id": "d",
+          "label": "家"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「子どもたち」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "公園で遊んでいた子どもたちが帰ってきた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_026",
+      "type": "multipleChoice",
+      "prompt": "「駅前で買った」は何を説明していますか。",
+      "japanese": "駅前で買った花を母にあげた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "駅前"
+        },
+        {
+          "id": "b",
+          "label": "花"
+        },
+        {
+          "id": "c",
+          "label": "母"
+        },
+        {
+          "id": "d",
+          "label": "贈り物"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「花」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "駅前で買った花を母にあげた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_027",
+      "type": "multipleChoice",
+      "prompt": "「図書館で借りた」は何を説明していますか。",
+      "japanese": "図書館で借りた本は面白かった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "図書館"
+        },
+        {
+          "id": "b",
+          "label": "面白さ"
+        },
+        {
+          "id": "c",
+          "label": "本"
+        },
+        {
+          "id": "d",
+          "label": "週末"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「本」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "図書館で借りた本は面白かった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_028",
+      "type": "multipleChoice",
+      "prompt": "「昨日話した」は何を説明していますか。",
+      "japanese": "昨日話した人の顔を覚えていない。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日"
+        },
+        {
+          "id": "b",
+          "label": "顔"
+        },
+        {
+          "id": "c",
+          "label": "話"
+        },
+        {
+          "id": "d",
+          "label": "人"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「人」。「顔」は「人の顔」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "昨日話した人の顔を覚えていない"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_029",
+      "type": "multipleChoice",
+      "prompt": "「去年住んでいた」は何を説明していますか。",
+      "japanese": "去年住んでいた町が大きく変わっていた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "町"
+        },
+        {
+          "id": "b",
+          "label": "去年"
+        },
+        {
+          "id": "c",
+          "label": "変化"
+        },
+        {
+          "id": "d",
+          "label": "家"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「町」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "去年住んでいた町が大きく変わっていた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_030",
+      "type": "multipleChoice",
+      "prompt": "「今朝降った」は何を説明していますか。",
+      "japanese": "今朝降った雪で道が白くなった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今朝"
+        },
+        {
+          "id": "b",
+          "label": "雪"
+        },
+        {
+          "id": "c",
+          "label": "道"
+        },
+        {
+          "id": "d",
+          "label": "天気"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「雪」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "今朝降った雪で道が白くなった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_031",
+      "type": "multipleChoice",
+      "prompt": "「昨日届いた」は何を説明していますか。",
+      "japanese": "昨日届いた荷物を開けた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日"
+        },
+        {
+          "id": "b",
+          "label": "配達"
+        },
+        {
+          "id": "c",
+          "label": "荷物"
+        },
+        {
+          "id": "d",
+          "label": "箱"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「荷物」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "昨日届いた荷物を開けた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_032",
+      "type": "multipleChoice",
+      "prompt": "「駅のホームで見た」は何を説明していますか。",
+      "japanese": "駅のホームで見た鳥が飛び立った。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "駅"
+        },
+        {
+          "id": "b",
+          "label": "ホーム"
+        },
+        {
+          "id": "c",
+          "label": "電車"
+        },
+        {
+          "id": "d",
+          "label": "鳥"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「鳥」。「駅」「ホーム」は節内の場所。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "駅のホームで見た鳥が飛び立った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_033",
+      "type": "multipleChoice",
+      "prompt": "「昨日病院で会った」は何を説明していますか。",
+      "japanese": "昨日病院で会った友だちに元気だと言われた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "友だち"
+        },
+        {
+          "id": "b",
+          "label": "昨日"
+        },
+        {
+          "id": "c",
+          "label": "病院"
+        },
+        {
+          "id": "d",
+          "label": "元気"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「友だち」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "昨日病院で会った友だちに元気だと言われた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_034",
+      "type": "multipleChoice",
+      "prompt": "「少し高い」は何を説明していますか。",
+      "japanese": "少し高い値段で売れた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売れ行き"
+        },
+        {
+          "id": "b",
+          "label": "値段"
+        },
+        {
+          "id": "c",
+          "label": "店"
+        },
+        {
+          "id": "d",
+          "label": "商品"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「値段」。「少し」は形容詞にかかるが、連体修飾全体は「値段」へ。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "少し高い値段で売れた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_035",
+      "type": "multipleChoice",
+      "prompt": "「とても古い」は何を説明していますか。",
+      "japanese": "とても古い建物が取り壊される。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "歴史"
+        },
+        {
+          "id": "b",
+          "label": "町"
+        },
+        {
+          "id": "c",
+          "label": "建物"
+        },
+        {
+          "id": "d",
+          "label": "計画"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「建物」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "とても古い建物が取り壊される"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_036",
+      "type": "multipleChoice",
+      "prompt": "「有名な」は何を説明していますか。",
+      "japanese": "有名な作家の本を読んだ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本"
+        },
+        {
+          "id": "b",
+          "label": "名前"
+        },
+        {
+          "id": "c",
+          "label": "図書館"
+        },
+        {
+          "id": "d",
+          "label": "作家"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「作家」。「本」は「作家の本」で後続。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "有名な作家の本を読んだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_037",
+      "type": "multipleChoice",
+      "prompt": "「小さな」は何を説明していますか。",
+      "japanese": "小さな池の周りを散歩した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "池"
+        },
+        {
+          "id": "b",
+          "label": "周り"
+        },
+        {
+          "id": "c",
+          "label": "公園"
+        },
+        {
+          "id": "d",
+          "label": "道"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「池」。「周り」は「池の周り」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "小さな池の周りを散歩した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_038",
+      "type": "multipleChoice",
+      "prompt": "「青い」は何を説明していますか。",
+      "japanese": "青い空の下で昼寝をした。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "下"
+        },
+        {
+          "id": "b",
+          "label": "空"
+        },
+        {
+          "id": "c",
+          "label": "昼寝"
+        },
+        {
+          "id": "d",
+          "label": "雲"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「空」。「下」は「空の下」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "青い空の下で昼寝をした"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_039",
+      "type": "multipleChoice",
+      "prompt": "「暖かい」は何を説明していますか。",
+      "japanese": "暖かい春の風が吹いていた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風"
+        },
+        {
+          "id": "b",
+          "label": "季節"
+        },
+        {
+          "id": "c",
+          "label": "春"
+        },
+        {
+          "id": "d",
+          "label": "町"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「春」。「暖かい」は「春」にかかり、「春の風」となる。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "暖かい春の風が吹いていた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_040",
+      "type": "multipleChoice",
+      "prompt": "「大きな」は何を説明していますか。",
+      "japanese": "大きな木の影で休んだ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "影"
+        },
+        {
+          "id": "b",
+          "label": "公園"
+        },
+        {
+          "id": "c",
+          "label": "日差し"
+        },
+        {
+          "id": "d",
+          "label": "木"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「木」。「影」は「木の影」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "大きな木の影で休んだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_041",
+      "type": "multipleChoice",
+      "prompt": "「古い」は何を説明していますか。",
+      "japanese": "古い寺の庭を見学した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寺"
+        },
+        {
+          "id": "b",
+          "label": "庭"
+        },
+        {
+          "id": "c",
+          "label": "観光"
+        },
+        {
+          "id": "d",
+          "label": "歴史"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「寺」。「庭」は「寺の庭」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "古い寺の庭を見学した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_042",
+      "type": "multipleChoice",
+      "prompt": "「新しい」は何を説明していますか。",
+      "japanese": "新しい先生の授業は分かりやすい。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "授業"
+        },
+        {
+          "id": "b",
+          "label": "先生"
+        },
+        {
+          "id": "c",
+          "label": "学校"
+        },
+        {
+          "id": "d",
+          "label": "教科書"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「先生」。「授業」は「先生の授業」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "新しい先生の授業は分かりやすい"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_043",
+      "type": "multipleChoice",
+      "prompt": "「高い」は何を説明していますか。",
+      "japanese": "高い山の上に雪が残っていた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雪"
+        },
+        {
+          "id": "b",
+          "label": "天気"
+        },
+        {
+          "id": "c",
+          "label": "山"
+        },
+        {
+          "id": "d",
+          "label": "道"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「山」。「上」は「山の上」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "高い山の上に雪が残っていた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_044",
+      "type": "multipleChoice",
+      "prompt": "「狭い」は何を説明していますか。",
+      "japanese": "狭い道の先にお店があった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お店"
+        },
+        {
+          "id": "b",
+          "label": "先"
+        },
+        {
+          "id": "c",
+          "label": "角"
+        },
+        {
+          "id": "d",
+          "label": "道"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「道」。「先」は「道の先」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "狭い道の先にお店があった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_045",
+      "type": "multipleChoice",
+      "prompt": "「静かだった」は何を説明していますか。",
+      "japanese": "静かだった夜の海は怖かった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "夜"
+        },
+        {
+          "id": "b",
+          "label": "海"
+        },
+        {
+          "id": "c",
+          "label": "音"
+        },
+        {
+          "id": "d",
+          "label": "月"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「夜」。「海」は「夜の海」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 2,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "静かだった夜の海は怖かった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_046",
+      "type": "multipleChoice",
+      "prompt": "「田中さんの話した」は何を説明していますか。",
+      "japanese": "田中さんの話した夢の話は長かった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話"
+        },
+        {
+          "id": "b",
+          "label": "夢"
+        },
+        {
+          "id": "c",
+          "label": "田中さん"
+        },
+        {
+          "id": "d",
+          "label": "時間"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「夢」。「の話」は「夢の話」で、「夢」がこの連体節のヘッド。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "田中さんの話した夢の話は長かった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_047",
+      "type": "multipleChoice",
+      "prompt": "「雨の日に起きた」は何を説明していますか。",
+      "japanese": "雨の日に起きた事故の原因を調べた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雨"
+        },
+        {
+          "id": "b",
+          "label": "日"
+        },
+        {
+          "id": "c",
+          "label": "事故"
+        },
+        {
+          "id": "d",
+          "label": "警察"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「事故」。「原因」は「事故の原因」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "雨の日に起きた事故の原因を調べた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_048",
+      "type": "multipleChoice",
+      "prompt": "「試験に落ちた」は何を説明していますか。",
+      "japanese": "試験に落ちた学生の顔が暗かった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "試験"
+        },
+        {
+          "id": "b",
+          "label": "顔"
+        },
+        {
+          "id": "c",
+          "label": "教室"
+        },
+        {
+          "id": "d",
+          "label": "学生"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「学生」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "試験に落ちた学生の顔が暗かった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_049",
+      "type": "multipleChoice",
+      "prompt": "「電車に乗り遅れた」は何を説明していますか。",
+      "japanese": "電車に乗り遅れた人たちは次の便を待った。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "人たち"
+        },
+        {
+          "id": "b",
+          "label": "電車"
+        },
+        {
+          "id": "c",
+          "label": "便"
+        },
+        {
+          "id": "d",
+          "label": "駅"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「人たち」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "電車に乗り遅れた人たちは次の便を待った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_050",
+      "type": "multipleChoice",
+      "prompt": "「風で倒れた」は何を説明していますか。",
+      "japanese": "風で倒れた木の枝が道をふさいだ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風"
+        },
+        {
+          "id": "b",
+          "label": "木"
+        },
+        {
+          "id": "c",
+          "label": "道"
+        },
+        {
+          "id": "d",
+          "label": "枝"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「木」。「枝」は「木の枝」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "風で倒れた木の枝が道をふさいだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_051",
+      "type": "multipleChoice",
+      "prompt": "「火事で焼けた」は何を説明していますか。",
+      "japanese": "火事で焼けた家の跡地に公園ができた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "火事"
+        },
+        {
+          "id": "b",
+          "label": "公園"
+        },
+        {
+          "id": "c",
+          "label": "家"
+        },
+        {
+          "id": "d",
+          "label": "跡地"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「家」。「跡地」は「家の跡地」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "火事で焼けた家の跡地に公園ができた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_052",
+      "type": "multipleChoice",
+      "prompt": "「先生が言った」は何を説明していますか。",
+      "japanese": "先生が言った言葉の意味が分からなかった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "先生"
+        },
+        {
+          "id": "b",
+          "label": "意味"
+        },
+        {
+          "id": "c",
+          "label": "授業"
+        },
+        {
+          "id": "d",
+          "label": "言葉"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「言葉」。「意味」は「言葉の意味」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "先生が言った言葉の意味が分からなかった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_053",
+      "type": "multipleChoice",
+      "prompt": "「友だちがくれた」は何を説明していますか。",
+      "japanese": "友だちがくれたお守りの色が好きだ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お守り"
+        },
+        {
+          "id": "b",
+          "label": "友だち"
+        },
+        {
+          "id": "c",
+          "label": "色"
+        },
+        {
+          "id": "d",
+          "label": "神社"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「お守り」。「色」は「お守りの色」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "友だちがくれたお守りの色が好きだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_054",
+      "type": "multipleChoice",
+      "prompt": "「母が探していた」は何を説明していますか。",
+      "japanese": "母が探していたかぎの場所を教えた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母"
+        },
+        {
+          "id": "b",
+          "label": "かぎ"
+        },
+        {
+          "id": "c",
+          "label": "場所"
+        },
+        {
+          "id": "d",
+          "label": "引き出し"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「かぎ」。「場所」は「かぎの場所」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "母が探していたかぎの場所を教えた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_055",
+      "type": "multipleChoice",
+      "prompt": "「店で働いている」は何を説明していますか。",
+      "japanese": "店で働いている人の名前を聞いた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "店"
+        },
+        {
+          "id": "b",
+          "label": "名前"
+        },
+        {
+          "id": "c",
+          "label": "人"
+        },
+        {
+          "id": "d",
+          "label": "制服"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「人」。「名前」は「人の名前」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "店で働いている人の名前を聞いた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_056",
+      "type": "multipleChoice",
+      "prompt": "「日本で買った」は何を説明していますか。",
+      "japanese": "日本で買ったお茶の箱を友だちに送った。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日本"
+        },
+        {
+          "id": "b",
+          "label": "箱"
+        },
+        {
+          "id": "c",
+          "label": "友だち"
+        },
+        {
+          "id": "d",
+          "label": "お茶"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「お茶」。「箱」は「お茶の箱」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "日本で買ったお茶の箱を友だちに送った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_057",
+      "type": "multipleChoice",
+      "prompt": "「昨日聞こえた」は何を説明していますか。",
+      "japanese": "昨日聞こえた音の正体が分かった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "音"
+        },
+        {
+          "id": "b",
+          "label": "昨日"
+        },
+        {
+          "id": "c",
+          "label": "正体"
+        },
+        {
+          "id": "d",
+          "label": "隣"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「音」。「正体」は「音の正体」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "昨日聞こえた音の正体が分かった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_058",
+      "type": "multipleChoice",
+      "prompt": "「雨が降りそうな」は何を説明していますか。",
+      "japanese": "雨が降りそうな午後の空は灰色だった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雨"
+        },
+        {
+          "id": "b",
+          "label": "午後"
+        },
+        {
+          "id": "c",
+          "label": "空"
+        },
+        {
+          "id": "d",
+          "label": "雲"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「午後」。「空」は「午後の空」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "雨が降りそうな午後の空は灰色だった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_059",
+      "type": "multipleChoice",
+      "prompt": "「来るはずだった」は何を説明していますか。",
+      "japanese": "来るはずだった客の席が空いたままだった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "席"
+        },
+        {
+          "id": "b",
+          "label": "予定"
+        },
+        {
+          "id": "c",
+          "label": "客"
+        },
+        {
+          "id": "d",
+          "label": "店"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「客」。「席」は「客の席」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "来るはずだった客の席が空いたままだった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_060",
+      "type": "multipleChoice",
+      "prompt": "「忘れてしまった」は何を説明していますか。",
+      "japanese": "忘れてしまった約束の内容を思い出した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "内容"
+        },
+        {
+          "id": "b",
+          "label": "日付"
+        },
+        {
+          "id": "c",
+          "label": "友達"
+        },
+        {
+          "id": "d",
+          "label": "約束"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「約束」。「内容」は「約束の内容」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "忘れてしまった約束の内容を思い出した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_061",
+      "type": "multipleChoice",
+      "prompt": "「起こりうる」は何を説明していますか。",
+      "japanese": "起こりうる問題のリストを作った。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "問題"
+        },
+        {
+          "id": "b",
+          "label": "リスト"
+        },
+        {
+          "id": "c",
+          "label": "会議"
+        },
+        {
+          "id": "d",
+          "label": "社長"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「問題」。「リスト」は「問題のリスト」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "起こりうる問題のリストを作った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_062",
+      "type": "multipleChoice",
+      "prompt": "「必要な」は何を説明していますか。",
+      "japanese": "必要な書類のコピーを用意した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コピー"
+        },
+        {
+          "id": "b",
+          "label": "書類"
+        },
+        {
+          "id": "c",
+          "label": "提出"
+        },
+        {
+          "id": "d",
+          "label": "封筒"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「書類」。「コピー」は「書類のコピー」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "必要な書類のコピーを用意した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_063",
+      "type": "multipleChoice",
+      "prompt": "「誰も知らない」は何を説明していますか。",
+      "japanese": "誰も知らない秘密の場所へ行った。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "場所"
+        },
+        {
+          "id": "b",
+          "label": "人"
+        },
+        {
+          "id": "c",
+          "label": "秘密"
+        },
+        {
+          "id": "d",
+          "label": "話"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「秘密」。「場所」は「秘密の場所」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "誰も知らない秘密の場所へ行った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_064",
+      "type": "multipleChoice",
+      "prompt": "「まだ終わっていない」は何を説明していますか。",
+      "japanese": "まだ終わっていない仕事の件で連絡した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "連絡"
+        },
+        {
+          "id": "b",
+          "label": "上司"
+        },
+        {
+          "id": "c",
+          "label": "今日"
+        },
+        {
+          "id": "d",
+          "label": "仕事"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「仕事」。「件」は「仕事の件」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "まだ終わっていない仕事の件で連絡した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_065",
+      "type": "multipleChoice",
+      "prompt": "「彼が説明した」は何を説明していますか。",
+      "japanese": "彼が説明した方法のほうが簡単だった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "方法"
+        },
+        {
+          "id": "b",
+          "label": "彼"
+        },
+        {
+          "id": "c",
+          "label": "説明"
+        },
+        {
+          "id": "d",
+          "label": "結果"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「方法」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "彼が説明した方法のほうが簡単だった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_066",
+      "type": "multipleChoice",
+      "prompt": "「会議で決まった」は何を説明していますか。",
+      "japanese": "会議で決まった日程の変更を伝えた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議"
+        },
+        {
+          "id": "b",
+          "label": "日程"
+        },
+        {
+          "id": "c",
+          "label": "変更"
+        },
+        {
+          "id": "d",
+          "label": "参加者"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「日程」。「変更」は「日程の変更」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "会議で決まった日程の変更を伝えた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_067",
+      "type": "multipleChoice",
+      "prompt": "「店長がおすすめした」は何を説明していますか。",
+      "japanese": "店長がおすすめした料理の味が意外だった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "店長"
+        },
+        {
+          "id": "b",
+          "label": "味"
+        },
+        {
+          "id": "c",
+          "label": "料理"
+        },
+        {
+          "id": "d",
+          "label": "メニュー"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「料理」。「味」は「料理の味」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "店長がおすすめした料理の味が意外だった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_068",
+      "type": "multipleChoice",
+      "prompt": "「風邪を引いた」は何を説明していますか。",
+      "japanese": "風邪を引いたときの薬を飲んだ。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風邪"
+        },
+        {
+          "id": "b",
+          "label": "薬"
+        },
+        {
+          "id": "c",
+          "label": "体"
+        },
+        {
+          "id": "d",
+          "label": "とき"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「とき」。「薬」は「ときの薬」ではなく「風邪のとき」全体を修飾する連体節のヘッドは「とき」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "風邪を引いたときの薬を飲んだ"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_069",
+      "type": "multipleChoice",
+      "prompt": "「本を読んだ」は何を説明していますか。",
+      "japanese": "本を読んだあとの気持ちがすっきりした。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "あと"
+        },
+        {
+          "id": "b",
+          "label": "本"
+        },
+        {
+          "id": "c",
+          "label": "気持ち"
+        },
+        {
+          "id": "d",
+          "label": "夜"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「あと」（名詞化）。「本を読んだ」が「あと」を限定。",
+      "diagnosticTags": [
+        "relative_clause",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "本を読んだあとの気持ちがすっきりした"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_070",
+      "type": "multipleChoice",
+      "prompt": "「約束した」は何を説明していますか。",
+      "japanese": "約束したはずの時間に来なかった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "約束"
+        },
+        {
+          "id": "b",
+          "label": "はず"
+        },
+        {
+          "id": "c",
+          "label": "時間"
+        },
+        {
+          "id": "d",
+          "label": "友達"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「はず」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 3,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "約束したはずの時間に来なかった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_071",
+      "type": "multipleChoice",
+      "prompt": "「行きたかった」は何を説明していますか。",
+      "japanese": "行きたかったところにやっと行けた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "旅行"
+        },
+        {
+          "id": "b",
+          "label": "地図"
+        },
+        {
+          "id": "c",
+          "label": "ところ"
+        },
+        {
+          "id": "d",
+          "label": "計画"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「ところ」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "行きたかったところにやっと行けた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_072",
+      "type": "multipleChoice",
+      "prompt": "「聞いたことがない」は何を説明していますか。",
+      "japanese": "聞いたことがない話に驚いた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "経験"
+        },
+        {
+          "id": "b",
+          "label": "人"
+        },
+        {
+          "id": "c",
+          "label": "ニュース"
+        },
+        {
+          "id": "d",
+          "label": "話"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「話」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "聞いたことがない話に驚いた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_073",
+      "type": "multipleChoice",
+      "prompt": "「見たことのない」は何を説明していますか。",
+      "japanese": "見たことのない色の花が咲いていた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "色"
+        },
+        {
+          "id": "b",
+          "label": "花"
+        },
+        {
+          "id": "c",
+          "label": "庭"
+        },
+        {
+          "id": "d",
+          "label": "春"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「色」。「花」は「色の花」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "見たことのない色の花が咲いていた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_074",
+      "type": "multipleChoice",
+      "prompt": "「説明が難しい」は何を説明していますか。",
+      "japanese": "説明が難しい部分だけをもう一度聞いた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "説明"
+        },
+        {
+          "id": "b",
+          "label": "部分"
+        },
+        {
+          "id": "c",
+          "label": "授業"
+        },
+        {
+          "id": "d",
+          "label": "先生"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「部分」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "説明が難しい部分だけをもう一度聞いた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_075",
+      "type": "multipleChoice",
+      "prompt": "「名前を忘れた」は何を説明していますか。",
+      "japanese": "名前を忘れた人に声をかけられて困った。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名前"
+        },
+        {
+          "id": "b",
+          "label": "声"
+        },
+        {
+          "id": "c",
+          "label": "人"
+        },
+        {
+          "id": "d",
+          "label": "駅"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「人」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "名前を忘れた人に声をかけられて困った"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_076",
+      "type": "multipleChoice",
+      "prompt": "「電車が遅れた」は何を説明していますか。",
+      "japanese": "電車が遅れたせいで会議に遅刻した。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "電車"
+        },
+        {
+          "id": "b",
+          "label": "会議"
+        },
+        {
+          "id": "c",
+          "label": "会社"
+        },
+        {
+          "id": "d",
+          "label": "せい"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「せい」（名詞）。「電車が遅れた」が「せい」を説明。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "電車が遅れたせいで会議に遅刻した"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_077",
+      "type": "multipleChoice",
+      "prompt": "「雨が降った」は何を説明していますか。",
+      "japanese": "雨が降った日の写真は暗い。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日"
+        },
+        {
+          "id": "b",
+          "label": "雨"
+        },
+        {
+          "id": "c",
+          "label": "写真"
+        },
+        {
+          "id": "d",
+          "label": "記憶"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「日」。「写真」は「日の写真」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "雨が降った日の写真は暗い"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_078",
+      "type": "multipleChoice",
+      "prompt": "「試験に合格した」は何を説明していますか。",
+      "japanese": "試験に合格した友だちの顔が輝いていた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "試験"
+        },
+        {
+          "id": "b",
+          "label": "友だち"
+        },
+        {
+          "id": "c",
+          "label": "顔"
+        },
+        {
+          "id": "d",
+          "label": "発表"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「友だち」。「顔」は「友だちの顔」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "試験に合格した友だちの顔が輝いていた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_079",
+      "type": "multipleChoice",
+      "prompt": "「田中さんという」は何を説明していますか。",
+      "japanese": "田中さんという名前の学生が転校してきた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "学生"
+        },
+        {
+          "id": "b",
+          "label": "田中さん"
+        },
+        {
+          "id": "c",
+          "label": "名前"
+        },
+        {
+          "id": "d",
+          "label": "学校"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「名前」。「田中さんという」は「名前」を同格説明する。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "田中さんという名前の学生が転校してきた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_080",
+      "type": "multipleChoice",
+      "prompt": "「ゴールデンウィークという」は何を説明していますか。",
+      "japanese": "ゴールデンウィークという長い休みが始まる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "春"
+        },
+        {
+          "id": "b",
+          "label": "旅行"
+        },
+        {
+          "id": "c",
+          "label": "予定"
+        },
+        {
+          "id": "d",
+          "label": "休み"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「休み」。「という」は前の固有名詞と「休み」を結ぶ。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "ゴールデンウィークという長い休みが始まる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_081",
+      "type": "multipleChoice",
+      "prompt": "「夢という」は何を説明していますか。",
+      "japanese": "夢という字は難しい。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "字"
+        },
+        {
+          "id": "b",
+          "label": "夢"
+        },
+        {
+          "id": "c",
+          "label": "漢字"
+        },
+        {
+          "id": "d",
+          "label": "意味"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「字」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "夢という字は難しい"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_082",
+      "type": "multipleChoice",
+      "prompt": "「日本という」は何を説明していますか。",
+      "japanese": "日本という国の文化に興味がある。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日本"
+        },
+        {
+          "id": "b",
+          "label": "国"
+        },
+        {
+          "id": "c",
+          "label": "文化"
+        },
+        {
+          "id": "d",
+          "label": "歴史"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「国」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "日本という国の文化に興味がある"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_083",
+      "type": "multipleChoice",
+      "prompt": "「噂という」は何を説明していますか。",
+      "japanese": "噂という話はあてにならない。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "人"
+        },
+        {
+          "id": "b",
+          "label": "真実"
+        },
+        {
+          "id": "c",
+          "label": "話"
+        },
+        {
+          "id": "d",
+          "label": "会社"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「話」。「噂という」が「話」の内容を示す。",
+      "diagnosticTags": [
+        "relative_clause",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "噂という話はあてにならない"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_084",
+      "type": "multipleChoice",
+      "prompt": "「お知らせの」は何を説明していますか。",
+      "japanese": "お知らせの件について、来週の会議で詳しく説明します。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議"
+        },
+        {
+          "id": "b",
+          "label": "来週"
+        },
+        {
+          "id": "c",
+          "label": "説明"
+        },
+        {
+          "id": "d",
+          "label": "件"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「件」。「お知らせの」は「件」を限定する。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "お知らせの件について",
+        "来週の会議で詳しく説明します"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_085",
+      "type": "multipleChoice",
+      "prompt": "「ご確認いただきたい」は何を説明していますか。",
+      "japanese": "ご確認いただきたい資料を添付しております。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "資料"
+        },
+        {
+          "id": "b",
+          "label": "添付"
+        },
+        {
+          "id": "c",
+          "label": "メール"
+        },
+        {
+          "id": "d",
+          "label": "返信"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「資料」。ビジネス文の典型。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 4,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "ご確認いただきたい資料を添付しております"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_086",
+      "type": "multipleChoice",
+      "prompt": "「ご不明な」は何を説明していますか。",
+      "japanese": "ご不明な点がございましたら、担当までご連絡ください。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "連絡"
+        },
+        {
+          "id": "b",
+          "label": "点"
+        },
+        {
+          "id": "c",
+          "label": "担当"
+        },
+        {
+          "id": "d",
+          "label": "質問"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「点」。「ご不明な」は「点」にかかる。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "ご不明な点がございましたら",
+        "担当までご連絡ください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_087",
+      "type": "multipleChoice",
+      "prompt": "「署名した」は何を説明していますか。",
+      "japanese": "お手数ですが、署名した書類の写しを送ってください。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "署名"
+        },
+        {
+          "id": "b",
+          "label": "写し"
+        },
+        {
+          "id": "c",
+          "label": "書類"
+        },
+        {
+          "id": "d",
+          "label": "返信"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「書類」。「写し」は「書類の写し」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "noun_modification"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "お手数ですが",
+        "署名した書類の写しを送ってください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_088",
+      "type": "multipleChoice",
+      "prompt": "「記入した」は何を説明していますか。",
+      "japanese": "来週までにご提出くださいますよう、記入した用紙の右上に日付を記入してください。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日付"
+        },
+        {
+          "id": "b",
+          "label": "右上"
+        },
+        {
+          "id": "c",
+          "label": "提出"
+        },
+        {
+          "id": "d",
+          "label": "用紙"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「用紙」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "relative_clause"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "来週までにご提出くださいますよう",
+        "記入した用紙の右上に日付を記入してください"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_089",
+      "type": "multipleChoice",
+      "prompt": "「担当者が確認した」は何を説明していますか。",
+      "japanese": "担当者が確認した内容について、改めてメールいたします。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "内容"
+        },
+        {
+          "id": "b",
+          "label": "担当者"
+        },
+        {
+          "id": "c",
+          "label": "メール"
+        },
+        {
+          "id": "d",
+          "label": "会社"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「内容」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "担当者が確認した内容について",
+        "改めてメールいたします"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_090",
+      "type": "multipleChoice",
+      "prompt": "「市の発表によると」は何を説明していますか。",
+      "japanese": "市の発表によると、来月から料金が値上げされる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "料金"
+        },
+        {
+          "id": "b",
+          "label": "発表"
+        },
+        {
+          "id": "c",
+          "label": "来月"
+        },
+        {
+          "id": "d",
+          "label": "市民"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "「市の」は「発表」を限定。修飾を受ける名詞は「発表」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "市の発表によると",
+        "来月から料金が値上げされる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_091",
+      "type": "multipleChoice",
+      "prompt": "「現地で取材した」は何を説明していますか。",
+      "japanese": "現地で取材した記者の報道が続いている。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現地"
+        },
+        {
+          "id": "b",
+          "label": "報道"
+        },
+        {
+          "id": "c",
+          "label": "記者"
+        },
+        {
+          "id": "d",
+          "label": "事件"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「記者」。「報道」は「記者の報道」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N3-N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "現地で取材した記者の報道が続いている"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_092",
+      "type": "multipleChoice",
+      "prompt": "「警察が明らかにした」は何を説明していますか。",
+      "japanese": "警察が明らかにした事実は衝撃的だった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "警察"
+        },
+        {
+          "id": "b",
+          "label": "発表"
+        },
+        {
+          "id": "c",
+          "label": "世論"
+        },
+        {
+          "id": "d",
+          "label": "事実"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「事実」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "警察が明らかにした事実は衝撃的だった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_093",
+      "type": "multipleChoice",
+      "prompt": "「専門家が指摘した」は何を説明していますか。",
+      "japanese": "専門家が指摘した問題の深刻さが議論を呼んでいる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "問題"
+        },
+        {
+          "id": "b",
+          "label": "専門家"
+        },
+        {
+          "id": "c",
+          "label": "議論"
+        },
+        {
+          "id": "d",
+          "label": "社会"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「問題」。「深刻さ」は「問題の深刻さ」。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "専門家が指摘した問題の深刻さが議論を呼んでいる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_094",
+      "type": "multipleChoice",
+      "prompt": "「去年比で増えた」は何を説明していますか。",
+      "japanese": "去年比で増えた売上の数字が発表された。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "去年"
+        },
+        {
+          "id": "b",
+          "label": "売上"
+        },
+        {
+          "id": "c",
+          "label": "数字"
+        },
+        {
+          "id": "d",
+          "label": "会社"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「売上」。「数字」は「売上の数字」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "去年比で増えた売上の数字が発表された"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_095",
+      "type": "multipleChoice",
+      "prompt": "「海外で話題になった」は何を説明していますか。",
+      "japanese": "海外で話題になった映画の日本公開が決まった。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "海外"
+        },
+        {
+          "id": "b",
+          "label": "公開"
+        },
+        {
+          "id": "c",
+          "label": "映画"
+        },
+        {
+          "id": "d",
+          "label": "話題"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「映画」。「公開」は「映画の公開」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "海外で話題になった映画の日本公開が決まった"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_096",
+      "type": "multipleChoice",
+      "prompt": "「政府が発表した」は何を説明していますか。",
+      "japanese": "政府が発表した対策の内容がニュースで伝えられた。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "政府"
+        },
+        {
+          "id": "b",
+          "label": "内容"
+        },
+        {
+          "id": "c",
+          "label": "国民"
+        },
+        {
+          "id": "d",
+          "label": "対策"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「対策」。「内容」は「対策の内容」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "政府が発表した対策の内容がニュースで伝えられた"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_097",
+      "type": "multipleChoice",
+      "prompt": "「目撃者が語った」は何を説明していますか。",
+      "japanese": "目撃者が語った当時の状況は混乱していたという。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "状況"
+        },
+        {
+          "id": "b",
+          "label": "目撃者"
+        },
+        {
+          "id": "c",
+          "label": "混乱"
+        },
+        {
+          "id": "d",
+          "label": "事故"
+        }
+      ],
+      "correctAnswerId": "a",
+      "explanation": "修飾を受ける名詞は「状況」。「当時の」も「状況」にかかる。",
+      "diagnosticTags": [
+        "modifier_scope",
+        "relative_clause"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "目撃者が語った当時の状況は混乱していたという"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_098",
+      "type": "multipleChoice",
+      "prompt": "「関係者が認めた」は何を説明していますか。",
+      "japanese": "関係者が認めた事実関係の整理に時間がかかる。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "関係者"
+        },
+        {
+          "id": "b",
+          "label": "事実関係"
+        },
+        {
+          "id": "c",
+          "label": "時間"
+        },
+        {
+          "id": "d",
+          "label": "調査"
+        }
+      ],
+      "correctAnswerId": "b",
+      "explanation": "修飾を受ける名詞は「事実関係」。「整理」は「事実関係の整理」。",
+      "diagnosticTags": [
+        "noun_modification",
+        "sentence_parsing"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "関係者が認めた事実関係の整理に時間がかかる"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_099",
+      "type": "multipleChoice",
+      "prompt": "「まだ原因がはっきりしない」は何を説明していますか。",
+      "japanese": "まだ原因がはっきりしない事故の調査が続いている。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "原因"
+        },
+        {
+          "id": "b",
+          "label": "調査"
+        },
+        {
+          "id": "c",
+          "label": "事故"
+        },
+        {
+          "id": "d",
+          "label": "現場"
+        }
+      ],
+      "correctAnswerId": "c",
+      "explanation": "修飾を受ける名詞は「事故」。",
+      "diagnosticTags": [
+        "relative_clause",
+        "modifier_scope"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "まだ原因がはっきりしない事故の調査が続いている"
+      ],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "cu_100",
+      "type": "multipleChoice",
+      "prompt": "「現場で見つかった」は何を説明していますか。",
+      "japanese": "現場で見つかった物証の分析結果が注目されている。",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現場"
+        },
+        {
+          "id": "b",
+          "label": "分析"
+        },
+        {
+          "id": "c",
+          "label": "警察"
+        },
+        {
+          "id": "d",
+          "label": "物証"
+        }
+      ],
+      "correctAnswerId": "d",
+      "explanation": "修飾を受ける名詞は「物証」。「分析結果」は「物証の分析結果」。",
+      "diagnosticTags": [
+        "sentence_parsing",
+        "noun_modification"
+      ],
+      "jlptLevel": "N2",
+      "difficultyScore": 5,
+      "grammarPoints": [
+        "連体修飾のかかり先",
+        "名詞を説明する節の範囲"
+      ],
+      "vocabulary": [
+        "現場で見つかった物証の分析結果が注目されている"
+      ],
+      "reviewStatus": "draft"
+    }
+  ]
+}
