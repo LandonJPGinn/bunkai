@@ -1,5 +1,9 @@
 # BunKai
 
+> [!WARNING]
+> This site is currently a work in progress (WIP). Quiz content is AI-generated and has not yet been fully checked for linguistic accuracy.
+> The plan is to collaborate with native Japanese speakers to review, correct, and improve all quiz material.
+
 BunKai is a **login-free, backend-free** Flutter Web app: short Japanese grammar quizzes that target mistakes ordinary apps skip. Everything runs locally in the browser.
 
 ## Run locally
