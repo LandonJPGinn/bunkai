@@ -949,6 +949,19 @@
     ]
   },
   {
+    "surface": "依頼",
+    "reading": "いらい",
+    "partOfSpeech": "noun",
+    "definitions": [
+      "request; asking someone to do something"
+    ],
+    "jlptLevel": "N3",
+    "tags": [
+      "communication",
+      "register"
+    ]
+  },
+  {
     "surface": "便利",
     "reading": "べんり",
     "partOfSpeech": "na-adjective",

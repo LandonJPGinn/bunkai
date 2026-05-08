@@ -799,706 +799,706 @@ omissionDetective,od_100,a,1,メールを送ること,メールを送ること (
 omissionDetective,od_100,b,2,印刷すること,印刷すること (印刷),,
 omissionDetective,od_100,c,3,削除すること,削除すること (Delete),,
 omissionDetective,od_100,d,4,分からない,分からない (I don't know),,
-particleForensics,pf_001,a,1,を,を (direct object marker),他動詞の対象。「読む」が届く先を示す。,"Subject of other s. Shows where ""read"" arrives."
-particleForensics,pf_001,b,2,が,が (subject / exhaustive focus),「読む」の目的語に中性の「が」は付けない。,Do not attach neutrality to the purpose of reading.
-particleForensics,pf_001,c,3,に,に (direction / endpoint / indirect object),到達点や着く先ではない。,Not to be reached or reached.
-particleForensics,pf_001,d,4,で,で (means / venue / scope of action),動作の場所でも手段でもない。,It is not a place of operation or a means.
-particleForensics,pf_002,a,1,を,を (direct object marker),移動の経路全体をまたぐ「を」ではない。,"It is not ""to"" across the entire route of movement."
-particleForensics,pf_002,b,2,へ,へ (direction),方向は言えるが「着く」の到達点より「に」が定番。,"You can say the direction, but you can see it from the reach point of ""wearing""."
-particleForensics,pf_002,c,3,に,に (direction / endpoint / indirect object),到達点・着く先。「駅に着く」が定型。,"Contact Us ""Get to the station"""
-particleForensics,pf_002,d,4,で,で (means / venue / scope of action),動作が行われる場所ではない。,It is not a place where the operation is performed.
-particleForensics,pf_003,a,1,を,を (direct object marker),他動詞の対象ではない。,Not subject to other s.
-particleForensics,pf_003,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_003,c,3,に,に (direction / endpoint / indirect object),到達点ではなく「中で勉強する」場所の別表現になりにくい。,It is difficult to become a separate expression of the place to study in rather than the point of arrival.
-particleForensics,pf_003,d,4,で,で (means / venue / scope of action),動作が行われる場所。「勉強するで」の場。,where the operation is performed. A place of study.
-particleForensics,pf_004,a,1,を,を (direct object marker),他動詞の対象ではない。,Not subject to other s.
-particleForensics,pf_004,b,2,が,が (subject / exhaustive focus),自然現象の主語に付きやすい。「雨が降る」。,It is easy to get in the main word of natural phenomenon. Rain
-particleForensics,pf_004,c,3,に,に (direction / endpoint / indirect object),存在の場所「に」ではない。,Not the place of existence.
-particleForensics,pf_004,d,4,で,で (means / venue / scope of action),手段や原因の「で」ではない。,"It is not ""in"" of means or cause."
-particleForensics,pf_005,a,1,を,を (direct object marker),会う相手に「を」は付けない。,"Don't put """" on the other party to meet."
-particleForensics,pf_005,b,2,が,が (subject / exhaustive focus),相手を主語にする「が」ではない。,"It is not a ""but"" to make the opponent the subject."
-particleForensics,pf_005,c,3,に,に (direction / endpoint / indirect object),会う相手・面会の相手。「会う」の相手は「に」。,The other party of the meeting. “Meeting”
-particleForensics,pf_005,d,4,で,で (means / venue / scope of action),集合の場所の「で」ではない。,"It is not ""in"" of the meeting place."
-particleForensics,pf_006,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_006,b,2,が,が (subject / exhaustive focus),存在文で無生物主語の「が」もあるが、この定型では話題の「は」が自然。,"There is also a non-biological main word ""ha"" in the present sentence, but the topic ""ha"" is natural in this template."
-particleForensics,pf_006,c,3,に,に (direction / endpoint / indirect object),時点の「に」ではなく、日程を取り上げる話題にしたい。,I would like to be a topic that takes up the schedule rather than at the time.
-particleForensics,pf_006,d,4,は,は (topic / contrast),話題を立てる「は」。「今日は…」で予定を述べる型。,"""H"" to make a topic. ""Today is..."""
-particleForensics,pf_007,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_007,b,2,が,が (subject / exhaustive focus),描写の主語に見えるが、この説明の骨は人物を話題にする「は」。,The bone of this explanation is a topic of people.
-particleForensics,pf_007,c,3,は,は (topic / contrast),人物について説明する話題。「部長は外出中」が受付の言い方として自然。,"A topic to describe people. ""Outside Director"" is natural as a way of saying the reception."
-particleForensics,pf_007,d,4,で,で (means / venue / scope of action),手段や場所の「で」ではない。,"It is not ""in"" of means or place."
-particleForensics,pf_008,a,1,を,を (direct object marker),経路全体の「を」ではない。,Not the whole route.
-particleForensics,pf_008,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_008,c,3,に,に (direction / endpoint / indirect object),乗り物を「行く」の目標にする「に」ではない。,"It is not a ""to"" to make the vehicle ""go""."
-particleForensics,pf_008,d,4,で,で (means / venue / scope of action),移動の手段。「バスで行く」が定型。,"means of transportation. ""Go by bus"" is a fixed type."
-particleForensics,pf_009,a,1,を,を (direct object marker),返信の定型は「メールに返信」が中心で「を」は不自然。,"""Reply to Email"" is the center of the ""Reply to Email"" is unnatural."
-particleForensics,pf_009,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_009,c,3,に,に (direction / endpoint / indirect object),応答の届け先・返答の相手。「メールに返信する」。,"Responsive recipients. ""Reply to Email"""
-particleForensics,pf_009,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_010,a,1,を,を (direct object marker),入れる先ではなく動かすものは別に「砂糖を」。,"""sugar"" is another thing to move rather than to put."
-particleForensics,pf_010,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_010,c,3,に,に (direction / endpoint / indirect object),入れる先・容れ物側の目標。「コーヒーに入れる」。,Goal of the toe and toe side. Coffee
-particleForensics,pf_010,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_011,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_011,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_011,c,3,は,は (topic / contrast),項目を取り上げて質問する「は」。「お手洗いはどこですか」が定型。,“H” to ask questions. “Where is the wash?”
-particleForensics,pf_011,d,4,に,に (direction / endpoint / indirect object),存在の場「に」だけではこの疑問型になりにくい。,It is difficult to make this question only by the place of existence.
-particleForensics,pf_012,a,1,を,を (direct object marker),他動詞の対象。「開ける」の目的語。,"Subject of other s. The purpose of ""Opening""."
-particleForensics,pf_012,b,2,が,が (subject / exhaustive focus),開ける対象の「が」ではなく目的語型。,Objective type instead of the target.
-particleForensics,pf_012,c,3,に,に (direction / endpoint / indirect object),到達点の「に」ではない。,"It is not the ""in"" of the arrival point."
-particleForensics,pf_012,d,4,で,で (means / venue / scope of action),場所の「で」ではない。,"It is not ""in""."
-particleForensics,pf_013,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_013,b,2,が,が (subject / exhaustive focus),属性叙述だけなら「が」もあるが、季節を取り上げて評価するなら「は」が自然。,"If the attribute is just an epidemi, there is also a ""ga"" but if you take up the season and evaluate it, ""ha"" is natural."
-particleForensics,pf_013,c,3,は,は (topic / contrast),季節を話題にして性質を述べる「は」。,"The season is a topic, and the nature is described."
-particleForensics,pf_013,d,4,に,に (direction / endpoint / indirect object),時点の「に」ではない。,not at the time.
-particleForensics,pf_014,a,1,を,を (direct object marker),あげる相手に「を」は付けない。,"Don't add """" to the opponent."
-particleForensics,pf_014,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_014,c,3,に,に (direction / endpoint / indirect object),付与の到達点。「あげる」相手は「に」。,"Attainment points. ""Emit"" opponent is ""."
-particleForensics,pf_014,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_015,a,1,を,を (direct object marker),評価の対象を目的語にする「を」ではない。,"It is not ""to"" to make the target of evaluation."
-particleForensics,pf_015,b,2,が,が (subject / exhaustive focus),述語の主語に見える「が」もあるが、品を取り上げて評価するなら「は」。,"There is a word that looks like the main word of the predicate, but if you take up and evaluate the item, you will see it."
-particleForensics,pf_015,c,3,は,は (topic / contrast),品を話題にして味の評価を述べる「は」。,"""H"" refers to the product and evaluate the taste."
-particleForensics,pf_015,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_016,a,1,を,を (direct object marker),述語の連体修飾ではない。,It is not a compound modifier of the predicate.
-particleForensics,pf_016,b,2,が,が (subject / exhaustive focus),中立叙述なら「が」もあるが、自己紹介で情報をまとめるなら「は」が定番。,"There is also a ""ga"" if it is a neutral epidemi, but if you want to summarize information in self-introduction, ""ga"" is explained."
-particleForensics,pf_016,c,3,は,は (topic / contrast),自己紹介で属性を述べる話題の「は」。,"The topic of self-introduction属性ing attributes ""ha""."
-particleForensics,pf_016,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_017,a,1,を,を (direct object marker),存在の場所ではない。,Not a place of existence.
-particleForensics,pf_017,b,2,が,が (subject / exhaustive focus),存在の主体。「鳥がいる」の主語。,"The main word of ""birds"""
-particleForensics,pf_017,c,3,は,は (topic / contrast),場所を話題にする「は」ではない。,"It is not a ""ha"" to make the place a topic."
-particleForensics,pf_017,d,4,で,で (means / venue / scope of action),動作の場所の「で」ではない。,"It is not ""in"" in the place of operation."
-particleForensics,pf_018,a,1,を,を (direct object marker),場所ではない。,Not a place
-particleForensics,pf_018,b,2,が,が (subject / exhaustive focus),存在する物の主語。「机がある」の主語。,"The subject of the . The main word of ""the desk"""
-particleForensics,pf_018,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_018,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_019,a,1,を,を (direct object marker),経路の「を」ではない。,It is not a route.
-particleForensics,pf_019,b,2,が,が (subject / exhaustive focus),施設を主語にする「が」もあるが、場所をまず決めるなら「に」が自然。,"There is also a ""ga"" that makes the facility the main word, but if you decide the place first, ""ga"" is natural."
-particleForensics,pf_019,c,3,は,は (topic / contrast),存在の場所。「ある」の場所は「に」。,"Place of existence. The location of ""Are"" is"
-particleForensics,pf_019,d,4,に,に (direction / endpoint / indirect object),話題の「は」だけではない。,"It is not only the topic of ""is""."
-particleForensics,pf_020,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_020,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_020,c,3,に,に (direction / endpoint / indirect object),到達点だけでなく「店内で買う」場のイメージなら「で」。,"If you are an image of ""buy in the store"" as well as the arrival point, ""in""."
-particleForensics,pf_020,d,4,で,で (means / venue / scope of action),動作が行われた場所。「買い物するで」の場。,where the operation was performed. Shopping
-particleForensics,pf_021,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_021,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_021,c,3,に,に (direction / endpoint / indirect object),目標の「に」ではない。,It is not a target.
-particleForensics,pf_021,d,4,で,で (means / venue / scope of action),理由・原因。「病気で休む」が自然。,Reasons and Causes It is natural to rest with illness.
-particleForensics,pf_022,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_022,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_022,c,3,に,に (direction / endpoint / indirect object),時刻の点。「九時に」が定型。,"Time ""9"" is fixed."
-particleForensics,pf_022,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_023,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_023,b,2,が,が (subject / exhaustive focus),「花がきれい」の主語は「が」だが、季節を取り上げる枠は「は」。,"The main word of ""Flower is beautiful"", but the barrier to taking the season is ""ha""."
-particleForensics,pf_023,c,3,は,は (topic / contrast),季節を話題にする「は」。,Seasonal topics
-particleForensics,pf_023,d,4,に,に (direction / endpoint / indirect object),時点の「に」ではない。,not at the time.
-particleForensics,pf_024,a,1,を,を (direct object marker),他動詞の対象ではない。,Not subject to other s.
-particleForensics,pf_024,b,2,が,が (subject / exhaustive focus),出来事の主語。「宿題が終わる」。,The subject of events. Homework ends.
-particleForensics,pf_024,c,3,は,は (topic / contrast),話題の「は」も言えるが、この無題描写では「が」が自然。,"The topic of ""ha"" is also said, but in this untitled book, ""ha"" is natural."
-particleForensics,pf_024,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_025,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_025,b,2,が,が (subject / exhaustive focus),属性の主語は「が」だが、人物を取り上げてから述べるなら「は」。,"The main word of the attribute is ""is"", but if you say after taking a person, ""is""."
-particleForensics,pf_025,c,3,は,は (topic / contrast),人物を話題にして特性を述べる「は」。,"""H"" to describe characters in the topic of people."
-particleForensics,pf_025,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_026,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_026,b,2,が,が (subject / exhaustive focus),能力の対象「サッカー」に「が」が付くが、文頭は弟を取り上げる「は」。,"The title of “が” is attached to the “Soccer” subject of abilities, but the beginning of the sentence is “to take up the brother”."
-particleForensics,pf_026,c,3,は,は (topic / contrast),人物を話題にする「は」。,"""H"" is a topic of people."
-particleForensics,pf_026,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_027,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_027,b,2,が,が (subject / exhaustive focus),商品を主語にする「が」もあるが、店を先に取り上げるなら「は」。,"There is also a ""ga"" to make the product the main word, but if you take the store ahead, ""ha""."
-particleForensics,pf_027,c,3,は,は (topic / contrast),店を話題にして評価する「は」。,"""H"" to evaluate the shop as a topic."
-particleForensics,pf_027,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_028,a,1,を,を (direct object marker),疑問の焦点ではない。,Not the focus of question.
-particleForensics,pf_028,b,2,が,が (subject / exhaustive focus),能力を持つ主語を問う「が」。「だれができるか」。,“Have a supreme subject” Who can do?
-particleForensics,pf_028,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_028,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_029,a,1,を,を (direct object marker),目的語を問う「何を」もあるが、「何がしたい」で望みの対象を問う。,"There are ""w "" to ask the desired language, but ask for the desired subject by ""w。"""
-particleForensics,pf_029,b,2,が,が (subject / exhaustive focus),希望の対象を示す「が」。「～がしたい」。,""" "" indicates the subject of hope. 「～」"
-particleForensics,pf_029,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_029,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_030,a,1,を,を (direct object marker),他動詞の「飲む」なら「水を」だが、希望表現は対象に「が」。,"If you drink other詞s, you can use it."
-particleForensics,pf_030,b,2,が,が (subject / exhaustive focus),希望の対象。「水が飲みたい」。,Request I want to drink water.
-particleForensics,pf_030,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_030,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_031,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_031,b,2,が,が (subject / exhaustive focus),属性の主語。「部屋が静か」。,"The subject of the attribute. ""The room is quiet."""
-particleForensics,pf_031,c,3,は,は (topic / contrast),対比でなければ描写に「は」もあるが、状態描写は「が」が無難。,"If it is not comparable, there is ""ha"" in the alphabet, but ""ha"" is difficult if the state value is not."
-particleForensics,pf_031,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_032,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_032,b,2,が,が (subject / exhaustive focus),出来事の主語。「先生が来た」。,"The subject of events. ""Teacher came."""
-particleForensics,pf_032,c,3,は,は (topic / contrast),すでに話題なら「は」もあるが、ニュースの初出は「が」。,"If you are already a topic, there is a ""ha""."
-particleForensics,pf_032,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_033,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_033,b,2,が,が (subject / exhaustive focus),変化の主体。「息子がなる」。,"Time zone of change. ""Son becomes."""
-particleForensics,pf_033,c,3,は,は (topic / contrast),対比の「は」もあるが、結果報告は「が」で中立。,"The result report is neutral with """""
-particleForensics,pf_033,d,4,に,に (direction / endpoint / indirect object),結果の「に」は「医者になる」自体には付かない。,The result is not attached to the doctor itself.
-particleForensics,pf_034,a,1,を,を (direct object marker),移動が表面を横切る「を」。「木を登る」型。,"The movement crosses the surface. ""Climb the tree"""
-particleForensics,pf_034,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_034,c,3,に,に (direction / endpoint / indirect object),到達点の「に」だけではない。,It is not the only thing to reach.
-particleForensics,pf_034,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_035,a,1,を,を (direct object marker),経路・表面をまたぐ「を」。「橋を渡る」。,"""Through the route and the surface"". “Bridge”"
-particleForensics,pf_035,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_035,c,3,に,に (direction / endpoint / indirect object),橋の上を「到達点」だけに見ない。,Don't see the bridge only.
-particleForensics,pf_035,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_036,a,1,を,を (direct object marker),曲がる地点をまたぐ「を」。「角を曲がる」。,"""Through the turning point"". ""Bending corners""."
-particleForensics,pf_036,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_036,c,3,に,に (direction / endpoint / indirect object),角を目標にする「に」ではない。,"It is not ""to"" to target the corner."
-particleForensics,pf_036,d,4,で,で (means / venue / scope of action),場所の「で」ではない。,"It is not ""in""."
-particleForensics,pf_037,a,1,を,を (direct object marker),信号を目印に動作が止まる「を」。,The signal can be changed to the mark.
-particleForensics,pf_037,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_037,c,3,に,に (direction / endpoint / indirect object),信号に「着く」わけではない。,"It is not ""wearing"" to the signal."
-particleForensics,pf_037,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_038,a,1,を,を (direct object marker),前を通過する「を」。「前を通る」。,"Go through the front. ""Through"""
-particleForensics,pf_038,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_038,c,3,に,に (direction / endpoint / indirect object),到達点の「に」ではない。,"It is not the ""in"" of the arrival point."
-particleForensics,pf_038,d,4,で,で (means / venue / scope of action),場所限定の「で」ではない。,"It is not a place limited ""in""."
-particleForensics,pf_039,a,1,を,を (direct object marker),公園を散歩の経路としてまたぐなら「を」もあるが、場内を歩くなら「で」。,"There is also a route to walk around the park, but if you walk around the park, you will see it."
-particleForensics,pf_039,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_039,c,3,に,に (direction / endpoint / indirect object),到達点の「に」ではない。,"It is not the ""in"" of the arrival point."
-particleForensics,pf_039,d,4,で,で (means / venue / scope of action),動作の場所。「公園で散歩」。,Operation location. A walk in the park.
-particleForensics,pf_040,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_040,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_040,c,3,と,と (and / with / quotation),同行者。「家族と行く」。,者 “Go with family”
-particleForensics,pf_040,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_041,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_041,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_041,c,3,と,と (and / with / quotation),同伴の「と」。,d by
-particleForensics,pf_041,d,4,で,で (means / venue / scope of action),場所の「で」ではない。,"It is not ""in""."
-particleForensics,pf_042,a,1,を,を (direct object marker),引用の範囲ではない。,Not a range of quotations.
-particleForensics,pf_042,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_042,c,3,と,と (and / with / quotation),引用内容を示す「と」。,"""to"" to indicate the quote."
-particleForensics,pf_042,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_043,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_043,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_043,c,3,と,と (and / with / quotation),発話内容の引用「と」。,"Quote of the contents of the talk ""to""."
-particleForensics,pf_043,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_044,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_044,b,2,へ,へ (direction),移動の方向を柔らかく示す「へ」。,To mark the direction of movement soft.
-particleForensics,pf_044,c,3,に,に (direction / endpoint / indirect object),到達点の「に」もあるが、願望の方向づけに「へ」がよく使われる。,"There is also a point of arrival, but ""to"" is often used in the direction of hope."
-particleForensics,pf_044,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_045,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_045,b,2,へ,へ (direction),方向の「へ」もあるが、到達点として「会社に行く」が自然。,"There is also a direction ""to"" but ""go to the company"" is natural as the destination point."
-particleForensics,pf_045,c,3,に,に (direction / endpoint / indirect object),到達点・行き先。「会社に行く」。,"Contact Us ""Go to the company"""
-particleForensics,pf_045,d,4,で,で (means / venue / scope of action),手段の「で」は文末の「自転車で」。,By bicycle at the end of the sentence.
-particleForensics,pf_046,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_046,b,2,へ,へ (direction),向かう方向を示す「へ」。,To indicate the direction to head.
-particleForensics,pf_046,c,3,に,に (direction / endpoint / indirect object),点の「に」より方向の「へ」が合う。,The direction of the point is better.
-particleForensics,pf_046,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_047,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_047,b,2,へ,へ (direction),「大阪へ」もあるが、着く先・滞在先を点で示すなら「に」。,"There is also ""To Osaka"", but if you show the destination and destination, ""Nin""."
-particleForensics,pf_047,c,3,に,に (direction / endpoint / indirect object),行き先・滞在先の点。「大阪に出張」。,"The destination and destination point. ""Travel to Osaka"""
-particleForensics,pf_047,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_048,a,1,を,を (direct object marker),経路の「を」ではない。,It is not a route.
-particleForensics,pf_048,b,2,へ,へ (direction),「家へ」も自然だが到達点として「家に帰る」が極めて多い。,"“To home” is also natural, but there are very many “to home”."
-particleForensics,pf_048,c,3,に,に (direction / endpoint / indirect object),帰る先の到達点。「家に帰る」。,The destination. Home
-particleForensics,pf_048,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_049,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_049,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_049,c,3,から,から (from / since),開始時刻。「八時から」。,Start time. From 8am
-particleForensics,pf_049,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_050,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_050,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_050,c,3,まで,まで (until),終了までの範囲「五時まで続く」。,"""Co e until 5pm"" until the end."
-particleForensics,pf_050,d,4,で,で (means / venue / scope of action),動作の単純な場所の「で」ではない。,"It is not ""in"" in a simple place of operation."
-particleForensics,pf_051,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_051,b,2,が,が (subject / exhaustive focus),「駅が近い」もあるが、起点との距離なら「駅から」。,"There is also a ""station close"", but if it is a distance from the starting point, ""station""."
-particleForensics,pf_051,c,3,から,から (from / since),距離・程度の起点「から」。,"Distance and point of view ""from""."
-particleForensics,pf_051,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_052,a,1,を,を (direct object marker),経路の「を」ではない。,It is not a route.
-particleForensics,pf_052,b,2,から,から (from / since),起点。「空港から町まで」。,Home From Airport to Town
-particleForensics,pf_052,c,3,に,に (direction / endpoint / indirect object),到達点だけの「に」ではない。,It is not the only point of arrival.
-particleForensics,pf_052,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_053,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_053,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_053,c,3,から,から (from / since),時間の幅の始まり「から」。,"The beginning of the width of the time ""from""."
-particleForensics,pf_053,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_054,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_054,b,2,が,が (subject / exhaustive focus),属性の主語「が」もあるが、品を取り上げるなら「は」。,"There is also the main word of the attribute, but if you take up the item, ""ha""."
-particleForensics,pf_054,c,3,は,は (topic / contrast),品を話題にする「は」。,"""H"" is a topic of products."
-particleForensics,pf_054,d,4,より,より (More),比較基準の「より」ではない。,"It is not ""more""."
-particleForensics,pf_055,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_055,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_055,c,3,は,は (topic / contrast),比較の基準を取り上げる「は」。,"""H"" takes up the comparison criteria."
-particleForensics,pf_055,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_056,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_056,b,2,が,が (subject / exhaustive focus),比較される側の主語に「が」もあるが、人物を立てるなら「は」。,"There is also a word """" in the subject of the compared side, but if you make a person, it is ""."
-particleForensics,pf_056,c,3,は,は (topic / contrast),比較の一方を提示する「は」。,Show one of the comparisons.
-particleForensics,pf_056,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_057,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_057,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_057,c,3,は,は (topic / contrast),比較される側を話題にする「は」。,"Compared to the topic of ""ha""."
-particleForensics,pf_057,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_058,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_058,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_058,c,3,は,は (topic / contrast),比較の一方を話題にする「は」。「昨日は今日ほど～ない」。,"The comparison of one of the topic is ""ha"". ""I don't know about yesterday."""
-particleForensics,pf_058,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_059,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_059,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_059,c,3,は,は (topic / contrast),時間帯を話題にし、あとで「も」を付けて追加「朝は晩も」。,"In the morning, the evening is too late."
-particleForensics,pf_059,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_060,a,1,を,を (direct object marker),否定の対象を範囲づけ「水を飲まない」もあるが、全面否定なら「も」。,"There is a range of negligence targets, ""Do not drink water"", but if it is completely neglected, ""Mo""."
-particleForensics,pf_060,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_060,c,3,は,は (topic / contrast),全面否定「水も飲まない」。,No water.
-particleForensics,pf_060,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_061,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_061,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_061,c,3,は,は (topic / contrast),限定。「休みだけ」。,"Close ""Closed"""
-particleForensics,pf_061,d,4,だけ,だけ (Only),話題の「は」もあるが、限定副詞的に「だけ」が核。,"There is also a topic of ""ha"" but limited adverb ""only"" is the core."
-particleForensics,pf_062,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_062,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_062,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_062,d,4,で,で (means / venue / scope of action),値段で買える「百円で」。,You can buy it at a price of 100 yen.
-particleForensics,pf_063,a,1,を,を (direct object marker),対象の「を」ではなく否定と「しか」のセットが前提。,"It is assumed that there is a set of negative and ""only"" rather than the target ""."
-particleForensics,pf_063,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_063,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_063,d,4,しか,しか (Home),部分否定の「しか～ない」型のマーカー。,Partially negative markers.
-particleForensics,pf_064,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_064,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_064,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_064,d,4,の,の (possessor / noun modifier),固有名を修飾する「の」。「大阪の駅」。,"""no"" to qualify firmly famous. Osaka Station"
-particleForensics,pf_065,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_065,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_065,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_065,d,4,の,の (possessor / noun modifier),固有名の修飾「東京の大学」。,Tokyo University
-particleForensics,pf_066,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_066,b,2,が,が (subject / exhaustive focus),来た主語は「が」だが、同格の友だちを示すのは「の」。,"The main word came is “が”, but the same friend is “no”."
-particleForensics,pf_066,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_066,d,4,の,の (possessor / noun modifier),同格・説明の「友だちの田中さん」。,"""Mr. Tanaka of friend"" of the same character and explanation."
-particleForensics,pf_067,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_067,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_067,c,3,は,は (topic / contrast),「母はケーキは」に重なりづらい。,It’s hard to overlap the cake.
-particleForensics,pf_067,d,4,の,の (possessor / noun modifier),所有・属性の「母のケーキ」。,Mother Cake
-particleForensics,pf_068,a,1,を,を (direct object marker),経路全体の「を」ではない。,Not the whole route.
-particleForensics,pf_068,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_068,c,3,に,に (direction / endpoint / indirect object),乗り物を目標にしない。,Do not target vehicles.
-particleForensics,pf_068,d,4,で,で (means / venue / scope of action),手段「電車で」。,By train
-particleForensics,pf_069,a,1,を,を (direct object marker),食べる対象ではない。,Not applicable to eating.
-particleForensics,pf_069,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_069,c,3,に,に (direction / endpoint / indirect object),到達点の「に」ではない。,"It is not the ""in"" of the arrival point."
-particleForensics,pf_069,d,4,で,で (means / venue / scope of action),道具手段「箸で」。,"Tool ""with sticks""."
-particleForensics,pf_070,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_070,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_070,c,3,に,に (direction / endpoint / indirect object),必要物を付ける「に」。,ments
-particleForensics,pf_070,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_071,a,1,を,を (direct object marker),書く内容の「を」ではない。,It is not the content of the game.
-particleForensics,pf_071,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_071,c,3,に,に (direction / endpoint / indirect object),書き付ける表面「黒板に」。,"""To the blackboard"""
-particleForensics,pf_071,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_072,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_072,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_072,c,3,に,に (direction / endpoint / indirect object),目標の「に」ではない。,It is not a target.
-particleForensics,pf_072,d,4,で,で (means / venue / scope of action),様態・理由がちの「急いで」。,"""Hurrying"" is often the reason."
-particleForensics,pf_073,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_073,b,2,が,が (subject / exhaustive focus),試験がある主語は「が」だが、日取りを先に置くなら「に」。,"There is a test subject, but if you want to take a day trip, you will be able to"
-particleForensics,pf_073,c,3,に,に (direction / endpoint / indirect object),日付の点「明日に」。,"Date point ""To tomorrow""."
-particleForensics,pf_073,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_074,a,1,を,を (direct object marker),「問題をわかる」ではなく焦点を「問題」に。,Focus on the problem rather than “understand the problem”.
-particleForensics,pf_074,b,2,が,が (subject / exhaustive focus),理解の対象に見える「が」。「問題がわからない」。,"It seems to be the subject of understanding. ""I don't know the problem."""
-particleForensics,pf_074,c,3,は,は (topic / contrast),話題の「は」もあるが、無題の困りごとは「が」。,"There is also a topic of ""ha"", but the problem is ""ha""."
-particleForensics,pf_074,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_075,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_075,b,2,が,が (subject / exhaustive focus),不足するものの主語。「お金が足りない」。,The main word of what is missing. “I don’t have enough money.”
-particleForensics,pf_075,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_075,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_076,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_076,b,2,が,が (subject / exhaustive focus),「駅が近い」もあるが、話題に駅を立てるなら「は」。,"There is also ""station close"", but if you stand up the station on the topic ""ha""."
-particleForensics,pf_076,c,3,は,は (topic / contrast),基準を話題にする「は」。,"""H"" is a topic of standards."
-particleForensics,pf_076,d,4,に,に (direction / endpoint / indirect object),存在場所の「に」ではない。,It is not a place of existence.
-particleForensics,pf_077,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_077,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_077,c,3,は,は (topic / contrast),話題対比「コーヒーは」。主語の私は「は」。,"""  is"" I'm the subject."
-particleForensics,pf_077,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_078,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_078,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_078,c,3,は,は (topic / contrast),比較の一方を話題にする「は」。,"The comparison of one of the topic is ""ha""."
-particleForensics,pf_078,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_079,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_079,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_079,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_079,d,4,で,で (means / venue / scope of action),動作の場所「ここで」。,"Location of operation ""here""."
-particleForensics,pf_080,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_080,b,2,が,が (subject / exhaustive focus),同一視の主語「が」もあるが、指し示しの話題なら「は」。,"There is also the subject of the same vision, but if it is a topic of pointing, ""ha""."
-particleForensics,pf_080,c,3,は,は (topic / contrast),指し示した対象を話題にする「は」。,"""H"" is a topic that points to the subject."
-particleForensics,pf_080,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_081,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_081,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_081,c,3,は,は (topic / contrast),時間の枠を話題にする「は」。,"""H"" is the topic of the time frame."
-particleForensics,pf_081,d,4,に,に (direction / endpoint / indirect object),点の「に」ではない。,"It is not a point of ""in""."
-particleForensics,pf_082,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_082,b,2,が,が (subject / exhaustive focus),歌の属性は「が」だが、人物を立てるなら「は」。,"The attribute of the song is ""ha"", but if you make a person, ""ha""."
-particleForensics,pf_082,c,3,は,は (topic / contrast),人物を話題にする「は」。,"""H"" is a topic of people."
-particleForensics,pf_082,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_083,a,1,を,を (direct object marker),他動詞の目的語ではない。,Not the purpose of other s.
-particleForensics,pf_083,b,2,が,が (subject / exhaustive focus),出来事の主語。「電車が遅れる」。,The subject of events. The train is delayed.
-particleForensics,pf_083,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_083,d,4,に,に (direction / endpoint / indirect object),到着点の「に」ではない。,It is not the arrival point.
-particleForensics,pf_084,a,1,を,を (direct object marker),移動の経路の「を」ではない。,"It is not a ""move"" of the route."
-particleForensics,pf_084,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_084,c,3,に,に (direction / endpoint / indirect object),到達点の「に」ではない。,"It is not the ""in"" of the arrival point."
-particleForensics,pf_084,d,4,で,で (means / venue / scope of action),活動の場所「海で」。,"Place of activity ""in the sea""."
-particleForensics,pf_085,a,1,を,を (direct object marker),店を待つ対象に「を」は付けない。,Don’t add “to” to the store.
-particleForensics,pf_085,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_085,c,3,に,に (direction / endpoint / indirect object),店を目標にする「に」もあるが、店内で待つなら「で」。,"There is also ""Nin"" that targets the store, but if you wait in the store, it is ""in""."
-particleForensics,pf_085,d,4,で,で (means / venue / scope of action),待合の舞台「喫茶店で」。,"A waiting stage ""at a cafe""."
-particleForensics,pf_086,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_086,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_086,c,3,は,は (topic / contrast),時間枠を話題に「週末は」。,"""Weekends"""
-particleForensics,pf_086,d,4,に,に (direction / endpoint / indirect object),点の「に」ではない。,"It is not a point of ""in""."
-particleForensics,pf_087,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_087,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_087,c,3,は,は (topic / contrast),店を取り上げてから評価「店はすしが」。,"After picking up the store, it was evaluated."
-particleForensics,pf_087,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_088,a,1,を,を (direct object marker),座る表面をまたぐ「を」も「ベンチに座る」型が基本。,"The type ""Sit on the "" is also the basis of the ""Sit on the座"" that crosses the surface to sit."
-particleForensics,pf_088,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_088,c,3,に,に (direction / endpoint / indirect object),着座の点「ベンチに座る」。,"Seating point ""Sit on the ""."
-particleForensics,pf_088,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_089,a,1,を,を (direct object marker),書く内容の「を」ではない。,It is not the content of the game.
-particleForensics,pf_089,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_089,c,3,に,に (direction / endpoint / indirect object),書き付ける表面「封筒に」。,"""To Envel """
-particleForensics,pf_089,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_090,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_090,b,2,が,が (subject / exhaustive focus),信号の状態の主語「信号が青」。,"The main word ""signal is blue""."
-particleForensics,pf_090,c,3,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_090,d,4,で,で (means / venue / scope of action),原因の「で」ではない。,"The cause is not ""in""."
-particleForensics,pf_091,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_091,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_091,c,3,と,と (and / with / quotation),発話内容の引用「と」。,"Quote of the contents of the talk ""to""."
-particleForensics,pf_091,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_092,a,1,を,を (direct object marker),建物を離れる移動の「家を出る」。,"""Exit home"" of moving away from the building."
-particleForensics,pf_092,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_092,c,3,に,に (direction / endpoint / indirect object),到着点の「に」ではない。,It is not the arrival point.
-particleForensics,pf_092,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_093,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_093,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_093,c,3,は,は (topic / contrast),自己同一・話題の提示「こちらは」。,"""This is"" to present self-identification and topic."
-particleForensics,pf_093,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_094,a,1,を,を (direct object marker),経路の「を」ではない。,It is not a route.
-particleForensics,pf_094,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_094,c,3,から,から (from / since),区間の起点「空港から」。,From the airport
-particleForensics,pf_094,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_095,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_095,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_095,c,3,は,は (topic / contrast),時間帯を話題に「夕方は」。,"In the evening, it is a hot topic."
-particleForensics,pf_095,d,4,に,に (direction / endpoint / indirect object),点の「に」ではない。,"It is not a point of ""in""."
-particleForensics,pf_096,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_096,b,2,が,が (subject / exhaustive focus),「試験が終わる」の主語。「試験が終わってから」。,"The main word of ""test ends"". ""After the test has finished."""
-particleForensics,pf_096,c,3,は,は (topic / contrast),話題の「は」ではない。,This is not a topic.
-particleForensics,pf_096,d,4,で,で (means / venue / scope of action),手段の「で」ではない。,"It is not ""in"" of means."
-particleForensics,pf_097,a,1,を,を (direct object marker),館全体を経路の「を」ではない。,The whole building is not a route.
-particleForensics,pf_097,b,2,が,が (subject / exhaustive focus),主語ではない。,Not the subject.
-particleForensics,pf_097,c,3,に,に (direction / endpoint / indirect object),単なる到達点だけなら「に」もあるが、館内で鑑賞するなら「で」。,"There is also a ""Nin"" if it is just a reach point, but if you watch it in the facility, it is ""in""."
-particleForensics,pf_097,d,4,で,で (means / venue / scope of action),鑑賞という動作の場「映画館で」。,In the movie theater.
-particleForensics,pf_098,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_098,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_098,c,3,は,は (topic / contrast),人物を話題にして状況を述べる「は」。,"""He"" is to talk about people."
-particleForensics,pf_098,d,4,に,に (direction / endpoint / indirect object),着点の「に」ではない。,It is not a point of origin.
-particleForensics,pf_099,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_099,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_099,c,3,は,は (topic / contrast),町を取り上げ、過去と対比「町は昔は」。,“The town is old”
-particleForensics,pf_099,d,4,に,に (direction / endpoint / indirect object),点の「に」ではない。,"It is not a point of ""in""."
-particleForensics,pf_100,a,1,を,を (direct object marker),目的語ではない。,Not a purpose.
-particleForensics,pf_100,b,2,が,が (subject / exhaustive focus),主語の「が」ではない。,It is not the main word.
-particleForensics,pf_100,c,3,は,は (topic / contrast),停留所を話題にして位置関係を述べる「は」。,"""H"" to describe the location of the bus stop."
-particleForensics,pf_100,d,4,に,に (direction / endpoint / indirect object),存在場所の「に」だけではこの説明に合わない。,"It is not suitable for this explanation only by ""in"" of the place of existence."
-registerRadar,rr_001,a,1,よろしく,よろしく (),too casual,too casual
-registerRadar,rr_001,b,2,よろしくお願いいたします,よろしくお願いいたします (Thank you),best fit,best fit
-registerRadar,rr_001,c,3,よろピー,よろピー (),too casual,too casual
-registerRadar,rr_002,a,1,週末はご旅行なさいましたか,週末はご旅行なさいましたか (Have you traveled on weekends?),too stiff,too stiff
-registerRadar,rr_002,b,2,週末、どこ行ったの？,週末、どこ行ったの？ (Where did you go?),best fit,best fit
-registerRadar,rr_002,c,3,週末、いかがでございましたか,週末、いかがでございましたか (How about the weekend?),too stiff,too stiff
-registerRadar,rr_003,a,1,これ、いくら？,これ、いくら？ (How much?),too casual,too casual
-registerRadar,rr_003,b,2,こちらはいくらでしょうか,こちらはいくらでしょうか (How much is this?),best fit,best fit
-registerRadar,rr_003,c,3,これ、幾らだ,これ、幾らだ (ら),too rude,too rude
-registerRadar,rr_004,a,1,読んでください,読んでください (Read),best fit,best fit
-registerRadar,rr_004,b,2,読んでくれ,読んでくれ (Read),too rude,too rude
-registerRadar,rr_004,c,3,読んでいただけませんでしょうか,読んでいただけませんでしょうか (Can I read?),too stiff,too stiff
-registerRadar,rr_005,a,1,事件が起きちゃった,事件が起きちゃった (The incident occurred),too casual,too casual
-registerRadar,rr_005,b,2,事件が発生した,事件が発生した (The incident occurred),best fit,best fit
-registerRadar,rr_005,c,3,事件、ヤバいって,事件、ヤバいって (Case),too casual,too casual
-registerRadar,rr_006,a,1,遅れてすみません,遅れてすみません (No delay),best fit,best fit
-registerRadar,rr_006,b,2,遅れたわ,遅れたわ (late),too casual,too casual
-registerRadar,rr_006,c,3,お待たせいたしました,お待たせいたしました (Thank you for your understanding.),unnatural,unnatural
-registerRadar,rr_007,a,1,もう終わったよ,もう終わったよ (It's over),too casual,too casual
-registerRadar,rr_007,b,2,やっと終わった,やっと終わった (Finally finished),too casual,too casual
-registerRadar,rr_007,c,3,終わらせていただきました,終わらせていただきました (Thank you for your understanding.),best fit,best fit
-registerRadar,rr_008,a,1,テレビ、うるせえから下げろ,"テレビ、うるせえから下げろ (TV, hustle down)",too rude,too rude
-registerRadar,rr_008,b,2,テレビ、少し小さくしていただけませんか,テレビ、少し小さくしていただけませんか (Is it possible to make the TV a little smaller?),best fit,best fit
-registerRadar,rr_008,c,3,テレビ、小さくしてくれん？,テレビ、小さくしてくれん？ (Do you have a TV?),too casual,too casual
-registerRadar,rr_009,a,1,資料、後で送っていただけますでしょうか,資料、後で送っていただけますでしょうか (Can you send materials later?),too stiff,too stiff
-registerRadar,rr_009,b,2,資料、あとで送ってくれる？,資料、あとで送ってくれる？ (How can I send materials?),best fit,best fit
-registerRadar,rr_009,c,3,資料をお送り願い申し上げます,資料をお送り願い申し上げます (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_010,a,1,もしもし、どうも,もしもし、どうも (If),too casual,too casual
-registerRadar,rr_010,b,2,お電話ありがとうございます、△△でございます,お電話ありがとうございます、△△でございます (Thank you for calling us.),best fit,best fit
-registerRadar,rr_010,c,3,はい、誰ですか,はい、誰ですか (Who is),too rude,too rude
-registerRadar,rr_011,a,1,走んなよマジで,走んなよマジで (),too casual,too casual
-registerRadar,rr_011,b,2,ホームでは走らないでください,ホームでは走らないでください (Do not run at home),best fit,best fit
-registerRadar,rr_011,c,3,走っちゃダメだよ,走っちゃダメだよ (I'm running),too casual,too casual
-registerRadar,rr_012,a,1,本日の議題は以上でございました,"本日の議題は以上でございました (Sorry, this entry is only available in 日本語.)",too stiff,too stiff
-registerRadar,rr_012,b,2,まあ、そんな感じっすね,"まあ、そんな感じっすね (Well, I feel that)",best fit,best fit
-registerRadar,rr_012,c,3,拙者、もう帰るでござる,拙者、もう帰るでござる (I'll go back),unnatural,unnatural
-registerRadar,rr_013,a,1,ちょっと腹痛いっす,ちょっと腹痛いっす (A bit painful),too casual,too casual
-registerRadar,rr_013,b,2,お腹が痛いです,お腹が痛いです (Painful stomach),best fit,best fit
-registerRadar,rr_013,c,3,腹痛か,腹痛か (pain),too blunt,too blunt
-registerRadar,rr_014,a,1,撮るなよマジで,撮るなよマジで (),too rude,too rude
-registerRadar,rr_014,b,2,撮影はご遠慮ください,撮影はご遠慮ください (Please do not take photos.),best fit,best fit
-registerRadar,rr_014,c,3,写真ダメだってば,写真ダメだってば (写真),too casual,too casual
-registerRadar,rr_015,a,1,すみません,すみません (Not Included),best fit,best fit
-registerRadar,rr_015,b,2,おおきに,おおきに (Close),unnatural,unnatural
-registerRadar,rr_015,c,3,やめてください,やめてください (Please stop),unnatural,unnatural
-registerRadar,rr_016,a,1,これ見て。,これ見て。 (See this.),too casual,too casual
-registerRadar,rr_016,b,2,こちらをご確認いただけますでしょうか。,こちらをご確認いただけますでしょうか。 (Please check here.),best fit,best fit
-registerRadar,rr_016,c,3,これ見ろ。,これ見ろ。 (Look at it.),too rude,too rude
-registerRadar,rr_017,a,1,その日は予定があって無理。ごめん。また誘って。,"その日は予定があって無理。ごめん。また誘って。 (Sorry, this entry is only available in 日本語. Home Also invite)",best fit,best fit
-registerRadar,rr_017,b,2,参加は謹んでお辞びいたします。,"参加は謹んでお辞びいたします。 (Sorry, this entry is only available in Japanese.)",too stiff,too stiff
-registerRadar,rr_017,c,3,行かねえ。,行かねえ。 (Contact Us),too blunt,too blunt
-registerRadar,rr_018,a,1,昨日のメール、ミスってました。すんません。,昨日のメール、ミスってました。すんません。 (Thank you for your understanding. Comment),too casual,too casual
-registerRadar,rr_018,b,2,送付いたしました資料に誤りがございました。深くお詫び申し上げます。,送付いたしました資料に誤りがございました。深くお詫び申し上げます。 (There was an error in the material sent. We apologize for any inconvenience.),best fit,best fit
-registerRadar,rr_018,c,3,弊社に落ち度あり。重ねてお詫び申し上げまする。,弊社に落ち度あり。重ねてお詫び申し上げまする。 (Our company is calm. We apologize for the inconvenience.),too stiff,too stiff
-registerRadar,rr_019,a,1,それ持ってこい。,それ持ってこい。 (I have it.),too rude,too rude
-registerRadar,rr_019,b,2,こちらを試着室にお願いできますか。,こちらを試着室にお願いできますか。 (Can I ask for a workshop?),best fit,best fit
-registerRadar,rr_019,c,3,ついでにお願い,ついでにお願い (Contact Us),too casual,too casual
-registerRadar,rr_020,a,1,すみません、ちょっと詰めてもらえますか。,すみません、ちょっと詰めてもらえますか。 (Is it possible to pack it?),best fit,best fit
-registerRadar,rr_020,b,2,恐れ入ります、少々お詰めいただけますでしょうか。,恐れ入ります、少々お詰めいただけますでしょうか。 (Is it possible to pack it a little?),too stiff,too stiff
-registerRadar,rr_020,c,3,どけ。,どけ。 (Home),too rude,too rude
-registerRadar,rr_021,a,1,締切、今日の17時ですよね。お忘れなく。,締切、今日の17時ですよね。お忘れなく。 (The deadline is 17:00 today. Don't forget.),too blunt,too blunt
-registerRadar,rr_021,b,2,もしお時間よろしければ、本日17時が締切でございますので共有のみです。,"もしお時間よろしければ、本日17時が締切でございますので共有のみです。 (If you want to spend time, we will close at 17:00 today.)",best fit,best fit
-registerRadar,rr_021,c,3,締切が迫っておりますので何卒ご高配のほどお願い申し上げます。,締切が迫っておりますので何卒ご高配のほどお願い申し上げます。 (Thank you for your understanding.),too indirect,too indirect
-registerRadar,rr_022,a,1,3ページ目、会社名が一文字違うよ。直せる？,3ページ目、会社名が一文字違うよ。直せる？ (The third page and company name are different. Can I fix it?),best fit,best fit
-registerRadar,rr_022,b,2,御社の表記が誤っておりました。至急修正を。,御社の表記が誤っておりました。至急修正を。 (Your company has been incorrect. Quick fixes.),too stiff,too stiff
-registerRadar,rr_022,c,3,ちゃんと見ろよ。,ちゃんと見ろよ。 (I see it.),too rude,too rude
-registerRadar,rr_023,a,1,用件をお伺いしてもよろしいでしょうか。,用件をお伺いしてもよろしいでしょうか。 (Do you have any questions?),best fit,best fit
-registerRadar,rr_023,b,2,何の用。,何の用。 (。),too blunt,too blunt
-registerRadar,rr_023,c,3,どちらさまいらっしゃいますか、御用でございますか。,どちらさまいらっしゃいますか、御用でございますか。 (What kind of dishes are available?),too stiff,too stiff
-registerRadar,rr_024,a,1,ちょっと小さくしてくれる？,ちょっと小さくしてくれる？ (Is it small?),best fit,best fit
-registerRadar,rr_024,b,2,お父様、音量をお下げいただけますでしょうか。,お父様、音量をお下げいただけますでしょうか。 (Can you lower your volume?),too stiff,too stiff
-registerRadar,rr_024,c,3,うるせえ、黙れ。,うるせえ、黙れ。 (Moisturizing and Silent),too rude,too rude
-registerRadar,rr_025,a,1,はい、どうぞ。,はい、どうぞ。 (Yes.),best fit,best fit
-registerRadar,rr_025,b,2,ご査収くださいませ。,ご査収くださいませ。 (Contact Us),too stiff,too stiff
-registerRadar,rr_025,c,3,ほれ。,ほれ。 (Home),too rude,too rude
-registerRadar,rr_026,a,1,ご飯、おかわりください。,ご飯、おかわりください。 (Thank you for your understanding.),best fit,best fit
-registerRadar,rr_026,b,2,飯、もっと。,"飯、もっと。 (Rice, More)",too casual,too casual
-registerRadar,rr_026,c,3,おひつをお持ちいただきたく存じます。,おひつをお持ちいただきたく存じます。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_027,a,1,それでは発表に移らせていただきます。,"それでは発表に移らせていただきます。 (Then, we will move to the presentation.)",best fit,best fit
-registerRadar,rr_027,b,2,じゃ、やるわ。,じゃ、やるわ。 (),too casual,too casual
-registerRadar,rr_027,c,3,発表を開始いたします。ご静聴賜りますようお願い申し上げます。,発表を開始いたします。ご静聴賜りますようお願い申し上げます。 (Announcement Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_028,a,1,とりあえず次回までに各自ドラフトを送る。,とりあえず次回までに各自ドラフトを送る。 (Send your drafts to the next time.),best fit,best fit
-registerRadar,rr_028,b,2,各位、至急草案を提出されたし。,各位、至急草案を提出されたし。 (Submitted to the top and fastest drafts.),too stiff,too stiff
-registerRadar,rr_028,c,3,みんな適当にね。,みんな適当にね。 (Everyone is suitable.),too casual,too casual
-registerRadar,rr_029,a,1,本日はお集まりいただきありがとうございます。乾杯。,本日はお集まりいただきありがとうございます。乾杯。 (Thank you for your understanding. Toast.),too stiff,too stiff
-registerRadar,rr_029,b,2,はじめまして。では、乾杯！,はじめまして。では、乾杯！ (Contact Us Toast!),best fit,best fit
-registerRadar,rr_029,c,3,よっ、飲むぞ。,よっ、飲むぞ。 (),too casual,too casual
-registerRadar,rr_030,a,1,お飲み物でございます。,お飲み物でございます。 (Drink),too stiff,too stiff
-registerRadar,rr_030,b,2,どうぞお飲みください。,どうぞお飲みください。 (Please drink.),best fit,best fit
-registerRadar,rr_030,c,3,はい、どうぞ。,はい、どうぞ。 (Yes.),too casual,too casual
-registerRadar,rr_031,a,1,読ませてくれてありがとう。助かった。,読ませてくれてありがとう。助かった。 (Thank you for reading. Thank you.),best fit,best fit
-registerRadar,rr_031,b,2,拝借し甚だ恐縮に存じます。,拝借し甚だ恐縮に存じます。 (I know that it is a拝ible.),too stiff,too stiff
-registerRadar,rr_031,c,3,返すわ。,返すわ。 (HOME),too blunt,too blunt
-registerRadar,rr_032,a,1,ではまた。,ではまた。 (Others),too casual,too casual
-registerRadar,rr_032,b,2,ご検討のほど、何卒よろしくお願いいたします。,ご検討のほど、何卒よろしくお願いいたします。 (Thank you for your understanding.),best fit,best fit
-registerRadar,rr_032,c,3,御高配賜りますよう切にお願い申し上げ候。,御高配賜りますよう切にお願い申し上げ候。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_033,a,1,すみません、ありがとうございます。,すみません、ありがとうございます。 (Thank you for your understanding.),best fit,best fit
-registerRadar,rr_033,b,2,感謝感激雨あられ。,感謝感激雨あられ。 (Thank you very much.),unnatural,unnatural
-registerRadar,rr_033,c,3,どうも。,どうも。 (Comment),too casual,too casual
-registerRadar,rr_034,a,1,悪いけど30分だけ手伝ってくれない？明日おごる。,悪いけど30分だけ手伝ってくれない？明日おごる。 (Don’t help me for 30 minutes?),best fit,best fit
-registerRadar,rr_034,b,2,至急残業をお願いしたく存じます。,至急残業をお願いしたく存じます。 (We do not want to ask for a sudden overtime.),too stiff,too stiff
-registerRadar,rr_034,c,3,残れ。,残れ。 (Close),too rude,too rude
-registerRadar,rr_035,a,1,朝食は何時からですか。,朝食は何時からですか。 (What time is breakfast?),best fit,best fit
-registerRadar,rr_035,b,2,飯、いつから？,飯、いつから？ (What is rice?),too casual,too casual
-registerRadar,rr_035,c,3,朝食のお時間を賜りたく存じます。,朝食のお時間を賜りたく存じます。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_036,a,1,書いて。,書いて。 (Comment),too rude,too rude
-registerRadar,rr_036,b,2,こちらに記入をお願いできますか。,こちらに記入をお願いできますか。 (Can I fill in this form?),best fit,best fit
-registerRadar,rr_036,c,3,記帳を賜りたく,記帳を賜りたく (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_037,a,1,今度の土日、キャンプ行かない？場所は後で送る。,今度の土日、キャンプ行かない？場所は後で送る。 (Do not go camping on Saturdays and Sundays?),best fit,best fit
-registerRadar,rr_037,b,2,キャンプにご同行賜りたく候。,キャンプにご同行賜りたく候。 (Thank you for visiting our camp.),too stiff,too stiff
-registerRadar,rr_037,c,3,お前ら来い。,お前ら来い。 (You are here),too rude,too rude
-registerRadar,rr_038,a,1,△△社からこの日程での納品を希望されています。どう対応しましょうか。,△△社からこの日程での納品を希望されています。どう対応しましょうか。 (△△We would like to deliver this time. How do you respond?),best fit,best fit
-registerRadar,rr_038,b,2,あいつらまた無茶言ってきた。,あいつらまた無茶言ってきた。 (I've been saying a little more.),too casual,too casual
-registerRadar,rr_038,c,3,恐れ入りますが御社のご意向はいかがなさいまして。,"恐れ入りますが御社のご意向はいかがなさいまして。 (Sorry, this entry is only available in Japanese.)",too indirect,too indirect
-registerRadar,rr_039,a,1,締切についてご相談がありメールいたしました。,締切についてご相談がありメールいたしました。 (Thank you for your understanding.),best fit,best fit
-registerRadar,rr_039,b,2,先生、ちょっといいっすか。,先生、ちょっといいっすか。 (It's a little better.),too casual,too casual
-registerRadar,rr_039,c,3,拝啓　時下ますますご清祥のこととお慶び申し上げます。,拝啓　時下ますますご清祥のこととお慶び申し上げます。 (I would like to express my gra  to you.),too stiff,too stiff
-registerRadar,rr_040,a,1,袋は結構です。,袋は結構です。 (The bag is fine.),best fit,best fit
-registerRadar,rr_040,b,2,袋いらん。,袋いらん。 (),too casual,too casual
-registerRadar,rr_040,c,3,袋は賜りません。,袋は賜りません。 (Thank you for your understanding.),unnatural,unnatural
-registerRadar,rr_041,a,1,面白いけど、予算の根拠もう一歩欲しいかも。,"面白いけど、予算の根拠もう一歩欲しいかも。 (It’s interesting, but you might want to take a step further.)",best fit,best fit
-registerRadar,rr_041,b,2,お考えの趣旨は理解いたしますが、財務面の裏付けをご提示賜れますでしょうか。,"お考えの趣旨は理解いたしますが、財務面の裏付けをご提示賜れますでしょうか。 (We understand the purpose of thinking, but will you give us your financial support?)",too stiff,too stiff
-registerRadar,rr_041,c,3,ダメだこれ。,ダメだこれ。 (),too rude,too rude
-registerRadar,rr_042,a,1,遅れます。すみません。,遅れます。すみません。 (Close Not included.),too casual,too casual
-registerRadar,rr_042,b,2,大変申し訳ございません。10分ほど遅刻いたします。,大変申し訳ございません。10分ほど遅刻いたします。 (Thank you for your understanding. 10 minutes),best fit,best fit
-registerRadar,rr_042,c,3,恐泣蒙り候。少々遅参の由。,恐泣蒙り候。少々遅参の由。 (Crying. A little late),unnatural,unnatural
-registerRadar,rr_043,a,1,出ます。よろしくお願いします。,出ます。よろしくお願いします。 (Contact Us Thank you.),best fit,best fit
-registerRadar,rr_043,b,2,出るっす。,出るっす。 (Contact Us),too casual,too casual
-registerRadar,rr_043,c,3,出場の栄に浴す所存。,出場の栄に浴す所存。 (We will have a bathing experience.),unnatural,unnatural
-registerRadar,rr_044,a,1,ただいま外出中はお電話くださいませ。,ただいま外出中はお電話くださいませ。 (Please call us now.),unnatural,unnatural
-registerRadar,rr_044,b,2,折り返しご連絡いただければ幸いです。,折り返しご連絡いただければ幸いです。 (Thank you for your understanding.),best fit,best fit
-registerRadar,rr_044,c,3,かけ直せ。,かけ直せ。 (Contact Us),too rude,too rude
-registerRadar,rr_045,a,1,すみません、少し倒してもいいですか。,すみません、少し倒してもいいですか。 (Can I defeat a little?),best fit,best fit
-registerRadar,rr_045,b,2,倒すぞ。,倒すぞ。 (Contact Us),too rude,too rude
-registerRadar,rr_045,c,3,愚息のシートを後方へ移動させていただきたく。,愚息のシートを後方へ移動させていただきたく。 (I would like to make a sheet ofシートishness backward.),too stiff,too stiff
-registerRadar,rr_046,a,1,ついて行っていいですか。,ついて行っていいですか。 (Contact Us),too casual,too casual
-registerRadar,rr_046,b,2,可能であれば、来週の出張に同行させていただけないでしょうか。,"可能であれば、来週の出張に同行させていただけないでしょうか。 (If possible, will you be able to attend next week's business trip?)",best fit,best fit
-registerRadar,rr_046,c,3,同行を御承認くださいますよう伏してお願い申し上げます。,同行を御承認くださいますよう伏してお願い申し上げます。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_047,a,1,どうぞ、あがって。,どうぞ、あがって。 (Contact Us),best fit,best fit
-registerRadar,rr_047,b,2,お入りくださいませませ。,お入りくださいませませ。 (Contact Us),unnatural,unnatural
-registerRadar,rr_047,c,3,入れ。,入れ。 (Contact Us),too rude,too rude
-registerRadar,rr_048,a,1,仕事の都合で役員は難しいです。すみません。,仕事の都合で役員は難しいです。すみません。 (Officers are difficult for work. Not included.),best fit,best fit
-registerRadar,rr_048,b,2,御役は辞退させていただきます。,御役は辞退させていただきます。 (We will resign.),too stiff,too stiff
-registerRadar,rr_048,c,3,やらねえ。,やらねえ。 (Home),too rude,too rude
-registerRadar,rr_049,a,1,パソコンがつきません。確認お願いします。,パソコンがつきません。確認お願いします。 (There is no computer. Please confirm.),best fit,best fit
-registerRadar,rr_049,b,2,死んだ。早く来い。,死んだ。早く来い。 (dead. Contact Us),too rude,too rude
-registerRadar,rr_049,c,3,端末の起動が叶わず、御助言乞う。,端末の起動が叶わず、御助言乞う。 (Please be advised if the device is launched.),too stiff,too stiff
-registerRadar,rr_050,a,1,会議室、いけます。,会議室、いけます。 (Meeting Room),too casual,too casual
-registerRadar,rr_050,b,2,応接の準備が整いました。,応接の準備が整いました。 (Preparing for reception),best fit,best fit
-registerRadar,rr_050,c,3,お部屋、設え完了でございまする。,お部屋、設え完了でございまする。 (The room is complete.),unnatural,unnatural
-registerRadar,rr_051,a,1,今夜までに資料をお送りいただけますでしょうか。,今夜までに資料をお送りいただけますでしょうか。 (Can you send me a document by night?),best fit,best fit
-registerRadar,rr_051,b,2,今夜までに資料くれ。急ぎ。,今夜までに資料くれ。急ぎ。 (We will inform you by the night. Close),too rude,too rude
-registerRadar,rr_051,c,3,資料を賜りたく存じますがよろしいか。,資料を賜りたく存じますがよろしいか。 (Thank you for your understanding.),too indirect,too indirect
-registerRadar,rr_052,a,1,ありがとうございます。,ありがとうございます。 (Thank you.),best fit,best fit
-registerRadar,rr_052,b,2,サンキューな。,サンキューな。 (サン),too casual,too casual
-registerRadar,rr_052,c,3,厚く御礼申し上げます。,厚く御礼申し上げます。 (Thank you very much.),too stiff,too stiff
-registerRadar,rr_053,a,1,今日の昼、一緒に行かない？,今日の昼、一緒に行かない？ (Do not go with us?),best fit,best fit
-registerRadar,rr_053,b,2,昼食のご同行をお誘い申し上げます。,昼食のご同行をお誘い申し上げます。 (We would like to invite you to join us.),too stiff,too stiff
-registerRadar,rr_053,c,3,飯行け。,飯行け。 (Restaurant),too rude,too rude
-registerRadar,rr_054,a,1,共用廊下の照明が一つ切れているようです。,共用廊下の照明が一つ切れているようです。 (It seems that the lighting of the common corridor is broken.),best fit,best fit
-registerRadar,rr_054,b,2,電球死んでる。,電球死んでる。 (The bulb is dead.),too casual,too casual
-registerRadar,rr_054,c,3,照明が炎を絶たれたり。,照明が炎を絶たれたり。 (ion stops flame.),unnatural,unnatural
-registerRadar,rr_055,a,1,ご指摘ありがとうございます。修正して再提出いたします。,ご指摘ありがとうございます。修正して再提出いたします。 (Thank you for your understanding. We will resubmit it.),best fit,best fit
-registerRadar,rr_055,b,2,了解。直す。,了解。直す。 (),too casual,too casual
-registerRadar,rr_055,c,3,御教示、涙なくんばあり難し。,御教示、涙なくんばあり難し。 (It is difficult to teach.),unnatural,unnatural
-registerRadar,rr_056,a,1,参加は2名です。よろしくお願いします。,参加は2名です。よろしくお願いします。 (2 people Thank you.),best fit,best fit
-registerRadar,rr_056,b,2,2人っす。,2人っす。 (2 people),too casual,too casual
-registerRadar,rr_056,c,3,参加者二名にて参列の旨、謹んでご報告申し上げる。,参加者二名にて参列の旨、謹んでご報告申し上げる。 (We would like to thank you for your cooperation.),too stiff,too stiff
-registerRadar,rr_057,a,1,さっきの、もう一回言ってくれる？,さっきの、もう一回言ってくれる？ (What’s new?),best fit,best fit
-registerRadar,rr_057,b,2,再説を乞う。,再説を乞う。 (Re .),too stiff,too stiff
-registerRadar,rr_057,c,3,聞けよ。,聞けよ。 (Contact Us),too rude,too rude
-registerRadar,rr_058,a,1,お電話ありがとうございます。どのような件でしょうか。,お電話ありがとうございます。どのような件でしょうか。 (Thank you for contacting us. What is the case?),best fit,best fit
-registerRadar,rr_058,b,2,はい、クレームですか。,"はい、クレームですか。 (Yes, is it?)",too blunt,too blunt
-registerRadar,rr_058,c,3,恐惶謹言、頂戴つかまつる。,恐惶謹言、頂戴つかまつる。 (),unnatural,unnatural
-registerRadar,rr_059,a,1,マジ助かった。ありがとう。,マジ助かった。ありがとう。 (It was really helpful. ありがとう),best fit,best fit
-registerRadar,rr_059,b,2,御助力に痛感激に堪えません。,御助力に痛感激に堪えません。 (I can't endure the pain in your help.),too stiff,too stiff
-registerRadar,rr_059,c,3,当然だろ。,当然だろ。 (Of course.),too rude,too rude
-registerRadar,rr_060,a,1,5年2組の田中の父です。よろしくお願いします。,5年2組の田中の父です。よろしくお願いします。 (My father of Tanaka in five years. Thank you.),best fit,best fit
-registerRadar,rr_060,b,2,俺、田中。,"俺、田中。 (。, Tanaka)",too casual,too casual
-registerRadar,rr_060,c,3,小生、田中と申します。,小生、田中と申します。 (It is close to Kosei and Tanaka.),too stiff,too stiff
-registerRadar,rr_061,a,1,ただいま席を外しております。,"ただいま席を外しております。 (Sorry, this entry is only available in Japanese.)",best fit,best fit
-registerRadar,rr_061,b,2,いねえよ。,いねえよ。 (Comment),too rude,too rude
-registerRadar,rr_061,c,3,御不在でございますなり。,御不在でございますなり。 ({{ data.meta.length formatted }}),unnatural,unnatural
-registerRadar,rr_062,a,1,ごちそうさま。おいしかった。,ごちそうさま。おいしかった。 (Home It was delicious.),best fit,best fit
-registerRadar,rr_062,b,2,拙宴に預かり恐悦至極に存じます。,拙宴に預かり恐悦至極に存じます。 (I will stay in my feast.),too stiff,too stiff
-registerRadar,rr_062,c,3,まあまあ。,まあまあ。 (Close),too blunt,too blunt
-registerRadar,rr_063,a,1,すみません、エレベーターはどちらですか。,すみません、エレベーターはどちらですか。 (What is the elevator?),best fit,best fit
-registerRadar,rr_063,b,2,エレベーターどこ。,エレベーターどこ。 (Elevator),too blunt,too blunt
-registerRadar,rr_063,c,3,昇降機の所在を賜りたく。,昇降機の所在を賜りたく。 (Thank you for your continued support.),too stiff,too stiff
-registerRadar,rr_064,a,1,可能であれば部長様にも同席いただけますと幸いです。,"可能であれば部長様にも同席いただけますと幸いです。 (If possible, it is hope that you can sit with the manager.)",best fit,best fit
-registerRadar,rr_064,b,2,部長呼べ。,部長呼べ。 (Director),too rude,too rude
-registerRadar,rr_064,c,3,部長殿御同席の儀、伏して懇願。,部長殿御同席の儀、伏して懇願。 (The ceremonial ceremony of the head office.),too stiff,too stiff
-registerRadar,rr_065,a,1,左から来てる、カバーして！,"左から来てる、カバーして！ (Come from the left, cover!)",best fit,best fit
-registerRadar,rr_065,b,2,援護をお願いしたく存じます。,援護をお願いしたく存じます。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_065,c,3,てめえ動け。,てめえ動け。 (Contact Us),too rude,too rude
-registerRadar,rr_066,a,1,キャリアの方向性を考え、転職を決めました。,キャリアの方向性を考え、転職を決めました。 (I decided to change my career.),best fit,best fit
-registerRadar,rr_066,b,2,上司がウザくて。,上司がウザくて。 (The boss is ザed.),too casual,too casual
-registerRadar,rr_066,c,3,前職にて所業を修め、茲に侍り候。,前職にて所業を修め、茲に侍り候。 (The samurai weather in the former job.),unnatural,unnatural
-registerRadar,rr_067,a,1,搬送中に破損が判明しました。至急先方へ連絡が必要です。,搬送中に破損が判明しました。至急先方へ連絡が必要です。 (Breakage was found during transport. Contact Us),best fit,best fit
-registerRadar,rr_067,b,2,壊しちゃった。どうしよ。,壊しちゃった。どうしよ。 (I was broken. 。),too casual,too casual
-registerRadar,rr_067,c,3,品、破壊の由、慙愧の極み。,"品、破壊の由、慙愧の極み。 (The extreme of the product, the reason of destruction, and the earth.)",unnatural,unnatural
-registerRadar,rr_068,a,1,では次の議題に移ります。,では次の議題に移ります。 (will move to the following agenda:),best fit,best fit
-registerRadar,rr_068,b,2,次いくぞ。,次いくぞ。 (Next),too casual,too casual
-registerRadar,rr_068,c,3,議題を繰り進めさせていただく次第にござります。,議題を繰り進めさせていただく次第にござります。 (We will proceed as soon as we proceed.),too stiff,too stiff
-registerRadar,rr_069,a,1,家庭の都合で週末の回数を減らせていただきたいのですが。,家庭の都合で週末の回数を減らせていただきたいのですが。 (I would like to reduce the number of weekends for my family.),best fit,best fit
-registerRadar,rr_069,b,2,週末は出ねえ。,週末は出ねえ。 (Weekends),too rude,too rude
-registerRadar,rr_069,c,3,御店の勤怠、週末を御免蒙りたく。,御店の勤怠、週末を御免蒙りたく。 (We are looking forward to your visit.),too stiff,too stiff
-registerRadar,rr_070,a,1,申し訳ないのですが、1時間遅れてもよろしいでしょうか。,"申し訳ないのですが、1時間遅れてもよろしいでしょうか。 (Sorry, this entry is only available in Japanese.)",best fit,best fit
-registerRadar,rr_070,b,2,1時間遅れ。,1時間遅れ。 (1 hour behind.),too blunt,too blunt
-registerRadar,rr_070,c,3,到着の刻限を遅延せしめたく。,到着の刻限を遅延せしめたく。 (Don't delay the arrival time.),too stiff,too stiff
-registerRadar,rr_071,a,1,名簿、午前中に送ってもらえる？忘れそうなら教えて。,名簿、午前中に送ってもらえる？忘れそうなら教えて。 (Can you send me in the morning?),best fit,best fit
-registerRadar,rr_071,b,2,名簿、至急提出を。,名簿、至急提出を。 (Register and submit quickly.),too stiff,too stiff
-registerRadar,rr_071,c,3,名簿、今すぐ。,名簿、今すぐ。 (Book Now),too rude,too rude
-registerRadar,rr_072,a,1,すみません、この欄はどう書けばよいでしょうか。,すみません、この欄はどう書けばよいでしょうか。 (I don't know how to write this field.),best fit,best fit
-registerRadar,rr_072,b,2,ここ、意味わかんない。,ここ、意味わかんない。 (This is meaningless.),too casual,too casual
-registerRadar,rr_072,c,3,本欄の御記入方法、御教示願い奉る。,"本欄の御記入方法、御教示願い奉る。 (How to fill in this field, please do it.)",too stiff,too stiff
-registerRadar,rr_073,a,1,お役職はマーケティング部長でいらっしゃいますか。,お役職はマーケティング部長でいらっしゃいますか。 (I am a marketing manager.),best fit,best fit
-registerRadar,rr_073,b,2,あんた部長？,あんた部長？ (General Manager),too rude,too rude
-registerRadar,rr_073,c,3,御身分はいかがなされまするや。,御身分はいかがなされまするや。 (How do you make your own?),unnatural,unnatural
-registerRadar,rr_074,a,1,すみません、注文したものまだでしょうか。,すみません、注文したものまだでしょうか。 (I'm not sure what I ordered.),best fit,best fit
-registerRadar,rr_074,b,2,まだかよ。,まだかよ。 (。),too rude,too rude
-registerRadar,rr_074,c,3,献立の到着が遅延しておりまする。,献立の到着が遅延しておりまする。 (Delayed arrival),too stiff,too stiff
-registerRadar,rr_075,a,1,昨日はありがとう！大事に使うね。,昨日はありがとう！大事に使うね。 (Thank you for yesterday!),best fit,best fit
-registerRadar,rr_075,b,2,厚き御礼、言語道断。,厚き御礼、言語道断。 (),too stiff,too stiff
-registerRadar,rr_075,c,3,もらった。,もらった。 (Comment),too blunt,too blunt
-registerRadar,rr_076,a,1,△△社の佐藤と申します。3時に△△様とお約束しております。,△△社の佐藤と申します。3時に△△様とお約束しております。 (△△It is a company Sato. We promise to you at 3 o'clock.),best fit,best fit
-registerRadar,rr_076,b,2,佐藤だ。呼んで。,佐藤だ。呼んで。 (HOME Contact Us),too rude,too rude
-registerRadar,rr_076,c,3,小生、面会の約、御座りまする。,小生、面会の約、御座りまする。 (I will sit for the first time.),unnatural,unnatural
-registerRadar,rr_077,a,1,めっちゃ分かりやすかったよ。お疲れ。,めっちゃ分かりやすかったよ。お疲れ。 (It was very easy to understand. Tired),best fit,best fit
-registerRadar,rr_077,b,2,御発表、誠に畏れ入りました。,御発表、誠に畏れ入りました。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_077,c,3,つまんね。,つまんね。 (Comment),too rude,too rude
-registerRadar,rr_078,a,1,確認が不足しておりました。申し訳ございません。,確認が不足しておりました。申し訳ございません。 (There was a lack of confirmation. We are sorry.),best fit,best fit
-registerRadar,rr_078,b,2,すみませんでしたー。,すみませんでしたー。 (I didn't know.),too casual,too casual
-registerRadar,rr_078,c,3,小生、罪該死に付き、土下座の意,小生、罪該死に付き、土下座の意 (Involved in sinners and sinners),unnatural,unnatural
-registerRadar,rr_079,a,1,夜遅くの洗濯の音が少し響くようなので、できれば時間をずらしていただけますか。,夜遅くの洗濯の音が少し響くようなので、できれば時間をずらしていただけますか。 (It seems that the sound of washing will sound a little late at night.),best fit,best fit
-registerRadar,rr_079,b,2,うるせえんだよ。,うるせえんだよ。 (),too rude,too rude
-registerRadar,rr_079,c,3,洗濯機、御使用は明朝まで御猶予賜りたく。,洗濯機、御使用は明朝まで御猶予賜りたく。 (Thank you for using the washing machine.),too stiff,too stiff
-registerRadar,rr_080,a,1,家庭の事情により当日は参加が難しいです。ご承認いただけますと幸いです。,家庭の事情により当日は参加が難しいです。ご承認いただけますと幸いです。 (It is difficult to participate on the day due to family circumstances. Thank you for your understanding.),best fit,best fit
-registerRadar,rr_080,b,2,行けません。,行けません。 (Contact Us),too blunt,too blunt
-registerRadar,rr_080,c,3,欠席をお許し賜わりたく、謹みて伺いを立てる。,欠席をお許し賜わりたく、謹みて伺いを立てる。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_081,a,1,視点が新しくて勉強になりました。,視点が新しくて勉強になりました。 (The viewpoint was renewed and studied.),best fit,best fit
-registerRadar,rr_081,b,2,やるじゃん。,やるじゃん。 (Comment),too casual,too casual
-registerRadar,rr_081,c,3,感銘、胸を打たれることこの上なし。,"感銘、胸を打たれることこの上なし。 (Feeling, 胸king the chest.)",too stiff,too stiff
-registerRadar,rr_082,a,1,今日は仕事で疲れたから、家でゆっくりしたい。また今度行こ。,"今日は仕事で疲れたから、家でゆっくりしたい。また今度行こ。 (I want to relax at home because I was tired at work today. Also, I will do this.)",best fit,best fit
-registerRadar,rr_082,b,2,外出は謹んで辞退いたします。,外出は謹んで辞退いたします。 (We will resign from outside.),too stiff,too stiff
-registerRadar,rr_082,c,3,うるせえ、黙れ。,うるせえ、黙れ。 (Moisturizing and Silent),too rude,too rude
-registerRadar,rr_083,a,1,来月から週3日に変更していただくことは可能でしょうか。,来月から週3日に変更していただくことは可能でしょうか。 (Is it possible to change to 3 days next week?),best fit,best fit
-registerRadar,rr_083,b,2,週3でいい？,週3でいい？ (Week 3),too casual,too casual
-registerRadar,rr_083,c,3,勤務密度を逓減せしめたく候。,勤務密度を逓減せしめたく候。 (Reduced working density.),unnatural,unnatural
-registerRadar,rr_084,a,1,ご無沙汰しております。お変わりございませんでしょうか。,ご無沙汰しております。お変わりございませんでしょうか。 (Thank you for your understanding. We are sorry.),best fit,best fit
-registerRadar,rr_084,b,2,久しぶり。元気？,久しぶり。元気？ (Close Home),too casual,too casual
-registerRadar,rr_084,c,3,時下ますますご清栄のこととお慶び申し上げます。,時下ますますご清栄のこととお慶び申し上げます。 (I would like to thank you for your continued patronage.),too stiff,too stiff
-registerRadar,rr_085,a,1,ありがとうございました。続いて佐藤さん、お願いします。,"ありがとうございました。続いて佐藤さん、お願いします。 (Thank you very much. Mr. Sato, please.)",best fit,best fit
-registerRadar,rr_085,b,2,はい、次。,"はい、次。 (Yes, next.)",too blunt,too blunt
-registerRadar,rr_085,c,3,御発表、無量の感謝。次席を御招き申し上げる。,御発表、無量の感謝。次席を御招き申し上げる。 (Thank you for your presentation. We invite you to the next seat.),too stiff,too stiff
-registerRadar,rr_086,a,1,おもちゃ、箱に戻しておいて。,"おもちゃ、箱に戻しておいて。 (Back to toys, boxes.)",best fit,best fit
-registerRadar,rr_086,b,2,玩具を元の位置に収納せよ。,玩具を元の位置に収納せよ。 (Store the toys in the original position.),too stiff,too stiff
-registerRadar,rr_086,c,3,片づけろボケ。,片づけろボケ。 (),too rude,too rude
-registerRadar,rr_087,a,1,ありがとうございます。,ありがとうございます。 (Thank you.),best fit,best fit
-registerRadar,rr_087,b,2,いただきますわ。,いただきますわ。 (),unnatural,unnatural
-registerRadar,rr_087,c,3,ちょうだい。,ちょうだい。 (Home),too casual,too casual
-registerRadar,rr_088,a,1,読んだよ。事例の話が刺さった。,読んだよ。事例の話が刺さった。 (Comment The story of the case was stinged.),best fit,best fit
-registerRadar,rr_088,b,2,拝読し、感涙にむせんでおります。,拝読し、感涙にむせんでおります。 (I read and feel tears.),too stiff,too stiff
-registerRadar,rr_088,c,3,つまらん。,つまらん。 (HOME),too rude,too rude
-registerRadar,rr_089,a,1,もう一度、内訳を分かりやすく説明していただけますか。,もう一度、内訳を分かりやすく説明していただけますか。 (Can you explain the breakdown again?),best fit,best fit
-registerRadar,rr_089,b,2,説明しろ。,説明しろ。 (Comment),too rude,too rude
-registerRadar,rr_089,c,3,御説明を重ねて賜りたく、惶恐謹言。,御説明を重ねて賜りたく、惶恐謹言。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_090,a,1,あの件、今日中だっけ？困ったら手伝うよ。,"あの件、今日中だっけ？困ったら手伝うよ。 (If you have any questions, please contact us.)",best fit,best fit
-registerRadar,rr_090,b,2,まだですか。早くしてください。,まだですか。早くしてください。 (Is it still? Contact Us),too blunt,too blunt
-registerRadar,rr_090,c,3,未完了の由、如何様に御処置なされますや。,未完了の由、如何様に御処置なされますや。 (Is it unfinished?),too indirect,too indirect
-registerRadar,rr_091,a,1,ご不便をおかけし申し訳ございません。状況を確認いたします。,ご不便をおかけし申し訳ございません。状況を確認いたします。 (We apologize for any inconvenience. We will confirm the situation.),best fit,best fit
-registerRadar,rr_091,b,2,そんなことないですけど。,そんなことないですけど。 (I don't know.),too blunt,too blunt
-registerRadar,rr_091,c,3,かしこまりました、畏まりました、左様でございます。,"かしこまりました、畏まりました、左様でございます。 (I was afraid, I was left.)",unnatural,unnatural
-registerRadar,rr_092,a,1,すみません、その点は資料の数値と食い違うように思います。,"すみません、その点は資料の数値と食い違うように思います。 (I don't know that, I think that it is different from the number of materials.)",best fit,best fit
-registerRadar,rr_092,b,2,先輩の説明、おかしくないですか。,先輩の説明、おかしくないですか。 (What is the explanation of seniors?),too blunt,too blunt
-registerRadar,rr_092,c,3,愚見ではございますが、小生、全然そう思わなくて。,"愚見ではございますが、小生、全然そう思わなくて。 (It is silly, but I do not think so at all.)",too stiff,too stiff
-registerRadar,rr_093,a,1,お二人のこれからの門出を祝して、乾杯！,"お二人のこれからの門出を祝して、乾杯！ (Celebrate the future of the two, toast!)",best fit,best fit
-registerRadar,rr_093,b,2,本日はおめでとうございます。結婚おめでとうございます。以上です。,本日はおめでとうございます。結婚おめでとうございます。以上です。 (Happy New Year! Happy New Year More),too stiff,too stiff
-registerRadar,rr_093,c,3,飲め。,飲め。 (Drink),too rude,too rude
-registerRadar,rr_094,a,1,ありがとうございます。,ありがとうございます。 (Thank you.),best fit,best fit
-registerRadar,rr_094,b,2,サンキュー。,サンキュー。 (サン),too casual,too casual
-registerRadar,rr_094,c,3,御苦労様でございました。,御苦労様でございました。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_095,a,1,航空券はこちらで手配して問題ないでしょうか。,航空券はこちらで手配して問題ないでしょうか。 (Is it possible to arrange a ticket here?),best fit,best fit
-registerRadar,rr_095,b,2,チケット自分で買うわ。,チケット自分で買うわ。 (Buy Tickets),too casual,too casual
-registerRadar,rr_095,c,3,航空券調達の御許可を賜りたく、謹言。,航空券調達の御許可を賜りたく、謹言。 (Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_096,a,1,来月から新しい会社で働くことになった。詳しくは後で話すね。,来月から新しい会社で働くことになった。詳しくは後で話すね。 (I came to work in a new company. Let’s talk later.),best fit,best fit
-registerRadar,rr_096,b,2,転職が決定いたしました。謹んでご報告申し上げます。,転職が決定いたしました。謹んでご報告申し上げます。 (We have decided to change jobs. Thank you for your understanding.),too stiff,too stiff
-registerRadar,rr_096,c,3,知るか。,知るか。 (How do you know?),too rude,too rude
-registerRadar,rr_097,a,1,現在、一部の機能に不具合が発生しております。,現在、一部の機能に不具合が発生しております。 (Some functions have been disabled.),best fit,best fit
-registerRadar,rr_097,b,2,アプリ、また壊れちゃいました。ごめんね。,アプリ、また壊れちゃいました。ごめんね。 (The app was broken. Comment),too casual,too casual
-registerRadar,rr_097,c,3,弊アプリ、凋落の憂き目に遭う由、謹告。,"弊アプリ、凋落の憂き目に遭う由、謹告。 (Our app, the reason and confession of the depression.)",unnatural,unnatural
-registerRadar,rr_098,a,1,すみません、今日はお酒は控えさせていただきます。ウーロン茶でお願いします。,"すみません、今日はお酒は控えさせていただきます。ウーロン茶でお願いします。 (Sorry, this entry is only available in Japanese. Oolong tea)",best fit,best fit
-registerRadar,rr_098,b,2,酒はいらん。茶。,酒はいらん。茶。 (Sake Tea),too blunt,too blunt
-registerRadar,rr_098,c,3,醇醪は謹んで辞退し、茶を賜りたく。,醇醪は謹んで辞退し、茶を賜りたく。 (We would like to thank you for your patronage.),too stiff,too stiff
-registerRadar,rr_099,a,1,写真を撮るのが好きです。カメラもよく持ち歩きます。,写真を撮るのが好きです。カメラもよく持ち歩きます。 (I like taking photos. The camera is also well carrying around.),best fit,best fit
-registerRadar,rr_099,b,2,写真かな。まあ色々。,写真かな。まあ色々。 (Photo Comment),too casual,too casual
-registerRadar,rr_099,c,3,小生、写真撮影に骨を折っておりまする。,小生、写真撮影に骨を折っておりまする。 (We have broken bones in children and children.),unnatural,unnatural
-registerRadar,rr_100,a,1,体調が優れないため、午後は休ませていただきます。急ぎの連絡はメールでください。,体調が優れないため、午後は休ませていただきます。急ぎの連絡はメールでください。 (Please rest in the afternoon because there is no good health. Please contact us by e-mail.),best fit,best fit
-registerRadar,rr_100,b,2,午後寝る。,午後寝る。 (sleeping),too casual,too casual
-registerRadar,rr_100,c,3,貴体不良につき、午睡を賜りたく。,貴体不良につき、午睡を賜りたく。 (Thank you for your understanding.),too stiff,too stiff
+particleForensics,pf_001,a,1,を,を (object marker),他動詞の対象。「読む」が届く先を示す。,Marks the direct object.
+particleForensics,pf_001,b,2,が,が (subject marker),「読む」の目的語に中性の「が」は付けない。,Marks the subject being identified.
+particleForensics,pf_001,c,3,に,に (destination/target marker),到達点や着く先ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_001,d,4,で,で (location/means marker),動作の場所でも手段でもない。,Marks location or means of an action.
+particleForensics,pf_002,a,1,を,を (object marker),移動の経路全体をまたぐ「を」ではない。,Marks the direct object.
+particleForensics,pf_002,b,2,へ,へ (direction),方向は言えるが「着く」の到達点より「に」が定番。,Check which particle fits the grammar and meaning.
+particleForensics,pf_002,c,3,に,に (destination/target marker),到達点・着く先。「駅に着く」が定型。,"Marks destination, target, or endpoint."
+particleForensics,pf_002,d,4,で,で (location/means marker),動作が行われる場所ではない。,Marks location or means of an action.
+particleForensics,pf_003,a,1,を,を (object marker),他動詞の対象ではない。,Marks the direct object.
+particleForensics,pf_003,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_003,c,3,に,に (destination/target marker),到達点ではなく「中で勉強する」場所の別表現になりにくい。,"Marks destination, target, or endpoint."
+particleForensics,pf_003,d,4,で,で (location/means marker),動作が行われる場所。「勉強するで」の場。,Marks location or means of an action.
+particleForensics,pf_004,a,1,を,を (object marker),他動詞の対象ではない。,Marks the direct object.
+particleForensics,pf_004,b,2,が,が (subject marker),自然現象の主語に付きやすい。「雨が降る」。,Marks the subject being identified.
+particleForensics,pf_004,c,3,に,に (destination/target marker),存在の場所「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_004,d,4,で,で (location/means marker),手段や原因の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_005,a,1,を,を (object marker),会う相手に「を」は付けない。,Marks the direct object.
+particleForensics,pf_005,b,2,が,が (subject marker),相手を主語にする「が」ではない。,Marks the subject being identified.
+particleForensics,pf_005,c,3,に,に (destination/target marker),会う相手・面会の相手。「会う」の相手は「に」。,"Marks destination, target, or endpoint."
+particleForensics,pf_005,d,4,で,で (location/means marker),集合の場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_006,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_006,b,2,が,が (subject marker),存在文で無生物主語の「が」もあるが、この定型では話題の「は」が自然。,Marks the subject being identified.
+particleForensics,pf_006,c,3,に,に (destination/target marker),時点の「に」ではなく、日程を取り上げる話題にしたい。,"Marks destination, target, or endpoint."
+particleForensics,pf_006,d,4,は,は (topic marker),話題を立てる「は」。「今日は…」で予定を述べる型。,Marks the topic or contrastive focus.
+particleForensics,pf_007,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_007,b,2,が,が (subject marker),描写の主語に見えるが、この説明の骨は人物を話題にする「は」。,Marks the subject being identified.
+particleForensics,pf_007,c,3,は,は (topic marker),人物について説明する話題。「部長は外出中」が受付の言い方として自然。,Marks the topic or contrastive focus.
+particleForensics,pf_007,d,4,で,で (location/means marker),手段や場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_008,a,1,を,を (object marker),経路全体の「を」ではない。,Marks the direct object.
+particleForensics,pf_008,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_008,c,3,に,に (destination/target marker),乗り物を「行く」の目標にする「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_008,d,4,で,で (location/means marker),移動の手段。「バスで行く」が定型。,Marks location or means of an action.
+particleForensics,pf_009,a,1,を,を (object marker),返信の定型は「メールに返信」が中心で「を」は不自然。,Marks the direct object.
+particleForensics,pf_009,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_009,c,3,に,に (destination/target marker),応答の届け先・返答の相手。「メールに返信する」。,"Marks destination, target, or endpoint."
+particleForensics,pf_009,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_010,a,1,を,を (object marker),入れる先ではなく動かすものは別に「砂糖を」。,Marks the direct object.
+particleForensics,pf_010,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_010,c,3,に,に (destination/target marker),入れる先・容れ物側の目標。「コーヒーに入れる」。,"Marks destination, target, or endpoint."
+particleForensics,pf_010,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_011,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_011,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_011,c,3,は,は (topic marker),項目を取り上げて質問する「は」。「お手洗いはどこですか」が定型。,Marks the topic or contrastive focus.
+particleForensics,pf_011,d,4,に,に (destination/target marker),存在の場「に」だけではこの疑問型になりにくい。,"Marks destination, target, or endpoint."
+particleForensics,pf_012,a,1,を,を (object marker),他動詞の対象。「開ける」の目的語。,Marks the direct object.
+particleForensics,pf_012,b,2,が,が (subject marker),開ける対象の「が」ではなく目的語型。,Marks the subject being identified.
+particleForensics,pf_012,c,3,に,に (destination/target marker),到達点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_012,d,4,で,で (location/means marker),場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_013,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_013,b,2,が,が (subject marker),属性叙述だけなら「が」もあるが、季節を取り上げて評価するなら「は」が自然。,Marks the subject being identified.
+particleForensics,pf_013,c,3,は,は (topic marker),季節を話題にして性質を述べる「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_013,d,4,に,に (destination/target marker),時点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_014,a,1,を,を (object marker),あげる相手に「を」は付けない。,Marks the direct object.
+particleForensics,pf_014,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_014,c,3,に,に (destination/target marker),付与の到達点。「あげる」相手は「に」。,"Marks destination, target, or endpoint."
+particleForensics,pf_014,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_015,a,1,を,を (object marker),評価の対象を目的語にする「を」ではない。,Marks the direct object.
+particleForensics,pf_015,b,2,が,が (subject marker),述語の主語に見える「が」もあるが、品を取り上げて評価するなら「は」。,Marks the subject being identified.
+particleForensics,pf_015,c,3,は,は (topic marker),品を話題にして味の評価を述べる「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_015,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_016,a,1,を,を (object marker),述語の連体修飾ではない。,Marks the direct object.
+particleForensics,pf_016,b,2,が,が (subject marker),中立叙述なら「が」もあるが、自己紹介で情報をまとめるなら「は」が定番。,Marks the subject being identified.
+particleForensics,pf_016,c,3,は,は (topic marker),自己紹介で属性を述べる話題の「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_016,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_017,a,1,を,を (object marker),存在の場所ではない。,Marks the direct object.
+particleForensics,pf_017,b,2,が,が (subject marker),存在の主体。「鳥がいる」の主語。,Marks the subject being identified.
+particleForensics,pf_017,c,3,は,は (topic marker),場所を話題にする「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_017,d,4,で,で (location/means marker),動作の場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_018,a,1,を,を (object marker),場所ではない。,Marks the direct object.
+particleForensics,pf_018,b,2,が,が (subject marker),存在する物の主語。「机がある」の主語。,Marks the subject being identified.
+particleForensics,pf_018,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_018,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_019,a,1,を,を (object marker),経路の「を」ではない。,Marks the direct object.
+particleForensics,pf_019,b,2,が,が (subject marker),施設を主語にする「が」もあるが、場所をまず決めるなら「に」が自然。,Marks the subject being identified.
+particleForensics,pf_019,c,3,は,は (topic marker),存在の場所。「ある」の場所は「に」。,Marks the topic or contrastive focus.
+particleForensics,pf_019,d,4,に,に (destination/target marker),話題の「は」だけではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_020,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_020,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_020,c,3,に,に (destination/target marker),到達点だけでなく「店内で買う」場のイメージなら「で」。,"Marks destination, target, or endpoint."
+particleForensics,pf_020,d,4,で,で (location/means marker),動作が行われた場所。「買い物するで」の場。,Marks location or means of an action.
+particleForensics,pf_021,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_021,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_021,c,3,に,に (destination/target marker),目標の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_021,d,4,で,で (location/means marker),理由・原因。「病気で休む」が自然。,Marks location or means of an action.
+particleForensics,pf_022,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_022,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_022,c,3,に,に (destination/target marker),時刻の点。「九時に」が定型。,"Marks destination, target, or endpoint."
+particleForensics,pf_022,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_023,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_023,b,2,が,が (subject marker),「花がきれい」の主語は「が」だが、季節を取り上げる枠は「は」。,Marks the subject being identified.
+particleForensics,pf_023,c,3,は,は (topic marker),季節を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_023,d,4,に,に (destination/target marker),時点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_024,a,1,を,を (object marker),他動詞の対象ではない。,Marks the direct object.
+particleForensics,pf_024,b,2,が,が (subject marker),出来事の主語。「宿題が終わる」。,Marks the subject being identified.
+particleForensics,pf_024,c,3,は,は (topic marker),話題の「は」も言えるが、この無題描写では「が」が自然。,Marks the topic or contrastive focus.
+particleForensics,pf_024,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_025,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_025,b,2,が,が (subject marker),属性の主語は「が」だが、人物を取り上げてから述べるなら「は」。,Marks the subject being identified.
+particleForensics,pf_025,c,3,は,は (topic marker),人物を話題にして特性を述べる「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_025,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_026,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_026,b,2,が,が (subject marker),能力の対象「サッカー」に「が」が付くが、文頭は弟を取り上げる「は」。,Marks the subject being identified.
+particleForensics,pf_026,c,3,は,は (topic marker),人物を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_026,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_027,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_027,b,2,が,が (subject marker),商品を主語にする「が」もあるが、店を先に取り上げるなら「は」。,Marks the subject being identified.
+particleForensics,pf_027,c,3,は,は (topic marker),店を話題にして評価する「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_027,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_028,a,1,を,を (object marker),疑問の焦点ではない。,Marks the direct object.
+particleForensics,pf_028,b,2,が,が (subject marker),能力を持つ主語を問う「が」。「だれができるか」。,Marks the subject being identified.
+particleForensics,pf_028,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_028,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_029,a,1,を,を (object marker),目的語を問う「何を」もあるが、「何がしたい」で望みの対象を問う。,Marks the direct object.
+particleForensics,pf_029,b,2,が,が (subject marker),希望の対象を示す「が」。「～がしたい」。,Marks the subject being identified.
+particleForensics,pf_029,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_029,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_030,a,1,を,を (object marker),他動詞の「飲む」なら「水を」だが、希望表現は対象に「が」。,Marks the direct object.
+particleForensics,pf_030,b,2,が,が (subject marker),希望の対象。「水が飲みたい」。,Marks the subject being identified.
+particleForensics,pf_030,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_030,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_031,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_031,b,2,が,が (subject marker),属性の主語。「部屋が静か」。,Marks the subject being identified.
+particleForensics,pf_031,c,3,は,は (topic marker),対比でなければ描写に「は」もあるが、状態描写は「が」が無難。,Marks the topic or contrastive focus.
+particleForensics,pf_031,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_032,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_032,b,2,が,が (subject marker),出来事の主語。「先生が来た」。,Marks the subject being identified.
+particleForensics,pf_032,c,3,は,は (topic marker),すでに話題なら「は」もあるが、ニュースの初出は「が」。,Marks the topic or contrastive focus.
+particleForensics,pf_032,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_033,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_033,b,2,が,が (subject marker),変化の主体。「息子がなる」。,Marks the subject being identified.
+particleForensics,pf_033,c,3,は,は (topic marker),対比の「は」もあるが、結果報告は「が」で中立。,Marks the topic or contrastive focus.
+particleForensics,pf_033,d,4,に,に (destination/target marker),結果の「に」は「医者になる」自体には付かない。,"Marks destination, target, or endpoint."
+particleForensics,pf_034,a,1,を,を (object marker),移動が表面を横切る「を」。「木を登る」型。,Marks the direct object.
+particleForensics,pf_034,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_034,c,3,に,に (destination/target marker),到達点の「に」だけではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_034,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_035,a,1,を,を (object marker),経路・表面をまたぐ「を」。「橋を渡る」。,Marks the direct object.
+particleForensics,pf_035,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_035,c,3,に,に (destination/target marker),橋の上を「到達点」だけに見ない。,"Marks destination, target, or endpoint."
+particleForensics,pf_035,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_036,a,1,を,を (object marker),曲がる地点をまたぐ「を」。「角を曲がる」。,Marks the direct object.
+particleForensics,pf_036,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_036,c,3,に,に (destination/target marker),角を目標にする「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_036,d,4,で,で (location/means marker),場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_037,a,1,を,を (object marker),信号を目印に動作が止まる「を」。,Marks the direct object.
+particleForensics,pf_037,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_037,c,3,に,に (destination/target marker),信号に「着く」わけではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_037,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_038,a,1,を,を (object marker),前を通過する「を」。「前を通る」。,Marks the direct object.
+particleForensics,pf_038,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_038,c,3,に,に (destination/target marker),到達点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_038,d,4,で,で (location/means marker),場所限定の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_039,a,1,を,を (object marker),公園を散歩の経路としてまたぐなら「を」もあるが、場内を歩くなら「で」。,Marks the direct object.
+particleForensics,pf_039,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_039,c,3,に,に (destination/target marker),到達点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_039,d,4,で,で (location/means marker),動作の場所。「公園で散歩」。,Marks location or means of an action.
+particleForensics,pf_040,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_040,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_040,c,3,と,と (and / with / quotation),同行者。「家族と行く」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_040,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_041,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_041,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_041,c,3,と,と (and / with / quotation),同伴の「と」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_041,d,4,で,で (location/means marker),場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_042,a,1,を,を (object marker),引用の範囲ではない。,Marks the direct object.
+particleForensics,pf_042,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_042,c,3,と,と (and / with / quotation),引用内容を示す「と」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_042,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_043,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_043,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_043,c,3,と,と (and / with / quotation),発話内容の引用「と」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_043,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_044,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_044,b,2,へ,へ (direction),移動の方向を柔らかく示す「へ」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_044,c,3,に,に (destination/target marker),到達点の「に」もあるが、願望の方向づけに「へ」がよく使われる。,"Marks destination, target, or endpoint."
+particleForensics,pf_044,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_045,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_045,b,2,へ,へ (direction),方向の「へ」もあるが、到達点として「会社に行く」が自然。,Check which particle fits the grammar and meaning.
+particleForensics,pf_045,c,3,に,に (destination/target marker),到達点・行き先。「会社に行く」。,"Marks destination, target, or endpoint."
+particleForensics,pf_045,d,4,で,で (location/means marker),手段の「で」は文末の「自転車で」。,Marks location or means of an action.
+particleForensics,pf_046,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_046,b,2,へ,へ (direction),向かう方向を示す「へ」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_046,c,3,に,に (destination/target marker),点の「に」より方向の「へ」が合う。,"Marks destination, target, or endpoint."
+particleForensics,pf_046,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_047,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_047,b,2,へ,へ (direction),「大阪へ」もあるが、着く先・滞在先を点で示すなら「に」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_047,c,3,に,に (destination/target marker),行き先・滞在先の点。「大阪に出張」。,"Marks destination, target, or endpoint."
+particleForensics,pf_047,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_048,a,1,を,を (object marker),経路の「を」ではない。,Marks the direct object.
+particleForensics,pf_048,b,2,へ,へ (direction),「家へ」も自然だが到達点として「家に帰る」が極めて多い。,Check which particle fits the grammar and meaning.
+particleForensics,pf_048,c,3,に,に (destination/target marker),帰る先の到達点。「家に帰る」。,"Marks destination, target, or endpoint."
+particleForensics,pf_048,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_049,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_049,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_049,c,3,から,から (from / since),開始時刻。「八時から」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_049,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_050,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_050,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_050,c,3,まで,まで (until),終了までの範囲「五時まで続く」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_050,d,4,で,で (location/means marker),動作の単純な場所の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_051,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_051,b,2,が,が (subject marker),「駅が近い」もあるが、起点との距離なら「駅から」。,Marks the subject being identified.
+particleForensics,pf_051,c,3,から,から (from / since),距離・程度の起点「から」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_051,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_052,a,1,を,を (object marker),経路の「を」ではない。,Marks the direct object.
+particleForensics,pf_052,b,2,から,から (from / since),起点。「空港から町まで」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_052,c,3,に,に (destination/target marker),到達点だけの「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_052,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_053,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_053,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_053,c,3,から,から (from / since),時間の幅の始まり「から」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_053,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_054,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_054,b,2,が,が (subject marker),属性の主語「が」もあるが、品を取り上げるなら「は」。,Marks the subject being identified.
+particleForensics,pf_054,c,3,は,は (topic marker),品を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_054,d,4,より,より (More),比較基準の「より」ではない。,Check which particle fits the grammar and meaning.
+particleForensics,pf_055,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_055,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_055,c,3,は,は (topic marker),比較の基準を取り上げる「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_055,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_056,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_056,b,2,が,が (subject marker),比較される側の主語に「が」もあるが、人物を立てるなら「は」。,Marks the subject being identified.
+particleForensics,pf_056,c,3,は,は (topic marker),比較の一方を提示する「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_056,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_057,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_057,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_057,c,3,は,は (topic marker),比較される側を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_057,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_058,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_058,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_058,c,3,は,は (topic marker),比較の一方を話題にする「は」。「昨日は今日ほど～ない」。,Marks the topic or contrastive focus.
+particleForensics,pf_058,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_059,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_059,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_059,c,3,は,は (topic marker),時間帯を話題にし、あとで「も」を付けて追加「朝は晩も」。,Marks the topic or contrastive focus.
+particleForensics,pf_059,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_060,a,1,を,を (object marker),否定の対象を範囲づけ「水を飲まない」もあるが、全面否定なら「も」。,Marks the direct object.
+particleForensics,pf_060,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_060,c,3,は,は (topic marker),全面否定「水も飲まない」。,Marks the topic or contrastive focus.
+particleForensics,pf_060,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_061,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_061,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_061,c,3,は,は (topic marker),限定。「休みだけ」。,Marks the topic or contrastive focus.
+particleForensics,pf_061,d,4,だけ,だけ (Only),話題の「は」もあるが、限定副詞的に「だけ」が核。,Check which particle fits the grammar and meaning.
+particleForensics,pf_062,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_062,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_062,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_062,d,4,で,で (location/means marker),値段で買える「百円で」。,Marks location or means of an action.
+particleForensics,pf_063,a,1,を,を (object marker),対象の「を」ではなく否定と「しか」のセットが前提。,Marks the direct object.
+particleForensics,pf_063,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_063,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_063,d,4,しか,しか (Home),部分否定の「しか～ない」型のマーカー。,Check which particle fits the grammar and meaning.
+particleForensics,pf_064,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_064,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_064,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_064,d,4,の,の (possessor / noun modifier),固有名を修飾する「の」。「大阪の駅」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_065,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_065,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_065,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_065,d,4,の,の (possessor / noun modifier),固有名の修飾「東京の大学」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_066,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_066,b,2,が,が (subject marker),来た主語は「が」だが、同格の友だちを示すのは「の」。,Marks the subject being identified.
+particleForensics,pf_066,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_066,d,4,の,の (possessor / noun modifier),同格・説明の「友だちの田中さん」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_067,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_067,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_067,c,3,は,は (topic marker),「母はケーキは」に重なりづらい。,Marks the topic or contrastive focus.
+particleForensics,pf_067,d,4,の,の (possessor / noun modifier),所有・属性の「母のケーキ」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_068,a,1,を,を (object marker),経路全体の「を」ではない。,Marks the direct object.
+particleForensics,pf_068,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_068,c,3,に,に (destination/target marker),乗り物を目標にしない。,"Marks destination, target, or endpoint."
+particleForensics,pf_068,d,4,で,で (location/means marker),手段「電車で」。,Marks location or means of an action.
+particleForensics,pf_069,a,1,を,を (object marker),食べる対象ではない。,Marks the direct object.
+particleForensics,pf_069,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_069,c,3,に,に (destination/target marker),到達点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_069,d,4,で,で (location/means marker),道具手段「箸で」。,Marks location or means of an action.
+particleForensics,pf_070,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_070,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_070,c,3,に,に (destination/target marker),必要物を付ける「に」。,"Marks destination, target, or endpoint."
+particleForensics,pf_070,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_071,a,1,を,を (object marker),書く内容の「を」ではない。,Marks the direct object.
+particleForensics,pf_071,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_071,c,3,に,に (destination/target marker),書き付ける表面「黒板に」。,"Marks destination, target, or endpoint."
+particleForensics,pf_071,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_072,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_072,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_072,c,3,に,に (destination/target marker),目標の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_072,d,4,で,で (location/means marker),様態・理由がちの「急いで」。,Marks location or means of an action.
+particleForensics,pf_073,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_073,b,2,が,が (subject marker),試験がある主語は「が」だが、日取りを先に置くなら「に」。,Marks the subject being identified.
+particleForensics,pf_073,c,3,に,に (destination/target marker),日付の点「明日に」。,"Marks destination, target, or endpoint."
+particleForensics,pf_073,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_074,a,1,を,を (object marker),「問題をわかる」ではなく焦点を「問題」に。,Marks the direct object.
+particleForensics,pf_074,b,2,が,が (subject marker),理解の対象に見える「が」。「問題がわからない」。,Marks the subject being identified.
+particleForensics,pf_074,c,3,は,は (topic marker),話題の「は」もあるが、無題の困りごとは「が」。,Marks the topic or contrastive focus.
+particleForensics,pf_074,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_075,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_075,b,2,が,が (subject marker),不足するものの主語。「お金が足りない」。,Marks the subject being identified.
+particleForensics,pf_075,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_075,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_076,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_076,b,2,が,が (subject marker),「駅が近い」もあるが、話題に駅を立てるなら「は」。,Marks the subject being identified.
+particleForensics,pf_076,c,3,は,は (topic marker),基準を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_076,d,4,に,に (destination/target marker),存在場所の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_077,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_077,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_077,c,3,は,は (topic marker),話題対比「コーヒーは」。主語の私は「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_077,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_078,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_078,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_078,c,3,は,は (topic marker),比較の一方を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_078,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_079,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_079,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_079,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_079,d,4,で,で (location/means marker),動作の場所「ここで」。,Marks location or means of an action.
+particleForensics,pf_080,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_080,b,2,が,が (subject marker),同一視の主語「が」もあるが、指し示しの話題なら「は」。,Marks the subject being identified.
+particleForensics,pf_080,c,3,は,は (topic marker),指し示した対象を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_080,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_081,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_081,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_081,c,3,は,は (topic marker),時間の枠を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_081,d,4,に,に (destination/target marker),点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_082,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_082,b,2,が,が (subject marker),歌の属性は「が」だが、人物を立てるなら「は」。,Marks the subject being identified.
+particleForensics,pf_082,c,3,は,は (topic marker),人物を話題にする「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_082,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_083,a,1,を,を (object marker),他動詞の目的語ではない。,Marks the direct object.
+particleForensics,pf_083,b,2,が,が (subject marker),出来事の主語。「電車が遅れる」。,Marks the subject being identified.
+particleForensics,pf_083,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_083,d,4,に,に (destination/target marker),到着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_084,a,1,を,を (object marker),移動の経路の「を」ではない。,Marks the direct object.
+particleForensics,pf_084,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_084,c,3,に,に (destination/target marker),到達点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_084,d,4,で,で (location/means marker),活動の場所「海で」。,Marks location or means of an action.
+particleForensics,pf_085,a,1,を,を (object marker),店を待つ対象に「を」は付けない。,Marks the direct object.
+particleForensics,pf_085,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_085,c,3,に,に (destination/target marker),店を目標にする「に」もあるが、店内で待つなら「で」。,"Marks destination, target, or endpoint."
+particleForensics,pf_085,d,4,で,で (location/means marker),待合の舞台「喫茶店で」。,Marks location or means of an action.
+particleForensics,pf_086,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_086,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_086,c,3,は,は (topic marker),時間枠を話題に「週末は」。,Marks the topic or contrastive focus.
+particleForensics,pf_086,d,4,に,に (destination/target marker),点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_087,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_087,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_087,c,3,は,は (topic marker),店を取り上げてから評価「店はすしが」。,Marks the topic or contrastive focus.
+particleForensics,pf_087,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_088,a,1,を,を (object marker),座る表面をまたぐ「を」も「ベンチに座る」型が基本。,Marks the direct object.
+particleForensics,pf_088,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_088,c,3,に,に (destination/target marker),着座の点「ベンチに座る」。,"Marks destination, target, or endpoint."
+particleForensics,pf_088,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_089,a,1,を,を (object marker),書く内容の「を」ではない。,Marks the direct object.
+particleForensics,pf_089,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_089,c,3,に,に (destination/target marker),書き付ける表面「封筒に」。,"Marks destination, target, or endpoint."
+particleForensics,pf_089,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_090,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_090,b,2,が,が (subject marker),信号の状態の主語「信号が青」。,Marks the subject being identified.
+particleForensics,pf_090,c,3,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_090,d,4,で,で (location/means marker),原因の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_091,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_091,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_091,c,3,と,と (and / with / quotation),発話内容の引用「と」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_091,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_092,a,1,を,を (object marker),建物を離れる移動の「家を出る」。,Marks the direct object.
+particleForensics,pf_092,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_092,c,3,に,に (destination/target marker),到着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_092,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_093,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_093,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_093,c,3,は,は (topic marker),自己同一・話題の提示「こちらは」。,Marks the topic or contrastive focus.
+particleForensics,pf_093,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_094,a,1,を,を (object marker),経路の「を」ではない。,Marks the direct object.
+particleForensics,pf_094,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_094,c,3,から,から (from / since),区間の起点「空港から」。,Check which particle fits the grammar and meaning.
+particleForensics,pf_094,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_095,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_095,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_095,c,3,は,は (topic marker),時間帯を話題に「夕方は」。,Marks the topic or contrastive focus.
+particleForensics,pf_095,d,4,に,に (destination/target marker),点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_096,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_096,b,2,が,が (subject marker),「試験が終わる」の主語。「試験が終わってから」。,Marks the subject being identified.
+particleForensics,pf_096,c,3,は,は (topic marker),話題の「は」ではない。,Marks the topic or contrastive focus.
+particleForensics,pf_096,d,4,で,で (location/means marker),手段の「で」ではない。,Marks location or means of an action.
+particleForensics,pf_097,a,1,を,を (object marker),館全体を経路の「を」ではない。,Marks the direct object.
+particleForensics,pf_097,b,2,が,が (subject marker),主語ではない。,Marks the subject being identified.
+particleForensics,pf_097,c,3,に,に (destination/target marker),単なる到達点だけなら「に」もあるが、館内で鑑賞するなら「で」。,"Marks destination, target, or endpoint."
+particleForensics,pf_097,d,4,で,で (location/means marker),鑑賞という動作の場「映画館で」。,Marks location or means of an action.
+particleForensics,pf_098,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_098,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_098,c,3,は,は (topic marker),人物を話題にして状況を述べる「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_098,d,4,に,に (destination/target marker),着点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_099,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_099,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_099,c,3,は,は (topic marker),町を取り上げ、過去と対比「町は昔は」。,Marks the topic or contrastive focus.
+particleForensics,pf_099,d,4,に,に (destination/target marker),点の「に」ではない。,"Marks destination, target, or endpoint."
+particleForensics,pf_100,a,1,を,を (object marker),目的語ではない。,Marks the direct object.
+particleForensics,pf_100,b,2,が,が (subject marker),主語の「が」ではない。,Marks the subject being identified.
+particleForensics,pf_100,c,3,は,は (topic marker),停留所を話題にして位置関係を述べる「は」。,Marks the topic or contrastive focus.
+particleForensics,pf_100,d,4,に,に (destination/target marker),存在場所の「に」だけではこの説明に合わない。,"Marks destination, target, or endpoint."
+registerRadar,rr_001,a,1,よろしく,よろしく (),too casual,Does not match the required tone for this context.
+registerRadar,rr_001,b,2,よろしくお願いいたします,よろしくお願いいたします (Thank you),best fit,Best fit for the social context and tone.
+registerRadar,rr_001,c,3,よろピー,よろピー (),too casual,Does not match the required tone for this context.
+registerRadar,rr_002,a,1,週末はご旅行なさいましたか,週末はご旅行なさいましたか (Have you traveled on weekends?),too stiff,Does not match the required tone for this context.
+registerRadar,rr_002,b,2,週末、どこ行ったの？,週末、どこ行ったの？ (Where did you go?),best fit,Best fit for the social context and tone.
+registerRadar,rr_002,c,3,週末、いかがでございましたか,週末、いかがでございましたか (How about the weekend?),too stiff,Does not match the required tone for this context.
+registerRadar,rr_003,a,1,これ、いくら？,これ、いくら？ (How much?),too casual,Does not match the required tone for this context.
+registerRadar,rr_003,b,2,こちらはいくらでしょうか,こちらはいくらでしょうか (How much is this?),best fit,Best fit for the social context and tone.
+registerRadar,rr_003,c,3,これ、幾らだ,これ、幾らだ (ら),too rude,Does not match the required tone for this context.
+registerRadar,rr_004,a,1,読んでください,読んでください (Read),best fit,Does not match the required tone for this context.
+registerRadar,rr_004,b,2,読んでくれ,読んでくれ (Read),too rude,Best fit for the social context and tone.
+registerRadar,rr_004,c,3,読んでいただけませんでしょうか,読んでいただけませんでしょうか (Can I read?),too stiff,Does not match the required tone for this context.
+registerRadar,rr_005,a,1,事件が起きちゃった,事件が起きちゃった (The incident occurred),too casual,Does not match the required tone for this context.
+registerRadar,rr_005,b,2,事件が発生した,事件が発生した (The incident occurred),best fit,Best fit for the social context and tone.
+registerRadar,rr_005,c,3,事件、ヤバいって,事件、ヤバいって (Case),too casual,Does not match the required tone for this context.
+registerRadar,rr_006,a,1,遅れてすみません,遅れてすみません (No delay),best fit,Does not match the required tone for this context.
+registerRadar,rr_006,b,2,遅れたわ,遅れたわ (late),too casual,Best fit for the social context and tone.
+registerRadar,rr_006,c,3,お待たせいたしました,お待たせいたしました (Thank you for your understanding.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_007,a,1,もう終わったよ,もう終わったよ (It's over),too casual,Does not match the required tone for this context.
+registerRadar,rr_007,b,2,やっと終わった,やっと終わった (Finally finished),too casual,Best fit for the social context and tone.
+registerRadar,rr_007,c,3,終わらせていただきました,終わらせていただきました (Thank you for your understanding.),best fit,Does not match the required tone for this context.
+registerRadar,rr_008,a,1,テレビ、うるせえから下げろ,"テレビ、うるせえから下げろ (TV, hustle down)",too rude,Does not match the required tone for this context.
+registerRadar,rr_008,b,2,テレビ、少し小さくしていただけませんか,テレビ、少し小さくしていただけませんか (Is it possible to make the TV a little smaller?),best fit,Best fit for the social context and tone.
+registerRadar,rr_008,c,3,テレビ、小さくしてくれん？,テレビ、小さくしてくれん？ (Do you have a TV?),too casual,Does not match the required tone for this context.
+registerRadar,rr_009,a,1,資料、後で送っていただけますでしょうか,資料、後で送っていただけますでしょうか (Can you send materials later?),too stiff,Does not match the required tone for this context.
+registerRadar,rr_009,b,2,資料、あとで送ってくれる？,資料、あとで送ってくれる？ (How can I send materials?),best fit,Best fit for the social context and tone.
+registerRadar,rr_009,c,3,資料をお送り願い申し上げます,資料をお送り願い申し上げます (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_010,a,1,もしもし、どうも,もしもし、どうも (If),too casual,Does not match the required tone for this context.
+registerRadar,rr_010,b,2,お電話ありがとうございます、△△でございます,お電話ありがとうございます、△△でございます (Thank you for calling us.),best fit,Best fit for the social context and tone.
+registerRadar,rr_010,c,3,はい、誰ですか,はい、誰ですか (Who is),too rude,Does not match the required tone for this context.
+registerRadar,rr_011,a,1,走んなよマジで,走んなよマジで (),too casual,Does not match the required tone for this context.
+registerRadar,rr_011,b,2,ホームでは走らないでください,ホームでは走らないでください (Do not run at home),best fit,Best fit for the social context and tone.
+registerRadar,rr_011,c,3,走っちゃダメだよ,走っちゃダメだよ (I'm running),too casual,Does not match the required tone for this context.
+registerRadar,rr_012,a,1,本日の議題は以上でございました,"本日の議題は以上でございました (Sorry, this entry is only available in 日本語.)",too stiff,Does not match the required tone for this context.
+registerRadar,rr_012,b,2,まあ、そんな感じっすね,"まあ、そんな感じっすね (Well, I feel that)",best fit,Best fit for the social context and tone.
+registerRadar,rr_012,c,3,拙者、もう帰るでござる,拙者、もう帰るでござる (I'll go back),unnatural,Does not match the required tone for this context.
+registerRadar,rr_013,a,1,ちょっと腹痛いっす,ちょっと腹痛いっす (A bit painful),too casual,Does not match the required tone for this context.
+registerRadar,rr_013,b,2,お腹が痛いです,お腹が痛いです (Painful stomach),best fit,Best fit for the social context and tone.
+registerRadar,rr_013,c,3,腹痛か,腹痛か (pain),too blunt,Does not match the required tone for this context.
+registerRadar,rr_014,a,1,撮るなよマジで,撮るなよマジで (),too rude,Does not match the required tone for this context.
+registerRadar,rr_014,b,2,撮影はご遠慮ください,撮影はご遠慮ください (Please do not take photos.),best fit,Best fit for the social context and tone.
+registerRadar,rr_014,c,3,写真ダメだってば,写真ダメだってば (写真),too casual,Does not match the required tone for this context.
+registerRadar,rr_015,a,1,すみません,すみません (Not Included),best fit,Does not match the required tone for this context.
+registerRadar,rr_015,b,2,おおきに,おおきに (Close),unnatural,Best fit for the social context and tone.
+registerRadar,rr_015,c,3,やめてください,やめてください (Please stop),unnatural,Does not match the required tone for this context.
+registerRadar,rr_016,a,1,これ見て。,これ見て。 (See this.),too casual,Does not match the required tone for this context.
+registerRadar,rr_016,b,2,こちらをご確認いただけますでしょうか。,こちらをご確認いただけますでしょうか。 (Please check here.),best fit,Best fit for the social context and tone.
+registerRadar,rr_016,c,3,これ見ろ。,これ見ろ。 (Look at it.),too rude,Does not match the required tone for this context.
+registerRadar,rr_017,a,1,その日は予定があって無理。ごめん。また誘って。,"その日は予定があって無理。ごめん。また誘って。 (Sorry, this entry is only available in 日本語. Home Also invite)",best fit,Does not match the required tone for this context.
+registerRadar,rr_017,b,2,参加は謹んでお辞びいたします。,"参加は謹んでお辞びいたします。 (Sorry, this entry is only available in Japanese.)",too stiff,Best fit for the social context and tone.
+registerRadar,rr_017,c,3,行かねえ。,行かねえ。 (Contact Us),too blunt,Does not match the required tone for this context.
+registerRadar,rr_018,a,1,昨日のメール、ミスってました。すんません。,昨日のメール、ミスってました。すんません。 (Thank you for your understanding. Comment),too casual,Does not match the required tone for this context.
+registerRadar,rr_018,b,2,送付いたしました資料に誤りがございました。深くお詫び申し上げます。,送付いたしました資料に誤りがございました。深くお詫び申し上げます。 (There was an error in the material sent. We apologize for any inconvenience.),best fit,Best fit for the social context and tone.
+registerRadar,rr_018,c,3,弊社に落ち度あり。重ねてお詫び申し上げまする。,弊社に落ち度あり。重ねてお詫び申し上げまする。 (Our company is calm. We apologize for the inconvenience.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_019,a,1,それ持ってこい。,それ持ってこい。 (I have it.),too rude,Does not match the required tone for this context.
+registerRadar,rr_019,b,2,こちらを試着室にお願いできますか。,こちらを試着室にお願いできますか。 (Can I ask for a workshop?),best fit,Best fit for the social context and tone.
+registerRadar,rr_019,c,3,ついでにお願い,ついでにお願い (Contact Us),too casual,Does not match the required tone for this context.
+registerRadar,rr_020,a,1,すみません、ちょっと詰めてもらえますか。,すみません、ちょっと詰めてもらえますか。 (Is it possible to pack it?),best fit,Does not match the required tone for this context.
+registerRadar,rr_020,b,2,恐れ入ります、少々お詰めいただけますでしょうか。,恐れ入ります、少々お詰めいただけますでしょうか。 (Is it possible to pack it a little?),too stiff,Best fit for the social context and tone.
+registerRadar,rr_020,c,3,どけ。,どけ。 (Home),too rude,Does not match the required tone for this context.
+registerRadar,rr_021,a,1,締切、今日の17時ですよね。お忘れなく。,締切、今日の17時ですよね。お忘れなく。 (The deadline is 17:00 today. Don't forget.),too blunt,Does not match the required tone for this context.
+registerRadar,rr_021,b,2,もしお時間よろしければ、本日17時が締切でございますので共有のみです。,"もしお時間よろしければ、本日17時が締切でございますので共有のみです。 (If you want to spend time, we will close at 17:00 today.)",best fit,Best fit for the social context and tone.
+registerRadar,rr_021,c,3,締切が迫っておりますので何卒ご高配のほどお願い申し上げます。,締切が迫っておりますので何卒ご高配のほどお願い申し上げます。 (Thank you for your understanding.),too indirect,Does not match the required tone for this context.
+registerRadar,rr_022,a,1,3ページ目、会社名が一文字違うよ。直せる？,3ページ目、会社名が一文字違うよ。直せる？ (The third page and company name are different. Can I fix it?),best fit,Does not match the required tone for this context.
+registerRadar,rr_022,b,2,御社の表記が誤っておりました。至急修正を。,御社の表記が誤っておりました。至急修正を。 (Your company has been incorrect. Quick fixes.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_022,c,3,ちゃんと見ろよ。,ちゃんと見ろよ。 (I see it.),too rude,Does not match the required tone for this context.
+registerRadar,rr_023,a,1,用件をお伺いしてもよろしいでしょうか。,用件をお伺いしてもよろしいでしょうか。 (Do you have any questions?),best fit,Does not match the required tone for this context.
+registerRadar,rr_023,b,2,何の用。,何の用。 (。),too blunt,Best fit for the social context and tone.
+registerRadar,rr_023,c,3,どちらさまいらっしゃいますか、御用でございますか。,どちらさまいらっしゃいますか、御用でございますか。 (What kind of dishes are available?),too stiff,Does not match the required tone for this context.
+registerRadar,rr_024,a,1,ちょっと小さくしてくれる？,ちょっと小さくしてくれる？ (Is it small?),best fit,Does not match the required tone for this context.
+registerRadar,rr_024,b,2,お父様、音量をお下げいただけますでしょうか。,お父様、音量をお下げいただけますでしょうか。 (Can you lower your volume?),too stiff,Best fit for the social context and tone.
+registerRadar,rr_024,c,3,うるせえ、黙れ。,うるせえ、黙れ。 (Moisturizing and Silent),too rude,Does not match the required tone for this context.
+registerRadar,rr_025,a,1,はい、どうぞ。,はい、どうぞ。 (Yes.),best fit,Does not match the required tone for this context.
+registerRadar,rr_025,b,2,ご査収くださいませ。,ご査収くださいませ。 (Contact Us),too stiff,Best fit for the social context and tone.
+registerRadar,rr_025,c,3,ほれ。,ほれ。 (Home),too rude,Does not match the required tone for this context.
+registerRadar,rr_026,a,1,ご飯、おかわりください。,ご飯、おかわりください。 (Thank you for your understanding.),best fit,Does not match the required tone for this context.
+registerRadar,rr_026,b,2,飯、もっと。,"飯、もっと。 (Rice, More)",too casual,Best fit for the social context and tone.
+registerRadar,rr_026,c,3,おひつをお持ちいただきたく存じます。,おひつをお持ちいただきたく存じます。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_027,a,1,それでは発表に移らせていただきます。,"それでは発表に移らせていただきます。 (Then, we will move to the presentation.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_027,b,2,じゃ、やるわ。,じゃ、やるわ。 (),too casual,Best fit for the social context and tone.
+registerRadar,rr_027,c,3,発表を開始いたします。ご静聴賜りますようお願い申し上げます。,発表を開始いたします。ご静聴賜りますようお願い申し上げます。 (Announcement Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_028,a,1,とりあえず次回までに各自ドラフトを送る。,とりあえず次回までに各自ドラフトを送る。 (Send your drafts to the next time.),best fit,Does not match the required tone for this context.
+registerRadar,rr_028,b,2,各位、至急草案を提出されたし。,各位、至急草案を提出されたし。 (Submitted to the top and fastest drafts.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_028,c,3,みんな適当にね。,みんな適当にね。 (Everyone is suitable.),too casual,Does not match the required tone for this context.
+registerRadar,rr_029,a,1,本日はお集まりいただきありがとうございます。乾杯。,本日はお集まりいただきありがとうございます。乾杯。 (Thank you for your understanding. Toast.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_029,b,2,はじめまして。では、乾杯！,はじめまして。では、乾杯！ (Contact Us Toast!),best fit,Best fit for the social context and tone.
+registerRadar,rr_029,c,3,よっ、飲むぞ。,よっ、飲むぞ。 (),too casual,Does not match the required tone for this context.
+registerRadar,rr_030,a,1,お飲み物でございます。,お飲み物でございます。 (Drink),too stiff,Does not match the required tone for this context.
+registerRadar,rr_030,b,2,どうぞお飲みください。,どうぞお飲みください。 (Please drink.),best fit,Best fit for the social context and tone.
+registerRadar,rr_030,c,3,はい、どうぞ。,はい、どうぞ。 (Yes.),too casual,Does not match the required tone for this context.
+registerRadar,rr_031,a,1,読ませてくれてありがとう。助かった。,読ませてくれてありがとう。助かった。 (Thank you for reading. Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_031,b,2,拝借し甚だ恐縮に存じます。,拝借し甚だ恐縮に存じます。 (I know that it is a拝ible.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_031,c,3,返すわ。,返すわ。 (HOME),too blunt,Does not match the required tone for this context.
+registerRadar,rr_032,a,1,ではまた。,ではまた。 (Others),too casual,Does not match the required tone for this context.
+registerRadar,rr_032,b,2,ご検討のほど、何卒よろしくお願いいたします。,ご検討のほど、何卒よろしくお願いいたします。 (Thank you for your understanding.),best fit,Best fit for the social context and tone.
+registerRadar,rr_032,c,3,御高配賜りますよう切にお願い申し上げ候。,御高配賜りますよう切にお願い申し上げ候。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_033,a,1,すみません、ありがとうございます。,すみません、ありがとうございます。 (Thank you for your understanding.),best fit,Does not match the required tone for this context.
+registerRadar,rr_033,b,2,感謝感激雨あられ。,感謝感激雨あられ。 (Thank you very much.),unnatural,Best fit for the social context and tone.
+registerRadar,rr_033,c,3,どうも。,どうも。 (Comment),too casual,Does not match the required tone for this context.
+registerRadar,rr_034,a,1,悪いけど30分だけ手伝ってくれない？明日おごる。,悪いけど30分だけ手伝ってくれない？明日おごる。 (Don’t help me for 30 minutes?),best fit,Does not match the required tone for this context.
+registerRadar,rr_034,b,2,至急残業をお願いしたく存じます。,至急残業をお願いしたく存じます。 (We do not want to ask for a sudden overtime.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_034,c,3,残れ。,残れ。 (Close),too rude,Does not match the required tone for this context.
+registerRadar,rr_035,a,1,朝食は何時からですか。,朝食は何時からですか。 (What time is breakfast?),best fit,Does not match the required tone for this context.
+registerRadar,rr_035,b,2,飯、いつから？,飯、いつから？ (What is rice?),too casual,Best fit for the social context and tone.
+registerRadar,rr_035,c,3,朝食のお時間を賜りたく存じます。,朝食のお時間を賜りたく存じます。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_036,a,1,書いて。,書いて。 (Comment),too rude,Does not match the required tone for this context.
+registerRadar,rr_036,b,2,こちらに記入をお願いできますか。,こちらに記入をお願いできますか。 (Can I fill in this form?),best fit,Best fit for the social context and tone.
+registerRadar,rr_036,c,3,記帳を賜りたく,記帳を賜りたく (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_037,a,1,今度の土日、キャンプ行かない？場所は後で送る。,今度の土日、キャンプ行かない？場所は後で送る。 (Do not go camping on Saturdays and Sundays?),best fit,Does not match the required tone for this context.
+registerRadar,rr_037,b,2,キャンプにご同行賜りたく候。,キャンプにご同行賜りたく候。 (Thank you for visiting our camp.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_037,c,3,お前ら来い。,お前ら来い。 (You are here),too rude,Does not match the required tone for this context.
+registerRadar,rr_038,a,1,△△社からこの日程での納品を希望されています。どう対応しましょうか。,△△社からこの日程での納品を希望されています。どう対応しましょうか。 (△△We would like to deliver this time. How do you respond?),best fit,Does not match the required tone for this context.
+registerRadar,rr_038,b,2,あいつらまた無茶言ってきた。,あいつらまた無茶言ってきた。 (I've been saying a little more.),too casual,Best fit for the social context and tone.
+registerRadar,rr_038,c,3,恐れ入りますが御社のご意向はいかがなさいまして。,"恐れ入りますが御社のご意向はいかがなさいまして。 (Sorry, this entry is only available in Japanese.)",too indirect,Does not match the required tone for this context.
+registerRadar,rr_039,a,1,締切についてご相談がありメールいたしました。,締切についてご相談がありメールいたしました。 (Thank you for your understanding.),best fit,Does not match the required tone for this context.
+registerRadar,rr_039,b,2,先生、ちょっといいっすか。,先生、ちょっといいっすか。 (It's a little better.),too casual,Best fit for the social context and tone.
+registerRadar,rr_039,c,3,拝啓　時下ますますご清祥のこととお慶び申し上げます。,拝啓　時下ますますご清祥のこととお慶び申し上げます。 (I would like to express my gra  to you.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_040,a,1,袋は結構です。,袋は結構です。 (The bag is fine.),best fit,Does not match the required tone for this context.
+registerRadar,rr_040,b,2,袋いらん。,袋いらん。 (),too casual,Best fit for the social context and tone.
+registerRadar,rr_040,c,3,袋は賜りません。,袋は賜りません。 (Thank you for your understanding.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_041,a,1,面白いけど、予算の根拠もう一歩欲しいかも。,"面白いけど、予算の根拠もう一歩欲しいかも。 (It’s interesting, but you might want to take a step further.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_041,b,2,お考えの趣旨は理解いたしますが、財務面の裏付けをご提示賜れますでしょうか。,"お考えの趣旨は理解いたしますが、財務面の裏付けをご提示賜れますでしょうか。 (We understand the purpose of thinking, but will you give us your financial support?)",too stiff,Best fit for the social context and tone.
+registerRadar,rr_041,c,3,ダメだこれ。,ダメだこれ。 (),too rude,Does not match the required tone for this context.
+registerRadar,rr_042,a,1,遅れます。すみません。,遅れます。すみません。 (Close Not included.),too casual,Does not match the required tone for this context.
+registerRadar,rr_042,b,2,大変申し訳ございません。10分ほど遅刻いたします。,大変申し訳ございません。10分ほど遅刻いたします。 (Thank you for your understanding. 10 minutes),best fit,Best fit for the social context and tone.
+registerRadar,rr_042,c,3,恐泣蒙り候。少々遅参の由。,恐泣蒙り候。少々遅参の由。 (Crying. A little late),unnatural,Does not match the required tone for this context.
+registerRadar,rr_043,a,1,出ます。よろしくお願いします。,出ます。よろしくお願いします。 (Contact Us Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_043,b,2,出るっす。,出るっす。 (Contact Us),too casual,Best fit for the social context and tone.
+registerRadar,rr_043,c,3,出場の栄に浴す所存。,出場の栄に浴す所存。 (We will have a bathing experience.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_044,a,1,ただいま外出中はお電話くださいませ。,ただいま外出中はお電話くださいませ。 (Please call us now.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_044,b,2,折り返しご連絡いただければ幸いです。,折り返しご連絡いただければ幸いです。 (Thank you for your understanding.),best fit,Best fit for the social context and tone.
+registerRadar,rr_044,c,3,かけ直せ。,かけ直せ。 (Contact Us),too rude,Does not match the required tone for this context.
+registerRadar,rr_045,a,1,すみません、少し倒してもいいですか。,すみません、少し倒してもいいですか。 (Can I defeat a little?),best fit,Does not match the required tone for this context.
+registerRadar,rr_045,b,2,倒すぞ。,倒すぞ。 (Contact Us),too rude,Best fit for the social context and tone.
+registerRadar,rr_045,c,3,愚息のシートを後方へ移動させていただきたく。,愚息のシートを後方へ移動させていただきたく。 (I would like to make a sheet ofシートishness backward.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_046,a,1,ついて行っていいですか。,ついて行っていいですか。 (Contact Us),too casual,Does not match the required tone for this context.
+registerRadar,rr_046,b,2,可能であれば、来週の出張に同行させていただけないでしょうか。,"可能であれば、来週の出張に同行させていただけないでしょうか。 (If possible, will you be able to attend next week's business trip?)",best fit,Best fit for the social context and tone.
+registerRadar,rr_046,c,3,同行を御承認くださいますよう伏してお願い申し上げます。,同行を御承認くださいますよう伏してお願い申し上げます。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_047,a,1,どうぞ、あがって。,どうぞ、あがって。 (Contact Us),best fit,Does not match the required tone for this context.
+registerRadar,rr_047,b,2,お入りくださいませませ。,お入りくださいませませ。 (Contact Us),unnatural,Best fit for the social context and tone.
+registerRadar,rr_047,c,3,入れ。,入れ。 (Contact Us),too rude,Does not match the required tone for this context.
+registerRadar,rr_048,a,1,仕事の都合で役員は難しいです。すみません。,仕事の都合で役員は難しいです。すみません。 (Officers are difficult for work. Not included.),best fit,Does not match the required tone for this context.
+registerRadar,rr_048,b,2,御役は辞退させていただきます。,御役は辞退させていただきます。 (We will resign.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_048,c,3,やらねえ。,やらねえ。 (Home),too rude,Does not match the required tone for this context.
+registerRadar,rr_049,a,1,パソコンがつきません。確認お願いします。,パソコンがつきません。確認お願いします。 (There is no computer. Please confirm.),best fit,Does not match the required tone for this context.
+registerRadar,rr_049,b,2,死んだ。早く来い。,死んだ。早く来い。 (dead. Contact Us),too rude,Best fit for the social context and tone.
+registerRadar,rr_049,c,3,端末の起動が叶わず、御助言乞う。,端末の起動が叶わず、御助言乞う。 (Please be advised if the device is launched.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_050,a,1,会議室、いけます。,会議室、いけます。 (Meeting Room),too casual,Does not match the required tone for this context.
+registerRadar,rr_050,b,2,応接の準備が整いました。,応接の準備が整いました。 (Preparing for reception),best fit,Best fit for the social context and tone.
+registerRadar,rr_050,c,3,お部屋、設え完了でございまする。,お部屋、設え完了でございまする。 (The room is complete.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_051,a,1,今夜までに資料をお送りいただけますでしょうか。,今夜までに資料をお送りいただけますでしょうか。 (Can you send me a document by night?),best fit,Does not match the required tone for this context.
+registerRadar,rr_051,b,2,今夜までに資料くれ。急ぎ。,今夜までに資料くれ。急ぎ。 (We will inform you by the night. Close),too rude,Best fit for the social context and tone.
+registerRadar,rr_051,c,3,資料を賜りたく存じますがよろしいか。,資料を賜りたく存じますがよろしいか。 (Thank you for your understanding.),too indirect,Does not match the required tone for this context.
+registerRadar,rr_052,a,1,ありがとうございます。,ありがとうございます。 (Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_052,b,2,サンキューな。,サンキューな。 (サン),too casual,Best fit for the social context and tone.
+registerRadar,rr_052,c,3,厚く御礼申し上げます。,厚く御礼申し上げます。 (Thank you very much.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_053,a,1,今日の昼、一緒に行かない？,今日の昼、一緒に行かない？ (Do not go with us?),best fit,Does not match the required tone for this context.
+registerRadar,rr_053,b,2,昼食のご同行をお誘い申し上げます。,昼食のご同行をお誘い申し上げます。 (We would like to invite you to join us.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_053,c,3,飯行け。,飯行け。 (Restaurant),too rude,Does not match the required tone for this context.
+registerRadar,rr_054,a,1,共用廊下の照明が一つ切れているようです。,共用廊下の照明が一つ切れているようです。 (It seems that the lighting of the common corridor is broken.),best fit,Does not match the required tone for this context.
+registerRadar,rr_054,b,2,電球死んでる。,電球死んでる。 (The bulb is dead.),too casual,Best fit for the social context and tone.
+registerRadar,rr_054,c,3,照明が炎を絶たれたり。,照明が炎を絶たれたり。 (ion stops flame.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_055,a,1,ご指摘ありがとうございます。修正して再提出いたします。,ご指摘ありがとうございます。修正して再提出いたします。 (Thank you for your understanding. We will resubmit it.),best fit,Does not match the required tone for this context.
+registerRadar,rr_055,b,2,了解。直す。,了解。直す。 (),too casual,Best fit for the social context and tone.
+registerRadar,rr_055,c,3,御教示、涙なくんばあり難し。,御教示、涙なくんばあり難し。 (It is difficult to teach.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_056,a,1,参加は2名です。よろしくお願いします。,参加は2名です。よろしくお願いします。 (2 people Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_056,b,2,2人っす。,2人っす。 (2 people),too casual,Best fit for the social context and tone.
+registerRadar,rr_056,c,3,参加者二名にて参列の旨、謹んでご報告申し上げる。,参加者二名にて参列の旨、謹んでご報告申し上げる。 (We would like to thank you for your cooperation.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_057,a,1,さっきの、もう一回言ってくれる？,さっきの、もう一回言ってくれる？ (What’s new?),best fit,Does not match the required tone for this context.
+registerRadar,rr_057,b,2,再説を乞う。,再説を乞う。 (Re .),too stiff,Best fit for the social context and tone.
+registerRadar,rr_057,c,3,聞けよ。,聞けよ。 (Contact Us),too rude,Does not match the required tone for this context.
+registerRadar,rr_058,a,1,お電話ありがとうございます。どのような件でしょうか。,お電話ありがとうございます。どのような件でしょうか。 (Thank you for contacting us. What is the case?),best fit,Does not match the required tone for this context.
+registerRadar,rr_058,b,2,はい、クレームですか。,"はい、クレームですか。 (Yes, is it?)",too blunt,Best fit for the social context and tone.
+registerRadar,rr_058,c,3,恐惶謹言、頂戴つかまつる。,恐惶謹言、頂戴つかまつる。 (),unnatural,Does not match the required tone for this context.
+registerRadar,rr_059,a,1,マジ助かった。ありがとう。,マジ助かった。ありがとう。 (It was really helpful. ありがとう),best fit,Does not match the required tone for this context.
+registerRadar,rr_059,b,2,御助力に痛感激に堪えません。,御助力に痛感激に堪えません。 (I can't endure the pain in your help.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_059,c,3,当然だろ。,当然だろ。 (Of course.),too rude,Does not match the required tone for this context.
+registerRadar,rr_060,a,1,5年2組の田中の父です。よろしくお願いします。,5年2組の田中の父です。よろしくお願いします。 (My father of Tanaka in five years. Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_060,b,2,俺、田中。,"俺、田中。 (。, Tanaka)",too casual,Best fit for the social context and tone.
+registerRadar,rr_060,c,3,小生、田中と申します。,小生、田中と申します。 (It is close to Kosei and Tanaka.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_061,a,1,ただいま席を外しております。,"ただいま席を外しております。 (Sorry, this entry is only available in Japanese.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_061,b,2,いねえよ。,いねえよ。 (Comment),too rude,Best fit for the social context and tone.
+registerRadar,rr_061,c,3,御不在でございますなり。,御不在でございますなり。 ({{ data.meta.length formatted }}),unnatural,Does not match the required tone for this context.
+registerRadar,rr_062,a,1,ごちそうさま。おいしかった。,ごちそうさま。おいしかった。 (Home It was delicious.),best fit,Does not match the required tone for this context.
+registerRadar,rr_062,b,2,拙宴に預かり恐悦至極に存じます。,拙宴に預かり恐悦至極に存じます。 (I will stay in my feast.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_062,c,3,まあまあ。,まあまあ。 (Close),too blunt,Does not match the required tone for this context.
+registerRadar,rr_063,a,1,すみません、エレベーターはどちらですか。,すみません、エレベーターはどちらですか。 (What is the elevator?),best fit,Does not match the required tone for this context.
+registerRadar,rr_063,b,2,エレベーターどこ。,エレベーターどこ。 (Elevator),too blunt,Best fit for the social context and tone.
+registerRadar,rr_063,c,3,昇降機の所在を賜りたく。,昇降機の所在を賜りたく。 (Thank you for your continued support.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_064,a,1,可能であれば部長様にも同席いただけますと幸いです。,"可能であれば部長様にも同席いただけますと幸いです。 (If possible, it is hope that you can sit with the manager.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_064,b,2,部長呼べ。,部長呼べ。 (Director),too rude,Best fit for the social context and tone.
+registerRadar,rr_064,c,3,部長殿御同席の儀、伏して懇願。,部長殿御同席の儀、伏して懇願。 (The ceremonial ceremony of the head office.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_065,a,1,左から来てる、カバーして！,"左から来てる、カバーして！ (Come from the left, cover!)",best fit,Does not match the required tone for this context.
+registerRadar,rr_065,b,2,援護をお願いしたく存じます。,援護をお願いしたく存じます。 (Thank you for your understanding.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_065,c,3,てめえ動け。,てめえ動け。 (Contact Us),too rude,Does not match the required tone for this context.
+registerRadar,rr_066,a,1,キャリアの方向性を考え、転職を決めました。,キャリアの方向性を考え、転職を決めました。 (I decided to change my career.),best fit,Does not match the required tone for this context.
+registerRadar,rr_066,b,2,上司がウザくて。,上司がウザくて。 (The boss is ザed.),too casual,Best fit for the social context and tone.
+registerRadar,rr_066,c,3,前職にて所業を修め、茲に侍り候。,前職にて所業を修め、茲に侍り候。 (The samurai weather in the former job.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_067,a,1,搬送中に破損が判明しました。至急先方へ連絡が必要です。,搬送中に破損が判明しました。至急先方へ連絡が必要です。 (Breakage was found during transport. Contact Us),best fit,Does not match the required tone for this context.
+registerRadar,rr_067,b,2,壊しちゃった。どうしよ。,壊しちゃった。どうしよ。 (I was broken. 。),too casual,Best fit for the social context and tone.
+registerRadar,rr_067,c,3,品、破壊の由、慙愧の極み。,"品、破壊の由、慙愧の極み。 (The extreme of the product, the reason of destruction, and the earth.)",unnatural,Does not match the required tone for this context.
+registerRadar,rr_068,a,1,では次の議題に移ります。,では次の議題に移ります。 (will move to the following agenda:),best fit,Does not match the required tone for this context.
+registerRadar,rr_068,b,2,次いくぞ。,次いくぞ。 (Next),too casual,Best fit for the social context and tone.
+registerRadar,rr_068,c,3,議題を繰り進めさせていただく次第にござります。,議題を繰り進めさせていただく次第にござります。 (We will proceed as soon as we proceed.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_069,a,1,家庭の都合で週末の回数を減らせていただきたいのですが。,家庭の都合で週末の回数を減らせていただきたいのですが。 (I would like to reduce the number of weekends for my family.),best fit,Does not match the required tone for this context.
+registerRadar,rr_069,b,2,週末は出ねえ。,週末は出ねえ。 (Weekends),too rude,Best fit for the social context and tone.
+registerRadar,rr_069,c,3,御店の勤怠、週末を御免蒙りたく。,御店の勤怠、週末を御免蒙りたく。 (We are looking forward to your visit.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_070,a,1,申し訳ないのですが、1時間遅れてもよろしいでしょうか。,"申し訳ないのですが、1時間遅れてもよろしいでしょうか。 (Sorry, this entry is only available in Japanese.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_070,b,2,1時間遅れ。,1時間遅れ。 (1 hour behind.),too blunt,Best fit for the social context and tone.
+registerRadar,rr_070,c,3,到着の刻限を遅延せしめたく。,到着の刻限を遅延せしめたく。 (Don't delay the arrival time.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_071,a,1,名簿、午前中に送ってもらえる？忘れそうなら教えて。,名簿、午前中に送ってもらえる？忘れそうなら教えて。 (Can you send me in the morning?),best fit,Does not match the required tone for this context.
+registerRadar,rr_071,b,2,名簿、至急提出を。,名簿、至急提出を。 (Register and submit quickly.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_071,c,3,名簿、今すぐ。,名簿、今すぐ。 (Book Now),too rude,Does not match the required tone for this context.
+registerRadar,rr_072,a,1,すみません、この欄はどう書けばよいでしょうか。,すみません、この欄はどう書けばよいでしょうか。 (I don't know how to write this field.),best fit,Does not match the required tone for this context.
+registerRadar,rr_072,b,2,ここ、意味わかんない。,ここ、意味わかんない。 (This is meaningless.),too casual,Best fit for the social context and tone.
+registerRadar,rr_072,c,3,本欄の御記入方法、御教示願い奉る。,"本欄の御記入方法、御教示願い奉る。 (How to fill in this field, please do it.)",too stiff,Does not match the required tone for this context.
+registerRadar,rr_073,a,1,お役職はマーケティング部長でいらっしゃいますか。,お役職はマーケティング部長でいらっしゃいますか。 (I am a marketing manager.),best fit,Does not match the required tone for this context.
+registerRadar,rr_073,b,2,あんた部長？,あんた部長？ (General Manager),too rude,Best fit for the social context and tone.
+registerRadar,rr_073,c,3,御身分はいかがなされまするや。,御身分はいかがなされまするや。 (How do you make your own?),unnatural,Does not match the required tone for this context.
+registerRadar,rr_074,a,1,すみません、注文したものまだでしょうか。,すみません、注文したものまだでしょうか。 (I'm not sure what I ordered.),best fit,Does not match the required tone for this context.
+registerRadar,rr_074,b,2,まだかよ。,まだかよ。 (。),too rude,Best fit for the social context and tone.
+registerRadar,rr_074,c,3,献立の到着が遅延しておりまする。,献立の到着が遅延しておりまする。 (Delayed arrival),too stiff,Does not match the required tone for this context.
+registerRadar,rr_075,a,1,昨日はありがとう！大事に使うね。,昨日はありがとう！大事に使うね。 (Thank you for yesterday!),best fit,Does not match the required tone for this context.
+registerRadar,rr_075,b,2,厚き御礼、言語道断。,厚き御礼、言語道断。 (),too stiff,Best fit for the social context and tone.
+registerRadar,rr_075,c,3,もらった。,もらった。 (Comment),too blunt,Does not match the required tone for this context.
+registerRadar,rr_076,a,1,△△社の佐藤と申します。3時に△△様とお約束しております。,△△社の佐藤と申します。3時に△△様とお約束しております。 (△△It is a company Sato. We promise to you at 3 o'clock.),best fit,Does not match the required tone for this context.
+registerRadar,rr_076,b,2,佐藤だ。呼んで。,佐藤だ。呼んで。 (HOME Contact Us),too rude,Best fit for the social context and tone.
+registerRadar,rr_076,c,3,小生、面会の約、御座りまする。,小生、面会の約、御座りまする。 (I will sit for the first time.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_077,a,1,めっちゃ分かりやすかったよ。お疲れ。,めっちゃ分かりやすかったよ。お疲れ。 (It was very easy to understand. Tired),best fit,Does not match the required tone for this context.
+registerRadar,rr_077,b,2,御発表、誠に畏れ入りました。,御発表、誠に畏れ入りました。 (Thank you for your understanding.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_077,c,3,つまんね。,つまんね。 (Comment),too rude,Does not match the required tone for this context.
+registerRadar,rr_078,a,1,確認が不足しておりました。申し訳ございません。,確認が不足しておりました。申し訳ございません。 (There was a lack of confirmation. We are sorry.),best fit,Does not match the required tone for this context.
+registerRadar,rr_078,b,2,すみませんでしたー。,すみませんでしたー。 (I didn't know.),too casual,Best fit for the social context and tone.
+registerRadar,rr_078,c,3,小生、罪該死に付き、土下座の意,小生、罪該死に付き、土下座の意 (Involved in sinners and sinners),unnatural,Does not match the required tone for this context.
+registerRadar,rr_079,a,1,夜遅くの洗濯の音が少し響くようなので、できれば時間をずらしていただけますか。,夜遅くの洗濯の音が少し響くようなので、できれば時間をずらしていただけますか。 (It seems that the sound of washing will sound a little late at night.),best fit,Does not match the required tone for this context.
+registerRadar,rr_079,b,2,うるせえんだよ。,うるせえんだよ。 (),too rude,Best fit for the social context and tone.
+registerRadar,rr_079,c,3,洗濯機、御使用は明朝まで御猶予賜りたく。,洗濯機、御使用は明朝まで御猶予賜りたく。 (Thank you for using the washing machine.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_080,a,1,家庭の事情により当日は参加が難しいです。ご承認いただけますと幸いです。,家庭の事情により当日は参加が難しいです。ご承認いただけますと幸いです。 (It is difficult to participate on the day due to family circumstances. Thank you for your understanding.),best fit,Does not match the required tone for this context.
+registerRadar,rr_080,b,2,行けません。,行けません。 (Contact Us),too blunt,Best fit for the social context and tone.
+registerRadar,rr_080,c,3,欠席をお許し賜わりたく、謹みて伺いを立てる。,欠席をお許し賜わりたく、謹みて伺いを立てる。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_081,a,1,視点が新しくて勉強になりました。,視点が新しくて勉強になりました。 (The viewpoint was renewed and studied.),best fit,Does not match the required tone for this context.
+registerRadar,rr_081,b,2,やるじゃん。,やるじゃん。 (Comment),too casual,Best fit for the social context and tone.
+registerRadar,rr_081,c,3,感銘、胸を打たれることこの上なし。,"感銘、胸を打たれることこの上なし。 (Feeling, 胸king the chest.)",too stiff,Does not match the required tone for this context.
+registerRadar,rr_082,a,1,今日は仕事で疲れたから、家でゆっくりしたい。また今度行こ。,"今日は仕事で疲れたから、家でゆっくりしたい。また今度行こ。 (I want to relax at home because I was tired at work today. Also, I will do this.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_082,b,2,外出は謹んで辞退いたします。,外出は謹んで辞退いたします。 (We will resign from outside.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_082,c,3,うるせえ、黙れ。,うるせえ、黙れ。 (Moisturizing and Silent),too rude,Does not match the required tone for this context.
+registerRadar,rr_083,a,1,来月から週3日に変更していただくことは可能でしょうか。,来月から週3日に変更していただくことは可能でしょうか。 (Is it possible to change to 3 days next week?),best fit,Does not match the required tone for this context.
+registerRadar,rr_083,b,2,週3でいい？,週3でいい？ (Week 3),too casual,Best fit for the social context and tone.
+registerRadar,rr_083,c,3,勤務密度を逓減せしめたく候。,勤務密度を逓減せしめたく候。 (Reduced working density.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_084,a,1,ご無沙汰しております。お変わりございませんでしょうか。,ご無沙汰しております。お変わりございませんでしょうか。 (Thank you for your understanding. We are sorry.),best fit,Does not match the required tone for this context.
+registerRadar,rr_084,b,2,久しぶり。元気？,久しぶり。元気？ (Close Home),too casual,Best fit for the social context and tone.
+registerRadar,rr_084,c,3,時下ますますご清栄のこととお慶び申し上げます。,時下ますますご清栄のこととお慶び申し上げます。 (I would like to thank you for your continued patronage.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_085,a,1,ありがとうございました。続いて佐藤さん、お願いします。,"ありがとうございました。続いて佐藤さん、お願いします。 (Thank you very much. Mr. Sato, please.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_085,b,2,はい、次。,"はい、次。 (Yes, next.)",too blunt,Best fit for the social context and tone.
+registerRadar,rr_085,c,3,御発表、無量の感謝。次席を御招き申し上げる。,御発表、無量の感謝。次席を御招き申し上げる。 (Thank you for your presentation. We invite you to the next seat.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_086,a,1,おもちゃ、箱に戻しておいて。,"おもちゃ、箱に戻しておいて。 (Back to toys, boxes.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_086,b,2,玩具を元の位置に収納せよ。,玩具を元の位置に収納せよ。 (Store the toys in the original position.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_086,c,3,片づけろボケ。,片づけろボケ。 (),too rude,Does not match the required tone for this context.
+registerRadar,rr_087,a,1,ありがとうございます。,ありがとうございます。 (Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_087,b,2,いただきますわ。,いただきますわ。 (),unnatural,Best fit for the social context and tone.
+registerRadar,rr_087,c,3,ちょうだい。,ちょうだい。 (Home),too casual,Does not match the required tone for this context.
+registerRadar,rr_088,a,1,読んだよ。事例の話が刺さった。,読んだよ。事例の話が刺さった。 (Comment The story of the case was stinged.),best fit,Does not match the required tone for this context.
+registerRadar,rr_088,b,2,拝読し、感涙にむせんでおります。,拝読し、感涙にむせんでおります。 (I read and feel tears.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_088,c,3,つまらん。,つまらん。 (HOME),too rude,Does not match the required tone for this context.
+registerRadar,rr_089,a,1,もう一度、内訳を分かりやすく説明していただけますか。,もう一度、内訳を分かりやすく説明していただけますか。 (Can you explain the breakdown again?),best fit,Does not match the required tone for this context.
+registerRadar,rr_089,b,2,説明しろ。,説明しろ。 (Comment),too rude,Best fit for the social context and tone.
+registerRadar,rr_089,c,3,御説明を重ねて賜りたく、惶恐謹言。,御説明を重ねて賜りたく、惶恐謹言。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_090,a,1,あの件、今日中だっけ？困ったら手伝うよ。,"あの件、今日中だっけ？困ったら手伝うよ。 (If you have any questions, please contact us.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_090,b,2,まだですか。早くしてください。,まだですか。早くしてください。 (Is it still? Contact Us),too blunt,Best fit for the social context and tone.
+registerRadar,rr_090,c,3,未完了の由、如何様に御処置なされますや。,未完了の由、如何様に御処置なされますや。 (Is it unfinished?),too indirect,Does not match the required tone for this context.
+registerRadar,rr_091,a,1,ご不便をおかけし申し訳ございません。状況を確認いたします。,ご不便をおかけし申し訳ございません。状況を確認いたします。 (We apologize for any inconvenience. We will confirm the situation.),best fit,Does not match the required tone for this context.
+registerRadar,rr_091,b,2,そんなことないですけど。,そんなことないですけど。 (I don't know.),too blunt,Best fit for the social context and tone.
+registerRadar,rr_091,c,3,かしこまりました、畏まりました、左様でございます。,"かしこまりました、畏まりました、左様でございます。 (I was afraid, I was left.)",unnatural,Does not match the required tone for this context.
+registerRadar,rr_092,a,1,すみません、その点は資料の数値と食い違うように思います。,"すみません、その点は資料の数値と食い違うように思います。 (I don't know that, I think that it is different from the number of materials.)",best fit,Does not match the required tone for this context.
+registerRadar,rr_092,b,2,先輩の説明、おかしくないですか。,先輩の説明、おかしくないですか。 (What is the explanation of seniors?),too blunt,Best fit for the social context and tone.
+registerRadar,rr_092,c,3,愚見ではございますが、小生、全然そう思わなくて。,"愚見ではございますが、小生、全然そう思わなくて。 (It is silly, but I do not think so at all.)",too stiff,Does not match the required tone for this context.
+registerRadar,rr_093,a,1,お二人のこれからの門出を祝して、乾杯！,"お二人のこれからの門出を祝して、乾杯！ (Celebrate the future of the two, toast!)",best fit,Does not match the required tone for this context.
+registerRadar,rr_093,b,2,本日はおめでとうございます。結婚おめでとうございます。以上です。,本日はおめでとうございます。結婚おめでとうございます。以上です。 (Happy New Year! Happy New Year More),too stiff,Best fit for the social context and tone.
+registerRadar,rr_093,c,3,飲め。,飲め。 (Drink),too rude,Does not match the required tone for this context.
+registerRadar,rr_094,a,1,ありがとうございます。,ありがとうございます。 (Thank you.),best fit,Does not match the required tone for this context.
+registerRadar,rr_094,b,2,サンキュー。,サンキュー。 (サン),too casual,Best fit for the social context and tone.
+registerRadar,rr_094,c,3,御苦労様でございました。,御苦労様でございました。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_095,a,1,航空券はこちらで手配して問題ないでしょうか。,航空券はこちらで手配して問題ないでしょうか。 (Is it possible to arrange a ticket here?),best fit,Does not match the required tone for this context.
+registerRadar,rr_095,b,2,チケット自分で買うわ。,チケット自分で買うわ。 (Buy Tickets),too casual,Best fit for the social context and tone.
+registerRadar,rr_095,c,3,航空券調達の御許可を賜りたく、謹言。,航空券調達の御許可を賜りたく、謹言。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_096,a,1,来月から新しい会社で働くことになった。詳しくは後で話すね。,来月から新しい会社で働くことになった。詳しくは後で話すね。 (I came to work in a new company. Let’s talk later.),best fit,Does not match the required tone for this context.
+registerRadar,rr_096,b,2,転職が決定いたしました。謹んでご報告申し上げます。,転職が決定いたしました。謹んでご報告申し上げます。 (We have decided to change jobs. Thank you for your understanding.),too stiff,Best fit for the social context and tone.
+registerRadar,rr_096,c,3,知るか。,知るか。 (How do you know?),too rude,Does not match the required tone for this context.
+registerRadar,rr_097,a,1,現在、一部の機能に不具合が発生しております。,現在、一部の機能に不具合が発生しております。 (Some functions have been disabled.),best fit,Does not match the required tone for this context.
+registerRadar,rr_097,b,2,アプリ、また壊れちゃいました。ごめんね。,アプリ、また壊れちゃいました。ごめんね。 (The app was broken. Comment),too casual,Best fit for the social context and tone.
+registerRadar,rr_097,c,3,弊アプリ、凋落の憂き目に遭う由、謹告。,"弊アプリ、凋落の憂き目に遭う由、謹告。 (Our app, the reason and confession of the depression.)",unnatural,Does not match the required tone for this context.
+registerRadar,rr_098,a,1,すみません、今日はお酒は控えさせていただきます。ウーロン茶でお願いします。,"すみません、今日はお酒は控えさせていただきます。ウーロン茶でお願いします。 (Sorry, this entry is only available in Japanese. Oolong tea)",best fit,Does not match the required tone for this context.
+registerRadar,rr_098,b,2,酒はいらん。茶。,酒はいらん。茶。 (Sake Tea),too blunt,Best fit for the social context and tone.
+registerRadar,rr_098,c,3,醇醪は謹んで辞退し、茶を賜りたく。,醇醪は謹んで辞退し、茶を賜りたく。 (We would like to thank you for your patronage.),too stiff,Does not match the required tone for this context.
+registerRadar,rr_099,a,1,写真を撮るのが好きです。カメラもよく持ち歩きます。,写真を撮るのが好きです。カメラもよく持ち歩きます。 (I like taking photos. The camera is also well carrying around.),best fit,Does not match the required tone for this context.
+registerRadar,rr_099,b,2,写真かな。まあ色々。,写真かな。まあ色々。 (Photo Comment),too casual,Best fit for the social context and tone.
+registerRadar,rr_099,c,3,小生、写真撮影に骨を折っておりまする。,小生、写真撮影に骨を折っておりまする。 (We have broken bones in children and children.),unnatural,Does not match the required tone for this context.
+registerRadar,rr_100,a,1,体調が優れないため、午後は休ませていただきます。急ぎの連絡はメールでください。,体調が優れないため、午後は休ませていただきます。急ぎの連絡はメールでください。 (Please rest in the afternoon because there is no good health. Please contact us by e-mail.),best fit,Does not match the required tone for this context.
+registerRadar,rr_100,b,2,午後寝る。,午後寝る。 (sleeping),too casual,Best fit for the social context and tone.
+registerRadar,rr_100,c,3,貴体不良につき、午睡を賜りたく。,貴体不良につき、午睡を賜りたく。 (Thank you for your understanding.),too stiff,Does not match the required tone for this context.
 transitivityDuel,td_001,a,1,風で窓が開いた。,風で窓が開いた。 (The window opened by the wind.),,
 transitivityDuel,td_001,b,2,風で窓を開けた。,風で窓を開けた。 (Opened the window by wind.),,
 transitivityDuel,td_001,c,3,窓が風を開いた。,窓が風を開いた。 (The window opens the wind.),,
