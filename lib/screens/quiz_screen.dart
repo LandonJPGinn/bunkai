@@ -31,6 +31,7 @@ class _QuizScreenState extends State<QuizScreen> {
   QuizEngine? _engine;
   final FocusNode _quizKeysFocus = FocusNode(debugLabel: 'QuizScreenKeys');
   bool _showFurigana = true;
+  bool _showEnglish = false;
 
   @override
   void initState() {
@@ -201,6 +202,7 @@ class _QuizScreenState extends State<QuizScreen> {
     final wasCorrect = engine.lastSubmittedCorrect;
 
     String? wrongChoiceLabel;
+    String? wrongChoiceLabelEnglish;
     if (locked &&
         wasCorrect == false &&
         selected != null &&
@@ -208,6 +210,7 @@ class _QuizScreenState extends State<QuizScreen> {
       for (final c in q.choices) {
         if (c.id == selected) {
           wrongChoiceLabel = c.label;
+          wrongChoiceLabelEnglish = c.labelEn;
           break;
         }
       }
@@ -228,11 +231,29 @@ class _QuizScreenState extends State<QuizScreen> {
         onPressed: () => Navigator.of(context).pop(),
       ),
       actions: [
-        Tooltip(
-          message: _showFurigana ? 'Hide furigana' : 'Show furigana',
-          child: Switch.adaptive(
-            value: _showFurigana,
-            onChanged: (v) => setState(() => _showFurigana = v),
+        Padding(
+          padding: const EdgeInsets.only(right: 4),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Tooltip(
+                message:
+                    _showFurigana ? 'Hide furigana' : 'Show furigana',
+                child: Switch.adaptive(
+                  value: _showFurigana,
+                  onChanged: (v) => setState(() => _showFurigana = v),
+                ),
+              ),
+              Tooltip(
+                message: _showEnglish
+                    ? 'Show Japanese cues'
+                    : 'Show English',
+                child: Switch.adaptive(
+                  value: _showEnglish,
+                  onChanged: (v) => setState(() => _showEnglish = v),
+                ),
+              ),
+            ],
           ),
         ),
       ],
@@ -276,6 +297,16 @@ class _QuizScreenState extends State<QuizScreen> {
               Expanded(
                 child: LayoutBuilder(
                   builder: (context, constraints) {
+                    final reduceMotion =
+                        MediaQuery.of(context).disableAnimations;
+                    final motionMedium = reduceMotion
+                        ? Duration.zero
+                        : tokens.motionMedium;
+                    final motionSlow = reduceMotion
+                        ? Duration.zero
+                        : tokens.motionSlow;
+                    final motionCurve = tokens.motionStandardCurve;
+                    final motionEmphasized = tokens.motionEmphasizedCurve;
                     return Align(
                       alignment: Alignment.topCenter,
                       child: ConstrainedBox(
@@ -289,7 +320,7 @@ class _QuizScreenState extends State<QuizScreen> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Expanded(
-                                flex: 42,
+                                flex: 46,
                                 child: LayoutBuilder(
                                   builder: (context, promptConstraints) {
                                     return SingleChildScrollView(
@@ -300,16 +331,22 @@ class _QuizScreenState extends State<QuizScreen> {
                                               promptConstraints.maxHeight,
                                         ),
                                         child: Column(
+                                          // Top-anchored so any height changes
+                                          // grow downward instead of recentering
+                                          // sibling content.
                                           mainAxisAlignment:
-                                              MainAxisAlignment.center,
+                                              MainAxisAlignment.start,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.stretch,
                                           children: [
                                             QuizPromptCard(
-                                              prompt: q.prompt,
                                               japanese: q.japanese,
+                                              promptEn: q.promptEn,
+                                              japaneseEn: q.japaneseEn,
                                               contextLine: q.context,
+                                              contextLineEn: q.contextEn,
                                               showFurigana: _showFurigana,
+                                              showEnglish: _showEnglish,
                                               watermarkKanji: topicStyle.kanji,
                                             ),
                                           ],
@@ -321,7 +358,7 @@ class _QuizScreenState extends State<QuizScreen> {
                               ),
                               const SizedBox(height: 22),
                               Expanded(
-                                flex: 58,
+                                flex: 54,
                                 child: LayoutBuilder(
                                   builder: (context, answerConstraints) {
                                     return SingleChildScrollView(
@@ -333,7 +370,7 @@ class _QuizScreenState extends State<QuizScreen> {
                                         ),
                                         child: Column(
                                           mainAxisAlignment:
-                                              MainAxisAlignment.center,
+                                              MainAxisAlignment.start,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.stretch,
                                           children: [
@@ -347,74 +384,111 @@ class _QuizScreenState extends State<QuizScreen> {
                                               lastSubmittedCorrect:
                                                   engine.lastSubmittedCorrect,
                                               showFurigana: _showFurigana,
+                                              showEnglish: _showEnglish,
                                               onChoiceSelected:
                                                   _onChoiceSelected,
                                             ),
-                                            if (locked) ...[
-                                              const SizedBox(height: 12),
-                                              _QuizFeedbackLiveBanner(
-                                                wasCorrect: wasCorrect,
+                                            // Live banner slot is always
+                                            // mounted and animated, so the
+                                            // submit/next button never jumps
+                                            // when the user locks an answer.
+                                            AnimatedSize(
+                                              duration: motionSlow,
+                                              curve: motionEmphasized,
+                                              alignment: Alignment.topCenter,
+                                              child: AnimatedSwitcher(
+                                                duration: motionSlow,
+                                                switchInCurve: motionCurve,
+                                                switchOutCurve: motionCurve,
+                                                transitionBuilder:
+                                                    (child, animation) =>
+                                                        FadeTransition(
+                                                  opacity: animation,
+                                                  child: child,
+                                                ),
+                                                child: locked
+                                                    ? Padding(
+                                                        key: const ValueKey<
+                                                            String>(
+                                                          'live-banner',
+                                                        ),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 12),
+                                                        child:
+                                                            _QuizFeedbackLiveBanner(
+                                                          wasCorrect:
+                                                              wasCorrect,
+                                                        ),
+                                                      )
+                                                    : const SizedBox(
+                                                        key: ValueKey<String>(
+                                                          'live-banner-empty',
+                                                        ),
+                                                        width: double.infinity,
+                                                      ),
                                               ),
-                                            ],
-                                            AnimatedSwitcher(
-                                              duration: const Duration(
-                                                milliseconds: 260,
-                                              ),
-                                              switchInCurve:
-                                                  Curves.easeOutCubic,
-                                              switchOutCurve:
-                                                  Curves.easeInCubic,
-                                              transitionBuilder:
-                                                  (child, animation) {
-                                                    return FadeTransition(
-                                                      opacity: animation,
-                                                      child: SlideTransition(
-                                                        position:
-                                                            Tween<Offset>(
-                                                              begin:
-                                                                  const Offset(
-                                                                    0,
-                                                                    0.035,
-                                                                  ),
-                                                              end: Offset.zero,
-                                                            ).animate(
-                                                              CurvedAnimation(
-                                                                parent:
-                                                                    animation,
-                                                                curve: Curves
-                                                                    .easeOutCubic,
-                                                              ),
-                                                            ),
-                                                        child: child,
+                                            ),
+                                            // AnimatedSize ensures the height
+                                            // delta tweens; the inner
+                                            // AnimatedSwitcher fades content.
+                                            AnimatedSize(
+                                              duration: motionSlow,
+                                              curve: motionEmphasized,
+                                              alignment: Alignment.topCenter,
+                                              child: AnimatedSwitcher(
+                                                duration: motionMedium,
+                                                switchInCurve: motionCurve,
+                                                switchOutCurve: motionCurve,
+                                                transitionBuilder:
+                                                    (child, animation) {
+                                                  return FadeTransition(
+                                                    opacity: animation,
+                                                    child: SlideTransition(
+                                                      position: Tween<Offset>(
+                                                        begin: const Offset(
+                                                            0, 0.035),
+                                                        end: Offset.zero,
+                                                      ).animate(
+                                                        CurvedAnimation(
+                                                          parent: animation,
+                                                          curve: motionCurve,
+                                                        ),
                                                       ),
-                                                    );
-                                                  },
-                                              child: locked
-                                                  ? Padding(
-                                                      key: ValueKey<int>(
-                                                        engine.currentIndex,
-                                                      ),
-                                                      padding:
-                                                          const EdgeInsets.only(
-                                                            top: 4,
-                                                          ),
-                                                      child:
-                                                          QuizLockedFeedbackContent(
-                                                            question: q,
-                                                            wrongChoiceLabel:
-                                                                wrongChoiceLabel,
-                                                            wasCorrect:
-                                                                wasCorrect,
-                                                            showFurigana:
-                                                                _showFurigana,
-                                                          ),
-                                                    )
-                                                  : const SizedBox(
-                                                      key: ValueKey<String>(
-                                                        'no-explanation',
-                                                      ),
-                                                      height: 0,
+                                                      child: child,
                                                     ),
+                                                  );
+                                                },
+                                                child: locked
+                                                    ? Padding(
+                                                        key: ValueKey<int>(
+                                                          engine.currentIndex,
+                                                        ),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 4),
+                                                        child:
+                                                            QuizLockedFeedbackContent(
+                                                          question: q,
+                                                          wrongChoiceLabel:
+                                                              wrongChoiceLabel,
+                                                          wrongChoiceLabelEnglish:
+                                                              wrongChoiceLabelEnglish,
+                                                          wasCorrect:
+                                                              wasCorrect,
+                                                          showFurigana:
+                                                              _showFurigana,
+                                                          showEnglish:
+                                                              _showEnglish,
+                                                        ),
+                                                      )
+                                                    : const SizedBox(
+                                                        key: ValueKey<String>(
+                                                          'no-explanation',
+                                                        ),
+                                                        width: double.infinity,
+                                                      ),
+                                              ),
                                             ),
                                           ],
                                         ),

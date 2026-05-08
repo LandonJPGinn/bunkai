@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../app/app_router.dart';
 import '../app/breakpoints.dart';
-import '../data/jlpt_question_levels.dart';
 import '../data/topic_card_style.dart';
 import '../app/bunkai_tokens.dart';
 import '../models/practice_options.dart';
@@ -10,10 +9,11 @@ import '../models/quiz.dart';
 import '../models/quiz_id.dart';
 import '../services/practice_session_builder.dart';
 import '../services/quiz_bank_loader.dart';
+import '../services/quiz_practice_settings_store.dart';
 import '../widgets/app_shell.dart' show AppShell, AppShellHeaderMode;
-import '../widgets/primary_button.dart';
+import '../widgets/quiz_practice_settings_panel.dart';
 
-/// Minimal setup for a practice session (count, JLPT band, ordered vs random).
+/// Minimal setup for a practice session (count, JLPT band). Order is randomized.
 class QuizStartScreen extends StatefulWidget {
   const QuizStartScreen({super.key, required this.quizId});
 
@@ -24,9 +24,18 @@ class QuizStartScreen extends StatefulWidget {
 }
 
 class _QuizStartScreenState extends State<QuizStartScreen> {
-  PracticeCountPreset _count = PracticeCountPreset.ten;
-  PracticeJlptFilter _jlpt = PracticeJlptFilter.all;
-  PracticeOrderMode _mode = PracticeOrderMode.ordered;
+  PracticeQuizSettings _settings = PracticeQuizSettings.defaults;
+
+  @override
+  void initState() {
+    super.initState();
+    final parsed = quizIdFromRouteName(widget.quizId);
+    if (parsed == null) return;
+    QuizPracticeSettingsStore.instance.load(parsed).then((saved) {
+      if (!mounted) return;
+      setState(() => _settings = saved);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -103,7 +112,10 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
           MediaQuery.sizeOf(context).width,
         );
         final horizontalPadding = narrow ? 16.0 : 20.0;
-        final previewCount = filteredQuestionsForPreview(base, _jlpt).length;
+        final previewCount = filteredQuestionsForPreview(
+          base,
+          _settings.jlptFilter,
+        ).length;
         final canStart = previewCount > 0;
         final topicStyle = topicCardStyleFor(base.id);
         final tokens = context.bunkaiTokens;
@@ -141,123 +153,160 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              if (!canStart)
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 16),
-                                  child: Text(
-                                    'No questions for this filter.',
-                                    style: Theme.of(context).textTheme.bodySmall
-                                        ?.copyWith(
-                                      color: Theme.of(
-                                        context,
-                                      ).colorScheme.error,
+                              // AnimatedSize + AnimatedSwitcher so toggling the
+                              // JLPT filter eases the warning row in/out
+                              // instead of shoving the form down.
+                              AnimatedSize(
+                                duration: MediaQuery.of(context)
+                                        .disableAnimations
+                                    ? Duration.zero
+                                    : tokens.motionSlow,
+                                curve: tokens.motionEmphasizedCurve,
+                                alignment: Alignment.topCenter,
+                                child: AnimatedSwitcher(
+                                  duration: MediaQuery.of(context)
+                                          .disableAnimations
+                                      ? Duration.zero
+                                      : tokens.motionMedium,
+                                  switchInCurve: tokens.motionStandardCurve,
+                                  switchOutCurve: tokens.motionStandardCurve,
+                                  transitionBuilder: (child, animation) =>
+                                      FadeTransition(
+                                          opacity: animation, child: child),
+                                  child: !canStart
+                                      ? Padding(
+                                          key: const ValueKey<String>(
+                                              'filter-warning'),
+                                          padding: const EdgeInsets.only(
+                                              bottom: 16),
+                                          child: Text(
+                                            'No questions for this filter.',
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .bodySmall
+                                                ?.copyWith(
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .error,
+                                            ),
+                                          ),
+                                        )
+                                      : const SizedBox(
+                                          key: ValueKey<String>(
+                                              'filter-warning-empty'),
+                                          width: double.infinity,
+                                        ),
+                                ),
+                              ),
+                              Text(
+                                base.subtitle,
+                                style: Theme.of(context).textTheme.titleSmall
+                                    ?.copyWith(
+                                  color: Theme.of(context).colorScheme.onSurface,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              Text(
+                                base.description,
+                                style: Theme.of(context).textTheme.bodyMedium
+                                    ?.copyWith(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onSurfaceVariant,
+                                  height: 1.45,
+                                ),
+                              ),
+                              const SizedBox(height: 22),
+                              Align(
+                                alignment: Alignment.center,
+                                child: ConstrainedBox(
+                                  constraints:
+                                      const BoxConstraints(maxWidth: 340),
+                                  child: ClipRRect(
+                                    borderRadius:
+                                        BorderRadius.circular(tokens.radiusMd),
+                                    child: DecoratedBox(
+                                      decoration: BoxDecoration(
+                                        color: tokens.surface1,
+                                        borderRadius: BorderRadius.circular(
+                                          tokens.radiusMd,
+                                        ),
+                                        border: Border.all(
+                                          color: tokens.borderSoft,
+                                        ),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                          16,
+                                          18,
+                                          16,
+                                          20,
+                                        ),
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.stretch,
+                                          children: [
+                                            Theme(
+                                              data: Theme.of(context).copyWith(
+                                                filledButtonTheme:
+                                                    FilledButtonThemeData(
+                                                  style:
+                                                      FilledButton.styleFrom(
+                                                    backgroundColor: topicStyle
+                                                        .accent,
+                                                  ),
+                                                ),
+                                              ),
+                                              child: QuizPracticeSettingsPanel(
+                                                settings: _settings,
+                                                canStart: canStart,
+                                                onCountChanged: (value) {
+                                                  setState(
+                                                    () => _settings = _settings
+                                                        .copyWith(
+                                                      countPreset: value,
+                                                    ),
+                                                  );
+                                                },
+                                                onJlptChanged: (value) {
+                                                  setState(
+                                                    () => _settings = _settings
+                                                        .copyWith(
+                                                      jlptFilter: value,
+                                                    ),
+                                                  );
+                                                },
+                                                onStart: () async {
+                                                  await QuizPracticeSettingsStore
+                                                      .instance
+                                                      .save(id, _settings);
+                                                  if (!context.mounted) return;
+                                                  final session =
+                                                      buildPracticeSessionQuiz(
+                                                    base,
+                                                    difficulty:
+                                                        _settings.jlptFilter,
+                                                    countPreset:
+                                                        _settings.countPreset,
+                                                  );
+                                                  Navigator.of(
+                                                    context,
+                                                  ).pushNamed(
+                                                    AppRoutes.quiz,
+                                                    arguments: QuizRouteArgs(
+                                                      quiz: session,
+                                                    ),
+                                                  );
+                                                },
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                              Text(
-                                'Question count',
-                                style: Theme.of(context).textTheme.labelLarge,
-                              ),
-                              const SizedBox(height: 8),
-                              SegmentedButton<PracticeCountPreset>(
-                                segments: const [
-                                  ButtonSegment<PracticeCountPreset>(
-                                    value: PracticeCountPreset.ten,
-                                    label: Text('10'),
-                                  ),
-                                  ButtonSegment<PracticeCountPreset>(
-                                    value: PracticeCountPreset.twenty,
-                                    label: Text('20'),
-                                  ),
-                                  ButtonSegment<PracticeCountPreset>(
-                                    value: PracticeCountPreset.fifty,
-                                    label: Text('50'),
-                                  ),
-                                  ButtonSegment<PracticeCountPreset>(
-                                    value: PracticeCountPreset.all,
-                                    label: Text('All'),
-                                  ),
-                                ],
-                                selected: {_count},
-                                onSelectionChanged: (s) {
-                                  setState(() => _count = s.first);
-                                },
-                              ),
-                              const SizedBox(height: 22),
-                              Text(
-                                'Difficulty',
-                                style: Theme.of(context).textTheme.labelLarge,
-                              ),
-                              const SizedBox(height: 8),
-                              InputDecorator(
-                                decoration: const InputDecoration(
-                                  border: OutlineInputBorder(),
-                                  isDense: true,
-                                ),
-                                child: DropdownButtonHideUnderline(
-                                  child: DropdownButton<PracticeJlptFilter>(
-                                    isExpanded: true,
-                                    value: _jlpt,
-                                    items: [
-                                      for (final f in PracticeJlptFilter.values)
-                                        if (f == PracticeJlptFilter.all ||
-                                            (f.bandString != null &&
-                                                kJlptQuestionLevels.contains(
-                                                  f.bandString!,
-                                                )))
-                                          DropdownMenuItem<PracticeJlptFilter>(
-                                            value: f,
-                                            child: Text(f.menuLabel),
-                                          ),
-                                    ],
-                                    onChanged: (v) {
-                                      if (v != null) setState(() => _jlpt = v);
-                                    },
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 22),
-                              Text(
-                                'Mode',
-                                style: Theme.of(context).textTheme.labelLarge,
-                              ),
-                              const SizedBox(height: 8),
-                              SegmentedButton<PracticeOrderMode>(
-                                segments: const [
-                                  ButtonSegment<PracticeOrderMode>(
-                                    value: PracticeOrderMode.ordered,
-                                    label: Text('Ordered'),
-                                  ),
-                                  ButtonSegment<PracticeOrderMode>(
-                                    value: PracticeOrderMode.random,
-                                    label: Text('Random'),
-                                  ),
-                                ],
-                                selected: {_mode},
-                                onSelectionChanged: (s) {
-                                  setState(() => _mode = s.first);
-                                },
-                              ),
-                              const SizedBox(height: 28),
-                              PrimaryButton(
-                                label: 'Start',
-                                backgroundColor: canStart
-                                    ? topicStyle.accent
-                                    : null,
-                                onPressed: canStart
-                                    ? () {
-                                        final session = buildPracticeSessionQuiz(
-                                          base,
-                                          difficulty: _jlpt,
-                                          countPreset: _count,
-                                          mode: _mode,
-                                        );
-                                        Navigator.of(context).pushNamed(
-                                          AppRoutes.quiz,
-                                          arguments: QuizRouteArgs(quiz: session),
-                                        );
-                                      }
-                                    : null,
                               ),
                             ],
                           ),

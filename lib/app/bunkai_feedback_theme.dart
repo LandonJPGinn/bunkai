@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
+import 'color/oklch.dart';
+
 /// Muted semantic colors for grading and emphasis (not Material [ColorScheme.error]).
 @immutable
 class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   const BunkaiFeedbackColors({
     required this.correct,
     required this.correctContainer,
+    required this.correctGlow,
     required this.incorrect,
     required this.incorrectContainer,
     required this.warning,
@@ -14,25 +17,36 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
 
   final Color correct;
   final Color correctContainer;
+
+  /// OKLCH spec for the success-animation glow. By design `l > 1.0`, which the
+  /// `oklch_glow.dart` primitives consume as additive light intensity. The
+  /// sRGB-clamped color is still recoverable via `correctGlow.toColor()`.
+  final Oklch correctGlow;
+
   final Color incorrect;
   final Color incorrectContainer;
   final Color warning;
   final Color warningContainer;
 
-  /// Spec: success hsl(146 68% 52%), danger hsl(350 78% 62%), warning hsl(40 92% 58%).
-  static const BunkaiFeedbackColors dark = BunkaiFeedbackColors(
-    correct: Color(0xFF3DCC7A),
-    correctContainer: Color(0x283DCC7A),
-    incorrect: Color(0xFFE85D7A),
-    incorrectContainer: Color(0x28E85D7A),
-    warning: Color(0xFFF5C84A),
-    warningContainer: Color(0x30F5C84A),
+  /// OKLCH source-of-truth — perceptually uniform versions of the prior
+  /// `hsl(146 68% 52%)` / `hsl(350 78% 62%)` / `hsl(40 92% 58%)` specs.
+  /// `correctGlow` deliberately uses `l = 1.05` so success animations get a
+  /// subtle additive halo on top of the clamped sRGB color.
+  static final BunkaiFeedbackColors dark = BunkaiFeedbackColors(
+    correct: const Oklch(0.751, 0.169, 153.6).toColor(),
+    correctContainer: const Oklch(0.751, 0.169, 153.6, 0.157).toColor(),
+    correctGlow: const Oklch(1.05, 0.180, 153.6),
+    incorrect: const Oklch(0.663, 0.173, 10.4).toColor(),
+    incorrectContainer: const Oklch(0.663, 0.173, 10.4, 0.157).toColor(),
+    warning: const Oklch(0.850, 0.148, 88.8).toColor(),
+    warningContainer: const Oklch(0.850, 0.148, 88.8, 0.188).toColor(),
   );
 
   @override
   BunkaiFeedbackColors copyWith({
     Color? correct,
     Color? correctContainer,
+    Oklch? correctGlow,
     Color? incorrect,
     Color? incorrectContainer,
     Color? warning,
@@ -41,6 +55,7 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
     return BunkaiFeedbackColors(
       correct: correct ?? this.correct,
       correctContainer: correctContainer ?? this.correctContainer,
+      correctGlow: correctGlow ?? this.correctGlow,
       incorrect: incorrect ?? this.incorrect,
       incorrectContainer: incorrectContainer ?? this.incorrectContainer,
       warning: warning ?? this.warning,
@@ -61,6 +76,10 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
         other.correctContainer,
         t,
       )!,
+      // Keep the OKLCH spec (and its `l > 1.0` glow energy) snap-switched at
+      // the midpoint so the additive overshoot doesn't accidentally blow up
+      // mid-transition.
+      correctGlow: t < 0.5 ? correctGlow : other.correctGlow,
       incorrect: Color.lerp(incorrect, other.incorrect, t)!,
       incorrectContainer: Color.lerp(
         incorrectContainer,

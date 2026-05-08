@@ -59,9 +59,11 @@ class ConjugationQuizBuilder {
       final labels = <String>[correct, ...picked];
       labels.shuffle(_random);
       final correctIndex = labels.indexOf(correct);
+      final engCat = _englishCategoryLabel(categoryKey);
+      final jpHint = _japaneseCategoryHint(categoryKey);
       final choices = [
         for (var i = 0; i < 4; i++)
-          AnswerChoice(id: choiceIds[i], label: labels[i]),
+          AnswerChoice(id: choiceIds[i], label: labels[i], labelEn: labels[i]),
       ];
 
       final id =
@@ -71,15 +73,18 @@ class ConjugationQuizBuilder {
         QuizQuestion(
           id: id,
           type: QuizType.multipleChoice,
-          prompt:
-              '${lemma.surface} → ${_englishCategoryLabel(categoryKey)}',
-          japanese:
-              '「${lemma.surface}」→ ${_japaneseCategoryHint(categoryKey)}',
+          prompt: '${lemma.surface} → Convert to / produce: $engCat.',
+          japanese: '「${lemma.surface}」→ $jpHint',
+          promptEn: '${lemma.surface} → Convert to / produce: $engCat.',
+          japaneseEn:
+              '\'${lemma.surface}\' → $engCat (hint: $jpHint)',
           choices: choices,
           correctAnswerId: choiceIds[correctIndex],
           explanation:
-              'Correct form for ${_englishCategoryLabel(categoryKey)} '
-              '(${lemma.group.jsonKey}).',
+              '「${lemma.surface}」の$jpHint として適切な形は「$correct」。',
+          explanationEn:
+              'For \'${lemma.surface}\', the right surface for '
+              '$engCat is \'$correct\'.',
           diagnosticTags: _tagsForCategory(categoryKey),
         ),
       );

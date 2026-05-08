@@ -21,8 +21,10 @@ class DictionaryEntry {
       throw const FormatException('DictionaryEntry: "surface" must be a non-empty string');
     }
     final reading = json['reading'];
-    if (reading is! String) {
-      throw const FormatException('DictionaryEntry: "reading" must be a string');
+    if (reading is! String || reading.trim().isEmpty) {
+      throw const FormatException(
+        'DictionaryEntry: "reading" must be a non-empty string',
+      );
     }
     final partOfSpeech = json['partOfSpeech'];
     if (partOfSpeech is! String) {
@@ -34,7 +36,7 @@ class DictionaryEntry {
     }
     final definitions = <String>[
       for (final d in definitionsRaw)
-        if (d is String) d,
+        if (d is String && d.trim().isNotEmpty) d.trim(),
     ];
     if (definitions.isEmpty) {
       throw const FormatException('DictionaryEntry: "definitions" must be non-empty');

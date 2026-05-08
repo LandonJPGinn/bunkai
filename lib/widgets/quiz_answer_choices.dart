@@ -14,6 +14,7 @@ class QuizAnswerChoices extends StatelessWidget {
     this.lastSubmittedCorrect,
     required this.onChoiceSelected,
     required this.showFurigana,
+    required this.showEnglish,
   });
 
   final List<AnswerChoice> choices;
@@ -27,6 +28,7 @@ class QuizAnswerChoices extends StatelessWidget {
 
   final ValueChanged<String> onChoiceSelected;
   final bool showFurigana;
+  final bool showEnglish;
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +41,7 @@ class QuizAnswerChoices extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 12),
             child: AnswerChoiceCard(
               label: choices[i].label,
+              labelEnglish: choices[i].labelEn ?? '',
               selected: selectedAnswerId == choices[i].id,
               locked: locked,
               isCorrectChoice: choices[i].id == correctAnswerId,
@@ -49,9 +52,12 @@ class QuizAnswerChoices extends StatelessWidget {
                   choices[i].id == correctAnswerId &&
                   lastSubmittedCorrect == true,
               subtitle: locked ? choices[i].explanation : null,
+              subtitleEnglish:
+                  locked ? choices[i].explanationEn : null,
               choiceIndex: i,
               choiceCount: n,
               showFurigana: showFurigana,
+              showEnglish: showEnglish,
               onTap: () => onChoiceSelected(choices[i].id),
             ),
           ),

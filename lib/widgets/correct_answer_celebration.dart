@@ -3,6 +3,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../app/bunkai_feedback_theme.dart';
+import '../app/color/oklch.dart';
+import '../app/color/oklch_glow.dart';
 
 /// Chrome, motion, and overlays for a submitted correct answer card.
 class CorrectAnswerCelebrationFrame extends StatefulWidget {
@@ -223,25 +225,30 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
     super.dispose();
   }
 
+  // OKLCH-derived backdrops (formerly `Color(0xFF15261C)` / `Color(0xFF1C1820)`).
+  static final Color _topTintBg = const Oklch(0.250, 0.030, 157.6).toColor();
+  static final Color _botCoolBg = const Oklch(0.217, 0.017, 307.6).toColor();
+
   Color _accent() => widget.feedback.correct;
 
   Color _checkBg() {
     final base = _accent();
-    return Color.lerp(base, Colors.white, 0.38)!;
+    return Color.lerp(base, Oklch.white.toColor(), 0.38)!;
   }
 
-  Color _checkFg() => Color.lerp(widget.scheme.surface, Colors.black, 0.55)!;
+  Color _checkFg() =>
+      Color.lerp(widget.scheme.surface, Oklch.black.toColor(), 0.55)!;
 
   BoxDecoration _successDecoration() {
     final c = _accent();
     final bright = _checkBg();
     final topTint = Color.alphaBlend(
       c.withValues(alpha: 0.42),
-      const Color(0xFF15261C),
+      _topTintBg,
     );
     final botCool = Color.alphaBlend(
       widget.scheme.primary.withValues(alpha: 0.12),
-      const Color(0xFF1C1820),
+      _botCoolBg,
     );
     return BoxDecoration(
       borderRadius: BorderRadius.circular(widget.borderRadius),
@@ -258,6 +265,14 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
         width: 1.4,
       ),
       boxShadow: [
+        // Spillover from `correctGlow` (l > 1.0) — only fires when the OKLCH
+        // lightness exceeds 1.0, otherwise this is a `const []` no-op.
+        ...glowShadowsFor(
+          widget.feedback.correctGlow,
+          blur: 36,
+          spread: -4,
+          offset: const Offset(0, 18),
+        ),
         BoxShadow(
           color: bright.withValues(alpha: 0.34),
           blurRadius: 0,
@@ -271,7 +286,7 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
           offset: const Offset(0, 22),
         ),
         BoxShadow(
-          color: Colors.white.withValues(alpha: 0.06),
+          color: whiteAlpha(0.06),
           blurRadius: 0,
           spreadRadius: 1,
           offset: Offset.zero,
@@ -313,6 +328,19 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
             Positioned.fill(
               child: DecoratedBox(decoration: _successDecoration()),
             ),
+            // Additive (BlendMode.plus) perimeter halo driven by `correctGlow`'s
+            // overshoot. Sits on top of the decoration so it adds light over
+            // the gradient instead of just tinting it.
+            Positioned.fill(
+              child: OklchGlowLayer(
+                oklch: widget.feedback.correctGlow,
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.circular(widget.borderRadius),
+                blur: 40,
+                opacityScale: 0.55,
+                inset: 2,
+              ),
+            ),
             if (animate)
               AnimatedBuilder(
                 animation: _master,
@@ -343,9 +371,9 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                                           end: Alignment.centerRight,
                                           colors: [
                                             Colors.transparent,
-                                            Colors.white.withValues(alpha: 0.08),
-                                            Colors.white.withValues(alpha: 0.42),
-                                            Colors.white.withValues(alpha: 0.08),
+                                            whiteAlpha(0.08),
+                                            whiteAlpha(0.42),
+                                            whiteAlpha(0.08),
                                             Colors.transparent,
                                           ],
                                           stops: const [0.34, 0.42, 0.49, 0.56, 0.66],
@@ -354,7 +382,7 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                                       child: Container(
                                         width: w * 1.6,
                                         height: h * 2,
-                                        color: Colors.white,
+                                        color: Oklch.white.toColor(),
                                       ),
                                     ),
                                   ),
@@ -383,9 +411,9 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                             opacity: _sparkleOpacity.value,
                             child: CustomPaint(
                               painter: _SparklePainter(
-                                bright: widget.feedback.correct,
-                                soft: bright,
-                                white: Colors.white,
+                                bright: Oklch.fromColor(widget.feedback.correct),
+                                soft: Oklch.fromColor(bright),
+                                white: Oklch.white,
                               ),
                             ),
                           ),
@@ -419,15 +447,15 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                                           .textTheme
                                           .displayMedium!
                                           .copyWith(
-                                            fontSize: 112,
-                                            fontWeight: FontWeight.w900,
-                                            height: 1,
-                                            color: Color.lerp(
-                                              Colors.white,
-                                              widget.feedback.correct,
-                                              0.22,
-                                            )!.withValues(alpha: 0.12),
-                                          ),
+                                                fontSize: 112,
+                                                fontWeight: FontWeight.w900,
+                                                height: 1,
+                                                color: Color.lerp(
+                                                  Oklch.white.toColor(),
+                                                  widget.feedback.correct,
+                                                  0.22,
+                                                )!.withValues(alpha: 0.12),
+                                              ),
                                     ),
                                   ),
                                 ),
@@ -443,16 +471,16 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                                 .textTheme
                                 .displayMedium!
                                 .copyWith(
-                                  fontSize: 112,
-                                  fontWeight: FontWeight.w900,
-                                  height: 1,
-                                  color: Color.lerp(
-                                        Colors.white,
-                                        widget.feedback.correct,
-                                        0.22,
-                                      )!
-                                      .withValues(alpha: 0.1),
-                                ),
+                              fontSize: 112,
+                              fontWeight: FontWeight.w900,
+                              height: 1,
+                              color: Color.lerp(
+                                    Oklch.white.toColor(),
+                                    widget.feedback.correct,
+                                    0.22,
+                                  )!
+                                  .withValues(alpha: 0.1),
+                            ),
                           ),
                         ),
                 ),
@@ -487,6 +515,7 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                                         bg: bright,
                                         fg: _checkFg(),
                                         glow: _accent(),
+                                        glowSpec: widget.feedback.correctGlow,
                                       ),
                                     ),
                                   );
@@ -496,6 +525,7 @@ class _CorrectAnswerCelebrationFrameState extends State<CorrectAnswerCelebration
                                 bg: bright,
                                 fg: _checkFg(),
                                 glow: _accent(),
+                                glowSpec: widget.feedback.correctGlow,
                               ),
                       ),
                     ],
@@ -536,22 +566,31 @@ class _CheckBadge extends StatelessWidget {
     required this.bg,
     required this.fg,
     required this.glow,
+    required this.glowSpec,
   });
 
   final Color bg;
   final Color fg;
   final Color glow;
 
+  /// OKLCH spec for the over-bright glow. When `glowSpec.l > 1.0` an additive
+  /// halo (BlendMode.plus) is painted behind the badge in addition to the
+  /// standard tinted shadows.
+  final Oklch glowSpec;
+
   @override
   Widget build(BuildContext context) {
     final c = glow;
-    return Container(
+    final badge = Container(
       width: 42,
       height: 42,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: bg,
         boxShadow: [
+          // No-op when glowSpec.l <= 1.0, otherwise a soft spillover shadow
+          // sized to the OKLCH overshoot.
+          ...glowShadowsFor(glowSpec, blur: 28),
           BoxShadow(
             color: c.withValues(alpha: 0.14),
             blurRadius: 0,
@@ -568,6 +607,32 @@ class _CheckBadge extends StatelessWidget {
       alignment: Alignment.center,
       child: Icon(Icons.check_rounded, size: 26, color: fg),
     );
+    if (!glowSpec.hasGlow) return badge;
+    // Stack with overflow so the additive halo can bleed past the 42x42 badge.
+    return SizedBox(
+      width: 42,
+      height: 42,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
+        children: [
+          Positioned(
+            left: -22,
+            right: -22,
+            top: -22,
+            bottom: -22,
+            child: OklchGlowLayer(
+              oklch: glowSpec,
+              shape: BoxShape.circle,
+              blur: 30,
+              opacityScale: 0.8,
+              inset: 18,
+            ),
+          ),
+          badge,
+        ],
+      ),
+    );
   }
 }
 
@@ -578,22 +643,31 @@ class _SparklePainter extends CustomPainter {
     required this.white,
   });
 
-  final Color bright;
-  final Color soft;
-  final Color white;
+  final Oklch bright;
+  final Oklch soft;
+  final Oklch white;
 
   @override
   void paint(Canvas canvas, Size size) {
-    void dot(double x, double y, double r, Color color) {
+    void dot(double x, double y, double r, Color color, {bool additive = false}) {
       final p = Offset(x * size.width, y * size.height);
-      canvas.drawCircle(p, r, Paint()..color = color);
+      final paint = Paint()..color = color;
+      if (additive) paint.blendMode = BlendMode.plus;
+      canvas.drawCircle(p, r, paint);
     }
 
-    dot(0.14, 0.34, 2.0, white.withValues(alpha: 0.95));
-    dot(0.24, 0.72, 2.0, Color.lerp(bright, soft, 0.35)!.withValues(alpha: 0.92));
-    dot(0.54, 0.22, 1.5, white.withValues(alpha: 0.72));
-    dot(0.68, 0.66, 1.8, bright.withValues(alpha: 0.75));
-    dot(0.86, 0.36, 1.6, soft.withValues(alpha: 0.85));
+    // Brightest two dots paint additively so they read as light, not paint.
+    dot(0.14, 0.34, 2.0, white.withAlpha(0.95).toColor(), additive: true);
+    dot(
+      0.24,
+      0.72,
+      2.0,
+      bright.mix(soft, 0.35).withAlpha(0.92).toColor(),
+      additive: true,
+    );
+    dot(0.54, 0.22, 1.5, white.withAlpha(0.72).toColor());
+    dot(0.68, 0.66, 1.8, bright.withAlpha(0.75).toColor());
+    dot(0.86, 0.36, 1.6, soft.withAlpha(0.85).toColor());
   }
 
   @override

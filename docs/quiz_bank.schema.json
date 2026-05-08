@@ -66,9 +66,12 @@
         "type",
         "prompt",
         "japanese",
+        "promptEn",
+        "japaneseEn",
         "choices",
         "correctAnswerId",
         "explanation",
+        "explanationEn",
         "diagnosticTags"
       ],
       "properties": {
@@ -99,6 +102,21 @@
           "type": "string",
           "minLength": 1
         },
+        "promptEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English exam-style instructions (paired with prompt)."
+        },
+        "japaneseEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English gloss or glossed line paired with japanese."
+        },
+        "contextEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English counterpart to context; required in app validation when context is non-empty."
+        },
         "choices": {
           "type": "array",
           "minItems": 2,
@@ -113,6 +131,11 @@
         "explanation": {
           "type": "string",
           "minLength": 1
+        },
+        "explanationEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Brief English rationale (paired with explanation)."
         },
         "diagnosticTags": {
           "type": "array",
@@ -171,7 +194,7 @@
     "answerChoice": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "label"],
+      "required": ["id", "label", "labelEn"],
       "properties": {
         "id": {
           "type": "string",
@@ -181,8 +204,18 @@
           "type": "string",
           "minLength": 1
         },
+        "labelEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English gloss for label (bundled banks require this)."
+        },
         "explanation": {
           "type": ["string", "null"]
+        },
+        "explanationEn": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English rationale when explanation is present."
         }
       }
     }

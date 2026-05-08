@@ -10,9 +10,13 @@ class QuizQuestion {
     required this.prompt,
     required this.japanese,
     this.context,
+    required this.promptEn,
+    required this.japaneseEn,
+    this.contextEn,
     required this.choices,
     required this.correctAnswerId,
     required this.explanation,
+    required this.explanationEn,
     this.diagnosticTags = const [],
     this.jlptLevel,
     this.difficultyScore,
@@ -29,9 +33,23 @@ class QuizQuestion {
   final String prompt;
   final String japanese;
   final String? context;
+
+  /// English exam-style instructions (paired with [prompt]).
+  final String promptEn;
+
+  /// English gloss or transliteration of the main line (paired with [japanese]).
+  final String japaneseEn;
+
+  /// English counterpart to [context], when context is set.
+  final String? contextEn;
+
   final List<AnswerChoice> choices;
   final String correctAnswerId;
   final String explanation;
+
+  /// Brief English rationale (paired with [explanation]).
+  final String explanationEn;
+
   final List<String> diagnosticTags;
 
   /// Optional JLPT band for this item; must be one of [kJlptQuestionLevels] when set.
@@ -54,9 +72,13 @@ class QuizQuestion {
         'prompt': prompt,
         'japanese': japanese,
         if (context != null) 'context': context,
+        'promptEn': promptEn,
+        'japaneseEn': japaneseEn,
+        if (contextEn != null) 'contextEn': contextEn,
         'choices': choices.map((c) => c.toMap()).toList(),
         'correctAnswerId': correctAnswerId,
         'explanation': explanation,
+        'explanationEn': explanationEn,
         'diagnosticTags': diagnosticTags,
         if (jlptLevel != null) 'jlptLevel': jlptLevel,
         if (difficultyScore != null) 'difficultyScore': difficultyScore,
@@ -82,9 +104,13 @@ class QuizQuestion {
     final prompt = map['prompt'];
     final japanese = map['japanese'];
     final context = map['context'];
+    final promptEn = map['promptEn'];
+    final japaneseEn = map['japaneseEn'];
+    final contextEn = map['contextEn'];
     final choicesRaw = map['choices'];
     final correctAnswerId = map['correctAnswerId'];
     final explanation = map['explanation'];
+    final explanationEn = map['explanationEn'];
     final diagnosticTagsRaw = map['diagnosticTags'];
     final jlptLevelRaw = map['jlptLevel'];
     final difficultyScoreRaw = map['difficultyScore'];
@@ -126,6 +152,26 @@ class QuizQuestion {
     if (explanation is! String) {
       throw const FormatException(
         'QuizQuestion.fromMap: missing field "explanation"',
+      );
+    }
+    if (promptEn is! String) {
+      throw const FormatException(
+        'QuizQuestion.fromMap: missing field "promptEn"',
+      );
+    }
+    if (japaneseEn is! String) {
+      throw const FormatException(
+        'QuizQuestion.fromMap: missing field "japaneseEn"',
+      );
+    }
+    if (explanationEn is! String) {
+      throw const FormatException(
+        'QuizQuestion.fromMap: missing field "explanationEn"',
+      );
+    }
+    if (contextEn != null && contextEn is! String) {
+      throw const FormatException(
+        'QuizQuestion.fromMap: field "contextEn" must be a string or absent',
       );
     }
 
@@ -247,12 +293,16 @@ class QuizQuestion {
       prompt: prompt,
       japanese: japanese,
       context: context is String ? context : null,
+      promptEn: promptEn,
+      japaneseEn: japaneseEn,
+      contextEn: contextEn is String ? contextEn : null,
       choices: [
         for (final raw in choicesRaw)
           AnswerChoice.fromMap(Map<String, dynamic>.from(raw as Map)),
       ],
       correctAnswerId: correctAnswerId,
       explanation: explanation,
+      explanationEn: explanationEn,
       diagnosticTags: diagnosticTagsRaw is List
           ? [for (final t in diagnosticTagsRaw) t as String]
           : const [],

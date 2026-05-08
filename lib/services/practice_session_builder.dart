@@ -9,14 +9,12 @@ Quiz buildPracticeSessionQuiz(
   Quiz base, {
   required PracticeJlptFilter difficulty,
   required PracticeCountPreset countPreset,
-  required PracticeOrderMode mode,
   Random? random,
 }) {
   final filtered = _filterByDifficulty(base, difficulty);
   final picked = _pickQuestions(
     filtered,
     countPreset: countPreset,
-    mode: mode,
     random: random ?? Random(),
   );
   return Quiz(
@@ -61,7 +59,6 @@ bool _matchesBand(QuizQuestion q, Quiz base, String band) {
 List<QuizQuestion> _pickQuestions(
   List<QuizQuestion> filtered, {
   required PracticeCountPreset countPreset,
-  required PracticeOrderMode mode,
   required Random random,
 }) {
   final max = countPreset.maxCount;
@@ -69,10 +66,6 @@ List<QuizQuestion> _pickQuestions(
       ? filtered.length
       : (max < filtered.length ? max : filtered.length);
   if (takeCount == 0) return [];
-
-  if (mode == PracticeOrderMode.ordered) {
-    return filtered.take(takeCount).toList();
-  }
 
   final copy = List<QuizQuestion>.from(filtered);
   copy.shuffle(random);

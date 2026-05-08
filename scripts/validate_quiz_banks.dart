@@ -18,6 +18,7 @@ import 'dart:io';
 import 'package:bunkai/data/bundled_quiz_bank_paths.dart';
 import 'package:bunkai/models/quiz.dart';
 import 'package:bunkai/models/quiz_id.dart';
+import 'package:bunkai/services/furigana_inline.dart';
 import 'package:bunkai/services/quiz_bank_duplicate_warnings.dart';
 import 'package:bunkai/services/quiz_bank_validation.dart';
 
@@ -52,10 +53,19 @@ void main() {
 
   var totalErrors = 0;
   var filesWithErrors = 0;
+  final lexiconAuditErrors = _validateLexiconAndBuildLookup(dir);
+  final dictionarySurfaces = _loadDictionarySurfaceSet(dir);
+  totalErrors += lexiconAuditErrors.length;
+  if (lexiconAuditErrors.isNotEmpty) {
+    filesWithErrors++;
+    for (final err in lexiconAuditErrors) {
+      stderr.writeln('FAIL assets/dictionary/japanese_lexicon.json: $err');
+    }
+  }
 
   for (final file in files) {
     final path = relativePath(file);
-    final errors = _validateFile(file, registeredIdByFilename);
+    final errors = _validateFile(file, registeredIdByFilename, dictionarySurfaces);
     if (errors.isEmpty) {
       // Question count is informational — only printed on success.
       try {
@@ -139,6 +149,7 @@ String _jsonBasename(File file) {
 List<String> _validateFile(
   File file,
   Map<String, QuizId> registeredIdByFilename,
+  Set<String> dictionarySurfaces,
 ) {
   final errors = <String>[];
 
@@ -195,6 +206,108 @@ List<String> _validateFile(
   } on QuizBankFormatException catch (e) {
     errors.add(e.message);
   }
+  errors.addAll(_validateFuriganaCoverage(quiz, dictionarySurfaces));
 
+  return errors;
+}
+
+Set<String> _loadDictionarySurfaceSet(Directory quizBankDir) {
+  final path = '${quizBankDir.parent.path}/dictionary/japanese_lexicon.json';
+  final file = File(path);
+  if (!file.existsSync()) return const {};
+  final decoded = jsonDecode(file.readAsStringSync());
+  if (decoded is! List) return const {};
+  final out = <String>{};
+  for (final row in decoded) {
+    if (row is! Map) continue;
+    final surface = row['surface'];
+    if (surface is String && surface.trim().isNotEmpty) {
+      out.add(surface.trim());
+    }
+  }
+  return out;
+}
+
+bool _containsKanji(String value) {
+  for (final r in value.runes) {
+    if (isCjkIdeographRune(r)) return true;
+  }
+  return false;
+}
+
+bool _hasInlineRuby(String value) {
+  final ruby = RegExp(r'[\u4E00-\u9FFF]+\[[^\]]+\]');
+  return ruby.hasMatch(value);
+}
+
+List<String> _validateFuriganaCoverage(Quiz quiz, Set<String> dictionarySurfaces) {
+  if (dictionarySurfaces.isEmpty) return const [];
+  final errors = <String>[];
+  for (final q in quiz.questions) {
+    if (q.japanese.contains('日本') &&
+        !q.japanese.contains('日本[') &&
+        !dictionarySurfaces.contains('日本')) {
+      errors.add(
+        'Quiz "${quiz.id.name}" / question "${q.id}": '
+        'contains 日本 but dictionary is missing surface "日本" '
+        '(likely furigana mismatch such as にほん)',
+      );
+    }
+
+  }
+  return errors;
+}
+
+List<String> _validateLexiconAndBuildLookup(Directory quizBankDir) {
+  final path = '${quizBankDir.parent.path}/dictionary/japanese_lexicon.json';
+  final file = File(path);
+  if (!file.existsSync()) {
+    return ['dictionary file not found at $path'];
+  }
+  final decoded = jsonDecode(file.readAsStringSync());
+  if (decoded is! List) {
+    return ['dictionary root must be a JSON array'];
+  }
+  final errors = <String>[];
+  final placeholderDefinition = RegExp(
+    r'^(todo|tbd|n/?a|none|-+)$',
+    caseSensitive: false,
+  );
+  for (var i = 0; i < decoded.length; i++) {
+    final row = decoded[i];
+    if (row is! Map) {
+      errors.add('entry[$i] must be an object');
+      continue;
+    }
+    final surface = row['surface'];
+    final reading = row['reading'];
+    final pos = row['partOfSpeech'];
+    final definitions = row['definitions'];
+    if (surface is! String || surface.trim().isEmpty) {
+      errors.add('entry[$i] has invalid surface');
+      continue;
+    }
+    if (reading is! String || reading.trim().isEmpty) {
+      errors.add('entry[$i] "$surface" has empty reading');
+    }
+    if (definitions is! List || definitions.isEmpty) {
+      errors.add('entry[$i] "$surface" must have non-empty definitions');
+      continue;
+    }
+    final cleaned = definitions
+        .whereType<String>()
+        .map((s) => s.trim())
+        .where((s) => s.isNotEmpty)
+        .toList();
+    if (cleaned.isEmpty) {
+      errors.add('entry[$i] "$surface" has no usable definitions');
+      continue;
+    }
+    for (final d in cleaned) {
+      if (placeholderDefinition.hasMatch(d)) {
+        errors.add('entry[$i] "$surface" has placeholder definition "$d"');
+      }
+    }
+  }
   return errors;
 }

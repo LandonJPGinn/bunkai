@@ -12,15 +12,16 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
     await tester.pumpWidget(const BunkaiApp());
+    await tester.pump();
     await tester.pumpAndSettle();
 
-    expect(find.textContaining('BunKai'), findsWidgets);
-    expect(find.text('Train the details most courses skip.'), findsOneWidget);
+    expect(find.textContaining('Japanese Intermediate Practice'), findsWidgets);
+    expect(find.text('Focus on the details most courses skip.'), findsOneWidget);
     expect(
       find.textContaining('diagnostic quizzes'),
       findsOneWidget,
     );
-    expect(find.text('Particle Forensics'), findsOneWidget);
+    expect(find.text('Particles'), findsOneWidget);
     expect(find.text('Start'), findsWidgets);
   });
 }

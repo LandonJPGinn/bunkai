@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../app/bunkai_tokens.dart';
 import '../services/furigana_inline.dart';
 import '../services/japanese_dictionary_service.dart';
 import '../services/japanese_tokenizer.dart';
@@ -271,11 +272,11 @@ class _LookupTokenState extends State<_LookupToken> {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
+    final tokens = context.bunkaiTokens;
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
+    final fast = reduceMotion ? Duration.zero : tokens.motionFast;
     final showMark = _hover || _focused;
-    final style = widget.style?.copyWith(
-      decoration: showMark ? TextDecoration.underline : null,
-      decorationColor: scheme.primary.withValues(alpha: 0.45),
-    );
+    final baseStyle = widget.style;
 
     return Focus(
       onFocusChange: (f) => setState(() => _focused = f),
@@ -298,7 +299,24 @@ class _LookupTokenState extends State<_LookupToken> {
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: widget.onOpen,
-            child: Text(widget.label, style: style),
+            // Tween only the decoration colour alpha so the underline
+            // fades smoothly without mounting an extra Text widget
+            // (TextDecoration itself can't be animated).
+            child: TweenAnimationBuilder<double>(
+              tween: Tween<double>(
+                begin: 0,
+                end: showMark ? 0.45 : 0,
+              ),
+              duration: fast,
+              curve: tokens.motionStandardCurve,
+              builder: (context, alpha, _) {
+                final style = baseStyle?.copyWith(
+                  decoration: TextDecoration.underline,
+                  decorationColor: scheme.primary.withValues(alpha: alpha),
+                );
+                return Text(widget.label, style: style);
+              },
+            ),
           ),
         ),
       ),

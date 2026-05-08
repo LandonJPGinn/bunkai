@@ -2,25 +2,30 @@ import 'package:flutter/material.dart';
 
 import '../app/bunkai_feedback_theme.dart';
 import 'japanese_text_lookup.dart';
-
 class ExplanationPanel extends StatelessWidget {
   const ExplanationPanel({
     super.key,
     required this.title,
     required this.body,
+    required this.bodyEnglish,
     this.isCorrect,
     this.showFurigana = true,
+    this.showEnglish = false,
   });
 
   final String title;
   final String body;
+  final String bodyEnglish;
   final bool? isCorrect;
   final bool showFurigana;
+  final bool showEnglish;
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final feedback = context.bunkaiFeedback;
+    final en = bodyEnglish.trim();
+    final hasEn = en.isNotEmpty;
 
     final (Color borderColor, Color bgColor) = switch (isCorrect) {
       true => (
@@ -62,14 +67,43 @@ class ExplanationPanel extends StatelessWidget {
                 ),
           ),
           const SizedBox(height: 8),
-          JapaneseTextLookup(
-            text: body,
-            showFurigana: showFurigana,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: scheme.onSurfaceVariant,
-                  height: 1.45,
-                ),
-          ),
+          if (showEnglish && hasEn) ...[
+            Text(
+              en,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: scheme.onSurfaceVariant,
+                    height: 1.45,
+                  ),
+            ),
+          ] else if (showEnglish) ...[
+            JapaneseTextLookup(
+              text: body,
+              showFurigana: showFurigana,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: scheme.onSurfaceVariant,
+                    height: 1.45,
+                  ),
+            ),
+          ] else ...[
+            JapaneseTextLookup(
+              text: body,
+              showFurigana: showFurigana,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: scheme.onSurfaceVariant,
+                    height: 1.45,
+                  ),
+            ),
+            if (hasEn) ...[
+              const SizedBox(height: 10),
+              Text(
+                en,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      color: scheme.onSurfaceVariant.withValues(alpha: 0.88),
+                      height: 1.45,
+                    ),
+              ),
+            ],
+          ],
         ],
       ),
     );

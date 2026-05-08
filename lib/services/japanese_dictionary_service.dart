@@ -16,6 +16,8 @@ class JapaneseDictionaryService {
       JapaneseDictionaryService._();
 
   static const String _assetPath = 'assets/dictionary/japanese_lexicon.json';
+  static const String _compiledAssetPath =
+      'assets/compiled/dictionary_lexicon.json';
 
   Map<String, List<DictionaryEntry>>? _bySurface;
   JapaneseTokenizer? _tokenizer;
@@ -42,7 +44,10 @@ class JapaneseDictionaryService {
   Future<void> _performLoad() async {
     if (_loaded) return;
 
-    final raw = await rootBundle.loadString(_assetPath);
+    final raw = await _loadStringWithFallback(
+      preferred: _compiledAssetPath,
+      fallback: _assetPath,
+    );
     final decoded = jsonDecode(raw);
     if (decoded is! List) {
       throw const FormatException(
@@ -57,15 +62,24 @@ class JapaneseDictionaryService {
           'JapaneseDictionaryService: each entry must be an object',
         );
       }
-      final entry = DictionaryEntry.fromJson(
-        Map<String, dynamic>.from(item),
-      );
+      final entry = DictionaryEntry.fromJson(Map<String, dynamic>.from(item));
       next.putIfAbsent(entry.surface, () => []).add(entry);
     }
 
     _bySurface = next;
     _tokenizer = JapaneseTokenizer.fromSurfaces(next.keys);
     _loaded = true;
+  }
+
+  Future<String> _loadStringWithFallback({
+    required String preferred,
+    required String fallback,
+  }) async {
+    try {
+      return await rootBundle.loadString(preferred);
+    } catch (_) {
+      return rootBundle.loadString(fallback);
+    }
   }
 
   /// Longest-match tokenizer over loaded surfaces; throws if not [isLoaded].

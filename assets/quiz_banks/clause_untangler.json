@@ -15,27 +15,12 @@
       "id": "cu_001",
       "type": "multipleChoice",
       "prompt": "「昨日買った」は何を説明していますか。",
+      "promptEn": "What do you expect to buy yesterday?",
       "japanese": "昨日買ったかばんは軽いです。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "かばん"
-        },
-        {
-          "id": "b",
-          "label": "昨日"
-        },
-        {
-          "id": "c",
-          "label": "軽さ"
-        },
-        {
-          "id": "d",
-          "label": "店"
-        }
-      ],
+      "japaneseEn": "I bought it yesterday.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「かばん」。「昨日」は節内の成分で、「軽いです」の述語にはこの節はかからない。",
+      "explanationEn": "The noun that is qualified is \"kaban\". \"。\" is a component in the section, and the predicate for \"light\".",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause",
@@ -50,33 +35,40 @@
       "vocabulary": [
         "昨日買ったかばんは軽いです"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "かばん",
+          "labelEn": "かばん (Home)"
+        },
+        {
+          "id": "b",
+          "label": "昨日",
+          "labelEn": "昨日 (2 days ago)"
+        },
+        {
+          "id": "c",
+          "label": "軽さ",
+          "labelEn": "軽さ (Light)"
+        },
+        {
+          "id": "d",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        }
+      ]
     },
     {
       "id": "cu_002",
       "type": "multipleChoice",
       "prompt": "「田中さんが使っている」は何を説明していますか。",
+      "promptEn": "What are the reasons why Mr. Tanaka is using?",
       "japanese": "田中さんが使っているパソコンは新しいです。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "田中さん"
-        },
-        {
-          "id": "b",
-          "label": "パソコン"
-        },
-        {
-          "id": "c",
-          "label": "新しさ"
-        },
-        {
-          "id": "d",
-          "label": "部屋"
-        }
-      ],
+      "japaneseEn": "The computer used by Mr. Tanaka is new.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「パソコン」。節の主語「田中さん」はヘッド名詞ではない。",
+      "explanationEn": "\"PC\" is a noun that is qualified. Mr. Tanaka is not a head noun.",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing",
@@ -91,33 +83,40 @@
       "vocabulary": [
         "田中さんが使っているパソコンは新しいです"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "田中さん",
+          "labelEn": "田中さん (Mr. Tanaka)"
+        },
+        {
+          "id": "b",
+          "label": "パソコン",
+          "labelEn": "パソコン (PC)"
+        },
+        {
+          "id": "c",
+          "label": "新しさ",
+          "labelEn": "新しさ (New)"
+        },
+        {
+          "id": "d",
+          "label": "部屋",
+          "labelEn": "部屋 (Room)"
+        }
+      ]
     },
     {
       "id": "cu_003",
       "type": "multipleChoice",
       "prompt": "「駅の近くにある」は何を説明していますか。",
+      "promptEn": "What are the reasons behind the station?",
       "japanese": "駅の近くにあるカフェで会いましょう。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "駅"
-        },
-        {
-          "id": "b",
-          "label": "近く"
-        },
-        {
-          "id": "c",
-          "label": "カフェ"
-        },
-        {
-          "id": "d",
-          "label": "会い"
-        }
-      ],
+      "japaneseEn": "Meet at a cafe near the station.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「カフェ」。「駅の近く」は節の内部の場所表現で、ヘッドではない。",
+      "explanationEn": "The noun that is qualified is \"cafe\". \"Near the station\" is a location representation inside the section, not a head.",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope",
@@ -132,33 +131,40 @@
       "vocabulary": [
         "駅の近くにあるカフェで会いましょう"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "駅",
+          "labelEn": "駅 (Station)"
+        },
+        {
+          "id": "b",
+          "label": "近く",
+          "labelEn": "近く (Close)"
+        },
+        {
+          "id": "c",
+          "label": "カフェ",
+          "labelEn": "カフェ (Cafe)"
+        },
+        {
+          "id": "d",
+          "label": "会い",
+          "labelEn": "会い (Home)"
+        }
+      ]
     },
     {
       "id": "cu_004",
       "type": "multipleChoice",
       "prompt": "「母が作った」は何を説明していますか。",
+      "promptEn": "What is \"Mother made\"?",
       "japanese": "母が作ったお弁当を持ってきました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "母"
-        },
-        {
-          "id": "b",
-          "label": "持ち物"
-        },
-        {
-          "id": "c",
-          "label": "朝"
-        },
-        {
-          "id": "d",
-          "label": "お弁当"
-        }
-      ],
+      "japaneseEn": "I had a lunch box made by my mother.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「お弁当」。「持ってきました」は述語で、この連体節のヘッドではない。",
+      "explanationEn": "The noun that is qualified is \"Bento\". \"I have brought it\" is not the head of this synth.",
       "diagnosticTags": [
         "relative_clause",
         "noun_modification"
@@ -172,33 +178,40 @@
       "vocabulary": [
         "母が作ったお弁当を持ってきました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "b",
+          "label": "持ち物",
+          "labelEn": "持ち物 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "朝",
+          "labelEn": "朝 (Morning)"
+        },
+        {
+          "id": "d",
+          "label": "お弁当",
+          "labelEn": "お弁当 (Bento)"
+        }
+      ]
     },
     {
       "id": "cu_005",
       "type": "multipleChoice",
       "prompt": "「来週出る」は何を説明していますか。",
+      "promptEn": "What do you expect to see next week?",
       "japanese": "来週出るレポートの締め切りは金曜日です。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "レポート"
-        },
-        {
-          "id": "b",
-          "label": "締め切り"
-        },
-        {
-          "id": "c",
-          "label": "金曜日"
-        },
-        {
-          "id": "d",
-          "label": "来週"
-        }
-      ],
+      "japaneseEn": "The next week is Friday.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「レポート」。「の締め切り」は別の名詞句の一部で、この節が直接かかるのは「レポート」。",
+      "explanationEn": "\"Report\" is a noun that is qualified. The 句 is a part of another noun clause, and this clause is directly applied to the report.",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing",
@@ -213,33 +226,40 @@
       "vocabulary": [
         "来週出るレポートの締め切りは金曜日です"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "レポート",
+          "labelEn": "レポート (Report)"
+        },
+        {
+          "id": "b",
+          "label": "締め切り",
+          "labelEn": "締め切り ()"
+        },
+        {
+          "id": "c",
+          "label": "金曜日",
+          "labelEn": "金曜日 (Friday)"
+        },
+        {
+          "id": "d",
+          "label": "来週",
+          "labelEn": "来週 (Next week)"
+        }
+      ]
     },
     {
       "id": "cu_006",
       "type": "multipleChoice",
       "prompt": "「角を曲がった」は何を説明していますか。",
+      "promptEn": "What do you expect to see when the corner is bent?",
       "japanese": "角を曲がったところに郵便局があります。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "角"
-        },
-        {
-          "id": "b",
-          "label": "ところ"
-        },
-        {
-          "id": "c",
-          "label": "郵便局"
-        },
-        {
-          "id": "d",
-          "label": "道"
-        }
-      ],
+      "japaneseEn": "There is a post office in the corner.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「ところ」。「郵便局」は存在の主題で、この連体節のヘッドではない。",
+      "explanationEn": "The noun that is qualified is \"where\". The post office is the subject of existence and is not the head of the cohesion.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -253,33 +273,40 @@
       "vocabulary": [
         "角を曲がったところに郵便局があります"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "角",
+          "labelEn": "角 (Angle)"
+        },
+        {
+          "id": "b",
+          "label": "ところ",
+          "labelEn": "ところ (Home)"
+        },
+        {
+          "id": "c",
+          "label": "郵便局",
+          "labelEn": "郵便局 (Post Office)"
+        },
+        {
+          "id": "d",
+          "label": "道",
+          "labelEn": "道 ()"
+        }
+      ]
     },
     {
       "id": "cu_007",
       "type": "multipleChoice",
       "prompt": "「読んでいる」は何を説明していますか。",
+      "promptEn": "What is \"reading\"?",
       "japanese": "読んでいる本の名前を忘れました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "名前"
-        },
-        {
-          "id": "b",
-          "label": "忘れ"
-        },
-        {
-          "id": "c",
-          "label": "本"
-        },
-        {
-          "id": "d",
-          "label": "図書館"
-        }
-      ],
+      "japaneseEn": "I forgot the name of the book.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「本」。「名前」は「本の名前」として後から続く成分。",
+      "explanationEn": "The noun that is qualified is \"book\". “Name” is a component that continues after the name of the book.",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -293,33 +320,40 @@
       "vocabulary": [
         "読んでいる本の名前を忘れました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名前",
+          "labelEn": "名前 (Name)"
+        },
+        {
+          "id": "b",
+          "label": "忘れ",
+          "labelEn": "忘れ (Forget)"
+        },
+        {
+          "id": "c",
+          "label": "本",
+          "labelEn": "本"
+        },
+        {
+          "id": "d",
+          "label": "図書館",
+          "labelEn": "図書館 (Library)"
+        }
+      ]
     },
     {
       "id": "cu_008",
       "type": "multipleChoice",
       "prompt": "「社長が書いた」は何を説明していますか。",
+      "promptEn": "What are the reasons why the president wrote?",
       "japanese": "社長が書いたメールをもう一度読みました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "社長"
-        },
-        {
-          "id": "b",
-          "label": "返信"
-        },
-        {
-          "id": "c",
-          "label": "内容"
-        },
-        {
-          "id": "d",
-          "label": "メール"
-        }
-      ],
+      "japaneseEn": "I read the e-mail written by the president again.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「メール」。「社長」は節内の主語。",
+      "explanationEn": "\"Email\" is a noun that is qualified. \"President\" is the main word in the section.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -333,33 +367,40 @@
       "vocabulary": [
         "社長が書いたメールをもう一度読みました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "社長",
+          "labelEn": "社長 (President)"
+        },
+        {
+          "id": "b",
+          "label": "返信",
+          "labelEn": "返信 (Replies)"
+        },
+        {
+          "id": "c",
+          "label": "内容",
+          "labelEn": "内容 ()"
+        },
+        {
+          "id": "d",
+          "label": "メール",
+          "labelEn": "メール (Mail)"
+        }
+      ]
     },
     {
       "id": "cu_009",
       "type": "multipleChoice",
       "prompt": "「少し大きい」は何を説明していますか。",
+      "promptEn": "What is the “smallest”?",
       "japanese": "少し大きいサイズをください。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "サイズ"
-        },
-        {
-          "id": "b",
-          "label": "店員"
-        },
-        {
-          "id": "c",
-          "label": "服"
-        },
-        {
-          "id": "d",
-          "label": "少し"
-        }
-      ],
+      "japaneseEn": "Small size.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「サイズ」。形容詞の連体形は直後の名詞にかかる。",
+      "explanationEn": "The noun that is qualified is \"size\". The cone of the adjective takes a noun of the alphabet.",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope"
@@ -373,33 +414,40 @@
       "vocabulary": [
         "少し大きいサイズをください"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "サイズ",
+          "labelEn": "サイズ (Size)"
+        },
+        {
+          "id": "b",
+          "label": "店員",
+          "labelEn": "店員 (Staff)"
+        },
+        {
+          "id": "c",
+          "label": "服",
+          "labelEn": "服 (Clothing)"
+        },
+        {
+          "id": "d",
+          "label": "少し",
+          "labelEn": "少し (a little)"
+        }
+      ]
     },
     {
       "id": "cu_010",
       "type": "multipleChoice",
       "prompt": "「明日届く」は何を説明していますか。",
+      "promptEn": "What do you expect to receive tomorrow?",
       "japanese": "明日届く荷物を追跡しました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "明日"
-        },
-        {
-          "id": "b",
-          "label": "荷物"
-        },
-        {
-          "id": "c",
-          "label": "追跡"
-        },
-        {
-          "id": "d",
-          "label": "配達員"
-        }
-      ],
+      "japaneseEn": "We tracked your items that arrive tomorrow.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「荷物」。「明日」は節内の時間。",
+      "explanationEn": "The noun that is qualified is \"package\". \"Tomorrow\" is the time in the section.",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing"
@@ -413,33 +461,40 @@
       "vocabulary": [
         "明日届く荷物を追跡しました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "明日",
+          "labelEn": "明日 ()"
+        },
+        {
+          "id": "b",
+          "label": "荷物",
+          "labelEn": "荷物 (Luggage)"
+        },
+        {
+          "id": "c",
+          "label": "追跡",
+          "labelEn": "追跡 ()"
+        },
+        {
+          "id": "d",
+          "label": "配達員",
+          "labelEn": "配達員 (Contact Us)"
+        }
+      ]
     },
     {
       "id": "cu_011",
       "type": "multipleChoice",
       "prompt": "「話したかった」は何を説明していますか。",
+      "promptEn": "What do you want to talk about?",
       "japanese": "話したかったことがあります。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "話"
-        },
-        {
-          "id": "b",
-          "label": "気持ち"
-        },
-        {
-          "id": "c",
-          "label": "こと"
-        },
-        {
-          "id": "d",
-          "label": "相手"
-        }
-      ],
+      "japaneseEn": "I wanted to talk.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「こと」。内容を「こと」にまとめている。",
+      "explanationEn": "The noun that is qualified is \"that\". The contents are summarized in \"thing\".",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause",
@@ -454,33 +509,40 @@
       "vocabulary": [
         "話したかったことがあります"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話",
+          "labelEn": "話 ()"
+        },
+        {
+          "id": "b",
+          "label": "気持ち",
+          "labelEn": "気持ち ()"
+        },
+        {
+          "id": "c",
+          "label": "こと",
+          "labelEn": "こと (Home)"
+        },
+        {
+          "id": "d",
+          "label": "相手",
+          "labelEn": "相手 ()"
+        }
+      ]
     },
     {
       "id": "cu_012",
       "type": "multipleChoice",
       "prompt": "「社員が使う」は何を説明していますか。",
+      "promptEn": "What do employees use?",
       "japanese": "社員が使う会議室は狭いです。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "社員"
-        },
-        {
-          "id": "b",
-          "label": "会社"
-        },
-        {
-          "id": "c",
-          "label": "狭さ"
-        },
-        {
-          "id": "d",
-          "label": "会議室"
-        }
-      ],
+      "japaneseEn": "Meeting rooms for employees are narrow.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「会議室」。",
+      "explanationEn": "\"Meeting room\" is a noun that is qualified.",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing"
@@ -494,33 +556,40 @@
       "vocabulary": [
         "社員が使う会議室は狭いです"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "社員",
+          "labelEn": "社員 (Company)"
+        },
+        {
+          "id": "b",
+          "label": "会社",
+          "labelEn": "会社 (Company)"
+        },
+        {
+          "id": "c",
+          "label": "狭さ",
+          "labelEn": "狭さ (Close)"
+        },
+        {
+          "id": "d",
+          "label": "会議室",
+          "labelEn": "会議室 (Meeting Room)"
+        }
+      ]
     },
     {
       "id": "cu_013",
       "type": "multipleChoice",
       "prompt": "「急いで書いた」は何を説明していますか。",
+      "promptEn": "What do you expect to write in a 。ry?",
       "japanese": "急いで書いたメモを見せてください。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "メモ"
-        },
-        {
-          "id": "b",
-          "label": "急ぎ"
-        },
-        {
-          "id": "c",
-          "label": "手紙"
-        },
-        {
-          "id": "d",
-          "label": "内容"
-        }
-      ],
+      "japaneseEn": "Show memo I wrote in a  ry.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「メモ」。",
+      "explanationEn": "The noun that is qualified is \" \".",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause"
@@ -534,33 +603,40 @@
       "vocabulary": [
         "急いで書いたメモを見せてください"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メモ",
+          "labelEn": "メモ ()"
+        },
+        {
+          "id": "b",
+          "label": "急ぎ",
+          "labelEn": "急ぎ (Close)"
+        },
+        {
+          "id": "c",
+          "label": "手紙",
+          "labelEn": "手紙 (English)"
+        },
+        {
+          "id": "d",
+          "label": "内容",
+          "labelEn": "内容 ()"
+        }
+      ]
     },
     {
       "id": "cu_014",
       "type": "multipleChoice",
       "prompt": "「明日までに出す」は何を説明していますか。",
+      "promptEn": "What do you expect to see?",
       "japanese": "明日までに出す課題がまだ残っている。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "明日"
-        },
-        {
-          "id": "b",
-          "label": "課題"
-        },
-        {
-          "id": "c",
-          "label": "学生"
-        },
-        {
-          "id": "d",
-          "label": "教室"
-        }
-      ],
+      "japaneseEn": "There is still a problem that will be issued tomorrow.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「課題」。期限は節の内部。",
+      "explanationEn": "Qualified nouns are \"problems\". The deadline is inside the section.",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -574,33 +650,40 @@
       "vocabulary": [
         "明日までに出す課題がまだ残っている"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "明日",
+          "labelEn": "明日 ()"
+        },
+        {
+          "id": "b",
+          "label": "課題",
+          "labelEn": "課題 ()"
+        },
+        {
+          "id": "c",
+          "label": "学生",
+          "labelEn": "学生 (Student)"
+        },
+        {
+          "id": "d",
+          "label": "教室",
+          "labelEn": "教室 (Classroom)"
+        }
+      ]
     },
     {
       "id": "cu_015",
       "type": "multipleChoice",
       "prompt": "「隣の国から来た」は何を説明していますか。",
+      "promptEn": "What do you expect from the next country?",
       "japanese": "隣の国から来た学生が手を挙げた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "国"
-        },
-        {
-          "id": "b",
-          "label": "隣"
-        },
-        {
-          "id": "c",
-          "label": "学生"
-        },
-        {
-          "id": "d",
-          "label": "教室"
-        }
-      ],
+      "japaneseEn": "Students from neighboring countries raised their hands.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「学生」。「隣の国」は節内の名詞句。",
+      "explanationEn": "\"Student\" is a noun that is qualified. \"Near Country\" is a noun phrase in the section.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -614,33 +697,40 @@
       "vocabulary": [
         "隣の国から来た学生が手を挙げた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "国",
+          "labelEn": "国 (Country)"
+        },
+        {
+          "id": "b",
+          "label": "隣",
+          "labelEn": "隣 (Close)"
+        },
+        {
+          "id": "c",
+          "label": "学生",
+          "labelEn": "学生 (Student)"
+        },
+        {
+          "id": "d",
+          "label": "教室",
+          "labelEn": "教室 (Classroom)"
+        }
+      ]
     },
     {
       "id": "cu_016",
       "type": "multipleChoice",
       "prompt": "「兄が選んだ」は何を説明していますか。",
+      "promptEn": "What are the reasons why the brother chose?",
       "japanese": "兄が選んだプレゼントが気に入りました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "兄"
-        },
-        {
-          "id": "b",
-          "label": "気持ち"
-        },
-        {
-          "id": "c",
-          "label": "店"
-        },
-        {
-          "id": "d",
-          "label": "プレゼント"
-        }
-      ],
+      "japaneseEn": "My brother chose the gift.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「プレゼント」。",
+      "explanationEn": "The noun that is qualified is \"present\".",
       "diagnosticTags": [
         "relative_clause",
         "noun_modification"
@@ -654,33 +744,40 @@
       "vocabulary": [
         "兄が選んだプレゼントが気に入りました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "兄",
+          "labelEn": "兄 (Brother)"
+        },
+        {
+          "id": "b",
+          "label": "気持ち",
+          "labelEn": "気持ち ()"
+        },
+        {
+          "id": "c",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        },
+        {
+          "id": "d",
+          "label": "プレゼント",
+          "labelEn": "プレゼント (Home)"
+        }
+      ]
     },
     {
       "id": "cu_017",
       "type": "multipleChoice",
       "prompt": "「窓から見える」は何を説明していますか。",
+      "promptEn": "What is the view from the window?",
       "japanese": "窓から見える海がきれいです。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "海"
-        },
-        {
-          "id": "b",
-          "label": "窓"
-        },
-        {
-          "id": "c",
-          "label": "景色"
-        },
-        {
-          "id": "d",
-          "label": "ホテル"
-        }
-      ],
+      "japaneseEn": "The ocean looks beautiful from the window.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「海」。",
+      "explanationEn": "The noun that is qualified is \"sea\".",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing"
@@ -694,33 +791,40 @@
       "vocabulary": [
         "窓から見える海がきれいです"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "海",
+          "labelEn": "海 (Sea)"
+        },
+        {
+          "id": "b",
+          "label": "窓",
+          "labelEn": "窓 (Window)"
+        },
+        {
+          "id": "c",
+          "label": "景色",
+          "labelEn": "景色 (Views)"
+        },
+        {
+          "id": "d",
+          "label": "ホテル",
+          "labelEn": "ホテル (Hotels)"
+        }
+      ]
     },
     {
       "id": "cu_018",
       "type": "multipleChoice",
       "prompt": "「去年買った」は何を説明していますか。",
+      "promptEn": "What do you expect to buy last year?",
       "japanese": "去年買った自転車を売ります。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "去年"
-        },
-        {
-          "id": "b",
-          "label": "自転車"
-        },
-        {
-          "id": "c",
-          "label": "値段"
-        },
-        {
-          "id": "d",
-          "label": "町"
-        }
-      ],
+      "japaneseEn": "I bought a bicycle last year.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「自転車」。",
+      "explanationEn": "\"Bicycle\" is a noun that is qualified.",
       "diagnosticTags": [
         "relative_clause",
         "noun_modification"
@@ -734,33 +838,40 @@
       "vocabulary": [
         "去年買った自転車を売ります"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "去年",
+          "labelEn": "去年 (Last year)"
+        },
+        {
+          "id": "b",
+          "label": "自転車",
+          "labelEn": "自転車 (Bicycle)"
+        },
+        {
+          "id": "c",
+          "label": "値段",
+          "labelEn": "値段 (Price)"
+        },
+        {
+          "id": "d",
+          "label": "町",
+          "labelEn": "町 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_019",
       "type": "multipleChoice",
       "prompt": "「赤い」は何を説明していますか。",
+      "promptEn": "What is red?",
       "japanese": "赤いりんごを三つください。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "色"
-        },
-        {
-          "id": "b",
-          "label": "店"
-        },
-        {
-          "id": "c",
-          "label": "りんご"
-        },
-        {
-          "id": "d",
-          "label": "数"
-        }
-      ],
+      "japaneseEn": "Three red s.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「りんご」。イ形容詞の連体形。",
+      "explanationEn": "The noun that is qualified is \"apple\". A const。ent form of a形pedic.",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope"
@@ -774,33 +885,40 @@
       "vocabulary": [
         "赤いりんごを三つください"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "色",
+          "labelEn": "色 (Color)"
+        },
+        {
+          "id": "b",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        },
+        {
+          "id": "c",
+          "label": "りんご",
+          "labelEn": "りんご (Apple)"
+        },
+        {
+          "id": "d",
+          "label": "数",
+          "labelEn": "数 (Number)"
+        }
+      ]
     },
     {
       "id": "cu_020",
       "type": "multipleChoice",
       "prompt": "「静かな」は何を説明していますか。",
+      "promptEn": "What is \"quiet\"?",
       "japanese": "静かな部屋で休みました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "休み"
-        },
-        {
-          "id": "b",
-          "label": "音"
-        },
-        {
-          "id": "c",
-          "label": "ホテル"
-        },
-        {
-          "id": "d",
-          "label": "部屋"
-        }
-      ],
+      "japaneseEn": "I took a rest in a quiet room.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「部屋」。ナ形容詞の連体形。",
+      "explanationEn": "The noun that is qualified is \"room\". Contaminated form of na-adjective.",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -814,33 +932,40 @@
       "vocabulary": [
         "静かな部屋で休みました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "休み",
+          "labelEn": "休み (Close)"
+        },
+        {
+          "id": "b",
+          "label": "音",
+          "labelEn": "音 (Sound)"
+        },
+        {
+          "id": "c",
+          "label": "ホテル",
+          "labelEn": "ホテル (Hotels)"
+        },
+        {
+          "id": "d",
+          "label": "部屋",
+          "labelEn": "部屋 (Room)"
+        }
+      ]
     },
     {
       "id": "cu_021",
       "type": "multipleChoice",
       "prompt": "「今朝作った」は何を説明していますか。",
+      "promptEn": "What is \"I made this morning\"?",
       "japanese": "今朝作った味噌汁の香りが広がった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "味噌汁"
-        },
-        {
-          "id": "b",
-          "label": "今朝"
-        },
-        {
-          "id": "c",
-          "label": "香り"
-        },
-        {
-          "id": "d",
-          "label": "台所"
-        }
-      ],
+      "japaneseEn": "Miso soup made this morning was spread.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「味噌汁」。「の香り」は別名詞。",
+      "explanationEn": "The noun that is qualified is \"Miso Soup\". “。” is an alias.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -854,33 +979,40 @@
       "vocabulary": [
         "今朝作った味噌汁の香りが広がった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "味噌汁",
+          "labelEn": "味噌汁 (Miso soup)"
+        },
+        {
+          "id": "b",
+          "label": "今朝",
+          "labelEn": "今朝 (Morning)"
+        },
+        {
+          "id": "c",
+          "label": "香り",
+          "labelEn": "香り (g)"
+        },
+        {
+          "id": "d",
+          "label": "台所",
+          "labelEn": "台所 (Kitchen)"
+        }
+      ]
     },
     {
       "id": "cu_022",
       "type": "multipleChoice",
       "prompt": "「昨日駅で会った」は何を説明していますか。",
+      "promptEn": "What are the reasons why I met at yesterday?",
       "japanese": "昨日駅で会った先生が、新しい本を貸してくれました。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "昨日"
-        },
-        {
-          "id": "b",
-          "label": "先生"
-        },
-        {
-          "id": "c",
-          "label": "駅"
-        },
-        {
-          "id": "d",
-          "label": "本"
-        }
-      ],
+      "japaneseEn": "I met a new book yesterday.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「先生」。「昨日」「駅」は節内の時と場所で、ヘッドではない。",
+      "explanationEn": "The noun that is qualified is \"teacher\".駅 and station are not heads.",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause",
@@ -896,33 +1028,40 @@
         "昨日駅で会った先生が",
         "新しい本を貸してくれました"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日",
+          "labelEn": "昨日 (2 days ago)"
+        },
+        {
+          "id": "b",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "c",
+          "label": "駅",
+          "labelEn": "駅 (Station)"
+        },
+        {
+          "id": "d",
+          "label": "本",
+          "labelEn": "本"
+        }
+      ]
     },
     {
       "id": "cu_023",
       "type": "multipleChoice",
       "prompt": "「先週見た」は何を説明していますか。",
+      "promptEn": "What do you see last week?",
       "japanese": "先週見た映画の名前を思い出せない。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "先週"
-        },
-        {
-          "id": "b",
-          "label": "名前"
-        },
-        {
-          "id": "c",
-          "label": "映画"
-        },
-        {
-          "id": "d",
-          "label": "友達"
-        }
-      ],
+      "japaneseEn": "I cannot remember the name of the movie I saw last week.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「映画」。「名前」は「映画の名前」。",
+      "explanationEn": "The noun that is qualified is \"movie\". \"Name\" is the name of the movie.",
       "diagnosticTags": [
         "relative_clause",
         "noun_modification"
@@ -936,33 +1075,40 @@
       "vocabulary": [
         "先週見た映画の名前を思い出せない"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "先週",
+          "labelEn": "先週 (Last week)"
+        },
+        {
+          "id": "b",
+          "label": "名前",
+          "labelEn": "名前 (Name)"
+        },
+        {
+          "id": "c",
+          "label": "映画",
+          "labelEn": "映画 (Movie)"
+        },
+        {
+          "id": "d",
+          "label": "友達",
+          "labelEn": "友達 (Friends)"
+        }
+      ]
     },
     {
       "id": "cu_024",
       "type": "multipleChoice",
       "prompt": "「教室で拾った」は何を説明していますか。",
+      "promptEn": "What do you see when I picked up in the classroom?",
       "japanese": "教室で拾った財布を先生に渡した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "教室"
-        },
-        {
-          "id": "b",
-          "label": "先生"
-        },
-        {
-          "id": "c",
-          "label": "渡し"
-        },
-        {
-          "id": "d",
-          "label": "財布"
-        }
-      ],
+      "japaneseEn": "I passed the wallet picked up in the classroom to the teacher.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「財布」。",
+      "explanationEn": "The noun that is qualified is \"purse\".",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing"
@@ -976,33 +1122,40 @@
       "vocabulary": [
         "教室で拾った財布を先生に渡した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "教室",
+          "labelEn": "教室 (Classroom)"
+        },
+        {
+          "id": "b",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "c",
+          "label": "渡し",
+          "labelEn": "渡し ()"
+        },
+        {
+          "id": "d",
+          "label": "財布",
+          "labelEn": "財布 ()"
+        }
+      ]
     },
     {
       "id": "cu_025",
       "type": "multipleChoice",
       "prompt": "「公園で遊んでいた」は何を説明していますか。",
+      "promptEn": "What do you think about playing in the park?",
       "japanese": "公園で遊んでいた子どもたちが帰ってきた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "子どもたち"
-        },
-        {
-          "id": "b",
-          "label": "公園"
-        },
-        {
-          "id": "c",
-          "label": "遊び"
-        },
-        {
-          "id": "d",
-          "label": "家"
-        }
-      ],
+      "japaneseEn": "Children playing in the park came back.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「子どもたち」。",
+      "explanationEn": "The noun that is qualified is \"children\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -1016,33 +1169,40 @@
       "vocabulary": [
         "公園で遊んでいた子どもたちが帰ってきた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "子どもたち",
+          "labelEn": "子どもたち (Children)"
+        },
+        {
+          "id": "b",
+          "label": "公園",
+          "labelEn": "公園 (Park)"
+        },
+        {
+          "id": "c",
+          "label": "遊び",
+          "labelEn": "遊び (Home)"
+        },
+        {
+          "id": "d",
+          "label": "家",
+          "labelEn": "家 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_026",
       "type": "multipleChoice",
       "prompt": "「駅前で買った」は何を説明していますか。",
+      "promptEn": "What do you expect to buy in front of the station?",
       "japanese": "駅前で買った花を母にあげた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "駅前"
-        },
-        {
-          "id": "b",
-          "label": "花"
-        },
-        {
-          "id": "c",
-          "label": "母"
-        },
-        {
-          "id": "d",
-          "label": "贈り物"
-        }
-      ],
+      "japaneseEn": "I bought flowers in front of me.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「花」。",
+      "explanationEn": "\"Flower\" is a noun that is qualified.",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause"
@@ -1056,33 +1216,40 @@
       "vocabulary": [
         "駅前で買った花を母にあげた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "駅前",
+          "labelEn": "駅前 (Close)"
+        },
+        {
+          "id": "b",
+          "label": "花",
+          "labelEn": "花 (Flowers)"
+        },
+        {
+          "id": "c",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "d",
+          "label": "贈り物",
+          "labelEn": "贈り物 (Gifts)"
+        }
+      ]
     },
     {
       "id": "cu_027",
       "type": "multipleChoice",
       "prompt": "「図書館で借りた」は何を説明していますか。",
+      "promptEn": "What do you think about renting in a library?",
       "japanese": "図書館で借りた本は面白かった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "図書館"
-        },
-        {
-          "id": "b",
-          "label": "面白さ"
-        },
-        {
-          "id": "c",
-          "label": "本"
-        },
-        {
-          "id": "d",
-          "label": "週末"
-        }
-      ],
+      "japaneseEn": "The book borrowed from the library was interesting.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「本」。",
+      "explanationEn": "The noun that is qualified is \"book\".",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing"
@@ -1096,33 +1263,40 @@
       "vocabulary": [
         "図書館で借りた本は面白かった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "図書館",
+          "labelEn": "図書館 (Library)"
+        },
+        {
+          "id": "b",
+          "label": "面白さ",
+          "labelEn": "面白さ ()"
+        },
+        {
+          "id": "c",
+          "label": "本",
+          "labelEn": "本"
+        },
+        {
+          "id": "d",
+          "label": "週末",
+          "labelEn": "週末 (Weekend)"
+        }
+      ]
     },
     {
       "id": "cu_028",
       "type": "multipleChoice",
       "prompt": "「昨日話した」は何を説明していますか。",
+      "promptEn": "What do you think about “I talked yesterday”?",
       "japanese": "昨日話した人の顔を覚えていない。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "昨日"
-        },
-        {
-          "id": "b",
-          "label": "顔"
-        },
-        {
-          "id": "c",
-          "label": "話"
-        },
-        {
-          "id": "d",
-          "label": "人"
-        }
-      ],
+      "japaneseEn": "I don't remember the face of the person who spoke yesterday.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「人」。「顔」は「人の顔」。",
+      "explanationEn": "The noun that is qualified is \"person\". \"Face\" is \"people's face\".",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification"
@@ -1136,33 +1310,40 @@
       "vocabulary": [
         "昨日話した人の顔を覚えていない"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日",
+          "labelEn": "昨日 (2 days ago)"
+        },
+        {
+          "id": "b",
+          "label": "顔",
+          "labelEn": "顔 (Face)"
+        },
+        {
+          "id": "c",
+          "label": "話",
+          "labelEn": "話 ()"
+        },
+        {
+          "id": "d",
+          "label": "人",
+          "labelEn": "人 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_029",
       "type": "multipleChoice",
       "prompt": "「去年住んでいた」は何を説明していますか。",
+      "promptEn": "What do you expect to live last year?",
       "japanese": "去年住んでいた町が大きく変わっていた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "町"
-        },
-        {
-          "id": "b",
-          "label": "去年"
-        },
-        {
-          "id": "c",
-          "label": "変化"
-        },
-        {
-          "id": "d",
-          "label": "家"
-        }
-      ],
+      "japaneseEn": "The town that lived last year has changed greatly.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「町」。",
+      "explanationEn": "The noun that is qualified is \"town\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -1176,33 +1357,40 @@
       "vocabulary": [
         "去年住んでいた町が大きく変わっていた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "町",
+          "labelEn": "町 (Home)"
+        },
+        {
+          "id": "b",
+          "label": "去年",
+          "labelEn": "去年 (Last year)"
+        },
+        {
+          "id": "c",
+          "label": "変化",
+          "labelEn": "変化 (Change)"
+        },
+        {
+          "id": "d",
+          "label": "家",
+          "labelEn": "家 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_030",
       "type": "multipleChoice",
       "prompt": "「今朝降った」は何を説明していますか。",
+      "promptEn": "What do you think about this morning?",
       "japanese": "今朝降った雪で道が白くなった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "今朝"
-        },
-        {
-          "id": "b",
-          "label": "雪"
-        },
-        {
-          "id": "c",
-          "label": "道"
-        },
-        {
-          "id": "d",
-          "label": "天気"
-        }
-      ],
+      "japaneseEn": "The road became white due to snowfall this morning.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「雪」。",
+      "explanationEn": "\"Snow\" is a noun that is qualified.",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -1216,33 +1404,40 @@
       "vocabulary": [
         "今朝降った雪で道が白くなった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今朝",
+          "labelEn": "今朝 (Morning)"
+        },
+        {
+          "id": "b",
+          "label": "雪",
+          "labelEn": "雪 (Snow)"
+        },
+        {
+          "id": "c",
+          "label": "道",
+          "labelEn": "道 ()"
+        },
+        {
+          "id": "d",
+          "label": "天気",
+          "labelEn": "天気 (Weather)"
+        }
+      ]
     },
     {
       "id": "cu_031",
       "type": "multipleChoice",
       "prompt": "「昨日届いた」は何を説明していますか。",
+      "promptEn": "What do you expect to receive yesterday?",
       "japanese": "昨日届いた荷物を開けた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "昨日"
-        },
-        {
-          "id": "b",
-          "label": "配達"
-        },
-        {
-          "id": "c",
-          "label": "荷物"
-        },
-        {
-          "id": "d",
-          "label": "箱"
-        }
-      ],
+      "japaneseEn": "I opened my luggage yesterday.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「荷物」。",
+      "explanationEn": "The noun that is qualified is \"package\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -1256,33 +1451,40 @@
       "vocabulary": [
         "昨日届いた荷物を開けた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "昨日",
+          "labelEn": "昨日 (2 days ago)"
+        },
+        {
+          "id": "b",
+          "label": "配達",
+          "labelEn": "配達 (Delivery)"
+        },
+        {
+          "id": "c",
+          "label": "荷物",
+          "labelEn": "荷物 (Luggage)"
+        },
+        {
+          "id": "d",
+          "label": "箱",
+          "labelEn": "箱 (Box)"
+        }
+      ]
     },
     {
       "id": "cu_032",
       "type": "multipleChoice",
       "prompt": "「駅のホームで見た」は何を説明していますか。",
+      "promptEn": "What do you see in the station home?",
       "japanese": "駅のホームで見た鳥が飛び立った。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "駅"
-        },
-        {
-          "id": "b",
-          "label": "ホーム"
-        },
-        {
-          "id": "c",
-          "label": "電車"
-        },
-        {
-          "id": "d",
-          "label": "鳥"
-        }
-      ],
+      "japaneseEn": "The bird seen in the station's home jumped.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「鳥」。「駅」「ホーム」は節内の場所。",
+      "explanationEn": "The noun that is qualified is \"bird\". \"S。\" and \"Home\"",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing",
@@ -1297,33 +1499,40 @@
       "vocabulary": [
         "駅のホームで見た鳥が飛び立った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "駅",
+          "labelEn": "駅 (Station)"
+        },
+        {
+          "id": "b",
+          "label": "ホーム",
+          "labelEn": "ホーム (Home)"
+        },
+        {
+          "id": "c",
+          "label": "電車",
+          "labelEn": "電車 (Train)"
+        },
+        {
+          "id": "d",
+          "label": "鳥",
+          "labelEn": "鳥 (Birds)"
+        }
+      ]
     },
     {
       "id": "cu_033",
       "type": "multipleChoice",
       "prompt": "「昨日病院で会った」は何を説明していますか。",
+      "promptEn": "What do you expect to see in the hospital yesterday?",
       "japanese": "昨日病院で会った友だちに元気だと言われた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "友だち"
-        },
-        {
-          "id": "b",
-          "label": "昨日"
-        },
-        {
-          "id": "c",
-          "label": "病院"
-        },
-        {
-          "id": "d",
-          "label": "元気"
-        }
-      ],
+      "japaneseEn": "I was told that my friend met me yesterday.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「友だち」。",
+      "explanationEn": "The noun that is qualified is \"friend\".",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification"
@@ -1337,33 +1546,40 @@
       "vocabulary": [
         "昨日病院で会った友だちに元気だと言われた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "友だち",
+          "labelEn": "友だち (Home)"
+        },
+        {
+          "id": "b",
+          "label": "昨日",
+          "labelEn": "昨日 (2 days ago)"
+        },
+        {
+          "id": "c",
+          "label": "病院",
+          "labelEn": "病院 (Hospital)"
+        },
+        {
+          "id": "d",
+          "label": "元気",
+          "labelEn": "元気 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_034",
       "type": "multipleChoice",
       "prompt": "「少し高い」は何を説明していますか。",
+      "promptEn": "What is a little higher?",
       "japanese": "少し高い値段で売れた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "売れ行き"
-        },
-        {
-          "id": "b",
-          "label": "値段"
-        },
-        {
-          "id": "c",
-          "label": "店"
-        },
-        {
-          "id": "d",
-          "label": "商品"
-        }
-      ],
+      "japaneseEn": "I sold at a slightly higher price.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「値段」。「少し」は形容詞にかかるが、連体修飾全体は「値段」へ。",
+      "explanationEn": "The noun that is qualified is \" \". \"A little\" takes an adjective, but the entire compound modifier goes to \"。\".",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope",
@@ -1378,33 +1594,40 @@
       "vocabulary": [
         "少し高い値段で売れた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売れ行き",
+          "labelEn": "売れ行き (Sell)"
+        },
+        {
+          "id": "b",
+          "label": "値段",
+          "labelEn": "値段 (Price)"
+        },
+        {
+          "id": "c",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        },
+        {
+          "id": "d",
+          "label": "商品",
+          "labelEn": "商品 (Products)"
+        }
+      ]
     },
     {
       "id": "cu_035",
       "type": "multipleChoice",
       "prompt": "「とても古い」は何を説明していますか。",
+      "promptEn": "What is \"very old\"?",
       "japanese": "とても古い建物が取り壊される。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "歴史"
-        },
-        {
-          "id": "b",
-          "label": "町"
-        },
-        {
-          "id": "c",
-          "label": "建物"
-        },
-        {
-          "id": "d",
-          "label": "計画"
-        }
-      ],
+      "japaneseEn": "A very old building is destroyed.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「建物」。",
+      "explanationEn": "The noun that is qualified is \"building\".",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause"
@@ -1418,33 +1641,40 @@
       "vocabulary": [
         "とても古い建物が取り壊される"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "歴史",
+          "labelEn": "歴史 (History)"
+        },
+        {
+          "id": "b",
+          "label": "町",
+          "labelEn": "町 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "建物",
+          "labelEn": "建物 (Building)"
+        },
+        {
+          "id": "d",
+          "label": "計画",
+          "labelEn": "計画 ()"
+        }
+      ]
     },
     {
       "id": "cu_036",
       "type": "multipleChoice",
       "prompt": "「有名な」は何を説明していますか。",
+      "promptEn": "What is “famous”?",
       "japanese": "有名な作家の本を読んだ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "本"
-        },
-        {
-          "id": "b",
-          "label": "名前"
-        },
-        {
-          "id": "c",
-          "label": "図書館"
-        },
-        {
-          "id": "d",
-          "label": "作家"
-        }
-      ],
+      "japaneseEn": "I read the books of famous artists.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「作家」。「本」は「作家の本」で後続。",
+      "explanationEn": "The noun that is qualified is \"writer\". \"Books\" continue with \"Artists\"",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing",
@@ -1459,33 +1689,40 @@
       "vocabulary": [
         "有名な作家の本を読んだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本",
+          "labelEn": "本"
+        },
+        {
+          "id": "b",
+          "label": "名前",
+          "labelEn": "名前 (Name)"
+        },
+        {
+          "id": "c",
+          "label": "図書館",
+          "labelEn": "図書館 (Library)"
+        },
+        {
+          "id": "d",
+          "label": "作家",
+          "labelEn": "作家 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_037",
       "type": "multipleChoice",
       "prompt": "「小さな」は何を説明していますか。",
+      "promptEn": "What is \"small\"?",
       "japanese": "小さな池の周りを散歩した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "池"
-        },
-        {
-          "id": "b",
-          "label": "周り"
-        },
-        {
-          "id": "c",
-          "label": "公園"
-        },
-        {
-          "id": "d",
-          "label": "道"
-        }
-      ],
+      "japaneseEn": "I walked around a small  .",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「池」。「周り」は「池の周り」。",
+      "explanationEn": "The noun that is qualified is \"Pond\". The surrounding area is around the 。.",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope"
@@ -1499,33 +1736,40 @@
       "vocabulary": [
         "小さな池の周りを散歩した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "池",
+          "labelEn": "池 ()"
+        },
+        {
+          "id": "b",
+          "label": "周り",
+          "labelEn": "周り (Close)"
+        },
+        {
+          "id": "c",
+          "label": "公園",
+          "labelEn": "公園 (Park)"
+        },
+        {
+          "id": "d",
+          "label": "道",
+          "labelEn": "道 ()"
+        }
+      ]
     },
     {
       "id": "cu_038",
       "type": "multipleChoice",
       "prompt": "「青い」は何を説明していますか。",
+      "promptEn": "What is \"blue\"?",
       "japanese": "青い空の下で昼寝をした。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "下"
-        },
-        {
-          "id": "b",
-          "label": "空"
-        },
-        {
-          "id": "c",
-          "label": "昼寝"
-        },
-        {
-          "id": "d",
-          "label": "雲"
-        }
-      ],
+      "japaneseEn": "I napped under the blue sky.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「空」。「下」は「空の下」。",
+      "explanationEn": "The noun that is qualified is \"empty\". Under the sky",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -1539,33 +1783,40 @@
       "vocabulary": [
         "青い空の下で昼寝をした"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "下",
+          "labelEn": "下 (Close)"
+        },
+        {
+          "id": "b",
+          "label": "空",
+          "labelEn": "空 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "昼寝",
+          "labelEn": "昼寝 (Sleeping)"
+        },
+        {
+          "id": "d",
+          "label": "雲",
+          "labelEn": "雲 (clouds)"
+        }
+      ]
     },
     {
       "id": "cu_039",
       "type": "multipleChoice",
       "prompt": "「暖かい」は何を説明していますか。",
+      "promptEn": "What is \"warm\"?",
       "japanese": "暖かい春の風が吹いていた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "風"
-        },
-        {
-          "id": "b",
-          "label": "季節"
-        },
-        {
-          "id": "c",
-          "label": "春"
-        },
-        {
-          "id": "d",
-          "label": "町"
-        }
-      ],
+      "japaneseEn": "The wind was blowing.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「春」。「暖かい」は「春」にかかり、「春の風」となる。",
+      "explanationEn": "The noun that is qualified is \"spring\". “Warm” becomes “Spring” and “Spring”.",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification",
@@ -1580,33 +1831,40 @@
       "vocabulary": [
         "暖かい春の風が吹いていた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風",
+          "labelEn": "風 (Wind)"
+        },
+        {
+          "id": "b",
+          "label": "季節",
+          "labelEn": "季節 (Season)"
+        },
+        {
+          "id": "c",
+          "label": "春",
+          "labelEn": "春 (Spring)"
+        },
+        {
+          "id": "d",
+          "label": "町",
+          "labelEn": "町 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_040",
       "type": "multipleChoice",
       "prompt": "「大きな」は何を説明していますか。",
+      "promptEn": "What is \"big\"?",
       "japanese": "大きな木の影で休んだ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "影"
-        },
-        {
-          "id": "b",
-          "label": "公園"
-        },
-        {
-          "id": "c",
-          "label": "日差し"
-        },
-        {
-          "id": "d",
-          "label": "木"
-        }
-      ],
+      "japaneseEn": "I had a great time.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「木」。「影」は「木の影」。",
+      "explanationEn": "The noun that is qualified is \"wood\". \"Shadow\" is a \"shadow\"",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope"
@@ -1620,33 +1878,40 @@
       "vocabulary": [
         "大きな木の影で休んだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "影",
+          "labelEn": "影 ()"
+        },
+        {
+          "id": "b",
+          "label": "公園",
+          "labelEn": "公園 (Park)"
+        },
+        {
+          "id": "c",
+          "label": "日差し",
+          "labelEn": "日差し (Home)"
+        },
+        {
+          "id": "d",
+          "label": "木",
+          "labelEn": "木 (Wood)"
+        }
+      ]
     },
     {
       "id": "cu_041",
       "type": "multipleChoice",
       "prompt": "「古い」は何を説明していますか。",
+      "promptEn": "What is \"old\"?",
       "japanese": "古い寺の庭を見学した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "寺"
-        },
-        {
-          "id": "b",
-          "label": "庭"
-        },
-        {
-          "id": "c",
-          "label": "観光"
-        },
-        {
-          "id": "d",
-          "label": "歴史"
-        }
-      ],
+      "japaneseEn": "I visited the old temple garden.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「寺」。「庭」は「寺の庭」。",
+      "explanationEn": "The noun that is qualified is \"Temple\". \"Garden\" is the garden of the temple.",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -1660,33 +1925,40 @@
       "vocabulary": [
         "古い寺の庭を見学した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "寺",
+          "labelEn": "寺 (Temple)"
+        },
+        {
+          "id": "b",
+          "label": "庭",
+          "labelEn": "庭 (Garden)"
+        },
+        {
+          "id": "c",
+          "label": "観光",
+          "labelEn": "観光 (Sightseeing)"
+        },
+        {
+          "id": "d",
+          "label": "歴史",
+          "labelEn": "歴史 (History)"
+        }
+      ]
     },
     {
       "id": "cu_042",
       "type": "multipleChoice",
       "prompt": "「新しい」は何を説明していますか。",
+      "promptEn": "What is new?",
       "japanese": "新しい先生の授業は分かりやすい。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "授業"
-        },
-        {
-          "id": "b",
-          "label": "先生"
-        },
-        {
-          "id": "c",
-          "label": "学校"
-        },
-        {
-          "id": "d",
-          "label": "教科書"
-        }
-      ],
+      "japaneseEn": "A new teacher is easy to understand.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「先生」。「授業」は「先生の授業」。",
+      "explanationEn": "The noun that is qualified is \"teacher\". \"Classes\" are \"teacher's classes\".",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause"
@@ -1700,33 +1972,40 @@
       "vocabulary": [
         "新しい先生の授業は分かりやすい"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "授業",
+          "labelEn": "授業 ()"
+        },
+        {
+          "id": "b",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "c",
+          "label": "学校",
+          "labelEn": "学校 (School)"
+        },
+        {
+          "id": "d",
+          "label": "教科書",
+          "labelEn": "教科書 (English)"
+        }
+      ]
     },
     {
       "id": "cu_043",
       "type": "multipleChoice",
       "prompt": "「高い」は何を説明していますか。",
+      "promptEn": "What is \"high\"?",
       "japanese": "高い山の上に雪が残っていた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "雪"
-        },
-        {
-          "id": "b",
-          "label": "天気"
-        },
-        {
-          "id": "c",
-          "label": "山"
-        },
-        {
-          "id": "d",
-          "label": "道"
-        }
-      ],
+      "japaneseEn": "Snow on the high mountain.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「山」。「上」は「山の上」。",
+      "explanationEn": "The noun that is qualified is \"mountain\". \"Top\" is \"mountain\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -1740,33 +2019,40 @@
       "vocabulary": [
         "高い山の上に雪が残っていた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雪",
+          "labelEn": "雪 (Snow)"
+        },
+        {
+          "id": "b",
+          "label": "天気",
+          "labelEn": "天気 (Weather)"
+        },
+        {
+          "id": "c",
+          "label": "山",
+          "labelEn": "山 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "道",
+          "labelEn": "道 ()"
+        }
+      ]
     },
     {
       "id": "cu_044",
       "type": "multipleChoice",
       "prompt": "「狭い」は何を説明していますか。",
+      "promptEn": "What is \"Narrow\"?",
       "japanese": "狭い道の先にお店があった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "お店"
-        },
-        {
-          "id": "b",
-          "label": "先"
-        },
-        {
-          "id": "c",
-          "label": "角"
-        },
-        {
-          "id": "d",
-          "label": "道"
-        }
-      ],
+      "japaneseEn": "There was a shop on the narrow road.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「道」。「先」は「道の先」。",
+      "explanationEn": "The noun that is qualified is \"do\". \"Ahead\" is \"the path\".",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification"
@@ -1780,33 +2066,40 @@
       "vocabulary": [
         "狭い道の先にお店があった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お店",
+          "labelEn": "お店 (Shop)"
+        },
+        {
+          "id": "b",
+          "label": "先",
+          "labelEn": "先 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "角",
+          "labelEn": "角 (Angle)"
+        },
+        {
+          "id": "d",
+          "label": "道",
+          "labelEn": "道 ()"
+        }
+      ]
     },
     {
       "id": "cu_045",
       "type": "multipleChoice",
       "prompt": "「静かだった」は何を説明していますか。",
+      "promptEn": "What did you think?",
       "japanese": "静かだった夜の海は怖かった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "夜"
-        },
-        {
-          "id": "b",
-          "label": "海"
-        },
-        {
-          "id": "c",
-          "label": "音"
-        },
-        {
-          "id": "d",
-          "label": "月"
-        }
-      ],
+      "japaneseEn": "I was scared of the quiet Seto Inland Sea.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「夜」。「海」は「夜の海」。",
+      "explanationEn": "\"Night\" is the noun that is qualified. The Sea is the Seto Inland Sea.",
       "diagnosticTags": [
         "sentence_parsing",
         "modifier_scope"
@@ -1820,33 +2113,40 @@
       "vocabulary": [
         "静かだった夜の海は怖かった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "夜",
+          "labelEn": "夜 (Night)"
+        },
+        {
+          "id": "b",
+          "label": "海",
+          "labelEn": "海 (Sea)"
+        },
+        {
+          "id": "c",
+          "label": "音",
+          "labelEn": "音 (Sound)"
+        },
+        {
+          "id": "d",
+          "label": "月",
+          "labelEn": "月 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_046",
       "type": "multipleChoice",
       "prompt": "「田中さんの話した」は何を説明していますか。",
+      "promptEn": "What do you think about Tanaka?",
       "japanese": "田中さんの話した夢の話は長かった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "話"
-        },
-        {
-          "id": "b",
-          "label": "夢"
-        },
-        {
-          "id": "c",
-          "label": "田中さん"
-        },
-        {
-          "id": "d",
-          "label": "時間"
-        }
-      ],
+      "japaneseEn": "The story of Mr. Tanaka was long.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「夢」。「の話」は「夢の話」で、「夢」がこの連体節のヘッド。",
+      "explanationEn": "The noun that is qualified is \"Dream\". \"The story\" is \"the story of dream\" and \"the dream\" is the head of this synth.",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope",
@@ -1861,33 +2161,40 @@
       "vocabulary": [
         "田中さんの話した夢の話は長かった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "話",
+          "labelEn": "話 ()"
+        },
+        {
+          "id": "b",
+          "label": "夢",
+          "labelEn": "夢 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "田中さん",
+          "labelEn": "田中さん (Mr. Tanaka)"
+        },
+        {
+          "id": "d",
+          "label": "時間",
+          "labelEn": "時間 (Time)"
+        }
+      ]
     },
     {
       "id": "cu_047",
       "type": "multipleChoice",
       "prompt": "「雨の日に起きた」は何を説明していますか。",
+      "promptEn": "What is the impact of the rainy day?",
       "japanese": "雨の日に起きた事故の原因を調べた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "雨"
-        },
-        {
-          "id": "b",
-          "label": "日"
-        },
-        {
-          "id": "c",
-          "label": "事故"
-        },
-        {
-          "id": "d",
-          "label": "警察"
-        }
-      ],
+      "japaneseEn": "I checked the cause of the accident on the rainy day.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「事故」。「原因」は「事故の原因」。",
+      "explanationEn": "\"Accident\" is a noun that is qualified. \"Cause\" is the cause of an accident.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -1901,33 +2208,40 @@
       "vocabulary": [
         "雨の日に起きた事故の原因を調べた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雨",
+          "labelEn": "雨 (Rain)"
+        },
+        {
+          "id": "b",
+          "label": "日",
+          "labelEn": "日 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "事故",
+          "labelEn": "事故 (Accident)"
+        },
+        {
+          "id": "d",
+          "label": "警察",
+          "labelEn": "警察 (Police)"
+        }
+      ]
     },
     {
       "id": "cu_048",
       "type": "multipleChoice",
       "prompt": "「試験に落ちた」は何を説明していますか。",
+      "promptEn": "What is the impact of the test?",
       "japanese": "試験に落ちた学生の顔が暗かった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "試験"
-        },
-        {
-          "id": "b",
-          "label": "顔"
-        },
-        {
-          "id": "c",
-          "label": "教室"
-        },
-        {
-          "id": "d",
-          "label": "学生"
-        }
-      ],
+      "japaneseEn": "The student’s face was dark.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「学生」。",
+      "explanationEn": "\"Student\" is a noun that is qualified.",
       "diagnosticTags": [
         "sentence_parsing",
         "relative_clause"
@@ -1941,33 +2255,40 @@
       "vocabulary": [
         "試験に落ちた学生の顔が暗かった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "試験",
+          "labelEn": "試験 (Test)"
+        },
+        {
+          "id": "b",
+          "label": "顔",
+          "labelEn": "顔 (Face)"
+        },
+        {
+          "id": "c",
+          "label": "教室",
+          "labelEn": "教室 (Classroom)"
+        },
+        {
+          "id": "d",
+          "label": "学生",
+          "labelEn": "学生 (Student)"
+        }
+      ]
     },
     {
       "id": "cu_049",
       "type": "multipleChoice",
       "prompt": "「電車に乗り遅れた」は何を説明していますか。",
+      "promptEn": "What are the reasons why I was delayed by trains?",
       "japanese": "電車に乗り遅れた人たちは次の便を待った。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "人たち"
-        },
-        {
-          "id": "b",
-          "label": "電車"
-        },
-        {
-          "id": "c",
-          "label": "便"
-        },
-        {
-          "id": "d",
-          "label": "駅"
-        }
-      ],
+      "japaneseEn": "T  who were late on the train waited for the next flight.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「人たち」。",
+      "explanationEn": "The noun that is qualified is \"people\".",
       "diagnosticTags": [
         "relative_clause",
         "noun_modification"
@@ -1981,33 +2302,40 @@
       "vocabulary": [
         "電車に乗り遅れた人たちは次の便を待った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "人たち",
+          "labelEn": "人たち (People)"
+        },
+        {
+          "id": "b",
+          "label": "電車",
+          "labelEn": "電車 (Train)"
+        },
+        {
+          "id": "c",
+          "label": "便",
+          "labelEn": "便 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "駅",
+          "labelEn": "駅 (Station)"
+        }
+      ]
     },
     {
       "id": "cu_050",
       "type": "multipleChoice",
       "prompt": "「風で倒れた」は何を説明していますか。",
+      "promptEn": "What is the impact of the wind?",
       "japanese": "風で倒れた木の枝が道をふさいだ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "風"
-        },
-        {
-          "id": "b",
-          "label": "木"
-        },
-        {
-          "id": "c",
-          "label": "道"
-        },
-        {
-          "id": "d",
-          "label": "枝"
-        }
-      ],
+      "japaneseEn": "The tree branch fell by the wind.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「木」。「枝」は「木の枝」。",
+      "explanationEn": "The noun that is qualified is \"wood\". The branch is the branch of the tree.",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing"
@@ -2021,33 +2349,40 @@
       "vocabulary": [
         "風で倒れた木の枝が道をふさいだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風",
+          "labelEn": "風 (Wind)"
+        },
+        {
+          "id": "b",
+          "label": "木",
+          "labelEn": "木 (Wood)"
+        },
+        {
+          "id": "c",
+          "label": "道",
+          "labelEn": "道 ()"
+        },
+        {
+          "id": "d",
+          "label": "枝",
+          "labelEn": "枝 ()"
+        }
+      ]
     },
     {
       "id": "cu_051",
       "type": "multipleChoice",
       "prompt": "「火事で焼けた」は何を説明していますか。",
+      "promptEn": "What is \"burned by fire\"?",
       "japanese": "火事で焼けた家の跡地に公園ができた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "火事"
-        },
-        {
-          "id": "b",
-          "label": "公園"
-        },
-        {
-          "id": "c",
-          "label": "家"
-        },
-        {
-          "id": "d",
-          "label": "跡地"
-        }
-      ],
+      "japaneseEn": "The park was built on the ruins of the house burned by fire.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「家」。「跡地」は「家の跡地」。",
+      "explanationEn": "The noun that is qualified is \"house\". \"Traffic Site\" is the \"Traffic Site\"",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause"
@@ -2061,33 +2396,40 @@
       "vocabulary": [
         "火事で焼けた家の跡地に公園ができた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "火事",
+          "labelEn": "火事 (Fire)"
+        },
+        {
+          "id": "b",
+          "label": "公園",
+          "labelEn": "公園 (Park)"
+        },
+        {
+          "id": "c",
+          "label": "家",
+          "labelEn": "家 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "跡地",
+          "labelEn": "跡地 (Location)"
+        }
+      ]
     },
     {
       "id": "cu_052",
       "type": "multipleChoice",
       "prompt": "「先生が言った」は何を説明していますか。",
+      "promptEn": "What does the teacher say?",
       "japanese": "先生が言った言葉の意味が分からなかった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "先生"
-        },
-        {
-          "id": "b",
-          "label": "意味"
-        },
-        {
-          "id": "c",
-          "label": "授業"
-        },
-        {
-          "id": "d",
-          "label": "言葉"
-        }
-      ],
+      "japaneseEn": "I did not know the meaning of the words that the teacher said.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「言葉」。「意味」は「言葉の意味」。",
+      "explanationEn": "The noun that is qualified is \"word\". \"meaning\" means \"word\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2101,33 +2443,40 @@
       "vocabulary": [
         "先生が言った言葉の意味が分からなかった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "b",
+          "label": "意味",
+          "labelEn": "意味 ()"
+        },
+        {
+          "id": "c",
+          "label": "授業",
+          "labelEn": "授業 ()"
+        },
+        {
+          "id": "d",
+          "label": "言葉",
+          "labelEn": "言葉 (English)"
+        }
+      ]
     },
     {
       "id": "cu_053",
       "type": "multipleChoice",
       "prompt": "「友だちがくれた」は何を説明していますか。",
+      "promptEn": "What do you think of your friend?",
       "japanese": "友だちがくれたお守りの色が好きだ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "お守り"
-        },
-        {
-          "id": "b",
-          "label": "友だち"
-        },
-        {
-          "id": "c",
-          "label": "色"
-        },
-        {
-          "id": "d",
-          "label": "神社"
-        }
-      ],
+      "japaneseEn": "I like the color of the talisman that my friend gave me.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「お守り」。「色」は「お守りの色」。",
+      "explanationEn": "The noun that is qualified is \"Amulet\". \"Color\" is the color of amulet.",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -2141,33 +2490,40 @@
       "vocabulary": [
         "友だちがくれたお守りの色が好きだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お守り",
+          "labelEn": "お守り (Home)"
+        },
+        {
+          "id": "b",
+          "label": "友だち",
+          "labelEn": "友だち (Home)"
+        },
+        {
+          "id": "c",
+          "label": "色",
+          "labelEn": "色 (Color)"
+        },
+        {
+          "id": "d",
+          "label": "神社",
+          "labelEn": "神社 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_054",
       "type": "multipleChoice",
       "prompt": "「母が探していた」は何を説明していますか。",
+      "promptEn": "What are the reasons why mothers were looking for?",
       "japanese": "母が探していたかぎの場所を教えた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "母"
-        },
-        {
-          "id": "b",
-          "label": "かぎ"
-        },
-        {
-          "id": "c",
-          "label": "場所"
-        },
-        {
-          "id": "d",
-          "label": "引き出し"
-        }
-      ],
+      "japaneseEn": "He taught the location of the crocodile she was looking for.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「かぎ」。「場所」は「かぎの場所」。",
+      "explanationEn": "\"Kagi\" is a noun that is qualified. \"Place\" is the place of \"Kagi\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2181,33 +2537,40 @@
       "vocabulary": [
         "母が探していたかぎの場所を教えた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "b",
+          "label": "かぎ",
+          "labelEn": "かぎ (Home)"
+        },
+        {
+          "id": "c",
+          "label": "場所",
+          "labelEn": "場所 (Location)"
+        },
+        {
+          "id": "d",
+          "label": "引き出し",
+          "labelEn": "引き出し (Drawer)"
+        }
+      ]
     },
     {
       "id": "cu_055",
       "type": "multipleChoice",
       "prompt": "「店で働いている」は何を説明していますか。",
+      "promptEn": "What do you expect to work in a shop?",
       "japanese": "店で働いている人の名前を聞いた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "店"
-        },
-        {
-          "id": "b",
-          "label": "名前"
-        },
-        {
-          "id": "c",
-          "label": "人"
-        },
-        {
-          "id": "d",
-          "label": "制服"
-        }
-      ],
+      "japaneseEn": "I heard the name of the person working in the shop.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「人」。「名前」は「人の名前」。",
+      "explanationEn": "The noun that is qualified is \"person\". The name is the name of the person.",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing"
@@ -2221,33 +2584,40 @@
       "vocabulary": [
         "店で働いている人の名前を聞いた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        },
+        {
+          "id": "b",
+          "label": "名前",
+          "labelEn": "名前 (Name)"
+        },
+        {
+          "id": "c",
+          "label": "人",
+          "labelEn": "人 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "制服",
+          "labelEn": "制服 (Uniform)"
+        }
+      ]
     },
     {
       "id": "cu_056",
       "type": "multipleChoice",
       "prompt": "「日本で買った」は何を説明していますか。",
+      "promptEn": "What do you expect to buy in Japan?",
       "japanese": "日本で買ったお茶の箱を友だちに送った。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "日本"
-        },
-        {
-          "id": "b",
-          "label": "箱"
-        },
-        {
-          "id": "c",
-          "label": "友だち"
-        },
-        {
-          "id": "d",
-          "label": "お茶"
-        }
-      ],
+      "japaneseEn": "I sent a tea box to my friend.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「お茶」。「箱」は「お茶の箱」。",
+      "explanationEn": "“Tea” is a noun that is qualified. \"Box\" is a tea box.",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause"
@@ -2261,33 +2631,40 @@
       "vocabulary": [
         "日本で買ったお茶の箱を友だちに送った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日本",
+          "labelEn": "日本 (Japanese)"
+        },
+        {
+          "id": "b",
+          "label": "箱",
+          "labelEn": "箱 (Box)"
+        },
+        {
+          "id": "c",
+          "label": "友だち",
+          "labelEn": "友だち (Home)"
+        },
+        {
+          "id": "d",
+          "label": "お茶",
+          "labelEn": "お茶 (Tea)"
+        }
+      ]
     },
     {
       "id": "cu_057",
       "type": "multipleChoice",
       "prompt": "「昨日聞こえた」は何を説明していますか。",
+      "promptEn": "What did you hear yesterday?",
       "japanese": "昨日聞こえた音の正体が分かった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "音"
-        },
-        {
-          "id": "b",
-          "label": "昨日"
-        },
-        {
-          "id": "c",
-          "label": "正体"
-        },
-        {
-          "id": "d",
-          "label": "隣"
-        }
-      ],
+      "japaneseEn": "I heard the sound of yesterday.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「音」。「正体」は「音の正体」。",
+      "explanationEn": "\"Sound\" is a noun that is qualified. \"Responsive\" is the \"Responsive\" of sound.",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing"
@@ -2301,33 +2678,40 @@
       "vocabulary": [
         "昨日聞こえた音の正体が分かった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "音",
+          "labelEn": "音 (Sound)"
+        },
+        {
+          "id": "b",
+          "label": "昨日",
+          "labelEn": "昨日 (2 days ago)"
+        },
+        {
+          "id": "c",
+          "label": "正体",
+          "labelEn": "正体 ()"
+        },
+        {
+          "id": "d",
+          "label": "隣",
+          "labelEn": "隣 (Close)"
+        }
+      ]
     },
     {
       "id": "cu_058",
       "type": "multipleChoice",
       "prompt": "「雨が降りそうな」は何を説明していますか。",
+      "promptEn": "What is the impact of rain?",
       "japanese": "雨が降りそうな午後の空は灰色だった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "雨"
-        },
-        {
-          "id": "b",
-          "label": "午後"
-        },
-        {
-          "id": "c",
-          "label": "空"
-        },
-        {
-          "id": "d",
-          "label": "雲"
-        }
-      ],
+      "japaneseEn": "The rainy afternoon was gray.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「午後」。「空」は「午後の空」。",
+      "explanationEn": "Qualified nouns are \"afternoon\". The sky is the afternoon sky.",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification",
@@ -2342,33 +2726,40 @@
       "vocabulary": [
         "雨が降りそうな午後の空は灰色だった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雨",
+          "labelEn": "雨 (Rain)"
+        },
+        {
+          "id": "b",
+          "label": "午後",
+          "labelEn": "午後 (Afternoon)"
+        },
+        {
+          "id": "c",
+          "label": "空",
+          "labelEn": "空 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "雲",
+          "labelEn": "雲 (clouds)"
+        }
+      ]
     },
     {
       "id": "cu_059",
       "type": "multipleChoice",
       "prompt": "「来るはずだった」は何を説明していますか。",
+      "promptEn": "What do you expect to come?",
       "japanese": "来るはずだった客の席が空いたままだった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "席"
-        },
-        {
-          "id": "b",
-          "label": "予定"
-        },
-        {
-          "id": "c",
-          "label": "客"
-        },
-        {
-          "id": "d",
-          "label": "店"
-        }
-      ],
+      "japaneseEn": "The seat of the customer who was supposed to come was empty.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「客」。「席」は「客の席」。",
+      "explanationEn": "The noun that is qualified is \"customer\". \"Seat\" is \"Guest Seat\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2382,33 +2773,40 @@
       "vocabulary": [
         "来るはずだった客の席が空いたままだった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "席",
+          "labelEn": "席 (Seat)"
+        },
+        {
+          "id": "b",
+          "label": "予定",
+          "labelEn": "予定 ()"
+        },
+        {
+          "id": "c",
+          "label": "客",
+          "labelEn": "客 (Contact)"
+        },
+        {
+          "id": "d",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        }
+      ]
     },
     {
       "id": "cu_060",
       "type": "multipleChoice",
       "prompt": "「忘れてしまった」は何を説明していますか。",
+      "promptEn": "What are the reasons why I forgot?",
       "japanese": "忘れてしまった約束の内容を思い出した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "内容"
-        },
-        {
-          "id": "b",
-          "label": "日付"
-        },
-        {
-          "id": "c",
-          "label": "友達"
-        },
-        {
-          "id": "d",
-          "label": "約束"
-        }
-      ],
+      "japaneseEn": "I remembered the promises I forgot.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「約束」。「内容」は「約束の内容」。",
+      "explanationEn": "Qualified nouns \"Promise\". \"Content\" is \"Content of promise\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -2422,33 +2820,40 @@
       "vocabulary": [
         "忘れてしまった約束の内容を思い出した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "内容",
+          "labelEn": "内容 ()"
+        },
+        {
+          "id": "b",
+          "label": "日付",
+          "labelEn": "日付 (Date)"
+        },
+        {
+          "id": "c",
+          "label": "友達",
+          "labelEn": "友達 (Friends)"
+        },
+        {
+          "id": "d",
+          "label": "約束",
+          "labelEn": "約束 ()"
+        }
+      ]
     },
     {
       "id": "cu_061",
       "type": "multipleChoice",
       "prompt": "「起こりうる」は何を説明していますか。",
+      "promptEn": "What happens?",
       "japanese": "起こりうる問題のリストを作った。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "問題"
-        },
-        {
-          "id": "b",
-          "label": "リスト"
-        },
-        {
-          "id": "c",
-          "label": "会議"
-        },
-        {
-          "id": "d",
-          "label": "社長"
-        }
-      ],
+      "japaneseEn": "Create a list of possible problems.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「問題」。「リスト」は「問題のリスト」。",
+      "explanationEn": "The noun that is qualified is \"problems\". List is a list of problems.",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing"
@@ -2462,33 +2867,40 @@
       "vocabulary": [
         "起こりうる問題のリストを作った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "問題",
+          "labelEn": "問題 ()"
+        },
+        {
+          "id": "b",
+          "label": "リスト",
+          "labelEn": "リスト (List)"
+        },
+        {
+          "id": "c",
+          "label": "会議",
+          "labelEn": "会議 (Meeting)"
+        },
+        {
+          "id": "d",
+          "label": "社長",
+          "labelEn": "社長 (President)"
+        }
+      ]
     },
     {
       "id": "cu_062",
       "type": "multipleChoice",
       "prompt": "「必要な」は何を説明していますか。",
+      "promptEn": "What do you need?",
       "japanese": "必要な書類のコピーを用意した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "コピー"
-        },
-        {
-          "id": "b",
-          "label": "書類"
-        },
-        {
-          "id": "c",
-          "label": "提出"
-        },
-        {
-          "id": "d",
-          "label": "封筒"
-        }
-      ],
+      "japaneseEn": "I prepared a copy of the required documents.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「書類」。「コピー」は「書類のコピー」。",
+      "explanationEn": "\"Documents\" are nouns that are qualified. Copy of documents.",
       "diagnosticTags": [
         "noun_modification",
         "modifier_scope"
@@ -2502,33 +2914,40 @@
       "vocabulary": [
         "必要な書類のコピーを用意した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コピー",
+          "labelEn": "コピー ()"
+        },
+        {
+          "id": "b",
+          "label": "書類",
+          "labelEn": "書類 ()"
+        },
+        {
+          "id": "c",
+          "label": "提出",
+          "labelEn": "提出 ()"
+        },
+        {
+          "id": "d",
+          "label": "封筒",
+          "labelEn": "封筒 (Envel)"
+        }
+      ]
     },
     {
       "id": "cu_063",
       "type": "multipleChoice",
       "prompt": "「誰も知らない」は何を説明していますか。",
+      "promptEn": "What do you know?",
       "japanese": "誰も知らない秘密の場所へ行った。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "場所"
-        },
-        {
-          "id": "b",
-          "label": "人"
-        },
-        {
-          "id": "c",
-          "label": "秘密"
-        },
-        {
-          "id": "d",
-          "label": "話"
-        }
-      ],
+      "japaneseEn": "I went to a secret place that no one knows.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「秘密」。「場所」は「秘密の場所」。",
+      "explanationEn": "The noun that is qualified is \"secret\". \"Place\" is a secret place.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2542,33 +2961,40 @@
       "vocabulary": [
         "誰も知らない秘密の場所へ行った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "場所",
+          "labelEn": "場所 (Location)"
+        },
+        {
+          "id": "b",
+          "label": "人",
+          "labelEn": "人 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "秘密",
+          "labelEn": "秘密 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "話",
+          "labelEn": "話 ()"
+        }
+      ]
     },
     {
       "id": "cu_064",
       "type": "multipleChoice",
       "prompt": "「まだ終わっていない」は何を説明していますか。",
+      "promptEn": "What are the reasons why I have not finished?",
       "japanese": "まだ終わっていない仕事の件で連絡した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "連絡"
-        },
-        {
-          "id": "b",
-          "label": "上司"
-        },
-        {
-          "id": "c",
-          "label": "今日"
-        },
-        {
-          "id": "d",
-          "label": "仕事"
-        }
-      ],
+      "japaneseEn": "I contacted the work that I have not finished yet.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「仕事」。「件」は「仕事の件」。",
+      "explanationEn": "Qualified nouns are \"work\". \"Work\" is \"work\".",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -2582,33 +3008,40 @@
       "vocabulary": [
         "まだ終わっていない仕事の件で連絡した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "連絡",
+          "labelEn": "連絡 (Contact)"
+        },
+        {
+          "id": "b",
+          "label": "上司",
+          "labelEn": "上司 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "今日",
+          "labelEn": "今日 (Today)"
+        },
+        {
+          "id": "d",
+          "label": "仕事",
+          "labelEn": "仕事 (Work)"
+        }
+      ]
     },
     {
       "id": "cu_065",
       "type": "multipleChoice",
       "prompt": "「彼が説明した」は何を説明していますか。",
+      "promptEn": "What do you think about him?",
       "japanese": "彼が説明した方法のほうが簡単だった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "方法"
-        },
-        {
-          "id": "b",
-          "label": "彼"
-        },
-        {
-          "id": "c",
-          "label": "説明"
-        },
-        {
-          "id": "d",
-          "label": "結果"
-        }
-      ],
+      "japaneseEn": "It was easier for him to explain.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「方法」。",
+      "explanationEn": "The noun that is qualified is \"method\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2622,33 +3055,40 @@
       "vocabulary": [
         "彼が説明した方法のほうが簡単だった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "方法",
+          "labelEn": "方法 ()"
+        },
+        {
+          "id": "b",
+          "label": "彼",
+          "labelEn": "彼 ()"
+        },
+        {
+          "id": "c",
+          "label": "説明",
+          "labelEn": "説明"
+        },
+        {
+          "id": "d",
+          "label": "結果",
+          "labelEn": "結果 (Result)"
+        }
+      ]
     },
     {
       "id": "cu_066",
       "type": "multipleChoice",
       "prompt": "「会議で決まった」は何を説明していますか。",
+      "promptEn": "What do you think of the meeting?",
       "japanese": "会議で決まった日程の変更を伝えた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "会議"
-        },
-        {
-          "id": "b",
-          "label": "日程"
-        },
-        {
-          "id": "c",
-          "label": "変更"
-        },
-        {
-          "id": "d",
-          "label": "参加者"
-        }
-      ],
+      "japaneseEn": "The schedule changed at the meeting.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「日程」。「変更」は「日程の変更」。",
+      "explanationEn": "Qualified nouns are \"s ule\". \"Change\" is \"Change Date\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -2662,33 +3102,40 @@
       "vocabulary": [
         "会議で決まった日程の変更を伝えた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議",
+          "labelEn": "会議 (Meeting)"
+        },
+        {
+          "id": "b",
+          "label": "日程",
+          "labelEn": "日程 (Schedule)"
+        },
+        {
+          "id": "c",
+          "label": "変更",
+          "labelEn": "変更 ()"
+        },
+        {
+          "id": "d",
+          "label": "参加者",
+          "labelEn": "参加者 (Participants)"
+        }
+      ]
     },
     {
       "id": "cu_067",
       "type": "multipleChoice",
       "prompt": "「店長がおすすめした」は何を説明していますか。",
+      "promptEn": "What are the reasons why the store manager recommended?",
       "japanese": "店長がおすすめした料理の味が意外だった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "店長"
-        },
-        {
-          "id": "b",
-          "label": "味"
-        },
-        {
-          "id": "c",
-          "label": "料理"
-        },
-        {
-          "id": "d",
-          "label": "メニュー"
-        }
-      ],
+      "japaneseEn": "The taste of the dish recommended by the store manager was unexpected.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「料理」。「味」は「料理の味」。",
+      "explanationEn": "The noun that is qualified is \"food\". The taste is the taste of the dish.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2702,33 +3149,40 @@
       "vocabulary": [
         "店長がおすすめした料理の味が意外だった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "店長",
+          "labelEn": "店長 (Store Manager)"
+        },
+        {
+          "id": "b",
+          "label": "味",
+          "labelEn": "味 (Menu)"
+        },
+        {
+          "id": "c",
+          "label": "料理",
+          "labelEn": "料理 (Menu)"
+        },
+        {
+          "id": "d",
+          "label": "メニュー",
+          "labelEn": "メニュー"
+        }
+      ]
     },
     {
       "id": "cu_068",
       "type": "multipleChoice",
       "prompt": "「風邪を引いた」は何を説明していますか。",
+      "promptEn": "What is the impact of the cold?",
       "japanese": "風邪を引いたときの薬を飲んだ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "風邪"
-        },
-        {
-          "id": "b",
-          "label": "薬"
-        },
-        {
-          "id": "c",
-          "label": "体"
-        },
-        {
-          "id": "d",
-          "label": "とき"
-        }
-      ],
+      "japaneseEn": "I drank medicine when I got cold.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「とき」。「薬」は「ときの薬」ではなく「風邪のとき」全体を修飾する連体節のヘッドは「とき」。",
+      "explanationEn": "The noun that is qualified is \"time\". \"Pharm\" is the head of the cohesion that modifies the whole \"when the cold\" rather than \"when the medicine\".",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing",
@@ -2743,33 +3197,40 @@
       "vocabulary": [
         "風邪を引いたときの薬を飲んだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風邪",
+          "labelEn": "風邪 (Cold)"
+        },
+        {
+          "id": "b",
+          "label": "薬",
+          "labelEn": "薬 (Medicine)"
+        },
+        {
+          "id": "c",
+          "label": "体",
+          "labelEn": "体 (Body)"
+        },
+        {
+          "id": "d",
+          "label": "とき",
+          "labelEn": "とき (Home)"
+        }
+      ]
     },
     {
       "id": "cu_069",
       "type": "multipleChoice",
       "prompt": "「本を読んだ」は何を説明していますか。",
+      "promptEn": "What do you think about reading books?",
       "japanese": "本を読んだあとの気持ちがすっきりした。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "あと"
-        },
-        {
-          "id": "b",
-          "label": "本"
-        },
-        {
-          "id": "c",
-          "label": "気持ち"
-        },
-        {
-          "id": "d",
-          "label": "夜"
-        }
-      ],
+      "japaneseEn": "After reading the book, the feeling was clear.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「あと」（名詞化）。「本を読んだ」が「あと」を限定。",
+      "explanationEn": "The noun that is qualified is \"more\". \"I read the book\" is limited.",
       "diagnosticTags": [
         "relative_clause",
         "noun_modification"
@@ -2783,33 +3244,40 @@
       "vocabulary": [
         "本を読んだあとの気持ちがすっきりした"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "あと",
+          "labelEn": "あと (Close)"
+        },
+        {
+          "id": "b",
+          "label": "本",
+          "labelEn": "本"
+        },
+        {
+          "id": "c",
+          "label": "気持ち",
+          "labelEn": "気持ち ()"
+        },
+        {
+          "id": "d",
+          "label": "夜",
+          "labelEn": "夜 (Night)"
+        }
+      ]
     },
     {
       "id": "cu_070",
       "type": "multipleChoice",
       "prompt": "「約束した」は何を説明していますか。",
+      "promptEn": "What is the promise?",
       "japanese": "約束したはずの時間に来なかった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "約束"
-        },
-        {
-          "id": "b",
-          "label": "はず"
-        },
-        {
-          "id": "c",
-          "label": "時間"
-        },
-        {
-          "id": "d",
-          "label": "友達"
-        }
-      ],
+      "japaneseEn": "I did not come to the time I had promised.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「はず」。",
+      "explanationEn": "The noun that receives the modifier is \"before\".",
       "diagnosticTags": [
         "sentence_parsing",
         "modifier_scope"
@@ -2823,33 +3291,40 @@
       "vocabulary": [
         "約束したはずの時間に来なかった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "約束",
+          "labelEn": "約束 ()"
+        },
+        {
+          "id": "b",
+          "label": "はず",
+          "labelEn": "はず (Close)"
+        },
+        {
+          "id": "c",
+          "label": "時間",
+          "labelEn": "時間 (Time)"
+        },
+        {
+          "id": "d",
+          "label": "友達",
+          "labelEn": "友達 (Friends)"
+        }
+      ]
     },
     {
       "id": "cu_071",
       "type": "multipleChoice",
       "prompt": "「行きたかった」は何を説明していますか。",
+      "promptEn": "What do you want to go?",
       "japanese": "行きたかったところにやっと行けた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "旅行"
-        },
-        {
-          "id": "b",
-          "label": "地図"
-        },
-        {
-          "id": "c",
-          "label": "ところ"
-        },
-        {
-          "id": "d",
-          "label": "計画"
-        }
-      ],
+      "japaneseEn": "I wanted to go.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「ところ」。",
+      "explanationEn": "The noun that is qualified is \"where\".",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause"
@@ -2863,33 +3338,40 @@
       "vocabulary": [
         "行きたかったところにやっと行けた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "旅行",
+          "labelEn": "旅行 (Travel)"
+        },
+        {
+          "id": "b",
+          "label": "地図",
+          "labelEn": "地図 (Map)"
+        },
+        {
+          "id": "c",
+          "label": "ところ",
+          "labelEn": "ところ (Home)"
+        },
+        {
+          "id": "d",
+          "label": "計画",
+          "labelEn": "計画 ()"
+        }
+      ]
     },
     {
       "id": "cu_072",
       "type": "multipleChoice",
       "prompt": "「聞いたことがない」は何を説明していますか。",
+      "promptEn": "What does it mean to hear?",
       "japanese": "聞いたことがない話に驚いた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "経験"
-        },
-        {
-          "id": "b",
-          "label": "人"
-        },
-        {
-          "id": "c",
-          "label": "ニュース"
-        },
-        {
-          "id": "d",
-          "label": "話"
-        }
-      ],
+      "japaneseEn": "I was surprised by the story I never heard.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「話」。",
+      "explanationEn": "The noun that is qualified is \"Talk\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -2903,33 +3385,40 @@
       "vocabulary": [
         "聞いたことがない話に驚いた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "経験",
+          "labelEn": "経験 (Experience)"
+        },
+        {
+          "id": "b",
+          "label": "人",
+          "labelEn": "人 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "ニュース",
+          "labelEn": "ニュース (News)"
+        },
+        {
+          "id": "d",
+          "label": "話",
+          "labelEn": "話 ()"
+        }
+      ]
     },
     {
       "id": "cu_073",
       "type": "multipleChoice",
       "prompt": "「見たことのない」は何を説明していますか。",
+      "promptEn": "What does it look like?",
       "japanese": "見たことのない色の花が咲いていた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "色"
-        },
-        {
-          "id": "b",
-          "label": "花"
-        },
-        {
-          "id": "c",
-          "label": "庭"
-        },
-        {
-          "id": "d",
-          "label": "春"
-        }
-      ],
+      "japaneseEn": "The flower of the color that I never seen was blooming.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「色」。「花」は「色の花」。",
+      "explanationEn": "The noun that is qualified is \"color\". \"Flower\" is \"color flower\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -2943,33 +3432,40 @@
       "vocabulary": [
         "見たことのない色の花が咲いていた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "色",
+          "labelEn": "色 (Color)"
+        },
+        {
+          "id": "b",
+          "label": "花",
+          "labelEn": "花 (Flowers)"
+        },
+        {
+          "id": "c",
+          "label": "庭",
+          "labelEn": "庭 (Garden)"
+        },
+        {
+          "id": "d",
+          "label": "春",
+          "labelEn": "春 (Spring)"
+        }
+      ]
     },
     {
       "id": "cu_074",
       "type": "multipleChoice",
       "prompt": "「説明が難しい」は何を説明していますか。",
+      "promptEn": "What is the problem of \"professional\"?",
       "japanese": "説明が難しい部分だけをもう一度聞いた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "説明"
-        },
-        {
-          "id": "b",
-          "label": "部分"
-        },
-        {
-          "id": "c",
-          "label": "授業"
-        },
-        {
-          "id": "d",
-          "label": "先生"
-        }
-      ],
+      "japaneseEn": "I heard only the part that is difficult to describe again.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「部分」。",
+      "explanationEn": "The noun that is qualified is \"part\".",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -2983,33 +3479,40 @@
       "vocabulary": [
         "説明が難しい部分だけをもう一度聞いた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "説明",
+          "labelEn": "説明"
+        },
+        {
+          "id": "b",
+          "label": "部分",
+          "labelEn": "部分 (Part)"
+        },
+        {
+          "id": "c",
+          "label": "授業",
+          "labelEn": "授業 ()"
+        },
+        {
+          "id": "d",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        }
+      ]
     },
     {
       "id": "cu_075",
       "type": "multipleChoice",
       "prompt": "「名前を忘れた」は何を説明していますか。",
+      "promptEn": "What are the reasons why I forgot my name?",
       "japanese": "名前を忘れた人に声をかけられて困った。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "名前"
-        },
-        {
-          "id": "b",
-          "label": "声"
-        },
-        {
-          "id": "c",
-          "label": "人"
-        },
-        {
-          "id": "d",
-          "label": "駅"
-        }
-      ],
+      "japaneseEn": "I had trouble asking someone forgotten their name.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「人」。",
+      "explanationEn": "The noun that is qualified is \"person\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -3023,33 +3526,40 @@
       "vocabulary": [
         "名前を忘れた人に声をかけられて困った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名前",
+          "labelEn": "名前 (Name)"
+        },
+        {
+          "id": "b",
+          "label": "声",
+          "labelEn": "声 ()"
+        },
+        {
+          "id": "c",
+          "label": "人",
+          "labelEn": "人 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "駅",
+          "labelEn": "駅 (Station)"
+        }
+      ]
     },
     {
       "id": "cu_076",
       "type": "multipleChoice",
       "prompt": "「電車が遅れた」は何を説明していますか。",
+      "promptEn": "What is the delay in the train?",
       "japanese": "電車が遅れたせいで会議に遅刻した。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "電車"
-        },
-        {
-          "id": "b",
-          "label": "会議"
-        },
-        {
-          "id": "c",
-          "label": "会社"
-        },
-        {
-          "id": "d",
-          "label": "せい"
-        }
-      ],
+      "japaneseEn": "The train was delayed due to delay.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「せい」（名詞）。「電車が遅れた」が「せい」を説明。",
+      "explanationEn": "The noun that receives the modifier is bla (noun). \"The train was delayed\" explains \"sui\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -3063,33 +3573,40 @@
       "vocabulary": [
         "電車が遅れたせいで会議に遅刻した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "電車",
+          "labelEn": "電車 (Train)"
+        },
+        {
+          "id": "b",
+          "label": "会議",
+          "labelEn": "会議 (Meeting)"
+        },
+        {
+          "id": "c",
+          "label": "会社",
+          "labelEn": "会社 (Company)"
+        },
+        {
+          "id": "d",
+          "label": "せい",
+          "labelEn": "せい ()"
+        }
+      ]
     },
     {
       "id": "cu_077",
       "type": "multipleChoice",
       "prompt": "「雨が降った」は何を説明していますか。",
+      "promptEn": "What is raining?",
       "japanese": "雨が降った日の写真は暗い。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "日"
-        },
-        {
-          "id": "b",
-          "label": "雨"
-        },
-        {
-          "id": "c",
-          "label": "写真"
-        },
-        {
-          "id": "d",
-          "label": "記憶"
-        }
-      ],
+      "japaneseEn": "The photo of the rainy day is dark.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「日」。「写真」は「日の写真」。",
+      "explanationEn": "The noun that is qualified is \"day\". \"Photo\" is \"Photo of the day\".",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause"
@@ -3103,33 +3620,40 @@
       "vocabulary": [
         "雨が降った日の写真は暗い"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日",
+          "labelEn": "日 (Home)"
+        },
+        {
+          "id": "b",
+          "label": "雨",
+          "labelEn": "雨 (Rain)"
+        },
+        {
+          "id": "c",
+          "label": "写真",
+          "labelEn": "写真 (Photos)"
+        },
+        {
+          "id": "d",
+          "label": "記憶",
+          "labelEn": "記憶 (Memory)"
+        }
+      ]
     },
     {
       "id": "cu_078",
       "type": "multipleChoice",
       "prompt": "「試験に合格した」は何を説明していますか。",
+      "promptEn": "What do you expect to pass the exam?",
       "japanese": "試験に合格した友だちの顔が輝いていた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "試験"
-        },
-        {
-          "id": "b",
-          "label": "友だち"
-        },
-        {
-          "id": "c",
-          "label": "顔"
-        },
-        {
-          "id": "d",
-          "label": "発表"
-        }
-      ],
+      "japaneseEn": "A friend who passed the test shined.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「友だち」。「顔」は「友だちの顔」。",
+      "explanationEn": "The noun that is qualified is \"friend\". \"Face\" is \"Friend's face\".",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing"
@@ -3143,33 +3667,40 @@
       "vocabulary": [
         "試験に合格した友だちの顔が輝いていた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "試験",
+          "labelEn": "試験 (Test)"
+        },
+        {
+          "id": "b",
+          "label": "友だち",
+          "labelEn": "友だち (Home)"
+        },
+        {
+          "id": "c",
+          "label": "顔",
+          "labelEn": "顔 (Face)"
+        },
+        {
+          "id": "d",
+          "label": "発表",
+          "labelEn": "発表 ()"
+        }
+      ]
     },
     {
       "id": "cu_079",
       "type": "multipleChoice",
       "prompt": "「田中さんという」は何を説明していますか。",
+      "promptEn": "What is \"Tanaka-san\"?",
       "japanese": "田中さんという名前の学生が転校してきた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "学生"
-        },
-        {
-          "id": "b",
-          "label": "田中さん"
-        },
-        {
-          "id": "c",
-          "label": "名前"
-        },
-        {
-          "id": "d",
-          "label": "学校"
-        }
-      ],
+      "japaneseEn": "A student named Mr. Tanaka has been rolling.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「名前」。「田中さんという」は「名前」を同格説明する。",
+      "explanationEn": "The noun that is qualified is \"name\". \"Mr. Tanaka\" explains the same name.",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing",
@@ -3184,33 +3715,40 @@
       "vocabulary": [
         "田中さんという名前の学生が転校してきた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "学生",
+          "labelEn": "学生 (Student)"
+        },
+        {
+          "id": "b",
+          "label": "田中さん",
+          "labelEn": "田中さん (Mr. Tanaka)"
+        },
+        {
+          "id": "c",
+          "label": "名前",
+          "labelEn": "名前 (Name)"
+        },
+        {
+          "id": "d",
+          "label": "学校",
+          "labelEn": "学校 (School)"
+        }
+      ]
     },
     {
       "id": "cu_080",
       "type": "multipleChoice",
       "prompt": "「ゴールデンウィークという」は何を説明していますか。",
+      "promptEn": "What is Golden Week?",
       "japanese": "ゴールデンウィークという長い休みが始まる。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "春"
-        },
-        {
-          "id": "b",
-          "label": "旅行"
-        },
-        {
-          "id": "c",
-          "label": "予定"
-        },
-        {
-          "id": "d",
-          "label": "休み"
-        }
-      ],
+      "japaneseEn": "Golden Week",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「休み」。「という」は前の固有名詞と「休み」を結ぶ。",
+      "explanationEn": "“Closed” is a noun that is qualified. “T。” connects the predecessor and “Clos”.",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification"
@@ -3224,33 +3762,40 @@
       "vocabulary": [
         "ゴールデンウィークという長い休みが始まる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "春",
+          "labelEn": "春 (Spring)"
+        },
+        {
+          "id": "b",
+          "label": "旅行",
+          "labelEn": "旅行 (Travel)"
+        },
+        {
+          "id": "c",
+          "label": "予定",
+          "labelEn": "予定 ()"
+        },
+        {
+          "id": "d",
+          "label": "休み",
+          "labelEn": "休み (Close)"
+        }
+      ]
     },
     {
       "id": "cu_081",
       "type": "multipleChoice",
       "prompt": "「夢という」は何を説明していますか。",
+      "promptEn": "What is \"Dream\"?",
       "japanese": "夢という字は難しい。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "字"
-        },
-        {
-          "id": "b",
-          "label": "夢"
-        },
-        {
-          "id": "c",
-          "label": "漢字"
-        },
-        {
-          "id": "d",
-          "label": "意味"
-        }
-      ],
+      "japaneseEn": "It is difficult to make a dream.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「字」。",
+      "explanationEn": "The noun that is qualified is \"character\".",
       "diagnosticTags": [
         "sentence_parsing",
         "modifier_scope"
@@ -3264,33 +3809,40 @@
       "vocabulary": [
         "夢という字は難しい"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "字",
+          "labelEn": "字 ()"
+        },
+        {
+          "id": "b",
+          "label": "夢",
+          "labelEn": "夢 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "漢字",
+          "labelEn": "漢字 (English)"
+        },
+        {
+          "id": "d",
+          "label": "意味",
+          "labelEn": "意味 ()"
+        }
+      ]
     },
     {
       "id": "cu_082",
       "type": "multipleChoice",
       "prompt": "「日本という」は何を説明していますか。",
+      "promptEn": "What is Japan?",
       "japanese": "日本という国の文化に興味がある。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "日本"
-        },
-        {
-          "id": "b",
-          "label": "国"
-        },
-        {
-          "id": "c",
-          "label": "文化"
-        },
-        {
-          "id": "d",
-          "label": "歴史"
-        }
-      ],
+      "japaneseEn": "I am interested in Japanese culture.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「国」。",
+      "explanationEn": "Qualified nouns are \"country\".",
       "diagnosticTags": [
         "noun_modification",
         "relative_clause"
@@ -3304,33 +3856,40 @@
       "vocabulary": [
         "日本という国の文化に興味がある"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日本",
+          "labelEn": "日本 (Japanese)"
+        },
+        {
+          "id": "b",
+          "label": "国",
+          "labelEn": "国 (Country)"
+        },
+        {
+          "id": "c",
+          "label": "文化",
+          "labelEn": "文化 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "歴史",
+          "labelEn": "歴史 (History)"
+        }
+      ]
     },
     {
       "id": "cu_083",
       "type": "multipleChoice",
       "prompt": "「噂という」は何を説明していますか。",
+      "promptEn": "What is rumor?",
       "japanese": "噂という話はあてにならない。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "人"
-        },
-        {
-          "id": "b",
-          "label": "真実"
-        },
-        {
-          "id": "c",
-          "label": "話"
-        },
-        {
-          "id": "d",
-          "label": "会社"
-        }
-      ],
+      "japaneseEn": "The story of rumors is very good.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「話」。「噂という」が「話」の内容を示す。",
+      "explanationEn": "The noun that is qualified is \"Talk\". The rumor indicates the contents of the story.",
       "diagnosticTags": [
         "relative_clause",
         "sentence_parsing"
@@ -3344,33 +3903,40 @@
       "vocabulary": [
         "噂という話はあてにならない"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "人",
+          "labelEn": "人 (Home)"
+        },
+        {
+          "id": "b",
+          "label": "真実",
+          "labelEn": "真実 (Truth)"
+        },
+        {
+          "id": "c",
+          "label": "話",
+          "labelEn": "話 ()"
+        },
+        {
+          "id": "d",
+          "label": "会社",
+          "labelEn": "会社 (Company)"
+        }
+      ]
     },
     {
       "id": "cu_084",
       "type": "multipleChoice",
       "prompt": "「お知らせの」は何を説明していますか。",
+      "promptEn": "What is \"Announcement\"?",
       "japanese": "お知らせの件について、来週の会議で詳しく説明します。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "会議"
-        },
-        {
-          "id": "b",
-          "label": "来週"
-        },
-        {
-          "id": "c",
-          "label": "説明"
-        },
-        {
-          "id": "d",
-          "label": "件"
-        }
-      ],
+      "japaneseEn": "For more information, please visit the next week’s meeting.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「件」。「お知らせの」は「件」を限定する。",
+      "explanationEn": "The nouns that are qualified are subjects. \"Announcement\" is limited.",
       "diagnosticTags": [
         "modifier_scope",
         "sentence_parsing",
@@ -3386,33 +3952,40 @@
         "お知らせの件について",
         "来週の会議で詳しく説明します"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議",
+          "labelEn": "会議 (Meeting)"
+        },
+        {
+          "id": "b",
+          "label": "来週",
+          "labelEn": "来週 (Next week)"
+        },
+        {
+          "id": "c",
+          "label": "説明",
+          "labelEn": "説明"
+        },
+        {
+          "id": "d",
+          "label": "件",
+          "labelEn": "件 ()"
+        }
+      ]
     },
     {
       "id": "cu_085",
       "type": "multipleChoice",
       "prompt": "「ご確認いただきたい」は何を説明していますか。",
+      "promptEn": "What do you expect to see?",
       "japanese": "ご確認いただきたい資料を添付しております。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "資料"
-        },
-        {
-          "id": "b",
-          "label": "添付"
-        },
-        {
-          "id": "c",
-          "label": "メール"
-        },
-        {
-          "id": "d",
-          "label": "返信"
-        }
-      ],
+      "japaneseEn": "We attach the materials you want to confirm.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「資料」。ビジネス文の典型。",
+      "explanationEn": "The noun that is qualified is \"Document\". Typical type of business statement.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -3426,33 +3999,40 @@
       "vocabulary": [
         "ご確認いただきたい資料を添付しております"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "資料",
+          "labelEn": "資料 ()"
+        },
+        {
+          "id": "b",
+          "label": "添付",
+          "labelEn": "添付 ()"
+        },
+        {
+          "id": "c",
+          "label": "メール",
+          "labelEn": "メール (Mail)"
+        },
+        {
+          "id": "d",
+          "label": "返信",
+          "labelEn": "返信 (Replies)"
+        }
+      ]
     },
     {
       "id": "cu_086",
       "type": "multipleChoice",
       "prompt": "「ご不明な」は何を説明していますか。",
+      "promptEn": "What do you know?",
       "japanese": "ご不明な点がございましたら、担当までご連絡ください。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "連絡"
-        },
-        {
-          "id": "b",
-          "label": "点"
-        },
-        {
-          "id": "c",
-          "label": "担当"
-        },
-        {
-          "id": "d",
-          "label": "質問"
-        }
-      ],
+      "japaneseEn": "If you have any questions, please contact us.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「点」。「ご不明な」は「点」にかかる。",
+      "explanationEn": "The noun that is qualified is \"dot\". \"Unknown\" takes a point.",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -3467,33 +4047,40 @@
         "ご不明な点がございましたら",
         "担当までご連絡ください"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "連絡",
+          "labelEn": "連絡 (Contact)"
+        },
+        {
+          "id": "b",
+          "label": "点",
+          "labelEn": "点 ()"
+        },
+        {
+          "id": "c",
+          "label": "担当",
+          "labelEn": "担当 (Contact)"
+        },
+        {
+          "id": "d",
+          "label": "質問",
+          "labelEn": "質問 ()"
+        }
+      ]
     },
     {
       "id": "cu_087",
       "type": "multipleChoice",
       "prompt": "「署名した」は何を説明していますか。",
+      "promptEn": "What is \"signed\"?",
       "japanese": "お手数ですが、署名した書類の写しを送ってください。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "署名"
-        },
-        {
-          "id": "b",
-          "label": "写し"
-        },
-        {
-          "id": "c",
-          "label": "書類"
-        },
-        {
-          "id": "d",
-          "label": "返信"
-        }
-      ],
+      "japaneseEn": "Please send a copy of the signed document.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「書類」。「写し」は「書類の写し」。",
+      "explanationEn": "\"Documents\" are nouns that are qualified. Copy of documents.",
       "diagnosticTags": [
         "modifier_scope",
         "noun_modification"
@@ -3508,33 +4095,40 @@
         "お手数ですが",
         "署名した書類の写しを送ってください"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "署名",
+          "labelEn": "署名 (Sign)"
+        },
+        {
+          "id": "b",
+          "label": "写し",
+          "labelEn": "写し (Home)"
+        },
+        {
+          "id": "c",
+          "label": "書類",
+          "labelEn": "書類 ()"
+        },
+        {
+          "id": "d",
+          "label": "返信",
+          "labelEn": "返信 (Replies)"
+        }
+      ]
     },
     {
       "id": "cu_088",
       "type": "multipleChoice",
       "prompt": "「記入した」は何を説明していますか。",
+      "promptEn": "What is \"filled\"?",
       "japanese": "来週までにご提出くださいますよう、記入した用紙の右上に日付を記入してください。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "日付"
-        },
-        {
-          "id": "b",
-          "label": "右上"
-        },
-        {
-          "id": "c",
-          "label": "提出"
-        },
-        {
-          "id": "d",
-          "label": "用紙"
-        }
-      ],
+      "japaneseEn": "Please fill in the date at the top right of the form.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「用紙」。",
+      "explanationEn": "The noun that is qualified is \"paper\".",
       "diagnosticTags": [
         "sentence_parsing",
         "relative_clause"
@@ -3549,33 +4143,40 @@
         "来週までにご提出くださいますよう",
         "記入した用紙の右上に日付を記入してください"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "日付",
+          "labelEn": "日付 (Date)"
+        },
+        {
+          "id": "b",
+          "label": "右上",
+          "labelEn": "右上 (Top)"
+        },
+        {
+          "id": "c",
+          "label": "提出",
+          "labelEn": "提出 ()"
+        },
+        {
+          "id": "d",
+          "label": "用紙",
+          "labelEn": "用紙 (Paper)"
+        }
+      ]
     },
     {
       "id": "cu_089",
       "type": "multipleChoice",
       "prompt": "「担当者が確認した」は何を説明していますか。",
+      "promptEn": "What does the person in charge confirm?",
       "japanese": "担当者が確認した内容について、改めてメールいたします。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "内容"
-        },
-        {
-          "id": "b",
-          "label": "担当者"
-        },
-        {
-          "id": "c",
-          "label": "メール"
-        },
-        {
-          "id": "d",
-          "label": "会社"
-        }
-      ],
+      "japaneseEn": "We will send an e-mail once the person in charge has confirmed.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「内容」。",
+      "explanationEn": "The noun that is qualified is \"content\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -3590,33 +4191,40 @@
         "担当者が確認した内容について",
         "改めてメールいたします"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "内容",
+          "labelEn": "内容 ()"
+        },
+        {
+          "id": "b",
+          "label": "担当者",
+          "labelEn": "担当者 (Contact)"
+        },
+        {
+          "id": "c",
+          "label": "メール",
+          "labelEn": "メール (Mail)"
+        },
+        {
+          "id": "d",
+          "label": "会社",
+          "labelEn": "会社 (Company)"
+        }
+      ]
     },
     {
       "id": "cu_090",
       "type": "multipleChoice",
       "prompt": "「市の発表によると」は何を説明していますか。",
+      "promptEn": "What is the impact of the city?",
       "japanese": "市の発表によると、来月から料金が値上げされる。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "料金"
-        },
-        {
-          "id": "b",
-          "label": "発表"
-        },
-        {
-          "id": "c",
-          "label": "来月"
-        },
-        {
-          "id": "d",
-          "label": "市民"
-        }
-      ],
+      "japaneseEn": "According to the announcement of the city, the price will be increased.",
       "correctAnswerId": "b",
       "explanation": "「市の」は「発表」を限定。修飾を受ける名詞は「発表」。",
+      "explanationEn": "\"City\" is limited to \"Presen。\". The nouns that are qualified are presented.",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing",
@@ -3632,33 +4240,40 @@
         "市の発表によると",
         "来月から料金が値上げされる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "料金",
+          "labelEn": "料金 (Price)"
+        },
+        {
+          "id": "b",
+          "label": "発表",
+          "labelEn": "発表 ()"
+        },
+        {
+          "id": "c",
+          "label": "来月",
+          "labelEn": "来月 (Next month)"
+        },
+        {
+          "id": "d",
+          "label": "市民",
+          "labelEn": "市民 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_091",
       "type": "multipleChoice",
       "prompt": "「現地で取材した」は何を説明していますか。",
+      "promptEn": "What do you expect to see when you interview?",
       "japanese": "現地で取材した記者の報道が続いている。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "現地"
-        },
-        {
-          "id": "b",
-          "label": "報道"
-        },
-        {
-          "id": "c",
-          "label": "記者"
-        },
-        {
-          "id": "d",
-          "label": "事件"
-        }
-      ],
+      "japaneseEn": "There is a report of the reporter on the site.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「記者」。「報道」は「記者の報道」。",
+      "explanationEn": "The noun that is qualified is \"signature\". \"Press\" is the press release.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -3672,33 +4287,40 @@
       "vocabulary": [
         "現地で取材した記者の報道が続いている"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現地",
+          "labelEn": "現地 (Home)"
+        },
+        {
+          "id": "b",
+          "label": "報道",
+          "labelEn": "報道 (News)"
+        },
+        {
+          "id": "c",
+          "label": "記者",
+          "labelEn": "記者 (Contact)"
+        },
+        {
+          "id": "d",
+          "label": "事件",
+          "labelEn": "事件 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_092",
       "type": "multipleChoice",
       "prompt": "「警察が明らかにした」は何を説明していますか。",
+      "promptEn": "What does the police reveal?",
       "japanese": "警察が明らかにした事実は衝撃的だった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "警察"
-        },
-        {
-          "id": "b",
-          "label": "発表"
-        },
-        {
-          "id": "c",
-          "label": "世論"
-        },
-        {
-          "id": "d",
-          "label": "事実"
-        }
-      ],
+      "japaneseEn": "The fact that the police revealed was shocking.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「事実」。",
+      "explanationEn": "The noun that is qualified is \"facts\".",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -3712,33 +4334,40 @@
       "vocabulary": [
         "警察が明らかにした事実は衝撃的だった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "警察",
+          "labelEn": "警察 (Police)"
+        },
+        {
+          "id": "b",
+          "label": "発表",
+          "labelEn": "発表 ()"
+        },
+        {
+          "id": "c",
+          "label": "世論",
+          "labelEn": "世論 ()"
+        },
+        {
+          "id": "d",
+          "label": "事実",
+          "labelEn": "事実 (Facts)"
+        }
+      ]
     },
     {
       "id": "cu_093",
       "type": "multipleChoice",
       "prompt": "「専門家が指摘した」は何を説明していますか。",
+      "promptEn": "What do you expect from experts?",
       "japanese": "専門家が指摘した問題の深刻さが議論を呼んでいる。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "問題"
-        },
-        {
-          "id": "b",
-          "label": "専門家"
-        },
-        {
-          "id": "c",
-          "label": "議論"
-        },
-        {
-          "id": "d",
-          "label": "社会"
-        }
-      ],
+      "japaneseEn": "The seriousness of the problem that experts pointed out is calling a discussion.",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「問題」。「深刻さ」は「問題の深刻さ」。",
+      "explanationEn": "The noun that is qualified is \"problems\". \"。。\" is \"問題。\"",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause"
@@ -3752,33 +4381,40 @@
       "vocabulary": [
         "専門家が指摘した問題の深刻さが議論を呼んでいる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "問題",
+          "labelEn": "問題 ()"
+        },
+        {
+          "id": "b",
+          "label": "専門家",
+          "labelEn": "専門家 (Experts)"
+        },
+        {
+          "id": "c",
+          "label": "議論",
+          "labelEn": "議論 ()"
+        },
+        {
+          "id": "d",
+          "label": "社会",
+          "labelEn": "社会 (Company)"
+        }
+      ]
     },
     {
       "id": "cu_094",
       "type": "multipleChoice",
       "prompt": "「去年比で増えた」は何を説明していますか。",
+      "promptEn": "What do you expect from last year?",
       "japanese": "去年比で増えた売上の数字が発表された。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "去年"
-        },
-        {
-          "id": "b",
-          "label": "売上"
-        },
-        {
-          "id": "c",
-          "label": "数字"
-        },
-        {
-          "id": "d",
-          "label": "会社"
-        }
-      ],
+      "japaneseEn": "The number of sales increased from last year was announced.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「売上」。「数字」は「売上の数字」。",
+      "explanationEn": "Qualified nouns are \"sales\". \"Number\" is \"Number of sales\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -3792,33 +4428,40 @@
       "vocabulary": [
         "去年比で増えた売上の数字が発表された"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "去年",
+          "labelEn": "去年 (Last year)"
+        },
+        {
+          "id": "b",
+          "label": "売上",
+          "labelEn": "売上 (Sales)"
+        },
+        {
+          "id": "c",
+          "label": "数字",
+          "labelEn": "数字 ()"
+        },
+        {
+          "id": "d",
+          "label": "会社",
+          "labelEn": "会社 (Company)"
+        }
+      ]
     },
     {
       "id": "cu_095",
       "type": "multipleChoice",
       "prompt": "「海外で話題になった」は何を説明していますか。",
+      "promptEn": "What is the impact of the topic overseas?",
       "japanese": "海外で話題になった映画の日本公開が決まった。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "海外"
-        },
-        {
-          "id": "b",
-          "label": "公開"
-        },
-        {
-          "id": "c",
-          "label": "映画"
-        },
-        {
-          "id": "d",
-          "label": "話題"
-        }
-      ],
+      "japaneseEn": "Japan has been released.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「映画」。「公開」は「映画の公開」。",
+      "explanationEn": "The noun that is qualified is \"movie\". \"Publish\" is \"Film Publication\".",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -3832,33 +4475,40 @@
       "vocabulary": [
         "海外で話題になった映画の日本公開が決まった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "海外",
+          "labelEn": "海外 (Overseas)"
+        },
+        {
+          "id": "b",
+          "label": "公開",
+          "labelEn": "公開 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "映画",
+          "labelEn": "映画 (Movie)"
+        },
+        {
+          "id": "d",
+          "label": "話題",
+          "labelEn": "話題 ()"
+        }
+      ]
     },
     {
       "id": "cu_096",
       "type": "multipleChoice",
       "prompt": "「政府が発表した」は何を説明していますか。",
+      "promptEn": "What do you expect from the government?",
       "japanese": "政府が発表した対策の内容がニュースで伝えられた。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "政府"
-        },
-        {
-          "id": "b",
-          "label": "内容"
-        },
-        {
-          "id": "c",
-          "label": "国民"
-        },
-        {
-          "id": "d",
-          "label": "対策"
-        }
-      ],
+      "japaneseEn": "The details of measures published by the government were reported in the news.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「対策」。「内容」は「対策の内容」。",
+      "explanationEn": "The nouns that are qualified are \"re ts\". \"Content\" is \"Content of measures\".",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -3872,33 +4522,40 @@
       "vocabulary": [
         "政府が発表した対策の内容がニュースで伝えられた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "政府",
+          "labelEn": "政府 (Government)"
+        },
+        {
+          "id": "b",
+          "label": "内容",
+          "labelEn": "内容 ()"
+        },
+        {
+          "id": "c",
+          "label": "国民",
+          "labelEn": "国民 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "対策",
+          "labelEn": "対策 ()"
+        }
+      ]
     },
     {
       "id": "cu_097",
       "type": "multipleChoice",
       "prompt": "「目撃者が語った」は何を説明していますか。",
+      "promptEn": "What do you expect to see?",
       "japanese": "目撃者が語った当時の状況は混乱していたという。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "状況"
-        },
-        {
-          "id": "b",
-          "label": "目撃者"
-        },
-        {
-          "id": "c",
-          "label": "混乱"
-        },
-        {
-          "id": "d",
-          "label": "事故"
-        }
-      ],
+      "japaneseEn": "The situation of the time when the witness told was conf .",
       "correctAnswerId": "a",
       "explanation": "修飾を受ける名詞は「状況」。「当時の」も「状況」にかかる。",
+      "explanationEn": "Qualified noun is \"S ation\". \"The time\" also takes \"the situation\".",
       "diagnosticTags": [
         "modifier_scope",
         "relative_clause"
@@ -3912,33 +4569,40 @@
       "vocabulary": [
         "目撃者が語った当時の状況は混乱していたという"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "状況",
+          "labelEn": "状況 (Contact)"
+        },
+        {
+          "id": "b",
+          "label": "目撃者",
+          "labelEn": "目撃者 (Blind)"
+        },
+        {
+          "id": "c",
+          "label": "混乱",
+          "labelEn": "混乱 (Confusion)"
+        },
+        {
+          "id": "d",
+          "label": "事故",
+          "labelEn": "事故 (Accident)"
+        }
+      ]
     },
     {
       "id": "cu_098",
       "type": "multipleChoice",
       "prompt": "「関係者が認めた」は何を説明していますか。",
+      "promptEn": "What is the impact of the company?",
       "japanese": "関係者が認めた事実関係の整理に時間がかかる。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "関係者"
-        },
-        {
-          "id": "b",
-          "label": "事実関係"
-        },
-        {
-          "id": "c",
-          "label": "時間"
-        },
-        {
-          "id": "d",
-          "label": "調査"
-        }
-      ],
+      "japaneseEn": "It takes time to organize the facts that the parties have accepted.",
       "correctAnswerId": "b",
       "explanation": "修飾を受ける名詞は「事実関係」。「整理」は「事実関係の整理」。",
+      "explanationEn": "The noun that is qualified is \"factual relationship\". \"のing\" is \"事実ing facts\".",
       "diagnosticTags": [
         "noun_modification",
         "sentence_parsing"
@@ -3952,33 +4616,40 @@
       "vocabulary": [
         "関係者が認めた事実関係の整理に時間がかかる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "関係者",
+          "labelEn": "関係者 (Contact)"
+        },
+        {
+          "id": "b",
+          "label": "事実関係",
+          "labelEn": "事実関係 (Facts)"
+        },
+        {
+          "id": "c",
+          "label": "時間",
+          "labelEn": "時間 (Time)"
+        },
+        {
+          "id": "d",
+          "label": "調査",
+          "labelEn": "調査 (Search)"
+        }
+      ]
     },
     {
       "id": "cu_099",
       "type": "multipleChoice",
       "prompt": "「まだ原因がはっきりしない」は何を説明していますか。",
+      "promptEn": "What are the reasons why the cause is not clear?",
       "japanese": "まだ原因がはっきりしない事故の調査が続いている。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "原因"
-        },
-        {
-          "id": "b",
-          "label": "調査"
-        },
-        {
-          "id": "c",
-          "label": "事故"
-        },
-        {
-          "id": "d",
-          "label": "現場"
-        }
-      ],
+      "japaneseEn": "Accident investigation is still not clear.",
       "correctAnswerId": "c",
       "explanation": "修飾を受ける名詞は「事故」。",
+      "explanationEn": "\"Accident\" is a noun that is qualified.",
       "diagnosticTags": [
         "relative_clause",
         "modifier_scope"
@@ -3992,33 +4663,40 @@
       "vocabulary": [
         "まだ原因がはっきりしない事故の調査が続いている"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "原因",
+          "labelEn": "原因 (Cause)"
+        },
+        {
+          "id": "b",
+          "label": "調査",
+          "labelEn": "調査 (Search)"
+        },
+        {
+          "id": "c",
+          "label": "事故",
+          "labelEn": "事故 (Accident)"
+        },
+        {
+          "id": "d",
+          "label": "現場",
+          "labelEn": "現場 (Home)"
+        }
+      ]
     },
     {
       "id": "cu_100",
       "type": "multipleChoice",
       "prompt": "「現場で見つかった」は何を説明していますか。",
+      "promptEn": "What did you find in the field?",
       "japanese": "現場で見つかった物証の分析結果が注目されている。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "現場"
-        },
-        {
-          "id": "b",
-          "label": "分析"
-        },
-        {
-          "id": "c",
-          "label": "警察"
-        },
-        {
-          "id": "d",
-          "label": "物証"
-        }
-      ],
+      "japaneseEn": "The results of analysis of the testimonials found on the site are noted.",
       "correctAnswerId": "d",
       "explanation": "修飾を受ける名詞は「物証」。「分析結果」は「物証の分析結果」。",
+      "explanationEn": "Qualified nouns are \"object certificates\". \"An。 result\" is \"An。 result of the certificate\".",
       "diagnosticTags": [
         "sentence_parsing",
         "noun_modification"
@@ -4032,7 +4710,29 @@
       "vocabulary": [
         "現場で見つかった物証の分析結果が注目されている"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現場",
+          "labelEn": "現場 (Home)"
+        },
+        {
+          "id": "b",
+          "label": "分析",
+          "labelEn": "分析 ()"
+        },
+        {
+          "id": "c",
+          "label": "警察",
+          "labelEn": "警察 (Police)"
+        },
+        {
+          "id": "d",
+          "label": "物証",
+          "labelEn": "物証 (Certificate)"
+        }
+      ]
     }
   ]
 }

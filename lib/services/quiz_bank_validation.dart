@@ -40,6 +40,35 @@ void validateQuizBankContent(Quiz quiz) {
         'Quiz "$quizId" / question "$qid": explanation is empty',
       );
     }
+    if (question.promptEn.trim().isEmpty) {
+      throw QuizBankFormatException(
+        'Quiz "$quizId" / question "$qid": promptEn is empty',
+      );
+    }
+    if (question.japaneseEn.trim().isEmpty) {
+      throw QuizBankFormatException(
+        'Quiz "$quizId" / question "$qid": japaneseEn is empty',
+      );
+    }
+    if (question.explanationEn.trim().isEmpty) {
+      throw QuizBankFormatException(
+        'Quiz "$quizId" / question "$qid": explanationEn is empty',
+      );
+    }
+    final ctx = question.context;
+    if (ctx != null && ctx.trim().isNotEmpty) {
+      final cEn = question.contextEn;
+      if (cEn == null || cEn.trim().isEmpty) {
+        throw QuizBankFormatException(
+          'Quiz "$quizId" / question "$qid": contextEn is required when context is set',
+        );
+      }
+    } else if (question.contextEn != null &&
+        question.contextEn!.trim().isNotEmpty) {
+      throw QuizBankFormatException(
+        'Quiz "$quizId" / question "$qid": contextEn present but context is empty or null',
+      );
+    }
     if (question.diagnosticTags.isEmpty) {
       throw QuizBankFormatException(
         'Quiz "$quizId" / question "$qid": diagnosticTags is empty',
@@ -55,6 +84,30 @@ void validateQuizBankContent(Quiz quiz) {
       throw QuizBankFormatException(
         'Quiz "$quizId" / question "$qid": correctAnswerId "${question.correctAnswerId}" is not among choice ids',
       );
+    }
+
+    for (var i = 0; i < question.choices.length; i++) {
+      final c = question.choices[i];
+      if (c.labelEn == null || c.labelEn!.trim().isEmpty) {
+        throw QuizBankFormatException(
+          'Quiz "$quizId" / question "$qid": choices[$i].labelEn is required',
+        );
+      }
+      final ex = c.explanation;
+      if (ex != null && ex.trim().isNotEmpty) {
+        if (c.explanationEn == null || c.explanationEn!.trim().isEmpty) {
+          throw QuizBankFormatException(
+            'Quiz "$quizId" / question "$qid": choices[$i].explanationEn '
+            'is required when explanation is set',
+          );
+        }
+      } else if (c.explanationEn != null &&
+          c.explanationEn!.trim().isNotEmpty) {
+        throw QuizBankFormatException(
+          'Quiz "$quizId" / question "$qid": choices[$i].explanationEn '
+          'present without Japanese explanation',
+        );
+      }
     }
 
     final jlpt = question.jlptLevel;

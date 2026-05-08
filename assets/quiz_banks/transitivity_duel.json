@@ -16,27 +16,12 @@
       "id": "td_001",
       "type": "multipleChoice",
       "prompt": "Choose the most natural sentence. No one touched the window; a gust of wind did it.",
+      "promptEn": "Choose the most natural sentence. No one touched the window; a gust of wind did it.",
       "japanese": "強い風が吹いて、窓の方から突然音がした。どうなったか説明する文として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "風で窓が開いた。"
-        },
-        {
-          "id": "b",
-          "label": "風で窓を開けた。"
-        },
-        {
-          "id": "c",
-          "label": "窓が風を開いた。"
-        },
-        {
-          "id": "d",
-          "label": "窓を風が開けた。"
-        }
-      ],
+      "japaneseEn": "The wind was blowing and suddenly sounded from the window. Which is natural as a sentence to explain what happened?",
       "correctAnswerId": "a",
       "explanation": "「開く」は自動詞で、変化が起きた窓に「が」が付く。「開ける」は他動詞で、開ける人や力に意図や操作が読めるので、この自然現象の説明には向かない。",
+      "explanationEn": "\"Opening\" is an auto-verb, and \"が\" is attached to the window where the change occurs. \"Opening\" is another詞, so it is not suitable for the explanation of this natural phenomenon because the intention and operation can be read by the person or force to open.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -53,33 +38,40 @@
         "窓の方から突然音がした",
         "どうなったか説明する文として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "風で窓が開いた。",
+          "labelEn": "風で窓が開いた。 (The window opened by the wind.)"
+        },
+        {
+          "id": "b",
+          "label": "風で窓を開けた。",
+          "labelEn": "風で窓を開けた。 (Opened the window by wind.)"
+        },
+        {
+          "id": "c",
+          "label": "窓が風を開いた。",
+          "labelEn": "窓が風を開いた。 (The window opens the wind.)"
+        },
+        {
+          "id": "d",
+          "label": "窓を風が開けた。",
+          "labelEn": "窓を風が開けた。 (Opened the window.)"
+        }
+      ]
     },
     {
       "id": "td_002",
       "type": "multipleChoice",
       "prompt": "Choose the most natural sentence. You intentionally open the shop shutter before business hours.",
+      "promptEn": "Choose the most natural sentence. You intentionally open the shop shutter before business hours.",
       "japanese": "店の準備で、あなたがシャッターを上げるところだ。自分の行為を言うのに自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "シャッターが開いてから客が来た。"
-        },
-        {
-          "id": "b",
-          "label": "シャッターを開けてから仕事を始めた。"
-        },
-        {
-          "id": "c",
-          "label": "シャッターが開けて仕事を始めた。"
-        },
-        {
-          "id": "d",
-          "label": "シャッターを開いて仕事を始めた。"
-        }
-      ],
+      "japaneseEn": "In the preparation of the store, you can raise the . Which is natural to say your own?",
       "correctAnswerId": "b",
       "explanation": "人が操作して開けるなら他動詞の「開ける」で、操作の対象に「を」。「開く」は自動詞で、シャッターが自分から動いたように聞こえる。",
+      "explanationEn": "If a person is操作ed and opened, it is \"Open\" of other詞s. \"Opening\" is an auto-verb, and it sounds like a。 from me.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -96,33 +88,40 @@
         "あなたがシャッターを上げるところだ",
         "自分の行為を言うのに自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "シャッターが開いてから客が来た。",
+          "labelEn": "シャッターが開いてから客が来た。 (Customers came from the .)"
+        },
+        {
+          "id": "b",
+          "label": "シャッターを開けてから仕事を始めた。",
+          "labelEn": "シャッターを開けてから仕事を始めた。 (I started working after opening the .)"
+        },
+        {
+          "id": "c",
+          "label": "シャッターが開けて仕事を始めた。",
+          "labelEn": "シャッターが開けて仕事を始めた。 (I started working with a .)"
+        },
+        {
+          "id": "d",
+          "label": "シャッターを開いて仕事を始めた。",
+          "labelEn": "シャッターを開いて仕事を始めた。 (I started working with .)"
+        }
+      ]
     },
     {
       "id": "td_003",
       "type": "multipleChoice",
       "prompt": "Choose the sentence that correctly uses が with the intransitive verb.",
+      "promptEn": "Choose the sentence that correctly uses が with the intransitive verb.",
       "japanese": "箱の蓋の話をしている。自動詞の形として正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "蓋が開いた。"
-        },
-        {
-          "id": "b",
-          "label": "蓋を開いた。"
-        },
-        {
-          "id": "c",
-          "label": "蓋を開けた。"
-        },
-        {
-          "id": "d",
-          "label": "蓋が開けた。"
-        }
-      ],
+      "japaneseEn": "I'm talking about the lid of the box. Which is correct as an autonomy?",
       "correctAnswerId": "a",
       "explanation": "「開く」は自動詞なので、変化の主体「蓋」に「が」。「開ける」は他動詞で「蓋を開ける」になる。",
+      "explanationEn": "\"Opening\" is an auto-verb, so it's \"at the lid\" immediately after the change. \"Open\" becomes \"Open the lid\" with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -138,33 +137,40 @@
         "箱の蓋の話をしている",
         "自動詞の形として正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "蓋が開いた。",
+          "labelEn": "蓋が開いた。 (The lid opened.)"
+        },
+        {
+          "id": "b",
+          "label": "蓋を開いた。",
+          "labelEn": "蓋を開いた。 (Open the lid.)"
+        },
+        {
+          "id": "c",
+          "label": "蓋を開けた。",
+          "labelEn": "蓋を開けた。 (Opened the lid.)"
+        },
+        {
+          "id": "d",
+          "label": "蓋が開けた。",
+          "labelEn": "蓋が開けた。 (The lid was opened.)"
+        }
+      ]
     },
     {
       "id": "td_004",
       "type": "multipleChoice",
       "prompt": "Which sentence best implies that someone (not the door) caused the opening?",
+      "promptEn": "Which sentence best implies that someone (not the door) caused the opening?",
       "japanese": "ドアの前に立っている係員について。誰かが意図的に開けたことがはっきりするのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ドアが勝手に開いた。"
-        },
-        {
-          "id": "b",
-          "label": "ドアが突然開いた。"
-        },
-        {
-          "id": "c",
-          "label": "係員がドアを開けた。"
-        },
-        {
-          "id": "d",
-          "label": "ドアがゆっくり開いた。"
-        }
-      ],
+      "japaneseEn": "About the staff standing in front of the door. Which is clear that someone has intentionally opened?",
       "correctAnswerId": "c",
       "explanation": "操作の主体が「係員」で、対象は他動詞「開ける」に「を」。他は自動詞「開く」で、原因がドア自身や状況に見える。",
+      "explanationEn": "The command line of the operation is \"attenuation\", and the target is \"to open\" other詞. The other is an auto-verb “opening” and the cause is visible to the door itself and the situation.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -180,33 +186,40 @@
         "ドアの前に立っている係員について",
         "誰かが意図的に開けたことがはっきりするのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ドアが勝手に開いた。",
+          "labelEn": "ドアが勝手に開いた。 (Doors open.)"
+        },
+        {
+          "id": "b",
+          "label": "ドアが突然開いた。",
+          "labelEn": "ドアが突然開いた。 (The door suddenly opened.)"
+        },
+        {
+          "id": "c",
+          "label": "係員がドアを開けた。",
+          "labelEn": "係員がドアを開けた。 (The staff opened the door.)"
+        },
+        {
+          "id": "d",
+          "label": "ドアがゆっくり開いた。",
+          "labelEn": "ドアがゆっくり開いた。 (The door opens slowly.)"
+        }
+      ]
     },
     {
       "id": "td_005",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you opened the window to air out the room.",
+      "promptEn": "Choose the best sentence: you opened the window to air out the room.",
       "japanese": "部屋の空気を入れ替えたくて、あなたが窓を操作する場面。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "換気のために窓が開いた。"
-        },
-        {
-          "id": "b",
-          "label": "換気のために窓を開けた。"
-        },
-        {
-          "id": "c",
-          "label": "換気のために窓が開けた。"
-        },
-        {
-          "id": "d",
-          "label": "換気のために窓を開いてしまった。"
-        }
-      ],
+      "japaneseEn": "A scene where you want to change the air of the room and operate the window. What is natural?",
       "correctAnswerId": "b",
       "explanation": "人が意図して開けるなら他動詞「窓を開ける」。「窓が開いた」は自動詞で風などの自然変化にも使え、意図がはっきりしない。",
+      "explanationEn": "If a person is intentionally opened, another詞 \"Open Window\". \"Window Open\" can be used for natural changes such as wind, and the intention is not clear.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -223,33 +236,40 @@
         "あなたが窓を操作する場面",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "換気のために窓が開いた。",
+          "labelEn": "換気のために窓が開いた。 (windows open for ventilation.)"
+        },
+        {
+          "id": "b",
+          "label": "換気のために窓を開けた。",
+          "labelEn": "換気のために窓を開けた。 (Opened the window for ventilation.)"
+        },
+        {
+          "id": "c",
+          "label": "換気のために窓が開けた。",
+          "labelEn": "換気のために窓が開けた。 (Window opened for ventilation.)"
+        },
+        {
+          "id": "d",
+          "label": "換気のために窓を開いてしまった。",
+          "labelEn": "換気のために窓を開いてしまった。 (I left the window for ventilation.)"
+        }
+      ]
     },
     {
       "id": "td_006",
       "type": "multipleChoice",
       "prompt": "Choose the most natural sentence. The door closed by itself (spring mechanism).",
+      "promptEn": "Choose the most natural sentence. The door closed by itself (spring mechanism).",
       "japanese": "オートドアのあとで、人は触っていない。自然に閉じたといえるのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ドアを閉まった。"
-        },
-        {
-          "id": "b",
-          "label": "ドアが閉まった。"
-        },
-        {
-          "id": "c",
-          "label": "ドアを閉めた。"
-        },
-        {
-          "id": "d",
-          "label": "ドアが閉めた。"
-        }
-      ],
+      "japaneseEn": "There is no touch after the door. Which is the reason why we have closed naturally?",
       "correctAnswerId": "b",
       "explanation": "「閉まる」は自動詞で、閉じる変化の主体に「が」。「閉める」は他動詞で人の操作を連想する。",
+      "explanationEn": "\"Closing\" is an auto-verb, and \"Closing\" is immediately after a closed change. \"Close\" is a combination of human operation with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -266,33 +286,40 @@
         "人は触っていない",
         "自然に閉じたといえるのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ドアを閉まった。",
+          "labelEn": "ドアを閉まった。 (Closed the door.)"
+        },
+        {
+          "id": "b",
+          "label": "ドアが閉まった。",
+          "labelEn": "ドアが閉まった。 (The door was closed.)"
+        },
+        {
+          "id": "c",
+          "label": "ドアを閉めた。",
+          "labelEn": "ドアを閉めた。 (Close the door.)"
+        },
+        {
+          "id": "d",
+          "label": "ドアが閉めた。",
+          "labelEn": "ドアが閉めた。 (Door closed.)"
+        }
+      ]
     },
     {
       "id": "td_007",
       "type": "multipleChoice",
       "prompt": "Choose the natural sentence. Before leaving, you shut the window.",
+      "promptEn": "Choose the natural sentence. Before leaving, you shut the window.",
       "japanese": "出かける前に、あなたが窓を手で閉じた。行為として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "窓が閉まってから出かけた。"
-        },
-        {
-          "id": "b",
-          "label": "窓を閉めてから出かけた。"
-        },
-        {
-          "id": "c",
-          "label": "窓が閉めてから出かけた。"
-        },
-        {
-          "id": "d",
-          "label": "窓を閉まってから出かけた。"
-        }
-      ],
+      "japaneseEn": "Before starting, you closed the window by hand. Which is natural as an act?",
       "correctAnswerId": "b",
       "explanation": "他動詞「閉める」は対象に「を」。「閉まる」は自動詞で、自分で閉じた感じが弱い。",
+      "explanationEn": "Other s \"Close\" to the target. \"Close\" is an auto-verb, and it is weak to feel that I closed myself.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -309,33 +336,40 @@
         "あなたが窓を手で閉じた",
         "行為として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "窓が閉まってから出かけた。",
+          "labelEn": "窓が閉まってから出かけた。 (The window was closed.)"
+        },
+        {
+          "id": "b",
+          "label": "窓を閉めてから出かけた。",
+          "labelEn": "窓を閉めてから出かけた。 (I closed the window.)"
+        },
+        {
+          "id": "c",
+          "label": "窓が閉めてから出かけた。",
+          "labelEn": "窓が閉めてから出かけた。 (The window was closed.)"
+        },
+        {
+          "id": "d",
+          "label": "窓を閉まってから出かけた。",
+          "labelEn": "窓を閉まってから出かけた。 (I closed the window.)"
+        }
+      ]
     },
     {
       "id": "td_008",
       "type": "multipleChoice",
       "prompt": "Which uses を correctly with the transitive verb?",
+      "promptEn": "Which uses を correctly with the transitive verb?",
       "japanese": "本棚について発言している。他動詞の枠として正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "扉が閉めて鍵をかけた。"
-        },
-        {
-          "id": "b",
-          "label": "扉を閉めて鍵をかけた。"
-        },
-        {
-          "id": "c",
-          "label": "扉が閉まって鍵をかけた。"
-        },
-        {
-          "id": "d",
-          "label": "扉を閉まって鍵をかけた。"
-        }
-      ],
+      "japaneseEn": "I'm talking about bookshelves. Which is the correct border for other s?",
       "correctAnswerId": "b",
       "explanation": "「閉める」は他動詞なので「扉を閉める」。「閉まる」は自動詞で「扉が閉まる」。",
+      "explanationEn": "\"Close\" is another詞, so \"Close the door\". \"Close\" is an auto-verb and \"Door closes\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -351,33 +385,40 @@
         "本棚について発言している",
         "他動詞の枠として正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "扉が閉めて鍵をかけた。",
+          "labelEn": "扉が閉めて鍵をかけた。 (The door is closed and the key is opened.)"
+        },
+        {
+          "id": "b",
+          "label": "扉を閉めて鍵をかけた。",
+          "labelEn": "扉を閉めて鍵をかけた。 (Close the door to unlock the key.)"
+        },
+        {
+          "id": "c",
+          "label": "扉が閉まって鍵をかけた。",
+          "labelEn": "扉が閉まって鍵をかけた。 (The door is closed and the key is opened.)"
+        },
+        {
+          "id": "d",
+          "label": "扉を閉まって鍵をかけた。",
+          "labelEn": "扉を閉まって鍵をかけた。 (Close the door and open the key.)"
+        }
+      ]
     },
     {
       "id": "td_009",
       "type": "multipleChoice",
       "prompt": "Which sentence describes the change without naming a human agent in that clause?",
+      "promptEn": "Which sentence describes the change without naming a human agent in that clause?",
       "japanese": "夜になって店のシャッターについて、その文だけで見て主体が「シャッター自身」の変化なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "店員がシャッターを閉めた。"
-        },
-        {
-          "id": "b",
-          "label": "シャッターが下りて閉まった。"
-        },
-        {
-          "id": "c",
-          "label": "店長が閉店のサインを出した。"
-        },
-        {
-          "id": "d",
-          "label": "客が店を出た。"
-        }
-      ],
+      "japaneseEn": "What is the change in店ter itself?",
       "correctAnswerId": "b",
       "explanation": "「閉まる」は自動詞で、シャッターが閉じた状態変化に「が」。他は人が主語で別の行為。",
+      "explanationEn": "\"Close\" is an auto-verb, and theシャッター is closed. The other is another act in the subject.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -395,33 +436,40 @@
         "シャッター自身",
         "の変化なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "店員がシャッターを閉めた。",
+          "labelEn": "店員がシャッターを閉めた。 (Store staff closed the .)"
+        },
+        {
+          "id": "b",
+          "label": "シャッターが下りて閉まった。",
+          "labelEn": "シャッターが下りて閉まった。 (The  was closed.)"
+        },
+        {
+          "id": "c",
+          "label": "店長が閉店のサインを出した。",
+          "labelEn": "店長が閉店のサインを出した。 (Store manager signs closed.)"
+        },
+        {
+          "id": "d",
+          "label": "客が店を出た。",
+          "labelEn": "客が店を出た。 (Restaurant)"
+        }
+      ]
     },
     {
       "id": "td_010",
       "type": "multipleChoice",
       "prompt": "Choose the best fit: you gently closed the laptop after saving your work.",
+      "promptEn": "Choose the best fit: you gently closed the laptop after saving your work.",
       "japanese": "仕事を保存してから、そっとノートパソコンを畳む場面。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "保存してから画面が閉まった。"
-        },
-        {
-          "id": "b",
-          "label": "保存してから画面を閉めた。"
-        },
-        {
-          "id": "c",
-          "label": "保存してから画面が閉めた。"
-        },
-        {
-          "id": "d",
-          "label": "保存してから画面を閉まった。"
-        }
-      ],
+      "japaneseEn": "A scene where you can save your work and finally fold your laptop. What is natural?",
       "correctAnswerId": "b",
       "explanation": "画面を操作して閉じるのは他動詞「閉める」。「閉まる」は自動詞で、ソフトの挙動だけを言うときには使いにくい。",
+      "explanationEn": "Other詞s \"Close\" to close the screen. \"Close\" is an auto-verb, and it is difficult to use when you say only the behavior of the software.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -438,33 +486,40 @@
         "そっとノートパソコンを畳む場面",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "保存してから画面が閉まった。",
+          "labelEn": "保存してから画面が閉まった。 (The screen was closed after saving.)"
+        },
+        {
+          "id": "b",
+          "label": "保存してから画面を閉めた。",
+          "labelEn": "保存してから画面を閉めた。 (Save and close the screen.)"
+        },
+        {
+          "id": "c",
+          "label": "保存してから画面が閉めた。",
+          "labelEn": "保存してから画面が閉めた。 (The screen is closed after saving.)"
+        },
+        {
+          "id": "d",
+          "label": "保存してから画面を閉まった。",
+          "labelEn": "保存してから画面を閉まった。 (The screen was closed after saving.)"
+        }
+      ]
     },
     {
       "id": "td_011",
       "type": "multipleChoice",
       "prompt": "Choose the sentence where the money ends up inside the wallet (change of state, no agent named).",
+      "promptEn": "Choose the sentence where the money ends up inside the wallet (change of state, no agent named).",
       "japanese": "さいふの口が開いていて、小銭が中に収まったあとを言う。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "小銭がさいふに入れた。"
-        },
-        {
-          "id": "b",
-          "label": "小銭がさいふに入った。"
-        },
-        {
-          "id": "c",
-          "label": "小銭をさいふが入った。"
-        },
-        {
-          "id": "d",
-          "label": "小銭をさいふに入った。"
-        }
-      ],
+      "japaneseEn": "It says that the mouth of the saifu is pulled, and the coin is placed inside. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「入る」は自動詞で、入ったものに「が」、行き先に「に」。「入れる」は他動詞で人が入れる場面に使う。",
+      "explanationEn": "\"Enter\" is an auto-verb, \"ha\", \"to\" to the destination. \"Enter\" is used for scenes where people put in other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -481,33 +536,40 @@
         "小銭が中に収まったあとを言う",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "小銭がさいふに入れた。",
+          "labelEn": "小銭がさいふに入れた。 (I put a coin.)"
+        },
+        {
+          "id": "b",
+          "label": "小銭がさいふに入った。",
+          "labelEn": "小銭がさいふに入った。 (I entered the coin.)"
+        },
+        {
+          "id": "c",
+          "label": "小銭をさいふが入った。",
+          "labelEn": "小銭をさいふが入った。 (I got a coin.)"
+        },
+        {
+          "id": "d",
+          "label": "小銭をさいふに入った。",
+          "labelEn": "小銭をさいふに入った。 (I entered the coin.)"
+        }
+      ]
     },
     {
       "id": "td_012",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for putting a letter into the mailbox on purpose.",
+      "promptEn": "Choose the sentence for putting a letter into the mailbox on purpose.",
       "japanese": "ポストの前で、手紙を投函する。行為として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "手紙がポストに入った。"
-        },
-        {
-          "id": "b",
-          "label": "手紙をポストに入れた。"
-        },
-        {
-          "id": "c",
-          "label": "手紙がポストを入れた。"
-        },
-        {
-          "id": "d",
-          "label": "手紙をポストが入れた。"
-        }
-      ],
+      "japaneseEn": "Send a letter in front of the post. Which is natural as an act?",
       "correctAnswerId": "b",
       "explanation": "人が中へ入れる操作は他動詞「入れる」で、対象に「を」。「入る」は自動詞で手紙が勝手に入ったように聞こえる。",
+      "explanationEn": "The operation that people put inside is \"enter\" of other詞s. \"Enter\" sounds like a letter has been won by an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -524,33 +586,40 @@
         "手紙を投函する",
         "行為として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "手紙がポストに入った。",
+          "labelEn": "手紙がポストに入った。 (The letter entered the post.)"
+        },
+        {
+          "id": "b",
+          "label": "手紙をポストに入れた。",
+          "labelEn": "手紙をポストに入れた。 (I put a letter in the post.)"
+        },
+        {
+          "id": "c",
+          "label": "手紙がポストを入れた。",
+          "labelEn": "手紙がポストを入れた。 (The letter puts a post.)"
+        },
+        {
+          "id": "d",
+          "label": "手紙をポストが入れた。",
+          "labelEn": "手紙をポストが入れた。 (I put a letter in the post.)"
+        }
+      ]
     },
     {
       "id": "td_013",
       "type": "multipleChoice",
       "prompt": "Which uses が with the intransitive verb correctly?",
+      "promptEn": "Which uses が with the intransitive verb correctly?",
       "japanese": "会場の話。正しい枠はどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "客が会場に入れていく。"
-        },
-        {
-          "id": "b",
-          "label": "客が会場に入っていく。"
-        },
-        {
-          "id": "c",
-          "label": "客を会場に入っていく。"
-        },
-        {
-          "id": "d",
-          "label": "会場が客に入る。"
-        }
-      ],
+      "japaneseEn": "Talk about the venue. What is the right frame?",
       "correctAnswerId": "b",
       "explanation": "「入る」は自動詞で、移動する人に「が」、到達点に「に」。「入れる」は他動詞で「客を中に入れる」が別枠。",
+      "explanationEn": "\"Enter\" is an auto-verb, \"is\" to the person moving, \"in\" to the point of arrival. \"Enter\" is another枠 and \"to put the customer inside\".",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -566,33 +635,40 @@
         "会場の話",
         "正しい枠はどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "客が会場に入れていく。",
+          "labelEn": "客が会場に入れていく。 (Our guests will be in the venue.)"
+        },
+        {
+          "id": "b",
+          "label": "客が会場に入っていく。",
+          "labelEn": "客が会場に入っていく。 (Customers enter the venue.)"
+        },
+        {
+          "id": "c",
+          "label": "客を会場に入っていく。",
+          "labelEn": "客を会場に入っていく。 (Enter the venue.)"
+        },
+        {
+          "id": "d",
+          "label": "会場が客に入る。",
+          "labelEn": "会場が客に入る。 (The venue is for visitors.)"
+        }
+      ]
     },
     {
       "id": "td_014",
       "type": "multipleChoice",
       "prompt": "Which sentence implies you (the speaker) caused the item to go inside?",
+      "promptEn": "Which sentence implies you (the speaker) caused the item to go inside?",
       "japanese": "荷物をロッカーに収める場面。操作がはっきりするのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "荷物がロッカーに入った。"
-        },
-        {
-          "id": "b",
-          "label": "荷物をロッカーに入れた。"
-        },
-        {
-          "id": "c",
-          "label": "ロッカーが荷物に入った。"
-        },
-        {
-          "id": "d",
-          "label": "荷物がロッカーを入れた。"
-        }
-      ],
+      "japaneseEn": "Luggage lockers Which operation is clear?",
       "correctAnswerId": "b",
       "explanation": "他動詞「入れる」は人が入れる動作で「荷物を」。「入った」は自動詞で、自分で入れた感じが弱い。",
+      "explanationEn": "Other動作s \"Enter\" is a movement that people put in \"package\". \"I entered\" is an auto-verb, and the feeling that I put on it is weak.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -608,33 +684,40 @@
         "荷物をロッカーに収める場面",
         "操作がはっきりするのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "荷物がロッカーに入った。",
+          "labelEn": "荷物がロッカーに入った。 (Luggage is in the locker.)"
+        },
+        {
+          "id": "b",
+          "label": "荷物をロッカーに入れた。",
+          "labelEn": "荷物をロッカーに入れた。 (Put your luggage in the locker.)"
+        },
+        {
+          "id": "c",
+          "label": "ロッカーが荷物に入った。",
+          "labelEn": "ロッカーが荷物に入った。 (There is a locker in the luggage.)"
+        },
+        {
+          "id": "d",
+          "label": "荷物がロッカーを入れた。",
+          "labelEn": "荷物がロッカーを入れた。 (Luggage locked.)"
+        }
+      ]
     },
     {
       "id": "td_015",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: water boiled over and got into the wrong hopper on the machine.",
+      "promptEn": "Choose the best sentence: water boiled over and got into the wrong hopper on the machine.",
       "japanese": "うっかりで水が別の口に流れ込んでしまった。変化の描写として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "水が間違った穴に入った。"
-        },
-        {
-          "id": "b",
-          "label": "水を間違った穴に入れた。"
-        },
-        {
-          "id": "c",
-          "label": "水が間違った穴を入れた。"
-        },
-        {
-          "id": "d",
-          "label": "水を間違った穴に入った。"
-        }
-      ],
+      "japaneseEn": "Water flows into another mouth. Which is natural as a solvent of change?",
       "correctAnswerId": "a",
       "explanation": "意図しない流れなら、水は自動的に入るので自動詞「入る」に「が」。「入れた」は他動詞で意図的な操作を連想する。",
+      "explanationEn": "If the flow is unintended, the water is automatically entered, so it is \"entered\". \"I put\" conjures the intentional operation with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -650,33 +733,40 @@
         "うっかりで水が別の口に流れ込んでしまった",
         "変化の描写として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "水が間違った穴に入った。",
+          "labelEn": "水が間違った穴に入った。 (Water entered wrong hole.)"
+        },
+        {
+          "id": "b",
+          "label": "水を間違った穴に入れた。",
+          "labelEn": "水を間違った穴に入れた。 (I put it in the wrong hole.)"
+        },
+        {
+          "id": "c",
+          "label": "水が間違った穴を入れた。",
+          "labelEn": "水が間違った穴を入れた。 (Water put wrong hole.)"
+        },
+        {
+          "id": "d",
+          "label": "水を間違った穴に入った。",
+          "labelEn": "水を間違った穴に入った。 (I entered the wrong hole.)"
+        }
+      ]
     },
     {
       "id": "td_016",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the train leaving the station (vehicle motion).",
+      "promptEn": "Choose the sentence for the train leaving the station (vehicle motion).",
       "japanese": "ホームで電車が発車したあとを言う。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "電車が駅を出した。"
-        },
-        {
-          "id": "b",
-          "label": "電車が駅を出た。"
-        },
-        {
-          "id": "c",
-          "label": "電車を駅が出た。"
-        },
-        {
-          "id": "d",
-          "label": "電車を駅を出た。"
-        }
-      ],
+      "japaneseEn": "After the train has arrived at home. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「出る」は自動詞で、移動主体に「が」、通過点に「を」（駅を出る）。「出す」は他動詞で別の意味になる。",
+      "explanationEn": "\"Exit\" is an auto-verb, and \"Exit\" to the passing point (Exit the station). \"Emit\" is another meaning with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -692,33 +782,40 @@
         "ホームで電車が発車したあとを言う",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "電車が駅を出した。",
+          "labelEn": "電車が駅を出した。 (The train left the station.)"
+        },
+        {
+          "id": "b",
+          "label": "電車が駅を出た。",
+          "labelEn": "電車が駅を出た。 (The train left the station.)"
+        },
+        {
+          "id": "c",
+          "label": "電車を駅が出た。",
+          "labelEn": "電車を駅が出た。 (I got a train station.)"
+        },
+        {
+          "id": "d",
+          "label": "電車を駅を出た。",
+          "labelEn": "電車を駅を出た。 (I left the train station.)"
+        }
+      ]
     },
     {
       "id": "td_017",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for taking the garbage out (you put it out for collection).",
+      "promptEn": "Choose the sentence for taking the garbage out (you put it out for collection).",
       "japanese": "夕方、あなたが袋を集積所へ出す。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ごみが路肩を出た。"
-        },
-        {
-          "id": "b",
-          "label": "ごみを外に出した。"
-        },
-        {
-          "id": "c",
-          "label": "ごみが外に出した。"
-        },
-        {
-          "id": "d",
-          "label": "ごみを外が出した。"
-        }
-      ],
+      "japaneseEn": "In the evening, you put the bag into a collection place. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「出す」は他動詞で、動かす対象に「を」。「出る」は自動詞でごみが自走的に出る印象になる。",
+      "explanationEn": "\"Emit\" is another詞, and \"to move\" is \"Exit\" is an impression that garbage is self-propelled with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -735,33 +832,40 @@
         "あなたが袋を集積所へ出す",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ごみが路肩を出た。",
+          "labelEn": "ごみが路肩を出た。 (Garbage left the shoulder.)"
+        },
+        {
+          "id": "b",
+          "label": "ごみを外に出した。",
+          "labelEn": "ごみを外に出した。 (Remove garbage.)"
+        },
+        {
+          "id": "c",
+          "label": "ごみが外に出した。",
+          "labelEn": "ごみが外に出した。 (Garbage was removed.)"
+        },
+        {
+          "id": "d",
+          "label": "ごみを外が出した。",
+          "labelEn": "ごみを外が出した。 (Removed garbage.)"
+        }
+      ]
     },
     {
       "id": "td_018",
       "type": "multipleChoice",
       "prompt": "Which sentence correctly uses を with the transitive verb for handing out copies?",
+      "promptEn": "Which sentence correctly uses を with the transitive verb for handing out copies?",
       "japanese": "会議で資料を配る場面。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "資料を参加者に出した。"
-        },
-        {
-          "id": "b",
-          "label": "資料が参加者に出た。"
-        },
-        {
-          "id": "c",
-          "label": "資料が参加者を出た。"
-        },
-        {
-          "id": "d",
-          "label": "資料を参加者が出た。"
-        }
-      ],
+      "japaneseEn": "A scene to distribute materials at meetings. Which is right?",
       "correctAnswerId": "a",
       "explanation": "配布する「出す」は他動詞で、配るものに「を」。「出る」は自動詞で資料が勝手に出るようには言いにくい。",
+      "explanationEn": "\"Export\" is another詞, and \"Export\" is distributed. It is difficult to say that the material can be obtained by automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -777,33 +881,40 @@
         "会議で資料を配る場面",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "資料を参加者に出した。",
+          "labelEn": "資料を参加者に出した。 (I gave the materials to the participants.)"
+        },
+        {
+          "id": "b",
+          "label": "資料が参加者に出た。",
+          "labelEn": "資料が参加者に出た。 (The materials were presented to the participants.)"
+        },
+        {
+          "id": "c",
+          "label": "資料が参加者を出た。",
+          "labelEn": "資料が参加者を出た。 (Participants)"
+        },
+        {
+          "id": "d",
+          "label": "資料を参加者が出た。",
+          "labelEn": "資料を参加者が出た。 (Participants came out.)"
+        }
+      ]
     },
     {
       "id": "td_019",
       "type": "multipleChoice",
       "prompt": "出口の描写で、「誰がドアを開けたか」を明示していないのはどれか。",
+      "promptEn": "Among descriptions of the exit, which sentence does not explicitly say who opened the door?",
       "japanese": "建物の出口の場面について述べた次の文のうち、操作する人を主語にしていないのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "係員がドアを開けて客を出した。"
-        },
-        {
-          "id": "b",
-          "label": "たくさんの人が外に出た。"
-        },
-        {
-          "id": "c",
-          "label": "警備員が整理させた。"
-        },
-        {
-          "id": "d",
-          "label": "主人が見送った。"
-        }
-      ],
+      "japaneseEn": "Which of the following sentences that describe the scene of the exit of the building are not the main words of the operator?",
       "correctAnswerId": "b",
       "explanation": "「出る」は自動詞で、出ていく人に「が」。他は人が操作をした文で主体が違う。",
+      "explanationEn": "\"Exit\" is an auto-verb. In other words, the alphabet is different in the sentence that a person操作ed.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -820,33 +931,40 @@
         "その",
         "だけ見て人が主語にいないのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "係員がドアを開けて客を出した。",
+          "labelEn": "係員がドアを開けて客を出した。 (The staff opened the door.)"
+        },
+        {
+          "id": "b",
+          "label": "たくさんの人が外に出た。",
+          "labelEn": "たくさんの人が外に出た。 (Many people came out.)"
+        },
+        {
+          "id": "c",
+          "label": "警備員が整理させた。",
+          "labelEn": "警備員が整理させた。 (The security guard organized.)"
+        },
+        {
+          "id": "d",
+          "label": "主人が見送った。",
+          "labelEn": "主人が見送った。 (I saw the Lord.)"
+        }
+      ]
     },
     {
       "id": "td_020",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you took your wallet out of your bag at the register.",
+      "promptEn": "Choose the best sentence: you took your wallet out of your bag at the register.",
       "japanese": "レジで財布を取り出す。意図的な操作を言うのに自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "さいふがかばんから出た。"
-        },
-        {
-          "id": "b",
-          "label": "さいふをかばんから出した。"
-        },
-        {
-          "id": "c",
-          "label": "さいふがかばんを出した。"
-        },
-        {
-          "id": "d",
-          "label": "さいふをかばんが出した。"
-        }
-      ],
+      "japaneseEn": "Take out your wallet with a cashier. Which is natural to say the intentional operation?",
       "correctAnswerId": "b",
       "explanation": "手で取り出すなら他動詞「出す」に「を」。「出た」は自動詞で、財布が一人で出たように聞こえる。",
+      "explanationEn": "If you take it by hand, you can get another詞. \"Exodus\" is an auto-verb, and it sounds like the wallet came out alone.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -862,33 +980,40 @@
         "レジで財布を取り出す",
         "意図的な操作を言うのに自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "さいふがかばんから出た。",
+          "labelEn": "さいふがかばんから出た。 ()"
+        },
+        {
+          "id": "b",
+          "label": "さいふをかばんから出した。",
+          "labelEn": "さいふをかばんから出した。 ()"
+        },
+        {
+          "id": "c",
+          "label": "さいふがかばんを出した。",
+          "labelEn": "さいふがかばんを出した。 (I made a bag.)"
+        },
+        {
+          "id": "d",
+          "label": "さいふをかばんが出した。",
+          "labelEn": "さいふをかばんが出した。 ()"
+        }
+      ]
     },
     {
       "id": "td_021",
       "type": "multipleChoice",
       "prompt": "Choose the sentence where the lights went off without anyone flipping the switch (power outage).",
+      "promptEn": "Choose the sentence where the lights went off without anyone flipping the switch (power outage).",
       "japanese": "停電でまわりが暗くなった。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "電気を消えた。"
-        },
-        {
-          "id": "b",
-          "label": "電気が消えた。"
-        },
-        {
-          "id": "c",
-          "label": "電気を消した。"
-        },
-        {
-          "id": "d",
-          "label": "電気が消した。"
-        }
-      ],
+      "japaneseEn": "It was darkened by power outage. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「消える」は自動詞で、消えたものに「が」。「消す」は他動詞で人の操作を連想する。",
+      "explanationEn": "\"Disappear\" is an auto-verb and disappears. \"Remove\" recalls human operation with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -904,33 +1029,40 @@
         "停電でまわりが暗くなった",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "電気を消えた。",
+          "labelEn": "電気を消えた。 (The electricity disappeared.)"
+        },
+        {
+          "id": "b",
+          "label": "電気が消えた。",
+          "labelEn": "電気が消えた。 (The electricity disappeared.)"
+        },
+        {
+          "id": "c",
+          "label": "電気を消した。",
+          "labelEn": "電気を消した。 (Cancel)"
+        },
+        {
+          "id": "d",
+          "label": "電気が消した。",
+          "labelEn": "電気が消した。 (The electricity disappeared.)"
+        }
+      ]
     },
     {
       "id": "td_022",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for turning off the TV before bed on purpose.",
+      "promptEn": "Choose the sentence for turning off the TV before bed on purpose.",
       "japanese": "寝る前にリモコンでテレビの電源を切る。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "テレビが消えてから寝た。"
-        },
-        {
-          "id": "b",
-          "label": "テレビを消してから寝た。"
-        },
-        {
-          "id": "c",
-          "label": "テレビが消してから寝た。"
-        },
-        {
-          "id": "d",
-          "label": "テレビを消えてから寝た。"
-        }
-      ],
+      "japaneseEn": "Watch the TV with a remote control before sleeping. What is natural?",
       "correctAnswerId": "b",
       "explanation": "操作して止めるなら他動詞「消す」で「テレビを」。「消える」は自動詞で誰が消したかははっきりしない。",
+      "explanationEn": "If you stop by操作ing it, you can turn on a TV with another詞. \"Disappear\" is not clear who has disappeared with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -946,33 +1078,40 @@
         "寝る前にリモコンでテレビの電源を切る",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "テレビが消えてから寝た。",
+          "labelEn": "テレビが消えてから寝た。 (I slept after the TV disappeared.)"
+        },
+        {
+          "id": "b",
+          "label": "テレビを消してから寝た。",
+          "labelEn": "テレビを消してから寝た。 (I slept the TV.)"
+        },
+        {
+          "id": "c",
+          "label": "テレビが消してから寝た。",
+          "labelEn": "テレビが消してから寝た。 (I slept the TV.)"
+        },
+        {
+          "id": "d",
+          "label": "テレビを消えてから寝た。",
+          "labelEn": "テレビを消えてから寝た。 (I went to bed.)"
+        }
+      ]
     },
     {
       "id": "td_023",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for erasing a whiteboard?",
+      "promptEn": "Which uses を with the transitive verb for erasing a whiteboard?",
       "japanese": "ホワイトボードの文。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "字が板を消した。"
-        },
-        {
-          "id": "b",
-          "label": "字を板から消した。"
-        },
-        {
-          "id": "c",
-          "label": "字が板から消えた。"
-        },
-        {
-          "id": "d",
-          "label": "字を板が消した。"
-        }
-      ],
+      "japaneseEn": "Whiteboard Which is right?",
       "correctAnswerId": "b",
       "explanation": "消し取る操作は他動詞「消す」で、消す対象に「を」。消えた描写なら自動詞「消える」に「が」。",
+      "explanationEn": "The action to cancel is \"disabled\" with other詞s. If it disappears, it will disappear.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -988,33 +1127,40 @@
         "ホワイトボードの文",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "字が板を消した。",
+          "labelEn": "字が板を消した。 (A letter was removed.)"
+        },
+        {
+          "id": "b",
+          "label": "字を板から消した。",
+          "labelEn": "字を板から消した。 (Remove the letter from the board.)"
+        },
+        {
+          "id": "c",
+          "label": "字が板から消えた。",
+          "labelEn": "字が板から消えた。 (The letter disappeared from the board.)"
+        },
+        {
+          "id": "d",
+          "label": "字を板が消した。",
+          "labelEn": "字を板が消した。 (The letter was removed.)"
+        }
+      ]
     },
     {
       "id": "td_024",
       "type": "multipleChoice",
       "prompt": "Which sentence best suggests the stain disappeared on its own (e.g. over time)?",
+      "promptEn": "Which sentence best suggests the stain disappeared on its own (e.g. over time)?",
       "japanese": "しみが時間で薄くなった。無意志の変化を言うのに向くのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "しみを洗剤で消した。"
-        },
-        {
-          "id": "b",
-          "label": "しみがだんだん消えた。"
-        },
-        {
-          "id": "c",
-          "label": "洗剤がしみを消えた。"
-        },
-        {
-          "id": "d",
-          "label": "しみを自然に消えた。"
-        }
-      ],
+      "japaneseEn": "became thin in time. Which is the right to say a change in willlessness?",
       "correctAnswerId": "b",
       "explanation": "自然に薄くなるなら自動詞「消える」に「が」。「消した」は他動詞で行為者がいる前提になる。",
+      "explanationEn": "If it is naturally thin, it will disappear. \"Revoked\" is assumed to be an acter.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1030,33 +1176,40 @@
         "しみが時間で薄くなった",
         "無意志の変化を言うのに向くのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "しみを洗剤で消した。",
+          "labelEn": "しみを洗剤で消した。 (Remove the soap with a detergent.)"
+        },
+        {
+          "id": "b",
+          "label": "しみがだんだん消えた。",
+          "labelEn": "しみがだんだん消えた。 (It disappeared.)"
+        },
+        {
+          "id": "c",
+          "label": "洗剤がしみを消えた。",
+          "labelEn": "洗剤がしみを消えた。 (The detergent disappeared.)"
+        },
+        {
+          "id": "d",
+          "label": "しみを自然に消えた。",
+          "labelEn": "しみを自然に消えた。 (It disappeared naturally.)"
+        }
+      ]
     },
     {
       "id": "td_025",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you deleted the wrong line in the document by mistake.",
+      "promptEn": "Choose the best sentence: you deleted the wrong line in the document by mistake.",
       "japanese": "うっかり行を消してしまった。自分の操作だったことを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "いらない行が消えた。"
-        },
-        {
-          "id": "b",
-          "label": "いらない行を消した。"
-        },
-        {
-          "id": "c",
-          "label": "いらない行が消した。"
-        },
-        {
-          "id": "d",
-          "label": "いらない行を消えた。"
-        }
-      ],
+      "japaneseEn": "I broke off the . What do you say was your own operation?",
       "correctAnswerId": "b",
       "explanation": "データを操作して消すのは他動詞「消す」。「消える」は自動詞で、自分のミスだと分かりにくい。",
+      "explanationEn": "操作e and操作 data is another詞. \"Disappear\" is an auto-verb and it is difficult to understand if it is your mistake.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1072,33 +1225,40 @@
         "うっかり行を消してしまった",
         "自分の操作だったことを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "いらない行が消えた。",
+          "labelEn": "いらない行が消えた。 (No lines disappeared.)"
+        },
+        {
+          "id": "b",
+          "label": "いらない行を消した。",
+          "labelEn": "いらない行を消した。 (Undo the line.)"
+        },
+        {
+          "id": "c",
+          "label": "いらない行が消した。",
+          "labelEn": "いらない行が消した。 (Unable lines were canceled.)"
+        },
+        {
+          "id": "d",
+          "label": "いらない行を消えた。",
+          "labelEn": "いらない行を消えた。 (No lines disappeared.)"
+        }
+      ]
     },
     {
       "id": "td_026",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for keys slipping out of your hand and falling (no agency on purpose).",
+      "promptEn": "Choose the sentence for keys slipping out of your hand and falling (no agency on purpose).",
       "japanese": "手が滑って鍵が床へ落ちた。出来事の描写として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "かぎを床に落とした。"
-        },
-        {
-          "id": "b",
-          "label": "かぎが床に落ちた。"
-        },
-        {
-          "id": "c",
-          "label": "かぎを床に落ちた。"
-        },
-        {
-          "id": "d",
-          "label": "かぎが床を落とした。"
-        }
-      ],
+      "japaneseEn": "The key fell to the floor. Which is natural as a secretion of events?",
       "correctAnswerId": "b",
       "explanation": "落ちるは自動詞で、落ちたものに「が」。「落とす」は他動詞で故意や不注意で落とした操作を言う。",
+      "explanationEn": "It’s an auto-verb, and it’s a fall. \"Drop\" says the operation that was dropped with intentional and inadvertent with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1114,33 +1274,40 @@
         "手が滑って鍵が床へ落ちた",
         "出来事の描写として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "かぎを床に落とした。",
+          "labelEn": "かぎを床に落とした。 (I dropped the crouch on the floor.)"
+        },
+        {
+          "id": "b",
+          "label": "かぎが床に落ちた。",
+          "labelEn": "かぎが床に落ちた。 (I fell on the floor.)"
+        },
+        {
+          "id": "c",
+          "label": "かぎを床に落ちた。",
+          "labelEn": "かぎを床に落ちた。 (I fell on the floor.)"
+        },
+        {
+          "id": "d",
+          "label": "かぎが床を落とした。",
+          "labelEn": "かぎが床を落とした。 (I dropped the floor.)"
+        }
+      ]
     },
     {
       "id": "td_027",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for accidentally dropping your phone (you caused it to fall).",
+      "promptEn": "Choose the sentence for accidentally dropping your phone (you caused it to fall).",
       "japanese": "うっかりスマホを落としてしまった。行為を言うのに自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "スマホが落ちてしまった。"
-        },
-        {
-          "id": "b",
-          "label": "スマホを落としてしまった。"
-        },
-        {
-          "id": "c",
-          "label": "スマホが落としてしまった。"
-        },
-        {
-          "id": "d",
-          "label": "スマホを落ちてしまった。"
-        }
-      ],
+      "japaneseEn": "I lost my smartphone. Which is natural to say?",
       "correctAnswerId": "b",
       "explanation": "他動詞「落とす」は落とした対象に「を」。「落ちた」だけだと、自分が原因とは限らない。",
+      "explanationEn": "Other詞s \"Drawing\" are dropped. If you only fall down, it is not the cause.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1156,33 +1323,40 @@
         "うっかりスマホを落としてしまった",
         "行為を言うのに自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "スマホが落ちてしまった。",
+          "labelEn": "スマホが落ちてしまった。 (I lost my smartphone.)"
+        },
+        {
+          "id": "b",
+          "label": "スマホを落としてしまった。",
+          "labelEn": "スマホを落としてしまった。 (I lost my smartphone.)"
+        },
+        {
+          "id": "c",
+          "label": "スマホが落としてしまった。",
+          "labelEn": "スマホが落としてしまった。 (I lost my smartphone.)"
+        },
+        {
+          "id": "d",
+          "label": "スマホを落ちてしまった。",
+          "labelEn": "スマホを落ちてしまった。 (I lost my smartphone.)"
+        }
+      ]
     },
     {
       "id": "td_028",
       "type": "multipleChoice",
       "prompt": "Which uses が with the intransitive verb for leaves falling?",
+      "promptEn": "Which uses が with the intransitive verb for leaves falling?",
       "japanese": "秋の木の下の描写。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "葉っぱが風で落ちた。"
-        },
-        {
-          "id": "b",
-          "label": "葉っぱを風で落ちた。"
-        },
-        {
-          "id": "c",
-          "label": "葉っぱが風で落とした。"
-        },
-        {
-          "id": "d",
-          "label": "葉っぱを風で落とした。"
-        }
-      ],
+      "japaneseEn": "View under the autumn tree. Which is right?",
       "correctAnswerId": "a",
       "explanation": "自然に落ちるなら自動詞「落ちる」に「が」。「落とす」は他動詞で誰かが落としたことになる。",
+      "explanationEn": "If it falls naturally, it is \"to fall\". \"Drawing\" is someone's lost in other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1198,33 +1372,40 @@
         "秋の木の下の描写",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "葉っぱが風で落ちた。",
+          "labelEn": "葉っぱが風で落ちた。 (The leaves fell in the wind.)"
+        },
+        {
+          "id": "b",
+          "label": "葉っぱを風で落ちた。",
+          "labelEn": "葉っぱを風で落ちた。 (The leaves fell in the wind.)"
+        },
+        {
+          "id": "c",
+          "label": "葉っぱが風で落とした。",
+          "labelEn": "葉っぱが風で落とした。 (Leaves dropped by the wind.)"
+        },
+        {
+          "id": "d",
+          "label": "葉っぱを風で落とした。",
+          "labelEn": "葉っぱを風で落とした。 (I dropped the leaf by wind.)"
+        }
+      ]
     },
     {
       "id": "td_029",
       "type": "multipleChoice",
       "prompt": "Which sentence implies you threw or dropped the ball to the ground on purpose during practice?",
+      "promptEn": "Which sentence implies you threw or dropped the ball to the ground on purpose during practice?",
       "japanese": "練習でわざとボールを地面に落とす。意図が出るのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ボールが地面に落ちた。"
-        },
-        {
-          "id": "b",
-          "label": "コーチが笛を吹いた。"
-        },
-        {
-          "id": "c",
-          "label": "ボールを地面に落とした。"
-        },
-        {
-          "id": "d",
-          "label": "地面がボールに落ちた。"
-        }
-      ],
+      "japaneseEn": "Drop the ball into the ground by practice. What is your intention?",
       "correctAnswerId": "c",
       "explanation": "操作して落とすのは他動詞「落とす」に「を」。「落ちた」は自動詞で故意かどうかは文脈次第。",
+      "explanationEn": "操作ing and dropping is to \"de \" other詞s. It depends on the context whether the \"fall\" is intentional with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1240,33 +1421,40 @@
         "練習でわざとボールを地面に落とす",
         "意図が出るのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ボールが地面に落ちた。",
+          "labelEn": "ボールが地面に落ちた。 (The ball fell to the ground.)"
+        },
+        {
+          "id": "b",
+          "label": "コーチが笛を吹いた。",
+          "labelEn": "コーチが笛を吹いた。 (The coach blowed the whistle.)"
+        },
+        {
+          "id": "c",
+          "label": "ボールを地面に落とした。",
+          "labelEn": "ボールを地面に落とした。 (Dropped the ball to the ground.)"
+        },
+        {
+          "id": "d",
+          "label": "地面がボールに落ちた。",
+          "labelEn": "地面がボールに落ちた。 (The ground fell into the ball.)"
+        }
+      ]
     },
     {
       "id": "td_030",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: a ripe apple fell from the branch; nobody picked it.",
+      "promptEn": "Choose the best sentence: a ripe apple fell from the branch; nobody picked it.",
       "japanese": "誰も揺すっていないのに、木からりんごが落ちた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "りんごを枝から落とした。"
-        },
-        {
-          "id": "b",
-          "label": "りんごが枝から落ちた。"
-        },
-        {
-          "id": "c",
-          "label": "りんごを枝から落ちた。"
-        },
-        {
-          "id": "d",
-          "label": "りんごが枝を落とした。"
-        }
-      ],
+      "japaneseEn": "The  fell from the tree though no one shakes. What is natural?",
       "correctAnswerId": "b",
       "explanation": "自然に落ちる果実は自動詞「落ちる」に「が」。「落とす」は他動詞で、だれかが落としたことになる。",
+      "explanationEn": "The fruit that falls naturally is an automatic lyric “fall”. \"Drawing\" is another詞, and someone is dropped.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1283,33 +1471,40 @@
         "木からりんごが落ちた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "りんごを枝から落とした。",
+          "labelEn": "りんごを枝から落とした。 (I dropped the  from the branch.)"
+        },
+        {
+          "id": "b",
+          "label": "りんごが枝から落ちた。",
+          "labelEn": "りんごが枝から落ちた。 (The  fell from the branch.)"
+        },
+        {
+          "id": "c",
+          "label": "りんごを枝から落ちた。",
+          "labelEn": "りんごを枝から落ちた。 (I dropped the  from the branch.)"
+        },
+        {
+          "id": "d",
+          "label": "りんごが枝を落とした。",
+          "labelEn": "りんごが枝を落とした。 (The  dropped the branch.)"
+        }
+      ]
     },
     {
       "id": "td_031",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the movie starting at the announced time (event begins).",
+      "promptEn": "Choose the sentence for the movie starting at the announced time (event begins).",
       "japanese": "映画館で上映開始の時間になった。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "映画を九時に始まった。"
-        },
-        {
-          "id": "b",
-          "label": "映画が九時に始まった。"
-        },
-        {
-          "id": "c",
-          "label": "映画が九時に始めた。"
-        },
-        {
-          "id": "d",
-          "label": "映画を九時に始めた。"
-        }
-      ],
+      "japaneseEn": "It was time to start screening at the cinema. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「始まる」は自動詞で、始まる出来事に「が」。「始める」は他動詞で人が始めるときに「を」。",
+      "explanationEn": "\"。\" is an auto-verb, and \"。\" is an event that begins. “Getting Started” is “when people start with other詞s.”",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1325,33 +1520,40 @@
         "映画館で上映開始の時間になった",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "映画を九時に始まった。",
+          "labelEn": "映画を九時に始まった。 (Movie started at 9pm.)"
+        },
+        {
+          "id": "b",
+          "label": "映画が九時に始まった。",
+          "labelEn": "映画が九時に始まった。 (The movie started at 9pm.)"
+        },
+        {
+          "id": "c",
+          "label": "映画が九時に始めた。",
+          "labelEn": "映画が九時に始めた。 (The movie started at 9pm.)"
+        },
+        {
+          "id": "d",
+          "label": "映画を九時に始めた。",
+          "labelEn": "映画を九時に始めた。 (Movie started at 9pm.)"
+        }
+      ]
     },
     {
       "id": "td_032",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the host starting the party with a short speech.",
+      "promptEn": "Choose the sentence for the host starting the party with a short speech.",
       "japanese": "司会が挨拶してパーティーを始める。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "司会がパーティーが始めた。"
-        },
-        {
-          "id": "b",
-          "label": "司会がパーティーを始めた。"
-        },
-        {
-          "id": "c",
-          "label": "パーティーが司会を始めた。"
-        },
-        {
-          "id": "d",
-          "label": "司会がパーティーに始めた。"
-        }
-      ],
+      "japaneseEn": "The 会well party started. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「始める」は対象に「を」。「始まる」は自動詞で、パーティーそのものが主語になる。",
+      "explanationEn": "\"Getting Started\" is the target. It is an auto-verb and the party itself becomes the main word.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1367,33 +1569,40 @@
         "司会が挨拶してパーティーを始める",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "司会がパーティーが始めた。",
+          "labelEn": "司会がパーティーが始めた。 (The party started.)"
+        },
+        {
+          "id": "b",
+          "label": "司会がパーティーを始めた。",
+          "labelEn": "司会がパーティーを始めた。 (The meeting started.)"
+        },
+        {
+          "id": "c",
+          "label": "パーティーが司会を始めた。",
+          "labelEn": "パーティーが司会を始めた。 (The party began to host.)"
+        },
+        {
+          "id": "d",
+          "label": "司会がパーティーに始めた。",
+          "labelEn": "司会がパーティーに始めた。 (The meeting began to be a party.)"
+        }
+      ]
     },
     {
       "id": "td_033",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for starting a PC?",
+      "promptEn": "Which uses を with the transitive verb for starting a PC?",
       "japanese": "作業の開始について。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "パソコンを起動して仕事を始めた。"
-        },
-        {
-          "id": "b",
-          "label": "パソコンが起動して仕事が始めた。"
-        },
-        {
-          "id": "c",
-          "label": "パソコンを起動して仕事が始めた。"
-        },
-        {
-          "id": "d",
-          "label": "パソコンが起動して仕事を始まった。"
-        }
-      ],
+      "japaneseEn": "Start of work Which is right?",
       "correctAnswerId": "a",
       "explanation": "「仕事を始める」で他動詞「始める」に「を」。「仕事が始まる」なら自動詞の別枠。",
+      "explanationEn": "\"Getting Started\" is another詞. If you want to start work, you can use an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1409,33 +1618,40 @@
         "作業の開始について",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "パソコンを起動して仕事を始めた。",
+          "labelEn": "パソコンを起動して仕事を始めた。 (I started working with PC.)"
+        },
+        {
+          "id": "b",
+          "label": "パソコンが起動して仕事が始めた。",
+          "labelEn": "パソコンが起動して仕事が始めた。 (My PC started working.)"
+        },
+        {
+          "id": "c",
+          "label": "パソコンを起動して仕事が始めた。",
+          "labelEn": "パソコンを起動して仕事が始めた。 (I started working with PC.)"
+        },
+        {
+          "id": "d",
+          "label": "パソコンが起動して仕事を始まった。",
+          "labelEn": "パソコンが起動して仕事を始まった。 (The computer started working.)"
+        }
+      ]
     },
     {
       "id": "td_034",
       "type": "multipleChoice",
       "prompt": "Which sentence describes the match beginning without naming who organized it in that clause?",
+      "promptEn": "Which sentence describes the match beginning without naming who organized it in that clause?",
       "japanese": "試合の開始だけを言う。人が主語に出ないのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "審判が笛を吹いた。"
-        },
-        {
-          "id": "b",
-          "label": "試合が三時に始まった。"
-        },
-        {
-          "id": "c",
-          "label": "監督が選手を呼んだ。"
-        },
-        {
-          "id": "d",
-          "label": "チームがグラウンドに入った。"
-        }
-      ],
+      "japaneseEn": "Just say the start of the game. Which people do not speak to the subject?",
       "correctAnswerId": "b",
       "explanation": "「始まる」は自動詞で、試合に「が」。人の動きではなく出来事の開始を表す。",
+      "explanationEn": "\"。\" is an auto-verb, \"has\" to the game. the start of events rather than the movement of people.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1451,33 +1667,40 @@
         "試合の開始だけを言う",
         "人が主語に出ないのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "審判が笛を吹いた。",
+          "labelEn": "審判が笛を吹いた。 (The referee blowed the whistle.)"
+        },
+        {
+          "id": "b",
+          "label": "試合が三時に始まった。",
+          "labelEn": "試合が三時に始まった。 (The game started at 3 o'clock.)"
+        },
+        {
+          "id": "c",
+          "label": "監督が選手を呼んだ。",
+          "labelEn": "監督が選手を呼んだ。 (The director called the player.)"
+        },
+        {
+          "id": "d",
+          "label": "チームがグラウンドに入った。",
+          "labelEn": "チームがグラウンドに入った。 (Teams enter the ground.)"
+        }
+      ]
     },
     {
       "id": "td_035",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you start studying after dinner every day.",
+      "promptEn": "Choose the best sentence: you start studying after dinner every day.",
       "japanese": "毎晩、夕食のあと勉強を始める習慣。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "夕食が終わると勉強が始まる。"
-        },
-        {
-          "id": "b",
-          "label": "夕食が終わると勉強を始める。"
-        },
-        {
-          "id": "c",
-          "label": "夕食を終わると勉強を始まる。"
-        },
-        {
-          "id": "d",
-          "label": "夕食が終わると勉強を始まる。"
-        }
-      ],
+      "japaneseEn": "A custom to start studying after dinner every night. What is natural?",
       "correctAnswerId": "b",
       "explanation": "人が始めるなら他動詞「勉強を始める」。「始まる」は自動詞で、誰が始めたかは文に出ない。",
+      "explanationEn": "If a person starts, another詞 \"Start studying\". \"。\" is an auto-verb, and no one starts writing.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1494,33 +1717,40 @@
         "夕食のあと勉強を始める習慣",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "夕食が終わると勉強が始まる。",
+          "labelEn": "夕食が終わると勉強が始まる。 (After dinner, study begins.)"
+        },
+        {
+          "id": "b",
+          "label": "夕食が終わると勉強を始める。",
+          "labelEn": "夕食が終わると勉強を始める。 (After dinner, start studying.)"
+        },
+        {
+          "id": "c",
+          "label": "夕食を終わると勉強を始まる。",
+          "labelEn": "夕食を終わると勉強を始まる。 (After dinner, you can study.)"
+        },
+        {
+          "id": "d",
+          "label": "夕食が終わると勉強を始まる。",
+          "labelEn": "夕食が終わると勉強を始まる。 (After dinner, I will study.)"
+        }
+      ]
     },
     {
       "id": "td_036",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the bus stopping at a red light (vehicle stops by itself).",
+      "promptEn": "Choose the sentence for the bus stopping at a red light (vehicle stops by itself).",
       "japanese": "信号でバスが停車した。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "バスを信号の前で止まった。"
-        },
-        {
-          "id": "b",
-          "label": "バスが信号の前で止まった。"
-        },
-        {
-          "id": "c",
-          "label": "バスが信号の前を止めた。"
-        },
-        {
-          "id": "d",
-          "label": "バスを信号の前で止めた。"
-        }
-      ],
+      "japaneseEn": "The bus stopped by the signal. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「止まる」は自動詞で、止まるものに「が」。「止める」は他動詞で運転手が止める場面。",
+      "explanationEn": "\"。\" is an auto-verb, and \"。\" is the one that begins. \"Stop\" is a scene where the driver stops with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1536,33 +1766,40 @@
         "信号でバスが停車した",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "バスを信号の前で止まった。",
+          "labelEn": "バスを信号の前で止まった。 (I pulled the bus in front of the signal.)"
+        },
+        {
+          "id": "b",
+          "label": "バスが信号の前で止まった。",
+          "labelEn": "バスが信号の前で止まった。 (The bus stopped in front of the signal.)"
+        },
+        {
+          "id": "c",
+          "label": "バスが信号の前を止めた。",
+          "labelEn": "バスが信号の前を止めた。 (The bus stopped before the signal.)"
+        },
+        {
+          "id": "d",
+          "label": "バスを信号の前で止めた。",
+          "labelEn": "バスを信号の前で止めた。 (I stopped the bus in front of the signal.)"
+        }
+      ]
     },
     {
       "id": "td_037",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the driver stopping the car in front of the house.",
+      "promptEn": "Choose the sentence for the driver stopping the car in front of the house.",
       "japanese": "運転手が家の前で車を停める。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "車が家の前で止まった。"
-        },
-        {
-          "id": "b",
-          "label": "車を家の前で止めた。"
-        },
-        {
-          "id": "c",
-          "label": "車が家の前で止めた。"
-        },
-        {
-          "id": "d",
-          "label": "車を家の前で止まった。"
-        }
-      ],
+      "japaneseEn": "The driver stops in front of the house. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「止める」は止める対象に「を」。「止まる」は自動詞で、誰が止めたかは言わない。",
+      "explanationEn": "Other s \"Stop\" to stop. \"。\" is an auto-verb and does not tell who to stop.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1578,33 +1815,40 @@
         "運転手が家の前で車を停める",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "車が家の前で止まった。",
+          "labelEn": "車が家の前で止まった。 (The car stopped in front of the house.)"
+        },
+        {
+          "id": "b",
+          "label": "車を家の前で止めた。",
+          "labelEn": "車を家の前で止めた。 (I stopped in front of the house.)"
+        },
+        {
+          "id": "c",
+          "label": "車が家の前で止めた。",
+          "labelEn": "車が家の前で止めた。 (The car stopped in front of the house.)"
+        },
+        {
+          "id": "d",
+          "label": "車を家の前で止まった。",
+          "labelEn": "車を家の前で止まった。 (I stopped in front of the house.)"
+        }
+      ]
     },
     {
       "id": "td_038",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for turning off a machine?",
+      "promptEn": "Which uses を with the transitive verb for turning off a machine?",
       "japanese": "工場の機械の操作。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "機械を止めて安全を確認した。"
-        },
-        {
-          "id": "b",
-          "label": "機械が止めて安全を確認した。"
-        },
-        {
-          "id": "c",
-          "label": "機械を止まって安全を確認した。"
-        },
-        {
-          "id": "d",
-          "label": "機械が止まって安全を確認した。"
-        }
-      ],
+      "japaneseEn": "Operation of machine in factory. Which is right?",
       "correctAnswerId": "a",
       "explanation": "人が止めるのは他動詞「止める」に「を」。「止まる」は自動詞で機械が止まる描写。",
+      "explanationEn": "\"Stop\" to other詞s to stop people. \"機械\" is an automatic詞 that the machine is pulled.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1620,33 +1864,40 @@
         "工場の機械の操作",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "機械を止めて安全を確認した。",
+          "labelEn": "機械を止めて安全を確認した。 (I checked the safety by stopping the machine.)"
+        },
+        {
+          "id": "b",
+          "label": "機械が止めて安全を確認した。",
+          "labelEn": "機械が止めて安全を確認した。 (The machine stopped to confirm safety.)"
+        },
+        {
+          "id": "c",
+          "label": "機械を止まって安全を確認した。",
+          "labelEn": "機械を止まって安全を確認した。 (I checked the safety by pulling the machine.)"
+        },
+        {
+          "id": "d",
+          "label": "機械が止まって安全を確認した。",
+          "labelEn": "機械が止まって安全を確認した。 (The machine stopped and confirmed safety.)"
+        }
+      ]
     },
     {
       "id": "td_039",
       "type": "multipleChoice",
       "prompt": "Which sentence only describes the watch stopping (mechanical failure), not you fixing it?",
+      "promptEn": "Which sentence only describes the watch stopping (mechanical failure), not you fixing it?",
       "japanese": "古い腕時計が動かなくなった。変化だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "時計を直しに出した。"
-        },
-        {
-          "id": "b",
-          "label": "時計が止まった。"
-        },
-        {
-          "id": "c",
-          "label": "店員が電池を取り替えた。"
-        },
-        {
-          "id": "d",
-          "label": "時計を止めた。"
-        }
-      ],
+      "japaneseEn": "The old watch is no longer moving. What is the change?",
       "correctAnswerId": "b",
       "explanation": "「止まる」は自動詞で、止まった時計に「が」。「止めた」は他動詞で人が止めたことになる。",
+      "explanationEn": "\"S。\" is an auto-verb, and \"is\" to the watch you pulled. \"Stop\" is a person stopping with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1662,33 +1913,40 @@
         "古い腕時計が動かなくなった",
         "変化だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "時計を直しに出した。",
+          "labelEn": "時計を直しに出した。 (The clock was replaced.)"
+        },
+        {
+          "id": "b",
+          "label": "時計が止まった。",
+          "labelEn": "時計が止まった。 (The clock stopped.)"
+        },
+        {
+          "id": "c",
+          "label": "店員が電池を取り替えた。",
+          "labelEn": "店員が電池を取り替えた。 (The staff replaced the battery.)"
+        },
+        {
+          "id": "d",
+          "label": "時計を止めた。",
+          "labelEn": "時計を止めた。 (The clock was stopped.)"
+        }
+      ]
     },
     {
       "id": "td_040",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you stopped a video during the meeting to ask a question.",
+      "promptEn": "Choose the best sentence: you stopped a video during the meeting to ask a question.",
       "japanese": "会議中に動画を一時停止する。操作を言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "動画が止まって質問した。"
-        },
-        {
-          "id": "b",
-          "label": "動画を止めて質問した。"
-        },
-        {
-          "id": "c",
-          "label": "動画が止めて質問した。"
-        },
-        {
-          "id": "d",
-          "label": "動画を止まって質問した。"
-        }
-      ],
+      "japaneseEn": "Pause the video during the meeting. What is the operation?",
       "correctAnswerId": "b",
       "explanation": "再生を止める操作は他動詞「止める」に「を」。「止まる」は自動詞で意図がはっきりしない。",
+      "explanationEn": "The action to stop playing is to stop another詞. \"。\" is not clearly intended with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1704,33 +1962,40 @@
         "会議中に動画を一時停止する",
         "操作を言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "動画が止まって質問した。",
+          "labelEn": "動画が止まって質問した。 (I asked the video.)"
+        },
+        {
+          "id": "b",
+          "label": "動画を止めて質問した。",
+          "labelEn": "動画を止めて質問した。 (I stopped the video and asked.)"
+        },
+        {
+          "id": "c",
+          "label": "動画が止めて質問した。",
+          "labelEn": "動画が止めて質問した。 (I stopped the video and asked.)"
+        },
+        {
+          "id": "d",
+          "label": "動画を止まって質問した。",
+          "labelEn": "動画を止まって質問した。 (I asked the video.)"
+        }
+      ]
     },
     {
       "id": "td_041",
       "type": "multipleChoice",
       "prompt": "Choose the sentence where listeners gradually gathered (no organizer named in that clause).",
+      "promptEn": "Choose the sentence where listeners gradually gathered (no organizer named in that clause).",
       "japanese": "講演が始まる前に、客がホールに集まってきた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "お客さんをホールに集めてきた。"
-        },
-        {
-          "id": "b",
-          "label": "お客さんがホールに集まってきた。"
-        },
-        {
-          "id": "c",
-          "label": "お客さんをホールに集まってきた。"
-        },
-        {
-          "id": "d",
-          "label": "お客さんがホールを集めてきた。"
-        }
-      ],
+      "japaneseEn": "Customers came to the hall before the lecture started. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「集まる」は自動詞で、集まる人に「が」。「集める」は他動詞で人が集める操作。",
+      "explanationEn": "\"Collection\" is an auto-verb, and it is a person who gathers. \"Collection\" is an operation to collect people with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1747,33 +2012,40 @@
         "客がホールに集まってきた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お客さんをホールに集めてきた。",
+          "labelEn": "お客さんをホールに集めてきた。 (I have collected customers in the hall.)"
+        },
+        {
+          "id": "b",
+          "label": "お客さんがホールに集まってきた。",
+          "labelEn": "お客さんがホールに集まってきた。 (The guests came to the hall.)"
+        },
+        {
+          "id": "c",
+          "label": "お客さんをホールに集まってきた。",
+          "labelEn": "お客さんをホールに集まってきた。 (I came to the hall.)"
+        },
+        {
+          "id": "d",
+          "label": "お客さんがホールを集めてきた。",
+          "labelEn": "お客さんがホールを集めてきた。 (The guest。 the hall.)"
+        }
+      ]
     },
     {
       "id": "td_042",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for collecting used stamps for a class project (you cause them to come together).",
+      "promptEn": "Choose the sentence for collecting used stamps for a class project (you cause them to come together).",
       "japanese": "班の活動で、使い終わった切手を集める。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "切手がかばんに集まった。"
-        },
-        {
-          "id": "b",
-          "label": "切手をかばんに集めた。"
-        },
-        {
-          "id": "c",
-          "label": "切手をクラスで集めた。"
-        },
-        {
-          "id": "d",
-          "label": "切手がクラスで集めた。"
-        }
-      ],
+      "japaneseEn": "Collect stamps that have been used in group activities. What is natural?",
       "correctAnswerId": "c",
       "explanation": "「集める」は他動詞で、集める対象に「を」。「集まる」は自動詞で切手が勝手に集まるようには言わない。",
+      "explanationEn": "\"Collection\" is another詞, and \"to collect\" is \"Collection\" is not to say that stamps will be collected by automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1790,33 +2062,40 @@
         "使い終わった切手を集める",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "切手がかばんに集まった。",
+          "labelEn": "切手がかばんに集まった。 (The stamps were集 together.)"
+        },
+        {
+          "id": "b",
+          "label": "切手をかばんに集めた。",
+          "labelEn": "切手をかばんに集めた。 (Collected stamps.)"
+        },
+        {
+          "id": "c",
+          "label": "切手をクラスで集めた。",
+          "labelEn": "切手をクラスで集めた。 (Collected stamps in the class.)"
+        },
+        {
+          "id": "d",
+          "label": "切手がクラスで集めた。",
+          "labelEn": "切手がクラスで集めた。 (Stamps collected in the class.)"
+        }
+      ]
     },
     {
       "id": "td_043",
       "type": "multipleChoice",
       "prompt": "Which uses が with the intransitive verb for dust gathering?",
+      "promptEn": "Which uses が with the intransitive verb for dust gathering?",
       "japanese": "部屋の隅のほこりについて。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ほこりがたまって隅に集まった。"
-        },
-        {
-          "id": "b",
-          "label": "ほこりを隅に集まった。"
-        },
-        {
-          "id": "c",
-          "label": "ほこりが隅を集めた。"
-        },
-        {
-          "id": "d",
-          "label": "ほこりを隅に集めた。"
-        }
-      ],
+      "japaneseEn": "About the corner of the room. Which is right?",
       "correctAnswerId": "a",
       "explanation": "自然に寄り集まるなら自動詞「集まる」に「が」。「集める」は他動詞で掃除機が吸い集めるなど操作の文。",
+      "explanationEn": "If you get closer to nature, you will find it in the auto-verbs \"collect\". \"Collection\" is a statement of operation such as sucking the vacuum cleaner with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1832,33 +2111,40 @@
         "部屋の隅のほこりについて",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ほこりがたまって隅に集まった。",
+          "labelEn": "ほこりがたまって隅に集まった。 (I was集 in the corner.)"
+        },
+        {
+          "id": "b",
+          "label": "ほこりを隅に集まった。",
+          "labelEn": "ほこりを隅に集まった。 (I assembled dust in the corner.)"
+        },
+        {
+          "id": "c",
+          "label": "ほこりが隅を集めた。",
+          "labelEn": "ほこりが隅を集めた。 (The dust隅 the corners.)"
+        },
+        {
+          "id": "d",
+          "label": "ほこりを隅に集めた。",
+          "labelEn": "ほこりを隅に集めた。 (Collected dust in the corner.)"
+        }
+      ]
     },
     {
       "id": "td_044",
       "type": "multipleChoice",
       "prompt": "Which sentence implies a person actively gathered the documents?",
+      "promptEn": "Which sentence implies a person actively gathered the documents?",
       "japanese": "書類を一か所に揃えた。操作がはっきりするのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "書類が机の上に集まった。"
-        },
-        {
-          "id": "b",
-          "label": "書類を机の上に集めた。"
-        },
-        {
-          "id": "c",
-          "label": "書類が机の上に集めた。"
-        },
-        {
-          "id": "d",
-          "label": "書類を机の上に集まった。"
-        }
-      ],
+      "japaneseEn": "All documents are in one place. Which operation is clear?",
       "correctAnswerId": "b",
       "explanation": "人が集めるなら他動詞「集める」に「を」。「集まった」は自動詞で誰が揃えたかは曖昧。",
+      "explanationEn": "If a person gathers, \"to collect\" other詞s. \"Collection\" is ambiguous who is aligned with automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -1874,33 +2160,40 @@
         "書類を一か所に揃えた",
         "操作がはっきりするのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書類が机の上に集まった。",
+          "labelEn": "書類が机の上に集まった。 (The document was集 on the desk.)"
+        },
+        {
+          "id": "b",
+          "label": "書類を机の上に集めた。",
+          "labelEn": "書類を机の上に集めた。 (Collected documents on the desk.)"
+        },
+        {
+          "id": "c",
+          "label": "書類が机の上に集めた。",
+          "labelEn": "書類が机の上に集めた。 (The document was collected on the desk.)"
+        },
+        {
+          "id": "d",
+          "label": "書類を机の上に集まった。",
+          "labelEn": "書類を机の上に集まった。 (書類 on the desk.)"
+        }
+      ]
     },
     {
       "id": "td_045",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: rain clouds are building over the mountains (weather change).",
+      "promptEn": "Choose the best sentence: rain clouds are building over the mountains (weather change).",
       "japanese": "山の上に雲がだんだんかたまってきた。描写として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "雲を山の上に集めた。"
-        },
-        {
-          "id": "b",
-          "label": "雲が山の上に集まってきた。"
-        },
-        {
-          "id": "c",
-          "label": "雲を山の上に集まってきた。"
-        },
-        {
-          "id": "d",
-          "label": "雲が山の上を集めた。"
-        }
-      ],
+      "japaneseEn": "The clouds came over the mountain. Which is natural as a soap?",
       "correctAnswerId": "b",
       "explanation": "気象の変化で雲が集まるなら自動詞「集まる」に「が」。「集めた」は他動詞で人が集める印象。",
+      "explanationEn": "If the clouds gather due to weather changes, they will be automatically lyriced. \"Collection\" is the impression that people gather with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1916,33 +2209,40 @@
         "山の上に雲がだんだんかたまってきた",
         "描写として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "雲を山の上に集めた。",
+          "labelEn": "雲を山の上に集めた。 (I collected clouds on the mountain.)"
+        },
+        {
+          "id": "b",
+          "label": "雲が山の上に集まってきた。",
+          "labelEn": "雲が山の上に集まってきた。 (The clouds were山 on the mountain.)"
+        },
+        {
+          "id": "c",
+          "label": "雲を山の上に集まってきた。",
+          "labelEn": "雲を山の上に集まってきた。 (I assembled clouds on the mountain.)"
+        },
+        {
+          "id": "d",
+          "label": "雲が山の上を集めた。",
+          "labelEn": "雲が山の上を集めた。 (The clouds collected on the mountain.)"
+        }
+      ]
     },
     {
       "id": "td_046",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the meeting date being fixed after discussion (result state).",
+      "promptEn": "Choose the sentence for the meeting date being fixed after discussion (result state).",
       "japanese": "話し合いのあと、日程が確定した。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "会議の日にちをやっと決まった。"
-        },
-        {
-          "id": "b",
-          "label": "会議の日にちがやっと決まった。"
-        },
-        {
-          "id": "c",
-          "label": "会議の日にちがやっと決めた。"
-        },
-        {
-          "id": "d",
-          "label": "会議の日にちをやっと決めた。"
-        }
-      ],
+      "japaneseEn": "After discussion, the schedule was confirmed. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「決まる」は自動詞で、決まった内容に「が」。「決める」は他動詞で人が決めるときに「を」。",
+      "explanationEn": "\"Delete\" is an auto-verb, \"is\" to the content determined. \"Decide\" is \"when someone decides\" with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -1959,33 +2259,40 @@
         "日程が確定した",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会議の日にちをやっと決まった。",
+          "labelEn": "会議の日にちをやっと決まった。 (I finally decided the day of the meeting.)"
+        },
+        {
+          "id": "b",
+          "label": "会議の日にちがやっと決まった。",
+          "labelEn": "会議の日にちがやっと決まった。 (The day of the meeting was finally decided.)"
+        },
+        {
+          "id": "c",
+          "label": "会議の日にちがやっと決めた。",
+          "labelEn": "会議の日にちがやっと決めた。 (I decided on the day of the meeting.)"
+        },
+        {
+          "id": "d",
+          "label": "会議の日にちをやっと決めた。",
+          "labelEn": "会議の日にちをやっと決めた。 (I decided the date of the meeting.)"
+        }
+      ]
     },
     {
       "id": "td_047",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the manager deciding the deadline on purpose.",
+      "promptEn": "Choose the sentence for the manager deciding the deadline on purpose.",
       "japanese": "部長が締め切りを指示する。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "締め切りが来週に決まった。"
-        },
-        {
-          "id": "b",
-          "label": "締め切りを来週に決めた。"
-        },
-        {
-          "id": "c",
-          "label": "締め切りが来週を決めた。"
-        },
-        {
-          "id": "d",
-          "label": "締め切りを来週が決めた。"
-        }
-      ],
+      "japaneseEn": "The manager instructs you. What is natural?",
       "correctAnswerId": "b",
       "explanation": "人が決めるのは他動詞「決める」で「締め切りを」。「決まる」は自動詞で日程が勝手に決まった印象。",
+      "explanationEn": "If a person decides, the other詞 \"determining\". \"Delete\" is the impression that the schedule was decided by automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2001,33 +2308,40 @@
         "部長が締め切りを指示する",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "締め切りが来週に決まった。",
+          "labelEn": "締め切りが来週に決まった。 (was decided next week.)"
+        },
+        {
+          "id": "b",
+          "label": "締め切りを来週に決めた。",
+          "labelEn": "締め切りを来週に決めた。 (I decided next week.)"
+        },
+        {
+          "id": "c",
+          "label": "締め切りが来週を決めた。",
+          "labelEn": "締め切りが来週を決めた。 (I decided next week.)"
+        },
+        {
+          "id": "d",
+          "label": "締め切りを来週が決めた。",
+          "labelEn": "締め切りを来週が決めた。 (Next week decided.)"
+        }
+      ]
     },
     {
       "id": "td_048",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for choosing lunch?",
+      "promptEn": "Which uses を with the transitive verb for choosing lunch?",
       "japanese": "昼食のこと。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "今日のランチをカレーに決めた。"
-        },
-        {
-          "id": "b",
-          "label": "今日のランチがカレーに決めた。"
-        },
-        {
-          "id": "c",
-          "label": "今日のランチをカレーが決まった。"
-        },
-        {
-          "id": "d",
-          "label": "今日のランチがカレーに決まった。"
-        }
-      ],
+      "japaneseEn": "Lunch Which is right?",
       "correctAnswerId": "a",
       "explanation": "選んで決める操作は他動詞「決める」に「を」。結果だけなら「ランチがカレーに決まった」で自動詞。",
+      "explanationEn": "You can choose the other操作 \"deciding\". If the result is only, \"Lunch is determined to curry\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2043,33 +2357,40 @@
         "昼食のこと",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "今日のランチをカレーに決めた。",
+          "labelEn": "今日のランチをカレーに決めた。 (I decided to have lunch.)"
+        },
+        {
+          "id": "b",
+          "label": "今日のランチがカレーに決めた。",
+          "labelEn": "今日のランチがカレーに決めた。 (Today's lunch was decided on curry.)"
+        },
+        {
+          "id": "c",
+          "label": "今日のランチをカレーが決まった。",
+          "labelEn": "今日のランチをカレーが決まった。 (Curry was decided.)"
+        },
+        {
+          "id": "d",
+          "label": "今日のランチがカレーに決まった。",
+          "labelEn": "今日のランチがカレーに決まった。 (Today's lunch was decided on curry.)"
+        }
+      ]
     },
     {
       "id": "td_049",
       "type": "multipleChoice",
       "prompt": "Which sentence describes the outcome without naming who chose it in that clause?",
+      "promptEn": "Which sentence describes the outcome without naming who chose it in that clause?",
       "japanese": "旅行の行き先について、結果だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "家族が京都に行きたいと言った。"
-        },
-        {
-          "id": "b",
-          "label": "行き先が京都に決まった。"
-        },
-        {
-          "id": "c",
-          "label": "私が旅程を作った。"
-        },
-        {
-          "id": "d",
-          "label": "ホテルを予約した。"
-        }
-      ],
+      "japaneseEn": "What is the result of the destination of the trip?",
       "correctAnswerId": "b",
       "explanation": "「決まる」は自動詞で、決まった事柄に「が」。誰が決めたかはこの文では出てこない。",
+      "explanationEn": "\"Delete\" is an auto-verb, and it's decided. I don't get out of this sentence.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2085,33 +2406,40 @@
         "旅行の行き先について",
         "結果だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "家族が京都に行きたいと言った。",
+          "labelEn": "家族が京都に行きたいと言った。 (The family said they want to go to Kyoto.)"
+        },
+        {
+          "id": "b",
+          "label": "行き先が京都に決まった。",
+          "labelEn": "行き先が京都に決まった。 (The destination was decided to Kyoto.)"
+        },
+        {
+          "id": "c",
+          "label": "私が旅程を作った。",
+          "labelEn": "私が旅程を作った。 (I made itinerary.)"
+        },
+        {
+          "id": "d",
+          "label": "ホテルを予約した。",
+          "labelEn": "ホテルを予約した。 (Hotel Reservation)"
+        }
+      ]
     },
     {
       "id": "td_050",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you finally settled on a cheap apartment after many visits.",
+      "promptEn": "Choose the best sentence: you finally settled on a cheap apartment after many visits.",
       "japanese": "何件も見て、安い部屋に自分の意思で決めた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "部屋が安いほうに決まった。"
-        },
-        {
-          "id": "b",
-          "label": "部屋を安いほうに決めた。"
-        },
-        {
-          "id": "c",
-          "label": "部屋が安いほうを決めた。"
-        },
-        {
-          "id": "d",
-          "label": "部屋を安いほうが決まった。"
-        }
-      ],
+      "japaneseEn": "I decided on a cheap room. What is natural?",
       "correctAnswerId": "b",
       "explanation": "自分で選んで決めるなら他動詞「決める」に「部屋を」。「決まった」は自動詞で偶然決まった様子にも読める。",
+      "explanationEn": "If you decide to choose by yourself, \"Room\" to \"deciding\". You can read \"defined\" by an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2128,33 +2456,40 @@
         "安い部屋に自分の意思で決めた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "部屋が安いほうに決まった。",
+          "labelEn": "部屋が安いほうに決まった。 (The room was decided to be cheap.)"
+        },
+        {
+          "id": "b",
+          "label": "部屋を安いほうに決めた。",
+          "labelEn": "部屋を安いほうに決めた。 (I decided to have a cheap room.)"
+        },
+        {
+          "id": "c",
+          "label": "部屋が安いほうを決めた。",
+          "labelEn": "部屋が安いほうを決めた。 (I decided to have a cheap room.)"
+        },
+        {
+          "id": "d",
+          "label": "部屋を安いほうが決まった。",
+          "labelEn": "部屋を安いほうが決まった。 (The room was cheaper.)"
+        }
+      ]
     },
     {
       "id": "td_051",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for a glass cracking when hot water was poured in (no intent to break).",
+      "promptEn": "Choose the sentence for a glass cracking when hot water was poured in (no intent to break).",
       "japanese": "急に熱湯を注いでコップがひび割れた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "コップを急に壊した。"
-        },
-        {
-          "id": "b",
-          "label": "コップが急に壊れた。"
-        },
-        {
-          "id": "c",
-          "label": "コップを急に壊れた。"
-        },
-        {
-          "id": "d",
-          "label": "コップが急に壊した。"
-        }
-      ],
+      "japaneseEn": "The cup cracked suddenly by pouring hot water. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「壊れる」は自動詞で、壊れたものに「が」。「壊す」は他動詞で故意・過失で壊す操作。",
+      "explanationEn": "\"Break\" is an auto-verb and \"Break\" is broken. \"break\" is an operation to break by intentional or negligence with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2170,33 +2505,40 @@
         "急に熱湯を注いでコップがひび割れた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コップを急に壊した。",
+          "labelEn": "コップを急に壊した。 (suddenly broken the cup.)"
+        },
+        {
+          "id": "b",
+          "label": "コップが急に壊れた。",
+          "labelEn": "コップが急に壊れた。 (The cup suddenly broken.)"
+        },
+        {
+          "id": "c",
+          "label": "コップを急に壊れた。",
+          "labelEn": "コップを急に壊れた。 (suddenly broken the cup.)"
+        },
+        {
+          "id": "d",
+          "label": "コップが急に壊した。",
+          "labelEn": "コップが急に壊した。 (The cup suddenly broken.)"
+        }
+      ]
     },
     {
       "id": "td_052",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for a child accidentally breaking a toy (agent breaks it).",
+      "promptEn": "Choose the sentence for a child accidentally breaking a toy (agent breaks it).",
       "japanese": "子どもがうっかりおもちゃを壊した。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "おもちゃが壊れて泣いた。"
-        },
-        {
-          "id": "b",
-          "label": "おもちゃを壊して泣いた。"
-        },
-        {
-          "id": "c",
-          "label": "おもちゃが壊して泣いた。"
-        },
-        {
-          "id": "d",
-          "label": "おもちゃを壊れて泣いた。"
-        }
-      ],
+      "japaneseEn": "Children's toys were destroyed. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「壊す」は壊す対象に「を」。「壊れる」は自動詞で、だれのせいかははっきりしない。",
+      "explanationEn": "Other詞s \"breaking\" is to be broken. \"Break\" is an auto-verb, which is not clear.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2212,33 +2554,40 @@
         "子どもがうっかりおもちゃを壊した",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "おもちゃが壊れて泣いた。",
+          "labelEn": "おもちゃが壊れて泣いた。 (The toy was broken and crying.)"
+        },
+        {
+          "id": "b",
+          "label": "おもちゃを壊して泣いた。",
+          "labelEn": "おもちゃを壊して泣いた。 (Crying broken toys.)"
+        },
+        {
+          "id": "c",
+          "label": "おもちゃが壊して泣いた。",
+          "labelEn": "おもちゃが壊して泣いた。 (The toy was broken and crying.)"
+        },
+        {
+          "id": "d",
+          "label": "おもちゃを壊れて泣いた。",
+          "labelEn": "おもちゃを壊れて泣いた。 (broken toy.)"
+        }
+      ]
     },
     {
       "id": "td_053",
       "type": "multipleChoice",
       "prompt": "機械を処分する話：他動詞に「を」が適切に付いた文はどれか。",
+      "promptEn": "Throwing away an old machine: which sentence attaches を correctly to the transitive verb?",
       "japanese": "古い機械の処分の話。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "もう使わないから機械を壊して捨てた。"
-        },
-        {
-          "id": "b",
-          "label": "もう使わないから機械が壊れて捨てた。"
-        },
-        {
-          "id": "c",
-          "label": "もう使わないから機械を壊れて捨てた。"
-        },
-        {
-          "id": "d",
-          "label": "もう使わないから機械が壊して捨てた。"
-        }
-      ],
+      "japaneseEn": "Story of disposal of old machines. Which is right?",
       "correctAnswerId": "a",
       "explanation": "意図的に壊すなら他動詞「壊す」に「を」。「壊れる」は自動詞で自然破損の描写。",
+      "explanationEn": "If you intentionally break it, you can use another詞 to break. \"Break\" is an auto-verb and is a natural break.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2254,33 +2603,40 @@
         "古い機械の処分の話",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "もう使わないから機械を壊して捨てた。",
+          "labelEn": "もう使わないから機械を壊して捨てた。 (I broke the machine and abandoned it because it is not used anymore.)"
+        },
+        {
+          "id": "b",
+          "label": "もう使わないから機械が壊れて捨てた。",
+          "labelEn": "もう使わないから機械が壊れて捨てた。 (The machine was broken and thrown away because it was not used anymore.)"
+        },
+        {
+          "id": "c",
+          "label": "もう使わないから機械を壊れて捨てた。",
+          "labelEn": "もう使わないから機械を壊れて捨てた。 (The machine was broken and thrown away.)"
+        },
+        {
+          "id": "d",
+          "label": "もう使わないから機械が壊して捨てた。",
+          "labelEn": "もう使わないから機械が壊して捨てた。 (The machine was destroyed and abandoned because it was not used anymore.)"
+        }
+      ]
     },
     {
       "id": "td_054",
       "type": "multipleChoice",
       "prompt": "Which sentence describes damage happening without naming who caused it in that clause?",
+      "promptEn": "Which sentence describes damage happening without naming who caused it in that clause?",
       "japanese": "台風のあと、家の一部について変化だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "屋根が一部壊れた。"
-        },
-        {
-          "id": "b",
-          "label": "大工が屋根を直した。"
-        },
-        {
-          "id": "c",
-          "label": "家族が避難した。"
-        },
-        {
-          "id": "d",
-          "label": "雨が入ってきた。"
-        }
-      ],
+      "japaneseEn": "After the 風のhoon, what is the only change in the house?",
       "correctAnswerId": "a",
       "explanation": "「壊れる」は自動詞で、壊れた部分に「が」。原因は文外でもよい。",
+      "explanationEn": "\"Break\" is an auto-verb, \"Break\" to the broken part. Causes may not be written.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2296,33 +2652,40 @@
         "台風のあと",
         "家の一部について変化だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "屋根が一部壊れた。",
+          "labelEn": "屋根が一部壊れた。 (The roof was broken.)"
+        },
+        {
+          "id": "b",
+          "label": "大工が屋根を直した。",
+          "labelEn": "大工が屋根を直した。 (Carpenter re屋根ed the roof.)"
+        },
+        {
+          "id": "c",
+          "label": "家族が避難した。",
+          "labelEn": "家族が避難した。 (Family evacuated.)"
+        },
+        {
+          "id": "d",
+          "label": "雨が入ってきた。",
+          "labelEn": "雨が入ってきた。 (Rain)"
+        }
+      ]
     },
     {
       "id": "td_055",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you sat on the glasses and broke them on purpose in a skit (acted).",
+      "promptEn": "Choose the best sentence: you sat on the glasses and broke them on purpose in a skit (acted).",
       "japanese": "コントでわざとメガネを壊す演技。行為を言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "メガネが壊れたふりをした。"
-        },
-        {
-          "id": "b",
-          "label": "メガネを壊すふりをした。"
-        },
-        {
-          "id": "c",
-          "label": "メガネを壊れたふりをした。"
-        },
-        {
-          "id": "d",
-          "label": "メガネが壊すふりをした。"
-        }
-      ],
+      "japaneseEn": "A demonstration that breaks glasses with a focus. What do you say?",
       "correctAnswerId": "b",
       "explanation": "演技で「壊す」を見せるなら他動詞「壊す」。壊れた状態だけなら「壊れる」でもよいが、演技の動きは「壊す」。",
+      "explanationEn": "If you show \"break\" in the performance, \"break\". If it is broken, it can be \"break\", but the movement of the acting is \"break\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2338,33 +2701,40 @@
         "コントでわざとメガネを壊す演技",
         "行為を言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メガネが壊れたふりをした。",
+          "labelEn": "メガネが壊れたふりをした。 (The glasses were broken.)"
+        },
+        {
+          "id": "b",
+          "label": "メガネを壊すふりをした。",
+          "labelEn": "メガネを壊すふりをした。 (I broke my glasses.)"
+        },
+        {
+          "id": "c",
+          "label": "メガネを壊れたふりをした。",
+          "labelEn": "メガネを壊れたふりをした。 (broken glasses.)"
+        },
+        {
+          "id": "d",
+          "label": "メガネが壊すふりをした。",
+          "labelEn": "メガネが壊すふりをした。 (The glasses were broken.)"
+        }
+      ]
     },
     {
       "id": "td_056",
       "type": "multipleChoice",
       "prompt": "Choose the sentence where the sticker stuck by itself (glue held).",
+      "promptEn": "Choose the sentence where the sticker stuck by itself (glue held).",
       "japanese": "シールがきちんとくっついた。変化の描写として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "シールをノートに付いた。"
-        },
-        {
-          "id": "b",
-          "label": "シールがノートに付いた。"
-        },
-        {
-          "id": "c",
-          "label": "シールをノートが付いた。"
-        },
-        {
-          "id": "d",
-          "label": "シールがノートを付けた。"
-        }
-      ],
+      "japaneseEn": "The seal was . Which is natural as a solvent of change?",
       "correctAnswerId": "b",
       "explanation": "「付く」は自動詞で、付いたものに「が」。「付ける」は他動詞で人が貼る操作。",
+      "explanationEn": "\"Appendix\" is an auto-verb, and it is attached. \"Attach\" is an operation that people paste with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2380,33 +2750,40 @@
         "シールがきちんとくっついた",
         "変化の描写として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "シールをノートに付いた。",
+          "labelEn": "シールをノートに付いた。 (The seal is attached to the note.)"
+        },
+        {
+          "id": "b",
+          "label": "シールがノートに付いた。",
+          "labelEn": "シールがノートに付いた。 (The seal is attached to the note.)"
+        },
+        {
+          "id": "c",
+          "label": "シールをノートが付いた。",
+          "labelEn": "シールをノートが付いた。 (with a note.)"
+        },
+        {
+          "id": "d",
+          "label": "シールがノートを付けた。",
+          "labelEn": "シールがノートを付けた。 (The seal attached a note.)"
+        }
+      ]
     },
     {
       "id": "td_057",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for putting a name tag on your jacket before the tour.",
+      "promptEn": "Choose the sentence for putting a name tag on your jacket before the tour.",
       "japanese": "見学の前に名札を上着につける。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "名札が上着に付いた。"
-        },
-        {
-          "id": "b",
-          "label": "名札を上着につけた。"
-        },
-        {
-          "id": "c",
-          "label": "名札が上着を付けた。"
-        },
-        {
-          "id": "d",
-          "label": "名札を上着が付けた。"
-        }
-      ],
+      "japaneseEn": "Put the name tag on top before the tour. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「付ける」は取り付ける対象に「を」。「付く」は自動詞で自然に付いたように聞こえる。",
+      "explanationEn": "The other詞 \"Attach\" is attached to the object. \"Appendix\" sounds natural with automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2422,33 +2799,40 @@
         "見学の前に名札を上着につける",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名札が上着に付いた。",
+          "labelEn": "名札が上着に付いた。 (The name tag was on top.)"
+        },
+        {
+          "id": "b",
+          "label": "名札を上着につけた。",
+          "labelEn": "名札を上着につけた。 (I put the name tag on top.)"
+        },
+        {
+          "id": "c",
+          "label": "名札が上着を付けた。",
+          "labelEn": "名札が上着を付けた。 (The name tag was on top.)"
+        },
+        {
+          "id": "d",
+          "label": "名札を上着が付けた。",
+          "labelEn": "名札を上着が付けた。 (The name tag was topped.)"
+        }
+      ]
     },
     {
       "id": "td_058",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for applying sunscreen?",
+      "promptEn": "Which uses を with the transitive verb for applying sunscreen?",
       "japanese": "海に行く前の準備。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "顔に日焼け止めを塗ってから日焼け止めを腕にも付けた。"
-        },
-        {
-          "id": "b",
-          "label": "腕に日焼け止めが付けた。"
-        },
-        {
-          "id": "c",
-          "label": "腕に日焼け止めを付けた。"
-        },
-        {
-          "id": "d",
-          "label": "腕が日焼け止めを付けた。"
-        }
-      ],
+      "japaneseEn": "Preparation before going to the sea. Which is right?",
       "correctAnswerId": "c",
       "explanation": "塗ってつける操作は他動詞「付ける」に、対象は「日焼け止めを」。付いた結果なら「日焼け止めが付く」。",
+      "explanationEn": "The painted operation is applied to other詞s, and the subject is \"sunscreen\". The result is \"sunscreen\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2464,33 +2848,40 @@
         "海に行く前の準備",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "顔に日焼け止めを塗ってから日焼け止めを腕にも付けた。",
+          "labelEn": "顔に日焼け止めを塗ってから日焼け止めを腕にも付けた。 (After applying sunscreen on the face, the sunscreen was attached to the arm.)"
+        },
+        {
+          "id": "b",
+          "label": "腕に日焼け止めが付けた。",
+          "labelEn": "腕に日焼け止めが付けた。 (sunscreen on the arm.)"
+        },
+        {
+          "id": "c",
+          "label": "腕に日焼け止めを付けた。",
+          "labelEn": "腕に日焼け止めを付けた。 (sunscreen on the arm.)"
+        },
+        {
+          "id": "d",
+          "label": "腕が日焼け止めを付けた。",
+          "labelEn": "腕が日焼け止めを付けた。 (The arm was sunscreened.)"
+        }
+      ]
     },
     {
       "id": "td_059",
       "type": "multipleChoice",
       "prompt": "Which sentence describes mold appearing without saying who left moisture there?",
+      "promptEn": "Which sentence describes mold appearing without saying who left moisture there?",
       "japanese": "壁にカビが生えたように見える。変化だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "大家さんが壁を直した。"
-        },
-        {
-          "id": "b",
-          "label": "壁にカビが付いた。"
-        },
-        {
-          "id": "c",
-          "label": "私が除湿器を買った。"
-        },
-        {
-          "id": "d",
-          "label": "雨が窓に付いた。"
-        }
-      ],
+      "japaneseEn": "It looks like a mold on the wall. What is the change?",
       "correctAnswerId": "b",
       "explanation": "「付く」は自動詞で、付いたものに「が」か「に」。カビが壁について付く表現。",
+      "explanationEn": "\"Appendix\" is an auto-verb, and it is attached to it. The expression that the mold attaches to the wall.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2506,33 +2897,40 @@
         "壁にカビが生えたように見える",
         "変化だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "大家さんが壁を直した。",
+          "labelEn": "大家さんが壁を直した。 (Mr. Oya re壁ed the wall.)"
+        },
+        {
+          "id": "b",
+          "label": "壁にカビが付いた。",
+          "labelEn": "壁にカビが付いた。 (The wall has a mold.)"
+        },
+        {
+          "id": "c",
+          "label": "私が除湿器を買った。",
+          "labelEn": "私が除湿器を買った。 (I bought a dehumidifier.)"
+        },
+        {
+          "id": "d",
+          "label": "雨が窓に付いた。",
+          "labelEn": "雨が窓に付いた。 (Rain on the window.)"
+        }
+      ]
     },
     {
       "id": "td_060",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you attach a label to each box in the warehouse.",
+      "promptEn": "Choose the best sentence: you attach a label to each box in the warehouse.",
       "japanese": "倉庫で箱ごとにラベルを貼る作業。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ラベルが箱に付いた。"
-        },
-        {
-          "id": "b",
-          "label": "ラベルを箱に付けた。"
-        },
-        {
-          "id": "c",
-          "label": "ラベルが箱を付けた。"
-        },
-        {
-          "id": "d",
-          "label": "ラベルを箱が付けた。"
-        }
-      ],
+      "japaneseEn": "Label each box in the warehouse. What is natural?",
       "correctAnswerId": "b",
       "explanation": "人が貼り付けるなら他動詞「付ける」に「ラベルを」。「付いた」は自動詞で誰が貼ったか不明。",
+      "explanationEn": "If a person is pasted, \"Label\" to \"Attach\". \"Appended\" is not sure who was attached with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2548,33 +2946,40 @@
         "倉庫で箱ごとにラベルを貼る作業",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ラベルが箱に付いた。",
+          "labelEn": "ラベルが箱に付いた。 (labeled in the box.)"
+        },
+        {
+          "id": "b",
+          "label": "ラベルを箱に付けた。",
+          "labelEn": "ラベルを箱に付けた。 (labeled in the box.)"
+        },
+        {
+          "id": "c",
+          "label": "ラベルが箱を付けた。",
+          "labelEn": "ラベルが箱を付けた。 (labeled box.)"
+        },
+        {
+          "id": "d",
+          "label": "ラベルを箱が付けた。",
+          "labelEn": "ラベルを箱が付けた。 (The label is boxed.)"
+        }
+      ]
     },
     {
       "id": "td_061",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for laundry drying in the sun (no agent).",
+      "promptEn": "Choose the sentence for laundry drying in the sun (no agent).",
       "japanese": "天気のよい日に洗濯物が乾いた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "洗濯物をベランダで乾いた。"
-        },
-        {
-          "id": "b",
-          "label": "洗濯物がベランダで乾いた。"
-        },
-        {
-          "id": "c",
-          "label": "洗濯物をベランダで乾かした。"
-        },
-        {
-          "id": "d",
-          "label": "洗濯物がベランダで乾かした。"
-        }
-      ],
+      "japaneseEn": "Dry laundry on good weather. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「乾く」は自動詞で、乾いたものに「が」。「乾かす」は他動詞で人が乾かす操作。",
+      "explanationEn": "\"Drying\" is an auto-verb, and \"Drying\" is \"Drying\" is an operation to dry people with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2590,33 +2995,40 @@
         "天気のよい日に洗濯物が乾いた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "洗濯物をベランダで乾いた。",
+          "labelEn": "洗濯物をベランダで乾いた。 (Dried laundry with veranda.)"
+        },
+        {
+          "id": "b",
+          "label": "洗濯物がベランダで乾いた。",
+          "labelEn": "洗濯物がベランダで乾いた。 (The laundry was dry with veranda.)"
+        },
+        {
+          "id": "c",
+          "label": "洗濯物をベランダで乾かした。",
+          "labelEn": "洗濯物をベランダで乾かした。 (Dried laundry with veranda.)"
+        },
+        {
+          "id": "d",
+          "label": "洗濯物がベランダで乾かした。",
+          "labelEn": "洗濯物がベランダで乾かした。 (The laundry was dry with a veranda.)"
+        }
+      ]
     },
     {
       "id": "td_062",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for using a dryer to dry your hair after a shower.",
+      "promptEn": "Choose the sentence for using a dryer to dry your hair after a shower.",
       "japanese": "シャワーあとドライヤーで髪を乾かす。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "髪が乾いてから眠った。"
-        },
-        {
-          "id": "b",
-          "label": "髪を乾かしてから眠った。"
-        },
-        {
-          "id": "c",
-          "label": "髪が乾かしてから眠った。"
-        },
-        {
-          "id": "d",
-          "label": "髪を乾いてから眠った。"
-        }
-      ],
+      "japaneseEn": "Dry the hair with a hair dryer. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「乾かす」は乾かす対象に「を」。「乾く」は自動詞で時間が経てば乾く描写。",
+      "explanationEn": "Other詞s \"Drying\" are subject to dry. \"Drying\" is an auto-verb, so it should not be dry after time.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2632,33 +3044,40 @@
         "シャワーあとドライヤーで髪を乾かす",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "髪が乾いてから眠った。",
+          "labelEn": "髪が乾いてから眠った。 (I drank my hair.)"
+        },
+        {
+          "id": "b",
+          "label": "髪を乾かしてから眠った。",
+          "labelEn": "髪を乾かしてから眠った。 (I drank my hair.)"
+        },
+        {
+          "id": "c",
+          "label": "髪が乾かしてから眠った。",
+          "labelEn": "髪が乾かしてから眠った。 (I drank my hair.)"
+        },
+        {
+          "id": "d",
+          "label": "髪を乾いてから眠った。",
+          "labelEn": "髪を乾いてから眠った。 (I drank my hair.)"
+        }
+      ]
     },
     {
       "id": "td_063",
       "type": "multipleChoice",
       "prompt": "新聞で包む靴：他動詞の対象として「を」が付いた正しい文はどれか。",
+      "promptEn": "Wrapping shoes in newspaper: which sentence correctly marks the transitive object with を?",
       "japanese": "濡れた靴の処置。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "靴を新聞で包んで乾かした。"
-        },
-        {
-          "id": "b",
-          "label": "靴が新聞で包んで乾かした。"
-        },
-        {
-          "id": "c",
-          "label": "靴を新聞で包んで乾いた。"
-        },
-        {
-          "id": "d",
-          "label": "靴が新聞で包んで乾いた。"
-        }
-      ],
+      "japaneseEn": "wet shoes treatment. Which is right?",
       "correctAnswerId": "a",
       "explanation": "人が乾かすなら他動詞「乾かす」に「靴を」。自然乾燥なら「靴が乾いた」で自動詞。",
+      "explanationEn": "If a person is dry, \"shoe\" to \"dry\". If it is natural drying, it is an automatic lyrics with \"shoe dry\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2674,33 +3093,40 @@
         "濡れた靴の処置",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "靴を新聞で包んで乾かした。",
+          "labelEn": "靴を新聞で包んで乾かした。 (The shoes were wrapped in newspapers and dried.)"
+        },
+        {
+          "id": "b",
+          "label": "靴が新聞で包んで乾かした。",
+          "labelEn": "靴が新聞で包んで乾かした。 (Shoes wrapped in newspapers and dried.)"
+        },
+        {
+          "id": "c",
+          "label": "靴を新聞で包んで乾いた。",
+          "labelEn": "靴を新聞で包んで乾いた。 (I dried my shoes in newspaper.)"
+        },
+        {
+          "id": "d",
+          "label": "靴が新聞で包んで乾いた。",
+          "labelEn": "靴が新聞で包んで乾いた。 (Shoes wrapped in newspapers and dry.)"
+        }
+      ]
     },
     {
       "id": "td_064",
       "type": "multipleChoice",
       "prompt": "Which sentence describes the paint coating drying without naming who painted?",
+      "promptEn": "Which sentence describes the paint coating drying without naming who painted?",
       "japanese": "ペンキの塗りたてについて、乾いたことを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "職人が刷毛を洗った。"
-        },
-        {
-          "id": "b",
-          "label": "ペンキが乾いた。"
-        },
-        {
-          "id": "c",
-          "label": "大家が材料を買った。"
-        },
-        {
-          "id": "d",
-          "label": "窓を開けた。"
-        }
-      ],
+      "japaneseEn": "What do you say about the paint?",
       "correctAnswerId": "b",
       "explanation": "「乾く」は自動詞で、乾いた状態になったものに「が」。",
+      "explanationEn": "\"Drying\" is an auto-verb, and it becomes dry.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2716,33 +3142,40 @@
         "ペンキの塗りたてについて",
         "乾いたことを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "職人が刷毛を洗った。",
+          "labelEn": "職人が刷毛を洗った。 (The craftsman washed the hair.)"
+        },
+        {
+          "id": "b",
+          "label": "ペンキが乾いた。",
+          "labelEn": "ペンキが乾いた。 (paint dry.)"
+        },
+        {
+          "id": "c",
+          "label": "大家が材料を買った。",
+          "labelEn": "大家が材料を買った。 (The house bought the material.)"
+        },
+        {
+          "id": "d",
+          "label": "窓を開けた。",
+          "labelEn": "窓を開けた。 (Opened the window.)"
+        }
+      ]
     },
     {
       "id": "td_065",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you dried the dishes with a towel after washing.",
+      "promptEn": "Choose the best sentence: you dried the dishes with a towel after washing.",
       "japanese": "洗った食器を布巾で拭いて乾かした。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "食器が布巾で乾いた。"
-        },
-        {
-          "id": "b",
-          "label": "食器を布巾で乾かした。"
-        },
-        {
-          "id": "c",
-          "label": "食器が布巾で乾かした。"
-        },
-        {
-          "id": "d",
-          "label": "食器を布巾で乾いた。"
-        }
-      ],
+      "japaneseEn": "I wiped the washed tableware with cloth. What is natural?",
       "correctAnswerId": "b",
       "explanation": "拭いて乾かす操作は他動詞「乾かす」に「食器を」。「乾いた」は自動詞で布巾のせいか時間か曖昧。",
+      "explanationEn": "The operation to wipe and dry is \"drying\" in other詞s. \"Drying\" is an auto-verb, so it's time or vague.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2758,33 +3191,40 @@
         "洗った食器を布巾で拭いて乾かした",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "食器が布巾で乾いた。",
+          "labelEn": "食器が布巾で乾いた。 (The dish was dried in the cloth.)"
+        },
+        {
+          "id": "b",
+          "label": "食器を布巾で乾かした。",
+          "labelEn": "食器を布巾で乾かした。 (Dried tableware with cloth.)"
+        },
+        {
+          "id": "c",
+          "label": "食器が布巾で乾かした。",
+          "labelEn": "食器が布巾で乾かした。 (Dried tableware with cloth.)"
+        },
+        {
+          "id": "d",
+          "label": "食器を布巾で乾いた。",
+          "labelEn": "食器を布巾で乾いた。 (Dried tableware with cloth.)"
+        }
+      ]
     },
     {
       "id": "td_066",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for cars lining up at a traffic jam (vehicles line up).",
+      "promptEn": "Choose the sentence for cars lining up at a traffic jam (vehicles line up).",
       "japanese": "渋滞で車が長く続いている。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "車を道路に並んだ。"
-        },
-        {
-          "id": "b",
-          "label": "車が道路に並んだ。"
-        },
-        {
-          "id": "c",
-          "label": "車を道路が並んだ。"
-        },
-        {
-          "id": "d",
-          "label": "車が道路を並べた。"
-        }
-      ],
+      "japaneseEn": "The car continues for a long time due to traffic jam. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「並ぶ」は自動詞で、並んだものに「が」。「並べる」は他動詞で人が並べる。",
+      "explanationEn": "\"Line\" is an auto-verb, and it's 。 up. \"。\" is arranged by people with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2800,33 +3240,40 @@
         "渋滞で車が長く続いている",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "車を道路に並んだ。",
+          "labelEn": "車を道路に並んだ。 (on the road.)"
+        },
+        {
+          "id": "b",
+          "label": "車が道路に並んだ。",
+          "labelEn": "車が道路に並んだ。 (The car 。 up on the road.)"
+        },
+        {
+          "id": "c",
+          "label": "車を道路が並んだ。",
+          "labelEn": "車を道路が並んだ。 (roads)"
+        },
+        {
+          "id": "d",
+          "label": "車が道路を並べた。",
+          "labelEn": "車が道路を並べた。 (The car 。 up the road.)"
+        }
+      ]
     },
     {
       "id": "td_067",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for lining up chairs for the meeting (you arrange them).",
+      "promptEn": "Choose the sentence for lining up chairs for the meeting (you arrange them).",
       "japanese": "会議のために椅子を整える。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "椅子が十脚並んだ。"
-        },
-        {
-          "id": "b",
-          "label": "椅子を十脚並べた。"
-        },
-        {
-          "id": "c",
-          "label": "椅子が十脚並べた。"
-        },
-        {
-          "id": "d",
-          "label": "椅子を十脚並んだ。"
-        }
-      ],
+      "japaneseEn": "会議 chairs for meetings. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「並べる」は並べる対象に「を」。「並んだ」は自動詞で誰が並べたかは出ない。",
+      "explanationEn": "Other s \"並べ\" are \"並べ\" to the target. \"Like\" doesn't come up with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2842,33 +3289,40 @@
         "会議のために椅子を整える",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "椅子が十脚並んだ。",
+          "labelEn": "椅子が十脚並んだ。 (There are 10 chairs.)"
+        },
+        {
+          "id": "b",
+          "label": "椅子を十脚並べた。",
+          "labelEn": "椅子を十脚並べた。 (The chairs are arranged on the table.)"
+        },
+        {
+          "id": "c",
+          "label": "椅子が十脚並べた。",
+          "labelEn": "椅子が十脚並べた。 (The chairs were arranged.)"
+        },
+        {
+          "id": "d",
+          "label": "椅子を十脚並んだ。",
+          "labelEn": "椅子を十脚並んだ。 (The chair was   up.)"
+        }
+      ]
     },
     {
       "id": "td_068",
       "type": "multipleChoice",
       "prompt": "Which uses が with the intransitive verb for people queuing?",
+      "promptEn": "Which uses が with the intransitive verb for people queuing?",
       "japanese": "映画館の前の列。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "客が入口の前に並んでいた。"
-        },
-        {
-          "id": "b",
-          "label": "客を入口の前に並んでいた。"
-        },
-        {
-          "id": "c",
-          "label": "客が入口の前を並べていた。"
-        },
-        {
-          "id": "d",
-          "label": "客を入口の前に並べていた。"
-        }
-      ],
+      "japaneseEn": "A column in front of the cinema. Which is right?",
       "correctAnswerId": "a",
       "explanation": "列に並ぶのは自動詞「並ぶ」に「が」。「並べる」は他動詞で物を並べる。",
+      "explanationEn": "The line is aligned with an auto-verb. 。 objects with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2884,33 +3338,40 @@
         "映画館の前の列",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "客が入口の前に並んでいた。",
+          "labelEn": "客が入口の前に並んでいた。 (The guests were   up in front of the entrance.)"
+        },
+        {
+          "id": "b",
+          "label": "客を入口の前に並んでいた。",
+          "labelEn": "客を入口の前に並んでいた。 (I   up in front of the entrance.)"
+        },
+        {
+          "id": "c",
+          "label": "客が入口の前を並べていた。",
+          "labelEn": "客が入口の前を並べていた。 (The guest was   up in front of the entrance.)"
+        },
+        {
+          "id": "d",
+          "label": "客を入口の前に並べていた。",
+          "labelEn": "客を入口の前に並べていた。 (The customer was arranged in front of the entrance.)"
+        }
+      ]
     },
     {
       "id": "td_069",
       "type": "multipleChoice",
       "prompt": "Which sentence implies a shop worker arranged the bottles on the shelf?",
+      "promptEn": "Which sentence implies a shop worker arranged the bottles on the shelf?",
       "japanese": "店員が陳列をしたあと。操作が分かるのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "びんが棚に並んでいた。"
-        },
-        {
-          "id": "b",
-          "label": "びんを棚に並べてあった。"
-        },
-        {
-          "id": "c",
-          "label": "びんが棚に並べてあった。"
-        },
-        {
-          "id": "d",
-          "label": "びんを棚に並んでいた。"
-        }
-      ],
+      "japaneseEn": "After the shop staff displayed. Which operation can I see?",
       "correctAnswerId": "b",
       "explanation": "人が並べた結果を言うなら他動詞「並べる」。ただし「並んでいた」は店員の手が見えにくい。陳列済みは「並べてある」が自然。",
+      "explanationEn": "If you say the result of people aligned, another詞 \"align\". However, it is difficult to see the staff. It is natural that the display is arranged.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -2926,33 +3387,40 @@
         "店員が陳列をしたあと",
         "操作が分かるのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "びんが棚に並んでいた。",
+          "labelEn": "びんが棚に並んでいた。 (The bottle was   up on the shelf.)"
+        },
+        {
+          "id": "b",
+          "label": "びんを棚に並べてあった。",
+          "labelEn": "びんを棚に並べてあった。 (The bottle was arranged on the shelf.)"
+        },
+        {
+          "id": "c",
+          "label": "びんが棚に並べてあった。",
+          "labelEn": "びんが棚に並べてあった。 (There was a bottle on the shelf.)"
+        },
+        {
+          "id": "d",
+          "label": "びんを棚に並んでいた。",
+          "labelEn": "びんを棚に並んでいた。 (The bottle was   up on the shelf.)"
+        }
+      ]
     },
     {
       "id": "td_070",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: names are listed on the screen in alphabetical order (display state).",
+      "promptEn": "Choose the best sentence: names are listed on the screen in alphabetical order (display state).",
       "japanese": "画面に名前が順番に表示されている。状態として自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "名前が画面にアルファベット順に並んでいる。"
-        },
-        {
-          "id": "b",
-          "label": "名前を画面にアルファベット順に並べている。"
-        },
-        {
-          "id": "c",
-          "label": "名前が画面にアルファベット順に並べている。"
-        },
-        {
-          "id": "d",
-          "label": "名前を画面にアルファベット順に並んでいる。"
-        }
-      ],
+      "japaneseEn": "The name is displayed in order. Which is natural as a state?",
       "correctAnswerId": "a",
       "explanation": "並んで見える配置なら自動詞「並ぶ」。システムが並べ替えたとしても、見え方の描写では「並んでいる」が使われやすい。",
+      "explanationEn": "If you look at the layout, you can see the lyrics \" \". Even if the system is used, it is easy to use \"align\" in the viewer.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -2968,33 +3436,40 @@
         "画面に名前が順番に表示されている",
         "状態として自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "名前が画面にアルファベット順に並んでいる。",
+          "labelEn": "名前が画面にアルファベット順に並んでいる。 (The name is in alphabetical order on the screen.)"
+        },
+        {
+          "id": "b",
+          "label": "名前を画面にアルファベット順に並べている。",
+          "labelEn": "名前を画面にアルファベット順に並べている。 (The name is arranged alphabetically on the screen.)"
+        },
+        {
+          "id": "c",
+          "label": "名前が画面にアルファベット順に並べている。",
+          "labelEn": "名前が画面にアルファベット順に並べている。 (The name is arranged alphabetically on the screen.)"
+        },
+        {
+          "id": "d",
+          "label": "名前を画面にアルファベット順に並んでいる。",
+          "labelEn": "名前を画面にアルファベット順に並んでいる。 (Names are arranged alphabetically on the screen.)"
+        }
+      ]
     },
     {
       "id": "td_071",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the weather turning cold suddenly (natural change).",
+      "promptEn": "Choose the sentence for the weather turning cold suddenly (natural change).",
       "japanese": "急に気温が下がった。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "天気を急に変えた。"
-        },
-        {
-          "id": "b",
-          "label": "天気が急に変わった。"
-        },
-        {
-          "id": "c",
-          "label": "天気を急に変わった。"
-        },
-        {
-          "id": "d",
-          "label": "天気が急に変えた。"
-        }
-      ],
+      "japaneseEn": "The temperature dropped suddenly. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「変わる」は自動詞で、変わったものに「が」。「変える」は他動詞で人が変える。",
+      "explanationEn": "\"Change\" is an auto-verb, and it is changed. \"Change\" is changed by other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3010,33 +3485,40 @@
         "急に気温が下がった",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "天気を急に変えた。",
+          "labelEn": "天気を急に変えた。 (The weather suddenly changed.)"
+        },
+        {
+          "id": "b",
+          "label": "天気が急に変わった。",
+          "labelEn": "天気が急に変わった。 (Weather suddenly changed.)"
+        },
+        {
+          "id": "c",
+          "label": "天気を急に変わった。",
+          "labelEn": "天気を急に変わった。 (The weather suddenly changed.)"
+        },
+        {
+          "id": "d",
+          "label": "天気が急に変えた。",
+          "labelEn": "天気が急に変えた。 (The weather suddenly changed.)"
+        }
+      ]
     },
     {
       "id": "td_072",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for changing trains at the next station on purpose.",
+      "promptEn": "Choose the sentence for changing trains at the next station on purpose.",
       "japanese": "次の駅で乗り換える予定を実行する。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "次の駅で電車が変わった。"
-        },
-        {
-          "id": "b",
-          "label": "次の駅で電車を変えた。"
-        },
-        {
-          "id": "c",
-          "label": "次の駅で電車が変えた。"
-        },
-        {
-          "id": "d",
-          "label": "次の駅で電車を変わった。"
-        }
-      ],
+      "japaneseEn": "。ute the schedule to change at the next station. What is natural?",
       "correctAnswerId": "b",
       "explanation": "乗り換えて別の電車に移る操作は「電車を変える」のように他動詞「変える」に「を」。",
+      "explanationEn": "The operation to transfer and transfer to another train is to \"change\" other詞s like \"change train\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3052,33 +3534,40 @@
         "次の駅で乗り換える予定を実行する",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "次の駅で電車が変わった。",
+          "labelEn": "次の駅で電車が変わった。 (The train changed at the next station.)"
+        },
+        {
+          "id": "b",
+          "label": "次の駅で電車を変えた。",
+          "labelEn": "次の駅で電車を変えた。 (I changed the train at the next station.)"
+        },
+        {
+          "id": "c",
+          "label": "次の駅で電車が変えた。",
+          "labelEn": "次の駅で電車が変えた。 (I changed the train at the next station.)"
+        },
+        {
+          "id": "d",
+          "label": "次の駅で電車を変わった。",
+          "labelEn": "次の駅で電車を変わった。 (I changed the train at the next station.)"
+        }
+      ]
     },
     {
       "id": "td_073",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for changing a password?",
+      "promptEn": "Which uses を with the transitive verb for changing a password?",
       "japanese": "セキュリティのためパスワードを更新する。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "パスワードが新しいものに変えた。"
-        },
-        {
-          "id": "b",
-          "label": "パスワードを新しいものに変えた。"
-        },
-        {
-          "id": "c",
-          "label": "パスワードを新しいものに変わった。"
-        },
-        {
-          "id": "d",
-          "label": "パスワードが新しいものに変わった。"
-        }
-      ],
+      "japaneseEn": "Update password for security. Which is right?",
       "correctAnswerId": "b",
       "explanation": "自分で変えるなら他動詞「変える」に「パスワードを」。規約で勝手に変わったなら「変わった」で自動詞。",
+      "explanationEn": "\"Password\" to \"Change\" if you change yourself. If you change the terms and conditions, you can use \"Change\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3094,33 +3583,40 @@
         "セキュリティのためパスワードを更新する",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "パスワードが新しいものに変えた。",
+          "labelEn": "パスワードが新しいものに変えた。 (Changed password to a new one.)"
+        },
+        {
+          "id": "b",
+          "label": "パスワードを新しいものに変えた。",
+          "labelEn": "パスワードを新しいものに変えた。 (Changed password to a new one.)"
+        },
+        {
+          "id": "c",
+          "label": "パスワードを新しいものに変わった。",
+          "labelEn": "パスワードを新しいものに変わった。 (Changed password to a new one.)"
+        },
+        {
+          "id": "d",
+          "label": "パスワードが新しいものに変わった。",
+          "labelEn": "パスワードが新しいものに変わった。 (Your password has been changed.)"
+        }
+      ]
     },
     {
       "id": "td_074",
       "type": "multipleChoice",
       "prompt": "Which sentence describes a rule changing without naming the committee in that clause?",
+      "promptEn": "Which sentence describes a rule changing without naming the committee in that clause?",
       "japanese": "会社の規則の改正について、結果だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "社長が会見した。"
-        },
-        {
-          "id": "b",
-          "label": "規則が来月から変わる。"
-        },
-        {
-          "id": "c",
-          "label": "人事が説明会を開いた。"
-        },
-        {
-          "id": "d",
-          "label": "書類を配った。"
-        }
-      ],
+      "japaneseEn": "What are the results of the revision of the company rules?",
       "correctAnswerId": "b",
       "explanation": "「変わる」は自動詞で、変わる対象に「が」。誰が決めたかはこの文では省略される。",
+      "explanationEn": "\"Change\" is an auto-verb, and it is \"to change\". Who decided is omitted in this statement.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3136,33 +3632,40 @@
         "会社の規則の改正について",
         "結果だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "社長が会見した。",
+          "labelEn": "社長が会見した。 (President met.)"
+        },
+        {
+          "id": "b",
+          "label": "規則が来月から変わる。",
+          "labelEn": "規則が来月から変わる。 (The rules change.)"
+        },
+        {
+          "id": "c",
+          "label": "人事が説明会を開いた。",
+          "labelEn": "人事が説明会を開いた。 (Human Resources Opened Briefing)"
+        },
+        {
+          "id": "d",
+          "label": "書類を配った。",
+          "labelEn": "書類を配った。 (I gave a document.)"
+        }
+      ]
     },
     {
       "id": "td_075",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you switched the meeting from offline to online.",
+      "promptEn": "Choose the best sentence: you switched the meeting from offline to online.",
       "japanese": "都合で会合をオンラインに切り替えた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "会合がオンラインに変わった。"
-        },
-        {
-          "id": "b",
-          "label": "会合をオンラインに変えた。"
-        },
-        {
-          "id": "c",
-          "label": "会合がオンラインを変えた。"
-        },
-        {
-          "id": "d",
-          "label": "会合をオンラインが変わった。"
-        }
-      ],
+      "japaneseEn": "I switched the meeting online for convenience. What is natural?",
       "correctAnswerId": "b",
       "explanation": "開催形式を変えるのは他動詞「変える」に「会合を」。「変わった」は自動詞で誰の判断かは曖昧。",
+      "explanationEn": "\"Meeting\" to \"Change\" other詞s to change the format. \"Change\" is ambiguous to who judges with auto-verbs.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3178,33 +3681,40 @@
         "都合で会合をオンラインに切り替えた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "会合がオンラインに変わった。",
+          "labelEn": "会合がオンラインに変わった。 (Meeting has changed online.)"
+        },
+        {
+          "id": "b",
+          "label": "会合をオンラインに変えた。",
+          "labelEn": "会合をオンラインに変えた。 (Changed the meeting online.)"
+        },
+        {
+          "id": "c",
+          "label": "会合がオンラインを変えた。",
+          "labelEn": "会合がオンラインを変えた。 (The meeting changed online.)"
+        },
+        {
+          "id": "d",
+          "label": "会合をオンラインが変わった。",
+          "labelEn": "会合をオンラインが変わった。 (Online meetings have changed.)"
+        }
+      ]
     },
     {
       "id": "td_076",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for a package arriving at your door (delivery completed).",
+      "promptEn": "Choose the sentence for a package arriving at your door (delivery completed).",
       "japanese": "荷物が家に到着した。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "荷物を家に届いた。"
-        },
-        {
-          "id": "b",
-          "label": "荷物が家に届いた。"
-        },
-        {
-          "id": "c",
-          "label": "荷物を家が届いた。"
-        },
-        {
-          "id": "d",
-          "label": "荷物が家を届けた。"
-        }
-      ],
+      "japaneseEn": "I arrived at home. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「届く」は自動詞で、届いたものに「が」。「届ける」は他動詞で届ける人の操作。",
+      "explanationEn": "\"Reaching\" is an auto-verb, and it's delivered. \"Deliver\" is the operation of the person who sends it with other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3220,33 +3730,40 @@
         "荷物が家に到着した",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "荷物を家に届いた。",
+          "labelEn": "荷物を家に届いた。 (I arrived at my house.)"
+        },
+        {
+          "id": "b",
+          "label": "荷物が家に届いた。",
+          "labelEn": "荷物が家に届いた。 (I arrived at my house.)"
+        },
+        {
+          "id": "c",
+          "label": "荷物を家が届いた。",
+          "labelEn": "荷物を家が届いた。 (I received my luggage.)"
+        },
+        {
+          "id": "d",
+          "label": "荷物が家を届けた。",
+          "labelEn": "荷物が家を届けた。 (Your luggage delivered home.)"
+        }
+      ]
     },
     {
       "id": "td_077",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for taking a cake to a friend’s house as a gift.",
+      "promptEn": "Choose the sentence for taking a cake to a friend’s house as a gift.",
       "japanese": "友だちの家へケーキを持って行って渡す。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ケーキが友だちの家に届いた。"
-        },
-        {
-          "id": "b",
-          "label": "ケーキを友だちの家に届けた。"
-        },
-        {
-          "id": "c",
-          "label": "ケーキが友だちの家に届けた。"
-        },
-        {
-          "id": "d",
-          "label": "ケーキを友だちの家が届いた。"
-        }
-      ],
+      "japaneseEn": "Bring the cake to the friend's house. What is natural?",
       "correctAnswerId": "b",
       "explanation": "人が届けるなら他動詞「届ける」に「ケーキを」。「届いた」は自動詞で配達が完了した側の描写。",
+      "explanationEn": "“Cake” to “Deliver” other詞s if people send. \"Reached\" is the button on the side where the delivery is completed with an automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3262,33 +3779,40 @@
         "友だちの家へケーキを持って行って渡す",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ケーキが友だちの家に届いた。",
+          "labelEn": "ケーキが友だちの家に届いた。 (The cake arrived at the friend's house.)"
+        },
+        {
+          "id": "b",
+          "label": "ケーキを友だちの家に届けた。",
+          "labelEn": "ケーキを友だちの家に届けた。 (The cake was delivered to the friend's house.)"
+        },
+        {
+          "id": "c",
+          "label": "ケーキが友だちの家に届けた。",
+          "labelEn": "ケーキが友だちの家に届けた。 (The cake was delivered to the friend's house.)"
+        },
+        {
+          "id": "d",
+          "label": "ケーキを友だちの家が届いた。",
+          "labelEn": "ケーキを友だちの家が届いた。 (I received a friend's house.)"
+        }
+      ]
     },
     {
       "id": "td_078",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for submitting homework?",
+      "promptEn": "Which uses を with the transitive verb for submitting homework?",
       "japanese": "締め切りまでに課題を出す。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "課題が先生に届けた。"
-        },
-        {
-          "id": "b",
-          "label": "課題を先生に届けた。"
-        },
-        {
-          "id": "c",
-          "label": "課題を先生が届いた。"
-        },
-        {
-          "id": "d",
-          "label": "課題が先生に届いた。"
-        }
-      ],
+      "japaneseEn": "Make a challenge to your business. Which is right?",
       "correctAnswerId": "b",
       "explanation": "提出する操作は他動詞「届ける」に「課題を」。先生のもとに届いた結果なら「課題が届いた」で自動詞。",
+      "explanationEn": "Submitted actions are \"deliver\" to other詞s. If the result received by the teacher, it is an auto-verb with \"the problem arrived\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3304,33 +3828,40 @@
         "締め切りまでに課題を出す",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "課題が先生に届けた。",
+          "labelEn": "課題が先生に届けた。 (The challenge was delivered to the teacher.)"
+        },
+        {
+          "id": "b",
+          "label": "課題を先生に届けた。",
+          "labelEn": "課題を先生に届けた。 (Delivered the challenge to the teacher.)"
+        },
+        {
+          "id": "c",
+          "label": "課題を先生が届いた。",
+          "labelEn": "課題を先生が届いた。 (The teacher delivered the issue.)"
+        },
+        {
+          "id": "d",
+          "label": "課題が先生に届いた。",
+          "labelEn": "課題が先生に届いた。 (I reached the teacher.)"
+        }
+      ]
     },
     {
       "id": "td_079",
       "type": "multipleChoice",
       "prompt": "Which sentence describes mail arriving without naming the carrier in that clause?",
+      "promptEn": "Which sentence describes mail arriving without naming the carrier in that clause?",
       "japanese": "ポストを開けたら手紙が来ていた。変化だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "配達員が玄関に来た。"
-        },
-        {
-          "id": "b",
-          "label": "手紙が今朝届いていた。"
-        },
-        {
-          "id": "c",
-          "label": "私が封筒を開けた。"
-        },
-        {
-          "id": "d",
-          "label": "郵便局が休みだった。"
-        }
-      ],
+      "japaneseEn": "A letter came when I opened the post. What is the change?",
       "correctAnswerId": "b",
       "explanation": "「届く」は自動詞で、届いたものに「が」。配達員はこの文に出てこない。",
+      "explanationEn": "\"Reaching\" is an auto-verb, and it's delivered. The delivery person does not appear in this statement.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3346,33 +3877,40 @@
         "ポストを開けたら手紙が来ていた",
         "変化だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "配達員が玄関に来た。",
+          "labelEn": "配達員が玄関に来た。 (Delivery staff came to the entrance.)"
+        },
+        {
+          "id": "b",
+          "label": "手紙が今朝届いていた。",
+          "labelEn": "手紙が今朝届いていた。 (The letter arrived in the morning.)"
+        },
+        {
+          "id": "c",
+          "label": "私が封筒を開けた。",
+          "labelEn": "私が封筒を開けた。 (I opened an envel。.)"
+        },
+        {
+          "id": "d",
+          "label": "郵便局が休みだった。",
+          "labelEn": "郵便局が休みだった。 (Post office was closed.)"
+        }
+      ]
     },
     {
       "id": "td_080",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you handed documents to the clerk at the counter.",
+      "promptEn": "Choose the best sentence: you handed documents to the clerk at the counter.",
       "japanese": "窓口で書類を係に渡した。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "書類が係に届いた。"
-        },
-        {
-          "id": "b",
-          "label": "書類を係に届けた。"
-        },
-        {
-          "id": "c",
-          "label": "書類が係を届けた。"
-        },
-        {
-          "id": "d",
-          "label": "書類を係が届いた。"
-        }
-      ],
+      "japaneseEn": "I passed the document to the office. What is natural?",
       "correctAnswerId": "b",
       "explanation": "手渡しで届けるのは他動詞「届ける」に「書類を」。「届いた」は自動詞でいつ届いたか不明確。",
+      "explanationEn": "\"Documents\" to \"deliver\" other詞s that can be delivered by hand. \"Reached\" is unclear when it arrives with an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3388,33 +3926,40 @@
         "窓口で書類を係に渡した",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "書類が係に届いた。",
+          "labelEn": "書類が係に届いた。 (The document arrived.)"
+        },
+        {
+          "id": "b",
+          "label": "書類を係に届けた。",
+          "labelEn": "書類を係に届けた。 (Delivered documents to the staff.)"
+        },
+        {
+          "id": "c",
+          "label": "書類が係を届けた。",
+          "labelEn": "書類が係を届けた。 (The document was delivered.)"
+        },
+        {
+          "id": "d",
+          "label": "書類を係が届いた。",
+          "labelEn": "書類を係が届いた。 (I received a document.)"
+        }
+      ]
     },
     {
       "id": "td_081",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for you returning to your seat after a break (motion back).",
+      "promptEn": "Choose the sentence for you returning to your seat after a break (motion back).",
       "japanese": "休憩のあと席に戻る。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "席を戻った。"
-        },
-        {
-          "id": "b",
-          "label": "席に戻った。"
-        },
-        {
-          "id": "c",
-          "label": "席を戻した。"
-        },
-        {
-          "id": "d",
-          "label": "席が戻った。"
-        }
-      ],
+      "japaneseEn": "Back to the seat after a break. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「戻る」は自動詞で、移動する人に「が」（省略）と場所に「に」。「戻す」は他動詞で物や状態を元に戻す。",
+      "explanationEn": "\"Back\" is an auto-verb, and \"to\" to the person who is moving. \"Revert\" is another詞 to restore objects and state.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3430,33 +3975,40 @@
         "休憩のあと席に戻る",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "席を戻った。",
+          "labelEn": "席を戻った。 (I returned the seat.)"
+        },
+        {
+          "id": "b",
+          "label": "席に戻った。",
+          "labelEn": "席に戻った。 (Restaurant)"
+        },
+        {
+          "id": "c",
+          "label": "席を戻した。",
+          "labelEn": "席を戻した。 (I returned the seat.)"
+        },
+        {
+          "id": "d",
+          "label": "席が戻った。",
+          "labelEn": "席が戻った。 (The seat was returned.)"
+        }
+      ]
     },
     {
       "id": "td_082",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for turning the clock hand back one hour (you move it).",
+      "promptEn": "Choose the sentence for turning the clock hand back one hour (you move it).",
       "japanese": "時計の針を一時間戻す。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "針が一時間戻った。"
-        },
-        {
-          "id": "b",
-          "label": "針を一時間戻した。"
-        },
-        {
-          "id": "c",
-          "label": "針が一時間戻した。"
-        },
-        {
-          "id": "d",
-          "label": "針を一時間戻った。"
-        }
-      ],
+      "japaneseEn": "Returns the clock needle for an hour. What is natural?",
       "correctAnswerId": "b",
       "explanation": "針を操作して戻すのは他動詞「戻す」に「を」。「戻る」は自動詞で針が勝手に戻る印象。",
+      "explanationEn": "\"Revert\" to other詞s. \"Back\" is an impression that the needle returns to win with an automatic lyrics.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3472,33 +4024,40 @@
         "時計の針を一時間戻す",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "針が一時間戻った。",
+          "labelEn": "針が一時間戻った。 (The needle returned for an hour.)"
+        },
+        {
+          "id": "b",
+          "label": "針を一時間戻した。",
+          "labelEn": "針を一時間戻した。 (Back the needle for an hour.)"
+        },
+        {
+          "id": "c",
+          "label": "針が一時間戻した。",
+          "labelEn": "針が一時間戻した。 (The needle returned for an hour.)"
+        },
+        {
+          "id": "d",
+          "label": "針を一時間戻った。",
+          "labelEn": "針を一時間戻った。 (I returned the needle for an hour.)"
+        }
+      ]
     },
     {
       "id": "td_083",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for restoring a setting?",
+      "promptEn": "Which uses を with the transitive verb for restoring a setting?",
       "japanese": "アプリの設定を初期状態に戻す。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "設定を初期値に戻した。"
-        },
-        {
-          "id": "b",
-          "label": "設定が初期値に戻した。"
-        },
-        {
-          "id": "c",
-          "label": "設定を初期値が戻った。"
-        },
-        {
-          "id": "d",
-          "label": "設定が初期値に戻った。"
-        }
-      ],
+      "japaneseEn": "Back app settings to initial state. Which is right?",
       "correctAnswerId": "a",
       "explanation": "人が戻す操作は他動詞「戻す」に「設定を」。勝手に戻ったなら「設定が戻った」で自動詞。",
+      "explanationEn": "\"Setting\" to \"Revert\" the other詞. If you want to win the game, you can set it back.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3514,33 +4073,40 @@
         "アプリの設定を初期状態に戻す",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "設定を初期値に戻した。",
+          "labelEn": "設定を初期値に戻した。 (Set to initial value.)"
+        },
+        {
+          "id": "b",
+          "label": "設定が初期値に戻した。",
+          "labelEn": "設定が初期値に戻した。 (The setting returned to the initial value.)"
+        },
+        {
+          "id": "c",
+          "label": "設定を初期値が戻った。",
+          "labelEn": "設定を初期値が戻った。 (Back to the initial value.)"
+        },
+        {
+          "id": "d",
+          "label": "設定が初期値に戻った。",
+          "labelEn": "設定が初期値に戻った。 (The setting is displayed in the initial value.)"
+        }
+      ]
     },
     {
       "id": "td_084",
       "type": "multipleChoice",
       "prompt": "Which sentence describes the temperature going back down without naming who adjusted the AC?",
+      "promptEn": "Which sentence describes the temperature going back down without naming who adjusted the AC?",
       "japanese": "部屋が涼しくなった。変化だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "私がリモコンを持った。"
-        },
-        {
-          "id": "b",
-          "label": "気温が夜に戻った。"
-        },
-        {
-          "id": "c",
-          "label": "窓を開けた。"
-        },
-        {
-          "id": "d",
-          "label": "エンジニアが点検した。"
-        }
-      ],
+      "japaneseEn": "The room was cool. What is the change?",
       "correctAnswerId": "b",
       "explanation": "「戻る」は自動詞で、戻った状態に「が」。ここでは気温の変化に使う。",
+      "explanationEn": "\"Back\" is an auto-verb, and it is returned. This is used for changing temperatures.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3556,33 +4122,40 @@
         "部屋が涼しくなった",
         "変化だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "私がリモコンを持った。",
+          "labelEn": "私がリモコンを持った。 (I have a remote control.)"
+        },
+        {
+          "id": "b",
+          "label": "気温が夜に戻った。",
+          "labelEn": "気温が夜に戻った。 ()"
+        },
+        {
+          "id": "c",
+          "label": "窓を開けた。",
+          "labelEn": "窓を開けた。 (Opened the window.)"
+        },
+        {
+          "id": "d",
+          "label": "エンジニアが点検した。",
+          "labelEn": "エンジニアが点検した。 (Engineer checked.)"
+        }
+      ]
     },
     {
       "id": "td_085",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you put the book back on the shelf after reading.",
+      "promptEn": "Choose the best sentence: you put the book back on the shelf after reading.",
       "japanese": "読み終えて本を元の位置に戻す。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "本が棚に戻った。"
-        },
-        {
-          "id": "b",
-          "label": "本を棚に戻した。"
-        },
-        {
-          "id": "c",
-          "label": "本が棚を戻した。"
-        },
-        {
-          "id": "d",
-          "label": "本を棚が戻った。"
-        }
-      ],
+      "japaneseEn": "Return the book to the original position after reading. What is natural?",
       "correctAnswerId": "b",
       "explanation": "元の場所へ戻す操作は他動詞「戻す」に「本を」。「戻った」は自動詞で本が一人で動いたようになる。",
+      "explanationEn": "Return to the original location is \"Book\" to \"Revert\". \"Reverted\" is an auto-verb that動 the book to move alone.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3598,33 +4171,40 @@
         "読み終えて本を元の位置に戻す",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本が棚に戻った。",
+          "labelEn": "本が棚に戻った。 (Books on the shelf)"
+        },
+        {
+          "id": "b",
+          "label": "本を棚に戻した。",
+          "labelEn": "本を棚に戻した。 (Back to the shelf.)"
+        },
+        {
+          "id": "c",
+          "label": "本が棚を戻した。",
+          "labelEn": "本が棚を戻した。 (The book was back.)"
+        },
+        {
+          "id": "d",
+          "label": "本を棚が戻った。",
+          "labelEn": "本を棚が戻った。 (The book was back.)"
+        }
+      ]
     },
     {
       "id": "td_086",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for sales increasing last quarter (numbers went up).",
+      "promptEn": "Choose the sentence for sales increasing last quarter (numbers went up).",
       "japanese": "売上の数字が上がった。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "売上を去年より増えた。"
-        },
-        {
-          "id": "b",
-          "label": "売上が去年より増えた。"
-        },
-        {
-          "id": "c",
-          "label": "売上を去年より増やした。"
-        },
-        {
-          "id": "d",
-          "label": "売上が去年より増やした。"
-        }
-      ],
+      "japaneseEn": "The number of sales increased. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「増える」は自動詞で、増えた量に「が」。「増やす」は他動詞で人が増やす。",
+      "explanationEn": "\"。\" is an auto-verb, and \"。\" to the affected amount. \"Increase\" can be increased by other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3640,33 +4220,40 @@
         "売上の数字が上がった",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "売上を去年より増えた。",
+          "labelEn": "売上を去年より増えた。 (Sales increased from last year.)"
+        },
+        {
+          "id": "b",
+          "label": "売上が去年より増えた。",
+          "labelEn": "売上が去年より増えた。 (Sales increased from last year.)"
+        },
+        {
+          "id": "c",
+          "label": "売上を去年より増やした。",
+          "labelEn": "売上を去年より増やした。 (Increased sales from last year.)"
+        },
+        {
+          "id": "d",
+          "label": "売上が去年より増やした。",
+          "labelEn": "売上が去年より増やした。 (Sales increased from last year.)"
+        }
+      ]
     },
     {
       "id": "td_087",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the city increasing bus services on purpose.",
+      "promptEn": "Choose the sentence for the city increasing bus services on purpose.",
       "japanese": "市が路線バスの本数をふやした。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "バスの本数が増えた。"
-        },
-        {
-          "id": "b",
-          "label": "バスの本数を増やした。"
-        },
-        {
-          "id": "c",
-          "label": "バスの本数が増やした。"
-        },
-        {
-          "id": "d",
-          "label": "バスの本数を増えた。"
-        }
-      ],
+      "japaneseEn": "The number of buses to the city. What is natural?",
       "correctAnswerId": "b",
       "explanation": "主体が本数を調整するなら他動詞「増やす」に「本数を」。「増えた」は自動詞で自然増を連想。",
+      "explanationEn": "If the 詞 adjusts the number, \"Number\" to \"increase\" other詞. \"I was\" is an autonomy of natural increase.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3682,33 +4269,40 @@
         "市が路線バスの本数をふやした",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "バスの本数が増えた。",
+          "labelEn": "バスの本数が増えた。 (The number of buses increased.)"
+        },
+        {
+          "id": "b",
+          "label": "バスの本数を増やした。",
+          "labelEn": "バスの本数を増やした。 (The number of buses increased.)"
+        },
+        {
+          "id": "c",
+          "label": "バスの本数が増やした。",
+          "labelEn": "バスの本数が増やした。 (The number of buses increased.)"
+        },
+        {
+          "id": "d",
+          "label": "バスの本数を増えた。",
+          "labelEn": "バスの本数を増えた。 (The number of buses increased.)"
+        }
+      ]
     },
     {
       "id": "td_088",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for adding milk to coffee?",
+      "promptEn": "Which uses を with the transitive verb for adding milk to coffee?",
       "japanese": "コーヒーにミルクを入れる量の調整。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ミルクが少し増えた。"
-        },
-        {
-          "id": "b",
-          "label": "ミルクを少し増やした。"
-        },
-        {
-          "id": "c",
-          "label": "ミルクが少し増やした。"
-        },
-        {
-          "id": "d",
-          "label": "ミルクを少し増えた。"
-        }
-      ],
+      "japaneseEn": "the amount of milk in the coffee. Which is right?",
       "correctAnswerId": "b",
       "explanation": "量を増やす操作は他動詞「増やす」に「ミルクを」。勝手に増えたなら「増えた」で自動詞。",
+      "explanationEn": "\"Milk\" to \"increase\" other詞s. If you want to know it, you can use it as an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3724,33 +4318,40 @@
         "コーヒーにミルクを入れる量の調整",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ミルクが少し増えた。",
+          "labelEn": "ミルクが少し増えた。 (I had a little milk.)"
+        },
+        {
+          "id": "b",
+          "label": "ミルクを少し増やした。",
+          "labelEn": "ミルクを少し増やした。 (A little more milk.)"
+        },
+        {
+          "id": "c",
+          "label": "ミルクが少し増やした。",
+          "labelEn": "ミルクが少し増やした。 (The milk gradually increased.)"
+        },
+        {
+          "id": "d",
+          "label": "ミルクを少し増えた。",
+          "labelEn": "ミルクを少し増えた。 (A little bit of milk.)"
+        }
+      ]
     },
     {
       "id": "td_089",
       "type": "multipleChoice",
       "prompt": "Which sentence describes weight going up without naming diet or exercise in that clause?",
+      "promptEn": "Which sentence describes weight going up without naming diet or exercise in that clause?",
       "japanese": "健康診断の結果だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "医者が説明した。"
-        },
-        {
-          "id": "b",
-          "label": "体重が前より増えている。"
-        },
-        {
-          "id": "c",
-          "label": "病院に行った。"
-        },
-        {
-          "id": "d",
-          "label": "食事を変えた。"
-        }
-      ],
+      "japaneseEn": "Which is the result of a medical examination?",
       "correctAnswerId": "b",
       "explanation": "「増える」は自動詞で、増えた値に「が」。原因は別に書ける。",
+      "explanationEn": "\"。\" is an auto-verb, \"is\" to the affected value. Cause can be written separately.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3765,33 +4366,40 @@
       "vocabulary": [
         "健康診断の結果だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "医者が説明した。",
+          "labelEn": "医者が説明した。 (The doctor explained.)"
+        },
+        {
+          "id": "b",
+          "label": "体重が前より増えている。",
+          "labelEn": "体重が前より増えている。 (Body weight is increasing.)"
+        },
+        {
+          "id": "c",
+          "label": "病院に行った。",
+          "labelEn": "病院に行った。 (Hospital)"
+        },
+        {
+          "id": "d",
+          "label": "食事を変えた。",
+          "labelEn": "食事を変えた。 (I changed my meal.)"
+        }
+      ]
     },
     {
       "id": "td_090",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: the shop increased sale items for the weekend event.",
+      "promptEn": "Choose the best sentence: the shop increased sale items for the weekend event.",
       "japanese": "週末セールのために店が品数を増やした。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "品数が思い切り増えた。"
-        },
-        {
-          "id": "b",
-          "label": "品数を思い切り増やした。"
-        },
-        {
-          "id": "c",
-          "label": "品数が思い切り増やした。"
-        },
-        {
-          "id": "d",
-          "label": "品数を思い切り増えた。"
-        }
-      ],
+      "japaneseEn": "The number of items increased for weekend sale. What is natural?",
       "correctAnswerId": "b",
       "explanation": "店側が陳列量を増やす操作は他動詞「増やす」に「品数を」。「増えた」は自動詞で、だれの施策かははっきりしない。",
+      "explanationEn": "The number of items to \"increase\" of other詞s is the operation that the store side increases the display volume. It is an auto-verb, and it is not clear who measures are.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3807,33 +4415,40 @@
         "週末セールのために店が品数を増やした",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "品数が思い切り増えた。",
+          "labelEn": "品数が思い切り増えた。 (I thought of the number of products.)"
+        },
+        {
+          "id": "b",
+          "label": "品数を思い切り増やした。",
+          "labelEn": "品数を思い切り増やした。 (I thought about the number of products.)"
+        },
+        {
+          "id": "c",
+          "label": "品数が思い切り増やした。",
+          "labelEn": "品数が思い切り増やした。 (The number of products increased.)"
+        },
+        {
+          "id": "d",
+          "label": "品数を思い切り増えた。",
+          "labelEn": "品数を思い切り増えた。 (I thought of the number of products.)"
+        }
+      ]
     },
     {
       "id": "td_091",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for water in the bottle decreasing after drinking (amount falls).",
+      "promptEn": "Choose the sentence for water in the bottle decreasing after drinking (amount falls).",
       "japanese": "飲んだあとペットボトルの水が減った。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "水を半分に減った。"
-        },
-        {
-          "id": "b",
-          "label": "水が半分に減った。"
-        },
-        {
-          "id": "c",
-          "label": "水を半分に減らした。"
-        },
-        {
-          "id": "d",
-          "label": "水が半分に減らした。"
-        }
-      ],
+      "japaneseEn": "The water of the PET bottle was reduced after drinking. What is natural?",
       "correctAnswerId": "b",
       "explanation": "「減る」は自動詞で、減ったものに「が」。「減らす」は他動詞で人が減らす。",
+      "explanationEn": "\"Re。\" is an auto-verb, and \"Re。\". \"Re。\" is reduced by other詞s.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3849,33 +4464,40 @@
         "飲んだあとペットボトルの水が減った",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "水を半分に減った。",
+          "labelEn": "水を半分に減った。 (It decreased to half.)"
+        },
+        {
+          "id": "b",
+          "label": "水が半分に減った。",
+          "labelEn": "水が半分に減った。 (Water decreased to half.)"
+        },
+        {
+          "id": "c",
+          "label": "水を半分に減らした。",
+          "labelEn": "水を半分に減らした。 (Reduced to half.)"
+        },
+        {
+          "id": "d",
+          "label": "水が半分に減らした。",
+          "labelEn": "水が半分に減らした。 (Water decreased to half.)"
+        }
+      ]
     },
     {
       "id": "td_092",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for the office reducing copy costs on purpose.",
+      "promptEn": "Choose the sentence for the office reducing copy costs on purpose.",
       "japanese": "会社がコピー代を切り詰めた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "コピー代が先月より減った。"
-        },
-        {
-          "id": "b",
-          "label": "コピー代を先月より減らした。"
-        },
-        {
-          "id": "c",
-          "label": "コピー代が先月より減らした。"
-        },
-        {
-          "id": "d",
-          "label": "コピー代を先月より減った。"
-        }
-      ],
+      "japaneseEn": "The company cut down the copy fee. What is natural?",
       "correctAnswerId": "b",
       "explanation": "経費を意図的に減らすなら他動詞「減らす」に「コピー代を」。「減った」は自動詞。",
+      "explanationEn": "If you deliberately reduce expenses, \"Copy\" to \"Re \". \"Re。\" is an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3891,33 +4513,40 @@
         "会社がコピー代を切り詰めた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コピー代が先月より減った。",
+          "labelEn": "コピー代が先月より減った。 (The copy price decreased from last month.)"
+        },
+        {
+          "id": "b",
+          "label": "コピー代を先月より減らした。",
+          "labelEn": "コピー代を先月より減らした。 (Reduced the copy price from last month.)"
+        },
+        {
+          "id": "c",
+          "label": "コピー代が先月より減らした。",
+          "labelEn": "コピー代が先月より減らした。 (The copy price decreased from last month.)"
+        },
+        {
+          "id": "d",
+          "label": "コピー代を先月より減った。",
+          "labelEn": "コピー代を先月より減った。 (The copy price was reduced from last month.)"
+        }
+      ]
     },
     {
       "id": "td_093",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for cutting sugar intake?",
+      "promptEn": "Which uses を with the transitive verb for cutting sugar intake?",
       "japanese": "健康のため砂糖を減らす。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "砂糖を食事から減らした。"
-        },
-        {
-          "id": "b",
-          "label": "砂糖が食事から減った。"
-        },
-        {
-          "id": "c",
-          "label": "砂糖を食事から減った。"
-        },
-        {
-          "id": "d",
-          "label": "砂糖が食事から減らした。"
-        }
-      ],
+      "japaneseEn": "Reduce sugar for health. Which is right?",
       "correctAnswerId": "a",
       "explanation": "摂取量を減らす操作は他動詞「減らす」に「砂糖を」。自然に減ったなら「砂糖が減った」。",
+      "explanationEn": "The operation to reduce the intake is \"sugar\" to \"re \". If it is natural, \"sugar decreased\".",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -3933,33 +4562,40 @@
         "健康のため砂糖を減らす",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "砂糖を食事から減らした。",
+          "labelEn": "砂糖を食事から減らした。 (Reduced sugar from the diet.)"
+        },
+        {
+          "id": "b",
+          "label": "砂糖が食事から減った。",
+          "labelEn": "砂糖が食事から減った。 (Sugar decreased from the meal.)"
+        },
+        {
+          "id": "c",
+          "label": "砂糖を食事から減った。",
+          "labelEn": "砂糖を食事から減った。 (Reduced sugar from the meal.)"
+        },
+        {
+          "id": "d",
+          "label": "砂糖が食事から減らした。",
+          "labelEn": "砂糖が食事から減らした。 (Sugar decreased from the meal.)"
+        }
+      ]
     },
     {
       "id": "td_094",
       "type": "multipleChoice",
       "prompt": "Which sentence describes the crowd thinning without naming security?",
+      "promptEn": "Which sentence describes the crowd thinning without naming security?",
       "japanese": "イベント終了後、人が少なくなった。変化だけを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "警備員が誘導した。"
-        },
-        {
-          "id": "b",
-          "label": "人がだんだん減っていった。"
-        },
-        {
-          "id": "c",
-          "label": "ステージのライトが消えた。"
-        },
-        {
-          "id": "d",
-          "label": "ゴミ箱がいっぱいだった。"
-        }
-      ],
+      "japaneseEn": "After the event, there were few people. What is the change?",
       "correctAnswerId": "b",
       "explanation": "「減る」は自動詞で、減るものに「が」。",
+      "explanationEn": "\"Re。\" is an auto-verb, and \"Re。\".",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -3976,33 +4612,40 @@
         "人が少なくなった",
         "変化だけを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "警備員が誘導した。",
+          "labelEn": "警備員が誘導した。 (A security guard guided.)"
+        },
+        {
+          "id": "b",
+          "label": "人がだんだん減っていった。",
+          "labelEn": "人がだんだん減っていった。 (Don't have to lose people.)"
+        },
+        {
+          "id": "c",
+          "label": "ステージのライトが消えた。",
+          "labelEn": "ステージのライトが消えた。 (The light of the stage disappeared.)"
+        },
+        {
+          "id": "d",
+          "label": "ゴミ箱がいっぱいだった。",
+          "labelEn": "ゴミ箱がいっぱいだった。 (The trash was full.)"
+        }
+      ]
     },
     {
       "id": "td_095",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: you cut weekly sweets to improve health (reduce amount).",
+      "promptEn": "Choose the best sentence: you cut weekly sweets to improve health (reduce amount).",
       "japanese": "健康のためお菓子の量を週ごとに減らした。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "お菓子の量が週ごとに減らした。"
-        },
-        {
-          "id": "b",
-          "label": "お菓子の量を週ごとに減らした。"
-        },
-        {
-          "id": "c",
-          "label": "お菓子の量が週ごとに減った。"
-        },
-        {
-          "id": "d",
-          "label": "お菓子の量を週ごとに減った。"
-        }
-      ],
+      "japaneseEn": "Reduced the amount of sweets per week for health. What is natural?",
       "correctAnswerId": "b",
       "explanation": "摂取量を意図的に減らすのは他動詞「減らす」に「量を」。「減った」は自動詞で自然減も含む。",
+      "explanationEn": "Intentionally reducing intake is \"re \" to other詞s. \"Re。\" is an auto-verb that contains natural reduction.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -4018,33 +4661,40 @@
         "健康のためお菓子の量を週ごとに減らした",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "お菓子の量が週ごとに減らした。",
+          "labelEn": "お菓子の量が週ごとに減らした。 (Sweets decreased every week.)"
+        },
+        {
+          "id": "b",
+          "label": "お菓子の量を週ごとに減らした。",
+          "labelEn": "お菓子の量を週ごとに減らした。 (Reduced sweets every week.)"
+        },
+        {
+          "id": "c",
+          "label": "お菓子の量が週ごとに減った。",
+          "labelEn": "お菓子の量が週ごとに減った。 (Sweets decreased every week.)"
+        },
+        {
+          "id": "d",
+          "label": "お菓子の量を週ごとに減った。",
+          "labelEn": "お菓子の量を週ごとに減った。 (Reduced sweets every week.)"
+        }
+      ]
     },
     {
       "id": "td_096",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for waking up at six without mentioning who set the alarm.",
+      "promptEn": "Choose the sentence for waking up at six without mentioning who set the alarm.",
       "japanese": "朝六時に目が覚めた。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "六時に目覚ましを起きた。"
-        },
-        {
-          "id": "b",
-          "label": "六時に起きた。"
-        },
-        {
-          "id": "c",
-          "label": "六時を起きた。"
-        },
-        {
-          "id": "d",
-          "label": "六時に起こした。"
-        }
-      ],
+      "japaneseEn": "I   up at 6:00 AM. What is natural?",
       "correctAnswerId": "b",
       "explanation": "目が覚める動きは「起きる」で自動詞。主語は省略されやすいが、朝の起床は「起きた」。",
+      "explanationEn": "An auto-verb with “waking up”. The main word is easy to be omitted, but the morning floor is \" \".",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -4060,33 +4710,40 @@
         "朝六時に目が覚めた",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "六時に目覚ましを起きた。",
+          "labelEn": "六時に目覚ましを起きた。 (At 6 o'clock, you can see the alarm.)"
+        },
+        {
+          "id": "b",
+          "label": "六時に起きた。",
+          "labelEn": "六時に起きた。 (It is held at 6 o'clock.)"
+        },
+        {
+          "id": "c",
+          "label": "六時を起きた。",
+          "labelEn": "六時を起きた。 (6 hours)"
+        },
+        {
+          "id": "d",
+          "label": "六時に起こした。",
+          "labelEn": "六時に起こした。 (6 hours)"
+        }
+      ]
     },
     {
       "id": "td_097",
       "type": "multipleChoice",
       "prompt": "Choose the sentence for a parent waking a child on a school day.",
+      "promptEn": "Choose the sentence for a parent waking a child on a school day.",
       "japanese": "母が子どもを起床させる。自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "子どもが六時に起きた。"
-        },
-        {
-          "id": "b",
-          "label": "子どもを六時に起こした。"
-        },
-        {
-          "id": "c",
-          "label": "子どもが六時に起こした。"
-        },
-        {
-          "id": "d",
-          "label": "子どもを六時に起きた。"
-        }
-      ],
+      "japaneseEn": "Mother raises children. What is natural?",
       "correctAnswerId": "b",
       "explanation": "他動詞「起こす」は起こす対象に「を」。「起きる」は自動詞で子どもが自分で起きたように聞こえる。",
+      "explanationEn": "Other s \"起こing\" is the subject to occur. “起き up” is an auto-verb that sounds like a child can teach himself.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -4102,33 +4759,40 @@
         "母が子どもを起床させる",
         "自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "子どもが六時に起きた。",
+          "labelEn": "子どもが六時に起きた。 (Children are welcome.)"
+        },
+        {
+          "id": "b",
+          "label": "子どもを六時に起こした。",
+          "labelEn": "子どもを六時に起こした。 (The child occurred at six times.)"
+        },
+        {
+          "id": "c",
+          "label": "子どもが六時に起こした。",
+          "labelEn": "子どもが六時に起こした。 (The child occurred at six times.)"
+        },
+        {
+          "id": "d",
+          "label": "子どもを六時に起きた。",
+          "labelEn": "子どもを六時に起きた。 (I will teach children at 6pm.)"
+        }
+      ]
     },
     {
       "id": "td_098",
       "type": "multipleChoice",
       "prompt": "Which uses を with the transitive verb for shaking someone awake?",
+      "promptEn": "Which uses を with the transitive verb for shaking someone awake?",
       "japanese": "寝過ごしそうな友だちを揺すって起こす。正しいのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "友だちの肩を揺さぶって起こした。"
-        },
-        {
-          "id": "b",
-          "label": "友だちが肩を揺さぶって起こした。"
-        },
-        {
-          "id": "c",
-          "label": "友だちの肩を揺さぶって起きた。"
-        },
-        {
-          "id": "d",
-          "label": "友だちが肩を揺さぶって起きた。"
-        }
-      ],
+      "japaneseEn": "I'm going to sway my friend. Which is right?",
       "correctAnswerId": "a",
       "explanation": "相手を眠りから覚ますのは他動詞「起こす」。ここでは「起こした」が述語で他動詞。自分が起きるなら自動詞「起きる」。",
+      "explanationEn": "You can   up from sleeping on another詞. Here is another語 in the predicate \"was happen\". If you get up, you will get an auto-verb.",
       "diagnosticTags": [
         "transitivity",
         "tadoushi",
@@ -4144,33 +4808,40 @@
         "寝過ごしそうな友だちを揺すって起こす",
         "正しいのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "友だちの肩を揺さぶって起こした。",
+          "labelEn": "友だちの肩を揺さぶって起こした。 (I起こed my friend's shoulder.)"
+        },
+        {
+          "id": "b",
+          "label": "友だちが肩を揺さぶって起こした。",
+          "labelEn": "友だちが肩を揺さぶって起こした。 (My friend起こed my shoulder.)"
+        },
+        {
+          "id": "c",
+          "label": "友だちの肩を揺さぶって起きた。",
+          "labelEn": "友だちの肩を揺さぶって起きた。 (Let's shake the shoulder of your friend.)"
+        },
+        {
+          "id": "d",
+          "label": "友だちが肩を揺さぶって起きた。",
+          "labelEn": "友だちが肩を揺さぶって起きた。 (The friend shakes the shoulder.)"
+        }
+      ]
     },
     {
       "id": "td_099",
       "type": "multipleChoice",
       "prompt": "Which sentence describes an incident occurring without naming who caused it in that clause?",
+      "promptEn": "Which sentence describes an incident occurring without naming who caused it in that clause?",
       "japanese": "ニュースの見出しだけで出来事が発生したことを言うのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "記者が現場にいた。"
-        },
-        {
-          "id": "b",
-          "label": "事故が今朝起きた。"
-        },
-        {
-          "id": "c",
-          "label": "警察が調べた。"
-        },
-        {
-          "id": "d",
-          "label": "道路が混んでいた。"
-        }
-      ],
+      "japaneseEn": "What happens with the news heading?",
       "correctAnswerId": "b",
       "explanation": "「起きる」は自動詞で、起きた出来事に「が」。原因は別の文で述べる。",
+      "explanationEn": "\"A。\" is an auto-verb, and \"A。\" is a recent event. The cause is described in another statement.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -4185,33 +4856,40 @@
       "vocabulary": [
         "ニュースの見出しだけで出来事が発生したことを言うのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "記者が現場にいた。",
+          "labelEn": "記者が現場にいた。 (The reporter was in the field.)"
+        },
+        {
+          "id": "b",
+          "label": "事故が今朝起きた。",
+          "labelEn": "事故が今朝起きた。 (Accidents are held this morning.)"
+        },
+        {
+          "id": "c",
+          "label": "警察が調べた。",
+          "labelEn": "警察が調べた。 (Police examined.)"
+        },
+        {
+          "id": "d",
+          "label": "道路が混んでいた。",
+          "labelEn": "道路が混んでいた。 (The road was .)"
+        }
+      ]
     },
     {
       "id": "td_100",
       "type": "multipleChoice",
       "prompt": "Choose the best sentence: a serious incident occurred at the site (news-style, event only).",
+      "promptEn": "Choose the best sentence: a serious incident occurred at the site (news-style, event only).",
       "japanese": "現場で重大な事態が発生したと報じる。出来事の発生だけを言うのに自然なのはどれ？",
-      "choices": [
-        {
-          "id": "a",
-          "label": "現場で重大な事態を起きた。"
-        },
-        {
-          "id": "b",
-          "label": "現場で重大な事態が起きた。"
-        },
-        {
-          "id": "c",
-          "label": "現場で重大な事態を起こした。"
-        },
-        {
-          "id": "d",
-          "label": "現場で重大な事態が起こした。"
-        }
-      ],
+      "japaneseEn": "It is reported that a serious situation occurred in the field. Which is natural to say only the occurrence of events?",
       "correctAnswerId": "b",
       "explanation": "出来事が生じるのは自動詞「起きる」で、事態に「が」。「起こす」は他動詞で、だれかが起こす／引き起こす操作を連想する。",
+      "explanationEn": "When an event occurs, it is an auto-verb “was up” and “was up”. \"起こ\" is another詞, which reminds us of the actions that someone causes and causes.",
       "diagnosticTags": [
         "transitivity",
         "jidoushi",
@@ -4227,7 +4905,29 @@
         "現場で重大な事態が発生したと報じる",
         "出来事の発生だけを言うのに自然なのはどれ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "現場で重大な事態を起きた。",
+          "labelEn": "現場で重大な事態を起きた。 (You can see serious situations in the field.)"
+        },
+        {
+          "id": "b",
+          "label": "現場で重大な事態が起きた。",
+          "labelEn": "現場で重大な事態が起きた。 (There are serious situations in the field.)"
+        },
+        {
+          "id": "c",
+          "label": "現場で重大な事態を起こした。",
+          "labelEn": "現場で重大な事態を起こした。 (A serious situation occurred in the field.)"
+        },
+        {
+          "id": "d",
+          "label": "現場で重大な事態が起こした。",
+          "labelEn": "現場で重大な事態が起こした。 (A serious situation occurred in the field.)"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,56 @@
+name: content-publish
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data-src/**"
+      - "assets/quiz_banks/**"
+      - "assets/dictionary/**"
+      - "tool/**"
+      - "scripts/**"
+      - "lib/services/quiz_bank_loader.dart"
+      - "lib/services/japanese_dictionary_service.dart"
+      - "Makefile"
+      - "pubspec.yaml"
+      - ".github/workflows/content-*.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: python -m pip install --upgrade pip pyarrow
+
+      - name: Install Dart/Flutter packages
+        run: flutter pub get
+
+      - name: Build and validate content
+        run: make content-build
+
+      - name: Archive compiled content
+        run: tar -czf compiled-content.tar.gz -C assets compiled
+
+      - name: Publish github artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-content
+          path: compiled-content.tar.gz

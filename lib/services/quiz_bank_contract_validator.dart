@@ -163,6 +163,62 @@ List<QuizBankContractIssue> validateQuizBankContract(Quiz quiz) {
       );
     }
 
+    if (question.promptEn.trim().isEmpty) {
+      issues.add(
+        QuizBankContractIssue(
+          quizId: qid,
+          questionId: id,
+          field: 'promptEn',
+          reason: 'promptEn is empty or whitespace only',
+        ),
+      );
+    }
+    if (question.japaneseEn.trim().isEmpty) {
+      issues.add(
+        QuizBankContractIssue(
+          quizId: qid,
+          questionId: id,
+          field: 'japaneseEn',
+          reason: 'japaneseEn is empty or whitespace only',
+        ),
+      );
+    }
+    if (question.explanationEn.trim().isEmpty) {
+      issues.add(
+        QuizBankContractIssue(
+          quizId: qid,
+          questionId: id,
+          field: 'explanationEn',
+          reason: 'explanationEn is empty or whitespace only',
+        ),
+      );
+    }
+
+    final qContext = question.context;
+    if (qContext != null && qContext.trim().isNotEmpty) {
+      final cEn = question.contextEn;
+      if (cEn == null || cEn.trim().isEmpty) {
+        issues.add(
+          QuizBankContractIssue(
+            quizId: qid,
+            questionId: id,
+            field: 'contextEn',
+            reason: 'required when context is non-empty',
+          ),
+        );
+      }
+    } else if (question.contextEn != null &&
+        question.contextEn!.trim().isNotEmpty) {
+      issues.add(
+        QuizBankContractIssue(
+          quizId: qid,
+          questionId: id,
+          field: 'contextEn',
+          reason: 'must be absent or empty when context is null or empty',
+        ),
+      );
+    }
+
     if (question.diagnosticTags.isEmpty) {
       issues.add(
         QuizBankContractIssue(
@@ -208,6 +264,41 @@ List<QuizBankContractIssue> validateQuizBankContract(Quiz quiz) {
             questionId: id,
             field: 'choices[$ci].label',
             reason: 'label is empty or whitespace only',
+          ),
+        );
+      }
+      final len = choice.labelEn?.trim().length ?? 0;
+      if (len == 0) {
+        issues.add(
+          QuizBankContractIssue(
+            quizId: qid,
+            questionId: id,
+            field: 'choices[$ci].labelEn',
+            reason: 'labelEn is required',
+          ),
+        );
+      }
+      final cEx = choice.explanation;
+      if (cEx != null && cEx.trim().isNotEmpty) {
+        if (choice.explanationEn == null ||
+            choice.explanationEn!.trim().isEmpty) {
+          issues.add(
+            QuizBankContractIssue(
+              quizId: qid,
+              questionId: id,
+              field: 'choices[$ci].explanationEn',
+              reason: 'required when explanation is set',
+            ),
+          );
+        }
+      } else if (choice.explanationEn != null &&
+          choice.explanationEn!.trim().isNotEmpty) {
+        issues.add(
+          QuizBankContractIssue(
+            quizId: qid,
+            questionId: id,
+            field: 'choices[$ci].explanationEn',
+            reason: 'unexpected when explanation is empty or null',
           ),
         );
       }

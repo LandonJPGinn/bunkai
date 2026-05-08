@@ -1,6 +1,8 @@
-# Quiz bank JSON authoring guide
+# Quiz bank JSON schema guide
 
-This document describes how to write and review bundled quiz bank files for jpquiz. Each file under `assets/quiz_banks/` is **one** quiz: a single JSON object that the app parses as [`Quiz`](../lib/models/quiz.dart). Questions use [`QuizQuestion`](../lib/models/quiz_question.dart) and answer rows use [`AnswerChoice`](../lib/models/answer_choice.dart).
+This document describes the generated bundled quiz bank JSON shape for jpquiz. Each file under `assets/quiz_banks/` is **one** quiz: a single JSON object that the app parses as [`Quiz`](../lib/models/quiz.dart). Questions use [`QuizQuestion`](../lib/models/quiz_question.dart) and answer rows use [`AnswerChoice`](../lib/models/answer_choice.dart).
+
+Canonical contributor inputs are CSV files under `data-src/` (see [`csv_content_schema.md`](csv_content_schema.md)). JSON files documented here are generated runtime assets.
 
 A formal machine-readable definition lives alongside this guide: [quiz_bank.schema.json](quiz_bank.schema.json) (JSON Schema 2020-12).
 
@@ -34,7 +36,9 @@ The loader maps each asset path to a fixed [`QuizId`](../lib/models/quiz_id.dart
 After parsing, `validateQuizBankContent` in [`lib/services/quiz_bank_validation.dart`](../lib/services/quiz_bank_validation.dart) also enforces:
 
 - Every `questions[].id` is **unique** within the file.
-- `questions[].prompt`, `japanese`, and `explanation` are non-empty after trimming.
+- `questions[].prompt`, `japanese`, `explanation`, `promptEn`, `japaneseEn`, and `explanationEn` are non-empty after trimming.
+- When `questions[].context` is non-empty, `questions[].contextEn` is required (and must be non-empty); when context is absent or empty, `contextEn` must be absent or empty.
+- Every `questions[].choices[]` row has non-empty `labelEn`. If `explanation` is set on a choice, `explanationEn` must be non-empty too; otherwise `explanationEn` must be absent.
 - `questions[].diagnosticTags` is non-empty.
 - `questions[].choices` has **at least two** entries.
 - `questions[].correctAnswerId` equals one of `questions[].choices[].id`.
@@ -62,11 +66,15 @@ Only these strings are valid (they match `QuizId.name` in code):
 | `id` | yes | string | Stable unique id within the bank (see [prefixes](#recommended-question-id-prefixes)). |
 | `type` | yes | string | One of the [question types](#allowed-question-types). |
 | `prompt` | yes | string | Instructions shown above the item (e.g. choose the particle). |
+| `promptEn` | yes | string | English exam-style instructions (paired with `prompt`). |
 | `context` | no | string or `null` | Extra scenario, gloss, or English hint. Use `null` or omit when unused. |
+| `contextEn` | no | string | English counterpart to `context`; **required** (non-empty) when `context` is non-empty. |
 | `japanese` | yes | string | Main Japanese line; blanks may use `___` as in the app today. |
+| `japaneseEn` | yes | string | English gloss or glossed line paired with `japanese`. |
 | `choices` | yes | array | At least two [choice](#choice-object) objects. |
 | `correctAnswerId` | yes | string | Must match exactly one `choices[].id`. |
 | `explanation` | yes | string | Shown after answering; should teach *why*, not only *that* (see [quality rules](#content-quality-rules)). |
+| `explanationEn` | yes | string | Brief English rationale paired with `explanation`. |
 | `diagnosticTags` | yes | array of strings | At least one tag for analytics and recommendations. |
 | `jlptLevel` | no | string | Per-question JLPT band; same allowed values as [JLPT difficulty labels](#jlpt-difficulty-labels). |
 | `difficultyScore` | no | integer | Difficulty from 1 (easier) to 5 (harder). |
@@ -79,7 +87,9 @@ Only these strings are valid (they match `QuizId.name` in code):
 |-------|----------|------|--------|
 | `id` | yes | string | Stable within the question (often `a`, `b`, `c`, `d`). |
 | `label` | yes | string | Surface text of the option (e.g. particle or verb form). |
+| `labelEn` | yes | string | English gloss for the label (e.g. `を (direct object marker)`). |
 | `explanation` | no | string | Short rationale for this distractor or option when helpful. |
+| `explanationEn` | no | string | English rationale; **required** when `explanation` is set. |
 
 ## Allowed question types
 
@@ -134,10 +144,10 @@ Use exactly one of these strings for `difficulty`:
 From the repository root:
 
 ```bash
-dart run tool/export_quiz_banks.dart
+make content-build
 ```
 
-This parses each bank with `Quiz.fromJson`, runs `validateQuizBankContent`, and rewrites formatted JSON. Fix any `QuizBankFormatException` or parse error before committing.
+This generates JSON from CSV, validates with `validateQuizBankContent`, and compiles artifacts. Fix any `QuizBankFormatException` or parse error before committing.
 
 You can also validate a single file against [quiz_bank.schema.json](quiz_bank.schema.json) using any JSON Schema tool (for example VS Code extensions or `ajv`), keeping in mind that **legacy `difficulty` strings** may fail schema until assets are normalized.
 

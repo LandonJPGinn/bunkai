@@ -48,14 +48,36 @@ Segmentation is greedy dictionary lookup, not linguistic analysis. Unknown compo
 
 You can keep [`JapaneseTextLookup`](lib/widgets/japanese_text_lookup.dart) and swap only [`JapaneseTokenizer`](lib/services/japanese_tokenizer.dart) (or enrich [`JapaneseDictionaryService`](lib/services/japanese_dictionary_service.dart) with a remote API) when you add Kuromoji/Sudachi/MeCab-class output or a server dictionary—quiz widgets and JSON banks stay unchanged.
 
-## Quiz content (JSON banks)
+## Community content pipeline (CSV-first)
 
-Core quizzes load from **`assets/quiz_banks/*.json`** (one file per quiz). At startup, [`QuizBankLoader`](lib/services/quiz_bank_loader.dart) reads and validates each file before the UI runs.
+Contributors should edit canonical CSV tables:
 
-To normalize formatting after editing JSON:
+- `data-src/quiz/quizzes.csv`
+- `data-src/quiz/questions.csv`
+- `data-src/quiz/choices.csv`
+- `data-src/wordbank/wordbank.csv`
+
+Then run:
 
 ```bash
-dart run tool/export_quiz_banks.dart
+make content-build
+```
+
+This pipeline:
+- generates runtime JSON assets from CSV,
+- validates quiz + dictionary contracts,
+- compiles Arrow Feather artifacts under `assets/compiled/`.
+
+For schema details, see [`docs/csv_content_schema.md`](docs/csv_content_schema.md).
+
+## Quiz content (generated JSON banks)
+
+Core quizzes load from **`assets/compiled/quiz_banks/*.json`** first (generated compact form), with fallback to **`assets/quiz_banks/*.json`**. At startup, [`QuizBankLoader`](lib/services/quiz_bank_loader.dart) reads and validates each file before the UI runs.
+
+To regenerate JSON from canonical CSV sources:
+
+```bash
+make content-generate
 ```
 
 ## Validate / inspect quiz banks (dev tools)
@@ -77,12 +99,13 @@ dart run scripts/quiz_bank_summary.dart
 ## Add a quiz
 
 1. Add an enum value to [`lib/models/quiz_id.dart`](lib/models/quiz_id.dart). The enum name (camelCase) is the route argument passed when starting a quiz.
-2. Add **`assets/quiz_banks/<snake_case>.json`** with the same shape as an existing bank (root object: `id`, `title`, `subtitle`, `description`, `difficulty`, `diagnosticTags`, `questions`).
+2. Add quiz/question/choice rows in the canonical CSV files under `data-src/quiz/`.
 3. Register the asset path in [`lib/data/bundled_quiz_bank_paths.dart`](lib/data/bundled_quiz_bank_paths.dart) (`kBundledQuizBankAssetPaths`) and append the quiz to [`coreBunkaiPack()`](lib/data/quiz_registry.dart) (or your pack) in display order.
+4. Run `make content-build`.
 
 ## Add a question
 
-Edit the quiz’s JSON file under [`assets/quiz_banks/`](assets/quiz_banks) and append a question object. Keep `choices` ids stable; `correctAnswerId` must match one choice `id`. Use `"type": "multipleChoice"` unless you extend the engine. Run `dart run tool/export_quiz_banks.dart` to validate and pretty-print.
+Edit `data-src/quiz/questions.csv` and `data-src/quiz/choices.csv`. Keep `correct_answer_id` matched to a `choice_id`. Use `type=multipleChoice` unless you extend the engine. Run `make content-build` to regenerate, validate, and compile artifacts.
 
 ## Future roadmap
 

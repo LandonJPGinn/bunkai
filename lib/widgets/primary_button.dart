@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../app/color/oklch.dart';
+
+// OKLCH equivalents of the prior `Color(0xFF0D1118)` / `Color(0xFFFAFAFA)`.
+final Color _onDark = const Oklch(0.1768, 0.0159, 261.52).toColor();
+final Color _onLight = const Oklch(0.9851, 0.000, 89.88).toColor();
+
 Color _onAccentColor(Color background) {
   final luminance = background.computeLuminance();
-  return luminance > 0.45 ? const Color(0xFF0D1118) : const Color(0xFFFAFAFA);
+  return luminance > 0.45 ? _onDark : _onLight;
 }
 
 class PrimaryButton extends StatelessWidget {

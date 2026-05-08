@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../app/color/oklch.dart';
 import '../models/quiz_id.dart';
 
 /// Visual tokens for the home grid poster cards. Extend [topicCardStyles] for new quizzes.
@@ -18,7 +19,7 @@ class TopicCardStyle {
   /// Tag pill text color and highlights.
   final Color accent;
 
-  /// Linear gradient endpoints (HSL-inspired palette).
+  /// Linear gradient endpoints (OKLCH-derived palette).
   final Color bg1;
   final Color bg2;
 
@@ -26,16 +27,14 @@ class TopicCardStyle {
   final double tiltDegrees;
 }
 
-Color _hsl(double h, double s, double l) {
-  return HSLColor.fromAHSL(1.0, h, s / 100.0, l / 100.0).toColor();
-}
+Color _oklch(double l, double c, double h) => Oklch(l, c, h).toColor();
 
 /// Default style when a [QuizId] has no explicit entry.
 final TopicCardStyle topicCardStyleDefault = TopicCardStyle(
   kanji: '語',
-  accent: _hsl(205, 100, 62),
-  bg1: _hsl(205, 92, 58),
-  bg2: _hsl(250, 72, 62),
+  accent: _oklch(0.7248, 0.1541, 244.30),
+  bg1: _oklch(0.6952, 0.1561, 245.05),
+  bg2: _oklch(0.5623, 0.2024, 285.50),
   tiltDegrees: -4,
 );
 
@@ -43,44 +42,44 @@ final TopicCardStyle topicCardStyleDefault = TopicCardStyle(
 final Map<QuizId, TopicCardStyle> topicCardStyles = {
   QuizId.particleForensics: TopicCardStyle(
     kanji: '助',
-    accent: _hsl(8, 100, 65),
-    bg1: _hsl(8, 95, 64),
-    bg2: _hsl(32, 95, 60),
+    accent: _oklch(0.6985, 0.1932, 31.17),
+    bg1: _oklch(0.6902, 0.1895, 31.14),
+    bg2: _oklch(0.7789, 0.1549, 64.71),
     tiltDegrees: -4,
   ),
   QuizId.clauseUntangler: TopicCardStyle(
     kanji: '文',
-    accent: _hsl(36, 100, 58),
-    bg1: _hsl(30, 94, 58),
-    bg2: _hsl(48, 95, 66),
+    accent: _oklch(0.8014, 0.1626, 70.62),
+    bg1: _oklch(0.7569, 0.1610, 60.02),
+    bg2: _oklch(0.8917, 0.1513, 95.02),
     tiltDegrees: 3,
   ),
   QuizId.omissionDetective: TopicCardStyle(
     kanji: '欠',
-    accent: _hsl(24, 58, 56),
-    bg1: _hsl(22, 48, 60),
-    bg2: _hsl(31, 36, 74),
+    accent: _oklch(0.6777, 0.1180, 53.10),
+    bg1: _oklch(0.6933, 0.0907, 50.79),
+    bg2: _oklch(0.8130, 0.0427, 69.04),
     tiltDegrees: -2,
   ),
   QuizId.registerRadar: TopicCardStyle(
     kanji: '敬',
-    accent: _hsl(137, 34, 43),
-    bg1: _hsl(130, 34, 50),
-    bg2: _hsl(154, 38, 68),
+    accent: _oklch(0.6007, 0.1106, 151.04),
+    bg1: _oklch(0.6685, 0.1349, 147.49),
+    bg2: _oklch(0.7967, 0.0744, 165.77),
     tiltDegrees: 4,
   ),
   QuizId.transitivityDuel: TopicCardStyle(
     kanji: '他',
-    accent: _hsl(205, 100, 62),
-    bg1: _hsl(205, 92, 58),
-    bg2: _hsl(250, 72, 62),
+    accent: _oklch(0.7248, 0.1541, 244.30),
+    bg1: _oklch(0.6952, 0.1561, 245.05),
+    bg2: _oklch(0.5623, 0.2024, 285.50),
     tiltDegrees: -3,
   ),
   QuizId.verbConjugation: TopicCardStyle(
     kanji: '活',
-    accent: _hsl(286, 55, 70),
-    bg1: _hsl(285, 42, 59),
-    bg2: _hsl(318, 38, 68),
+    accent: _oklch(0.7226, 0.1367, 318.08),
+    bg1: _oklch(0.6309, 0.1448, 317.27),
+    bg2: _oklch(0.7225, 0.0941, 338.16),
     tiltDegrees: 5,
   ),
 };

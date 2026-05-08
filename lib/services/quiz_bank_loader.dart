@@ -25,6 +25,8 @@ class QuizBankLoader {
 
   /// Generated catalog — metadata only, small JSON for fast first paint.
   static const String _catalogAssetPath = 'assets/quiz_banks/quiz_catalog.json';
+  static const String _compiledCatalogAssetPath =
+      'assets/compiled/quiz_catalog.json';
 
   List<QuizSummary>? _catalog;
   final Map<QuizId, Quiz> _quizzes = {};
@@ -40,18 +42,17 @@ class QuizBankLoader {
   Future<void> ensureCatalogLoaded() async {
     if (_catalogLoaded) return;
 
-    final raw = await rootBundle.loadString(_catalogAssetPath);
+    final raw = await _loadStringWithFallback(
+      preferred: _compiledCatalogAssetPath,
+      fallback: _catalogAssetPath,
+    );
     final decoded = jsonDecode(raw);
     if (decoded is! Map<String, dynamic>) {
-      throw const FormatException(
-        'Quiz catalog: expected root object',
-      );
+      throw const FormatException('Quiz catalog: expected root object');
     }
     final list = decoded['quizzes'];
     if (list is! List) {
-      throw const FormatException(
-        'Quiz catalog: expected "quizzes" array',
-      );
+      throw const FormatException('Quiz catalog: expected "quizzes" array');
     }
 
     _catalog = [
@@ -90,7 +91,10 @@ class QuizBankLoader {
     if (path == null) {
       throw StateError('QuizBankLoader: no asset path for ${id.name}.');
     }
-    final raw = await rootBundle.loadString(path);
+    final raw = await _loadStringWithFallback(
+      preferred: 'assets/compiled/quiz_banks/${id.name}.json',
+      fallback: path,
+    );
     final decoded = jsonDecode(raw);
     if (decoded is! Map<String, dynamic>) {
       throw QuizBankFormatException(
@@ -106,6 +110,17 @@ class QuizBankLoader {
     validateQuizBankContent(quiz);
     _quizzes[id] = quiz;
     return quiz;
+  }
+
+  Future<String> _loadStringWithFallback({
+    required String preferred,
+    required String fallback,
+  }) async {
+    try {
+      return await rootBundle.loadString(preferred);
+    } catch (_) {
+      return rootBundle.loadString(fallback);
+    }
   }
 
   /// Requires [ensureQuizLoaded] (or [loadAllForTests]) for this [id] first.
@@ -160,13 +175,13 @@ class QuizBankLoader {
   }
 
   static QuizSummary _summaryFromQuiz(Quiz q) => QuizSummary(
-        id: q.id,
-        title: q.title,
-        subtitle: q.subtitle,
-        description: q.description,
-        difficulty: q.difficulty,
-        diagnosticTags: q.diagnosticTags,
-      );
+    id: q.id,
+    title: q.title,
+    subtitle: q.subtitle,
+    description: q.description,
+    difficulty: q.difficulty,
+    diagnosticTags: q.diagnosticTags,
+  );
 
   /// For tests: reset loader state.
   void debugReset() {

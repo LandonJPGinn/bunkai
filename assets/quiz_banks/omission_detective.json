@@ -16,32 +16,18 @@
       "id": "od_001",
       "type": "multipleChoice",
       "prompt": "誰がメールを送りましたか。",
+      "promptEn": "Who sent me an email?",
       "japanese": "A: 「田中さんにメールした？」\nB: 「うん、もう送ったよ。」",
-      "context": "友人同士。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "田中さん"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Do you email Mr. Tanaka?\"\nB: “Yes, I sent it again.",
       "correctAnswerId": "b",
       "explanation": "Bが「送った」と答えており、主語は聞き手のB。",
+      "explanationEn": "B answered, and the subject is B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "友人同士。",
+      "contextEn": "Friends",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -53,38 +39,46 @@
         "うん",
         "もう送ったよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "田中さん",
+          "labelEn": "田中さん (Mr. Tanaka)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_002",
       "type": "multipleChoice",
       "prompt": "誰が洗い物をしますか。",
+      "promptEn": "Who washes?",
       "japanese": "A: 「洗い物、私がやるよ。」\nB: 「ありがとう、お願い。」",
-      "context": "家で。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "母"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Wash, I do.  \nB: \"Thank you, please.",
       "correctAnswerId": "a",
       "explanation": "Aが志願して主語はA。Bは感謝しているだけ。",
+      "explanationEn": "A is the subject of A. B is thankful.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "家で。",
+      "contextEn": "Home",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -97,38 +91,46 @@
         "ありがとう",
         "お願い"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_003",
       "type": "multipleChoice",
       "prompt": "誰が会議室を予約しましたか。",
+      "promptEn": "Who booked a meeting room?",
       "japanese": "A: 「会議室、取っとく？」\nB: 「うん、もう取った。」",
-      "context": "職場。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "部長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Meeting Room, Motaku?”\nB: “Yes, I took it.",
       "correctAnswerId": "b",
       "explanation": "予約の行為をしたのは、返答するB。",
+      "explanationEn": "The act of making a reservation is B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "職場。",
+      "contextEn": "Workplace.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -141,38 +143,46 @@
         "うん",
         "もう取った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "部長",
+          "labelEn": "部長 (Director)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_004",
       "type": "multipleChoice",
       "prompt": "誰が傘を持ってきましたか。",
+      "promptEn": "Who brought the umbrella?",
       "japanese": "A: 「傘、要る？」\nB: 「持ってきたよ。」",
-      "context": "駅前。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "店員"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Do you need umbrellas?\"\nB: “I have brought it.”",
       "correctAnswerId": "b",
       "explanation": "持参したのはBの行動と分かる。",
+      "explanationEn": "I understand the behavior of B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "駅前。",
+      "contextEn": "Close",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -184,38 +194,46 @@
         "要る",
         "持ってきたよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "店員",
+          "labelEn": "店員 (Staff)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_005",
       "type": "multipleChoice",
       "prompt": "誰が宿題を出しますか。",
+      "promptEn": "Who gives homework?",
       "japanese": "A: 「宿題、出さないと。」\nB: 「私が出すよ。」",
-      "context": "友達。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "先生"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Do not leave homework.\"  \nB: “I’m going out.”",
       "correctAnswerId": "b",
       "explanation": "「出すよ」はBの主語。",
+      "explanationEn": "The main word of B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "友達。",
+      "contextEn": "Friends",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -227,38 +245,46 @@
         "出さないと",
         "私が出すよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_006",
       "type": "multipleChoice",
       "prompt": "誰が窓を開けましたか。",
+      "promptEn": "Who opened the window?",
       "japanese": "A: 「暑いね。」\nB: 「開けておくね。」",
-      "context": "教室。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "窓"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “It’s hot.”  \nB: “Open!”",
       "correctAnswerId": "b",
       "explanation": "開けるのは話しているB。",
+      "explanationEn": "B is talking about opening.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "教室。",
+      "contextEn": "Classroom",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -269,38 +295,46 @@
         "暑いね",
         "開けておくね"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "窓",
+          "labelEn": "窓 (Window)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_007",
       "type": "multipleChoice",
       "prompt": "誰がコピーを取りますか。",
+      "promptEn": "Who takes a copy?",
       "japanese": "A: 「資料のコピー、頼んでいい？」\nB: 「ああ、こっちでやる。」",
-      "context": "オフィス。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "コピー機"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you ask for a copy of materials?”\nB: “Oh, do it here.”",
       "correctAnswerId": "b",
       "explanation": "「こっちでやる」はBが実行する。",
+      "explanationEn": "\"Do it here\" executes B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "オフィス。",
+      "contextEn": "Office.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -313,38 +347,46 @@
         "ああ",
         "こっちでやる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "コピー機",
+          "labelEn": "コピー機 (Copier)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_008",
       "type": "multipleChoice",
       "prompt": "誰が荷物を運びましたか。",
+      "promptEn": "Who carried my luggage?",
       "japanese": "A: 「重いねこの箱。」\nB: 「運んだから大丈夫。」",
-      "context": "引っ越しの手伝い。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "大家"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Heavy box.\"  \nB: “It’s okay because you’re lucky.”",
       "correctAnswerId": "b",
       "explanation": "運んだのはBが報告している主体。",
+      "explanationEn": "Make sure B reports.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "引っ越しの手伝い。",
+      "contextEn": "Help of moving.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -355,38 +397,46 @@
         "重いねこの箱",
         "運んだから大丈夫"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "大家",
+          "labelEn": "大家 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_009",
       "type": "multipleChoice",
       "prompt": "誰が電話に出ましたか。",
+      "promptEn": "Who made a call?",
       "japanese": "A: 「社長、いる？」\nB: 「出たよ、用件聞く。」",
-      "context": "職場。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "社長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Are you a president?”\nB: \"No, I hear the case.\"",
       "correctAnswerId": "b",
       "explanation": "電話に出たのはB。用件を聞くのもB。",
+      "explanationEn": "B B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "職場。",
+      "contextEn": "Workplace.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -399,38 +449,46 @@
         "出たよ",
         "用件聞く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "社長",
+          "labelEn": "社長 (President)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_010",
       "type": "multipleChoice",
       "prompt": "誰が地図を描きますか。",
+      "promptEn": "Who draws a map?",
       "japanese": "A: 「地図、誰が描く？」\nB: 「私が描くよ。」",
-      "context": "サークル。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "会長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who draws a map?”\nB: “I’ll draw.”",
       "correctAnswerId": "b",
       "explanation": "明言どおりB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "サークル。",
+      "contextEn": "circle.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -442,38 +500,46 @@
         "誰が描く",
         "私が描くよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "会長",
+          "labelEn": "会長 (Chairman)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_011",
       "type": "multipleChoice",
       "prompt": "Bは何を飲みましたか。",
+      "promptEn": "What did B drink?",
       "japanese": "A: 「コーヒー、残ってる？」\nB: 「飲んじゃった。」",
-      "context": "喫茶店。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "コーヒー"
-        },
-        {
-          "id": "b",
-          "label": "紅茶"
-        },
-        {
-          "id": "c",
-          "label": "水"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “I’m still coffee?”\nB: “Drinked.”",
       "correctAnswerId": "a",
       "explanation": "直前の「コーヒー」が目的語として省略されている。",
+      "explanationEn": "\" \" is omitted as the purpose.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "喫茶店。",
+      "contextEn": "Cafe",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -485,38 +551,46 @@
         "残ってる",
         "飲んじゃった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "コーヒー",
+          "labelEn": "コーヒー (Coffee)"
+        },
+        {
+          "id": "b",
+          "label": "紅茶",
+          "labelEn": "紅茶 (Tea)"
+        },
+        {
+          "id": "c",
+          "label": "水",
+          "labelEn": "水 (Water)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_012",
       "type": "multipleChoice",
       "prompt": "Bは何を買いましたか。",
+      "promptEn": "What did B buy?",
       "japanese": "A: 「新刊、もう手に入れた？」\nB: 「買った。」",
-      "context": "本屋の前。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "新刊"
-        },
-        {
-          "id": "b",
-          "label": "雑誌"
-        },
-        {
-          "id": "c",
-          "label": "文庫"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “What’s new? Can I get it?”\nB: \"I bought it.\"",
       "correctAnswerId": "a",
       "explanation": "「新刊」が買う対象。",
+      "explanationEn": "\"New book\" is available.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "本屋の前。",
+      "contextEn": "In front of the bookstore.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -528,38 +602,46 @@
         "もう手に入れた",
         "買った"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "新刊",
+          "labelEn": "新刊 (News)"
+        },
+        {
+          "id": "b",
+          "label": "雑誌",
+          "labelEn": "雑誌 (Magazine)"
+        },
+        {
+          "id": "c",
+          "label": "文庫",
+          "labelEn": "文庫 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_013",
       "type": "multipleChoice",
       "prompt": "Bは何を直しましたか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「自転車、直った？」\nB: 「直した。」",
-      "context": "家。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "自転車"
-        },
-        {
-          "id": "b",
-          "label": "ドア"
-        },
-        {
-          "id": "c",
-          "label": "時計"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “I’m on a bicycle?”\nB: \"Fixed.\"",
       "correctAnswerId": "a",
       "explanation": "直したのは聞かれた自転車。",
+      "explanationEn": "I was told that the bicycle was corrected.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "家。",
+      "contextEn": "Home",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -571,38 +653,46 @@
         "直った",
         "直した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "自転車",
+          "labelEn": "自転車 (Bicycle)"
+        },
+        {
+          "id": "b",
+          "label": "ドア",
+          "labelEn": "ドア (Door)"
+        },
+        {
+          "id": "c",
+          "label": "時計",
+          "labelEn": "時計"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_014",
       "type": "multipleChoice",
       "prompt": "Bは何を食べませんでしたか。",
+      "promptEn": "What did B eat?",
       "japanese": "A: 「ケーキ、食べる？」\nB: 「食べない。」",
-      "context": "誕生日。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ケーキ"
-        },
-        {
-          "id": "b",
-          "label": "アイス"
-        },
-        {
-          "id": "c",
-          "label": "果物"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Cake, Eat?”\nB: Don’t eat.",
       "correctAnswerId": "a",
       "explanation": "断りの対象は勧められたケーキ。",
+      "explanationEn": "The cake is recommended.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "誕生日。",
+      "contextEn": "Birthday.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -614,38 +704,46 @@
         "食べる",
         "食べない"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ケーキ",
+          "labelEn": "ケーキ (Cakes)"
+        },
+        {
+          "id": "b",
+          "label": "アイス",
+          "labelEn": "アイス (Ice)"
+        },
+        {
+          "id": "c",
+          "label": "果物",
+          "labelEn": "果物 (Fruit)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_015",
       "type": "multipleChoice",
       "prompt": "Bは何を片づけていますか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「机の上、片づけた？」\nB: 「まだ、今やってる。」",
-      "context": "自室。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "机の上"
-        },
-        {
-          "id": "b",
-          "label": "床"
-        },
-        {
-          "id": "c",
-          "label": "本棚"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “How did you clean up your desk?”\nB: “I’m still doing it now.”",
       "correctAnswerId": "a",
       "explanation": "片づけの対象はAの言う机の上。",
+      "explanationEn": "The object of cleaning is on the desk that says A.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "自室。",
+      "contextEn": "Home",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -658,38 +756,46 @@
         "まだ",
         "今やってる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "机の上",
+          "labelEn": "机の上 (Desk Top)"
+        },
+        {
+          "id": "b",
+          "label": "床",
+          "labelEn": "床 (Floor)"
+        },
+        {
+          "id": "c",
+          "label": "本棚",
+          "labelEn": "本棚 (Books)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_016",
       "type": "multipleChoice",
       "prompt": "Bは何を送りますか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「見積、送ってくれる？」\nB: 「午後送る。」",
-      "context": "取引先。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "見積"
-        },
-        {
-          "id": "b",
-          "label": "請求"
-        },
-        {
-          "id": "c",
-          "label": "名刺"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Quotation, Can I Send?”\nB: “Afternoon”",
       "correctAnswerId": "a",
       "explanation": "依頼の内容が見積。",
+      "explanationEn": "Requests are quoted.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "取引先。",
+      "contextEn": "Business partners",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -701,38 +807,46 @@
         "送ってくれる",
         "午後送る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見積",
+          "labelEn": "見積 ()"
+        },
+        {
+          "id": "b",
+          "label": "請求",
+          "labelEn": "請求 ()"
+        },
+        {
+          "id": "c",
+          "label": "名刺",
+          "labelEn": "名刺 (Business card)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_017",
       "type": "multipleChoice",
       "prompt": "Bは何を探していますか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「鍵、見た？」\nB: 「今探してる。」",
-      "context": "玄関。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "鍵"
-        },
-        {
-          "id": "b",
-          "label": "財布"
-        },
-        {
-          "id": "c",
-          "label": "傘"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Key, see?\"\nB: \"I'm looking for now.\"",
       "correctAnswerId": "a",
       "explanation": "直前の話題の鍵。",
+      "explanationEn": "The key of the last topic.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "玄関。",
+      "contextEn": "Entrance",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -744,38 +858,46 @@
         "見た",
         "今探してる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "鍵",
+          "labelEn": "鍵 (Key)"
+        },
+        {
+          "id": "b",
+          "label": "財布",
+          "labelEn": "財布 ()"
+        },
+        {
+          "id": "c",
+          "label": "傘",
+          "labelEn": "傘"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_018",
       "type": "multipleChoice",
       "prompt": "Bは何を着替えますか。",
+      "promptEn": "What is B changing?",
       "japanese": "A: 「服、汚れてるよ。」\nB: 「着替える。」",
-      "context": "遊び帰り。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "服"
-        },
-        {
-          "id": "b",
-          "label": "靴"
-        },
-        {
-          "id": "c",
-          "label": "帽子"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Drinks and dirt.\"  \nB: \"Change clothes\".",
       "correctAnswerId": "a",
       "explanation": "汚れと言われた服を着替える。",
+      "explanationEn": "Change clothes that are said to be dirty.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "遊び帰り。",
+      "contextEn": "Home",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -787,38 +909,46 @@
         "汚れてるよ",
         "着替える"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "服",
+          "labelEn": "服 (Clothing)"
+        },
+        {
+          "id": "b",
+          "label": "靴",
+          "labelEn": "靴 (Shoes)"
+        },
+        {
+          "id": "c",
+          "label": "帽子",
+          "labelEn": "帽子 (Hats)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_019",
       "type": "multipleChoice",
       "prompt": "Bは何を提出しますか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「申請書、出した？」\nB: 「今出す。」",
-      "context": "市役所。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "申請書"
-        },
-        {
-          "id": "b",
-          "label": "封筒"
-        },
-        {
-          "id": "c",
-          "label": "コピー"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Applying?”\nB: \"Now.\"",
       "correctAnswerId": "a",
       "explanation": "出すのは申請書。",
+      "explanationEn": "Application form.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "市役所。",
+      "contextEn": "At the city office.",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -830,38 +960,46 @@
         "出した",
         "今出す"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "申請書",
+          "labelEn": "申請書 (Application Form)"
+        },
+        {
+          "id": "b",
+          "label": "封筒",
+          "labelEn": "封筒 (Envel)"
+        },
+        {
+          "id": "c",
+          "label": "コピー",
+          "labelEn": "コピー ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_020",
       "type": "multipleChoice",
       "prompt": "Bは何を始めますか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「晩ご飯、作る？」\nB: 「作る。」",
-      "context": "帰宅後。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "晩ご飯"
-        },
-        {
-          "id": "b",
-          "label": "風呂"
-        },
-        {
-          "id": "c",
-          "label": "洗濯"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “How to make the night?”\nB: “Making”.",
       "correctAnswerId": "a",
       "explanation": "作るのは晩ご飯。",
+      "explanationEn": "It’s overnight to make.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "帰宅後。",
+      "contextEn": "Home",
       "jlptLevel": "N4",
       "difficultyScore": 1,
       "grammarPoints": [
@@ -872,38 +1010,46 @@
         "晩ご飯",
         "作る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "晩ご飯",
+          "labelEn": "晩ご飯 (Night)"
+        },
+        {
+          "id": "b",
+          "label": "風呂",
+          "labelEn": "風呂 (Bath)"
+        },
+        {
+          "id": "c",
+          "label": "洗濯",
+          "labelEn": "洗濯 (Laundry)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_021",
       "type": "multipleChoice",
       "prompt": "Bは何を持って帰りますか。",
+      "promptEn": "What is B?",
       "japanese": "A: 「余り、持って帰る？」\nB: 「持って帰る。」",
-      "context": "飲み会。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "余り"
-        },
-        {
-          "id": "b",
-          "label": "空き瓶"
-        },
-        {
-          "id": "c",
-          "label": "会費"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you take it?”\nB: Bring back.",
       "correctAnswerId": "a",
       "explanation": "持ち帰るのは食べ物の余り。",
+      "explanationEn": "There are too much food to take home.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "飲み会。",
+      "contextEn": "Drink",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -914,39 +1060,47 @@
         "余り",
         "持って帰る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "余り",
+          "labelEn": "余り (Close)"
+        },
+        {
+          "id": "b",
+          "label": "空き瓶",
+          "labelEn": "空き瓶 (Free bottle)"
+        },
+        {
+          "id": "c",
+          "label": "会費",
+          "labelEn": "会費 (Fee)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_022",
       "type": "multipleChoice",
       "prompt": "誰が誰に本をあげますか。",
+      "promptEn": "Who gives a book?",
       "japanese": "A: 「この本、弟にあげるの？」\nB: 「ああ、あげるよ。」",
-      "context": "友達。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "Bが弟に"
-        },
-        {
-          "id": "b",
-          "label": "Aが弟に"
-        },
-        {
-          "id": "c",
-          "label": "弟がBに"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “This book is my brother?”\nB: \"Oh, I'll give you.",
       "correctAnswerId": "a",
       "explanation": "「あげる」はB本人が与える。相手はAの言う弟。",
+      "explanationEn": "The B person gives the “Eage” The other party is A.",
       "diagnosticTags": [
         "implication",
         "dialogue_context",
         "omitted_subject"
       ],
+      "context": "友達。",
+      "contextEn": "Friends",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -959,38 +1113,46 @@
         "ああ",
         "あげるよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "Bが弟に",
+          "labelEn": "Bが弟に (B to brother)"
+        },
+        {
+          "id": "b",
+          "label": "Aが弟に",
+          "labelEn": "Aが弟に (A to brother)"
+        },
+        {
+          "id": "c",
+          "label": "弟がBに",
+          "labelEn": "弟がBに (Brother B)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_023",
       "type": "multipleChoice",
       "prompt": "誰が花をくれましたか。",
+      "promptEn": "Who gave flowers?",
       "japanese": "A: 「きれいな花！」\nB: 「母がくれたんだ。」",
-      "context": "バレンタインデーではない。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "母"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Beautiful Flowers!”\nB: “Mothers have gone.”",
       "correctAnswerId": "a",
       "explanation": "くれた主体は母と明示されている。",
+      "explanationEn": "The childbirth is expressed as mother.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "バレンタインデーではない。",
+      "contextEn": "Valentine's Day",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1001,38 +1163,46 @@
         "きれいな花",
         "母がくれたんだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_024",
       "type": "multipleChoice",
       "prompt": "誰がチケットをもらいましたか。",
+      "promptEn": "Who got a ticket?",
       "japanese": "A: 「明日のチケット、どうした？」\nB: 「上司にもらった。」",
-      "context": "会社。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "上司"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “What is the ticket for tomorrow?”\nB: “Became a boss.”",
       "correctAnswerId": "a",
       "explanation": "もらう側は答えるB。",
+      "explanationEn": "The answer is B.",
       "diagnosticTags": [
         "omitted_recipient",
         "dialogue_context"
       ],
+      "context": "会社。",
+      "contextEn": "Company",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1044,38 +1214,46 @@
         "どうした",
         "上司にもらった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "上司",
+          "labelEn": "上司 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_025",
       "type": "multipleChoice",
       "prompt": "誰が手伝ってもらいますか。",
+      "promptEn": "Who can help you?",
       "japanese": "A: 「引っ越し、手伝わせるの？」\nB: 「友達に手伝ってもらう。」",
-      "context": "会話。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "友達"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Can you move and help?”\nB: “Get help with your friends.”",
       "correctAnswerId": "a",
       "explanation": "手伝いを受けるのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "会話。",
+      "contextEn": "Conversation.",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1087,38 +1265,46 @@
         "手伝わせるの",
         "友達に手伝ってもらう"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "友達",
+          "labelEn": "友達 (Friends)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_026",
       "type": "multipleChoice",
       "prompt": "誰に差し上げますか。",
+      "promptEn": "Who?",
       "japanese": "A: 「お土産、部長に？」\nB: 「部長に差し上げます。」",
-      "context": "出張帰り。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "部長"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "社長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Souvenirs and Managers?\"\nB: \"Manager\"",
       "correctAnswerId": "a",
       "explanation": "目上に差し上げる相手は部長。",
+      "explanationEn": "The other party is the manager.",
       "diagnosticTags": [
         "omitted_recipient",
         "dialogue_context"
       ],
+      "context": "出張帰り。",
+      "contextEn": "Home",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1130,38 +1316,46 @@
         "部長に",
         "部長に差し上げます"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "部長",
+          "labelEn": "部長 (Director)"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "社長",
+          "labelEn": "社長 (President)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_027",
       "type": "multipleChoice",
       "prompt": "誰が子どもに絵本を買い与えますか。",
+      "promptEn": "Who can buy picture books to children?",
       "japanese": "A: 「絵本、誰が買うの？」\nB: 「私が買ってあげる。」",
-      "context": "姉弟。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "子ども"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who will you buy a picture book?”\nB: \"I bought it.\"",
       "correctAnswerId": "a",
       "explanation": "「買ってあげる」はBの行為。",
+      "explanationEn": "\"Buy\" is the action of B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "姉弟。",
+      "contextEn": "sister brother",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1173,38 +1367,46 @@
         "誰が買うの",
         "私が買ってあげる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "子ども",
+          "labelEn": "子ども (Children)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_028",
       "type": "multipleChoice",
       "prompt": "誰が隣人に味噌汁を分けてあげますか。",
+      "promptEn": "Who divides miso soup to neighbors?",
       "japanese": "A: 「味噌汁、多いね。」\nB: 「隣に分けてあげる。」",
-      "context": "台所。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "隣"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: There are many miso soups.  \nB: Let's go next to you.",
       "correctAnswerId": "a",
       "explanation": "分け与える主語はB。",
+      "explanationEn": "The subject is B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "台所。",
+      "contextEn": "Kitchen.",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1216,38 +1418,46 @@
         "多いね",
         "隣に分けてあげる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "隣",
+          "labelEn": "隣 (Close)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_029",
       "type": "multipleChoice",
       "prompt": "誰が姉に鞄を借りますか。",
+      "promptEn": "Who rents a bag to her sister?",
       "japanese": "A: 「その鞄、姉の？」\nB: 「姉から借りた。」",
-      "context": "大学。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "姉"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Where are you?”\nB: \"I borrowed from my sister.\"",
       "correctAnswerId": "a",
       "explanation": "借りる主体はB。",
+      "explanationEn": "Rent a car is B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "大学。",
+      "contextEn": "University",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1259,38 +1469,46 @@
         "姉の",
         "姉から借りた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "姉",
+          "labelEn": "姉 (sister)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_030",
       "type": "multipleChoice",
       "prompt": "誰に教えてもらいましたか。",
+      "promptEn": "Who taught me?",
       "japanese": "A: 「その文法、どこで習った？」\nB: 「先輩に教えてもらった。」",
-      "context": "図書館。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "先輩"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Where did you learn that grammar?”\nB: \"Tell me to seniors.\"",
       "correctAnswerId": "a",
       "explanation": "教えを受けたのは答えるB。",
+      "explanationEn": "The answer is B.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "図書館。",
+      "contextEn": "Library",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1302,38 +1520,46 @@
         "どこで習った",
         "先輩に教えてもらった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "先輩",
+          "labelEn": "先輩 ()"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_031",
       "type": "multipleChoice",
       "prompt": "誰が友だちに弁当を作ってあげますか。",
+      "promptEn": "Who makes a bento?",
       "japanese": "A: 「弁当、作るの大変でしょ。」\nB: 「友だちの分も作ってあげる。」",
-      "context": "週末。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "友だち"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Bento, it's hard to make.  \nB: “Let’s make friends.”",
       "correctAnswerId": "a",
       "explanation": "作ってあげるのはB。",
+      "explanationEn": "Let’s make it.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "週末。",
+      "contextEn": "Weekend",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1345,38 +1571,46 @@
         "作るの大変でしょ",
         "友だちの分も作ってあげる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "友だち",
+          "labelEn": "友だち (Home)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_032",
       "type": "multipleChoice",
       "prompt": "Bはどこへ行きますか。",
+      "promptEn": "Where is B?",
       "japanese": "A: 「会議室、どこ？」\nB: 「三階に行く。」",
-      "context": "初出勤。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "三階"
-        },
-        {
-          "id": "b",
-          "label": "一階"
-        },
-        {
-          "id": "c",
-          "label": "地下"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Meeting Room, Where?”\nB: Go to the third floor.",
       "correctAnswerId": "a",
       "explanation": "行く先は答えた三階。",
+      "explanationEn": "The third floor answered.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "初出勤。",
+      "contextEn": "First time",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1388,38 +1622,46 @@
         "どこ",
         "三階に行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "三階",
+          "labelEn": "三階 (3rd Floor)"
+        },
+        {
+          "id": "b",
+          "label": "一階",
+          "labelEn": "一階 (1st floor)"
+        },
+        {
+          "id": "c",
+          "label": "地下",
+          "labelEn": "地下 (Basement)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_033",
       "type": "multipleChoice",
       "prompt": "誰がこちらへ来ますか。",
+      "promptEn": "Who will come here?",
       "japanese": "A: 「そっちから来て。」\nB: 「今行く。」",
-      "context": "オフィス。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "客"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: Come from there.  \nB: “Go now.”",
       "correctAnswerId": "b",
       "explanation": "向かうのは「来て」と言われたB。",
+      "explanationEn": "B is said to be “Come”.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "オフィス。",
+      "contextEn": "Office.",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1430,38 +1672,46 @@
         "そっちから来て",
         "今行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "客",
+          "labelEn": "客 (Contact)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_034",
       "type": "multipleChoice",
       "prompt": "誰が駅まで送りますか。",
+      "promptEn": "Who will send to the station?",
       "japanese": "A: 「駅まで送るよ。」\nB: 「ありがとう、お願い。」",
-      "context": "夜道。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "タクシー"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: Send to the station.  \nB: \"Thank you, please.",
       "correctAnswerId": "a",
       "explanation": "送るのは提案したA。",
+      "explanationEn": "A proposed to send.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "夜道。",
+      "contextEn": "Night",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1473,38 +1723,46 @@
         "ありがとう",
         "お願い"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "タクシー",
+          "labelEn": "タクシー (Taxi)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_035",
       "type": "multipleChoice",
       "prompt": "Bはいつ戻ってきますか。",
+      "promptEn": "When will B come back?",
       "japanese": "A: 「いつ戻る？」\nB: 「五時に戻る。」",
-      "context": "外出中。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "五時"
-        },
-        {
-          "id": "b",
-          "label": "明日"
-        },
-        {
-          "id": "c",
-          "label": "来週"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “When to go back?”\nB: \"Go back to 5 o'clock\".",
       "correctAnswerId": "a",
       "explanation": "戻る時刻が省略されず答えている。",
+      "explanationEn": "The return time is not omitted.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "外出中。",
+      "contextEn": "Contact Us",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1515,38 +1773,46 @@
         "いつ戻る",
         "五時に戻る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "五時",
+          "labelEn": "五時 (5 hours)"
+        },
+        {
+          "id": "b",
+          "label": "明日",
+          "labelEn": "明日 ()"
+        },
+        {
+          "id": "c",
+          "label": "来週",
+          "labelEn": "来週 (Next week)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_036",
       "type": "multipleChoice",
       "prompt": "誰が先に帰りますか。",
+      "promptEn": "Who is going to leave?",
       "japanese": "A: 「先に帰るね。」\nB: 「うん、気をつけて。」",
-      "context": "残業。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "部長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"I'll come back first.\"  \nB: “Yes, be careful.”",
       "correctAnswerId": "a",
       "explanation": "帰るのは宣言したA。",
+      "explanationEn": "A。d to return.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "残業。",
+      "contextEn": "Overtime",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1558,38 +1824,46 @@
         "うん",
         "気をつけて"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "部長",
+          "labelEn": "部長 (Director)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_037",
       "type": "multipleChoice",
       "prompt": "Bはどこから来ましたか。",
+      "promptEn": "Where is B?",
       "japanese": "A: 「遅かったね。」\nB: 「大阪から来たばかり。」",
-      "context": "待ち合わせ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "大阪"
-        },
-        {
-          "id": "b",
-          "label": "東京"
-        },
-        {
-          "id": "c",
-          "label": "京都"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"It was late.  \nB: I just came from Osaka.",
       "correctAnswerId": "a",
       "explanation": "起点は大阪。",
+      "explanationEn": "Osaka",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "待ち合わせ。",
+      "contextEn": "Contact Us",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1600,38 +1874,46 @@
         "遅かったね",
         "大阪から来たばかり"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "大阪",
+          "labelEn": "大阪 (Osaka)"
+        },
+        {
+          "id": "b",
+          "label": "東京",
+          "labelEn": "東京 (Tokyo)"
+        },
+        {
+          "id": "c",
+          "label": "京都",
+          "labelEn": "京都 (Kyoto)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_038",
       "type": "multipleChoice",
       "prompt": "誰が教室に入りますか。",
+      "promptEn": "Who enters the classroom?",
       "japanese": "A: 「先生が呼んでる。」\nB: 「入る。」",
-      "context": "廊下。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "先生"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Teacher calls.  \nB: “Enter.”",
       "correctAnswerId": "b",
       "explanation": "入室するのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "廊下。",
+      "contextEn": "Gallery",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1642,38 +1924,46 @@
         "先生が呼んでる",
         "入る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_039",
       "type": "multipleChoice",
       "prompt": "荷物はどこへ運ばれますか。",
+      "promptEn": "Where can I get my luggage?",
       "japanese": "A: 「倉庫へ運んで。」\nB: 「倉庫に運ぶ。」",
-      "context": "工場。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "倉庫"
-        },
-        {
-          "id": "b",
-          "label": "事務所"
-        },
-        {
-          "id": "c",
-          "label": "受付"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Try to warehouse.\"  \nB: Transport to warehouse.",
       "correctAnswerId": "a",
       "explanation": "目的語の場所は倉庫。",
+      "explanationEn": "The location of the object is warehouse.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "工場。",
+      "contextEn": "Factory",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1684,38 +1974,46 @@
         "倉庫へ運んで",
         "倉庫に運ぶ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "倉庫",
+          "labelEn": "倉庫 (Warehouse)"
+        },
+        {
+          "id": "b",
+          "label": "事務所",
+          "labelEn": "事務所 (Office)"
+        },
+        {
+          "id": "c",
+          "label": "受付",
+          "labelEn": "受付 (Contact)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_040",
       "type": "multipleChoice",
       "prompt": "誰がホームに向かいますか。",
+      "promptEn": "Who goes to home?",
       "japanese": "A: 「発車ベルだ。」\nB: 「ホームに走る。」",
-      "context": "駅。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "車掌"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “It’s a car bell.”  \nB: Run at home.",
       "correctAnswerId": "b",
       "explanation": "走る主体はB。",
+      "explanationEn": "B",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "駅。",
+      "contextEn": "Station",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1726,38 +2024,46 @@
         "発車ベルだ",
         "ホームに走る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "車掌",
+          "labelEn": "車掌 (車)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_041",
       "type": "multipleChoice",
       "prompt": "夕方、誰がうちへ帰りますか。",
+      "promptEn": "Who will return home in the evening?",
       "japanese": "A: 「今日は早く帰れる？」\nB: 「うちに帰る。」",
-      "context": "夫婦。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "子ども"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Can I come back earlier today?”\nB: Home",
       "correctAnswerId": "b",
       "explanation": "帰るのは答えるB。",
+      "explanationEn": "Return B",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "夫婦。",
+      "contextEn": "Couple",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1768,38 +2074,46 @@
         "今日は早く帰れる",
         "うちに帰る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "子ども",
+          "labelEn": "子ども (Children)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_042",
       "type": "multipleChoice",
       "prompt": "「それ」は何を指しますか。",
+      "promptEn": "What does it mean?",
       "japanese": "A: 「このかばん、軽いね。」\nB: 「それ、新作なんだ。」",
-      "context": "ショップ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "このかばん"
-        },
-        {
-          "id": "b",
-          "label": "床"
-        },
-        {
-          "id": "c",
-          "label": "札"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “This bag is light.  \nB: “It’s a new piece.”",
       "correctAnswerId": "a",
       "explanation": "直前の話題のかばん。",
+      "explanationEn": "The last topic of the bag.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "ショップ。",
+      "contextEn": "。",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1812,38 +2126,46 @@
         "それ",
         "新作なんだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "このかばん",
+          "labelEn": "このかばん (This bag)"
+        },
+        {
+          "id": "b",
+          "label": "床",
+          "labelEn": "床 (Floor)"
+        },
+        {
+          "id": "c",
+          "label": "札",
+          "labelEn": "札 (Tags)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_043",
       "type": "multipleChoice",
       "prompt": "「これ」は何を指しますか。",
+      "promptEn": "What does this mean?",
       "japanese": "A: 「これ、貸して。」\nB: 「いいよ。」",
-      "context": "机の上のノート。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ノート"
-        },
-        {
-          "id": "b",
-          "label": "ペン"
-        },
-        {
-          "id": "c",
-          "label": "消しゴム"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"This is for rent.\"  \nB: “Good!”",
       "correctAnswerId": "a",
       "explanation": "「これ」は共有视野のノート。",
+      "explanationEn": "\"This\" is a note of the shared a野nomical field.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "机の上のノート。",
+      "contextEn": "notebook on the desk.",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1855,38 +2177,46 @@
         "貸して",
         "いいよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ノート",
+          "labelEn": "ノート (Notes)"
+        },
+        {
+          "id": "b",
+          "label": "ペン",
+          "labelEn": "ペン (Pen)"
+        },
+        {
+          "id": "c",
+          "label": "消しゴム",
+          "labelEn": "消しゴム (ゴムr)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_044",
       "type": "multipleChoice",
       "prompt": "「あれ」は何を指しますか。",
+      "promptEn": "What does it mean?",
       "japanese": "A: 「あれ、見える？」\nB: 「あの塔だね。」",
-      "context": "展望台。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "遠くの塔"
-        },
-        {
-          "id": "b",
-          "label": "近くの看板"
-        },
-        {
-          "id": "c",
-          "label": "空"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you see it?”\nB: “It’s the tower.”",
       "correctAnswerId": "a",
       "explanation": "遠称で共有された塔。",
+      "explanationEn": "The pagoda shared in a distance.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "展望台。",
+      "contextEn": "Observation Deck",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1898,38 +2228,46 @@
         "見える",
         "あの塔だね"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遠くの塔",
+          "labelEn": "遠くの塔 (Tower)"
+        },
+        {
+          "id": "b",
+          "label": "近くの看板",
+          "labelEn": "近くの看板 (Nearby signs)"
+        },
+        {
+          "id": "c",
+          "label": "空",
+          "labelEn": "空 (Home)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_045",
       "type": "multipleChoice",
       "prompt": "店員の「それ」は何ですか。",
+      "promptEn": "What is \"It\" of the clerk?",
       "japanese": "A: 「これ、いくら？」\nB: 「それ、二千円です。」",
-      "context": "レジ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "客が指した品"
-        },
-        {
-          "id": "b",
-          "label": "レジ"
-        },
-        {
-          "id": "c",
-          "label": "袋"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “How much is this?”\nB: \"It is, it is 2 thousand yen.",
       "correctAnswerId": "a",
       "explanation": "客が示した商品。",
+      "explanationEn": "Products shown by customers.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "レジ。",
+      "contextEn": "Register",
       "jlptLevel": "N4-N3",
       "difficultyScore": 2,
       "grammarPoints": [
@@ -1942,38 +2280,46 @@
         "それ",
         "二千円です"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "客が指した品",
+          "labelEn": "客が指した品 (Products Pointed by Customers)"
+        },
+        {
+          "id": "b",
+          "label": "レジ",
+          "labelEn": "レジ ()"
+        },
+        {
+          "id": "c",
+          "label": "袋",
+          "labelEn": "袋 (Bag)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_046",
       "type": "multipleChoice",
       "prompt": "電話で「それ」の内容は何ですか。",
+      "promptEn": "What is the content of \"it\" on the phone?",
       "japanese": "A: 「明日の件だけど。」\nB: 「それ、午後でいいよ。」",
-      "context": "同僚。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "明日の予定"
-        },
-        {
-          "id": "b",
-          "label": "午後の会議"
-        },
-        {
-          "id": "c",
-          "label": "資料"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “It’s tomorrow.”  \nB: “It’s good in the afternoon.",
       "correctAnswerId": "a",
       "explanation": "「明日の件」が照応する。",
+      "explanationEn": "“The subject of tomorrow” will be reflected.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "同僚。",
+      "contextEn": "Coworkers.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -1985,38 +2331,46 @@
         "それ",
         "午後でいいよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "明日の予定",
+          "labelEn": "明日の予定 (Schedule)"
+        },
+        {
+          "id": "b",
+          "label": "午後の会議",
+          "labelEn": "午後の会議 (Afternoon Meeting)"
+        },
+        {
+          "id": "c",
+          "label": "資料",
+          "labelEn": "資料 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_047",
       "type": "multipleChoice",
       "prompt": "「そっち」はどちらを指しますか。",
+      "promptEn": "Which is \"Sochi\"?",
       "japanese": "A: 「そっち、寒くない？」\nB: 「こっちは平気。」",
-      "context": "電話。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "Aのいる場所"
-        },
-        {
-          "id": "b",
-          "label": "Bのいる場所"
-        },
-        {
-          "id": "c",
-          "label": "海"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Is it cold?”\nB: “Here’s flat.",
       "correctAnswerId": "a",
       "explanation": "電話で「そっち」は相手側。",
+      "explanationEn": "\"Sっち\" is the other party by phone.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "電話。",
+      "contextEn": "Contact Us",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2028,38 +2382,46 @@
         "寒くない",
         "こっちは平気"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "Aのいる場所",
+          "labelEn": "Aのいる場所 (A Place)"
+        },
+        {
+          "id": "b",
+          "label": "Bのいる場所",
+          "labelEn": "Bのいる場所 (Place B)"
+        },
+        {
+          "id": "c",
+          "label": "海",
+          "labelEn": "海 (Sea)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_048",
       "type": "multipleChoice",
       "prompt": "「あれ」は誰を指しますか。",
+      "promptEn": "Who does it mean?",
       "japanese": "A: 「あれ、山田君じゃない？」\nB: 「本当だ。」",
-      "context": "街中。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "遠くにいる人"
-        },
-        {
-          "id": "b",
-          "label": "犬"
-        },
-        {
-          "id": "c",
-          "label": "車"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Isn’t you?”\nB: “It’s true.”",
       "correctAnswerId": "a",
       "explanation": "目で示した人物。",
+      "explanationEn": "The person shown in the eyes.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "街中。",
+      "contextEn": "City",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2071,38 +2433,46 @@
         "山田君じゃない",
         "本当だ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遠くにいる人",
+          "labelEn": "遠くにいる人 (Who is far away)"
+        },
+        {
+          "id": "b",
+          "label": "犬",
+          "labelEn": "犬 (Dogs)"
+        },
+        {
+          "id": "c",
+          "label": "車",
+          "labelEn": "車 (Car)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_049",
       "type": "multipleChoice",
       "prompt": "漫画の「それ」は何の話ですか。",
+      "promptEn": "What is the story of “it” of manga?",
       "japanese": "A: 「それ、続きどうなった？」\nB: 「次の巻で分かる。」",
-      "context": "友人。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "漫画の展開"
-        },
-        {
-          "id": "b",
-          "label": "映画"
-        },
-        {
-          "id": "c",
-          "label": "小説"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “How did you continue?”\nB: “You can see in the next volume.”",
       "correctAnswerId": "a",
       "explanation": "直前の漫画の話。",
+      "explanationEn": "The story of the previous manga.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "友人。",
+      "contextEn": "Friends.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2114,38 +2484,46 @@
         "続きどうなった",
         "次の巻で分かる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "漫画の展開",
+          "labelEn": "漫画の展開 (Manga ment)"
+        },
+        {
+          "id": "b",
+          "label": "映画",
+          "labelEn": "映画 (Movie)"
+        },
+        {
+          "id": "c",
+          "label": "小説",
+          "labelEn": "小説 (Fiction)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_050",
       "type": "multipleChoice",
       "prompt": "汚れが目立つ「これ」は、主に何を指すか。",
+      "promptEn": "What does this mean to the main thing?",
       "japanese": "A: 「汚れてるよ、これ。」\nB: 「拭く。」",
-      "context": "白衣。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "汚れたところ"
-        },
-        {
-          "id": "b",
-          "label": "全体"
-        },
-        {
-          "id": "c",
-          "label": "床"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"It's so dirty.  \nB: \"Wiping\".",
       "correctAnswerId": "a",
       "explanation": "汚れている共有されたもの。",
+      "explanationEn": "Sharing that is dirty.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "白衣。",
+      "contextEn": "。",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2157,38 +2535,46 @@
         "これ",
         "拭く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "汚れたところ",
+          "labelEn": "汚れたところ (dirty)"
+        },
+        {
+          "id": "b",
+          "label": "全体",
+          "labelEn": "全体 (Total)"
+        },
+        {
+          "id": "c",
+          "label": "床",
+          "labelEn": "床 (Floor)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_051",
       "type": "multipleChoice",
       "prompt": "「それ」の可否は何についてですか。",
+      "promptEn": "What is the possibility of “it”?",
       "japanese": "A: 「写真、撮ってもいい？」\nB: 「それはダメ。」",
-      "context": "美術館。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "写真を撮ること"
-        },
-        {
-          "id": "b",
-          "label": "入館"
-        },
-        {
-          "id": "c",
-          "label": "食事"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you take photos?”\nB: “It’s important.”",
       "correctAnswerId": "a",
       "explanation": "撮影の許可の話。",
+      "explanationEn": "Story of permission for shooting.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "美術館。",
+      "contextEn": "Museum",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2200,38 +2586,46 @@
         "撮ってもいい",
         "それはダメ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "写真を撮ること",
+          "labelEn": "写真を撮ること (Taking photos)"
+        },
+        {
+          "id": "b",
+          "label": "入館",
+          "labelEn": "入館 (Admission)"
+        },
+        {
+          "id": "c",
+          "label": "食事",
+          "labelEn": "食事 (Meal)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_052",
       "type": "multipleChoice",
       "prompt": "Bの「これ」は何を指しますか。",
+      "promptEn": "What is this in B?",
       "japanese": "A: 「おすすめは？」\nB: 「これが一番人気です。」",
-      "context": "カフェ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "メニューの一品"
-        },
-        {
-          "id": "b",
-          "label": "店"
-        },
-        {
-          "id": "c",
-          "label": "席"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “What do you recommend?”\nB: \"This is the most popular.\"",
       "correctAnswerId": "a",
       "explanation": "店員が示した商品。",
+      "explanationEn": "Products indicated by the staff.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "カフェ。",
+      "contextEn": "Cafe",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2242,38 +2636,46 @@
         "おすすめは",
         "これが一番人気です"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メニューの一品",
+          "labelEn": "メニューの一品 (Menu)"
+        },
+        {
+          "id": "b",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        },
+        {
+          "id": "c",
+          "label": "席",
+          "labelEn": "席 (Seat)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_053",
       "type": "multipleChoice",
       "prompt": "レポートはもう提出されましたか。",
+      "promptEn": "Have you submitted a report?",
       "japanese": "A: 「レポート、出した？」\nB: 「もう出した。」",
-      "context": "ゼミ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "はい、提出済み"
-        },
-        {
-          "id": "b",
-          "label": "まだ"
-        },
-        {
-          "id": "c",
-          "label": "知らない"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Are you reporting?”\nB: “No more.”",
       "correctAnswerId": "a",
       "explanation": "「もう」は完了。",
+      "explanationEn": "\"Another\" is completed.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "ゼミ。",
+      "contextEn": "HOME",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2285,38 +2687,46 @@
         "出した",
         "もう出した"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "はい、提出済み",
+          "labelEn": "はい、提出済み (Yes, Submitted)"
+        },
+        {
+          "id": "b",
+          "label": "まだ",
+          "labelEn": "まだ"
+        },
+        {
+          "id": "c",
+          "label": "知らない",
+          "labelEn": "知らない (Not know)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_054",
       "type": "multipleChoice",
       "prompt": "宿題はまだですか。",
+      "promptEn": "What is your homework?",
       "japanese": "A: 「漢字、終わった？」\nB: 「まだ。」",
-      "context": "小学生。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "未完了"
-        },
-        {
-          "id": "b",
-          "label": "完了"
-        },
-        {
-          "id": "c",
-          "label": "いらない"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Kanji, finished?”\nB: \"I'm still.",
       "correctAnswerId": "a",
       "explanation": "「まだ」は未完了。",
+      "explanationEn": "Not yet completed.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "小学生。",
+      "contextEn": "Elementary school",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2328,38 +2738,46 @@
         "終わった",
         "まだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未完了",
+          "labelEn": "未完了 (Not completed)"
+        },
+        {
+          "id": "b",
+          "label": "完了",
+          "labelEn": "完了 (Close)"
+        },
+        {
+          "id": "c",
+          "label": "いらない",
+          "labelEn": "いらない (No)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_055",
       "type": "multipleChoice",
       "prompt": "昼食はもう済みましたか。",
+      "promptEn": "Do you have lunch?",
       "japanese": "A: 「昼、食べた？」\nB: 「もう食べた。」",
-      "context": "午後の会議前。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "済んだ"
-        },
-        {
-          "id": "b",
-          "label": "これから"
-        },
-        {
-          "id": "c",
-          "label": "不要"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you have lunch?”\nB: “No more.”",
       "correctAnswerId": "a",
       "explanation": "もう済んだ。",
+      "explanationEn": "。",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "午後の会議前。",
+      "contextEn": "Before the afternoon meeting.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2371,38 +2789,46 @@
         "食べた",
         "もう食べた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "済んだ",
+          "labelEn": "済んだ ()"
+        },
+        {
+          "id": "b",
+          "label": "これから",
+          "labelEn": "これから (More)"
+        },
+        {
+          "id": "c",
+          "label": "不要",
+          "labelEn": "不要 (No need)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_056",
       "type": "multipleChoice",
       "prompt": "資料はまだ印刷されていませんか。",
+      "promptEn": "Is the material still printed?",
       "japanese": "A: 「資料、印刷した？」\nB: 「まだだよ。」",
-      "context": "職場。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "未印刷"
-        },
-        {
-          "id": "b",
-          "label": "印刷済み"
-        },
-        {
-          "id": "c",
-          "label": "不要"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Document, printed?\"\nB: “Now.”",
       "correctAnswerId": "a",
       "explanation": "まだ完了していない。",
+      "explanationEn": "Not completed yet.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "職場。",
+      "contextEn": "Workplace.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2414,38 +2840,46 @@
         "印刷した",
         "まだだよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未印刷",
+          "labelEn": "未印刷 (Unprinted)"
+        },
+        {
+          "id": "b",
+          "label": "印刷済み",
+          "labelEn": "印刷済み (印刷ed)"
+        },
+        {
+          "id": "c",
+          "label": "不要",
+          "labelEn": "不要 (No need)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_057",
       "type": "multipleChoice",
       "prompt": "映画はもう見ましたか。",
+      "promptEn": "Have you seen the movie anymore?",
       "japanese": "A: 「新作、見た？」\nB: 「もう見た。」",
-      "context": "学校の廊下。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "見た"
-        },
-        {
-          "id": "b",
-          "label": "これから"
-        },
-        {
-          "id": "c",
-          "label": "見ない"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “I saw a new piece?”\nB: \"I saw it.",
       "correctAnswerId": "a",
       "explanation": "既視聴。",
+      "explanationEn": "Watch",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "学校の廊下。",
+      "contextEn": "School hallway.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2457,38 +2891,46 @@
         "見た",
         "もう見た"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "見た",
+          "labelEn": "見た (Seen)"
+        },
+        {
+          "id": "b",
+          "label": "これから",
+          "labelEn": "これから (More)"
+        },
+        {
+          "id": "c",
+          "label": "見ない",
+          "labelEn": "見ない (Not seen)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_058",
       "type": "multipleChoice",
       "prompt": "契約はまだですか。",
+      "promptEn": "Is there a contract yet?",
       "japanese": "A: 「契約、終わった？」\nB: 「まだ検討中。」",
-      "context": "商談。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "未締結"
-        },
-        {
-          "id": "b",
-          "label": "済んだ"
-        },
-        {
-          "id": "c",
-          "label": "破談"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Contract, finished?\"\nB: \"I'm still considering it.\"",
       "correctAnswerId": "a",
       "explanation": "まだの状態。",
+      "explanationEn": "still.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "商談。",
+      "contextEn": "Business",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2500,38 +2942,46 @@
         "終わった",
         "まだ検討中"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未締結",
+          "labelEn": "未締結 (Not signed)"
+        },
+        {
+          "id": "b",
+          "label": "済んだ",
+          "labelEn": "済んだ ()"
+        },
+        {
+          "id": "c",
+          "label": "破談",
+          "labelEn": "破談 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_059",
       "type": "multipleChoice",
       "prompt": "雨はもう止みましたか。",
+      "promptEn": "Do you have any rain?",
       "japanese": "A: 「雨、止んだ？」\nB: 「もう止んだ。」",
-      "context": "帰路。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "止んだ"
-        },
-        {
-          "id": "b",
-          "label": "降っている"
-        },
-        {
-          "id": "c",
-          "label": "雪"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Is it raining?”\nB: \"No longer.",
       "correctAnswerId": "a",
       "explanation": "もう止んだ。",
+      "explanationEn": "。",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "帰路。",
+      "contextEn": "Home",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2543,38 +2993,46 @@
         "止んだ",
         "もう止んだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "止んだ",
+          "labelEn": "止んだ (Close)"
+        },
+        {
+          "id": "b",
+          "label": "降っている",
+          "labelEn": "降っている (Down)"
+        },
+        {
+          "id": "c",
+          "label": "雪",
+          "labelEn": "雪 (Snow)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_060",
       "type": "multipleChoice",
       "prompt": "返信はまだですか。",
+      "promptEn": "Is the reply still?",
       "japanese": "A: 「メール、返した？」\nB: 「まだ書いてる。」",
-      "context": "スマホ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "未送信"
-        },
-        {
-          "id": "b",
-          "label": "送信済み"
-        },
-        {
-          "id": "c",
-          "label": "いらない"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"I'm back?\"\nB: “I’m still writing.”",
       "correctAnswerId": "a",
       "explanation": "作成中で未完。",
+      "explanationEn": "Unfinished",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "スマホ。",
+      "contextEn": "Smartphone",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2586,38 +3044,46 @@
         "返した",
         "まだ書いてる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "未送信",
+          "labelEn": "未送信 (Not sent)"
+        },
+        {
+          "id": "b",
+          "label": "送信済み",
+          "labelEn": "送信済み (Submit)"
+        },
+        {
+          "id": "c",
+          "label": "いらない",
+          "labelEn": "いらない (No)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_061",
       "type": "multipleChoice",
       "prompt": "ゴミはもう捨てましたか。",
+      "promptEn": "Did you throw away garbage?",
       "japanese": "A: 「ゴミ、捨てた？」\nB: 「もう捨てた。」",
-      "context": "アパート。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "捨てた"
-        },
-        {
-          "id": "b",
-          "label": "これから"
-        },
-        {
-          "id": "c",
-          "label": "燃えない"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you waste it?”\nB: “No longer throw away.”",
       "correctAnswerId": "a",
       "explanation": "処理済み。",
+      "explanationEn": "Processed.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "アパート。",
+      "contextEn": "Apartment.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2629,38 +3095,46 @@
         "捨てた",
         "もう捨てた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "捨てた",
+          "labelEn": "捨てた ()"
+        },
+        {
+          "id": "b",
+          "label": "これから",
+          "labelEn": "これから (More)"
+        },
+        {
+          "id": "c",
+          "label": "燃えない",
+          "labelEn": "燃えない (Not Burning)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_062",
       "type": "multipleChoice",
       "prompt": "準備はまだ途中ですか。",
+      "promptEn": "Is the preparation still in the middle?",
       "japanese": "A: 「準備、できた？」\nB: 「まだ半分。」",
-      "context": "イベント前。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "途中"
-        },
-        {
-          "id": "b",
-          "label": "完了"
-        },
-        {
-          "id": "c",
-          "label": "不要"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: Ready?\nB: “Ha。 yet.”",
       "correctAnswerId": "a",
       "explanation": "まだ完了していない。",
+      "explanationEn": "Not completed yet.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "イベント前。",
+      "contextEn": "Before the event",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2672,38 +3146,46 @@
         "できた",
         "まだ半分"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "途中",
+          "labelEn": "途中 (Close)"
+        },
+        {
+          "id": "b",
+          "label": "完了",
+          "labelEn": "完了 (Close)"
+        },
+        {
+          "id": "c",
+          "label": "不要",
+          "labelEn": "不要 (No need)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_063",
       "type": "multipleChoice",
       "prompt": "薬はもう飲みましたか。",
+      "promptEn": "Did you drink anymore?",
       "japanese": "A: 「薬、飲んだ？」\nB: 「もう飲んだ。」",
-      "context": "看病。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "飲んだ"
-        },
-        {
-          "id": "b",
-          "label": "これから"
-        },
-        {
-          "id": "c",
-          "label": "忘れた"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you drink?”\nB: \"I'm drinking anymore.\"",
       "correctAnswerId": "a",
       "explanation": "服用済み。",
+      "explanationEn": "taken.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "看病。",
+      "contextEn": "disease.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2715,38 +3197,46 @@
         "飲んだ",
         "もう飲んだ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "飲んだ",
+          "labelEn": "飲んだ (Drink)"
+        },
+        {
+          "id": "b",
+          "label": "これから",
+          "labelEn": "これから (More)"
+        },
+        {
+          "id": "c",
+          "label": "忘れた",
+          "labelEn": "忘れた (Forgotten)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_064",
       "type": "multipleChoice",
       "prompt": "誰がクライアントに連絡しますか。",
+      "promptEn": "Who will contact you?",
       "japanese": "A: 「クライアント、誰が連絡する？」\nB: 「私が連絡する。」",
-      "context": "プロジェクト。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "部長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who is the client contacted?”\nB: “I contact you.”",
       "correctAnswerId": "b",
       "explanation": "連絡するのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "プロジェクト。",
+      "contextEn": "Project",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2758,38 +3248,46 @@
         "誰が連絡する",
         "私が連絡する"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "部長",
+          "labelEn": "部長 (Director)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_065",
       "type": "multipleChoice",
       "prompt": "承認は誰が出しますか。",
+      "promptEn": "Who is the approval?",
       "japanese": "A: 「この件、誰が承認する？」\nB: 「課長が承認する。」",
-      "context": "職場。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "課長"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who approves this issue?”\nB: \"The chief approves.\"",
       "correctAnswerId": "a",
       "explanation": "承認者は課長と明示。",
+      "explanationEn": "Applicants are expressed as chief.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "職場。",
+      "contextEn": "Workplace.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2801,38 +3299,46 @@
         "誰が承認する",
         "課長が承認する"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "課長",
+          "labelEn": "課長 (Director)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_066",
       "type": "multipleChoice",
       "prompt": "誰が来客を迎えに行きますか。",
+      "promptEn": "Who will visit?",
       "japanese": "A: 「来客、迎えに誰行く？」\nB: 「私が行く。」",
-      "context": "受付。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "社長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who will you visit us?\nB: “I go.”",
       "correctAnswerId": "b",
       "explanation": "行くのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "受付。",
+      "contextEn": "Contact Us",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2844,38 +3350,46 @@
         "迎えに誰行く",
         "私が行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "社長",
+          "labelEn": "社長 (President)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_067",
       "type": "multipleChoice",
       "prompt": "誰が議事録を取りますか。",
+      "promptEn": "Who takes the minutes?",
       "japanese": "A: 「議事録、頼める？」\nB: 「私が取る。」",
-      "context": "会議。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "外部"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Can I ask for the minutes?”\nB: “I take.”",
       "correctAnswerId": "b",
       "explanation": "記録役はB。",
+      "explanationEn": "Recorder B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "会議。",
+      "contextEn": "Meeting.",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2887,38 +3401,46 @@
         "頼める",
         "私が取る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "外部",
+          "labelEn": "外部 (External)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_068",
       "type": "multipleChoice",
       "prompt": "誰が見積を送りますか。",
+      "promptEn": "Who is the quotation?",
       "japanese": "A: 「見積、今日中に。」\nB: 「私が送る。」",
-      "context": "営業。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "経理"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Quote, during today.  \nB: “I send.”",
       "correctAnswerId": "b",
       "explanation": "送信するのはB。",
+      "explanationEn": "B to send.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "営業。",
+      "contextEn": "Business",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2930,38 +3452,46 @@
         "今日中に",
         "私が送る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "経理",
+          "labelEn": "経理 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_069",
       "type": "multipleChoice",
       "prompt": "誰が欠勤を連絡しましたか。",
+      "promptEn": "Who did you contact us?",
       "japanese": "A: 「田中さん、今日？」\nB: 「本人が連絡してきた。」",
-      "context": "朝礼。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "田中本人"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Mr. Tanaka, today?”\nB: “I have contacted you.”",
       "correctAnswerId": "a",
       "explanation": "連絡したのは田中本人。",
+      "explanationEn": "I contacted Tanaka.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "朝礼。",
+      "contextEn": "Morning",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -2973,38 +3503,46 @@
         "今日",
         "本人が連絡してきた"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "田中本人",
+          "labelEn": "田中本人 (Tanaka)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_070",
       "type": "multipleChoice",
       "prompt": "誰がシフトを変えますか。",
+      "promptEn": "Who changes the shift?",
       "japanese": "A: 「金曜、代わってくれる？」\nB: 「私が変える。」",
-      "context": "小売。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "店長"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Is it possible to replace it on Friday?”\nB: “I change.”",
       "correctAnswerId": "b",
       "explanation": "代わるのはB。",
+      "explanationEn": "B",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "小売。",
+      "contextEn": "Retail",
       "jlptLevel": "N3",
       "difficultyScore": 3,
       "grammarPoints": [
@@ -3016,38 +3554,46 @@
         "代わってくれる",
         "私が変える"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "店長",
+          "labelEn": "店長 (Store Manager)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_071",
       "type": "multipleChoice",
       "prompt": "誰がパスワードを再発行しますか。",
+      "promptEn": "Who reissues password?",
       "japanese": "A: 「ログインできない。」\nB: 「情シスが再発行する。」",
-      "context": "社内窓口。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "情シス"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: I can't log in.  \nB: “Susシス is reissued.”",
       "correctAnswerId": "a",
       "explanation": "再発行する部署が情シス。",
+      "explanationEn": "The department to be reissued isシス.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "社内窓口。",
+      "contextEn": "Contact Us",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3058,38 +3604,46 @@
         "ログインできない",
         "情シスが再発行する"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "情シス",
+          "labelEn": "情シス ()"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_072",
       "type": "multipleChoice",
       "prompt": "誰が先方へ謝りに行きますか。",
+      "promptEn": "Who will pay for the future?",
       "japanese": "A: 「トラブル、どうする？」\nB: 「部長が謝りに行く。」",
-      "context": "対応会議。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "部長"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “What do you do?”\nB: \"The manager will pay for it.",
       "correctAnswerId": "a",
       "explanation": "謝罪に向かうのは部長。",
+      "explanationEn": "Head of apology.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "対応会議。",
+      "contextEn": "Meetings",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3101,38 +3655,46 @@
         "どうする",
         "部長が謝りに行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "部長",
+          "labelEn": "部長 (Director)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_073",
       "type": "multipleChoice",
       "prompt": "誰が検収しますか。",
+      "promptEn": "Who inspects?",
       "japanese": "A: 「納品、誰が見る？」\nB: 「私が検収する。」",
-      "context": "購買。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "委員会"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who is the delivery?”\nB: “I’m inspected.”",
       "correctAnswerId": "b",
       "explanation": "検収するのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "購買。",
+      "contextEn": "Purchase.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3144,38 +3706,46 @@
         "誰が見る",
         "私が検収する"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "委員会",
+          "labelEn": "委員会 (Board)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_074",
       "type": "multipleChoice",
       "prompt": "誰がサーバーを止めますか。",
+      "promptEn": "Who stops the server?",
       "japanese": "A: 「メンテ、誰が？」\nB: 「担当が止める。」",
-      "context": "情シス。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "担当者"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who is it?”\nB: \"Stop\"",
       "correctAnswerId": "a",
       "explanation": "停止作業は担当が行う。",
+      "explanationEn": "The person in charge of stopping work.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "情シス。",
+      "contextEn": "Contact Us",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3187,38 +3757,46 @@
         "誰が",
         "担当が止める"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "担当者",
+          "labelEn": "担当者 (Contact)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_075",
       "type": "multipleChoice",
       "prompt": "誰が夕食を作りますか。",
+      "promptEn": "Who makes dinner?",
       "japanese": "A: 「今日のご飯、誰が？」\nB: 「私が作る。」",
-      "context": "家。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "父"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Who is today?”\nB: “I make.”",
       "correctAnswerId": "b",
       "explanation": "作るのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "家。",
+      "contextEn": "Home",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3230,38 +3808,46 @@
         "誰が",
         "私が作る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "父",
+          "labelEn": "父 (Father)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_076",
       "type": "multipleChoice",
       "prompt": "誰が犬の散歩に行きますか。",
+      "promptEn": "Who goes to a dog walk?",
       "japanese": "A: 「散歩、行ける？」\nB: 「私が行く。」",
-      "context": "休日。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "犬"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Where is it?”\nB: “I go.”",
       "correctAnswerId": "b",
       "explanation": "行くのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "休日。",
+      "contextEn": "Holidays.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3273,38 +3859,46 @@
         "行ける",
         "私が行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "犬",
+          "labelEn": "犬 (Dogs)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_077",
       "type": "multipleChoice",
       "prompt": "誰が祖母に電話しますか。",
+      "promptEn": "Who calls the grandmother?",
       "japanese": "A: 「おばあちゃん、元気？」\nB: 「私からかける。」",
-      "context": "兄弟。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "祖母"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Grandma, Genki?”\nB: “Go from me.”",
       "correctAnswerId": "b",
       "explanation": "かけるのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "兄弟。",
+      "contextEn": "brother.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3316,38 +3910,46 @@
         "元気",
         "私からかける"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "祖母",
+          "labelEn": "祖母 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_078",
       "type": "multipleChoice",
       "prompt": "誰が洗濯物を取り込みますか。",
+      "promptEn": "Who takes the laundry?",
       "japanese": "A: 「雨来そう。」\nB: 「私が取り込む。」",
-      "context": "庭。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "母"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “It’s raining.”  \nB: “I get in.”",
       "correctAnswerId": "b",
       "explanation": "取り込むのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "庭。",
+      "contextEn": "Garden",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3358,38 +3960,46 @@
         "雨来そう",
         "私が取り込む"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_079",
       "type": "multipleChoice",
       "prompt": "誰が子どもを迎えに行きますか。",
+      "promptEn": "Who will be a child?",
       "japanese": "A: 「今日、保育園。」\nB: 「私が迎えに行く。」",
-      "context": "夫婦。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "先生"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Today, nursery school.”\nB: \"I go to pick you up.\"",
       "correctAnswerId": "b",
       "explanation": "迎えに行くのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "夫婦。",
+      "contextEn": "Couple",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3401,38 +4011,46 @@
         "保育園",
         "私が迎えに行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "先生",
+          "labelEn": "先生 (Teacher)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_080",
       "type": "multipleChoice",
       "prompt": "誰が旅行の宿を取りますか。",
+      "promptEn": "Who takes a travel inn?",
       "japanese": "A: 「宿、どうする？」\nB: 「私が取る。」",
-      "context": "友達同士。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "旅館"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “What do you do?”\nB: “I take.”",
       "correctAnswerId": "b",
       "explanation": "予約するのはB。",
+      "explanationEn": "B",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "友達同士。",
+      "contextEn": "Friends",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3444,38 +4062,46 @@
         "どうする",
         "私が取る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "旅館",
+          "labelEn": "旅館 (Hotel)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_081",
       "type": "multipleChoice",
       "prompt": "誰がケーキを切りますか。",
+      "promptEn": "Who cuts the cake?",
       "japanese": "A: 「誕生日、切る？」\nB: 「本人が切る。」",
-      "context": "パーティ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "本人（誕生日の人）"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Birthday?”\nB: \"Your identity\"",
       "correctAnswerId": "a",
       "explanation": "切るのは誕生日の本人とよく決まっている。",
+      "explanationEn": "It is determined well with the person of the birthday.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "パーティ。",
+      "contextEn": "Party",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3487,38 +4113,46 @@
         "切る",
         "本人が切る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "本人（誕生日の人）",
+          "labelEn": "本人（誕生日の人） ()"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_082",
       "type": "multipleChoice",
       "prompt": "誰がリモコンを持っていますか。",
+      "promptEn": "Who has a remote control?",
       "japanese": "A: 「チャンネル変えて。」\nB: 「私が持ってる。」",
-      "context": "リビング。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "弟"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: Change channel.  \nB: \"I have.",
       "correctAnswerId": "b",
       "explanation": "持っているのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "リビング。",
+      "contextEn": "Living room",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3529,38 +4163,46 @@
         "チャンネル変えて",
         "私が持ってる"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "弟",
+          "labelEn": "弟 (Brother)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_083",
       "type": "multipleChoice",
       "prompt": "誰がゴミ出しをしますか。",
+      "promptEn": "Who does garbage?",
       "japanese": "A: 「明日、可燃。」\nB: 「私が出す。」",
-      "context": "アパート。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "管理人"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Flammable tomorrow.\"  \nB: “I get out.”",
       "correctAnswerId": "b",
       "explanation": "出すのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "アパート。",
+      "contextEn": "Apartment.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3572,38 +4214,46 @@
         "可燃",
         "私が出す"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "管理人",
+          "labelEn": "管理人 (Manager)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_084",
       "type": "multipleChoice",
       "prompt": "誰が宿題を見ますか。",
+      "promptEn": "Who sees homework?",
       "japanese": "A: 「算数、見て。」\nB: 「母が見る。」",
-      "context": "家族。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "母"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Number of calculations, see.  \nB: “Mothers see.”",
       "correctAnswerId": "a",
       "explanation": "見るのは母。",
+      "explanationEn": "Mother",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "家族。",
+      "contextEn": "Family",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3615,38 +4265,46 @@
         "見て",
         "母が見る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "母",
+          "labelEn": "母 (Mother)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_085",
       "type": "multipleChoice",
       "prompt": "誰が写真を送りますか。",
+      "promptEn": "Who is the photo?",
       "japanese": "A: 「集合写真、後で送って。」\nB: 「私が送る。」",
-      "context": "同窓会。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "全員"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Collection photo, send later.  \nB: “I send.”",
       "correctAnswerId": "b",
       "explanation": "送るのはB。",
+      "explanationEn": "B",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "同窓会。",
+      "contextEn": "Alumni Association",
       "jlptLevel": "N3-N2",
       "difficultyScore": 4,
       "grammarPoints": [
@@ -3658,38 +4316,46 @@
         "後で送って",
         "私が送る"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "全員",
+          "labelEn": "全員 (All)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_086",
       "type": "multipleChoice",
       "prompt": "誰がお歳暮を選びますか。",
+      "promptEn": "Who chooses the aging?",
       "japanese": "A: 「実家、何にする？」\nB: 「私が選ぶ。」",
-      "context": "年末。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "店員"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"What do you do?\"\nB: “I choose.”",
       "correctAnswerId": "b",
       "explanation": "選ぶのはB。",
+      "explanationEn": "B",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "年末。",
+      "contextEn": "Year-end",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3701,38 +4367,46 @@
         "何にする",
         "私が選ぶ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "店員",
+          "labelEn": "店員 (Staff)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_087",
       "type": "multipleChoice",
       "prompt": "誰が赤ちゃんを抱きますか。",
+      "promptEn": "Who hugs the baby?",
       "japanese": "A: 「泣いてる。」\nB: 「私が抱く。」",
-      "context": "里帰り。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "祖母"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: Crying.  \nB: “I hug.”",
       "correctAnswerId": "b",
       "explanation": "抱くのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "里帰り。",
+      "contextEn": "Home",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3743,38 +4417,46 @@
         "泣いてる",
         "私が抱く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "祖母",
+          "labelEn": "祖母 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_088",
       "type": "multipleChoice",
       "prompt": "誰がピザを注文しますか。",
+      "promptEn": "Who order pizza?",
       "japanese": "A: 「小腹すいた。」\nB: 「私が注文する。」",
-      "context": "夜。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "店"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A:。ry.  \nB: “I order.”",
       "correctAnswerId": "b",
       "explanation": "注文するのはB。",
+      "explanationEn": "B to order.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "夜。",
+      "contextEn": "Night",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3785,38 +4467,46 @@
         "小腹すいた",
         "私が注文する"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "店",
+          "labelEn": "店 (Shop)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_089",
       "type": "multipleChoice",
       "prompt": "誰が薬局に行きますか。",
+      "promptEn": "Who goes to the pharmacy?",
       "japanese": "A: 「風邪薬、ない。」\nB: 「私が行く。」",
-      "context": "恋人同士。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "医者"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: No cold medicine.  \nB: “I go.”",
       "correctAnswerId": "b",
       "explanation": "買いに行くのはB。",
+      "explanationEn": "B.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "恋人同士。",
+      "contextEn": "Lovers",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3828,38 +4518,46 @@
         "ない",
         "私が行く"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "医者",
+          "labelEn": "医者 (Doctor)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_090",
       "type": "multipleChoice",
       "prompt": "誰がスピーチをしますか。",
+      "promptEn": "Who speaks?",
       "japanese": "A: 「披露宴、誰が話す？」\nB: 「新郎が話す。」",
-      "context": "結婚式。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "新郎"
-        },
-        {
-          "id": "b",
-          "label": "B"
-        },
-        {
-          "id": "c",
-          "label": "A"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Who speaks?\"\nB: “The groom speaks.”",
       "correctAnswerId": "a",
       "explanation": "話すのは新郎。",
+      "explanationEn": "Groom to speak.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "結婚式。",
+      "contextEn": "Wedding",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3871,38 +4569,46 @@
         "誰が話す",
         "新郎が話す"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "新郎",
+          "labelEn": "新郎 (新)"
+        },
+        {
+          "id": "b",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "c",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_091",
       "type": "multipleChoice",
       "prompt": "「早く」の対象の行為は何ですか。",
+      "promptEn": "What are the acts of \"early\"?",
       "japanese": "A: 「早く。」\nB: 「着替える。」",
-      "context": "子どもが遊び着のまま。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "着替えること"
-        },
-        {
-          "id": "b",
-          "label": "食べること"
-        },
-        {
-          "id": "c",
-          "label": "寝ること"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Early.\"  \nB: \"Change clothes\".",
       "correctAnswerId": "a",
       "explanation": "文脈から着替えが指令の対象。",
+      "explanationEn": "Change of clothes from the context is subject to command.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "子どもが遊び着のまま。",
+      "contextEn": "Children stay in play.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3913,38 +4619,46 @@
         "早く",
         "着替える"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "着替えること",
+          "labelEn": "着替えること (Change clothes)"
+        },
+        {
+          "id": "b",
+          "label": "食べること",
+          "labelEn": "食べること (Food)"
+        },
+        {
+          "id": "c",
+          "label": "寝ること",
+          "labelEn": "寝ること (sleeping)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_092",
       "type": "multipleChoice",
       "prompt": "「静かに」とはどこで静かにすべきですか。",
+      "promptEn": "Where should I find “。”?",
       "japanese": "A: 「図書館だから静かに。」\nB: 「はい。」",
-      "context": "玄関。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "図書館の中"
-        },
-        {
-          "id": "b",
-          "label": "家の中"
-        },
-        {
-          "id": "c",
-          "label": "道路"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: I'm a library.  \nB: Yes.",
       "correctAnswerId": "a",
       "explanation": "場所のルールに合わせる。",
+      "explanationEn": "Follow the rules of the location.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "玄関。",
+      "contextEn": "Entrance",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3955,38 +4669,46 @@
         "図書館だから静かに",
         "はい"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "図書館の中",
+          "labelEn": "図書館の中 (Library)"
+        },
+        {
+          "id": "b",
+          "label": "家の中",
+          "labelEn": "家の中 (Home)"
+        },
+        {
+          "id": "c",
+          "label": "道路",
+          "labelEn": "道路 (Road)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_093",
       "type": "multipleChoice",
       "prompt": "誰に「明日まで」と期限がありますか。",
+      "promptEn": "Who is the deadline for “to tomorrow”?",
       "japanese": "A: 「レポート、明日までね。」\nB: 「了解。」",
-      "context": "ゼミ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "教授"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Report, until tomorrow.\"  \nB: \"。.",
       "correctAnswerId": "b",
       "explanation": "提出義務があるのは答えるB。",
+      "explanationEn": "B to answer the obligation to submit.",
       "diagnosticTags": [
         "omitted_recipient",
         "dialogue_context"
       ],
+      "context": "ゼミ。",
+      "contextEn": "HOME",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -3998,38 +4720,46 @@
         "明日までね",
         "了解"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "教授",
+          "labelEn": "教授 (Professor)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_094",
       "type": "multipleChoice",
       "prompt": "「一口」の対象は何ですか。",
+      "promptEn": "What is the subject of \"one mouth\"?",
       "japanese": "A: 「一口ちょうだい。」\nB: 「はい、どうぞ。」",
-      "context": "ケーキを食べているBの前。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "ケーキ"
-        },
-        {
-          "id": "b",
-          "label": "お茶"
-        },
-        {
-          "id": "c",
-          "label": "箸"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “One-sided”.  \nB: Yes, please.",
       "correctAnswerId": "a",
       "explanation": "分け勧めの対象はケーキ。",
+      "explanationEn": "Cake",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "ケーキを食べているBの前。",
+      "contextEn": "Before B eating cake.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4041,38 +4771,46 @@
         "はい",
         "どうぞ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "ケーキ",
+          "labelEn": "ケーキ (Cakes)"
+        },
+        {
+          "id": "b",
+          "label": "お茶",
+          "labelEn": "お茶 (Tea)"
+        },
+        {
+          "id": "c",
+          "label": "箸",
+          "labelEn": "箸 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_095",
       "type": "multipleChoice",
       "prompt": "「そっち」の仕事はどちらの担当ですか。",
+      "promptEn": "Which job is \"Sっち\"?",
       "japanese": "A: 「そっち、終わった？」\nB: 「うちは終わった。」",
-      "context": "分担作業。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "A側の担当"
-        },
-        {
-          "id": "b",
-          "label": "B側の担当"
-        },
-        {
-          "id": "c",
-          "label": "両方"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “I’m finished?”\nB: \"I'm finished.\"",
       "correctAnswerId": "b",
       "explanation": "Aの立場で「そっち」は相手＝B側の担当を指す。",
+      "explanationEn": "For A, \"Sochi\" refers to the person in charge of the opponent = B.",
       "diagnosticTags": [
         "dialogue_context",
         "implication"
       ],
+      "context": "分担作業。",
+      "contextEn": "Sharing work.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4084,38 +4822,46 @@
         "終わった",
         "うちは終わった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "A側の担当",
+          "labelEn": "A側の担当 (A side)"
+        },
+        {
+          "id": "b",
+          "label": "B側の担当",
+          "labelEn": "B側の担当 (B side)"
+        },
+        {
+          "id": "c",
+          "label": "両方",
+          "labelEn": "両方 (both)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_096",
       "type": "multipleChoice",
       "prompt": "「また」の繰り返しは何を指しますか。",
+      "promptEn": "What is the repetition of “Also”?",
       "japanese": "A: 「また遅刻？」\nB: 「すみません。」",
-      "context": "出勤。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "遅刻する行為"
-        },
-        {
-          "id": "b",
-          "label": "早退"
-        },
-        {
-          "id": "c",
-          "label": "欠勤"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Is it late?”\nB: Don’t know.",
       "correctAnswerId": "a",
       "explanation": "繰り返されたのは遅刻。",
+      "explanationEn": "Repeatedly delayed.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "出勤。",
+      "contextEn": "Work",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4126,38 +4872,46 @@
         "また遅刻",
         "すみません"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "遅刻する行為",
+          "labelEn": "遅刻する行為 (Late act)"
+        },
+        {
+          "id": "b",
+          "label": "早退",
+          "labelEn": "早退 (Close)"
+        },
+        {
+          "id": "c",
+          "label": "欠勤",
+          "labelEn": "欠勤 ()"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_097",
       "type": "multipleChoice",
       "prompt": "誰が謝る必要がありますか。",
+      "promptEn": "Who should pay?",
       "japanese": "A: 「約束、忘れたでしょ。」\nB: 「ごめん、私が悪い。」",
-      "context": "友達。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "B"
-        },
-        {
-          "id": "b",
-          "label": "A"
-        },
-        {
-          "id": "c",
-          "label": "二人とも"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"Promise, don't forget.\"  \nB: \"I'm bad.\"",
       "correctAnswerId": "b",
       "explanation": "謝るのは約束を忘れたB。",
+      "explanationEn": "I forgot my promise.",
       "diagnosticTags": [
         "omitted_subject",
         "dialogue_context"
       ],
+      "context": "友達。",
+      "contextEn": "Friends",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4170,38 +4924,46 @@
         "ごめん",
         "私が悪い"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "B",
+          "labelEn": "B"
+        },
+        {
+          "id": "b",
+          "label": "A",
+          "labelEn": "A"
+        },
+        {
+          "id": "c",
+          "label": "二人とも",
+          "labelEn": "二人とも (Two)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_098",
       "type": "multipleChoice",
       "prompt": "「どうぞ」の内容は何を許可していますか。",
+      "promptEn": "What is your permission?",
       "japanese": "A: 「座っていい？」\nB: 「どうぞ。」",
-      "context": "面接の待合室。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "座ること"
-        },
-        {
-          "id": "b",
-          "label": "立つこと"
-        },
-        {
-          "id": "c",
-          "label": "帰ること"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Do you sit?”\nB: \"Please.",
       "correctAnswerId": "a",
       "explanation": "着席の許可。",
+      "explanationEn": "Seating allowed.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "面接の待合室。",
+      "contextEn": "The waiting room for the interview.",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4212,38 +4974,46 @@
         "座っていい",
         "どうぞ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "座ること",
+          "labelEn": "座ること (Sitting)"
+        },
+        {
+          "id": "b",
+          "label": "立つこと",
+          "labelEn": "立つこと (Standing)"
+        },
+        {
+          "id": "c",
+          "label": "帰ること",
+          "labelEn": "帰ること (Home)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_099",
       "type": "multipleChoice",
       "prompt": "「いいよ」は何を認めていますか。",
+      "promptEn": "What do you know?",
       "japanese": "A: 「この席、空いてる？」\nB: 「いいよ。」",
-      "context": "カフェ。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "座ってよい"
-        },
-        {
-          "id": "b",
-          "label": "注文してよい"
-        },
-        {
-          "id": "c",
-          "label": "写真を撮ってよい"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: “Is this seat empty?”\nB: “Good!”",
       "correctAnswerId": "a",
       "explanation": "席を使う許可。",
+      "explanationEn": "Seats allowed.",
       "diagnosticTags": [
         "implication",
         "dialogue_context"
       ],
+      "context": "カフェ。",
+      "contextEn": "Cafe",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4255,38 +5025,46 @@
         "空いてる",
         "いいよ"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "座ってよい",
+          "labelEn": "座ってよい (Good to sit)"
+        },
+        {
+          "id": "b",
+          "label": "注文してよい",
+          "labelEn": "注文してよい (Good to order)"
+        },
+        {
+          "id": "c",
+          "label": "写真を撮ってよい",
+          "labelEn": "写真を撮ってよい (Good to take photos)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     },
     {
       "id": "od_100",
       "type": "multipleChoice",
       "prompt": "「後で」の対象の行為は何ですか。",
+      "promptEn": "What are the acts of \"later\"?",
       "japanese": "A: 「このメール、後で送って。」\nB: 「分かった。」",
-      "context": "社内。",
-      "choices": [
-        {
-          "id": "a",
-          "label": "メールを送ること"
-        },
-        {
-          "id": "b",
-          "label": "印刷すること"
-        },
-        {
-          "id": "c",
-          "label": "削除すること"
-        },
-        {
-          "id": "d",
-          "label": "分からない"
-        }
-      ],
+      "japaneseEn": "A: \"This email is sent later.  \nB: \"。.",
       "correctAnswerId": "a",
       "explanation": "後回しにするのは送付作業。",
+      "explanationEn": "Sending work to be done later.",
       "diagnosticTags": [
         "omitted_object",
         "dialogue_context"
       ],
+      "context": "社内。",
+      "contextEn": "Company",
       "jlptLevel": "N3-N2",
       "difficultyScore": 5,
       "grammarPoints": [
@@ -4298,7 +5076,29 @@
         "後で送って",
         "分かった"
       ],
-      "reviewStatus": "draft"
+      "reviewStatus": "draft",
+      "choices": [
+        {
+          "id": "a",
+          "label": "メールを送ること",
+          "labelEn": "メールを送ること (Send Email)"
+        },
+        {
+          "id": "b",
+          "label": "印刷すること",
+          "labelEn": "印刷すること (印刷)"
+        },
+        {
+          "id": "c",
+          "label": "削除すること",
+          "labelEn": "削除すること (Delete)"
+        },
+        {
+          "id": "d",
+          "label": "分からない",
+          "labelEn": "分からない (I don't know)"
+        }
+      ]
     }
   ]
 }

@@ -72,44 +72,65 @@ class SiteNavBar extends StatelessWidget {
   }
 }
 
-class _BrandMark extends StatelessWidget {
+class _BrandMark extends StatefulWidget {
   const _BrandMark({required this.onTap});
 
   final VoidCallback onTap;
 
   @override
+  State<_BrandMark> createState() => _BrandMarkState();
+}
+
+class _BrandMarkState extends State<_BrandMark> {
+  bool _hover = false;
+
+  @override
   Widget build(BuildContext context) {
     final t = context.bunkaiTokens;
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(10),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                t.brandMark,
-                style: GoogleFonts.notoSansJp(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w900,
-                  height: 1,
-                  color: t.accent,
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
+    final fast = reduceMotion ? Duration.zero : t.motionFast;
+    final curve = t.motionStandardCurve;
+    final accent = _hover ? t.accent : t.accent.withValues(alpha: 0.9);
+    final wordmark = _hover ? t.textStrong : t.textStrong.withValues(alpha: 0.92);
+
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hover = true),
+      onExit: (_) => setState(() => _hover = false),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: widget.onTap,
+          borderRadius: BorderRadius.circular(10),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                AnimatedDefaultTextStyle(
+                  duration: fast,
+                  curve: curve,
+                  style: GoogleFonts.notoSansJp(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                    height: 1,
+                    color: accent,
+                  ),
+                  child: Text(t.brandMark),
                 ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                'BunKai',
-                style: GoogleFonts.inter(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: -0.3,
-                  color: t.textStrong,
+                const SizedBox(width: 8),
+                AnimatedDefaultTextStyle(
+                  duration: fast,
+                  curve: curve,
+                  style: GoogleFonts.inter(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: -0.3,
+                    color: wordmark,
+                  ),
+                  child: const Text('BunKai'),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
@@ -117,7 +138,7 @@ class _BrandMark extends StatelessWidget {
   }
 }
 
-class _NavPill extends StatelessWidget {
+class _NavPill extends StatefulWidget {
   const _NavPill({
     required this.label,
     required this.selected,
@@ -129,22 +150,67 @@ class _NavPill extends StatelessWidget {
   final VoidCallback onPressed;
 
   @override
+  State<_NavPill> createState() => _NavPillState();
+}
+
+class _NavPillState extends State<_NavPill> {
+  bool _hover = false;
+
+  @override
   Widget build(BuildContext context) {
     final t = context.bunkaiTokens;
-    return Material(
-      color: selected ? t.accentSoft : Colors.transparent,
-      borderRadius: BorderRadius.circular(999),
-      child: InkWell(
-        onTap: onPressed,
-        borderRadius: BorderRadius.circular(999),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-          child: Text(
-            label,
-            style: GoogleFonts.inter(
-              fontSize: 14,
-              fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
-              color: selected ? t.accent : t.textMuted,
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
+    final fast = reduceMotion ? Duration.zero : t.motionFast;
+    final curve = t.motionStandardCurve;
+    final selected = widget.selected;
+
+    final Color background;
+    if (selected) {
+      background = t.accentSoft;
+    } else if (_hover) {
+      background = t.accentSoft.withValues(alpha: 0.45);
+    } else {
+      background = Colors.transparent;
+    }
+
+    final Color textColor;
+    if (selected) {
+      textColor = t.accent;
+    } else if (_hover) {
+      textColor = t.textStrong;
+    } else {
+      textColor = t.textMuted;
+    }
+
+    return MouseRegion(
+      onEnter: (_) => setState(() => _hover = true),
+      onExit: (_) => setState(() => _hover = false),
+      child: AnimatedContainer(
+        duration: fast,
+        curve: curve,
+        decoration: BoxDecoration(
+          color: background,
+          borderRadius: BorderRadius.circular(999),
+        ),
+        child: Material(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(999),
+          child: InkWell(
+            onTap: widget.onPressed,
+            borderRadius: BorderRadius.circular(999),
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              child: AnimatedDefaultTextStyle(
+                duration: fast,
+                curve: curve,
+                style: GoogleFonts.inter(
+                  fontSize: 14,
+                  fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
+                  color: textColor,
+                ),
+                child: Text(widget.label),
+              ),
             ),
           ),
         ),

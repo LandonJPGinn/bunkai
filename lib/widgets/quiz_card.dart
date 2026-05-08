@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../app/bunkai_tokens.dart';
+import '../app/color/oklch.dart';
 import '../data/topic_card_style.dart';
 import '../models/quiz_id.dart';
 
@@ -17,7 +18,10 @@ class QuizCard extends StatefulWidget {
     required this.description,
     required this.tags,
     required this.difficulty,
+    required this.selectedDifficulty,
+    required this.questionCountLabel,
     required this.onStart,
+    required this.onOpenSettings,
   });
 
   final QuizId quizId;
@@ -26,7 +30,10 @@ class QuizCard extends StatefulWidget {
   final String description;
   final List<String> tags;
   final String difficulty;
+  final String selectedDifficulty;
+  final String questionCountLabel;
   final VoidCallback onStart;
+  final VoidCallback onOpenSettings;
 
   @override
   State<QuizCard> createState() => _QuizCardState();
@@ -129,7 +136,6 @@ class _QuizCardState extends State<QuizCard>
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final tokens = context.bunkaiTokens;
     final focused = _focusNode.hasFocus;
-    final lift = _hover && !reduceMotion;
     final kanjiBright = _hover || focused;
     final decorMotionActive =
         _motionReady && !reduceMotion && (_hover || focused);
@@ -140,7 +146,7 @@ class _QuizCardState extends State<QuizCard>
     final showSubtitle = widget.subtitle.trim().isNotEmpty;
 
     final semanticsLabel =
-        '${widget.title}. ${widget.difficulty}. Double tap or press Enter to start.';
+        '${widget.title}. ${widget.difficulty}. ${widget.questionCountLabel} questions, ${widget.selectedDifficulty}. Double tap or press Enter to start.';
 
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -151,7 +157,9 @@ class _QuizCardState extends State<QuizCard>
         final subtitleSize = (w * 0.032).clamp(12.0, 14.0);
         final descSize = (w * 0.028).clamp(11.0, 13.0);
 
-        final shadow = lift ? tokens.shadowCard : tokens.shadowSoft;
+        final shadow = (_hover && !reduceMotion)
+            ? tokens.shadowCard
+            : tokens.shadowSoft;
 
         final cardStack = ClipRRect(
           borderRadius: BorderRadius.circular(_radius),
@@ -168,12 +176,26 @@ class _QuizCardState extends State<QuizCard>
                   height: h,
                   width: w,
                 ),
-              _BackdropKanji(
-                kanji: style.kanji,
-                tiltDegrees: style.tiltDegrees,
-                fontSize: kanjiSize,
-                parallax: reduceMotion ? Offset.zero : _parallax,
-                bright: kanjiBright,
+              TweenAnimationBuilder<Offset>(
+                tween: Tween<Offset>(
+                  begin: Offset.zero,
+                  end: reduceMotion ? Offset.zero : _parallax,
+                ),
+                // Fast follow while hovered, ease back smoothly when the
+                // pointer leaves so the kanji never snaps to centre.
+                duration: reduceMotion
+                    ? Duration.zero
+                    : (_hover
+                        ? const Duration(milliseconds: 80)
+                        : tokens.motionMedium),
+                curve: tokens.motionStandardCurve,
+                builder: (context, animatedOffset, _) => _BackdropKanji(
+                  kanji: style.kanji,
+                  tiltDegrees: style.tiltDegrees,
+                  fontSize: kanjiSize,
+                  parallax: animatedOffset,
+                  bright: kanjiBright,
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
@@ -189,7 +211,7 @@ class _QuizCardState extends State<QuizCard>
                             fontWeight: FontWeight.w900,
                             height: 0.92,
                             letterSpacing: -1.0,
-                            color: Colors.white,
+                            color: Oklch.white.toColor(),
                           ),
                     ),
                     if (showSubtitle) ...[
@@ -203,7 +225,7 @@ class _QuizCardState extends State<QuizCard>
                                   fontSize: subtitleSize,
                                   fontWeight: FontWeight.w600,
                                   height: 1.32,
-                                  color: Colors.white.withValues(alpha: 0.88),
+                                  color: whiteAlpha(0.88),
                                 ),
                       ),
                     ],
@@ -217,7 +239,7 @@ class _QuizCardState extends State<QuizCard>
                               fontSize: descSize,
                               fontWeight: FontWeight.w400,
                               height: 1.38,
-                              color: Colors.white.withValues(alpha: 0.78),
+                              color: whiteAlpha(0.78),
                             ),
                       ),
                     ],
@@ -234,10 +256,10 @@ class _QuizCardState extends State<QuizCard>
                                 vertical: 3,
                               ),
                               decoration: BoxDecoration(
-                                color: Colors.black.withValues(alpha: 0.22),
+                                color: blackAlpha(0.22),
                                 borderRadius: BorderRadius.circular(6),
                                 border: Border.all(
-                                  color: Colors.white.withValues(alpha: 0.28),
+                                  color: whiteAlpha(0.28),
                                 ),
                               ),
                               child: Text(
@@ -249,7 +271,7 @@ class _QuizCardState extends State<QuizCard>
                                       fontSize: 10,
                                       fontWeight: FontWeight.w600,
                                       letterSpacing: 0.15,
-                                      color: Colors.white.withValues(alpha: 0.88),
+                                      color: whiteAlpha(0.88),
                                     ),
                               ),
                             ),
@@ -261,18 +283,29 @@ class _QuizCardState extends State<QuizCard>
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         _DifficultyCapsule(label: widget.difficulty),
+                        const SizedBox(width: 8),
+                        _DifficultyCapsule(
+                          label:
+                              '${widget.questionCountLabel} · ${widget.selectedDifficulty}',
+                        ),
                         const Spacer(),
+                        IconButton.filledTonal(
+                          onPressed: widget.onOpenSettings,
+                          tooltip: 'Quiz settings',
+                          icon: const Icon(Icons.settings),
+                        ),
+                        const SizedBox(width: 8),
                         Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 16,
                             vertical: 10,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.92),
+                            color: whiteAlpha(0.92),
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withValues(alpha: 0.18),
+                                color: blackAlpha(0.18),
                                 offset: const Offset(0, 4),
                                 blurRadius: 12,
                               ),
@@ -299,6 +332,10 @@ class _QuizCardState extends State<QuizCard>
           ),
         );
 
+        final motionDuration =
+            reduceMotion ? Duration.zero : tokens.motionMedium;
+        final motionCurve = tokens.motionStandardCurve;
+
         return MergeSemantics(
           child: Semantics(
             button: true,
@@ -308,50 +345,57 @@ class _QuizCardState extends State<QuizCard>
               focusNode: _focusNode,
               onKeyEvent: _onKey,
               child: AnimatedContainer(
-                duration: reduceMotion
-                    ? Duration.zero
-                    : const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
-                transform: Matrix4.translationValues(0, lift ? -5 : 0, 0),
+                duration: motionDuration,
+                curve: motionCurve,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(_radius),
                   boxShadow: shadow,
                 ),
                 child: Material(
                   color: Colors.transparent,
-                  child: DecoratedBox(
+                  child: AnimatedContainer(
+                    duration: motionDuration,
+                    curve: motionCurve,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(_radius),
                       border: Border.all(
                         color: focused
                             ? tokens.accent.withValues(alpha: 0.95)
-                            : Colors.white.withValues(alpha: 0.14),
-                        width: focused ? 2.5 : 1,
+                            : whiteAlpha(0.14),
+                        width: 1.5,
                       ),
+                      boxShadow: focused
+                          ? [
+                              BoxShadow(
+                                color: tokens.accent.withValues(alpha: 0.38),
+                                blurRadius: 16,
+                                spreadRadius: 0,
+                              ),
+                            ]
+                          : const [],
                     ),
-                    child: Listener(
-                      onPointerMove: (e) =>
+                    child: MouseRegion(
+                      onEnter: (_) {
+                        setState(() => _hover = true);
+                        _scheduleDecorMotionSync();
+                      },
+                      onHover: (e) =>
                           _onPointerMove(e, constraints, reduceMotion),
-                      onPointerHover: (_) {},
-                      child: MouseRegion(
-                        onEnter: (_) {
-                          setState(() => _hover = true);
-                          _scheduleDecorMotionSync();
-                        },
-                        onExit: (_) {
-                          setState(() {
-                            _hover = false;
-                            _parallax = Offset.zero;
-                          });
-                          _scheduleDecorMotionSync();
-                        },
-                        child: InkWell(
-                          onTap: widget.onStart,
-                          borderRadius: BorderRadius.circular(_radius),
-                          hoverColor: Colors.white.withValues(alpha: 0.06),
-                          splashColor: Colors.white.withValues(alpha: 0.12),
-                          child: cardStack,
-                        ),
+                      onExit: (_) {
+                        setState(() {
+                          _hover = false;
+                          _parallax = Offset.zero;
+                        });
+                        _scheduleDecorMotionSync();
+                      },
+                      child: InkWell(
+                        onTap: widget.onStart,
+                        borderRadius: BorderRadius.circular(_radius),
+                        splashFactory: NoSplash.splashFactory,
+                        hoverColor: whiteAlpha(0.06),
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        child: cardStack,
                       ),
                     ),
                   ),
@@ -396,7 +440,7 @@ class _GradientBackdrop extends StatelessWidget {
           ),
           DecoratedBox(
             decoration: BoxDecoration(
-              border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
+              border: Border.all(color: whiteAlpha(0.14)),
               borderRadius: BorderRadius.circular(radius),
             ),
           ),
@@ -423,6 +467,8 @@ class _BackdropKanji extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final tokens = context.bunkaiTokens;
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
     final baseOpacity = bright ? 0.68 : 0.58;
     return ExcludeSemantics(
       child: IgnorePointer(
@@ -433,15 +479,17 @@ class _BackdropKanji extends StatelessWidget {
             child: Transform.rotate(
               angle: tiltDegrees * math.pi / 180,
               alignment: Alignment.bottomLeft,
-              child: Text(
-                kanji,
-                style: Theme.of(context).textTheme.displayMedium?.copyWith(
+              child: AnimatedDefaultTextStyle(
+                duration: reduceMotion ? Duration.zero : tokens.motionMedium,
+                curve: tokens.motionStandardCurve,
+                style: Theme.of(context).textTheme.displayMedium!.copyWith(
                       fontSize: fontSize,
                       fontWeight: FontWeight.w900,
                       height: 0.75,
                       letterSpacing: -fontSize * 0.05,
-                      color: Colors.white.withValues(alpha: baseOpacity),
+                      color: whiteAlpha(baseOpacity),
                     ),
+                child: Text(kanji),
               ),
             ),
           ),
@@ -500,7 +548,7 @@ class _NoiseAndSweepLayer extends StatelessWidget {
                         ),
                         colors: [
                           Colors.transparent,
-                          Colors.white.withValues(alpha: 0.14),
+                          whiteAlpha(0.14),
                           Colors.transparent,
                         ],
                         stops: const [0.38, 0.48, 0.62],
@@ -546,10 +594,10 @@ class _ParticleDots extends StatelessWidget {
         height: 2,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Colors.white.withValues(alpha: a),
+          color: whiteAlpha(a),
           boxShadow: [
             BoxShadow(
-              color: Colors.white.withValues(alpha: a * 0.8),
+              color: whiteAlpha(a * 0.8),
               blurRadius: 1.2,
             ),
           ],
@@ -569,9 +617,9 @@ class _DifficultyCapsule extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.16),
+        color: whiteAlpha(0.16),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.35)),
+        border: Border.all(color: whiteAlpha(0.35)),
       ),
       child: Text(
         label,
@@ -579,7 +627,7 @@ class _DifficultyCapsule extends StatelessWidget {
               fontSize: 11,
               fontWeight: FontWeight.w600,
               letterSpacing: 0.12,
-              color: Colors.white.withValues(alpha: 0.92),
+              color: whiteAlpha(0.92),
             ),
       ),
     );

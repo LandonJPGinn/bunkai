@@ -6,10 +6,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'bunkai_feedback_theme.dart';
 import 'bunkai_tokens.dart';
+import 'color/oklch.dart';
 
-Color _hsl(double h, double s, double l) {
-  return HSLColor.fromAHSL(1, h, s / 100, l / 100).toColor();
-}
+Color _oklch(double l, double c, double h) => Oklch(l, c, h).toColor();
 
 ThemeData buildBunkaiDarkTheme() {
   final tokens = BunkaiTokens.dark;
@@ -31,14 +30,14 @@ ThemeData buildBunkaiDarkTheme() {
   scheme = scheme.copyWith(
     primary: accent,
     onPrimary: onAccent,
-    primaryContainer: _hsl(205, 40, 16),
-    onPrimaryContainer: _hsl(200, 100, 88),
-    secondary: _hsl(318, 50, 55),
+    primaryContainer: _oklch(0.2815, 0.0354, 240.74),
+    onPrimaryContainer: _oklch(0.9165, 0.0507, 229.62),
+    secondary: _oklch(0.6148, 0.1725, 340.83),
     onSecondary: tokens.textStrong,
-    secondaryContainer: _hsl(300, 30, 18),
-    onSecondaryContainer: _hsl(320, 40, 88),
-    tertiary: _hsl(36, 90, 58),
-    onTertiary: _hsl(230, 22, 8),
+    secondaryContainer: _oklch(0.2924, 0.0611, 327.00),
+    onSecondaryContainer: _oklch(0.8953, 0.0346, 338.03),
+    tertiary: _oklch(0.7858, 0.1520, 72.09),
+    onTertiary: _oklch(0.1815, 0.0156, 275.92),
     surface: surface,
     surfaceContainerLow: tokens.surface1,
     surfaceContainer: tokens.surface2,
@@ -170,14 +169,19 @@ ThemeData buildBunkaiDarkTheme() {
     hoverColor: tokens.accentSoft,
     highlightColor: tokens.accentSoft,
     splashColor: tokens.accent.withValues(alpha: 0.12),
-    extensions: const <ThemeExtension<dynamic>>[
+    extensions: <ThemeExtension<dynamic>>[
       BunkaiFeedbackColors.dark,
       BunkaiTokens.dark,
     ],
   );
 }
 
+// OKLCH equivalents of the prior `Color(0xFF0D1118)` / `Color(0xFFFAFAFA)`
+// constants — resolved once and reused on every contrast lookup.
+final Color _highContrastDark = const Oklch(0.1768, 0.0159, 261.52).toColor();
+final Color _highContrastLight = const Oklch(0.9851, 0.000, 89.88).toColor();
+
 Color _highContrastOn(Color background) {
   final luminance = background.computeLuminance();
-  return luminance > 0.45 ? const Color(0xFF0D1118) : const Color(0xFFFAFAFA);
+  return luminance > 0.45 ? _highContrastDark : _highContrastLight;
 }

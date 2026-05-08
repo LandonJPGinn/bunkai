@@ -18,12 +18,15 @@ QuizQuestion _mc({
     type: QuizType.multipleChoice,
     prompt: 'p',
     japanese: 'j',
+    promptEn: 'p',
+    japaneseEn: 'j',
     choices: const [
-      AnswerChoice(id: 'a', label: 'A'),
-      AnswerChoice(id: 'b', label: 'B'),
+      AnswerChoice(id: 'a', label: 'A', labelEn: 'A'),
+      AnswerChoice(id: 'b', label: 'B', labelEn: 'B'),
     ],
     correctAnswerId: 'a',
     explanation: 'e',
+    explanationEn: 'e',
     jlptLevel: jlptLevel,
   );
 }
@@ -44,16 +47,16 @@ Quiz _quizThreeBands() {
 }
 
 void main() {
-  test('ordered respects cap and original order', () {
+  test('session respects cap and includes only bank questions', () {
     final base = _quizThreeBands();
     final out = buildPracticeSessionQuiz(
       base,
       difficulty: PracticeJlptFilter.all,
       countPreset: PracticeCountPreset.ten,
-      mode: PracticeOrderMode.ordered,
+      random: Random(0),
     );
     expect(out.questions.length, 3);
-    expect(out.questions.map((q) => q.id).toList(), ['1', '2', '3']);
+    expect(out.questions.map((q) => q.id).toSet(), {'1', '2', '3'});
   });
 
   test('filter by jlpt band excludes non-matching', () {
@@ -62,9 +65,10 @@ void main() {
       base,
       difficulty: PracticeJlptFilter.n4,
       countPreset: PracticeCountPreset.all,
-      mode: PracticeOrderMode.ordered,
+      random: Random(0),
     );
-    expect(out.questions.map((q) => q.id).toList(), ['1', '3']);
+    expect(out.questions.map((q) => q.id).toSet(), {'1', '3'});
+    expect(out.questions.length, 2);
   });
 
   test('fewer than requested count after filter', () {
@@ -73,7 +77,7 @@ void main() {
       base,
       difficulty: PracticeJlptFilter.n3,
       countPreset: PracticeCountPreset.fifty,
-      mode: PracticeOrderMode.ordered,
+      random: Random(0),
     );
     expect(out.questions.length, 1);
     expect(out.questions.single.id, '2');
@@ -95,12 +99,12 @@ void main() {
       base,
       difficulty: PracticeJlptFilter.n4,
       countPreset: PracticeCountPreset.all,
-      mode: PracticeOrderMode.ordered,
+      random: Random(0),
     );
     expect(out.questions.map((q) => q.id).toList(), ['u1']);
   });
 
-  test('random has no duplicate ids in session', () {
+  test('shuffle has no duplicate ids in session', () {
     final questions = <QuizQuestion>[
       for (var i = 0; i < 12; i++) _mc(id: 'q$i', jlptLevel: 'N4'),
     ];
@@ -117,7 +121,6 @@ void main() {
       base,
       difficulty: PracticeJlptFilter.all,
       countPreset: PracticeCountPreset.ten,
-      mode: PracticeOrderMode.random,
       random: random,
     );
     expect(out.questions.length, 10);
