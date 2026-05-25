@@ -5,6 +5,7 @@ import {
   loadQuizBank,
   loadQuizCatalog,
 } from "../../functions/api/_quiz_content.js";
+import worker from "../../worker/index.js";
 
 class FakeStatement {
   constructor(db, sql) {
@@ -147,4 +148,21 @@ test("loadQuizBank returns the full Flutter quiz shape", async () => {
   assert.deepEqual(quiz.questions[0].choices, [
     { id: "a", label: "が", labelEn: "ga" },
   ]);
+});
+
+test("Worker routes nested quiz API requests before assets", async () => {
+  const response = await worker.fetch(
+    new Request("https://example.test/api/quizzes/particleForensics"),
+    { DB: new FakeDb() },
+  );
+
+  assert.equal(response.status, 200);
+  assert.equal(
+    response.headers.get("Content-Type"),
+    "application/json; charset=utf-8",
+  );
+
+  const quiz = await response.json();
+  assert.equal(quiz.id, "particleForensics");
+  assert.equal(quiz.questions.length, 1);
 });
