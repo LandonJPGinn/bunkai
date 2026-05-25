@@ -13,8 +13,9 @@ class QuizQuestion {
     required this.promptEn,
     required this.japaneseEn,
     this.contextEn,
-    required this.choices,
-    required this.correctAnswerId,
+    this.choices = const [],
+    this.correctAnswerId = '',
+    this.acceptedAnswers = const [],
     required this.explanation,
     required this.explanationEn,
     this.diagnosticTags = const [],
@@ -45,6 +46,7 @@ class QuizQuestion {
 
   final List<AnswerChoice> choices;
   final String correctAnswerId;
+  final List<String> acceptedAnswers;
   final String explanation;
 
   /// Brief English rationale (paired with [explanation]).
@@ -66,6 +68,36 @@ class QuizQuestion {
   final String? source;
   final String? author;
 
+  /// Canonical acceptable answers for typed input.
+  ///
+  /// Priority:
+  /// 1) Explicit [acceptedAnswers] from bank JSON.
+  /// 2) Backward-compatible fallback to the correct choice label.
+  List<String> get canonicalAnswers {
+    final normalized = <String>[];
+    final seen = <String>{};
+    for (final answer in acceptedAnswers) {
+      final trimmed = answer.trim();
+      if (trimmed.isEmpty) continue;
+      if (seen.add(trimmed)) normalized.add(trimmed);
+    }
+    if (normalized.isNotEmpty) {
+      return normalized;
+    }
+    if (choices.isNotEmpty && correctAnswerId.isNotEmpty) {
+      for (final choice in choices) {
+        if (choice.id == correctAnswerId) {
+          final trimmed = choice.label.trim();
+          if (trimmed.isNotEmpty) {
+            return [trimmed];
+          }
+          break;
+        }
+      }
+    }
+    return const [];
+  }
+
   Map<String, dynamic> toMap() => {
         'id': id,
         'type': type.name,
@@ -75,8 +107,9 @@ class QuizQuestion {
         'promptEn': promptEn,
         'japaneseEn': japaneseEn,
         if (contextEn != null) 'contextEn': contextEn,
-        'choices': choices.map((c) => c.toMap()).toList(),
-        'correctAnswerId': correctAnswerId,
+        if (choices.isNotEmpty) 'choices': choices.map((c) => c.toMap()).toList(),
+        if (correctAnswerId.isNotEmpty) 'correctAnswerId': correctAnswerId,
+        if (acceptedAnswers.isNotEmpty) 'acceptedAnswers': acceptedAnswers,
         'explanation': explanation,
         'explanationEn': explanationEn,
         'diagnosticTags': diagnosticTags,
@@ -98,6 +131,56 @@ class QuizQuestion {
   factory QuizQuestion.fromJson(Map<String, dynamic> json) =>
       QuizQuestion.fromMap(json);
 
+  QuizQuestion copyWith({
+    String? id,
+    QuizType? type,
+    String? prompt,
+    String? japanese,
+    String? context,
+    String? promptEn,
+    String? japaneseEn,
+    String? contextEn,
+    List<AnswerChoice>? choices,
+    String? correctAnswerId,
+    List<String>? acceptedAnswers,
+    String? explanation,
+    String? explanationEn,
+    List<String>? diagnosticTags,
+    String? jlptLevel,
+    int? difficultyScore,
+    List<String>? grammarPoints,
+    List<String>? vocabulary,
+    QuestionReviewStatus? reviewStatus,
+    String? reviewNotes,
+    String? source,
+    String? author,
+  }) {
+    return QuizQuestion(
+      id: id ?? this.id,
+      type: type ?? this.type,
+      prompt: prompt ?? this.prompt,
+      japanese: japanese ?? this.japanese,
+      context: context ?? this.context,
+      promptEn: promptEn ?? this.promptEn,
+      japaneseEn: japaneseEn ?? this.japaneseEn,
+      contextEn: contextEn ?? this.contextEn,
+      choices: choices ?? this.choices,
+      correctAnswerId: correctAnswerId ?? this.correctAnswerId,
+      acceptedAnswers: acceptedAnswers ?? this.acceptedAnswers,
+      explanation: explanation ?? this.explanation,
+      explanationEn: explanationEn ?? this.explanationEn,
+      diagnosticTags: diagnosticTags ?? this.diagnosticTags,
+      jlptLevel: jlptLevel ?? this.jlptLevel,
+      difficultyScore: difficultyScore ?? this.difficultyScore,
+      grammarPoints: grammarPoints ?? this.grammarPoints,
+      vocabulary: vocabulary ?? this.vocabulary,
+      reviewStatus: reviewStatus ?? this.reviewStatus,
+      reviewNotes: reviewNotes ?? this.reviewNotes,
+      source: source ?? this.source,
+      author: author ?? this.author,
+    );
+  }
+
   factory QuizQuestion.fromMap(Map<String, dynamic> map) {
     final id = map['id'];
     final typeName = map['type'];
@@ -109,6 +192,7 @@ class QuizQuestion {
     final contextEn = map['contextEn'];
     final choicesRaw = map['choices'];
     final correctAnswerId = map['correctAnswerId'];
+    final acceptedAnswersRaw = map['acceptedAnswers'];
     final explanation = map['explanation'];
     final explanationEn = map['explanationEn'];
     final diagnosticTagsRaw = map['diagnosticTags'];
@@ -139,14 +223,19 @@ class QuizQuestion {
         'QuizQuestion.fromMap: missing field "japanese"',
       );
     }
-    if (choicesRaw is! List) {
+    if (choicesRaw != null && choicesRaw is! List) {
       throw const FormatException(
-        'QuizQuestion.fromMap: missing field "choices"',
+        'QuizQuestion.fromMap: field "choices" must be an array or absent',
       );
     }
-    if (correctAnswerId is! String) {
+    if (correctAnswerId != null && correctAnswerId is! String) {
       throw const FormatException(
-        'QuizQuestion.fromMap: missing field "correctAnswerId"',
+        'QuizQuestion.fromMap: field "correctAnswerId" must be a string or absent',
+      );
+    }
+    if (acceptedAnswersRaw != null && acceptedAnswersRaw is! List) {
+      throw const FormatException(
+        'QuizQuestion.fromMap: field "acceptedAnswers" must be an array or absent',
       );
     }
     if (explanation is! String) {
@@ -287,6 +376,20 @@ class QuizQuestion {
       author = authorRaw;
     }
 
+    final parsedChoices = [
+      for (final raw in (choicesRaw as List? ?? const []))
+        AnswerChoice.fromMap(Map<String, dynamic>.from(raw as Map)),
+    ];
+    final parsedAcceptedAnswers = [
+      for (final item in (acceptedAnswersRaw as List? ?? const []))
+        if (item is String)
+          item
+        else
+          throw const FormatException(
+            'QuizQuestion.fromMap: acceptedAnswers entries must be strings',
+          ),
+    ];
+
     return QuizQuestion(
       id: id,
       type: type,
@@ -296,11 +399,9 @@ class QuizQuestion {
       promptEn: promptEn,
       japaneseEn: japaneseEn,
       contextEn: contextEn is String ? contextEn : null,
-      choices: [
-        for (final raw in choicesRaw)
-          AnswerChoice.fromMap(Map<String, dynamic>.from(raw as Map)),
-      ],
-      correctAnswerId: correctAnswerId,
+      choices: parsedChoices,
+      correctAnswerId: (correctAnswerId as String?) ?? '',
+      acceptedAnswers: parsedAcceptedAnswers,
       explanation: explanation,
       explanationEn: explanationEn,
       diagnosticTags: diagnosticTagsRaw is List

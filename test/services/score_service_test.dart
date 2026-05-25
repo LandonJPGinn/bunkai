@@ -1,6 +1,6 @@
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/models/quiz_result.dart';
-import 'package:bunkai/services/score_service.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/models/quiz_result.dart';
+import 'package:jpquizapp/services/score_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 QuizResult _result({required int correct, required int total}) {

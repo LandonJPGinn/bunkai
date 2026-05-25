@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bunkai.local/schemas/quiz_bank.schema.json",
-  "title": "jpquiz quiz bank (single Quiz)",
-  "description": "One bundled quiz file under assets/quiz_banks/. Parsed as Quiz in lib/models/quiz.dart. Cross-field rules (e.g. correctAnswerId must match a choice id) are enforced at runtime by validateQuizBankContent.",
+  "$id": "https://jpquizapp.local/schemas/quiz_bank.schema.json",
+  "title": "jpquizapp quiz bank (single Quiz)",
+  "description": "One bundled quiz file under assets/quiz_banks/. Parsed as Quiz in lib/models/quiz.dart. Cross-field rules (e.g. canonical answer derivation) are enforced at runtime by validateQuizBankContent.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -68,8 +68,6 @@
         "japanese",
         "promptEn",
         "japaneseEn",
-        "choices",
-        "correctAnswerId",
         "explanation",
         "explanationEn",
         "diagnosticTags"
@@ -127,6 +125,15 @@
         "correctAnswerId": {
           "type": "string",
           "minLength": 1
+        },
+        "acceptedAnswers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Canonical accepted answers for typed input. If omitted, runtime falls back to the correct choice label."
         },
         "explanation": {
           "type": "string",

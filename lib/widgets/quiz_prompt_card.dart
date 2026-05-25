@@ -3,7 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 import '../utils/quiz_instruction_text.dart';
 import 'japanese_text_lookup.dart';
@@ -35,7 +35,7 @@ class QuizPromptCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     final wm = watermarkKanji?.trim();
     final instructions = normalizeQuizInstructions(promptEn);
 
@@ -127,7 +127,7 @@ class _InstructionStrip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

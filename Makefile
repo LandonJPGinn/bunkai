@@ -1,4 +1,4 @@
-# BunKai — Flutter Web app (see README.md).
+# jpquizapp - Flutter Web app (see README.md).
 .PHONY: default site pub-get build-web content-export-csv content-generate content-validate content-compile content-build
 
 default: site

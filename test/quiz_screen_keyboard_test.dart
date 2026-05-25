@@ -1,56 +1,76 @@
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/screens/quiz_screen.dart';
-import 'package:bunkai/services/japanese_dictionary_service.dart';
-import 'package:bunkai/services/quiz_bank_loader.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/models/quiz_question.dart';
+import 'package:jpquizapp/models/quiz_type.dart';
+import 'package:jpquizapp/screens/quiz_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  setUpAll(() async {
-    TestWidgetsFlutterBinding.ensureInitialized();
-    await Future.wait([
-      QuizBankLoader.instance.loadAllForTests(),
-      JapaneseDictionaryService.instance.ensureLoaded(),
-    ]);
-  });
+  const quiz = Quiz(
+    id: QuizId.transitivityDuel,
+    title: 'Quiz',
+    subtitle: 'S',
+    description: 'D',
+    difficulty: 'N4',
+    questions: [
+      QuizQuestion(
+        id: 'q1',
+        type: QuizType.textInput,
+        prompt: 'Type',
+        japanese: 'ほん___よむ',
+        promptEn: 'Type',
+        japaneseEn: 'Type',
+        explanation: 'ex',
+        explanationEn: 'ex',
+        diagnosticTags: ['tag'],
+        acceptedAnswers: ['を'],
+      ),
+      QuizQuestion(
+        id: 'q2',
+        type: QuizType.textInput,
+        prompt: 'Type',
+        japanese: 'がっこう___いく',
+        promptEn: 'Type',
+        japaneseEn: 'Type',
+        explanation: 'ex',
+        explanationEn: 'ex',
+        diagnosticTags: ['tag'],
+        acceptedAnswers: ['に'],
+      ),
+    ],
+  );
 
-  tearDownAll(() {
-    QuizBankLoader.instance.debugReset();
-  });
-
-  testWidgets('digit key selects answer and Enter submits', (tester) async {
-    final quiz = QuizBankLoader.instance.quizFor(QuizId.transitivityDuel);
+  testWidgets('Enter submits typed answer', (tester) async {
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: QuizScreen(quiz: quiz),
       ),
     );
     await tester.pumpAndSettle();
 
-    await tester.sendKeyEvent(LogicalKeyboardKey.digit1);
+    await tester.enterText(find.byType(TextField), 'wo');
     await tester.pump();
     await tester.sendKeyEvent(LogicalKeyboardKey.enter);
-    await tester.pump();
+    await tester.pumpAndSettle();
 
     expect(find.text('Correct'), findsWidgets);
 
-    await tester.sendKeyEvent(LogicalKeyboardKey.enter);
+    await tester.tap(find.text('Next'));
     await tester.pumpAndSettle();
-
-    expect(find.textContaining('intentionally open'), findsOneWidget);
+    expect(find.text('Submit'), findsOneWidget);
   });
 
   testWidgets('correct answer does not auto-advance without Next', (tester) async {
-    final quiz = QuizBankLoader.instance.quizFor(QuizId.transitivityDuel);
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: QuizScreen(quiz: quiz),
       ),
     );
     await tester.pumpAndSettle();
 
-    await tester.sendKeyEvent(LogicalKeyboardKey.digit1);
+    await tester.enterText(find.byType(TextField), 'wo');
     await tester.pump();
     await tester.sendKeyEvent(LogicalKeyboardKey.enter);
     await tester.pumpAndSettle();
@@ -60,24 +80,18 @@ void main() {
     await tester.pump(const Duration(milliseconds: 2000));
     await tester.pump();
 
-    expect(find.textContaining('intentionally open'), findsNothing);
+    expect(find.text('Next'), findsOneWidget);
   });
 
   testWidgets('wrong answer does not auto-advance', (tester) async {
-    final quiz = QuizBankLoader.instance.quizFor(QuizId.transitivityDuel);
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: QuizScreen(quiz: quiz),
       ),
     );
     await tester.pumpAndSettle();
 
-    expect(
-      find.textContaining('No one touched the window'),
-      findsOneWidget,
-    );
-
-    await tester.sendKeyEvent(LogicalKeyboardKey.digit2);
+    await tester.enterText(find.byType(TextField), 'ni');
     await tester.pump();
     await tester.sendKeyEvent(LogicalKeyboardKey.enter);
     await tester.pumpAndSettle();
@@ -85,10 +99,7 @@ void main() {
     expect(find.text('Incorrect'), findsOneWidget);
     await tester.pump(const Duration(milliseconds: 2000));
 
-    expect(
-      find.textContaining('No one touched the window'),
-      findsOneWidget,
-    );
-    expect(find.textContaining('intentionally open'), findsNothing);
+    expect(find.text('Next'), findsOneWidget);
+    expect(find.text('Submit'), findsNothing);
   });
 }

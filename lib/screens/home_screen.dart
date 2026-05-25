@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../app/app_router.dart' show AppRoutes, QuizRouteArgs;
 import '../app/breakpoints.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../app/font_bootstrap.dart';
 import '../app/home_scroll_behavior.dart';
 import '../data/quiz_registry.dart';
@@ -68,10 +68,11 @@ class _HomeScreenState extends State<HomeScreen> {
     try {
       final base = await QuizBankLoader.instance.ensureQuizLoaded(summary.id);
       if (!mounted) return;
+      final normalized =
+          settings.sanitizedFor(derivePracticeAvailableSettings(base));
       final session = buildPracticeSessionQuiz(
         base,
-        difficulty: settings.jlptFilter,
-        countPreset: settings.countPreset,
+        settings: normalized,
       );
       Navigator.of(
         context,
@@ -110,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
 
     return AppShell(
       headerMode: AppShellHeaderMode.none,
@@ -211,8 +212,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           tags: q.diagnosticTags,
                                           difficulty: q.difficulty,
                                           selectedDifficulty: settings
-                                              .jlptFilter
-                                              .menuLabel,
+                                              .summaryLabel,
                                           questionCountLabel:
                                               settings.countLabel,
                                           onStart: () => _startQuiz(
@@ -248,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
 class _HomeLoadingBody extends StatelessWidget {
   const _HomeLoadingBody({required this.tokens});
 
-  final BunkaiTokens tokens;
+  final JpQuizAppTokens tokens;
 
   @override
   Widget build(BuildContext context) {

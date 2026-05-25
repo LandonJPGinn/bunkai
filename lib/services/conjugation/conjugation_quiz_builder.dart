@@ -7,7 +7,7 @@ import '../../models/quiz_type.dart';
 import 'conjugation_engine.dart';
 import 'conjugation_rules.dart';
 
-/// Builds multiple-choice conjugation questions from rules + lemmas.
+/// Builds typed-input conjugation questions from rules + lemmas.
 class ConjugationQuizBuilder {
   ConjugationQuizBuilder({
     required ConjugationRules rules,
@@ -72,12 +72,13 @@ class ConjugationQuizBuilder {
       out.add(
         QuizQuestion(
           id: id,
-          type: QuizType.multipleChoice,
+          type: QuizType.textInput,
           prompt: '${lemma.surface} → Convert to / produce: $engCat.',
           japanese: '「${lemma.surface}」→ $jpHint',
           promptEn: '${lemma.surface} → Convert to / produce: $engCat.',
           japaneseEn:
               '\'${lemma.surface}\' → $engCat (hint: $jpHint)',
+          acceptedAnswers: [correct],
           choices: choices,
           correctAnswerId: choiceIds[correctIndex],
           explanation:

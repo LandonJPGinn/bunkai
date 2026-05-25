@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_feedback_theme.dart';
+import '../app/jpquizapp_feedback_theme.dart';
 import 'japanese_text_lookup.dart';
 class ExplanationPanel extends StatelessWidget {
   const ExplanationPanel({
@@ -23,7 +23,7 @@ class ExplanationPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final feedback = context.bunkaiFeedback;
+    final feedback = context.jpQuizAppFeedback;
     final en = bodyEnglish.trim();
     final hasEn = en.isNotEmpty;
 

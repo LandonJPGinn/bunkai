@@ -4,8 +4,8 @@ import 'color/oklch.dart';
 
 /// Muted semantic colors for grading and emphasis (not Material [ColorScheme.error]).
 @immutable
-class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
-  const BunkaiFeedbackColors({
+class JpQuizAppFeedbackColors extends ThemeExtension<JpQuizAppFeedbackColors> {
+  const JpQuizAppFeedbackColors({
     required this.correct,
     required this.correctContainer,
     required this.correctGlow,
@@ -32,7 +32,7 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   /// `hsl(146 68% 52%)` / `hsl(350 78% 62%)` / `hsl(40 92% 58%)` specs.
   /// `correctGlow` deliberately uses `l = 1.05` so success animations get a
   /// subtle additive halo on top of the clamped sRGB color.
-  static final BunkaiFeedbackColors dark = BunkaiFeedbackColors(
+  static final JpQuizAppFeedbackColors dark = JpQuizAppFeedbackColors(
     correct: const Oklch(0.751, 0.169, 153.6).toColor(),
     correctContainer: const Oklch(0.751, 0.169, 153.6, 0.157).toColor(),
     correctGlow: const Oklch(1.05, 0.180, 153.6),
@@ -43,7 +43,7 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   );
 
   @override
-  BunkaiFeedbackColors copyWith({
+  JpQuizAppFeedbackColors copyWith({
     Color? correct,
     Color? correctContainer,
     Oklch? correctGlow,
@@ -52,7 +52,7 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
     Color? warning,
     Color? warningContainer,
   }) {
-    return BunkaiFeedbackColors(
+    return JpQuizAppFeedbackColors(
       correct: correct ?? this.correct,
       correctContainer: correctContainer ?? this.correctContainer,
       correctGlow: correctGlow ?? this.correctGlow,
@@ -64,12 +64,12 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   }
 
   @override
-  BunkaiFeedbackColors lerp(
-    ThemeExtension<BunkaiFeedbackColors>? other,
+  JpQuizAppFeedbackColors lerp(
+    ThemeExtension<JpQuizAppFeedbackColors>? other,
     double t,
   ) {
-    if (other is! BunkaiFeedbackColors) return this;
-    return BunkaiFeedbackColors(
+    if (other is! JpQuizAppFeedbackColors) return this;
+    return JpQuizAppFeedbackColors(
       correct: Color.lerp(correct, other.correct, t)!,
       correctContainer: Color.lerp(
         correctContainer,
@@ -96,9 +96,9 @@ class BunkaiFeedbackColors extends ThemeExtension<BunkaiFeedbackColors> {
   }
 }
 
-extension BunkaiFeedbackColorsX on BuildContext {
-  BunkaiFeedbackColors get bunkaiFeedback {
-    return Theme.of(this).extension<BunkaiFeedbackColors>() ??
-        BunkaiFeedbackColors.dark;
+extension JpQuizAppFeedbackColorsX on BuildContext {
+  JpQuizAppFeedbackColors get jpQuizAppFeedback {
+    return Theme.of(this).extension<JpQuizAppFeedbackColors>() ??
+        JpQuizAppFeedbackColors.dark;
   }
 }

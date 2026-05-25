@@ -1,6 +1,6 @@
 {
-    "name": "BunKai",
-    "short_name": "BunKai",
+    "name": "jpquizapp",
+    "short_name": "jpquizapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#101820",

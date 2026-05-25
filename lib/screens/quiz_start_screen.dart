@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../app/app_router.dart';
 import '../app/breakpoints.dart';
 import '../data/topic_card_style.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../models/practice_options.dart';
 import '../models/quiz.dart';
 import '../models/quiz_id.dart';
@@ -13,7 +13,7 @@ import '../services/quiz_practice_settings_store.dart';
 import '../widgets/app_shell.dart' show AppShell, AppShellHeaderMode;
 import '../widgets/quiz_practice_settings_panel.dart';
 
-/// Minimal setup for a practice session (count, JLPT band). Order is randomized.
+/// Minimal setup for a practice session (count + quiz-specific filter).
 class QuizStartScreen extends StatefulWidget {
   const QuizStartScreen({super.key, required this.quizId});
 
@@ -112,13 +112,19 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
           MediaQuery.sizeOf(context).width,
         );
         final horizontalPadding = narrow ? 16.0 : 20.0;
-        final previewCount = filteredQuestionsForPreview(
-          base,
-          _settings.jlptFilter,
-        ).length;
+        final availableSettings = derivePracticeAvailableSettings(base);
+        final normalizedSettings = _settings.sanitizedFor(availableSettings);
+        if (_settings != normalizedSettings) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (!mounted) return;
+            setState(() => _settings = normalizedSettings);
+          });
+        }
+        final previewCount = filteredQuestionsForPreview(base, normalizedSettings)
+            .length;
         final canStart = previewCount > 0;
         final topicStyle = topicCardStyleFor(base.id);
-        final tokens = context.bunkaiTokens;
+        final tokens = context.jpQuizAppTokens;
 
         return AppShell(
           headerMode: AppShellHeaderMode.compact,
@@ -154,7 +160,7 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               // AnimatedSize + AnimatedSwitcher so toggling the
-                              // JLPT filter eases the warning row in/out
+                              // active filter eases the warning row in/out
                               // instead of shoving the form down.
                               AnimatedSize(
                                 duration: MediaQuery.of(context)
@@ -259,7 +265,9 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
                                                 ),
                                               ),
                                               child: QuizPracticeSettingsPanel(
-                                                settings: _settings,
+                                                settings: normalizedSettings,
+                                                availableSettings:
+                                                    availableSettings,
                                                 canStart: canStart,
                                                 onCountChanged: (value) {
                                                   setState(
@@ -277,18 +285,27 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
                                                     ),
                                                   );
                                                 },
+                                                onConjugationChanged: (value) {
+                                                  setState(
+                                                    () => _settings = _settings
+                                                        .copyWith(
+                                                      conjugationTags: value,
+                                                    ),
+                                                  );
+                                                },
                                                 onStart: () async {
                                                   await QuizPracticeSettingsStore
                                                       .instance
-                                                      .save(id, _settings);
+                                                      .save(
+                                                        id,
+                                                        normalizedSettings,
+                                                      );
                                                   if (!context.mounted) return;
                                                   final session =
                                                       buildPracticeSessionQuiz(
                                                     base,
-                                                    difficulty:
-                                                        _settings.jlptFilter,
-                                                    countPreset:
-                                                        _settings.countPreset,
+                                                    settings:
+                                                        normalizedSettings,
                                                   );
                                                   Navigator.of(
                                                     context,

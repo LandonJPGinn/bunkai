@@ -1,9 +1,9 @@
-import 'package:bunkai/models/answer_choice.dart';
-import 'package:bunkai/models/quiz.dart';
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/models/quiz_question.dart';
-import 'package:bunkai/models/quiz_type.dart';
-import 'package:bunkai/services/quiz_bank_duplicate_warnings.dart';
+import 'package:jpquizapp/models/answer_choice.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/models/quiz_question.dart';
+import 'package:jpquizapp/models/quiz_type.dart';
+import 'package:jpquizapp/services/quiz_bank_duplicate_warnings.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Quiz _minimalQuiz(List<QuizQuestion> questions) {
@@ -113,7 +113,7 @@ void main() {
       );
     });
 
-    test('same normalized japanese and same correctAnswerId', () {
+    test('same normalized japanese and same canonical answers', () {
       final quiz = _minimalQuiz([
         _q(
           id: 'x1',
@@ -130,7 +130,7 @@ void main() {
           prompt: 'different two',
           japanese: '同じ文',
           choices: const [
-            AnswerChoice(id: 'a', label: '3', labelEn: '3'),
+            AnswerChoice(id: 'a', label: '1', labelEn: '1'),
             AnswerChoice(id: 'b', label: '4', labelEn: '4'),
           ],
           correctAnswerId: 'a',
@@ -140,7 +140,7 @@ void main() {
       expect(
         w.any(
           (s) =>
-              s.contains('same japanese and correctAnswerId') &&
+              s.contains('same japanese and canonical answers') &&
               s.contains('x1 and x2'),
         ),
         isTrue,

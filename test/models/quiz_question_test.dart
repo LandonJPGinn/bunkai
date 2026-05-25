@@ -1,7 +1,7 @@
-import 'package:bunkai/models/answer_choice.dart';
-import 'package:bunkai/models/question_review_status.dart';
-import 'package:bunkai/models/quiz_question.dart';
-import 'package:bunkai/models/quiz_type.dart';
+import 'package:jpquizapp/models/answer_choice.dart';
+import 'package:jpquizapp/models/question_review_status.dart';
+import 'package:jpquizapp/models/quiz_question.dart';
+import 'package:jpquizapp/models/quiz_type.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -83,6 +83,40 @@ void main() {
       expect(m['difficultyScore'], 5);
       expect(m['grammarPoints'], ['a']);
       expect(m['vocabulary'], ['b']);
+    });
+
+    test('canonicalAnswers prefers acceptedAnswers then falls back to choices', () {
+      const typed = QuizQuestion(
+        id: 'typed',
+        type: QuizType.textInput,
+        prompt: 'p',
+        japanese: 'j',
+        promptEn: 'pe',
+        japaneseEn: 'je',
+        acceptedAnswers: ['かな', 'かんじ'],
+        explanation: 'e',
+        explanationEn: 'ee',
+        diagnosticTags: ['t'],
+      );
+      expect(typed.canonicalAnswers, ['かな', 'かんじ']);
+
+      const fallback = QuizQuestion(
+        id: 'fallback',
+        type: QuizType.multipleChoice,
+        prompt: 'p',
+        japanese: 'j',
+        promptEn: 'pe',
+        japaneseEn: 'je',
+        choices: [
+          AnswerChoice(id: 'a', label: 'を', labelEn: 'wo'),
+          AnswerChoice(id: 'b', label: 'に', labelEn: 'ni'),
+        ],
+        correctAnswerId: 'b',
+        explanation: 'e',
+        explanationEn: 'ee',
+        diagnosticTags: ['t'],
+      );
+      expect(fallback.canonicalAnswers, ['に']);
     });
 
     test('rejects invalid jlptLevel', () {

@@ -2,7 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_feedback_theme.dart';
+import '../app/jpquizapp_feedback_theme.dart';
 import '../app/color/oklch.dart';
 import '../app/color/oklch_glow.dart';
 
@@ -19,7 +19,7 @@ class CorrectAnswerCelebrationFrame extends StatefulWidget {
   });
 
   final bool reduceMotion;
-  final BunkaiFeedbackColors feedback;
+  final JpQuizAppFeedbackColors feedback;
   final ColorScheme scheme;
   final VoidCallback? onTap;
   final Widget leading;

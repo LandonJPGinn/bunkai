@@ -1,4 +1,4 @@
-import 'package:bunkai/models/dictionary_entry.dart';
+import 'package:jpquizapp/models/dictionary_entry.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

@@ -1,6 +1,6 @@
-import 'package:bunkai/services/conjugation/conjugation_engine.dart';
-import 'package:bunkai/services/conjugation/conjugation_rules.dart';
-import 'package:bunkai/services/conjugation/rules_map_builder.dart';
+import 'package:jpquizapp/services/conjugation/conjugation_engine.dart';
+import 'package:jpquizapp/services/conjugation/conjugation_rules.dart';
+import 'package:jpquizapp/services/conjugation/rules_map_builder.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

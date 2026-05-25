@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import 'page_backdrop.dart';
 import 'site_header.dart';
 
@@ -37,7 +37,7 @@ class AppShell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final maxW = context.bunkaiTokens.maxContentWidth;
+    final maxW = context.jpQuizAppTokens.maxContentWidth;
     final horizontal = 20.0;
 
     final double headerGap = switch (headerMode) {

@@ -1,6 +1,6 @@
-import 'package:bunkai/models/practice_options.dart';
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/services/quiz_practice_settings_store.dart';
+import 'package:jpquizapp/models/practice_options.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/services/quiz_practice_settings_store.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -30,7 +30,7 @@ void main() {
       QuizId.verbConjugation,
       const PracticeQuizSettings(
         countPreset: PracticeCountPreset.all,
-        jlptFilter: PracticeJlptFilter.n2,
+        conjugationTags: {'te_form', 'past_form'},
       ),
     );
 
@@ -44,6 +44,26 @@ void main() {
     expect(first.countPreset, PracticeCountPreset.twenty);
     expect(first.jlptFilter, PracticeJlptFilter.n4);
     expect(second.countPreset, PracticeCountPreset.all);
-    expect(second.jlptFilter, PracticeJlptFilter.n2);
+    expect(second.conjugationTags, {'te_form', 'past_form'});
+  });
+
+  test('load sanitizes stale values when availableSettings are provided', () async {
+    await QuizPracticeSettingsStore.instance.save(
+      QuizId.verbConjugation,
+      const PracticeQuizSettings(
+        countPreset: PracticeCountPreset.all,
+        conjugationTags: {'te_form', 'stale_tag'},
+      ),
+    );
+
+    final loaded = await QuizPracticeSettingsStore.instance.load(
+      QuizId.verbConjugation,
+      availableSettings: const PracticeQuizAvailableSettings(
+        useConjugationFilter: true,
+        availableConjugationTags: ['te_form', 'nai_form'],
+      ),
+    );
+
+    expect(loaded.conjugationTags, {'te_form'});
   });
 }

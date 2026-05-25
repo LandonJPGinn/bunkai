@@ -2,7 +2,6 @@ import '../data/approved_diagnostic_tags.dart';
 import '../data/jlpt_question_levels.dart';
 import '../models/question_review_status.dart';
 import '../models/quiz.dart';
-import '../models/quiz_type.dart';
 
 /// Minimum number of questions required for each bundled bank (contract tests).
 const int kMinBundledQuizQuestionCount = 15;
@@ -90,66 +89,44 @@ List<QuizBankContractIssue> validateQuizBankContract(Quiz quiz) {
       );
     }
 
-    if (question.type != QuizType.multipleChoice) {
+    final canonicalAnswers = question.canonicalAnswers;
+    if (canonicalAnswers.isEmpty) {
       issues.add(
         QuizBankContractIssue(
           quizId: qid,
           questionId: id,
-          field: 'type',
+          field: 'acceptedAnswers',
           reason:
-              'bundled banks must use multipleChoice (engine-supported), got ${question.type.name}',
+              'requires at least one canonical answer (acceptedAnswers or valid correct choice label)',
         ),
       );
     }
 
-    if (question.choices.length < 2) {
-      issues.add(
-        QuizBankContractIssue(
-          quizId: qid,
-          questionId: id,
-          field: 'choices',
-          reason: 'at least 2 choices required, got ${question.choices.length}',
-        ),
-      );
-    }
-
-    final choiceIds = question.choices.map((c) => c.id).toList();
-    final choiceIdSet = choiceIds.toSet();
-    if (choiceIdSet.length != choiceIds.length) {
-      issues.add(
-        QuizBankContractIssue(
-          quizId: qid,
-          questionId: id,
-          field: 'choices',
-          reason: 'duplicate choice id within question',
-        ),
-      );
-    }
-
-    final matchingCorrect =
-        question.choices.where((c) => c.id == question.correctAnswerId).length;
-    if (matchingCorrect != 1) {
-      issues.add(
-        QuizBankContractIssue(
-          quizId: qid,
-          questionId: id,
-          field: 'correctAnswerId',
-          reason:
-              'exactly one choice must match correctAnswerId, got $matchingCorrect',
-        ),
-      );
-    }
-
-    if (!choiceIdSet.contains(question.correctAnswerId)) {
-      issues.add(
-        QuizBankContractIssue(
-          quizId: qid,
-          questionId: id,
-          field: 'correctAnswerId',
-          reason:
-              '"${question.correctAnswerId}" is not among choice ids ${choiceIds.join(", ")}',
-        ),
-      );
+    if (question.choices.isNotEmpty) {
+      final choiceIds = question.choices.map((c) => c.id).toList();
+      final choiceIdSet = choiceIds.toSet();
+      if (choiceIdSet.length != choiceIds.length) {
+        issues.add(
+          QuizBankContractIssue(
+            quizId: qid,
+            questionId: id,
+            field: 'choices',
+            reason: 'duplicate choice id within question',
+          ),
+        );
+      }
+      if (question.correctAnswerId.isNotEmpty &&
+          !choiceIdSet.contains(question.correctAnswerId)) {
+        issues.add(
+          QuizBankContractIssue(
+            quizId: qid,
+            questionId: id,
+            field: 'correctAnswerId',
+            reason:
+                '"${question.correctAnswerId}" is not among choice ids ${choiceIds.join(", ")}',
+          ),
+        );
+      }
     }
 
     if (question.explanation.trim().isEmpty) {

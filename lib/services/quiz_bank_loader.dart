@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import '../data/bundled_quiz_bank_paths.dart';
 import '../models/quiz.dart';
 import '../models/quiz_id.dart';
+import '../models/quiz_type.dart';
 import '../models/quiz_summary.dart';
 import 'quiz_bank_validation.dart';
 
@@ -101,7 +102,18 @@ class QuizBankLoader {
         'Quiz "${id.name}" / question "?": expected root object in $path',
       );
     }
-    final quiz = Quiz.fromJson(decoded);
+    final parsedQuiz = Quiz.fromJson(decoded);
+    final quiz = Quiz(
+      id: parsedQuiz.id,
+      title: parsedQuiz.title,
+      subtitle: parsedQuiz.subtitle,
+      description: parsedQuiz.description,
+      difficulty: parsedQuiz.difficulty,
+      diagnosticTags: parsedQuiz.diagnosticTags,
+      questions: [
+        for (final q in parsedQuiz.questions) q.copyWith(type: QuizType.textInput),
+      ],
+    );
     if (quiz.id != id) {
       throw QuizBankFormatException(
         'Quiz "${id.name}" / question "?": JSON "id" is "${quiz.id.name}" but expected "${id.name}" for $path',

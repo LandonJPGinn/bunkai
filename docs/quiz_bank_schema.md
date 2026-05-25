@@ -1,6 +1,6 @@
 # Quiz bank JSON schema guide
 
-This document describes the generated bundled quiz bank JSON shape for jpquiz. Each file under `assets/quiz_banks/` is **one** quiz: a single JSON object that the app parses as [`Quiz`](../lib/models/quiz.dart). Questions use [`QuizQuestion`](../lib/models/quiz_question.dart) and answer rows use [`AnswerChoice`](../lib/models/answer_choice.dart).
+This document describes the generated bundled quiz bank JSON shape for jpquizapp. Each file under `assets/quiz_banks/` is **one** quiz: a single JSON object that the app parses as [`Quiz`](../lib/models/quiz.dart). Questions use [`QuizQuestion`](../lib/models/quiz_question.dart) and answer rows use [`AnswerChoice`](../lib/models/answer_choice.dart).
 
 Canonical contributor inputs are CSV files under `data-src/` (see [`csv_content_schema.md`](csv_content_schema.md)). JSON files documented here are generated runtime assets.
 

@@ -1,9 +1,9 @@
-import 'package:bunkai/models/answer_choice.dart';
-import 'package:bunkai/models/quiz.dart';
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/models/quiz_question.dart';
-import 'package:bunkai/models/quiz_type.dart';
-import 'package:bunkai/services/quiz_engine.dart';
+import 'package:jpquizapp/models/answer_choice.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/models/quiz_question.dart';
+import 'package:jpquizapp/models/quiz_type.dart';
+import 'package:jpquizapp/services/quiz_engine.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -54,18 +54,18 @@ void main() {
       );
     });
 
-    test('selectAnswer ignored after lock', () {
+    test('setDraftAnswer ignored after lock', () {
       final engine = QuizEngine(miniQuiz);
-      engine.selectAnswer('b');
+      engine.setDraftAnswer('right');
       engine.lockAnswer();
       expect(engine.isLocked, true);
-      engine.selectAnswer('a');
-      expect(engine.selectedAnswerId, 'b');
+      engine.setDraftAnswer('wrong');
+      expect(engine.submittedAnswer, 'right');
     });
 
     test('diagnosticMisses increment on wrong answer', () {
       final engine = QuizEngine(miniQuiz);
-      engine.selectAnswer('a');
+      engine.setDraftAnswer('wrong');
       engine.lockAnswer();
       expect(engine.lastSubmittedCorrect, false);
       final r = engine.buildResult();
@@ -76,19 +76,19 @@ void main() {
       expect(r.diagnosticTagsInRun, {'tagA', 'tagB'});
     });
 
-    test('correct answer advances counts and advance clears selection', () {
+    test('correct answer advances counts and advance clears draft', () {
       final engine = QuizEngine(miniQuiz);
-      engine.selectAnswer('b');
+      engine.setDraftAnswer('right');
       engine.lockAnswer();
       expect(engine.lastSubmittedCorrect, true);
       expect(engine.lockedCorrectCount, 1);
       engine.advance();
-      expect(engine.selectedAnswerId, isNull);
+      expect(engine.draftAnswer, isEmpty);
       expect(engine.lastSubmittedCorrect, isNull);
       expect(engine.isLocked, false);
       expect(engine.currentIndex, 1);
 
-      engine.selectAnswer('a');
+      engine.setDraftAnswer('ok');
       engine.lockAnswer();
       expect(engine.lastSubmittedCorrect, true);
       final r = engine.buildResult();
@@ -100,10 +100,10 @@ void main() {
 
     test('wrong then right accumulates misses only for wrong', () {
       final engine = QuizEngine(miniQuiz);
-      engine.selectAnswer('a');
+      engine.setDraftAnswer('wrong');
       engine.lockAnswer();
       engine.advance();
-      engine.selectAnswer('a');
+      engine.setDraftAnswer('ok');
       engine.lockAnswer();
       final r = engine.buildResult();
       expect(r.correctCount, 1);

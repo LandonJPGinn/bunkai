@@ -1,4 +1,4 @@
-import 'package:bunkai/utils/quiz_instruction_text.dart';
+import 'package:jpquizapp/utils/quiz_instruction_text.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

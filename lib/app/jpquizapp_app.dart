@@ -4,14 +4,14 @@ import '../services/japanese_dictionary_service.dart';
 import 'app_router.dart';
 import 'app_theme.dart';
 
-class BunkaiApp extends StatefulWidget {
-  const BunkaiApp({super.key});
+class JpQuizApp extends StatefulWidget {
+  const JpQuizApp({super.key});
 
   @override
-  State<BunkaiApp> createState() => _BunkaiAppState();
+  State<JpQuizApp> createState() => _JpQuizAppState();
 }
 
-class _BunkaiAppState extends State<BunkaiApp> {
+class _JpQuizAppState extends State<JpQuizApp> {
   @override
   void initState() {
     super.initState();
@@ -24,10 +24,10 @@ class _BunkaiAppState extends State<BunkaiApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BunKai',
+      title: 'jpquizapp',
       debugShowCheckedModeBanner: false,
-      theme: buildBunkaiDarkTheme(),
-      darkTheme: buildBunkaiDarkTheme(),
+      theme: buildJpQuizAppDarkTheme(),
+      darkTheme: buildJpQuizAppDarkTheme(),
       themeMode: ThemeMode.dark,
       initialRoute: AppRoutes.home,
       onGenerateRoute: AppRouter.onGenerateRoute,

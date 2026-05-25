@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_feedback_theme.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_feedback_theme.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../services/furigana_inline.dart';
 import 'correct_answer_celebration.dart';
 import 'japanese_text_lookup.dart';
@@ -54,8 +54,8 @@ class AnswerChoiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final feedback = context.bunkaiFeedback;
-    final tokens = context.bunkaiTokens;
+    final feedback = context.jpQuizAppFeedback;
+    final tokens = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final animDuration =
         reduceMotion ? Duration.zero : tokens.motionMedium;

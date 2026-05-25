@@ -1,6 +1,6 @@
-import 'package:bunkai/data/quiz_registry.dart';
-import 'package:bunkai/models/quiz_pack.dart';
-import 'package:bunkai/services/quiz_bank_loader.dart';
+import 'package:jpquizapp/data/quiz_registry.dart';
+import 'package:jpquizapp/models/quiz_pack.dart';
+import 'package:jpquizapp/services/quiz_bank_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -14,7 +14,7 @@ void main() {
   });
 
   test('QuizPack JSON round-trip preserves structure', () {
-    final pack = coreBunkaiPack();
+    final pack = coreJpQuizAppPack();
     final map = pack.toMap();
     final restored = QuizPack.fromMap(map);
 

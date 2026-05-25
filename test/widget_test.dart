@@ -1,4 +1,4 @@
-import 'package:bunkai/app/bunkai_app.dart';
+import 'package:jpquizapp/app/jpquizapp_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -11,7 +11,7 @@ void main() {
     await tester.binding.setSurfaceSize(const Size(1200, 1600));
     addTearDown(() => tester.binding.setSurfaceSize(null));
 
-    await tester.pumpWidget(const BunkaiApp());
+    await tester.pumpWidget(const JpQuizApp());
     await tester.pump();
     await tester.pumpAndSettle();
 

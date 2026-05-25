@@ -8,8 +8,8 @@ import 'color/oklch.dart';
 /// once at startup; downstream consumers still receive plain [Color] values so
 /// `Color.lerp` in [lerp] keeps interpolating in sRGB.
 @immutable
-class BunkaiTokens extends ThemeExtension<BunkaiTokens> {
-  const BunkaiTokens({
+class JpQuizAppTokens extends ThemeExtension<JpQuizAppTokens> {
+  const JpQuizAppTokens({
     required this.pageBg,
     required this.surface1,
     required this.surface2,
@@ -88,7 +88,7 @@ class BunkaiTokens extends ThemeExtension<BunkaiTokens> {
     ),
   ];
 
-  static final BunkaiTokens dark = BunkaiTokens(
+  static final JpQuizAppTokens dark = JpQuizAppTokens(
     pageBg: _pageBg,
     surface1: _surface1,
     surface2: _surface2,
@@ -116,7 +116,7 @@ class BunkaiTokens extends ThemeExtension<BunkaiTokens> {
   );
 
   @override
-  BunkaiTokens copyWith({
+  JpQuizAppTokens copyWith({
     Color? pageBg,
     Color? surface1,
     Color? surface2,
@@ -142,7 +142,7 @@ class BunkaiTokens extends ThemeExtension<BunkaiTokens> {
     Curve? motionStandardCurve,
     Curve? motionEmphasizedCurve,
   }) {
-    return BunkaiTokens(
+    return JpQuizAppTokens(
       pageBg: pageBg ?? this.pageBg,
       surface1: surface1 ?? this.surface1,
       surface2: surface2 ?? this.surface2,
@@ -171,9 +171,9 @@ class BunkaiTokens extends ThemeExtension<BunkaiTokens> {
   }
 
   @override
-  BunkaiTokens lerp(ThemeExtension<BunkaiTokens>? other, double t) {
-    if (other is! BunkaiTokens) return this;
-    return BunkaiTokens(
+  JpQuizAppTokens lerp(ThemeExtension<JpQuizAppTokens>? other, double t) {
+    if (other is! JpQuizAppTokens) return this;
+    return JpQuizAppTokens(
       pageBg: Color.lerp(pageBg, other.pageBg, t)!,
       surface1: Color.lerp(surface1, other.surface1, t)!,
       surface2: Color.lerp(surface2, other.surface2, t)!,
@@ -205,7 +205,7 @@ class BunkaiTokens extends ThemeExtension<BunkaiTokens> {
   }
 }
 
-extension BunkaiTokensX on BuildContext {
-  BunkaiTokens get bunkaiTokens =>
-      Theme.of(this).extension<BunkaiTokens>() ?? BunkaiTokens.dark;
+extension JpQuizAppTokensX on BuildContext {
+  JpQuizAppTokens get jpQuizAppTokens =>
+      Theme.of(this).extension<JpQuizAppTokens>() ?? JpQuizAppTokens.dark;
 }

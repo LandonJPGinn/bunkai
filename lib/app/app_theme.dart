@@ -4,14 +4,14 @@ import 'package:google_fonts/google_fonts.dart';
 // PERF: Theme resolves Google Fonts once here — avoid per-widget GoogleFonts.*
 // calls in lists/grids (hurts rebuild cost & Web font resolution churn).
 
-import 'bunkai_feedback_theme.dart';
-import 'bunkai_tokens.dart';
+import 'jpquizapp_feedback_theme.dart';
+import 'jpquizapp_tokens.dart';
 import 'color/oklch.dart';
 
 Color _oklch(double l, double c, double h) => Oklch(l, c, h).toColor();
 
-ThemeData buildBunkaiDarkTheme() {
-  final tokens = BunkaiTokens.dark;
+ThemeData buildJpQuizAppDarkTheme() {
+  final tokens = JpQuizAppTokens.dark;
   final pageBg = tokens.pageBg;
   final surface = tokens.surface1;
   final surfaceHigh = tokens.surface3;
@@ -170,8 +170,8 @@ ThemeData buildBunkaiDarkTheme() {
     highlightColor: tokens.accentSoft,
     splashColor: tokens.accent.withValues(alpha: 0.12),
     extensions: <ThemeExtension<dynamic>>[
-      BunkaiFeedbackColors.dark,
-      BunkaiTokens.dark,
+      JpQuizAppFeedbackColors.dark,
+      JpQuizAppTokens.dark,
     ],
   );
 }

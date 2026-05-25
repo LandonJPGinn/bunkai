@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bunkai/data/bundled_quiz_bank_paths.dart';
+import 'package:jpquizapp/data/bundled_quiz_bank_paths.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

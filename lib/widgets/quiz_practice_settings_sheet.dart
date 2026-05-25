@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../models/practice_options.dart';
 import '../models/quiz.dart';
 import '../services/practice_session_builder.dart';
@@ -16,7 +16,8 @@ Future<PracticeQuizSettings?> showQuizPracticeSettingsSheet({
     isScrollControlled: true,
     showDragHandle: true,
     builder: (context) {
-      var settings = initialSettings;
+      final availableSettings = derivePracticeAvailableSettings(quiz);
+      var settings = initialSettings.sanitizedFor(availableSettings);
       return SafeArea(
         top: false,
         child: Padding(
@@ -30,9 +31,9 @@ Future<PracticeQuizSettings?> showQuizPracticeSettingsSheet({
             builder: (context, setModalState) {
               final previewCount = filteredQuestionsForPreview(
                 quiz,
-                settings.jlptFilter,
+                settings,
               ).length;
-              final tokens = context.bunkaiTokens;
+              final tokens = context.jpQuizAppTokens;
               final reduceMotion = MediaQuery.of(context).disableAnimations;
               final motionMedium =
                   reduceMotion ? Duration.zero : tokens.motionMedium;
@@ -96,6 +97,7 @@ Future<PracticeQuizSettings?> showQuizPracticeSettingsSheet({
                       ),
                       child: QuizPracticeSettingsPanel(
                         settings: settings,
+                        availableSettings: availableSettings,
                         onCountChanged: (value) {
                           setModalState(
                             () => settings = settings.copyWith(
@@ -107,6 +109,13 @@ Future<PracticeQuizSettings?> showQuizPracticeSettingsSheet({
                           setModalState(
                             () => settings = settings.copyWith(
                               jlptFilter: value,
+                            ),
+                          );
+                        },
+                        onConjugationChanged: (value) {
+                          setModalState(
+                            () => settings = settings.copyWith(
+                              conjugationTags: value,
                             ),
                           );
                         },

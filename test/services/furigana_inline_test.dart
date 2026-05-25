@@ -1,5 +1,5 @@
-import 'package:bunkai/services/furigana_inline.dart';
-import 'package:bunkai/services/quiz_bank_text_normalize.dart';
+import 'package:jpquizapp/services/furigana_inline.dart';
+import 'package:jpquizapp/services/quiz_bank_text_normalize.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

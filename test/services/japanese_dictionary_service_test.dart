@@ -1,4 +1,4 @@
-import 'package:bunkai/services/japanese_dictionary_service.dart';
+import 'package:jpquizapp/services/japanese_dictionary_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

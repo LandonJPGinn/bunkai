@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bunkai/data/bundled_quiz_bank_paths.dart';
-import 'package:bunkai/models/quiz.dart';
-import 'package:bunkai/services/quiz_bank_contract_validator.dart';
-import 'package:bunkai/services/quiz_bank_duplicate_warnings.dart';
+import 'package:jpquizapp/data/bundled_quiz_bank_paths.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/services/quiz_bank_contract_validator.dart';
+import 'package:jpquizapp/services/quiz_bank_duplicate_warnings.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../models/quiz_question.dart';
 import 'diagnostic_tag_chip.dart';
 import 'difficulty_dots.dart';
@@ -13,7 +13,6 @@ class QuizLockedFeedbackContent extends StatelessWidget {
     super.key,
     required this.question,
     required this.wrongChoiceLabel,
-    this.wrongChoiceLabelEnglish,
     required this.wasCorrect,
     required this.showFurigana,
     required this.showEnglish,
@@ -21,7 +20,6 @@ class QuizLockedFeedbackContent extends StatelessWidget {
 
   final QuizQuestion question;
   final String? wrongChoiceLabel;
-  final String? wrongChoiceLabelEnglish;
   final bool? wasCorrect;
   final bool showFurigana;
   final bool showEnglish;
@@ -29,7 +27,7 @@ class QuizLockedFeedbackContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final tokens = context.bunkaiTokens;
+    final tokens = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final motionSlow = reduceMotion ? Duration.zero : tokens.motionSlow;
     final tags = question.diagnosticTags;
@@ -38,6 +36,9 @@ class QuizLockedFeedbackContent extends StatelessWidget {
     final grammar = question.grammarPoints;
     final vocab = question.vocabulary;
     final showMeta = jlpt != null || score != null;
+    final expectedAnswer = question.canonicalAnswers.isNotEmpty
+        ? question.canonicalAnswers.first
+        : null;
 
     // AnimatedSize keeps the height transition smooth when any inner
     // content reflows (e.g. when furigana/English toggles change block
@@ -62,26 +63,41 @@ class QuizLockedFeedbackContent extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
               ),
-              if (showEnglish &&
-                  (wrongChoiceLabelEnglish?.trim().isNotEmpty ?? false))
-                Text(
-                  wrongChoiceLabelEnglish!.trim(),
-                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                        color: scheme.onSurface,
-                        height: 1.35,
-                        fontWeight: FontWeight.w600,
-                      ),
-                )
-              else
-                JapaneseTextLookup(
-                  text: wrongChoiceLabel!,
-                  showFurigana: showFurigana,
-                  style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                        color: scheme.onSurface,
-                        height: 1.35,
-                        fontWeight: FontWeight.w600,
-                      ),
-                ),
+              JapaneseTextLookup(
+                text: wrongChoiceLabel!,
+                showFurigana: showFurigana,
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      color: scheme.onSurface,
+                      height: 1.35,
+                      fontWeight: FontWeight.w600,
+                    ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+        ],
+        if (wasCorrect == false && expectedAnswer != null) ...[
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 4,
+            children: [
+              Text(
+                'Expected:',
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      color: scheme.onSurface,
+                      height: 1.35,
+                      fontWeight: FontWeight.w600,
+                    ),
+              ),
+              JapaneseTextLookup(
+                text: expectedAnswer,
+                showFurigana: showFurigana,
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      color: scheme.onSurface,
+                      height: 1.35,
+                      fontWeight: FontWeight.w600,
+                    ),
+              ),
             ],
           ),
           const SizedBox(height: 14),

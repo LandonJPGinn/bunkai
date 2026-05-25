@@ -4,10 +4,9 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 
 import '../app/app_router.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 import '../data/topic_card_style.dart';
-import '../models/practice_options.dart';
 import '../services/practice_session_builder.dart';
 import '../services/quiz_bank_loader.dart';
 import '../services/quiz_practice_settings_store.dart';
@@ -47,12 +46,14 @@ class _ResultsScreenState extends State<ResultsScreen> {
     final result = widget.args.result;
     try {
       final base = await QuizBankLoader.instance.ensureQuizLoaded(result.quizId);
-      final settings = await QuizPracticeSettingsStore.instance.load(result.quizId);
+      final settings = await QuizPracticeSettingsStore.instance.load(
+        result.quizId,
+        availableSettings: derivePracticeAvailableSettings(base),
+      );
       if (!mounted) return;
       final session = buildPracticeSessionQuiz(
         base,
-        difficulty: settings.jlptFilter,
-        countPreset: settings.countPreset,
+        settings: settings,
       );
       Navigator.of(context).pushReplacementNamed(
         AppRoutes.quiz,
@@ -70,7 +71,10 @@ class _ResultsScreenState extends State<ResultsScreen> {
     final result = widget.args.result;
     try {
       final base = await QuizBankLoader.instance.ensureQuizLoaded(result.quizId);
-      final current = await QuizPracticeSettingsStore.instance.load(result.quizId);
+      final current = await QuizPracticeSettingsStore.instance.load(
+        result.quizId,
+        availableSettings: derivePracticeAvailableSettings(base),
+      );
       if (!mounted) return;
       final updated = await showQuizPracticeSettingsSheet(
         context: context,
@@ -83,7 +87,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
       ScaffoldMessenger.maybeOf(context)?.showSnackBar(
         SnackBar(
           content: Text(
-            'Saved: ${updated.countLabel} questions, ${updated.jlptFilter.menuLabel}.',
+            'Saved: ${updated.countLabel} questions, ${updated.summaryLabel}.',
           ),
         ),
       );
@@ -169,7 +173,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
                     Expanded(
                       child: LayoutBuilder(
                         builder: (context, constraints) {
-                          final tokens = context.bunkaiTokens;
+                          final tokens = context.jpQuizAppTokens;
                           final reduceMotion =
                               MediaQuery.of(context).disableAnimations;
                           final motionSlow = reduceMotion

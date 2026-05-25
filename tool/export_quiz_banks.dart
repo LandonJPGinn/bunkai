@@ -7,8 +7,8 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bunkai/models/quiz.dart';
-import 'package:bunkai/services/quiz_bank_validation.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/services/quiz_bank_validation.dart';
 
 void main() {
   const names = <String>[
@@ -20,7 +20,7 @@ void main() {
     'verb_conjugation.json',
   ];
 
-  final encoder = JsonEncoder.withIndent('  ');
+  final encoder = const JsonEncoder.withIndent('  ');
 
   for (final name in names) {
     final file = File('assets/quiz_banks/$name');

@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../app/bunkai_feedback_theme.dart';
+import '../app/jpquizapp_feedback_theme.dart';
 
 import '../app/app_router.dart';
 import '../app/breakpoints.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../data/topic_card_style.dart';
 import '../models/quiz.dart';
+import '../services/romaji_to_hiragana_converter.dart';
 import '../services/quiz_engine.dart';
 import '../widgets/app_shell.dart';
 import '../widgets/primary_button.dart';
 import '../widgets/progress_header.dart';
-import '../widgets/quiz_answer_choices.dart';
 import '../widgets/quiz_locked_feedback_content.dart';
 import '../widgets/quiz_prompt_card.dart';
+import '../widgets/quiz_text_answer_input.dart';
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({super.key, required this.quiz});
@@ -30,8 +31,11 @@ class _QuizScreenState extends State<QuizScreen> {
   Quiz? _quiz;
   QuizEngine? _engine;
   final FocusNode _quizKeysFocus = FocusNode(debugLabel: 'QuizScreenKeys');
+  final FocusNode _answerFocus = FocusNode(debugLabel: 'QuizScreenAnswer');
+  final TextEditingController _answerController = TextEditingController();
   bool _showFurigana = true;
   bool _showEnglish = false;
+  bool _syncingAnswer = false;
 
   @override
   void initState() {
@@ -42,25 +46,49 @@ class _QuizScreenState extends State<QuizScreen> {
       _engine = QuizEngine(loaded);
     }
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted && _engine != null) _quizKeysFocus.requestFocus();
+      if (mounted && _engine != null) {
+        _quizKeysFocus.requestFocus();
+        _answerFocus.requestFocus();
+      }
     });
+    _answerController.addListener(_onAnswerChanged);
   }
 
   @override
   void dispose() {
+    _answerController.removeListener(_onAnswerChanged);
+    _answerController.dispose();
+    _answerFocus.dispose();
     _quizKeysFocus.dispose();
     super.dispose();
+  }
+
+  void _onAnswerChanged() {
+    if (_syncingAnswer) return;
+    final engine = _engine;
+    if (engine == null || engine.isLocked) return;
+    final converted = RomajiToHiraganaConverter.convert(_answerController.value);
+    if (converted != _answerController.value) {
+      _syncingAnswer = true;
+      _answerController.value = converted;
+      _syncingAnswer = false;
+    }
+    setState(() {
+      engine.setDraftAnswer(_answerController.text);
+    });
   }
 
   void _commitAnswer(QuizEngine engine) {
     setState(() => engine.lockAnswer());
   }
 
-  /// Stable tear-off for [QuizAnswerChoices] — avoids new closures each rebuild.
-  void _onChoiceSelected(String choiceId) {
-    final engine = _engine;
-    if (engine == null || engine.isLocked) return;
-    setState(() => engine.selectAnswer(choiceId));
+  void _advanceQuestion(QuizEngine engine) {
+    setState(() {
+      engine.advance();
+      _syncingAnswer = true;
+      _answerController.clear();
+      _syncingAnswer = false;
+    });
   }
 
   void _goResults() {
@@ -78,7 +106,10 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void _refocusKeys() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _quizKeysFocus.requestFocus();
+      if (mounted) {
+        _quizKeysFocus.requestFocus();
+        _answerFocus.requestFocus();
+      }
     });
   }
 
@@ -89,43 +120,18 @@ class _QuizScreenState extends State<QuizScreen> {
     return 'This quiz could not be loaded.';
   }
 
-  int? _digitKeyToChoiceIndex(LogicalKeyboardKey key) {
-    if (key == LogicalKeyboardKey.digit1 || key == LogicalKeyboardKey.numpad1) {
-      return 0;
-    }
-    if (key == LogicalKeyboardKey.digit2 || key == LogicalKeyboardKey.numpad2) {
-      return 1;
-    }
-    if (key == LogicalKeyboardKey.digit3 || key == LogicalKeyboardKey.numpad3) {
-      return 2;
-    }
-    if (key == LogicalKeyboardKey.digit4 || key == LogicalKeyboardKey.numpad4) {
-      return 3;
-    }
-    return null;
-  }
-
   KeyEventResult _onQuizKeyEvent(FocusNode node, KeyEvent event) {
     if (event is! KeyDownEvent) return KeyEventResult.ignored;
     final engine = _engine;
     if (engine == null) return KeyEventResult.ignored;
 
     final logical = event.logicalKey;
-    final q = engine.currentQuestion;
     final locked = engine.isLocked;
 
     if (!locked) {
-      final idx = _digitKeyToChoiceIndex(logical);
-      if (idx != null) {
-        if (idx < q.choices.length) {
-          setState(() => engine.selectAnswer(q.choices[idx].id));
-          return KeyEventResult.handled;
-        }
-        return KeyEventResult.ignored;
-      }
       if (logical == LogicalKeyboardKey.enter ||
           logical == LogicalKeyboardKey.numpadEnter) {
-        if (engine.selectedAnswerId != null) {
+        if (engine.draftAnswer.trim().isNotEmpty) {
           _commitAnswer(engine);
           _refocusKeys();
           return KeyEventResult.handled;
@@ -138,7 +144,7 @@ class _QuizScreenState extends State<QuizScreen> {
         if (engine.isLastQuestion) {
           _goResults();
         } else {
-          setState(engine.advance);
+          _advanceQuestion(engine);
           _refocusKeys();
         }
         return KeyEventResult.handled;
@@ -175,14 +181,13 @@ class _QuizScreenState extends State<QuizScreen> {
 
     final q = engine.currentQuestion;
     final locked = engine.isLocked;
-    final selected = engine.selectedAnswerId;
-    final showOutcome = locked;
+    final draft = engine.draftAnswer;
 
     String primaryLabel;
     VoidCallback? primaryAction;
     if (!locked) {
       primaryLabel = 'Submit';
-      primaryAction = selected == null
+      primaryAction = draft.trim().isEmpty
           ? null
           : () {
               _commitAnswer(engine);
@@ -194,34 +199,23 @@ class _QuizScreenState extends State<QuizScreen> {
     } else {
       primaryLabel = 'Next';
       primaryAction = () {
-        setState(engine.advance);
+        _advanceQuestion(engine);
         _refocusKeys();
       };
     }
 
     final wasCorrect = engine.lastSubmittedCorrect;
 
-    String? wrongChoiceLabel;
-    String? wrongChoiceLabelEnglish;
-    if (locked &&
-        wasCorrect == false &&
-        selected != null &&
-        selected != q.correctAnswerId) {
-      for (final c in q.choices) {
-        if (c.id == selected) {
-          wrongChoiceLabel = c.label;
-          wrongChoiceLabelEnglish = c.labelEn;
-          break;
-        }
-      }
-    }
+    final wrongChoiceLabel = locked && wasCorrect == false
+        ? engine.submittedAnswer
+        : null;
 
     final narrow = LayoutBreakpoints.isNarrowWidth(
       MediaQuery.sizeOf(context).width,
     );
     final horizontalPadding = narrow ? 16.0 : 20.0;
     final topicStyle = topicCardStyleFor(quiz.id);
-    final tokens = context.bunkaiTokens;
+    final tokens = context.jpQuizAppTokens;
 
     return AppShell(
       headerMode: AppShellHeaderMode.compact,
@@ -374,19 +368,13 @@ class _QuizScreenState extends State<QuizScreen> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.stretch,
                                           children: [
-                                            QuizAnswerChoices(
-                                              choices: q.choices,
-                                              correctAnswerId:
-                                                  q.correctAnswerId,
-                                              selectedAnswerId: selected,
+                                            QuizTextAnswerInput(
+                                              controller: _answerController,
+                                              focusNode: _answerFocus,
                                               locked: locked,
-                                              showOutcome: showOutcome,
-                                              lastSubmittedCorrect:
+                                              wasCorrect:
                                                   engine.lastSubmittedCorrect,
-                                              showFurigana: _showFurigana,
-                                              showEnglish: _showEnglish,
-                                              onChoiceSelected:
-                                                  _onChoiceSelected,
+                                              onSubmitted: primaryAction,
                                             ),
                                             // Live banner slot is always
                                             // mounted and animated, so the
@@ -472,8 +460,6 @@ class _QuizScreenState extends State<QuizScreen> {
                                                           question: q,
                                                           wrongChoiceLabel:
                                                               wrongChoiceLabel,
-                                                          wrongChoiceLabelEnglish:
-                                                              wrongChoiceLabelEnglish,
                                                           wasCorrect:
                                                               wasCorrect,
                                                           showFurigana:
@@ -535,7 +521,7 @@ class _QuizFeedbackLiveBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final feedback = context.bunkaiFeedback;
+    final feedback = context.jpQuizAppFeedback;
     final scheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
 
@@ -578,7 +564,7 @@ class _QuizFeedbackLiveBanner extends StatelessWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'The correct answer is highlighted below.',
+                  'Review the expected form below.',
                   style: textTheme.bodySmall?.copyWith(
                     color: scheme.onSurfaceVariant,
                     height: 1.35,

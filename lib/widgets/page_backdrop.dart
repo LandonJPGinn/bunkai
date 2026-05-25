@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 
 /// Radial wash + page base color (spec: subtle gradients, no image assets).
@@ -19,7 +19,7 @@ class PageBackdrop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pageBg = context.bunkaiTokens.pageBg;
+    final pageBg = context.jpQuizAppTokens.pageBg;
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -69,7 +69,7 @@ class PageBackdrop extends StatelessWidget {
             ),
           ),
         ),
-        if (child != null) child!,
+        ?child,
       ],
     );
   }

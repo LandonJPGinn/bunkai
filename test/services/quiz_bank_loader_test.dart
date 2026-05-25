@@ -1,11 +1,10 @@
-import 'package:bunkai/models/answer_choice.dart';
-import 'package:bunkai/models/question_review_status.dart';
-import 'package:bunkai/models/quiz.dart';
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/models/quiz_question.dart';
-import 'package:bunkai/models/quiz_type.dart';
-import 'package:bunkai/services/quiz_bank_loader.dart';
-import 'package:bunkai/services/quiz_bank_validation.dart';
+import 'package:jpquizapp/models/answer_choice.dart';
+import 'package:jpquizapp/models/question_review_status.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/models/quiz_question.dart';
+import 'package:jpquizapp/models/quiz_type.dart';
+import 'package:jpquizapp/services/quiz_bank_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -36,7 +35,7 @@ void main() {
 
   group('validateQuizBankContent', () {
     test('throws with quiz and question id when correctAnswerId is invalid', () {
-      final bad = Quiz(
+      final bad = const Quiz(
         id: QuizId.particleForensics,
         title: 'T',
         subtitle: 'S',
@@ -50,14 +49,15 @@ void main() {
             japanese: 'j',
             promptEn: 'p',
             japaneseEn: 'j',
-            choices: const [
+            choices: [
               AnswerChoice(id: 'a', label: 'one', labelEn: 'one'),
               AnswerChoice(id: 'b', label: 'two', labelEn: 'two'),
             ],
             correctAnswerId: 'z',
+            acceptedAnswers: ['one'],
             explanation: 'e',
             explanationEn: 'e',
-            diagnosticTags: const ['t'],
+            diagnosticTags: ['t'],
           ),
         ],
       );
@@ -78,13 +78,13 @@ void main() {
     });
 
     test('throws on duplicate question id', () {
-      final bad = Quiz(
+      final bad = const Quiz(
         id: QuizId.clauseUntangler,
         title: 'T',
         subtitle: 'S',
         description: 'D',
         difficulty: 'X',
-        questions: const [
+        questions: [
           QuizQuestion(
             id: 'dup',
             type: QuizType.multipleChoice,
@@ -99,11 +99,11 @@ void main() {
             correctAnswerId: 'a',
             explanation: 'e',
             explanationEn: 'e',
-            diagnosticTags: const ['t'],
+            diagnosticTags: ['t'],
             jlptLevel: 'N4',
             difficultyScore: 1,
-            grammarPoints: const ['g'],
-            vocabulary: const ['v'],
+            grammarPoints: ['g'],
+            vocabulary: ['v'],
             reviewStatus: QuestionReviewStatus.draft,
           ),
           QuizQuestion(
@@ -120,11 +120,11 @@ void main() {
             correctAnswerId: 'a',
             explanation: 'e',
             explanationEn: 'e',
-            diagnosticTags: const ['t'],
+            diagnosticTags: ['t'],
             jlptLevel: 'N4',
             difficultyScore: 1,
-            grammarPoints: const ['g'],
-            vocabulary: const ['v'],
+            grammarPoints: ['g'],
+            vocabulary: ['v'],
             reviewStatus: QuestionReviewStatus.draft,
           ),
         ],
@@ -146,13 +146,13 @@ void main() {
     });
 
     test('throws when diagnosticTags is empty', () {
-      final bad = Quiz(
+      final bad = const Quiz(
         id: QuizId.registerRadar,
         title: 'T',
         subtitle: 'S',
         description: 'D',
         difficulty: 'X',
-        questions: const [
+        questions: [
           QuizQuestion(
             id: 'no_tags',
             type: QuizType.multipleChoice,
@@ -188,7 +188,7 @@ void main() {
     });
 
     test('throws when grammarPoints entry is whitespace only', () {
-      final bad = Quiz(
+      final bad = const Quiz(
         id: QuizId.omissionDetective,
         title: 'T',
         subtitle: 'S',
@@ -202,18 +202,18 @@ void main() {
             japanese: 'j',
             promptEn: 'p',
             japaneseEn: 'j',
-            choices: const [
+            choices: [
               AnswerChoice(id: 'a', label: 'x', labelEn: 'x'),
               AnswerChoice(id: 'b', label: 'y', labelEn: 'y'),
             ],
             correctAnswerId: 'a',
             explanation: 'e',
             explanationEn: 'e',
-            diagnosticTags: const ['t'],
+            diagnosticTags: ['t'],
             jlptLevel: 'N4',
             difficultyScore: 1,
-            grammarPoints: const ['  '],
-            vocabulary: const ['v'],
+            grammarPoints: ['  '],
+            vocabulary: ['v'],
             reviewStatus: QuestionReviewStatus.draft,
           ),
         ],

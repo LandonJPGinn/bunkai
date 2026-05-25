@@ -4,7 +4,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bunkai/services/conjugation/rules_map_builder.dart';
+import 'package:jpquizapp/services/conjugation/rules_map_builder.dart';
 
 void main() {
   final dir = Directory('assets/data');

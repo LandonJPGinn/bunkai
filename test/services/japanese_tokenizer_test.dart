@@ -1,4 +1,4 @@
-import 'package:bunkai/services/japanese_tokenizer.dart';
+import 'package:jpquizapp/services/japanese_tokenizer.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

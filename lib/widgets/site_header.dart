@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../app/app_router.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 
 /// Top marketing rail: brand + Home / Quizzes.
 class SiteNavBar extends StatelessWidget {
@@ -13,7 +13,7 @@ class SiteNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     final route = _routeName(context);
     final onHome = route == AppRoutes.home;
 
@@ -86,7 +86,7 @@ class _BrandMarkState extends State<_BrandMark> {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final fast = reduceMotion ? Duration.zero : t.motionFast;
     final curve = t.motionStandardCurve;
@@ -127,7 +127,7 @@ class _BrandMarkState extends State<_BrandMark> {
                     letterSpacing: -0.3,
                     color: wordmark,
                   ),
-                  child: const Text('BunKai'),
+                  child: const Text('jpquizapp'),
                 ),
               ],
             ),
@@ -158,7 +158,7 @@ class _NavPillState extends State<_NavPill> {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final fast = reduceMotion ? Duration.zero : t.motionFast;
     final curve = t.motionStandardCurve;
@@ -234,7 +234,7 @@ class SiteCompactHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
       decoration: BoxDecoration(
@@ -245,7 +245,7 @@ class SiteCompactHeader extends StatelessWidget {
       ),
       child: Row(
         children: [
-          if (leading != null) leading!,
+          ?leading,
           Expanded(
             child: title.isEmpty
                 ? const SizedBox.shrink()

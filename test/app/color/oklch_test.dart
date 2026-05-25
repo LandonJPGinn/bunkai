@@ -1,5 +1,5 @@
-import 'package:bunkai/app/color/oklch.dart';
-import 'package:bunkai/app/color/oklch_glow.dart';
+import 'package:jpquizapp/app/color/oklch.dart';
+import 'package:jpquizapp/app/color/oklch_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

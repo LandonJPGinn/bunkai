@@ -1,10 +1,10 @@
-# BunKai
+# jpquizapp
 
 > [!WARNING]
 > This site is currently a work in progress (WIP). Quiz content is AI-generated and has not yet been fully checked for linguistic accuracy.
 > The plan is to collaborate with native Japanese speakers to review, correct, and improve all quiz material.
 
-BunKai is a **login-free, backend-free** Flutter Web app: short Japanese grammar quizzes that target mistakes ordinary apps skip. Everything runs locally in the browser.
+jpquizapp is a **login-free, backend-free** Flutter Web app: short Japanese grammar quizzes that target mistakes ordinary apps skip. Everything runs locally in the browser.
 
 ## Run locally
 
@@ -104,7 +104,7 @@ dart run scripts/quiz_bank_summary.dart
 
 1. Add an enum value to [`lib/models/quiz_id.dart`](lib/models/quiz_id.dart). The enum name (camelCase) is the route argument passed when starting a quiz.
 2. Add quiz/question/choice rows in the canonical CSV files under `data-src/quiz/`.
-3. Register the asset path in [`lib/data/bundled_quiz_bank_paths.dart`](lib/data/bundled_quiz_bank_paths.dart) (`kBundledQuizBankAssetPaths`) and append the quiz to [`coreBunkaiPack()`](lib/data/quiz_registry.dart) (or your pack) in display order.
+3. Register the asset path in [`lib/data/bundled_quiz_bank_paths.dart`](lib/data/bundled_quiz_bank_paths.dart) (`kBundledQuizBankAssetPaths`) and append the quiz to [`coreJpQuizAppPack()`](lib/data/quiz_registry.dart) (or your pack) in display order.
 4. Run `make content-build`.
 
 ## Add a question

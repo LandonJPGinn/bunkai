@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../app/bunkai_feedback_theme.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_feedback_theme.dart';
+import '../app/jpquizapp_tokens.dart';
 
 /// Score hero card styled like graded answer / explanation panels.
 class ResultsScoreSummary extends StatelessWidget {
@@ -26,8 +26,8 @@ class ResultsScoreSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final feedback = context.bunkaiFeedback;
-    final t = context.bunkaiTokens;
+    final feedback = context.jpQuizAppFeedback;
+    final t = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
 
     final (Color borderColor, Color bgColor) = isPassing

@@ -1,4 +1,4 @@
-import 'package:bunkai/services/quiz_bank_text_normalize.dart';
+import 'package:jpquizapp/services/quiz_bank_text_normalize.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

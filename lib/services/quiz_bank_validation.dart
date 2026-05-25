@@ -74,15 +74,10 @@ void validateQuizBankContent(Quiz quiz) {
         'Quiz "$quizId" / question "$qid": diagnosticTags is empty',
       );
     }
-    if (question.choices.length < 2) {
+    final canonicalAnswers = question.canonicalAnswers;
+    if (canonicalAnswers.isEmpty) {
       throw QuizBankFormatException(
-        'Quiz "$quizId" / question "$qid": at least 2 choices required (got ${question.choices.length})',
-      );
-    }
-    final choiceIds = question.choices.map((c) => c.id).toSet();
-    if (!choiceIds.contains(question.correctAnswerId)) {
-      throw QuizBankFormatException(
-        'Quiz "$quizId" / question "$qid": correctAnswerId "${question.correctAnswerId}" is not among choice ids',
+        'Quiz "$quizId" / question "$qid": requires at least one canonical answer (acceptedAnswers or a valid correct choice label)',
       );
     }
 
@@ -106,6 +101,15 @@ void validateQuizBankContent(Quiz quiz) {
         throw QuizBankFormatException(
           'Quiz "$quizId" / question "$qid": choices[$i].explanationEn '
           'present without Japanese explanation',
+        );
+      }
+    }
+
+    if (question.choices.isNotEmpty && question.correctAnswerId.isNotEmpty) {
+      final choiceIds = question.choices.map((c) => c.id).toSet();
+      if (!choiceIds.contains(question.correctAnswerId)) {
+        throw QuizBankFormatException(
+          'Quiz "$quizId" / question "$qid": correctAnswerId "${question.correctAnswerId}" is not among choice ids',
         );
       }
     }

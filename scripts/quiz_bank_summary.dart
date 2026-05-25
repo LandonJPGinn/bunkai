@@ -17,8 +17,8 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bunkai/models/question_review_status.dart';
-import 'package:bunkai/models/quiz.dart';
+import 'package:jpquizapp/models/question_review_status.dart';
+import 'package:jpquizapp/models/quiz.dart';
 
 import '_quiz_bank_files.dart';
 

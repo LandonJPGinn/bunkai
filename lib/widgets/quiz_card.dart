@@ -4,7 +4,7 @@ import 'dart:ui' show lerpDouble;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 import '../data/topic_card_style.dart';
 import '../models/quiz_id.dart';
@@ -134,7 +134,7 @@ class _QuizCardState extends State<QuizCard>
   Widget build(BuildContext context) {
     final style = topicCardStyleFor(widget.quizId);
     final reduceMotion = MediaQuery.of(context).disableAnimations;
-    final tokens = context.bunkaiTokens;
+    final tokens = context.jpQuizAppTokens;
     final focused = _focusNode.hasFocus;
     final kanjiBright = _hover || focused;
     final decorMotionActive =
@@ -282,13 +282,20 @@ class _QuizCardState extends State<QuizCard>
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        _DifficultyCapsule(label: widget.difficulty),
-                        const SizedBox(width: 8),
-                        _DifficultyCapsule(
-                          label:
-                              '${widget.questionCountLabel} · ${widget.selectedDifficulty}',
+                        Expanded(
+                          child: Wrap(
+                            spacing: 8,
+                            runSpacing: 6,
+                            children: [
+                              _DifficultyCapsule(label: widget.difficulty),
+                              _DifficultyCapsule(
+                                label:
+                                    '${widget.questionCountLabel} · ${widget.selectedDifficulty}',
+                              ),
+                            ],
+                          ),
                         ),
-                        const Spacer(),
+                        const SizedBox(width: 8),
                         IconButton.filledTonal(
                           onPressed: widget.onOpenSettings,
                           tooltip: 'Quiz settings',
@@ -467,7 +474,7 @@ class _BackdropKanji extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tokens = context.bunkaiTokens;
+    final tokens = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final baseOpacity = bright ? 0.68 : 0.58;
     return ExcludeSemantics(

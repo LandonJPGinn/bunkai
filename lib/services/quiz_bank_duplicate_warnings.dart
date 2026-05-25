@@ -34,9 +34,15 @@ List<String> formatQuizBankDuplicateWarnings(Quiz quiz) {
     _groupBy(questions, (q) {
       final j = normalizeQuizBankText(q.japanese);
       if (j.isEmpty) return '';
-      return '$j\u0000${q.correctAnswerId}';
+      final answers = q.canonicalAnswers
+          .map(normalizeQuizBankText)
+          .where((a) => a.isNotEmpty)
+          .toList()
+        ..sort();
+      if (answers.isEmpty) return '';
+      return '$j\u0000${answers.join(String.fromCharCode(_kUnitSeparator))}';
     }),
-    'same japanese and correctAnswerId',
+    'same japanese and canonical answers',
     (q) => q.japanese,
   );
 

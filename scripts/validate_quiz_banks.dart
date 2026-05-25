@@ -15,12 +15,11 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bunkai/data/bundled_quiz_bank_paths.dart';
-import 'package:bunkai/models/quiz.dart';
-import 'package:bunkai/models/quiz_id.dart';
-import 'package:bunkai/services/furigana_inline.dart';
-import 'package:bunkai/services/quiz_bank_duplicate_warnings.dart';
-import 'package:bunkai/services/quiz_bank_validation.dart';
+import 'package:jpquizapp/data/bundled_quiz_bank_paths.dart';
+import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/models/quiz_id.dart';
+import 'package:jpquizapp/services/quiz_bank_duplicate_warnings.dart';
+import 'package:jpquizapp/services/quiz_bank_validation.dart';
 
 import '_quiz_bank_files.dart';
 
@@ -228,18 +227,6 @@ Set<String> _loadDictionarySurfaceSet(Directory quizBankDir) {
   return out;
 }
 
-bool _containsKanji(String value) {
-  for (final r in value.runes) {
-    if (isCjkIdeographRune(r)) return true;
-  }
-  return false;
-}
-
-bool _hasInlineRuby(String value) {
-  final ruby = RegExp(r'[\u4E00-\u9FFF]+\[[^\]]+\]');
-  return ruby.hasMatch(value);
-}
-
 List<String> _validateFuriganaCoverage(Quiz quiz, Set<String> dictionarySurfaces) {
   if (dictionarySurfaces.isEmpty) return const [];
   final errors = <String>[];
@@ -281,7 +268,6 @@ List<String> _validateLexiconAndBuildLookup(Directory quizBankDir) {
     }
     final surface = row['surface'];
     final reading = row['reading'];
-    final pos = row['partOfSpeech'];
     final definitions = row['definitions'];
     if (surface is! String || surface.trim().isEmpty) {
       errors.add('entry[$i] has invalid surface');

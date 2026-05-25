@@ -13,13 +13,20 @@ class QuizPracticeSettingsStore {
 
   static const String _storageKey = 'practice_settings_by_quiz_v1';
 
-  Future<PracticeQuizSettings> load(QuizId quizId) async {
+  Future<PracticeQuizSettings> load(
+    QuizId quizId, {
+    PracticeQuizAvailableSettings? availableSettings,
+  }) async {
     final all = await _readAll();
     final raw = all[quizId.name];
+    PracticeQuizSettings settings = PracticeQuizSettings.defaults;
     if (raw is Map<String, Object?>) {
-      return PracticeQuizSettings.fromStorageMap(raw);
+      settings = PracticeQuizSettings.fromStorageMap(raw);
     }
-    return PracticeQuizSettings.defaults;
+    if (availableSettings != null) {
+      return settings.sanitizedFor(availableSettings);
+    }
+    return settings;
   }
 
   Future<void> save(QuizId quizId, PracticeQuizSettings settings) async {

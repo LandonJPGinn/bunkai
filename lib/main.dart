@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'app/bunkai_app.dart';
+import 'app/jpquizapp_app.dart';
 
 /// PERF: Quiz banks and lexicon load lazily after first frame — never block
 /// [runApp] on JSON parsing (see [QuizBankLoader], [JapaneseDictionaryService]).
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const BunkaiApp());
+  runApp(const JpQuizApp());
 }

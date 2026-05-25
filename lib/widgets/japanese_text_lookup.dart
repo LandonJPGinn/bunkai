@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 import '../services/furigana_inline.dart';
 import '../services/japanese_dictionary_service.dart';
 import '../services/japanese_tokenizer.dart';
@@ -272,7 +272,7 @@ class _LookupTokenState extends State<_LookupToken> {
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
-    final tokens = context.bunkaiTokens;
+    final tokens = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
     final fast = reduceMotion ? Duration.zero : tokens.motionFast;
     final showMark = _hover || _focused;

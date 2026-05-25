@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../app/breakpoints.dart';
-import '../app/bunkai_tokens.dart';
+import '../app/jpquizapp_tokens.dart';
 
 class HomeHeroBanner extends StatelessWidget {
   const HomeHeroBanner({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final t = context.bunkaiTokens;
+    final t = context.jpQuizAppTokens;
     final scheme = Theme.of(context).colorScheme;
 
     return LayoutBuilder(
