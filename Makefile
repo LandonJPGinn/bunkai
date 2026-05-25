@@ -1,5 +1,5 @@
 # jpquizapp - Flutter Web app (see README.md).
-.PHONY: default site pub-get build-web cloudflare-build cloudflare-preview cloudflare-deploy content-export-csv content-generate content-validate content-compile content-build d1-seed-sql d1-migrate-local d1-seed-local d1-migrate-remote d1-seed-remote
+.PHONY: default site pub-get build-web deploy cloudflare-build cloudflare-preview cloudflare-deploy content-export-csv content-generate content-validate content-compile content-build d1-seed-sql d1-migrate-local d1-seed-local d1-migrate-remote d1-seed-remote
 
 D1_DATABASE ?= jpquizapp-quiz-content
 D1_SEED_SQL ?= cloudflare/d1/seed.generated.sql
@@ -14,6 +14,8 @@ site: pub-get
 
 build-web: pub-get
 	flutter build web
+
+deploy: cloudflare-build d1-migrate-remote d1-seed-remote cloudflare-deploy
 
 cloudflare-build: pub-get
 	flutter build web --release --base-href /

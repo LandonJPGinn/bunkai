@@ -75,7 +75,12 @@ class _HomeScreenState extends State<HomeScreen> {
       Navigator.of(
         context,
       ).pushNamed(AppRoutes.quiz, arguments: QuizRouteArgs(quiz: session));
-    } catch (_) {
+    } catch (error, stackTrace) {
+      debugPrint('HomeScreen: could not start quiz "${summary.id}": $error');
+      debugPrintStack(
+        label: 'HomeScreen start quiz failure stack',
+        stackTrace: stackTrace,
+      );
       if (!mounted) return;
       ScaffoldMessenger.maybeOf(
         context,
@@ -99,7 +104,14 @@ class _HomeScreenState extends State<HomeScreen> {
       await QuizPracticeSettingsStore.instance.save(summary.id, updated);
       if (!mounted) return;
       setState(() {});
-    } catch (_) {
+    } catch (error, stackTrace) {
+      debugPrint(
+        'HomeScreen: could not open quiz settings for "${summary.id}": $error',
+      );
+      debugPrintStack(
+        label: 'HomeScreen open settings failure stack',
+        stackTrace: stackTrace,
+      );
       if (!mounted) return;
       ScaffoldMessenger.maybeOf(context)?.showSnackBar(
         const SnackBar(content: Text('Could not open quiz settings.')),

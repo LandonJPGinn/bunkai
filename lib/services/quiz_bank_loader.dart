@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 
 import '../data/bundled_quiz_bank_paths.dart';
 import '../models/quiz.dart';
@@ -33,6 +34,10 @@ class QuizBankLoader {
     'JPQUIZAPP_REMOTE_API',
     defaultValue: kReleaseMode,
   );
+  static const bool _verboseLoadLogging = bool.fromEnvironment(
+    'JPQUIZAPP_LOAD_LOGS',
+    defaultValue: true,
+  );
 
   List<QuizSummary>? _catalog;
   final Map<String, Quiz> _quizzes = {};
@@ -46,7 +51,10 @@ class QuizBankLoader {
 
   /// Idempotent. Parses [quiz_catalog.json] only.
   Future<void> ensureCatalogLoaded() async {
-    if (_catalogLoaded) return;
+    if (_catalogLoaded) {
+      _log('catalog cache hit (${_catalog?.length ?? 0} quizzes)');
+      return;
+    }
 
     final raw = await _loadCatalogString();
     final decoded = jsonDecode(raw);
@@ -63,6 +71,7 @@ class QuizBankLoader {
         QuizSummary.fromCatalogJson(Map<String, dynamic>.from(item as Map)),
     ];
     _catalogLoaded = true;
+    _log('catalog loaded (${_catalog!.length} quizzes)');
   }
 
   /// Throws if [ensureCatalogLoaded] has not completed successfully.
@@ -79,8 +88,12 @@ class QuizBankLoader {
   /// Loads one bank JSON if missing from cache; validates; caches by quiz id.
   Future<Quiz> ensureQuizLoaded(String id) async {
     final cached = _quizzes[id];
-    if (cached != null) return cached;
+    if (cached != null) {
+      _log('quiz "$id" cache hit (${cached.questions.length} questions)');
+      return cached;
+    }
 
+    _log('quiz "$id" load requested');
     _quizLoadsInFlight[id] ??= _parseAndCacheQuiz(id);
     try {
       return await _quizLoadsInFlight[id]!;
@@ -92,22 +105,30 @@ class QuizBankLoader {
   Future<Quiz> _parseAndCacheQuiz(String id) async {
     if (kIsWeb && _remoteApiEnabled) {
       try {
+        _log('quiz "$id" attempting remote API load');
         final quiz = _parseQuizString(
           id,
           await _loadRemoteString('/api/quizzes/${Uri.encodeComponent(id)}'),
         );
         _quizzes[id] = quiz;
+        _log('quiz "$id" loaded from remote API (${quiz.questions.length} questions)');
         return quiz;
-      } catch (error) {
+      } catch (error, stackTrace) {
         debugPrint(
           'QuizBankLoader: remote quiz "$id" failed; using assets. $error',
+        );
+        debugPrintStack(
+          label: 'QuizBankLoader remote quiz "$id" failure stack',
+          stackTrace: stackTrace,
         );
       }
     }
 
+    _log('quiz "$id" attempting bundled asset load');
     final raw = await _loadBundledQuizString(id);
     final quiz = _parseQuizString(id, raw);
     _quizzes[id] = quiz;
+    _log('quiz "$id" loaded from bundled assets (${quiz.questions.length} questions)');
     return quiz;
   }
 
@@ -143,12 +164,19 @@ class QuizBankLoader {
   Future<String> _loadCatalogString() async {
     if (kIsWeb && _remoteApiEnabled) {
       try {
+        _log('catalog attempting remote API load');
         return await _loadRemoteString(_remoteCatalogPath);
-      } catch (_) {
+      } catch (error, stackTrace) {
         // Bundled assets are the offline/dev fallback when Pages Functions are
         // unavailable.
+        debugPrint('QuizBankLoader: remote catalog failed; using assets. $error');
+        debugPrintStack(
+          label: 'QuizBankLoader remote catalog failure stack',
+          stackTrace: stackTrace,
+        );
       }
     }
+    _log('catalog attempting bundled asset load');
     return _loadAssetStringWithFallback(
       preferred: _compiledCatalogAssetPath,
       fallback: _catalogAssetPath,
@@ -168,8 +196,21 @@ class QuizBankLoader {
     );
   }
 
-  Future<String> _loadRemoteString(String path) {
-    return NetworkAssetBundle(Uri.base).loadString(path);
+  Future<String> _loadRemoteString(String path) async {
+    final uri = Uri.base.resolve(path);
+    _log('remote GET $uri');
+    final response = await http.get(uri);
+    _log(
+      'remote response ${response.statusCode} $uri '
+      'content-type=${response.headers['content-type'] ?? '<missing>'} '
+      'bytes=${response.bodyBytes.length}',
+    );
+    if (response.statusCode < 200 || response.statusCode >= 300) {
+      throw StateError(
+        'Remote quiz content request failed: ${response.statusCode} $uri',
+      );
+    }
+    return response.body;
   }
 
   Future<String> _loadAssetStringWithFallback({
@@ -177,9 +218,20 @@ class QuizBankLoader {
     required String fallback,
   }) async {
     try {
-      return await rootBundle.loadString(preferred);
-    } catch (_) {
-      return rootBundle.loadString(fallback);
+      final value = await rootBundle.loadString(preferred);
+      _log('asset loaded: $preferred bytes=${value.length}');
+      return value;
+    } catch (error) {
+      _log('asset failed: $preferred ($error); trying $fallback');
+      final value = await rootBundle.loadString(fallback);
+      _log('asset loaded: $fallback bytes=${value.length}');
+      return value;
+    }
+  }
+
+  static void _log(String message) {
+    if (_verboseLoadLogging) {
+      debugPrint('QuizBankLoader: $message');
     }
   }
 
