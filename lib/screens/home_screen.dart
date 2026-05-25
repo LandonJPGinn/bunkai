@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../app/app_router.dart' show AppRoutes, QuizRouteArgs;
 import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
-import '../app/font_bootstrap.dart';
 import '../app/home_scroll_behavior.dart';
 import '../data/quiz_registry.dart';
 import '../models/practice_options.dart';
@@ -29,11 +28,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final ScrollController _scroll = ScrollController();
   final GlobalKey _gridKey = GlobalKey();
 
-  /// Catalog + Google Fonts so hero/card kanji do not flash as placeholder blocks.
-  late final Future<List<QuizSummary>> _homeReady = Future.wait<Object?>([
-    quizSummariesForHome(),
-    preloadHomeFonts(),
-  ]).then((r) => r[0]! as List<QuizSummary>);
+  /// Catalog only; fonts and large quiz banks must not block the home paint.
+  late final Future<List<QuizSummary>> _homeReady = quizSummariesForHome();
 
   @override
   void initState() {

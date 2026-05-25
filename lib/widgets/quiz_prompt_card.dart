@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
@@ -80,7 +79,7 @@ class QuizPromptCard extends StatelessWidget {
                       angle: -8 * math.pi / 180,
                       child: Text(
                         wm,
-                        style: GoogleFonts.notoSansJp(
+                        style: TextStyle(
                           fontSize: phone ? 104 : 132,
                           fontWeight: FontWeight.w900,
                           height: 1,

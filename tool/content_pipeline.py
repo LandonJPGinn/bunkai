@@ -87,6 +87,7 @@ def export_csv_sources() -> None:
                     "japanese": str(q.get("japanese", "")),
                     "japanese_en": str(q.get("japaneseEn", "")),
                     "correct_answer_id": str(q.get("correctAnswerId", "")),
+                    "accepted_answers": _join_pipe(list(q.get("acceptedAnswers", []))),
                     "explanation": str(q.get("explanation", "")),
                     "explanation_en": str(q.get("explanationEn", "")),
                     "diagnostic_tags": _join_pipe(list(q.get("diagnosticTags", []))),
@@ -153,6 +154,7 @@ def export_csv_sources() -> None:
             "japanese",
             "japanese_en",
             "correct_answer_id",
+            "accepted_answers",
             "explanation",
             "explanation_en",
             "diagnostic_tags",
@@ -246,6 +248,9 @@ def generate_assets_from_csv() -> None:
             "explanationEn": row["explanation_en"],
             "diagnosticTags": _split_pipe(row["diagnostic_tags"]),
         }
+        accepted = _split_pipe(row.get("accepted_answers"))
+        if accepted:
+            q["acceptedAnswers"] = accepted
         if row["context"].strip():
             q["context"] = row["context"]
         if row["context_en"].strip():

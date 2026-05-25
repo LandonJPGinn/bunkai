@@ -1,5 +1,4 @@
 import '../data/jlpt_question_levels.dart';
-import '../models/question_review_status.dart';
 import '../models/quiz.dart';
 
 /// Thrown when a bundled quiz bank JSON fails validation after parse.
@@ -163,9 +162,9 @@ void validateQuizBankContent(Quiz quiz) {
         'Quiz "$quizId" / question "$qid": vocabulary must be non-empty',
       );
     }
-    if (question.reviewStatus != QuestionReviewStatus.draft) {
+    if (question.reviewStatus == null) {
       throw QuizBankFormatException(
-        'Quiz "$quizId" / question "$qid": reviewStatus must be draft',
+        'Quiz "$quizId" / question "$qid": reviewStatus is required',
       );
     }
   }

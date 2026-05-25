@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import '../models/dictionary_entry.dart';
 import 'japanese_tokenizer.dart';
 
-/// Loads and caches `assets/dictionary/japanese_lexicon.json`.
+/// Loads and caches the compiled dictionary lexicon asset.
 ///
 /// PERF: Do not await in `main()` — call [ensureLoaded] from widgets or idle
 /// preload so first paint is not blocked by lexicon JSON parse.
@@ -15,7 +15,6 @@ class JapaneseDictionaryService {
   static final JapaneseDictionaryService instance =
       JapaneseDictionaryService._();
 
-  static const String _assetPath = 'assets/dictionary/japanese_lexicon.json';
   static const String _compiledAssetPath =
       'assets/compiled/dictionary_lexicon.json';
 
@@ -44,10 +43,7 @@ class JapaneseDictionaryService {
   Future<void> _performLoad() async {
     if (_loaded) return;
 
-    final raw = await _loadStringWithFallback(
-      preferred: _compiledAssetPath,
-      fallback: _assetPath,
-    );
+    final raw = await rootBundle.loadString(_compiledAssetPath);
     final decoded = jsonDecode(raw);
     if (decoded is! List) {
       throw const FormatException(
@@ -69,17 +65,6 @@ class JapaneseDictionaryService {
     _bySurface = next;
     _tokenizer = JapaneseTokenizer.fromSurfaces(next.keys);
     _loaded = true;
-  }
-
-  Future<String> _loadStringWithFallback({
-    required String preferred,
-    required String fallback,
-  }) async {
-    try {
-      return await rootBundle.loadString(preferred);
-    } catch (_) {
-      return rootBundle.loadString(fallback);
-    }
   }
 
   /// Longest-match tokenizer over loaded surfaces; throws if not [isLoaded].

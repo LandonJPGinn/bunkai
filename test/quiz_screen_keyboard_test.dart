@@ -1,3 +1,4 @@
+import 'package:jpquizapp/models/answer_choice.dart';
 import 'package:jpquizapp/models/quiz.dart';
 import 'package:jpquizapp/models/quiz_id.dart';
 import 'package:jpquizapp/models/quiz_question.dart';
@@ -101,5 +102,47 @@ void main() {
 
     expect(find.text('Next'), findsOneWidget);
     expect(find.text('Submit'), findsNothing);
+  });
+
+  testWidgets('multiple choice accepts number key selection', (tester) async {
+    const choiceQuiz = Quiz(
+      id: QuizId.particleForensics,
+      title: 'Quiz',
+      subtitle: 'S',
+      description: 'D',
+      difficulty: 'N4',
+      questions: [
+        QuizQuestion(
+          id: 'q1',
+          type: QuizType.multipleChoice,
+          prompt: 'Choose',
+          japanese: 'ほん___よむ',
+          promptEn: 'Choose',
+          japaneseEn: 'Choose',
+          explanation: 'ex',
+          explanationEn: 'ex',
+          diagnosticTags: ['tag'],
+          choices: [
+            AnswerChoice(id: 'a', label: 'を', labelEn: 'wo'),
+            AnswerChoice(id: 'b', label: 'に', labelEn: 'ni'),
+          ],
+          correctAnswerId: 'a',
+        ),
+      ],
+    );
+
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: QuizScreen(quiz: choiceQuiz),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.sendKeyEvent(LogicalKeyboardKey.digit1);
+    await tester.pump();
+    await tester.sendKeyEvent(LogicalKeyboardKey.enter);
+    await tester.pumpAndSettle();
+
+    expect(find.text('Correct'), findsWidgets);
   });
 }

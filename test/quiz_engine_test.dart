@@ -56,16 +56,16 @@ void main() {
 
     test('setDraftAnswer ignored after lock', () {
       final engine = QuizEngine(miniQuiz);
-      engine.setDraftAnswer('right');
+      engine.setDraftAnswer('b');
       engine.lockAnswer();
       expect(engine.isLocked, true);
-      engine.setDraftAnswer('wrong');
+      engine.setDraftAnswer('a');
       expect(engine.submittedAnswer, 'right');
     });
 
     test('diagnosticMisses increment on wrong answer', () {
       final engine = QuizEngine(miniQuiz);
-      engine.setDraftAnswer('wrong');
+      engine.setDraftAnswer('a');
       engine.lockAnswer();
       expect(engine.lastSubmittedCorrect, false);
       final r = engine.buildResult();
@@ -78,7 +78,7 @@ void main() {
 
     test('correct answer advances counts and advance clears draft', () {
       final engine = QuizEngine(miniQuiz);
-      engine.setDraftAnswer('right');
+      engine.setDraftAnswer('b');
       engine.lockAnswer();
       expect(engine.lastSubmittedCorrect, true);
       expect(engine.lockedCorrectCount, 1);
@@ -88,7 +88,7 @@ void main() {
       expect(engine.isLocked, false);
       expect(engine.currentIndex, 1);
 
-      engine.setDraftAnswer('ok');
+      engine.setDraftAnswer('a');
       engine.lockAnswer();
       expect(engine.lastSubmittedCorrect, true);
       final r = engine.buildResult();
@@ -108,15 +108,12 @@ void main() {
         questions: [
           QuizQuestion(
             id: 'furigana_q1',
-            type: QuizType.multipleChoice,
+            type: QuizType.textInput,
             prompt: 'P',
             japanese: 'J',
             promptEn: 'P',
             japaneseEn: 'J',
-            choices: [
-              AnswerChoice(id: 'a', label: '昨日[きのう]', labelEn: 'yesterday'),
-            ],
-            correctAnswerId: 'a',
+            acceptedAnswers: ['昨日[きのう]'],
             explanation: 'E',
             explanationEn: 'E',
             diagnosticTags: ['tagA'],
@@ -131,10 +128,10 @@ void main() {
 
     test('wrong then right accumulates misses only for wrong', () {
       final engine = QuizEngine(miniQuiz);
-      engine.setDraftAnswer('wrong');
+      engine.setDraftAnswer('a');
       engine.lockAnswer();
       engine.advance();
-      engine.setDraftAnswer('ok');
+      engine.setDraftAnswer('a');
       engine.lockAnswer();
       final r = engine.buildResult();
       expect(r.correctCount, 1);

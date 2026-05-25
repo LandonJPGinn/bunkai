@@ -139,7 +139,12 @@ def build_seed_sql() -> str:
                     _sql_required(row["japanese"]),
                     _sql_required(row["japanese_en"]),
                     _sql_required(row["correct_answer_id"].strip()),
-                    _sql_required(json.dumps([], separators=(",", ":"))),
+                    _sql_required(
+                        json.dumps(
+                            _split_pipe(row.get("accepted_answers")),
+                            separators=(",", ":"),
+                        )
+                    ),
                     _sql_required(row["explanation"]),
                     _sql_required(row["explanation_en"]),
                     _sql_string(row["jlpt_level"].strip()),

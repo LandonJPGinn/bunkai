@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../app/breakpoints.dart';
 import '../app/jpquizapp_feedback_theme.dart';
@@ -92,7 +91,7 @@ class ResultsScoreSummary extends StatelessWidget {
                 return Text(
                   '$display%',
                   semanticsLabel: '$percent percent correct',
-                  style: GoogleFonts.inter(
+                  style: TextStyle(
                     fontSize: phone ? 44 : 52,
                     fontWeight: FontWeight.w700,
                     letterSpacing: -2,

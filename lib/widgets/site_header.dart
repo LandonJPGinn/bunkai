@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../app/app_router.dart';
 import '../app/breakpoints.dart';
@@ -112,7 +111,7 @@ class _BrandMarkState extends State<_BrandMark> {
                 AnimatedDefaultTextStyle(
                   duration: fast,
                   curve: curve,
-                  style: GoogleFonts.notoSansJp(
+                  style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w900,
                     height: 1,
@@ -124,7 +123,7 @@ class _BrandMarkState extends State<_BrandMark> {
                 AnimatedDefaultTextStyle(
                   duration: fast,
                   curve: curve,
-                  style: GoogleFonts.inter(
+                  style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.w700,
                     letterSpacing: -0.3,
@@ -206,7 +205,7 @@ class _NavPillState extends State<_NavPill> {
               child: AnimatedDefaultTextStyle(
                 duration: fast,
                 curve: curve,
-                style: GoogleFonts.inter(
+                style: TextStyle(
                   fontSize: 14,
                   fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
                   color: textColor,
@@ -261,7 +260,7 @@ class SiteCompactHeader extends StatelessWidget {
                     title,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.inter(
+                    style: TextStyle(
                       fontSize: phone ? 14 : 16,
                       fontWeight: FontWeight.w600,
                       color: t.textMain,

@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-// PERF: Theme resolves Google Fonts once here — avoid per-widget GoogleFonts.*
-// calls in lists/grids (hurts rebuild cost & Web font resolution churn).
+// PERF: Use local platform font stacks so first paint never waits on web fonts.
 
 import 'jpquizapp_feedback_theme.dart';
 import 'jpquizapp_tokens.dart';
 import 'color/oklch.dart';
 
 Color _oklch(double l, double c, double h) => Oklch(l, c, h).toColor();
+
+const String _primaryFontFamily = 'Segoe UI';
+const List<String> _fontFallback = [
+  'Roboto',
+  'Helvetica Neue',
+  'Arial',
+  'Noto Sans JP',
+  'Yu Gothic',
+  'Meiryo',
+  'Hiragino Sans',
+  'sans-serif',
+];
 
 ThemeData buildJpQuizAppDarkTheme() {
   final tokens = JpQuizAppTokens.dark;
@@ -49,80 +59,73 @@ ThemeData buildJpQuizAppDarkTheme() {
     outlineVariant: tokens.borderSoft,
   );
 
-  final notoFamily = GoogleFonts.notoSansJp().fontFamily!;
-  final interBase = GoogleFonts.interTextTheme(Typography.whiteMountainView);
+  final interBase = Typography.whiteMountainView.apply(
+    fontFamily: _primaryFontFamily,
+    fontFamilyFallback: _fontFallback,
+    bodyColor: tokens.textMain,
+    displayColor: tokens.textStrong,
+  );
   final textTheme = interBase.copyWith(
     displaySmall: interBase.displaySmall?.copyWith(
       fontWeight: FontWeight.w700,
       letterSpacing: -0.6,
       height: 1.15,
       color: tokens.textStrong,
-      fontFamilyFallback: [notoFamily],
     ),
     headlineMedium: interBase.headlineMedium?.copyWith(
       fontWeight: FontWeight.w700,
       letterSpacing: -0.4,
       height: 1.2,
       color: tokens.textStrong,
-      fontFamilyFallback: [notoFamily],
     ),
     titleLarge: interBase.titleLarge?.copyWith(
       letterSpacing: 0.02,
       fontWeight: FontWeight.w700,
       height: 1.35,
       color: tokens.textStrong,
-      fontFamilyFallback: [notoFamily],
     ),
     titleMedium: interBase.titleMedium?.copyWith(
       letterSpacing: 0.03,
       fontWeight: FontWeight.w600,
       height: 1.4,
       color: tokens.textStrong,
-      fontFamilyFallback: [notoFamily],
     ),
     titleSmall: interBase.titleSmall?.copyWith(
       letterSpacing: 0.04,
       fontWeight: FontWeight.w600,
       height: 1.35,
       color: tokens.textMain,
-      fontFamilyFallback: [notoFamily],
     ),
     bodyLarge: interBase.bodyLarge?.copyWith(
       letterSpacing: 0.02,
       height: 1.55,
       fontWeight: FontWeight.w400,
       color: tokens.textMain,
-      fontFamilyFallback: [notoFamily],
     ),
     bodyMedium: interBase.bodyMedium?.copyWith(
       letterSpacing: 0.02,
       height: 1.5,
       color: tokens.textMain,
-      fontFamilyFallback: [notoFamily],
     ),
     bodySmall: interBase.bodySmall?.copyWith(
       letterSpacing: 0.02,
       height: 1.45,
       color: tokens.textMuted,
-      fontFamilyFallback: [notoFamily],
     ),
     labelLarge: interBase.labelLarge?.copyWith(
       letterSpacing: 0.4,
       fontWeight: FontWeight.w600,
       color: tokens.textMain,
-      fontFamilyFallback: [notoFamily],
     ),
     labelMedium: interBase.labelMedium?.copyWith(
       letterSpacing: 0.28,
       fontWeight: FontWeight.w500,
       color: tokens.textMuted,
-      fontFamilyFallback: [notoFamily],
     ),
     labelSmall: interBase.labelSmall?.copyWith(
       letterSpacing: 0.22,
       fontWeight: FontWeight.w500,
       color: tokens.textMuted,
-      fontFamilyFallback: [notoFamily],
     ),
   );
 
@@ -130,8 +133,8 @@ ThemeData buildJpQuizAppDarkTheme() {
     useMaterial3: true,
     colorScheme: scheme,
     scaffoldBackgroundColor: pageBg,
-    fontFamily: GoogleFonts.inter().fontFamily,
-    fontFamilyFallback: [notoFamily],
+    fontFamily: _primaryFontFamily,
+    fontFamilyFallback: _fontFallback,
     textTheme: textTheme,
     cardTheme: CardThemeData(
       elevation: 0,
@@ -148,7 +151,9 @@ ThemeData buildJpQuizAppDarkTheme() {
       backgroundColor: Colors.transparent,
       foregroundColor: tokens.textStrong,
       centerTitle: false,
-      titleTextStyle: GoogleFonts.inter(
+      titleTextStyle: TextStyle(
+        fontFamily: _primaryFontFamily,
+        fontFamilyFallback: _fontFallback,
         color: tokens.textStrong,
         fontSize: 17,
         fontWeight: FontWeight.w600,

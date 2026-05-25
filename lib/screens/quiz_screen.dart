@@ -8,11 +8,13 @@ import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
 import '../data/topic_card_style.dart';
 import '../models/quiz.dart';
+import '../models/quiz_type.dart';
 import '../services/romaji_to_hiragana_converter.dart';
 import '../services/quiz_engine.dart';
 import '../widgets/app_shell.dart';
 import '../widgets/primary_button.dart';
 import '../widgets/progress_header.dart';
+import '../widgets/quiz_answer_choices.dart';
 import '../widgets/quiz_locked_feedback_content.dart';
 import '../widgets/quiz_prompt_card.dart';
 import '../widgets/quiz_text_answer_input.dart';
@@ -138,6 +140,16 @@ class _QuizScreenState extends State<QuizScreen> {
     final locked = engine.isLocked;
 
     if (!locked) {
+      if (engine.currentQuestion.type == QuizType.multipleChoice) {
+        final keyLabel = event.character ?? logical.keyLabel;
+        final index = int.tryParse(keyLabel) ?? -1;
+        if (index >= 1 && index <= engine.currentQuestion.choices.length) {
+          setState(() {
+            engine.setDraftAnswer(engine.currentQuestion.choices[index - 1].id);
+          });
+          return KeyEventResult.handled;
+        }
+      }
       if (logical == LogicalKeyboardKey.enter ||
           logical == LogicalKeyboardKey.numpadEnter) {
         if (engine.draftAnswer.trim().isNotEmpty) {
@@ -160,6 +172,39 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     }
     return KeyEventResult.ignored;
+  }
+
+  Widget _buildAnswerInput({
+    required QuizEngine engine,
+    required bool locked,
+    required bool? wasCorrect,
+    required VoidCallback? primaryAction,
+  }) {
+    final q = engine.currentQuestion;
+    if (q.type == QuizType.multipleChoice) {
+      return QuizAnswerChoices(
+        choices: q.choices,
+        correctAnswerId: q.correctAnswerId,
+        selectedAnswerId: engine.draftAnswer.isEmpty ? null : engine.draftAnswer,
+        locked: locked,
+        showOutcome: locked,
+        lastSubmittedCorrect: wasCorrect,
+        showFurigana: _showFurigana,
+        showEnglish: _showEnglish,
+        onChoiceSelected: (choiceId) {
+          setState(() => engine.setDraftAnswer(choiceId));
+          _refocusKeys();
+        },
+      );
+    }
+
+    return QuizTextAnswerInput(
+      controller: _answerController,
+      focusNode: _answerFocus,
+      locked: locked,
+      wasCorrect: wasCorrect,
+      onSubmitted: primaryAction,
+    );
   }
 
   @override
@@ -357,12 +402,11 @@ class _QuizScreenState extends State<QuizScreen> {
                                   watermarkKanji: topicStyle.kanji,
                                 ),
                                 const SizedBox(height: 16),
-                                QuizTextAnswerInput(
-                                  controller: _answerController,
-                                  focusNode: _answerFocus,
+                                _buildAnswerInput(
+                                  engine: engine,
                                   locked: locked,
                                   wasCorrect: engine.lastSubmittedCorrect,
-                                  onSubmitted: primaryAction,
+                                  primaryAction: primaryAction,
                                 ),
                                 AnimatedSize(
                                   duration: motionSlow,
@@ -579,14 +623,13 @@ class _QuizScreenState extends State<QuizScreen> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.stretch,
                                                 children: [
-                                                  QuizTextAnswerInput(
-                                                    controller:
-                                                        _answerController,
-                                                    focusNode: _answerFocus,
+                                                  _buildAnswerInput(
+                                                    engine: engine,
                                                     locked: locked,
                                                     wasCorrect: engine
                                                         .lastSubmittedCorrect,
-                                                    onSubmitted: primaryAction,
+                                                    primaryAction:
+                                                        primaryAction,
                                                   ),
                                                   // Live banner slot is always
                                                   // mounted and animated, so the

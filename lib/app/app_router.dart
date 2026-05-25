@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/quiz.dart';
 import '../models/quiz_result.dart';
 import '../screens/home_screen.dart';
+import '../screens/admin_screen.dart' deferred as admin_lib;
 import '../screens/quiz_screen.dart' deferred as quiz_screen_lib;
 import '../screens/quiz_start_screen.dart' deferred as quiz_start_lib;
 import '../screens/results_screen.dart' deferred as results_lib;
@@ -15,6 +16,7 @@ class AppRoutes {
   AppRoutes._();
 
   static const String home = '/';
+  static const String admin = '/admin';
   static const String quizStart = '/quiz/start';
   static const String quiz = '/quiz';
   static const String results = '/results';
@@ -60,6 +62,19 @@ class AppRouter {
         return MaterialPageRoute<void>(
           settings: settings,
           builder: (_) => HomeScreen(scrollToQuizzesOnOpen: scrollToQuizzes),
+        );
+      case AppRoutes.admin:
+        return MaterialPageRoute<void>(
+          settings: settings,
+          builder: (_) => FutureBuilder<void>(
+            future: admin_lib.loadLibrary(),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState != ConnectionState.done) {
+                return const _DeferredRouteShell(title: 'Admin');
+              }
+              return admin_lib.AdminScreen();
+            },
+          ),
         );
       case AppRoutes.quizStart:
         final startArgs = settings.arguments;

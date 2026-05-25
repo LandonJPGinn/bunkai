@@ -1,6 +1,7 @@
 import '../models/quiz.dart';
 import '../models/quiz_question.dart';
 import '../models/quiz_result.dart';
+import '../models/quiz_type.dart';
 import 'furigana_inline.dart';
 
 class QuizEngine {
@@ -45,11 +46,17 @@ class QuizEngine {
     if (submitted.isEmpty) return;
     final q = currentQuestion;
     _locked = true;
-    _submittedAnswer = submitted;
-    final normalizedSubmitted = stripInlineFuriganaMarkup(submitted).trim();
-    final correct = q.canonicalAnswers
-        .map((answer) => stripInlineFuriganaMarkup(answer).trim())
-        .contains(normalizedSubmitted);
+    final bool correct;
+    if (q.type == QuizType.multipleChoice) {
+      correct = submitted == q.correctAnswerId;
+      _submittedAnswer = _choiceLabelForId(q, submitted) ?? submitted;
+    } else {
+      _submittedAnswer = submitted;
+      final normalizedSubmitted = stripInlineFuriganaMarkup(submitted).trim();
+      correct = q.canonicalAnswers
+          .map((answer) => stripInlineFuriganaMarkup(answer).trim())
+          .contains(normalizedSubmitted);
+    }
     _lastSubmittedCorrect = correct;
     if (correct) {
       _correctCount += 1;
@@ -58,6 +65,13 @@ class QuizEngine {
         _diagnosticMisses[tag] = (_diagnosticMisses[tag] ?? 0) + 1;
       }
     }
+  }
+
+  String? _choiceLabelForId(QuizQuestion question, String choiceId) {
+    for (final choice in question.choices) {
+      if (choice.id == choiceId) return choice.label;
+    }
+    return null;
   }
 
   void advance() {
