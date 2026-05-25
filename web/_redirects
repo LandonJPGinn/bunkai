@@ -1,0 +1,4 @@
+# Cloudflare Pages fallbacks for Flutter named-route URLs.
+/quiz /index.html 200
+/quiz/start /index.html 200
+/results /index.html 200

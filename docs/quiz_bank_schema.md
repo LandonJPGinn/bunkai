@@ -8,7 +8,7 @@ A formal machine-readable definition lives alongside this guide: [quiz_bank.sche
 
 ## File names and quiz `id`
 
-The loader maps each asset path to a fixed [`QuizId`](../lib/models/quiz_id.dart). The JSON field `"id"` **must** exactly match the enum name for that file, or loading fails with a mismatch error.
+Bundled fallback assets are mapped by stable string ids in [`bundled_quiz_bank_paths.dart`](../lib/data/bundled_quiz_bank_paths.dart). The JSON field `"id"` **must** exactly match the registered id for that file, or loading fails with a mismatch error.
 
 | Asset file | Required `"id"` value |
 |------------|------------------------|
@@ -48,9 +48,10 @@ After parsing, `validateQuizBankContent` in [`lib/services/quiz_bank_validation.
 
 The schema file additionally requires at least one question and at least two choices per question so editors catch empty banks early.
 
-## Allowed quiz `id` values
+## Bundled quiz `id` values
 
-Only these strings are valid (they match `QuizId.name` in code):
+These strings are the bundled quiz ids. D1-backed deployments may add more
+non-empty stable string ids without changing Dart code:
 
 - `particleForensics`
 - `clauseUntangler`

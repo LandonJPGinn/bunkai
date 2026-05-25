@@ -8,7 +8,7 @@ const int _kUnitSeparator = 0x1F; // US — cannot appear in normalized text
 ///
 /// Warnings are based on [normalizeQuizBankText] equality (no fuzzy matching).
 List<String> formatQuizBankDuplicateWarnings(Quiz quiz) {
-  final quizName = quiz.id.name;
+  final quizName = quiz.id;
   final out = <String>[];
   final questions = quiz.questions;
 
@@ -34,11 +34,12 @@ List<String> formatQuizBankDuplicateWarnings(Quiz quiz) {
     _groupBy(questions, (q) {
       final j = normalizeQuizBankText(q.japanese);
       if (j.isEmpty) return '';
-      final answers = q.canonicalAnswers
-          .map(normalizeQuizBankText)
-          .where((a) => a.isNotEmpty)
-          .toList()
-        ..sort();
+      final answers =
+          q.canonicalAnswers
+              .map(normalizeQuizBankText)
+              .where((a) => a.isNotEmpty)
+              .toList()
+            ..sort();
       if (answers.isEmpty) return '';
       return '$j\u0000${answers.join(String.fromCharCode(_kUnitSeparator))}';
     }),

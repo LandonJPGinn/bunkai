@@ -17,7 +17,6 @@ import 'dart:io';
 
 import 'package:jpquizapp/data/bundled_quiz_bank_paths.dart';
 import 'package:jpquizapp/models/quiz.dart';
-import 'package:jpquizapp/models/quiz_id.dart';
 import 'package:jpquizapp/services/quiz_bank_duplicate_warnings.dart';
 import 'package:jpquizapp/services/quiz_bank_validation.dart';
 
@@ -27,9 +26,9 @@ void main() {
   final dir = resolveQuizBankDir();
   final List<File> files;
   try {
-    files = listQuizBankJsonFiles(dir)
-        .where((f) => _jsonBasename(f) != 'quiz_catalog.json')
-        .toList();
+    files = listQuizBankJsonFiles(
+      dir,
+    ).where((f) => _jsonBasename(f) != 'quiz_catalog.json').toList();
   } on FileSystemException catch (e) {
     stderr.writeln('ERROR: ${e.message}: ${e.path}');
     exitCode = 1;
@@ -42,9 +41,9 @@ void main() {
     return;
   }
 
-  // Reverse-lookup: filename -> registered QuizId, so we can match the loader's
+  // Reverse-lookup: filename -> registered quiz id, so we can match the loader's
   // "JSON id must equal the registered id" rule when applicable.
-  final registeredIdByFilename = <String, QuizId>{};
+  final registeredIdByFilename = <String, String>{};
   for (final entry in kBundledQuizBankAssetPaths.entries) {
     final base = entry.value.split('/').last;
     registeredIdByFilename[base] = entry.key;
@@ -64,7 +63,11 @@ void main() {
 
   for (final file in files) {
     final path = relativePath(file);
-    final errors = _validateFile(file, registeredIdByFilename, dictionarySurfaces);
+    final errors = _validateFile(
+      file,
+      registeredIdByFilename,
+      dictionarySurfaces,
+    );
     if (errors.isEmpty) {
       // Question count is informational — only printed on success.
       try {
@@ -120,10 +123,9 @@ void _writeQuizCatalog(Directory dir) {
     final baseName = relativeAssetPath.split('/').last;
     final file = File('${dir.path}/$baseName');
     final raw = file.readAsStringSync();
-    final quiz =
-        Quiz.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+    final quiz = Quiz.fromJson(jsonDecode(raw) as Map<String, dynamic>);
     quizzes.add({
-      'id': quiz.id.name,
+      'id': quiz.id,
       'title': quiz.title,
       'subtitle': quiz.subtitle,
       'description': quiz.description,
@@ -147,7 +149,7 @@ String _jsonBasename(File file) {
 /// messages. Empty list means the file passed.
 List<String> _validateFile(
   File file,
-  Map<String, QuizId> registeredIdByFilename,
+  Map<String, String> registeredIdByFilename,
   Set<String> dictionarySurfaces,
 ) {
   final errors = <String>[];
@@ -195,7 +197,7 @@ List<String> _validateFile(
   final registeredId = registeredIdByFilename[basename];
   if (registeredId != null && quiz.id != registeredId) {
     errors.add(
-      'JSON "id" is "${quiz.id.name}" but expected "${registeredId.name}" '
+      'JSON "id" is "${quiz.id}" but expected "$registeredId" '
       'for registered path',
     );
   }
@@ -227,7 +229,10 @@ Set<String> _loadDictionarySurfaceSet(Directory quizBankDir) {
   return out;
 }
 
-List<String> _validateFuriganaCoverage(Quiz quiz, Set<String> dictionarySurfaces) {
+List<String> _validateFuriganaCoverage(
+  Quiz quiz,
+  Set<String> dictionarySurfaces,
+) {
   if (dictionarySurfaces.isEmpty) return const [];
   final errors = <String>[];
   for (final q in quiz.questions) {
@@ -235,12 +240,11 @@ List<String> _validateFuriganaCoverage(Quiz quiz, Set<String> dictionarySurfaces
         !q.japanese.contains('日本[') &&
         !dictionarySurfaces.contains('日本')) {
       errors.add(
-        'Quiz "${quiz.id.name}" / question "${q.id}": '
+        'Quiz "${quiz.id}" / question "${q.id}": '
         'contains 日本 but dictionary is missing surface "日本" '
         '(likely furigana mismatch such as にほん)',
       );
     }
-
   }
   return errors;
 }

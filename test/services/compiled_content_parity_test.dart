@@ -28,9 +28,9 @@ void main() {
       final quizId = entry.key;
       final source = _readJson('$repoRoot/${entry.value}');
       final compiled = _readJson(
-        '$repoRoot/assets/compiled/quiz_banks/${quizId.name}.json',
+        '$repoRoot/assets/compiled/quiz_banks/$quizId.json',
       );
-      expect(compiled, equals(source), reason: 'Mismatch for ${quizId.name}');
+      expect(compiled, equals(source), reason: 'Mismatch for $quizId');
     }
   });
 

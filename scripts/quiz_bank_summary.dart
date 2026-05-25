@@ -96,7 +96,7 @@ void _printQuizSummary(Quiz quiz) {
   final firstId = quiz.questions.isNotEmpty ? quiz.questions.first.id : '-';
   final lastId = quiz.questions.isNotEmpty ? quiz.questions.last.id : '-';
 
-  final header = '── ${quiz.id.name} ';
+  final header = '── ${quiz.id} ';
   stdout.writeln(header.padRight(60, '─'));
 
   // Single-value rows (aligned).
@@ -125,7 +125,9 @@ void _printQuizSummary(Quiz quiz) {
     final maxCount = sortedTypes.first.value;
     final countWidth = maxCount.toString().length;
     for (final e in sortedTypes) {
-      stdout.writeln('  ${e.key.padRight(28)} ${e.value.toString().padLeft(countWidth)}');
+      stdout.writeln(
+        '  ${e.key.padRight(28)} ${e.value.toString().padLeft(countWidth)}',
+      );
     }
   }
 
@@ -138,8 +140,9 @@ void _printQuizSummary(Quiz quiz) {
         final byCount = b.value.compareTo(a.value);
         return byCount != 0 ? byCount : a.key.compareTo(b.key);
       });
-    final maxTagLen =
-        sortedTags.map((e) => e.key.length).fold<int>(0, (a, b) => a > b ? a : b);
+    final maxTagLen = sortedTags
+        .map((e) => e.key.length)
+        .fold<int>(0, (a, b) => a > b ? a : b);
     final maxCount = sortedTags.first.value;
     final countWidth = maxCount.toString().length;
     for (final e in sortedTags) {

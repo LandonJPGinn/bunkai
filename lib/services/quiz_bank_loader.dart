@@ -1,10 +1,10 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 import '../data/bundled_quiz_bank_paths.dart';
 import '../models/quiz.dart';
-import '../models/quiz_id.dart';
 import '../models/quiz_type.dart';
 import '../models/quiz_summary.dart';
 import 'quiz_bank_validation.dart';
@@ -22,31 +22,33 @@ class QuizBankLoader {
 
   static final QuizBankLoader instance = QuizBankLoader._();
 
-  static const Map<QuizId, String> _assetPaths = kBundledQuizBankAssetPaths;
+  static const Map<String, String> _assetPaths = kBundledQuizBankAssetPaths;
 
   /// Generated catalog — metadata only, small JSON for fast first paint.
   static const String _catalogAssetPath = 'assets/quiz_banks/quiz_catalog.json';
   static const String _compiledCatalogAssetPath =
       'assets/compiled/quiz_catalog.json';
+  static const String _remoteCatalogPath = '/api/quiz-catalog';
+  static const bool _remoteApiEnabled = bool.fromEnvironment(
+    'JPQUIZAPP_REMOTE_API',
+    defaultValue: kReleaseMode,
+  );
 
   List<QuizSummary>? _catalog;
-  final Map<QuizId, Quiz> _quizzes = {};
-  final Map<QuizId, Future<Quiz>> _quizLoadsInFlight = {};
+  final Map<String, Quiz> _quizzes = {};
+  final Map<String, Future<Quiz>> _quizLoadsInFlight = {};
 
   bool _catalogLoaded = false;
 
   bool get isCatalogLoaded => _catalogLoaded;
 
-  bool isQuizLoaded(QuizId id) => _quizzes.containsKey(id);
+  bool isQuizLoaded(String id) => _quizzes.containsKey(id);
 
   /// Idempotent. Parses [quiz_catalog.json] only.
   Future<void> ensureCatalogLoaded() async {
     if (_catalogLoaded) return;
 
-    final raw = await _loadStringWithFallback(
-      preferred: _compiledCatalogAssetPath,
-      fallback: _catalogAssetPath,
-    );
+    final raw = await _loadCatalogString();
     final decoded = jsonDecode(raw);
     if (decoded is! Map<String, dynamic>) {
       throw const FormatException('Quiz catalog: expected root object');
@@ -74,8 +76,8 @@ class QuizBankLoader {
     return List<QuizSummary>.unmodifiable(list);
   }
 
-  /// Loads one bank JSON if missing from cache; validates; caches by [QuizId].
-  Future<Quiz> ensureQuizLoaded(QuizId id) async {
+  /// Loads one bank JSON if missing from cache; validates; caches by quiz id.
+  Future<Quiz> ensureQuizLoaded(String id) async {
     final cached = _quizzes[id];
     if (cached != null) return cached;
 
@@ -87,19 +89,12 @@ class QuizBankLoader {
     }
   }
 
-  Future<Quiz> _parseAndCacheQuiz(QuizId id) async {
-    final path = _assetPaths[id];
-    if (path == null) {
-      throw StateError('QuizBankLoader: no asset path for ${id.name}.');
-    }
-    final raw = await _loadStringWithFallback(
-      preferred: 'assets/compiled/quiz_banks/${id.name}.json',
-      fallback: path,
-    );
+  Future<Quiz> _parseAndCacheQuiz(String id) async {
+    final raw = await _loadQuizString(id);
     final decoded = jsonDecode(raw);
     if (decoded is! Map<String, dynamic>) {
       throw QuizBankFormatException(
-        'Quiz "${id.name}" / question "?": expected root object in $path',
+        'Quiz "$id" / question "?": expected root object',
       );
     }
     final parsedQuiz = Quiz.fromJson(decoded);
@@ -111,12 +106,13 @@ class QuizBankLoader {
       difficulty: parsedQuiz.difficulty,
       diagnosticTags: parsedQuiz.diagnosticTags,
       questions: [
-        for (final q in parsedQuiz.questions) q.copyWith(type: QuizType.textInput),
+        for (final q in parsedQuiz.questions)
+          q.copyWith(type: QuizType.textInput),
       ],
     );
     if (quiz.id != id) {
       throw QuizBankFormatException(
-        'Quiz "${id.name}" / question "?": JSON "id" is "${quiz.id.name}" but expected "${id.name}" for $path',
+        'Quiz "$id" / question "?": JSON "id" is "${quiz.id}" but expected "$id"',
       );
     }
     validateQuizBankContent(quiz);
@@ -124,7 +120,48 @@ class QuizBankLoader {
     return quiz;
   }
 
-  Future<String> _loadStringWithFallback({
+  Future<String> _loadCatalogString() async {
+    if (kIsWeb && _remoteApiEnabled) {
+      try {
+        return await _loadRemoteString(_remoteCatalogPath);
+      } catch (_) {
+        // Bundled assets are the offline/dev fallback when Pages Functions are
+        // unavailable.
+      }
+    }
+    return _loadAssetStringWithFallback(
+      preferred: _compiledCatalogAssetPath,
+      fallback: _catalogAssetPath,
+    );
+  }
+
+  Future<String> _loadQuizString(String id) async {
+    if (kIsWeb && _remoteApiEnabled) {
+      try {
+        return await _loadRemoteString(
+          '/api/quizzes/${Uri.encodeComponent(id)}',
+        );
+      } catch (_) {
+        // Fall back to bundled content when the Cloudflare API is unavailable.
+      }
+    }
+    final path = _assetPaths[id];
+    if (path == null) {
+      throw StateError(
+        'QuizBankLoader: no remote quiz or bundled asset for $id.',
+      );
+    }
+    return _loadAssetStringWithFallback(
+      preferred: 'assets/compiled/quiz_banks/$id.json',
+      fallback: path,
+    );
+  }
+
+  Future<String> _loadRemoteString(String path) {
+    return NetworkAssetBundle(Uri.base).loadString(path);
+  }
+
+  Future<String> _loadAssetStringWithFallback({
     required String preferred,
     required String fallback,
   }) async {
@@ -136,12 +173,12 @@ class QuizBankLoader {
   }
 
   /// Requires [ensureQuizLoaded] (or [loadAllForTests]) for this [id] first.
-  Quiz quizFor(QuizId id) {
+  Quiz quizFor(String id) {
     final q = _quizzes[id];
     if (q == null) {
       throw StateError(
-        'QuizBankLoader: quiz ${id.name} not loaded. '
-        'Await ensureQuizLoaded(${id.name}) or loadAllForTests().',
+        'QuizBankLoader: quiz $id not loaded. '
+        'Await ensureQuizLoaded($id) or loadAllForTests().',
       );
     }
     return q;
@@ -156,7 +193,7 @@ class QuizBankLoader {
       } on StateError {
         throw StateError(
           'QuizBankLoader: allQuizzes() requires every bank loaded '
-          '(use loadAllForTests). Missing ${id.name}.',
+          '(use loadAllForTests). Missing $id.',
         );
       }
     }
@@ -175,7 +212,7 @@ class QuizBankLoader {
   static void validateQuiz(Quiz quiz) => validateQuizBankContent(quiz);
 
   /// For tests: inject banks without assets.
-  void debugSetQuizzes(Map<QuizId, Quiz> quizzes) {
+  void debugSetQuizzes(Map<String, Quiz> quizzes) {
     _quizzes
       ..clear()
       ..addAll(quizzes);
@@ -183,6 +220,9 @@ class QuizBankLoader {
     _catalog = [
       for (final id in kBundledQuizBankAssetPaths.keys)
         if (quizzes[id] != null) _summaryFromQuiz(quizzes[id]!),
+      for (final entry in quizzes.entries)
+        if (!kBundledQuizBankAssetPaths.containsKey(entry.key))
+          _summaryFromQuiz(entry.value),
     ];
   }
 

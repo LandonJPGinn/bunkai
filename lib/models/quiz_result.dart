@@ -1,5 +1,3 @@
-import 'quiz_id.dart';
-
 class QuizResult {
   const QuizResult({
     required this.quizId,
@@ -9,7 +7,7 @@ class QuizResult {
     required this.diagnosticTagsInRun,
   });
 
-  final QuizId quizId;
+  final String quizId;
   final int correctCount;
   final int totalCount;
   final Map<String, int> diagnosticMisses;

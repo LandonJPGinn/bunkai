@@ -12,7 +12,7 @@ Use ` | ` separators for list-like fields (for example tags, definitions).
 ## quizzes.csv
 
 Columns:
-- `quiz_id` (enum id like `particleForensics`)
+- `quiz_id` (stable string id like `particleForensics`)
 - `title`
 - `subtitle`
 - `description`

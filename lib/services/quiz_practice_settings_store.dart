@@ -3,22 +3,22 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/practice_options.dart';
-import '../models/quiz_id.dart';
 
 /// Persists per-quiz practice settings locally.
 class QuizPracticeSettingsStore {
   QuizPracticeSettingsStore._();
 
-  static final QuizPracticeSettingsStore instance = QuizPracticeSettingsStore._();
+  static final QuizPracticeSettingsStore instance =
+      QuizPracticeSettingsStore._();
 
   static const String _storageKey = 'practice_settings_by_quiz_v1';
 
   Future<PracticeQuizSettings> load(
-    QuizId quizId, {
+    String quizId, {
     PracticeQuizAvailableSettings? availableSettings,
   }) async {
     final all = await _readAll();
-    final raw = all[quizId.name];
+    final raw = all[quizId];
     PracticeQuizSettings settings = PracticeQuizSettings.defaults;
     if (raw is Map<String, Object?>) {
       settings = PracticeQuizSettings.fromStorageMap(raw);
@@ -29,9 +29,9 @@ class QuizPracticeSettingsStore {
     return settings;
   }
 
-  Future<void> save(QuizId quizId, PracticeQuizSettings settings) async {
+  Future<void> save(String quizId, PracticeQuizSettings settings) async {
     final all = await _readAll();
-    all[quizId.name] = settings.toStorageMap();
+    all[quizId] = settings.toStorageMap();
     await _writeAll(all);
   }
 

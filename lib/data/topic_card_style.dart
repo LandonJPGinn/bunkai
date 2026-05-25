@@ -29,7 +29,7 @@ class TopicCardStyle {
 
 Color _oklch(double l, double c, double h) => Oklch(l, c, h).toColor();
 
-/// Default style when a [QuizId] has no explicit entry.
+/// Default style when a quiz id has no explicit entry.
 final TopicCardStyle topicCardStyleDefault = TopicCardStyle(
   kanji: '語',
   accent: _oklch(0.7248, 0.1541, 244.30),
@@ -38,8 +38,8 @@ final TopicCardStyle topicCardStyleDefault = TopicCardStyle(
   tiltDegrees: -4,
 );
 
-/// Per-quiz styling (keyed by [QuizId] for stable lookups vs JSON titles).
-final Map<QuizId, TopicCardStyle> topicCardStyles = {
+/// Per-quiz styling (keyed by stable ids vs JSON titles).
+final Map<String, TopicCardStyle> topicCardStyles = {
   QuizId.particleForensics: TopicCardStyle(
     kanji: '助',
     accent: _oklch(0.6985, 0.1932, 31.17),
@@ -84,5 +84,5 @@ final Map<QuizId, TopicCardStyle> topicCardStyles = {
   ),
 };
 
-TopicCardStyle topicCardStyleFor(QuizId id) =>
+TopicCardStyle topicCardStyleFor(String id) =>
     topicCardStyles[id] ?? topicCardStyleDefault;

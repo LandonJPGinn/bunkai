@@ -14,7 +14,7 @@ class QuizBankFormatException implements Exception {
 
 /// Validates [quiz] question rows (used by [QuizBankLoader] and tooling).
 void validateQuizBankContent(Quiz quiz) {
-  final quizId = quiz.id.name;
+  final quizId = quiz.id;
   final seenQuestionIds = <String>{};
 
   for (final question in quiz.questions) {

@@ -16,15 +16,8 @@
   "properties": {
     "id": {
       "type": "string",
-      "enum": [
-        "particleForensics",
-        "clauseUntangler",
-        "omissionDetective",
-        "registerRadar",
-        "transitivityDuel",
-        "verbConjugation"
-      ],
-      "description": "Must match QuizId.name and the asset file registered in QuizBankLoader."
+      "minLength": 1,
+      "description": "Stable quiz id. Bundled fallback assets must match the id registered in bundled_quiz_bank_paths.dart."
     },
     "title": {
       "type": "string",

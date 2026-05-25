@@ -4,7 +4,7 @@
 > This site is currently a work in progress (WIP). Quiz content is AI-generated and has not yet been fully checked for linguistic accuracy.
 > The plan is to collaborate with native Japanese speakers to review, correct, and improve all quiz material.
 
-jpquizapp is a **login-free, backend-free** Flutter Web app: short Japanese grammar quizzes that target mistakes ordinary apps skip. Everything runs locally in the browser.
+jpquizapp is a **login-free** Flutter Web app: short Japanese grammar quizzes that target mistakes ordinary apps skip. The app still works from bundled quiz assets, and Cloudflare deployments can serve quiz content from D1 through Pages Functions.
 
 ## Run locally
 
@@ -20,6 +20,20 @@ flutter build web
 ```
 
 Serve the output under `build/web` with any static file host.
+
+## Deploy to Cloudflare
+
+Cloudflare Pages serves the Flutter Web build from `build/web`, while Pages Functions expose D1-backed quiz content at `/api/quiz-catalog` and `/api/quizzes/:id`.
+
+```bash
+make cloudflare-build
+make d1-migrate-local
+make d1-seed-local
+make cloudflare-preview
+```
+
+For first-time Cloudflare setup, D1 creation, remote seeding, and custom-domain steps, see [`docs/cloudflare_deploy.md`](docs/cloudflare_deploy.md).
+After Cloudflare secrets are configured in GitHub, `.github/workflows/deploy-cloudflare-pages.yml` deploys to Pages on pushes to `main`.
 
 ## Japanese dictionary lookup (offline)
 
@@ -76,7 +90,7 @@ For schema details, see [`docs/csv_content_schema.md`](docs/csv_content_schema.m
 
 ## Quiz content (generated JSON banks)
 
-Core quizzes load from **`assets/compiled/quiz_banks/*.json`** first (generated compact form), with fallback to **`assets/quiz_banks/*.json`**. At startup, [`QuizBankLoader`](lib/services/quiz_bank_loader.dart) reads and validates each file before the UI runs.
+Core quizzes load from Cloudflare `/api/*` endpoints first on web. If the API is unavailable, [`QuizBankLoader`](lib/services/quiz_bank_loader.dart) falls back to **`assets/compiled/quiz_banks/*.json`** first (generated compact form), then **`assets/quiz_banks/*.json`**.
 
 To regenerate JSON from canonical CSV sources:
 
@@ -102,9 +116,9 @@ dart run scripts/quiz_bank_summary.dart
 
 ## Add a quiz
 
-1. Add an enum value to [`lib/models/quiz_id.dart`](lib/models/quiz_id.dart). The enum name (camelCase) is the route argument passed when starting a quiz.
+1. Pick a stable string id (camelCase, for example `particleForensics`).
 2. Add quiz/question/choice rows in the canonical CSV files under `data-src/quiz/`.
-3. Register the asset path in [`lib/data/bundled_quiz_bank_paths.dart`](lib/data/bundled_quiz_bank_paths.dart) (`kBundledQuizBankAssetPaths`) and append the quiz to [`coreJpQuizAppPack()`](lib/data/quiz_registry.dart) (or your pack) in display order.
+3. For bundled fallback assets, register the asset path in [`lib/data/bundled_quiz_bank_paths.dart`](lib/data/bundled_quiz_bank_paths.dart) (`kBundledQuizBankAssetPaths`) and add an optional style in [`lib/data/topic_card_style.dart`](lib/data/topic_card_style.dart).
 4. Run `make content-build`.
 
 ## Add a question

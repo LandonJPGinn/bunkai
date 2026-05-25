@@ -33,9 +33,7 @@ class QuizBankContractIssue {
 
 /// Strips common dialogue speaker tags so Latin in `A:` / `B:` is not treated as romaji.
 String _stripDialogueSpeakerTags(String value) {
-  return value
-      .replaceAll('A: ', '')
-      .replaceAll('B: ', '');
+  return value.replaceAll('A: ', '').replaceAll('B: ', '');
 }
 
 /// Whether, after removing speaker tags, [value] still contains ASCII Latin letters
@@ -44,7 +42,7 @@ bool japaneseFieldContainsLatinLetters(String value) =>
     _asciiLatinLetters.hasMatch(_stripDialogueSpeakerTags(value));
 
 List<QuizBankContractIssue> validateQuizBankContract(Quiz quiz) {
-  final qid = quiz.id.name;
+  final qid = quiz.id;
   final issues = <QuizBankContractIssue>[];
 
   if (quiz.questions.length < kMinBundledQuizQuestionCount) {

@@ -27,7 +27,7 @@ class HomeRouteArgs {
   final bool scrollToQuizzes;
 }
 
-/// Route to [QuizStartScreen]: [QuizId.name] (e.g. `particleForensics`).
+/// Route to [QuizStartScreen]: stable quiz id (e.g. `particleForensics`).
 class QuizStartRouteArgs {
   const QuizStartRouteArgs({required this.quizId});
 

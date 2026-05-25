@@ -7,7 +7,6 @@ import 'package:flutter/services.dart';
 import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 import '../data/topic_card_style.dart';
-import '../models/quiz_id.dart';
 
 class QuizCard extends StatefulWidget {
   const QuizCard({
@@ -24,7 +23,7 @@ class QuizCard extends StatefulWidget {
     required this.onOpenSettings,
   });
 
-  final QuizId quizId;
+  final String quizId;
   final String title;
   final String subtitle;
   final String description;
@@ -186,8 +185,8 @@ class _QuizCardState extends State<QuizCard>
                 duration: reduceMotion
                     ? Duration.zero
                     : (_hover
-                        ? const Duration(milliseconds: 80)
-                        : tokens.motionMedium),
+                          ? const Duration(milliseconds: 80)
+                          : tokens.motionMedium),
                 curve: tokens.motionStandardCurve,
                 builder: (context, animatedOffset, _) => _BackdropKanji(
                   kanji: style.kanji,
@@ -206,7 +205,8 @@ class _QuizCardState extends State<QuizCard>
                       widget.title,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                      style: Theme.of(context).textTheme.headlineSmall
+                          ?.copyWith(
                             fontSize: titleSize,
                             fontWeight: FontWeight.w900,
                             height: 0.92,
@@ -220,13 +220,13 @@ class _QuizCardState extends State<QuizCard>
                         widget.subtitle,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style:
-                            Theme.of(context).textTheme.titleMedium?.copyWith(
-                                  fontSize: subtitleSize,
-                                  fontWeight: FontWeight.w600,
-                                  height: 1.32,
-                                  color: whiteAlpha(0.88),
-                                ),
+                        style: Theme.of(context).textTheme.titleMedium
+                            ?.copyWith(
+                              fontSize: subtitleSize,
+                              fontWeight: FontWeight.w600,
+                              height: 1.32,
+                              color: whiteAlpha(0.88),
+                            ),
                       ),
                     ],
                     if (showDesc) ...[
@@ -236,11 +236,11 @@ class _QuizCardState extends State<QuizCard>
                         maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              fontSize: descSize,
-                              fontWeight: FontWeight.w400,
-                              height: 1.38,
-                              color: whiteAlpha(0.78),
-                            ),
+                          fontSize: descSize,
+                          fontWeight: FontWeight.w400,
+                          height: 1.38,
+                          color: whiteAlpha(0.78),
+                        ),
                       ),
                     ],
                     if (tagList.isNotEmpty) ...[
@@ -258,15 +258,11 @@ class _QuizCardState extends State<QuizCard>
                               decoration: BoxDecoration(
                                 color: blackAlpha(0.22),
                                 borderRadius: BorderRadius.circular(6),
-                                border: Border.all(
-                                  color: whiteAlpha(0.28),
-                                ),
+                                border: Border.all(color: whiteAlpha(0.28)),
                               ),
                               child: Text(
                                 tag,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .labelMedium
+                                style: Theme.of(context).textTheme.labelMedium
                                     ?.copyWith(
                                       fontSize: 10,
                                       fontWeight: FontWeight.w600,
@@ -320,9 +316,7 @@ class _QuizCardState extends State<QuizCard>
                           ),
                           child: Text(
                             'Start',
-                            style: Theme.of(context)
-                                .textTheme
-                                .labelLarge
+                            style: Theme.of(context).textTheme.labelLarge
                                 ?.copyWith(
                                   fontWeight: FontWeight.w700,
                                   color: style.accent,
@@ -339,8 +333,9 @@ class _QuizCardState extends State<QuizCard>
           ),
         );
 
-        final motionDuration =
-            reduceMotion ? Duration.zero : tokens.motionMedium;
+        final motionDuration = reduceMotion
+            ? Duration.zero
+            : tokens.motionMedium;
         final motionCurve = tokens.motionStandardCurve;
 
         return MergeSemantics(
@@ -490,12 +485,12 @@ class _BackdropKanji extends StatelessWidget {
                 duration: reduceMotion ? Duration.zero : tokens.motionMedium,
                 curve: tokens.motionStandardCurve,
                 style: Theme.of(context).textTheme.displayMedium!.copyWith(
-                      fontSize: fontSize,
-                      fontWeight: FontWeight.w900,
-                      height: 0.75,
-                      letterSpacing: -fontSize * 0.05,
-                      color: whiteAlpha(baseOpacity),
-                    ),
+                  fontSize: fontSize,
+                  fontWeight: FontWeight.w900,
+                  height: 0.75,
+                  letterSpacing: -fontSize * 0.05,
+                  color: whiteAlpha(baseOpacity),
+                ),
                 child: Text(kanji),
               ),
             ),
@@ -602,12 +597,7 @@ class _ParticleDots extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: whiteAlpha(a),
-          boxShadow: [
-            BoxShadow(
-              color: whiteAlpha(a * 0.8),
-              blurRadius: 1.2,
-            ),
-          ],
+          boxShadow: [BoxShadow(color: whiteAlpha(a * 0.8), blurRadius: 1.2)],
         ),
       ),
     );
@@ -631,11 +621,11 @@ class _DifficultyCapsule extends StatelessWidget {
       child: Text(
         label,
         style: Theme.of(context).textTheme.labelMedium?.copyWith(
-              fontSize: 11,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 0.12,
-              color: whiteAlpha(0.92),
-            ),
+          fontSize: 11,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 0.12,
+          color: whiteAlpha(0.92),
+        ),
       ),
     );
   }
