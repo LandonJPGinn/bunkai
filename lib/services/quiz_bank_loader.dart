@@ -90,7 +90,28 @@ class QuizBankLoader {
   }
 
   Future<Quiz> _parseAndCacheQuiz(String id) async {
-    final raw = await _loadQuizString(id);
+    if (kIsWeb && _remoteApiEnabled) {
+      try {
+        final quiz = _parseQuizString(
+          id,
+          await _loadRemoteString('/api/quizzes/${Uri.encodeComponent(id)}'),
+        );
+        _quizzes[id] = quiz;
+        return quiz;
+      } catch (error) {
+        debugPrint(
+          'QuizBankLoader: remote quiz "$id" failed; using assets. $error',
+        );
+      }
+    }
+
+    final raw = await _loadBundledQuizString(id);
+    final quiz = _parseQuizString(id, raw);
+    _quizzes[id] = quiz;
+    return quiz;
+  }
+
+  Quiz _parseQuizString(String id, String raw) {
     final decoded = jsonDecode(raw);
     if (decoded is! Map<String, dynamic>) {
       throw QuizBankFormatException(
@@ -116,7 +137,6 @@ class QuizBankLoader {
       );
     }
     validateQuizBankContent(quiz);
-    _quizzes[id] = quiz;
     return quiz;
   }
 
@@ -135,16 +155,7 @@ class QuizBankLoader {
     );
   }
 
-  Future<String> _loadQuizString(String id) async {
-    if (kIsWeb && _remoteApiEnabled) {
-      try {
-        return await _loadRemoteString(
-          '/api/quizzes/${Uri.encodeComponent(id)}',
-        );
-      } catch (_) {
-        // Fall back to bundled content when the Cloudflare API is unavailable.
-      }
-    }
+  Future<String> _loadBundledQuizString(String id) {
     final path = _assetPaths[id];
     if (path == null) {
       throw StateError(
