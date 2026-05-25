@@ -1,14 +1,21 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "jpquizapp",
-  "pages_build_output_dir": "./build/web",
+  "main": "./worker/index.js",
   "compatibility_date": "2026-05-24",
+  "assets": {
+    "directory": "./build/web",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "jpquizapp-quiz-content",
       "database_id": "7d41f0c6-eb08-4d16-9445-e310be64c366",
-      "preview_database_id": "DB",
       "migrations_dir": "./cloudflare/d1/migrations"
     }
   ]
