@@ -157,7 +157,10 @@ class QuizLockedFeedbackContent extends StatelessWidget {
               spacing: 8,
               runSpacing: 8,
               children: grammar
-                  .map((t) => DiagnosticTagChip(label: t))
+                  .map(
+                    (t) =>
+                        DiagnosticTagChip(label: t, showFurigana: showFurigana),
+                  )
                   .toList(),
             ),
           ],
@@ -174,7 +177,12 @@ class QuizLockedFeedbackContent extends StatelessWidget {
             Wrap(
               spacing: 8,
               runSpacing: 8,
-              children: vocab.map((t) => DiagnosticTagChip(label: t)).toList(),
+              children: vocab
+                  .map(
+                    (t) =>
+                        DiagnosticTagChip(label: t, showFurigana: showFurigana),
+                  )
+                  .toList(),
             ),
           ],
           if (tags.isNotEmpty) ...[

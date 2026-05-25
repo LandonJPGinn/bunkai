@@ -98,6 +98,37 @@ void main() {
       expect(r.diagnosticTagsInRun, {'tagA', 'tagB', 'tagC'});
     });
 
+    test('answer matching ignores inline furigana markup', () {
+      final quiz = const Quiz(
+        id: QuizId.verbConjugation,
+        title: 'T',
+        subtitle: 'S',
+        description: 'D',
+        difficulty: 'X',
+        questions: [
+          QuizQuestion(
+            id: 'furigana_q1',
+            type: QuizType.multipleChoice,
+            prompt: 'P',
+            japanese: 'J',
+            promptEn: 'P',
+            japaneseEn: 'J',
+            choices: [
+              AnswerChoice(id: 'a', label: '昨日[きのう]', labelEn: 'yesterday'),
+            ],
+            correctAnswerId: 'a',
+            explanation: 'E',
+            explanationEn: 'E',
+            diagnosticTags: ['tagA'],
+          ),
+        ],
+      );
+      final engine = QuizEngine(quiz);
+      engine.setDraftAnswer('昨日');
+      engine.lockAnswer();
+      expect(engine.lastSubmittedCorrect, true);
+    });
+
     test('wrong then right accumulates misses only for wrong', () {
       final engine = QuizEngine(miniQuiz);
       engine.setDraftAnswer('wrong');

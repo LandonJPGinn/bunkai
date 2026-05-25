@@ -17,6 +17,7 @@ import 'dart:io';
 
 import 'package:jpquizapp/data/bundled_quiz_bank_paths.dart';
 import 'package:jpquizapp/models/quiz.dart';
+import 'package:jpquizapp/services/furigana_inline.dart';
 import 'package:jpquizapp/services/quiz_bank_duplicate_warnings.dart';
 import 'package:jpquizapp/services/quiz_bank_validation.dart';
 
@@ -52,7 +53,6 @@ void main() {
   var totalErrors = 0;
   var filesWithErrors = 0;
   final lexiconAuditErrors = _validateLexiconAndBuildLookup(dir);
-  final dictionarySurfaces = _loadDictionarySurfaceSet(dir);
   totalErrors += lexiconAuditErrors.length;
   if (lexiconAuditErrors.isNotEmpty) {
     filesWithErrors++;
@@ -63,11 +63,7 @@ void main() {
 
   for (final file in files) {
     final path = relativePath(file);
-    final errors = _validateFile(
-      file,
-      registeredIdByFilename,
-      dictionarySurfaces,
-    );
+    final errors = _validateFile(file, registeredIdByFilename);
     if (errors.isEmpty) {
       // Question count is informational — only printed on success.
       try {
@@ -150,7 +146,6 @@ String _jsonBasename(File file) {
 List<String> _validateFile(
   File file,
   Map<String, String> registeredIdByFilename,
-  Set<String> dictionarySurfaces,
 ) {
   final errors = <String>[];
 
@@ -207,43 +202,67 @@ List<String> _validateFile(
   } on QuizBankFormatException catch (e) {
     errors.add(e.message);
   }
-  errors.addAll(_validateFuriganaCoverage(quiz, dictionarySurfaces));
+  errors.addAll(_validateFuriganaCoverage(quiz));
 
   return errors;
 }
 
-Set<String> _loadDictionarySurfaceSet(Directory quizBankDir) {
-  final path = '${quizBankDir.parent.path}/dictionary/japanese_lexicon.json';
-  final file = File(path);
-  if (!file.existsSync()) return const {};
-  final decoded = jsonDecode(file.readAsStringSync());
-  if (decoded is! List) return const {};
-  final out = <String>{};
-  for (final row in decoded) {
-    if (row is! Map) continue;
-    final surface = row['surface'];
-    if (surface is String && surface.trim().isNotEmpty) {
-      out.add(surface.trim());
-    }
-  }
-  return out;
-}
-
-List<String> _validateFuriganaCoverage(
-  Quiz quiz,
-  Set<String> dictionarySurfaces,
-) {
-  if (dictionarySurfaces.isEmpty) return const [];
+List<String> _validateFuriganaCoverage(Quiz quiz) {
   final errors = <String>[];
   for (final q in quiz.questions) {
-    if (q.japanese.contains('日本') &&
-        !q.japanese.contains('日本[') &&
-        !dictionarySurfaces.contains('日本')) {
-      errors.add(
-        'Quiz "${quiz.id}" / question "${q.id}": '
-        'contains 日本 but dictionary is missing surface "日本" '
-        '(likely furigana mismatch such as にほん)',
-      );
+    void check(String field, String? value) {
+      final text = value?.trim() ?? '';
+      if (text.isEmpty) return;
+      errors.addAll(_validateInlineFuriganaField(quiz.id, q.id, field, text));
+    }
+
+    check('prompt', q.prompt);
+    check('japanese', q.japanese);
+    check('context', q.context);
+    check('explanation', q.explanation);
+    for (var i = 0; i < q.acceptedAnswers.length; i++) {
+      check('acceptedAnswers[$i]', q.acceptedAnswers[i]);
+    }
+    for (var i = 0; i < q.grammarPoints.length; i++) {
+      check('grammarPoints[$i]', q.grammarPoints[i]);
+    }
+    for (var i = 0; i < q.vocabulary.length; i++) {
+      check('vocabulary[$i]', q.vocabulary[i]);
+    }
+    for (var i = 0; i < q.choices.length; i++) {
+      final choice = q.choices[i];
+      check('choices[$i].label', choice.label);
+      check('choices[$i].explanation', choice.explanation);
+    }
+  }
+  return errors;
+}
+
+List<String> _validateInlineFuriganaField(
+  String quizId,
+  String questionId,
+  String field,
+  String text,
+) {
+  if (!hasCjkIdeograph(text)) return const [];
+
+  final errors = <String>[];
+  final uncovered = uncoveredKanjiRunsInFuriganaInline(text).toSet().toList();
+  if (uncovered.isNotEmpty) {
+    errors.add(
+      'Quiz "$quizId" / question "$questionId" / $field: '
+      'unannotated kanji ${uncovered.join(", ")} in "$text"',
+    );
+  }
+
+  for (final part in parseFuriganaInline(text)) {
+    if (part case RubyPart(:final base, :final reading)) {
+      if (reading.trim().isEmpty) {
+        errors.add(
+          'Quiz "$quizId" / question "$questionId" / $field: '
+          'empty furigana reading for "$base" in "$text"',
+        );
+      }
     }
   }
   return errors;

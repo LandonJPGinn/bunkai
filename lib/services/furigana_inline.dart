@@ -30,6 +30,13 @@ bool isCjkIdeographRune(int r) {
   return false;
 }
 
+bool hasCjkIdeograph(String s) {
+  for (final r in s.runes) {
+    if (isCjkIdeographRune(r)) return true;
+  }
+  return false;
+}
+
 List<int> _runesOf(String s) => s.runes.toList();
 
 String _stringFromRunes(List<int> runes, int start, int end) {
@@ -94,8 +101,36 @@ String stripInlineFuriganaMarkup(String input) {
   return surfaceFromFuriganaParts(parseFuriganaInline(input));
 }
 
+/// Kanji runs still in plain spans after parsing inline furigana.
+///
+/// A non-empty result means those characters would rely on dictionary fallback
+/// at runtime instead of the curated sentence-context reading in quiz content.
+List<String> uncoveredKanjiRunsInFuriganaInline(String input) {
+  final out = <String>[];
+  for (final part in parseFuriganaInline(input)) {
+    if (part is! PlainPart) continue;
+    final runes = part.text.runes.toList();
+    var start = -1;
+    for (var i = 0; i < runes.length; i++) {
+      if (isCjkIdeographRune(runes[i])) {
+        start = start == -1 ? i : start;
+      } else if (start != -1) {
+        out.add(_stringFromRunes(runes, start, i));
+        start = -1;
+      }
+    }
+    if (start != -1) {
+      out.add(_stringFromRunes(runes, start, runes.length));
+    }
+  }
+  return out;
+}
+
 /// Full phrase for semantics / screen readers (readings in parentheses after base).
-String semanticsFuriganaLabel(List<FuriganaPart> parts, {required bool showFurigana}) {
+String semanticsFuriganaLabel(
+  List<FuriganaPart> parts, {
+  required bool showFurigana,
+}) {
   final buf = StringBuffer();
   for (final p in parts) {
     switch (p) {

@@ -38,13 +38,16 @@ void main() {
       expect((p[1] as PlainPart).text, 'へ');
     });
 
-    test('no kanji before bracket yields plain prefix plus literal brackets', () {
-      final p = parseFuriganaInline('を[よ]');
-      expect(p.length, 2);
-      expect((p[0] as PlainPart).text, 'を');
-      expect((p[1] as PlainPart).text, '[よ]');
-      expect(stripInlineFuriganaMarkup('を[よ]'), 'を[よ]');
-    });
+    test(
+      'no kanji before bracket yields plain prefix plus literal brackets',
+      () {
+        final p = parseFuriganaInline('を[よ]');
+        expect(p.length, 2);
+        expect((p[0] as PlainPart).text, 'を');
+        expect((p[1] as PlainPart).text, '[よ]');
+        expect(stripInlineFuriganaMarkup('を[よ]'), 'を[よ]');
+      },
+    );
 
     test('unclosed bracket is plain rest', () {
       final p = parseFuriganaInline('本[ほん');
@@ -55,31 +58,29 @@ void main() {
 
   group('surfaceFromFuriganaParts / stripInlineFuriganaMarkup', () {
     test('strip removes readings', () {
-      expect(
-        stripInlineFuriganaMarkup('本[ほん]を読[よ]みます'),
-        '本を読みます',
-      );
+      expect(stripInlineFuriganaMarkup('本[ほん]を読[よ]みます'), '本を読みます');
     });
 
     test('semantics label with showFurigana', () {
       final parts = parseFuriganaInline('本[ほん]');
-      expect(
-        semanticsFuriganaLabel(parts, showFurigana: true),
-        '本（ほん）',
-      );
-      expect(
-        semanticsFuriganaLabel(parts, showFurigana: false),
-        '本',
-      );
+      expect(semanticsFuriganaLabel(parts, showFurigana: true), '本（ほん）');
+      expect(semanticsFuriganaLabel(parts, showFurigana: false), '本');
+    });
+  });
+
+  group('uncoveredKanjiRunsInFuriganaInline', () {
+    test('reports kanji outside ruby markup', () {
+      expect(uncoveredKanjiRunsInFuriganaInline('本[ほん]を読みます'), ['読']);
+    });
+
+    test('passes fully annotated okurigana text', () {
+      expect(uncoveredKanjiRunsInFuriganaInline('本[ほん]を読[よ]みます'), isEmpty);
     });
   });
 
   group('normalizeQuizBankText with furigana', () {
     test('strips furigana before other normalization', () {
-      expect(
-        normalizeQuizBankText('  本[ほん]を読[よ]みます  '),
-        '本を読みます',
-      );
+      expect(normalizeQuizBankText('  本[ほん]を読[よ]みます  '), '本を読みます');
     });
 
     test('annotated and surface form normalize the same', () {

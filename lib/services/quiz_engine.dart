@@ -1,10 +1,11 @@
 import '../models/quiz.dart';
 import '../models/quiz_question.dart';
 import '../models/quiz_result.dart';
+import 'furigana_inline.dart';
 
 class QuizEngine {
   QuizEngine(this._quiz)
-      : assert(_quiz.questions.isNotEmpty, 'Quiz must have questions');
+    : assert(_quiz.questions.isNotEmpty, 'Quiz must have questions');
 
   final Quiz _quiz;
 
@@ -45,7 +46,10 @@ class QuizEngine {
     final q = currentQuestion;
     _locked = true;
     _submittedAnswer = submitted;
-    final correct = q.canonicalAnswers.contains(submitted);
+    final normalizedSubmitted = stripInlineFuriganaMarkup(submitted).trim();
+    final correct = q.canonicalAnswers
+        .map((answer) => stripInlineFuriganaMarkup(answer).trim())
+        .contains(normalizedSubmitted);
     _lastSubmittedCorrect = correct;
     if (correct) {
       _correctCount += 1;
