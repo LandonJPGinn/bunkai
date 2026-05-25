@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_feedback_theme.dart';
 import '../app/jpquizapp_tokens.dart';
 
@@ -29,6 +30,9 @@ class ResultsScoreSummary extends StatelessWidget {
     final feedback = context.jpQuizAppFeedback;
     final t = context.jpQuizAppTokens;
     final reduceMotion = MediaQuery.of(context).disableAnimations;
+    final phone = LayoutBreakpoints.isPhoneWidth(
+      MediaQuery.sizeOf(context).width,
+    );
 
     final (Color borderColor, Color bgColor) = isPassing
         ? (
@@ -50,7 +54,9 @@ class ResultsScoreSummary extends StatelessWidget {
       borderRadius: BorderRadius.circular(14),
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.fromLTRB(20, 20, 20, 22),
+        padding: phone
+            ? const EdgeInsets.fromLTRB(16, 16, 16, 18)
+            : const EdgeInsets.fromLTRB(20, 20, 20, 22),
         decoration: BoxDecoration(
           color: bgColor,
           borderRadius: BorderRadius.circular(14),
@@ -62,17 +68,17 @@ class ResultsScoreSummary extends StatelessWidget {
             Text(
               headline,
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.w800,
-                    letterSpacing: 0.02,
-                    color: scheme.onSurface,
-                  ),
+                fontWeight: FontWeight.w800,
+                letterSpacing: 0.02,
+                color: scheme.onSurface,
+              ),
             ),
             const SizedBox(height: 10),
             Text(
               quizTitle,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    color: t.textStrong,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.titleLarge?.copyWith(color: t.textStrong),
             ),
             const SizedBox(height: 18),
             TweenAnimationBuilder<double>(
@@ -87,7 +93,7 @@ class ResultsScoreSummary extends StatelessWidget {
                   '$display%',
                   semanticsLabel: '$percent percent correct',
                   style: GoogleFonts.inter(
-                    fontSize: 52,
+                    fontSize: phone ? 44 : 52,
                     fontWeight: FontWeight.w700,
                     letterSpacing: -2,
                     height: 1.05,
@@ -100,9 +106,9 @@ class ResultsScoreSummary extends StatelessWidget {
             Text(
               '$correctCount correct out of $totalCount',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: t.textMuted,
-                    height: 1.4,
-                  ),
+                color: t.textMuted,
+                height: 1.4,
+              ),
             ),
           ],
         ),

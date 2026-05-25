@@ -45,32 +45,33 @@ class _ResultsScreenState extends State<ResultsScreen> {
   Future<void> _retryWithSavedSettings() async {
     final result = widget.args.result;
     try {
-      final base = await QuizBankLoader.instance.ensureQuizLoaded(result.quizId);
+      final base = await QuizBankLoader.instance.ensureQuizLoaded(
+        result.quizId,
+      );
       final settings = await QuizPracticeSettingsStore.instance.load(
         result.quizId,
         availableSettings: derivePracticeAvailableSettings(base),
       );
       if (!mounted) return;
-      final session = buildPracticeSessionQuiz(
-        base,
-        settings: settings,
-      );
+      final session = buildPracticeSessionQuiz(base, settings: settings);
       Navigator.of(context).pushReplacementNamed(
         AppRoutes.quiz,
         arguments: QuizRouteArgs(quiz: session),
       );
     } catch (_) {
       if (!mounted) return;
-      ScaffoldMessenger.maybeOf(
-        context,
-      )?.showSnackBar(const SnackBar(content: Text('Could not load quiz. Try again.')));
+      ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+        const SnackBar(content: Text('Could not load quiz. Try again.')),
+      );
     }
   }
 
   Future<void> _openSettings() async {
     final result = widget.args.result;
     try {
-      final base = await QuizBankLoader.instance.ensureQuizLoaded(result.quizId);
+      final base = await QuizBankLoader.instance.ensureQuizLoaded(
+        result.quizId,
+      );
       final current = await QuizPracticeSettingsStore.instance.load(
         result.quizId,
         availableSettings: derivePracticeAvailableSettings(base),
@@ -147,10 +148,14 @@ class _ResultsScreenState extends State<ResultsScreen> {
         return a.key.compareTo(b.key);
       });
 
-    final narrow = LayoutBreakpoints.isNarrowWidth(
-      MediaQuery.sizeOf(context).width,
-    );
-    final horizontalPadding = narrow ? 16.0 : 20.0;
+    final width = MediaQuery.sizeOf(context).width;
+    final phone = LayoutBreakpoints.isPhoneWidth(width);
+    final narrow = LayoutBreakpoints.isNarrowWidth(width);
+    final horizontalPadding = phone
+        ? 4.0
+        : narrow
+        ? 16.0
+        : 20.0;
 
     return AppShell(
       headerMode: AppShellHeaderMode.compact,
@@ -163,9 +168,9 @@ class _ResultsScreenState extends State<ResultsScreen> {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
                   horizontalPadding,
-                  8,
+                  phone ? 4 : 8,
                   horizontalPadding,
-                  16,
+                  phone ? 12 : 16,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -174,8 +179,9 @@ class _ResultsScreenState extends State<ResultsScreen> {
                       child: LayoutBuilder(
                         builder: (context, constraints) {
                           final tokens = context.jpQuizAppTokens;
-                          final reduceMotion =
-                              MediaQuery.of(context).disableAnimations;
+                          final reduceMotion = MediaQuery.of(
+                            context,
+                          ).disableAnimations;
                           final motionSlow = reduceMotion
                               ? Duration.zero
                               : tokens.motionSlow;
@@ -351,15 +357,10 @@ class _SlideFadeInState extends State<_SlideFadeIn>
         reverseCurve: Curves.easeInCubic,
       ),
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.035),
-          end: Offset.zero,
-        ).animate(
-          CurvedAnimation(
-            parent: _controller,
-            curve: Curves.easeOutCubic,
-          ),
-        ),
+        position: Tween<Offset>(begin: const Offset(0, 0.035), end: Offset.zero)
+            .animate(
+              CurvedAnimation(parent: _controller, curve: Curves.easeOutCubic),
+            ),
         child: widget.child,
       ),
     );

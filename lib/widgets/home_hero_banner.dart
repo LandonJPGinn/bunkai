@@ -13,9 +13,18 @@ class HomeHeroBanner extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
+        final phone = constraints.maxWidth < LayoutBreakpoints.phone;
         final narrow = constraints.maxWidth < LayoutBreakpoints.tablet;
-        final horizontal = narrow ? 20.0 : 28.0;
-        final vertical = narrow ? 24.0 : 32.0;
+        final horizontal = phone
+            ? 16.0
+            : narrow
+            ? 20.0
+            : 28.0;
+        final vertical = phone
+            ? 20.0
+            : narrow
+            ? 24.0
+            : 32.0;
 
         return Padding(
           padding: const EdgeInsets.fromLTRB(0, 4, 0, 8),
@@ -48,31 +57,39 @@ class HomeHeroBanner extends StatelessWidget {
                 Text(
                   'Japanese Intermediate Practice',
                   style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 0.6,
-                        color: t.textMuted,
-                      ),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: 0.6,
+                    color: t.textMuted,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   'Focus on the details most courses skip.',
                   style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                    fontSize: narrow ? 28 : 34,
+                    fontSize: phone
+                        ? 26
+                        : narrow
+                        ? 28
+                        : 34,
                     color: t.textStrong,
                     height: 1.1,
                   ),
                 ),
-                const SizedBox(height: 12),
+                SizedBox(height: phone ? 10 : 12),
                 Text(
                   'Get past that frustrating intermediate plateau with diagnostic quizzes on Japanese grammar—'
                   'particles, clauses, register, argument structure, and verb '
                   'forms—with tap-to-define vocabulary and clear explanations '
                   'after each answer. Pick a topic below to practice.',
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: t.textMuted,
-                    height: 1.55,
-                  ),
+                  style:
+                      (phone
+                              ? Theme.of(context).textTheme.bodyMedium
+                              : Theme.of(context).textTheme.bodyLarge)
+                          ?.copyWith(
+                            color: t.textMuted,
+                            height: phone ? 1.48 : 1.55,
+                          ),
                 ),
               ],
             ),

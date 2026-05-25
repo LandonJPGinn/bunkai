@@ -4,6 +4,7 @@ import 'dart:ui' show lerpDouble;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 import '../data/topic_card_style.dart';
@@ -151,10 +152,21 @@ class _QuizCardState extends State<QuizCard>
       builder: (context, constraints) {
         final w = constraints.maxWidth;
         final h = constraints.maxHeight;
-        final kanjiSize = (w * 0.92).clamp(120.0, 260.0);
-        final titleSize = (w * 0.10).clamp(20.0, 30.0);
-        final subtitleSize = (w * 0.032).clamp(12.0, 14.0);
-        final descSize = (w * 0.028).clamp(11.0, 13.0);
+        final phone = LayoutBreakpoints.isPhoneWidth(w);
+        final kanjiSize = (w * (phone ? 0.78 : 0.92)).clamp(110.0, 260.0);
+        final titleSize = phone
+            ? (w * 0.075).clamp(21.0, 26.0).toDouble()
+            : (w * 0.10).clamp(20.0, 30.0).toDouble();
+        final subtitleSize = phone
+            ? (w * 0.032).clamp(12.0, 13.0).toDouble()
+            : (w * 0.032).clamp(12.0, 14.0).toDouble();
+        final descSize = phone
+            ? (w * 0.028).clamp(11.0, 12.0).toDouble()
+            : (w * 0.028).clamp(11.0, 13.0).toDouble();
+        final contentPadding = phone
+            ? const EdgeInsets.fromLTRB(16, 16, 16, 14)
+            : const EdgeInsets.fromLTRB(20, 20, 20, 16);
+        final visibleTags = phone ? tagList.take(3).toList() : tagList;
 
         final shadow = (_hover && !reduceMotion)
             ? tokens.shadowCard
@@ -197,13 +209,13 @@ class _QuizCardState extends State<QuizCard>
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
+                padding: contentPadding,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       widget.title,
-                      maxLines: 3,
+                      maxLines: phone ? 2 : 3,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.headlineSmall
                           ?.copyWith(
@@ -233,7 +245,7 @@ class _QuizCardState extends State<QuizCard>
                       SizedBox(height: (w * 0.02).clamp(6.0, 10.0)),
                       Text(
                         desc,
-                        maxLines: 3,
+                        maxLines: phone ? 2 : 3,
                         overflow: TextOverflow.ellipsis,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           fontSize: descSize,
@@ -243,13 +255,13 @@ class _QuizCardState extends State<QuizCard>
                         ),
                       ),
                     ],
-                    if (tagList.isNotEmpty) ...[
+                    if (visibleTags.isNotEmpty) ...[
                       SizedBox(height: (w * 0.022).clamp(8.0, 12.0)),
                       Wrap(
                         spacing: 6,
                         runSpacing: 6,
                         children: [
-                          for (final tag in tagList)
+                          for (final tag in visibleTags)
                             Container(
                               padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
@@ -283,10 +295,14 @@ class _QuizCardState extends State<QuizCard>
                             spacing: 8,
                             runSpacing: 6,
                             children: [
-                              _DifficultyCapsule(label: widget.difficulty),
+                              _DifficultyCapsule(
+                                label: widget.difficulty,
+                                compact: phone,
+                              ),
                               _DifficultyCapsule(
                                 label:
                                     '${widget.questionCountLabel} · ${widget.selectedDifficulty}',
+                                compact: phone,
                               ),
                             ],
                           ),
@@ -295,13 +311,20 @@ class _QuizCardState extends State<QuizCard>
                         IconButton.filledTonal(
                           onPressed: widget.onOpenSettings,
                           tooltip: 'Quiz settings',
+                          constraints: phone
+                              ? const BoxConstraints.tightFor(
+                                  width: 40,
+                                  height: 40,
+                                )
+                              : null,
+                          iconSize: phone ? 20 : null,
                           icon: const Icon(Icons.settings),
                         ),
                         const SizedBox(width: 8),
                         Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 10,
+                          padding: EdgeInsets.symmetric(
+                            horizontal: phone ? 12 : 16,
+                            vertical: phone ? 9 : 10,
                           ),
                           decoration: BoxDecoration(
                             color: whiteAlpha(0.92),
@@ -605,14 +628,18 @@ class _ParticleDots extends StatelessWidget {
 }
 
 class _DifficultyCapsule extends StatelessWidget {
-  const _DifficultyCapsule({required this.label});
+  const _DifficultyCapsule({required this.label, this.compact = false});
 
   final String label;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: EdgeInsets.symmetric(
+        horizontal: compact ? 8 : 10,
+        vertical: compact ? 4 : 5,
+      ),
       decoration: BoxDecoration(
         color: whiteAlpha(0.16),
         borderRadius: BorderRadius.circular(8),
@@ -621,7 +648,7 @@ class _DifficultyCapsule extends StatelessWidget {
       child: Text(
         label,
         style: Theme.of(context).textTheme.labelMedium?.copyWith(
-          fontSize: 11,
+          fontSize: compact ? 10 : 11,
           fontWeight: FontWeight.w600,
           letterSpacing: 0.12,
           color: whiteAlpha(0.92),

@@ -48,7 +48,9 @@ class _QuizScreenState extends State<QuizScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted && _engine != null) {
         _quizKeysFocus.requestFocus();
-        _answerFocus.requestFocus();
+        if (!_isPhoneLayout()) {
+          _answerFocus.requestFocus();
+        }
       }
     });
     _answerController.addListener(_onAnswerChanged);
@@ -67,7 +69,9 @@ class _QuizScreenState extends State<QuizScreen> {
     if (_syncingAnswer) return;
     final engine = _engine;
     if (engine == null || engine.isLocked) return;
-    final converted = RomajiToHiraganaConverter.convert(_answerController.value);
+    final converted = RomajiToHiraganaConverter.convert(
+      _answerController.value,
+    );
     if (converted != _answerController.value) {
       _syncingAnswer = true;
       _answerController.value = converted;
@@ -108,10 +112,15 @@ class _QuizScreenState extends State<QuizScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         _quizKeysFocus.requestFocus();
-        _answerFocus.requestFocus();
+        if (!_isPhoneLayout()) {
+          _answerFocus.requestFocus();
+        }
       }
     });
   }
+
+  bool _isPhoneLayout() =>
+      LayoutBreakpoints.isPhoneWidth(MediaQuery.sizeOf(context).width);
 
   String _loadErrorMessage() {
     if (widget.quiz.questions.isEmpty) {
@@ -210,12 +219,21 @@ class _QuizScreenState extends State<QuizScreen> {
         ? engine.submittedAnswer
         : null;
 
-    final narrow = LayoutBreakpoints.isNarrowWidth(
-      MediaQuery.sizeOf(context).width,
-    );
-    final horizontalPadding = narrow ? 16.0 : 20.0;
+    final width = MediaQuery.sizeOf(context).width;
+    final phone = LayoutBreakpoints.isPhoneWidth(width);
+    final narrow = LayoutBreakpoints.isNarrowWidth(width);
+    final horizontalPadding = phone
+        ? 4.0
+        : narrow
+        ? 16.0
+        : 20.0;
     final topicStyle = topicCardStyleFor(quiz.id);
     final tokens = context.jpQuizAppTokens;
+    final reduceMotion = MediaQuery.of(context).disableAnimations;
+    final motionMedium = reduceMotion ? Duration.zero : tokens.motionMedium;
+    final motionSlow = reduceMotion ? Duration.zero : tokens.motionSlow;
+    final motionCurve = tokens.motionStandardCurve;
+    final motionEmphasized = tokens.motionEmphasizedCurve;
 
     return AppShell(
       headerMode: AppShellHeaderMode.compact,
@@ -225,31 +243,55 @@ class _QuizScreenState extends State<QuizScreen> {
         onPressed: () => Navigator.of(context).pop(),
       ),
       actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 4),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Tooltip(
-                message:
-                    _showFurigana ? 'Hide furigana' : 'Show furigana',
-                child: Switch.adaptive(
-                  value: _showFurigana,
-                  onChanged: (v) => setState(() => _showFurigana = v),
-                ),
+        if (phone)
+          PopupMenuButton<String>(
+            tooltip: 'Display options',
+            icon: const Icon(Icons.tune),
+            onSelected: (value) {
+              setState(() {
+                if (value == 'furigana') {
+                  _showFurigana = !_showFurigana;
+                } else if (value == 'english') {
+                  _showEnglish = !_showEnglish;
+                }
+              });
+            },
+            itemBuilder: (context) => [
+              CheckedPopupMenuItem<String>(
+                value: 'furigana',
+                checked: _showFurigana,
+                child: const Text('Furigana'),
               ),
-              Tooltip(
-                message: _showEnglish
-                    ? 'Show Japanese cues'
-                    : 'Show English',
-                child: Switch.adaptive(
-                  value: _showEnglish,
-                  onChanged: (v) => setState(() => _showEnglish = v),
-                ),
+              CheckedPopupMenuItem<String>(
+                value: 'english',
+                checked: _showEnglish,
+                child: const Text('English'),
               ),
             ],
+          )
+        else
+          Padding(
+            padding: const EdgeInsets.only(right: 4),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Tooltip(
+                  message: _showFurigana ? 'Hide furigana' : 'Show furigana',
+                  child: Switch.adaptive(
+                    value: _showFurigana,
+                    onChanged: (v) => setState(() => _showFurigana = v),
+                  ),
+                ),
+                Tooltip(
+                  message: _showEnglish ? 'Show Japanese cues' : 'Show English',
+                  child: Switch.adaptive(
+                    value: _showEnglish,
+                    onChanged: (v) => setState(() => _showEnglish = v),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
       ],
       body: Focus(
         focusNode: _quizKeysFocus,
@@ -262,251 +304,439 @@ class _QuizScreenState extends State<QuizScreen> {
             horizontalPadding,
             16,
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              ProgressHeader(
-                current: engine.currentIndex,
-                total: engine.totalQuestions,
-                moduleLabel: quiz.title,
-                scoreCorrect: engine.lockedCorrectCount,
-                scoreAnswered: engine.lockedAnsweredCount,
-                accent: topicStyle.accent,
-              ),
-              const SizedBox(height: 6),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: TextButton(
-                  style: TextButton.styleFrom(
-                    foregroundColor: tokens.textMuted,
-                    padding: EdgeInsets.zero,
-                    minimumSize: Size.zero,
-                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  ),
-                  onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('Back to quizzes'),
-                ),
-              ),
-              const SizedBox(height: 12),
-              Expanded(
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    final reduceMotion =
-                        MediaQuery.of(context).disableAnimations;
-                    final motionMedium = reduceMotion
-                        ? Duration.zero
-                        : tokens.motionMedium;
-                    final motionSlow = reduceMotion
-                        ? Duration.zero
-                        : tokens.motionSlow;
-                    final motionCurve = tokens.motionStandardCurve;
-                    final motionEmphasized = tokens.motionEmphasizedCurve;
-                    return Align(
-                      alignment: Alignment.topCenter,
-                      child: ConstrainedBox(
-                        constraints: BoxConstraints(
-                          maxWidth: 720,
-                          maxHeight: constraints.maxHeight,
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.only(bottom: 8),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Expanded(
-                                flex: 46,
-                                child: LayoutBuilder(
-                                  builder: (context, promptConstraints) {
-                                    return SingleChildScrollView(
-                                      clipBehavior: Clip.none,
-                                      child: ConstrainedBox(
-                                        constraints: BoxConstraints(
-                                          minHeight:
-                                              promptConstraints.maxHeight,
+          child: phone
+              ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: SingleChildScrollView(
+                        keyboardDismissBehavior:
+                            ScrollViewKeyboardDismissBehavior.onDrag,
+                        clipBehavior: Clip.none,
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Align(
+                          alignment: Alignment.topCenter,
+                          child: ConstrainedBox(
+                            constraints: const BoxConstraints(maxWidth: 720),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                ProgressHeader(
+                                  current: engine.currentIndex,
+                                  total: engine.totalQuestions,
+                                  moduleLabel: quiz.title,
+                                  scoreCorrect: engine.lockedCorrectCount,
+                                  scoreAnswered: engine.lockedAnsweredCount,
+                                  accent: topicStyle.accent,
+                                ),
+                                const SizedBox(height: 6),
+                                Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: TextButton(
+                                    style: TextButton.styleFrom(
+                                      foregroundColor: tokens.textMuted,
+                                      padding: EdgeInsets.zero,
+                                      minimumSize: Size.zero,
+                                      tapTargetSize:
+                                          MaterialTapTargetSize.shrinkWrap,
+                                    ),
+                                    onPressed: () =>
+                                        Navigator.of(context).pop(),
+                                    child: const Text('Back to quizzes'),
+                                  ),
+                                ),
+                                const SizedBox(height: 14),
+                                QuizPromptCard(
+                                  japanese: q.japanese,
+                                  promptEn: q.promptEn,
+                                  japaneseEn: q.japaneseEn,
+                                  contextLine: q.context,
+                                  contextLineEn: q.contextEn,
+                                  showFurigana: _showFurigana,
+                                  showEnglish: _showEnglish,
+                                  watermarkKanji: topicStyle.kanji,
+                                ),
+                                const SizedBox(height: 16),
+                                QuizTextAnswerInput(
+                                  controller: _answerController,
+                                  focusNode: _answerFocus,
+                                  locked: locked,
+                                  wasCorrect: engine.lastSubmittedCorrect,
+                                  onSubmitted: primaryAction,
+                                ),
+                                AnimatedSize(
+                                  duration: motionSlow,
+                                  curve: motionEmphasized,
+                                  alignment: Alignment.topCenter,
+                                  child: AnimatedSwitcher(
+                                    duration: motionSlow,
+                                    switchInCurve: motionCurve,
+                                    switchOutCurve: motionCurve,
+                                    transitionBuilder: (child, animation) =>
+                                        FadeTransition(
+                                          opacity: animation,
+                                          child: child,
                                         ),
-                                        child: Column(
-                                          // Top-anchored so any height changes
-                                          // grow downward instead of recentering
-                                          // sibling content.
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.stretch,
-                                          children: [
-                                            QuizPromptCard(
-                                              japanese: q.japanese,
-                                              promptEn: q.promptEn,
-                                              japaneseEn: q.japaneseEn,
-                                              contextLine: q.context,
-                                              contextLineEn: q.contextEn,
+                                    child: locked
+                                        ? Padding(
+                                            key: const ValueKey<String>(
+                                              'live-banner',
+                                            ),
+                                            padding: const EdgeInsets.only(
+                                              top: 12,
+                                            ),
+                                            child: _QuizFeedbackLiveBanner(
+                                              wasCorrect: wasCorrect,
+                                            ),
+                                          )
+                                        : const SizedBox(
+                                            key: ValueKey<String>(
+                                              'live-banner-empty',
+                                            ),
+                                            width: double.infinity,
+                                          ),
+                                  ),
+                                ),
+                                AnimatedSize(
+                                  duration: motionSlow,
+                                  curve: motionEmphasized,
+                                  alignment: Alignment.topCenter,
+                                  child: AnimatedSwitcher(
+                                    duration: motionMedium,
+                                    switchInCurve: motionCurve,
+                                    switchOutCurve: motionCurve,
+                                    transitionBuilder: (child, animation) {
+                                      return FadeTransition(
+                                        opacity: animation,
+                                        child: SlideTransition(
+                                          position:
+                                              Tween<Offset>(
+                                                begin: const Offset(0, 0.035),
+                                                end: Offset.zero,
+                                              ).animate(
+                                                CurvedAnimation(
+                                                  parent: animation,
+                                                  curve: motionCurve,
+                                                ),
+                                              ),
+                                          child: child,
+                                        ),
+                                      );
+                                    },
+                                    child: locked
+                                        ? Padding(
+                                            key: ValueKey<int>(
+                                              engine.currentIndex,
+                                            ),
+                                            padding: const EdgeInsets.only(
+                                              top: 4,
+                                            ),
+                                            child: QuizLockedFeedbackContent(
+                                              question: q,
+                                              wrongChoiceLabel:
+                                                  wrongChoiceLabel,
+                                              wasCorrect: wasCorrect,
                                               showFurigana: _showFurigana,
                                               showEnglish: _showEnglish,
-                                              watermarkKanji: topicStyle.kanji,
                                             ),
-                                          ],
-                                        ),
-                                      ),
-                                    );
-                                  },
+                                          )
+                                        : const SizedBox(
+                                            key: ValueKey<String>(
+                                              'no-explanation',
+                                            ),
+                                            width: double.infinity,
+                                          ),
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(height: 22),
-                              Expanded(
-                                flex: 54,
-                                child: LayoutBuilder(
-                                  builder: (context, answerConstraints) {
-                                    return SingleChildScrollView(
-                                      clipBehavior: Clip.none,
-                                      child: ConstrainedBox(
-                                        constraints: BoxConstraints(
-                                          minHeight:
-                                              answerConstraints.maxHeight,
-                                        ),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.stretch,
-                                          children: [
-                                            QuizTextAnswerInput(
-                                              controller: _answerController,
-                                              focusNode: _answerFocus,
-                                              locked: locked,
-                                              wasCorrect:
-                                                  engine.lastSubmittedCorrect,
-                                              onSubmitted: primaryAction,
-                                            ),
-                                            // Live banner slot is always
-                                            // mounted and animated, so the
-                                            // submit/next button never jumps
-                                            // when the user locks an answer.
-                                            AnimatedSize(
-                                              duration: motionSlow,
-                                              curve: motionEmphasized,
-                                              alignment: Alignment.topCenter,
-                                              child: AnimatedSwitcher(
-                                                duration: motionSlow,
-                                                switchInCurve: motionCurve,
-                                                switchOutCurve: motionCurve,
-                                                transitionBuilder:
-                                                    (child, animation) =>
-                                                        FadeTransition(
-                                                  opacity: animation,
-                                                  child: child,
-                                                ),
-                                                child: locked
-                                                    ? Padding(
-                                                        key: const ValueKey<
-                                                            String>(
-                                                          'live-banner',
-                                                        ),
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .only(top: 12),
-                                                        child:
-                                                            _QuizFeedbackLiveBanner(
-                                                          wasCorrect:
-                                                              wasCorrect,
-                                                        ),
-                                                      )
-                                                    : const SizedBox(
-                                                        key: ValueKey<String>(
-                                                          'live-banner-empty',
-                                                        ),
-                                                        width: double.infinity,
-                                                      ),
-                                              ),
-                                            ),
-                                            // AnimatedSize ensures the height
-                                            // delta tweens; the inner
-                                            // AnimatedSwitcher fades content.
-                                            AnimatedSize(
-                                              duration: motionSlow,
-                                              curve: motionEmphasized,
-                                              alignment: Alignment.topCenter,
-                                              child: AnimatedSwitcher(
-                                                duration: motionMedium,
-                                                switchInCurve: motionCurve,
-                                                switchOutCurve: motionCurve,
-                                                transitionBuilder:
-                                                    (child, animation) {
-                                                  return FadeTransition(
-                                                    opacity: animation,
-                                                    child: SlideTransition(
-                                                      position: Tween<Offset>(
-                                                        begin: const Offset(
-                                                            0, 0.035),
-                                                        end: Offset.zero,
-                                                      ).animate(
-                                                        CurvedAnimation(
-                                                          parent: animation,
-                                                          curve: motionCurve,
-                                                        ),
-                                                      ),
-                                                      child: child,
-                                                    ),
-                                                  );
-                                                },
-                                                child: locked
-                                                    ? Padding(
-                                                        key: ValueKey<int>(
-                                                          engine.currentIndex,
-                                                        ),
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .only(top: 4),
-                                                        child:
-                                                            QuizLockedFeedbackContent(
-                                                          question: q,
-                                                          wrongChoiceLabel:
-                                                              wrongChoiceLabel,
-                                                          wasCorrect:
-                                                              wasCorrect,
-                                                          showFurigana:
-                                                              _showFurigana,
-                                                          showEnglish:
-                                                              _showEnglish,
-                                                        ),
-                                                      )
-                                                    : const SizedBox(
-                                                        key: ValueKey<String>(
-                                                          'no-explanation',
-                                                        ),
-                                                        width: double.infinity,
-                                                      ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    );
-                  },
+                    ),
+                    const SizedBox(height: 10),
+                    Align(
+                      alignment: Alignment.center,
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 720),
+                        child: PrimaryButton(
+                          label: primaryLabel,
+                          onPressed: primaryAction,
+                          backgroundColor: primaryAction != null
+                              ? topicStyle.accent
+                              : null,
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+              : Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    ProgressHeader(
+                      current: engine.currentIndex,
+                      total: engine.totalQuestions,
+                      moduleLabel: quiz.title,
+                      scoreCorrect: engine.lockedCorrectCount,
+                      scoreAnswered: engine.lockedAnsweredCount,
+                      accent: topicStyle.accent,
+                    ),
+                    const SizedBox(height: 6),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          foregroundColor: tokens.textMuted,
+                          padding: EdgeInsets.zero,
+                          minimumSize: Size.zero,
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        ),
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: const Text('Back to quizzes'),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Expanded(
+                      child: LayoutBuilder(
+                        builder: (context, constraints) {
+                          final reduceMotion = MediaQuery.of(
+                            context,
+                          ).disableAnimations;
+                          final motionMedium = reduceMotion
+                              ? Duration.zero
+                              : tokens.motionMedium;
+                          final motionSlow = reduceMotion
+                              ? Duration.zero
+                              : tokens.motionSlow;
+                          final motionCurve = tokens.motionStandardCurve;
+                          final motionEmphasized = tokens.motionEmphasizedCurve;
+                          return Align(
+                            alignment: Alignment.topCenter,
+                            child: ConstrainedBox(
+                              constraints: BoxConstraints(
+                                maxWidth: 720,
+                                maxHeight: constraints.maxHeight,
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.only(bottom: 8),
+                                child: Column(
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.stretch,
+                                  children: [
+                                    Expanded(
+                                      flex: 46,
+                                      child: LayoutBuilder(
+                                        builder: (context, promptConstraints) {
+                                          return SingleChildScrollView(
+                                            clipBehavior: Clip.none,
+                                            child: ConstrainedBox(
+                                              constraints: BoxConstraints(
+                                                minHeight:
+                                                    promptConstraints.maxHeight,
+                                              ),
+                                              child: Column(
+                                                // Top-anchored so any height changes
+                                                // grow downward instead of recentering
+                                                // sibling content.
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.stretch,
+                                                children: [
+                                                  QuizPromptCard(
+                                                    japanese: q.japanese,
+                                                    promptEn: q.promptEn,
+                                                    japaneseEn: q.japaneseEn,
+                                                    contextLine: q.context,
+                                                    contextLineEn: q.contextEn,
+                                                    showFurigana: _showFurigana,
+                                                    showEnglish: _showEnglish,
+                                                    watermarkKanji:
+                                                        topicStyle.kanji,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                    const SizedBox(height: 22),
+                                    Expanded(
+                                      flex: 54,
+                                      child: LayoutBuilder(
+                                        builder: (context, answerConstraints) {
+                                          return SingleChildScrollView(
+                                            clipBehavior: Clip.none,
+                                            child: ConstrainedBox(
+                                              constraints: BoxConstraints(
+                                                minHeight:
+                                                    answerConstraints.maxHeight,
+                                              ),
+                                              child: Column(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.stretch,
+                                                children: [
+                                                  QuizTextAnswerInput(
+                                                    controller:
+                                                        _answerController,
+                                                    focusNode: _answerFocus,
+                                                    locked: locked,
+                                                    wasCorrect: engine
+                                                        .lastSubmittedCorrect,
+                                                    onSubmitted: primaryAction,
+                                                  ),
+                                                  // Live banner slot is always
+                                                  // mounted and animated, so the
+                                                  // submit/next button never jumps
+                                                  // when the user locks an answer.
+                                                  AnimatedSize(
+                                                    duration: motionSlow,
+                                                    curve: motionEmphasized,
+                                                    alignment:
+                                                        Alignment.topCenter,
+                                                    child: AnimatedSwitcher(
+                                                      duration: motionSlow,
+                                                      switchInCurve:
+                                                          motionCurve,
+                                                      switchOutCurve:
+                                                          motionCurve,
+                                                      transitionBuilder:
+                                                          (child, animation) =>
+                                                              FadeTransition(
+                                                                opacity:
+                                                                    animation,
+                                                                child: child,
+                                                              ),
+                                                      child: locked
+                                                          ? Padding(
+                                                              key:
+                                                                  const ValueKey<
+                                                                    String
+                                                                  >(
+                                                                    'live-banner',
+                                                                  ),
+                                                              padding:
+                                                                  const EdgeInsets.only(
+                                                                    top: 12,
+                                                                  ),
+                                                              child: _QuizFeedbackLiveBanner(
+                                                                wasCorrect:
+                                                                    wasCorrect,
+                                                              ),
+                                                            )
+                                                          : const SizedBox(
+                                                              key: ValueKey<String>(
+                                                                'live-banner-empty',
+                                                              ),
+                                                              width: double
+                                                                  .infinity,
+                                                            ),
+                                                    ),
+                                                  ),
+                                                  // AnimatedSize ensures the height
+                                                  // delta tweens; the inner
+                                                  // AnimatedSwitcher fades content.
+                                                  AnimatedSize(
+                                                    duration: motionSlow,
+                                                    curve: motionEmphasized,
+                                                    alignment:
+                                                        Alignment.topCenter,
+                                                    child: AnimatedSwitcher(
+                                                      duration: motionMedium,
+                                                      switchInCurve:
+                                                          motionCurve,
+                                                      switchOutCurve:
+                                                          motionCurve,
+                                                      transitionBuilder: (child, animation) {
+                                                        return FadeTransition(
+                                                          opacity: animation,
+                                                          child: SlideTransition(
+                                                            position:
+                                                                Tween<Offset>(
+                                                                  begin:
+                                                                      const Offset(
+                                                                        0,
+                                                                        0.035,
+                                                                      ),
+                                                                  end: Offset
+                                                                      .zero,
+                                                                ).animate(
+                                                                  CurvedAnimation(
+                                                                    parent:
+                                                                        animation,
+                                                                    curve:
+                                                                        motionCurve,
+                                                                  ),
+                                                                ),
+                                                            child: child,
+                                                          ),
+                                                        );
+                                                      },
+                                                      child: locked
+                                                          ? Padding(
+                                                              key: ValueKey<int>(
+                                                                engine
+                                                                    .currentIndex,
+                                                              ),
+                                                              padding:
+                                                                  const EdgeInsets.only(
+                                                                    top: 4,
+                                                                  ),
+                                                              child: QuizLockedFeedbackContent(
+                                                                question: q,
+                                                                wrongChoiceLabel:
+                                                                    wrongChoiceLabel,
+                                                                wasCorrect:
+                                                                    wasCorrect,
+                                                                showFurigana:
+                                                                    _showFurigana,
+                                                                showEnglish:
+                                                                    _showEnglish,
+                                                              ),
+                                                            )
+                                                          : const SizedBox(
+                                                              key: ValueKey<String>(
+                                                                'no-explanation',
+                                                              ),
+                                                              width: double
+                                                                  .infinity,
+                                                            ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Align(
+                      alignment: Alignment.center,
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 720),
+                        child: PrimaryButton(
+                          label: primaryLabel,
+                          onPressed: primaryAction,
+                          backgroundColor: primaryAction != null
+                              ? topicStyle.accent
+                              : null,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-              const SizedBox(height: 12),
-              Align(
-                alignment: Alignment.center,
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 720),
-                  child: PrimaryButton(
-                    label: primaryLabel,
-                    onPressed: primaryAction,
-                    backgroundColor: primaryAction != null
-                        ? topicStyle.accent
-                        : null,
-                  ),
-                ),
-              ),
-            ],
-          ),
         ),
       ),
     );

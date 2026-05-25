@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_feedback_theme.dart';
 import '../app/jpquizapp_tokens.dart';
 
@@ -24,6 +25,9 @@ class QuizTextAnswerInput extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final feedback = context.jpQuizAppFeedback;
     final tokens = context.jpQuizAppTokens;
+    final phone = LayoutBreakpoints.isPhoneWidth(
+      MediaQuery.sizeOf(context).width,
+    );
 
     var borderColor = scheme.outlineVariant.withValues(alpha: 0.45);
     var fillColor = scheme.surfaceContainerHighest;
@@ -53,16 +57,19 @@ class QuizTextAnswerInput extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: borderColor, width: 1.2),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+      padding: EdgeInsets.symmetric(
+        horizontal: phone ? 14 : 20,
+        vertical: phone ? 14 : 16,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             'Type your answer',
             style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                  color: scheme.onSurfaceVariant,
-                  fontWeight: FontWeight.w600,
-                ),
+              color: scheme.onSurfaceVariant,
+              fontWeight: FontWeight.w600,
+            ),
           ),
           const SizedBox(height: 10),
           TextField(
@@ -72,7 +79,9 @@ class QuizTextAnswerInput extends StatelessWidget {
             textInputAction: TextInputAction.done,
             onSubmitted: (_) => onSubmitted?.call(),
             decoration: InputDecoration(
-              hintText: 'Type romaji (auto-converts to hiragana)',
+              hintText: phone
+                  ? 'Romaji auto-converts'
+                  : 'Type romaji (auto-converts to hiragana)',
               isDense: true,
               filled: true,
               fillColor: scheme.surface,

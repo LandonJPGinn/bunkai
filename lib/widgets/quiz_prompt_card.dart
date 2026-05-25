@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
 import '../app/color/oklch.dart';
 import '../utils/quiz_instruction_text.dart';
@@ -38,19 +39,23 @@ class QuizPromptCard extends StatelessWidget {
     final t = context.jpQuizAppTokens;
     final wm = watermarkKanji?.trim();
     final instructions = normalizeQuizInstructions(promptEn);
+    final phone = LayoutBreakpoints.isPhoneWidth(
+      MediaQuery.sizeOf(context).width,
+    );
 
     final questionStyle = Theme.of(context).textTheme.headlineSmall?.copyWith(
-          height: 1.45,
-          fontWeight: FontWeight.w600,
-          color: t.textStrong,
-        );
+      fontSize: phone ? 21 : null,
+      height: phone ? 1.38 : 1.45,
+      fontWeight: FontWeight.w600,
+      color: t.textStrong,
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         if (instructions.isNotEmpty) ...[
           _InstructionStrip(text: instructions),
-          const SizedBox(height: 14),
+          SizedBox(height: phone ? 10 : 14),
         ],
         ClipRRect(
           borderRadius: BorderRadius.circular(t.radiusMd),
@@ -76,7 +81,7 @@ class QuizPromptCard extends StatelessWidget {
                       child: Text(
                         wm,
                         style: GoogleFonts.notoSansJp(
-                          fontSize: 132,
+                          fontSize: phone ? 104 : 132,
                           fontWeight: FontWeight.w900,
                           height: 1,
                           color: whiteAlpha(0.045),
@@ -86,7 +91,9 @@ class QuizPromptCard extends StatelessWidget {
                   ),
                 ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(22, 26, 22, 22),
+                padding: phone
+                    ? const EdgeInsets.fromLTRB(16, 18, 16, 18)
+                    : const EdgeInsets.fromLTRB(22, 26, 22, 22),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -131,20 +138,16 @@ class _InstructionStrip extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(
-          Icons.menu_book_outlined,
-          size: 18,
-          color: t.textMuted,
-        ),
+        Icon(Icons.menu_book_outlined, size: 18, color: t.textMuted),
         const SizedBox(width: 10),
         Expanded(
           child: Text(
             text,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: t.textMuted,
-                  height: 1.45,
-                  fontWeight: FontWeight.w500,
-                ),
+              color: t.textMuted,
+              height: 1.45,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ),
       ],
@@ -163,11 +166,7 @@ Widget _questionLine({
   if (showEnglish && en.trim().isNotEmpty) {
     return Text(en, style: style);
   }
-  return JapaneseTextLookup(
-    text: jp,
-    showFurigana: showFurigana,
-    style: style,
-  );
+  return JapaneseTextLookup(text: jp, showFurigana: showFurigana, style: style);
 }
 
 Widget _contextLine({
@@ -178,16 +177,11 @@ Widget _contextLine({
   required bool showFurigana,
   required Color mutedColor,
 }) {
-  final style = Theme.of(context).textTheme.bodyMedium?.copyWith(
-        color: mutedColor,
-        height: 1.4,
-      );
+  final style = Theme.of(
+    context,
+  ).textTheme.bodyMedium?.copyWith(color: mutedColor, height: 1.4);
   if (showEnglish && en.trim().isNotEmpty) {
     return Text(en, style: style);
   }
-  return JapaneseTextLookup(
-    text: jp,
-    showFurigana: showFurigana,
-    style: style,
-  );
+  return JapaneseTextLookup(text: jp, showFurigana: showFurigana, style: style);
 }

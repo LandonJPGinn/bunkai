@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
 import 'page_backdrop.dart';
 import 'site_header.dart';
@@ -38,12 +39,18 @@ class AppShell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final maxW = context.jpQuizAppTokens.maxContentWidth;
-    final horizontal = 20.0;
+    final width = MediaQuery.sizeOf(context).width;
+    final phone = LayoutBreakpoints.isPhoneWidth(width);
+    final horizontal = LayoutBreakpoints.pageHorizontalPadding(width);
+    final topPadding = phone ? 8.0 : 12.0;
+    final bottomPadding = phone
+        ? bottomInsetPadding.clamp(10.0, 16.0).toDouble()
+        : bottomInsetPadding;
 
     final double headerGap = switch (headerMode) {
       AppShellHeaderMode.none => 0,
-      AppShellHeaderMode.marketing => 18,
-      AppShellHeaderMode.compact => 12,
+      AppShellHeaderMode.marketing => phone ? 12 : 18,
+      AppShellHeaderMode.compact => phone ? 8 : 12,
     };
 
     final inner = Column(
@@ -53,10 +60,10 @@ class AppShell extends StatelessWidget {
           AppShellHeaderMode.none => const SizedBox.shrink(),
           AppShellHeaderMode.marketing => const SiteNavBar(),
           AppShellHeaderMode.compact => SiteCompactHeader(
-              leading: leading,
-              title: title ?? '',
-              actions: actions ?? const [],
-            ),
+            leading: leading,
+            title: title ?? '',
+            actions: actions ?? const [],
+          ),
         },
         SizedBox(height: headerGap),
         Expanded(child: body),
@@ -73,9 +80,9 @@ class AppShell extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
                   horizontal,
-                  12,
+                  topPadding,
                   horizontal,
-                  bottomInsetPadding,
+                  bottomPadding,
                 ),
                 child: inner,
               ),

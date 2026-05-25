@@ -30,12 +30,10 @@ class QuizPracticeSettingsPanel extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          'Question count',
-          style: Theme.of(context).textTheme.labelLarge,
-        ),
+        Text('Question count', style: Theme.of(context).textTheme.labelLarge),
         const SizedBox(height: 8),
         SegmentedButton<PracticeCountPreset>(
+          showSelectedIcon: false,
           segments: const [
             ButtonSegment<PracticeCountPreset>(
               value: PracticeCountPreset.ten,
@@ -68,10 +66,7 @@ class QuizPracticeSettingsPanel extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(
-                'Difficulty',
-                style: Theme.of(context).textTheme.labelLarge,
-              ),
+              Text('Difficulty', style: Theme.of(context).textTheme.labelLarge),
               const SizedBox(height: 8),
               InputDecorator(
                 decoration: const InputDecoration(

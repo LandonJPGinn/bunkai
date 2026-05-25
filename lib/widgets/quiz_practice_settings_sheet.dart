@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
 import '../models/practice_options.dart';
 import '../models/quiz.dart';
@@ -16,15 +17,17 @@ Future<PracticeQuizSettings?> showQuizPracticeSettingsSheet({
     isScrollControlled: true,
     showDragHandle: true,
     builder: (context) {
+      final width = MediaQuery.sizeOf(context).width;
+      final phone = LayoutBreakpoints.isPhoneWidth(width);
       final availableSettings = derivePracticeAvailableSettings(quiz);
       var settings = initialSettings.sanitizedFor(availableSettings);
       return SafeArea(
         top: false,
         child: Padding(
           padding: EdgeInsets.fromLTRB(
-            16,
+            phone ? 14 : 16,
             8,
-            16,
+            phone ? 14 : 16,
             16 + MediaQuery.viewInsetsOf(context).bottom,
           ),
           child: StatefulBuilder(
@@ -35,103 +38,121 @@ Future<PracticeQuizSettings?> showQuizPracticeSettingsSheet({
               ).length;
               final tokens = context.jpQuizAppTokens;
               final reduceMotion = MediaQuery.of(context).disableAnimations;
-              final motionMedium =
-                  reduceMotion ? Duration.zero : tokens.motionMedium;
-              final motionSlow =
-                  reduceMotion ? Duration.zero : tokens.motionSlow;
-              return SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Text(
-                      'Quiz settings',
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      quiz.title,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+              final motionMedium = reduceMotion
+                  ? Duration.zero
+                  : tokens.motionMedium;
+              final motionSlow = reduceMotion
+                  ? Duration.zero
+                  : tokens.motionSlow;
+              return ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxHeight:
+                      MediaQuery.sizeOf(context).height * (phone ? 0.86 : 0.78),
+                ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        'Quiz settings',
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
-                    ),
-                    const SizedBox(height: 12),
-                    AnimatedSize(
-                      duration: motionSlow,
-                      curve: tokens.motionEmphasizedCurve,
-                      alignment: Alignment.topCenter,
-                      child: AnimatedSwitcher(
-                        duration: motionMedium,
-                        switchInCurve: tokens.motionStandardCurve,
-                        switchOutCurve: tokens.motionStandardCurve,
-                        transitionBuilder: (child, animation) =>
-                            FadeTransition(opacity: animation, child: child),
-                        child: previewCount == 0
-                            ? Padding(
-                                key: const ValueKey<String>('preview-warning'),
-                                padding: const EdgeInsets.only(bottom: 16),
-                                child: Text(
-                                  'No questions for this filter.',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodySmall
-                                      ?.copyWith(
-                                    color:
-                                        Theme.of(context).colorScheme.error,
-                                  ),
-                                ),
-                              )
-                            : const SizedBox(
-                                key: ValueKey<String>('preview-warning-empty'),
-                                width: double.infinity,
-                              ),
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(16, 18, 16, 20),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.surfaceContainerLow,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                          color: Theme.of(context).colorScheme.outlineVariant,
+                      const SizedBox(height: 8),
+                      Text(
+                        quiz.title,
+                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
                         ),
                       ),
-                      child: QuizPracticeSettingsPanel(
-                        settings: settings,
-                        availableSettings: availableSettings,
-                        onCountChanged: (value) {
-                          setModalState(
-                            () => settings = settings.copyWith(
-                              countPreset: value,
-                            ),
-                          );
-                        },
-                        onJlptChanged: (value) {
-                          setModalState(
-                            () => settings = settings.copyWith(
-                              jlptFilter: value,
-                            ),
-                          );
-                        },
-                        onConjugationChanged: (value) {
-                          setModalState(
-                            () => settings = settings.copyWith(
-                              conjugationTags: value,
-                            ),
-                          );
-                        },
+                      const SizedBox(height: 12),
+                      AnimatedSize(
+                        duration: motionSlow,
+                        curve: tokens.motionEmphasizedCurve,
+                        alignment: Alignment.topCenter,
+                        child: AnimatedSwitcher(
+                          duration: motionMedium,
+                          switchInCurve: tokens.motionStandardCurve,
+                          switchOutCurve: tokens.motionStandardCurve,
+                          transitionBuilder: (child, animation) =>
+                              FadeTransition(opacity: animation, child: child),
+                          child: previewCount == 0
+                              ? Padding(
+                                  key: const ValueKey<String>(
+                                    'preview-warning',
+                                  ),
+                                  padding: const EdgeInsets.only(bottom: 16),
+                                  child: Text(
+                                    'No questions for this filter.',
+                                    style: Theme.of(context).textTheme.bodySmall
+                                        ?.copyWith(
+                                          color: Theme.of(
+                                            context,
+                                          ).colorScheme.error,
+                                        ),
+                                  ),
+                                )
+                              : const SizedBox(
+                                  key: ValueKey<String>(
+                                    'preview-warning-empty',
+                                  ),
+                                  width: double.infinity,
+                                ),
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 14),
-                    FilledButton(
-                      onPressed: () => Navigator.of(context).pop(settings),
-                      child: const Text('Save settings'),
-                    ),
-                    const SizedBox(height: 8),
-                    TextButton(
-                      onPressed: () => Navigator.of(context).maybePop(),
-                      child: const Text('Cancel'),
-                    ),
-                  ],
+                      Container(
+                        padding: EdgeInsets.fromLTRB(
+                          phone ? 14 : 16,
+                          phone ? 16 : 18,
+                          phone ? 14 : 16,
+                          phone ? 18 : 20,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Theme.of(
+                            context,
+                          ).colorScheme.surfaceContainerLow,
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: Theme.of(context).colorScheme.outlineVariant,
+                          ),
+                        ),
+                        child: QuizPracticeSettingsPanel(
+                          settings: settings,
+                          availableSettings: availableSettings,
+                          onCountChanged: (value) {
+                            setModalState(
+                              () => settings = settings.copyWith(
+                                countPreset: value,
+                              ),
+                            );
+                          },
+                          onJlptChanged: (value) {
+                            setModalState(
+                              () => settings = settings.copyWith(
+                                jlptFilter: value,
+                              ),
+                            );
+                          },
+                          onConjugationChanged: (value) {
+                            setModalState(
+                              () => settings = settings.copyWith(
+                                conjugationTags: value,
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                      const SizedBox(height: 14),
+                      FilledButton(
+                        onPressed: () => Navigator.of(context).pop(settings),
+                        child: const Text('Save settings'),
+                      ),
+                      const SizedBox(height: 8),
+                      TextButton(
+                        onPressed: () => Navigator.of(context).maybePop(),
+                        child: const Text('Cancel'),
+                      ),
+                    ],
+                  ),
                 ),
               );
             },

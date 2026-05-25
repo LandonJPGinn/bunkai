@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../app/app_router.dart';
+import '../app/breakpoints.dart';
 import '../app/jpquizapp_tokens.dart';
 
 /// Top marketing rail: brand + Home / Quizzes.
@@ -91,7 +92,9 @@ class _BrandMarkState extends State<_BrandMark> {
     final fast = reduceMotion ? Duration.zero : t.motionFast;
     final curve = t.motionStandardCurve;
     final accent = _hover ? t.accent : t.accent.withValues(alpha: 0.9);
-    final wordmark = _hover ? t.textStrong : t.textStrong.withValues(alpha: 0.92);
+    final wordmark = _hover
+        ? t.textStrong
+        : t.textStrong.withValues(alpha: 0.92);
 
     return MouseRegion(
       onEnter: (_) => setState(() => _hover = true),
@@ -199,8 +202,7 @@ class _NavPillState extends State<_NavPill> {
             onTap: widget.onPressed,
             borderRadius: BorderRadius.circular(999),
             child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
               child: AnimatedDefaultTextStyle(
                 duration: fast,
                 curve: curve,
@@ -235,8 +237,14 @@ class SiteCompactHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = context.jpQuizAppTokens;
+    final phone = LayoutBreakpoints.isPhoneWidth(
+      MediaQuery.sizeOf(context).width,
+    );
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+      padding: EdgeInsets.symmetric(
+        horizontal: phone ? 2 : 4,
+        vertical: phone ? 2 : 4,
+      ),
       decoration: BoxDecoration(
         color: t.surface2.withValues(alpha: 0.88),
         borderRadius: BorderRadius.circular(t.radiusMd),
@@ -254,7 +262,7 @@ class SiteCompactHeader extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.inter(
-                      fontSize: 16,
+                      fontSize: phone ? 14 : 16,
                       fontWeight: FontWeight.w600,
                       color: t.textMain,
                     ),

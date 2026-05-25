@@ -68,12 +68,10 @@ class _HomeScreenState extends State<HomeScreen> {
     try {
       final base = await QuizBankLoader.instance.ensureQuizLoaded(summary.id);
       if (!mounted) return;
-      final normalized =
-          settings.sanitizedFor(derivePracticeAvailableSettings(base));
-      final session = buildPracticeSessionQuiz(
-        base,
-        settings: normalized,
+      final normalized = settings.sanitizedFor(
+        derivePracticeAvailableSettings(base),
       );
+      final session = buildPracticeSessionQuiz(base, settings: normalized);
       Navigator.of(
         context,
       ).pushNamed(AppRoutes.quiz, arguments: QuizRouteArgs(quiz: session));
@@ -142,6 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: LayoutBuilder(
                 builder: (context, constraints) {
                   final width = constraints.maxWidth;
+                  final phone = LayoutBreakpoints.isPhoneWidth(width);
                   final crossCount = width >= LayoutBreakpoints.desktop
                       ? 3
                       : width >= LayoutBreakpoints.tablet
@@ -152,19 +151,27 @@ class _HomeScreenState extends State<HomeScreen> {
                     2 => 1.08,
                     _ => 0.82,
                   };
+                  final cardExtent = phone
+                      ? (width * 0.82).clamp(286.0, 336.0).toDouble()
+                      : null;
 
                   return ScrollConfiguration(
                     behavior: const HomeScrollBehavior(),
                     child: SingleChildScrollView(
                       controller: _scroll,
-                      padding: const EdgeInsets.only(bottom: 8),
+                      padding: EdgeInsets.only(bottom: phone ? 16 : 8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           const HomeHeroBanner(),
                           Padding(
                             key: _gridKey,
-                            padding: const EdgeInsets.fromLTRB(0, 8, 0, 0),
+                            padding: EdgeInsets.fromLTRB(
+                              0,
+                              phone ? 4 : 8,
+                              0,
+                              0,
+                            ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -183,16 +190,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                         height: 1.45,
                                       ),
                                 ),
-                                const SizedBox(height: 20),
+                                SizedBox(height: phone ? 16 : 20),
                                 GridView.builder(
                                   shrinkWrap: true,
                                   physics: const NeverScrollableScrollPhysics(),
                                   gridDelegate:
                                       SliverGridDelegateWithFixedCrossAxisCount(
                                         crossAxisCount: crossCount,
-                                        mainAxisSpacing: 18,
+                                        mainAxisSpacing: phone ? 14 : 18,
                                         crossAxisSpacing: 18,
                                         childAspectRatio: aspectRatio,
+                                        mainAxisExtent: cardExtent,
                                       ),
                                   itemCount: quizzes.length,
                                   itemBuilder: (context, index) {
@@ -203,7 +211,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       builder: (context, settingsSnapshot) {
                                         final settings =
                                             settingsSnapshot.data ??
-                                                PracticeQuizSettings.defaults;
+                                            PracticeQuizSettings.defaults;
                                         return QuizCard(
                                           quizId: q.id,
                                           title: q.title,
@@ -211,18 +219,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                           description: q.description,
                                           tags: q.diagnosticTags,
                                           difficulty: q.difficulty,
-                                          selectedDifficulty: settings
-                                              .summaryLabel,
+                                          selectedDifficulty:
+                                              settings.summaryLabel,
                                           questionCountLabel:
                                               settings.countLabel,
-                                          onStart: () => _startQuiz(
-                                            q,
-                                            settings,
-                                          ),
-                                          onOpenSettings: () => _openSettings(
-                                            q,
-                                            settings,
-                                          ),
+                                          onStart: () =>
+                                              _startQuiz(q, settings),
+                                          onOpenSettings: () =>
+                                              _openSettings(q, settings),
                                         );
                                       },
                                     );

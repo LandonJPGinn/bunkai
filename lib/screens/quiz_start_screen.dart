@@ -108,10 +108,14 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
         }
 
         final base = snapshot.data!;
-        final narrow = LayoutBreakpoints.isNarrowWidth(
-          MediaQuery.sizeOf(context).width,
-        );
-        final horizontalPadding = narrow ? 16.0 : 20.0;
+        final width = MediaQuery.sizeOf(context).width;
+        final phone = LayoutBreakpoints.isPhoneWidth(width);
+        final narrow = LayoutBreakpoints.isNarrowWidth(width);
+        final horizontalPadding = phone
+            ? 14.0
+            : narrow
+            ? 16.0
+            : 20.0;
         final availableSettings = derivePracticeAvailableSettings(base);
         final normalizedSettings = _settings.sanitizedFor(availableSettings);
         if (_settings != normalizedSettings) {
@@ -120,8 +124,10 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
             setState(() => _settings = normalizedSettings);
           });
         }
-        final previewCount = filteredQuestionsForPreview(base, normalizedSettings)
-            .length;
+        final previewCount = filteredQuestionsForPreview(
+          base,
+          normalizedSettings,
+        ).length;
         final canStart = previewCount > 0;
         final topicStyle = topicCardStyleFor(base.id);
         final tokens = context.jpQuizAppTokens;
@@ -133,203 +139,220 @@ class _QuizStartScreenState extends State<QuizStartScreen> {
             icon: const Icon(Icons.arrow_back),
             onPressed: () => Navigator.of(context).maybePop(),
           ),
-          body: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 440),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(tokens.radiusMd),
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    color: tokens.surface2,
-                    borderRadius: BorderRadius.circular(tokens.radiusMd),
-                    border: Border.all(color: tokens.borderSoft),
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Container(width: 3, color: topicStyle.accent),
-                      Expanded(
-                        child: SingleChildScrollView(
-                          padding: EdgeInsets.fromLTRB(
-                            horizontalPadding,
-                            20,
-                            horizontalPadding,
-                            24,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              // AnimatedSize + AnimatedSwitcher so toggling the
-                              // active filter eases the warning row in/out
-                              // instead of shoving the form down.
-                              AnimatedSize(
-                                duration: MediaQuery.of(context)
-                                        .disableAnimations
-                                    ? Duration.zero
-                                    : tokens.motionSlow,
-                                curve: tokens.motionEmphasizedCurve,
-                                alignment: Alignment.topCenter,
-                                child: AnimatedSwitcher(
-                                  duration: MediaQuery.of(context)
-                                          .disableAnimations
+          body: Align(
+            alignment: phone ? Alignment.topCenter : Alignment.center,
+            child: SingleChildScrollView(
+              padding: EdgeInsets.only(bottom: phone ? 12 : 16),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 440),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(tokens.radiusMd),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: tokens.surface2,
+                      borderRadius: BorderRadius.circular(tokens.radiusMd),
+                      border: Border.all(color: tokens.borderSoft),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Container(width: 3, color: topicStyle.accent),
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(
+                              horizontalPadding,
+                              phone ? 16 : 20,
+                              horizontalPadding,
+                              phone ? 20 : 24,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                // AnimatedSize + AnimatedSwitcher so toggling the
+                                // active filter eases the warning row in/out
+                                // instead of shoving the form down.
+                                AnimatedSize(
+                                  duration:
+                                      MediaQuery.of(context).disableAnimations
                                       ? Duration.zero
-                                      : tokens.motionMedium,
-                                  switchInCurve: tokens.motionStandardCurve,
-                                  switchOutCurve: tokens.motionStandardCurve,
-                                  transitionBuilder: (child, animation) =>
-                                      FadeTransition(
-                                          opacity: animation, child: child),
-                                  child: !canStart
-                                      ? Padding(
-                                          key: const ValueKey<String>(
-                                              'filter-warning'),
-                                          padding: const EdgeInsets.only(
-                                              bottom: 16),
-                                          child: Text(
-                                            'No questions for this filter.',
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .bodySmall
-                                                ?.copyWith(
-                                              color: Theme.of(context)
-                                                  .colorScheme
-                                                  .error,
+                                      : tokens.motionSlow,
+                                  curve: tokens.motionEmphasizedCurve,
+                                  alignment: Alignment.topCenter,
+                                  child: AnimatedSwitcher(
+                                    duration:
+                                        MediaQuery.of(context).disableAnimations
+                                        ? Duration.zero
+                                        : tokens.motionMedium,
+                                    switchInCurve: tokens.motionStandardCurve,
+                                    switchOutCurve: tokens.motionStandardCurve,
+                                    transitionBuilder: (child, animation) =>
+                                        FadeTransition(
+                                          opacity: animation,
+                                          child: child,
+                                        ),
+                                    child: !canStart
+                                        ? Padding(
+                                            key: const ValueKey<String>(
+                                              'filter-warning',
                                             ),
-                                          ),
-                                        )
-                                      : const SizedBox(
-                                          key: ValueKey<String>(
-                                              'filter-warning-empty'),
-                                          width: double.infinity,
-                                        ),
-                                ),
-                              ),
-                              Text(
-                                base.subtitle,
-                                style: Theme.of(context).textTheme.titleSmall
-                                    ?.copyWith(
-                                  color: Theme.of(context).colorScheme.onSurface,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              Text(
-                                base.description,
-                                style: Theme.of(context).textTheme.bodyMedium
-                                    ?.copyWith(
-                                  color: Theme.of(context)
-                                      .colorScheme
-                                      .onSurfaceVariant,
-                                  height: 1.45,
-                                ),
-                              ),
-                              const SizedBox(height: 22),
-                              Align(
-                                alignment: Alignment.center,
-                                child: ConstrainedBox(
-                                  constraints:
-                                      const BoxConstraints(maxWidth: 340),
-                                  child: ClipRRect(
-                                    borderRadius:
-                                        BorderRadius.circular(tokens.radiusMd),
-                                    child: DecoratedBox(
-                                      decoration: BoxDecoration(
-                                        color: tokens.surface1,
-                                        borderRadius: BorderRadius.circular(
-                                          tokens.radiusMd,
-                                        ),
-                                        border: Border.all(
-                                          color: tokens.borderSoft,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          16,
-                                          18,
-                                          16,
-                                          20,
-                                        ),
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.stretch,
-                                          children: [
-                                            Theme(
-                                              data: Theme.of(context).copyWith(
-                                                filledButtonTheme:
-                                                    FilledButtonThemeData(
-                                                  style:
-                                                      FilledButton.styleFrom(
-                                                    backgroundColor: topicStyle
-                                                        .accent,
+                                            padding: const EdgeInsets.only(
+                                              bottom: 16,
+                                            ),
+                                            child: Text(
+                                              'No questions for this filter.',
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .bodySmall
+                                                  ?.copyWith(
+                                                    color: Theme.of(
+                                                      context,
+                                                    ).colorScheme.error,
                                                   ),
+                                            ),
+                                          )
+                                        : const SizedBox(
+                                            key: ValueKey<String>(
+                                              'filter-warning-empty',
+                                            ),
+                                            width: double.infinity,
+                                          ),
+                                  ),
+                                ),
+                                Text(
+                                  base.subtitle,
+                                  style: Theme.of(context).textTheme.titleSmall
+                                      ?.copyWith(
+                                        color: Theme.of(
+                                          context,
+                                        ).colorScheme.onSurface,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  base.description,
+                                  style: Theme.of(context).textTheme.bodyMedium
+                                      ?.copyWith(
+                                        color: Theme.of(
+                                          context,
+                                        ).colorScheme.onSurfaceVariant,
+                                        height: 1.45,
+                                      ),
+                                ),
+                                const SizedBox(height: 22),
+                                Align(
+                                  alignment: Alignment.center,
+                                  child: ConstrainedBox(
+                                    constraints: const BoxConstraints(
+                                      maxWidth: 340,
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(
+                                        tokens.radiusMd,
+                                      ),
+                                      child: DecoratedBox(
+                                        decoration: BoxDecoration(
+                                          color: tokens.surface1,
+                                          borderRadius: BorderRadius.circular(
+                                            tokens.radiusMd,
+                                          ),
+                                          border: Border.all(
+                                            color: tokens.borderSoft,
+                                          ),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                            16,
+                                            18,
+                                            16,
+                                            20,
+                                          ),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.stretch,
+                                            children: [
+                                              Theme(
+                                                data: Theme.of(context).copyWith(
+                                                  filledButtonTheme:
+                                                      FilledButtonThemeData(
+                                                        style:
+                                                            FilledButton.styleFrom(
+                                                              backgroundColor:
+                                                                  topicStyle
+                                                                      .accent,
+                                                            ),
+                                                      ),
+                                                ),
+                                                child: QuizPracticeSettingsPanel(
+                                                  settings: normalizedSettings,
+                                                  availableSettings:
+                                                      availableSettings,
+                                                  canStart: canStart,
+                                                  onCountChanged: (value) {
+                                                    setState(
+                                                      () => _settings =
+                                                          _settings.copyWith(
+                                                            countPreset: value,
+                                                          ),
+                                                    );
+                                                  },
+                                                  onJlptChanged: (value) {
+                                                    setState(
+                                                      () => _settings =
+                                                          _settings.copyWith(
+                                                            jlptFilter: value,
+                                                          ),
+                                                    );
+                                                  },
+                                                  onConjugationChanged: (value) {
+                                                    setState(
+                                                      () => _settings =
+                                                          _settings.copyWith(
+                                                            conjugationTags:
+                                                                value,
+                                                          ),
+                                                    );
+                                                  },
+                                                  onStart: () async {
+                                                    await QuizPracticeSettingsStore
+                                                        .instance
+                                                        .save(
+                                                          id,
+                                                          normalizedSettings,
+                                                        );
+                                                    if (!context.mounted) {
+                                                      return;
+                                                    }
+                                                    final session =
+                                                        buildPracticeSessionQuiz(
+                                                          base,
+                                                          settings:
+                                                              normalizedSettings,
+                                                        );
+                                                    Navigator.of(
+                                                      context,
+                                                    ).pushNamed(
+                                                      AppRoutes.quiz,
+                                                      arguments: QuizRouteArgs(
+                                                        quiz: session,
+                                                      ),
+                                                    );
+                                                  },
                                                 ),
                                               ),
-                                              child: QuizPracticeSettingsPanel(
-                                                settings: normalizedSettings,
-                                                availableSettings:
-                                                    availableSettings,
-                                                canStart: canStart,
-                                                onCountChanged: (value) {
-                                                  setState(
-                                                    () => _settings = _settings
-                                                        .copyWith(
-                                                      countPreset: value,
-                                                    ),
-                                                  );
-                                                },
-                                                onJlptChanged: (value) {
-                                                  setState(
-                                                    () => _settings = _settings
-                                                        .copyWith(
-                                                      jlptFilter: value,
-                                                    ),
-                                                  );
-                                                },
-                                                onConjugationChanged: (value) {
-                                                  setState(
-                                                    () => _settings = _settings
-                                                        .copyWith(
-                                                      conjugationTags: value,
-                                                    ),
-                                                  );
-                                                },
-                                                onStart: () async {
-                                                  await QuizPracticeSettingsStore
-                                                      .instance
-                                                      .save(
-                                                        id,
-                                                        normalizedSettings,
-                                                      );
-                                                  if (!context.mounted) return;
-                                                  final session =
-                                                      buildPracticeSessionQuiz(
-                                                    base,
-                                                    settings:
-                                                        normalizedSettings,
-                                                  );
-                                                  Navigator.of(
-                                                    context,
-                                                  ).pushNamed(
-                                                    AppRoutes.quiz,
-                                                    arguments: QuizRouteArgs(
-                                                      quiz: session,
-                                                    ),
-                                                  );
-                                                },
-                                              ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
