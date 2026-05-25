@@ -22,7 +22,7 @@ cloudflare-preview: cloudflare-build
 	npx --yes wrangler@latest dev
 
 cloudflare-deploy:
-	npx --yes wrangler@latest deploy --commit-dirty=true
+	npx --yes wrangler@latest deploy
 
 content-export-csv:
 	python tool/export_content_csv.py
