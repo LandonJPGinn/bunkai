@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
 
   # Implicit font dependency for Switch.adaptive / Cupertino IconData on Web.
   cupertino_icons: ^1.0.8

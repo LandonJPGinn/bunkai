@@ -29,7 +29,6 @@ class _JpQuizAppState extends State<JpQuizApp> {
       theme: buildJpQuizAppDarkTheme(),
       darkTheme: buildJpQuizAppDarkTheme(),
       themeMode: ThemeMode.dark,
-      initialRoute: AppRoutes.home,
       onGenerateRoute: AppRouter.onGenerateRoute,
     );
   }

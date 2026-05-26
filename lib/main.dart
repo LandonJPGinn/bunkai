@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 
 import 'app/jpquizapp_app.dart';
 
@@ -6,5 +7,6 @@ import 'app/jpquizapp_app.dart';
 /// [runApp] on JSON parsing (see [QuizBankLoader], [JapaneseDictionaryService]).
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  usePathUrlStrategy();
   runApp(const JpQuizApp());
 }
